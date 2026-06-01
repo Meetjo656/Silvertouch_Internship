@@ -1,0 +1,16 @@
+{
+    "total": 7,
+    "segment_counts": {
+        "68da2613f02f8ee30a6f1d6a 1": 14,
+        "image (12)": 5,
+        "image (14)": 7,
+        "image (16)": 6,
+        "Ls injection": 5,
+        "Tropicamide Pphthalmic Solution, USP with multiple RX": 5,
+        "Version 1_Artwork_LS_Oral": 4
+    },
+    "averages": {
+        "total_segments": 46,
+        "average_segments": 6.571428571428571
+    }
+}

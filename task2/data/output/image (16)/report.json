@@ -1,0 +1,17 @@
+{
+    "status": "OK",
+    "metrics": {
+        "region_coverage": 0.8081603960441383,
+        "rectangle_coverage": 0.9569036382662536,
+        "carton_coverage": 0.9733844875079857,
+        "num_regions": 6,
+        "num_rectangles": 6,
+        "avg_region_area": 117646.33333333333,
+        "avg_rectangle_area": 199605.039707932,
+        "largest_region_area": 226746,
+        "smallest_region_area": 44547,
+        "is_under_segmented": "False",
+        "is_over_segmented": "False",
+        "has_sparse_rectangles": false
+    }
+}
