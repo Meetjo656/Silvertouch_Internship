@@ -1,0 +1,611 @@
+2026-06-03 11:32:10,547 - main - INFO - No SETIDs provided, using default test SETID: bf001b70-6164-1ec9-e053-2a95a90a1274
+2026-06-03 11:32:10,547 - main - INFO - Starting scraping pipeline for 1 SETIDs...
+2026-06-03 11:32:10,760 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf001b70-6164-1ec9-e053-2a95a90a1274 (Attempt 1/3)
+2026-06-03 11:32:13,360 - main - INFO - Found 3 image URLs for SETID bf001b70-6164-1ec9-e053-2a95a90a1274
+2026-06-03 11:32:13,424 - main - INFO - Pipeline finished successfully.
+2026-06-03 11:32:45,860 - main - INFO - No SETIDs provided, using default test SETID: bf001b70-6164-1ec9-e053-2a95a90a1274
+2026-06-03 11:32:45,860 - main - INFO - Starting scraping pipeline for 1 SETIDs...
+2026-06-03 11:32:45,875 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf001b70-6164-1ec9-e053-2a95a90a1274 (Attempt 1/3)
+2026-06-03 11:32:48,352 - main - INFO - Found 3 image URLs for SETID bf001b70-6164-1ec9-e053-2a95a90a1274
+2026-06-03 11:32:58,513 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=AC+Fast+Front.jpg&setid=bf001b70-6164-1ec9-e053-2a95a90a1274 -> Downloaded
+2026-06-03 11:32:58,513 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=AC+Fast+Back.jpg&setid=bf001b70-6164-1ec9-e053-2a95a90a1274 -> Downloaded
+2026-06-03 11:32:58,514 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=AC+Fast+Front.jpg&setid=bf001b70-6164-1ec9-e053-2a95a90a1274&type=img -> Rejected: Duplicate (hash: ab0fd03f95698568)
+2026-06-03 11:32:58,563 - main - INFO - Pipeline finished successfully.
+2026-06-03 11:38:18,781 - main - INFO - Starting continuous scraping pipeline. Target images: 5
+2026-06-03 11:38:18,786 - main - INFO - Resuming... Already have 0 downloaded images.
+2026-06-03 11:38:18,792 - main - INFO - Fetching bulk SETIDs from API page 1...
+2026-06-03 11:38:18,792 - crawler - INFO - Fetching API page 1 (Attempt 1/3)
+2026-06-03 11:38:21,109 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=328148a1-f32e-47a8-99ec-1614c291a450 (Attempt 1/3)
+2026-06-03 11:38:22,584 - main - INFO - Found 8 image URLs for SETID 328148a1-f32e-47a8-99ec-1614c291a450
+2026-06-03 11:38:23,852 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-03.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x119)
+2026-06-03 11:38:23,853 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-04.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x116)
+2026-06-03 11:38:24,083 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-06.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (192x115)
+2026-06-03 11:38:24,084 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-05.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x117)
+2026-06-03 11:38:24,291 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-01.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Downloaded
+2026-06-03 11:38:24,291 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-02.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Downloaded
+2026-06-03 11:38:24,498 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-07.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450&type=img -> Downloaded
+2026-06-03 11:38:24,974 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-07.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Duplicate (hash: ac93972cb146ada9)
+2026-06-03 11:38:24,977 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3849f5ce-d077-4318-935d-294be6948142 (Attempt 1/3)
+2026-06-03 11:38:26,495 - main - INFO - Found 3 image URLs for SETID 3849f5ce-d077-4318-935d-294be6948142
+2026-06-03 11:38:26,735 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=ropivacaineH-structure.jpg&setid=3849f5ce-d077-4318-935d-294be6948142 -> Downloaded
+2026-06-03 11:38:27,392 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72485519-2.jpg&setid=3849f5ce-d077-4318-935d-294be6948142&type=img -> Downloaded
+2026-06-03 11:38:27,614 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72485519-2.jpg&setid=3849f5ce-d077-4318-935d-294be6948142 -> Rejected: Duplicate (hash: 9f4cb380d04e6dad)
+2026-06-03 11:38:27,616 - main - INFO - Pipeline finished.
+2026-06-03 11:46:14,504 - main - INFO - Starting continuous scraping pipeline. Target images: 50
+2026-06-03 11:46:14,511 - main - INFO - Resuming... Already have 0 downloaded images.
+2026-06-03 11:46:14,516 - main - INFO - Fetching bulk SETIDs from API page 1...
+2026-06-03 11:46:14,516 - crawler - INFO - Fetching API page 1 (Attempt 1/3)
+2026-06-03 11:46:16,886 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=328148a1-f32e-47a8-99ec-1614c291a450 (Attempt 1/3)
+2026-06-03 11:46:18,357 - main - INFO - Found 6 image URLs for SETID 328148a1-f32e-47a8-99ec-1614c291a450
+2026-06-03 11:46:19,597 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-06.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (192x115)
+2026-06-03 11:46:19,598 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-03.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x119)
+2026-06-03 11:46:19,607 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-04.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x116)
+2026-06-03 11:46:19,607 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-05.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x117)
+2026-06-03 11:46:20,595 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-07.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Downloaded
+2026-06-03 11:46:20,597 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-07.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450&type=img -> Rejected: Duplicate (hash: ac93972cb146ada9)
+2026-06-03 11:46:20,599 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3849f5ce-d077-4318-935d-294be6948142 (Attempt 1/3)
+2026-06-03 11:46:22,083 - main - INFO - Found 2 image URLs for SETID 3849f5ce-d077-4318-935d-294be6948142
+2026-06-03 11:46:22,975 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72485519-2.jpg&setid=3849f5ce-d077-4318-935d-294be6948142&type=img -> Downloaded
+2026-06-03 11:46:22,984 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72485519-2.jpg&setid=3849f5ce-d077-4318-935d-294be6948142 -> Rejected: Duplicate (hash: 9f4cb380d04e6dad)
+2026-06-03 11:46:22,985 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4250e5bf-dbc7-7b2d-e063-6294a90ab741 (Attempt 1/3)
+2026-06-03 11:46:24,235 - main - INFO - Found 2 image URLs for SETID 4250e5bf-dbc7-7b2d-e063-6294a90ab741
+2026-06-03 11:46:24,914 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Screenshot+2025-10-29+164048.jpg&setid=4250e5bf-dbc7-7b2d-e063-6294a90ab741&type=img -> Downloaded
+2026-06-03 11:46:24,924 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Screenshot+2025-10-29+164048.jpg&setid=4250e5bf-dbc7-7b2d-e063-6294a90ab741 -> Rejected: Duplicate (hash: f3e156f329920d1a)
+2026-06-03 11:46:24,925 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4779288a-9850-8490-e063-6394a90abe51 (Attempt 1/3)
+2026-06-03 11:46:26,188 - main - INFO - Found 2 image URLs for SETID 4779288a-9850-8490-e063-6394a90abe51
+2026-06-03 11:46:26,422 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=911R+tgt.jpg&setid=4779288a-9850-8490-e063-6394a90abe51 -> Rejected: Too small (279x148)
+2026-06-03 11:46:26,422 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=911R+tgt.jpg&setid=4779288a-9850-8490-e063-6394a90abe51&type=img -> Rejected: Too small (279x148)
+2026-06-03 11:46:26,425 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=47a218a0-6395-36bd-e063-6394a90a265a (Attempt 1/3)
+2026-06-03 11:46:27,683 - main - INFO - Found 2 image URLs for SETID 47a218a0-6395-36bd-e063-6394a90a265a
+2026-06-03 11:46:27,916 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=678R+PDP.jpg&setid=47a218a0-6395-36bd-e063-6394a90a265a -> Downloaded
+2026-06-03 11:46:27,916 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=678R+PDP.jpg&setid=47a218a0-6395-36bd-e063-6394a90a265a&type=img -> Rejected: Duplicate (hash: ae1ad0cf91a587d2)
+2026-06-03 11:46:27,918 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=484b0833-9f8a-f155-e063-6294a90a1869 (Attempt 1/3)
+2026-06-03 11:46:29,162 - main - INFO - Found 4 image URLs for SETID 484b0833-9f8a-f155-e063-6294a90a1869
+2026-06-03 11:46:30,282 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NCOOL-33_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869&type=img -> Downloaded
+2026-06-03 11:46:30,283 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NOLGE-76_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869&type=img -> Downloaded
+2026-06-03 11:46:30,691 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NOLGE-76_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869 -> Rejected: Duplicate (hash: b9cc9d3be3c2a301)
+2026-06-03 11:46:32,344 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NCOOL-33_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869 -> Rejected: Duplicate (hash: c799c953b2b34c46)
+2026-06-03 11:46:32,345 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49f1f415-8017-0974-e063-6294a90a8918 (Attempt 1/3)
+2026-06-03 11:46:33,589 - main - INFO - Found 4 image URLs for SETID 49f1f415-8017-0974-e063-6294a90a8918
+2026-06-03 11:46:34,268 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+back+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918 -> Downloaded
+2026-06-03 11:46:34,470 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+front+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918&type=img -> Downloaded
+2026-06-03 11:46:34,901 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+front+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918 -> Rejected: Duplicate (hash: bc9bcbb8cac6c260)
+2026-06-03 11:46:36,137 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+back+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918&type=img -> Rejected: Duplicate (hash: a4b541b65b4b39c6)
+2026-06-03 11:46:36,138 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a938e15-a996-8538-e063-6294a90ad4ee (Attempt 1/3)
+2026-06-03 11:46:37,437 - main - INFO - Found 4 image URLs for SETID 4a938e15-a996-8538-e063-6294a90ad4ee
+2026-06-03 11:46:38,106 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+front+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee -> Downloaded
+2026-06-03 11:46:38,114 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+back+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee -> Downloaded
+2026-06-03 11:46:38,954 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+back+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee&type=img -> Rejected: Duplicate (hash: ae6cd91ca593b5c0)
+2026-06-03 11:46:39,374 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+front+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee&type=img -> Rejected: Duplicate (hash: eeae3e1b1394a4a4)
+2026-06-03 11:46:39,377 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ab83b34-9376-d169-e063-6394a90a18cd (Attempt 1/3)
+2026-06-03 11:46:40,621 - main - INFO - Found 2 image URLs for SETID 4ab83b34-9376-d169-e063-6394a90a18cd
+2026-06-03 11:46:41,493 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=wotnot100.jpg&setid=4ab83b34-9376-d169-e063-6394a90a18cd -> Downloaded
+2026-06-03 11:46:42,335 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=wotnot100.jpg&setid=4ab83b34-9376-d169-e063-6394a90a18cd&type=img -> Rejected: Duplicate (hash: bbd8c227a79878c8)
+2026-06-03 11:46:42,341 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c6094b7-c1ef-26a3-e063-6394a90af4cc (Attempt 1/3)
+2026-06-03 11:46:43,587 - main - INFO - Found 2 image URLs for SETID 4c6094b7-c1ef-26a3-e063-6394a90af4cc
+2026-06-03 11:46:47,922 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=JF+new+label+.jpg&setid=4c6094b7-c1ef-26a3-e063-6394a90af4cc -> Downloaded
+2026-06-03 11:46:48,543 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=JF+new+label+.jpg&setid=4c6094b7-c1ef-26a3-e063-6394a90af4cc&type=img -> Rejected: Duplicate (hash: b8c7c7380dc738c3)
+2026-06-03 11:46:48,544 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f0c1b8e-3fb1-ccf2-e063-6394a90acd15 (Attempt 1/3)
+2026-06-03 11:46:49,807 - main - INFO - Found 2 image URLs for SETID 4f0c1b8e-3fb1-ccf2-e063-6394a90acd15
+2026-06-03 11:46:51,146 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=ASC+Cold+and+Congestion+Fast+Dissolve+24+ct.jpg&setid=4f0c1b8e-3fb1-ccf2-e063-6394a90acd15 -> Downloaded
+2026-06-03 11:46:51,814 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=ASC+Cold+and+Congestion+Fast+Dissolve+24+ct.jpg&setid=4f0c1b8e-3fb1-ccf2-e063-6394a90acd15&type=img -> Rejected: Duplicate (hash: b838f93adce031b1)
+2026-06-03 11:46:51,815 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50228b3c-d54a-485d-e063-6394a90a4403 (Attempt 1/3)
+2026-06-03 11:46:53,131 - main - INFO - Found 2 image URLs for SETID 50228b3c-d54a-485d-e063-6394a90a4403
+2026-06-03 11:46:54,299 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+Citrus+24ct+Eff.jpg&setid=50228b3c-d54a-485d-e063-6394a90a4403 -> Downloaded
+2026-06-03 11:46:54,858 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+Citrus+24ct+Eff.jpg&setid=50228b3c-d54a-485d-e063-6394a90a4403&type=img -> Rejected: Duplicate (hash: b839d93ed8e031e1)
+2026-06-03 11:46:54,859 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50230cad-3d04-8882-e063-6294a90acf3c (Attempt 1/3)
+2026-06-03 11:46:56,107 - main - INFO - Found 2 image URLs for SETID 50230cad-3d04-8882-e063-6294a90acf3c
+2026-06-03 11:46:57,225 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+MS+Orange+24ct+Eff.jpg&setid=50230cad-3d04-8882-e063-6294a90acf3c&type=img -> Downloaded
+2026-06-03 11:46:57,637 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+MS+Orange+24ct+Eff.jpg&setid=50230cad-3d04-8882-e063-6294a90acf3c -> Rejected: Duplicate (hash: b262e738d3c37286)
+2026-06-03 11:46:57,638 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5025a333-6378-bf59-e063-6394a90af4f0 (Attempt 1/3)
+2026-06-03 11:46:58,892 - main - INFO - Found 2 image URLs for SETID 5025a333-6378-bf59-e063-6394a90af4f0
+2026-06-03 11:47:00,221 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+Fast+Chewable+Tablets+Orange+24ct.jpg&setid=5025a333-6378-bf59-e063-6394a90af4f0 -> Downloaded
+2026-06-03 11:47:00,417 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+Fast+Chewable+Tablets+Orange+24ct.jpg&setid=5025a333-6378-bf59-e063-6394a90af4f0&type=img -> Rejected: Duplicate (hash: e76c8d6ae38cc464)
+2026-06-03 11:47:00,419 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5026611c-93e7-8f90-e063-6394a90a7baa (Attempt 1/3)
+2026-06-03 11:47:01,663 - main - INFO - Found 2 image URLs for SETID 5026611c-93e7-8f90-e063-6394a90a7baa
+2026-06-03 11:47:02,761 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Allergy+MS+LG+24ct.jpg&setid=5026611c-93e7-8f90-e063-6394a90a7baa -> Downloaded
+2026-06-03 11:47:02,993 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Allergy+MS+LG+24ct.jpg&setid=5026611c-93e7-8f90-e063-6394a90a7baa&type=img -> Rejected: Duplicate (hash: ee29ae92ae4aea84)
+2026-06-03 11:47:02,995 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50364a42-3333-51fe-e063-6394a90ab71e (Attempt 1/3)
+2026-06-03 11:47:04,247 - main - INFO - Found 2 image URLs for SETID 50364a42-3333-51fe-e063-6394a90ab71e
+2026-06-03 11:47:05,349 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+Original+Flavor+24ct+Eff.jpg&setid=50364a42-3333-51fe-e063-6394a90ab71e&type=img -> Downloaded
+2026-06-03 11:47:05,771 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+Original+Flavor+24ct+Eff.jpg&setid=50364a42-3333-51fe-e063-6394a90ab71e -> Rejected: Duplicate (hash: b266c738d3c36686)
+2026-06-03 11:47:05,773 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5036dc50-e95b-ea8d-e063-6394a90a6cfe (Attempt 1/3)
+2026-06-03 11:47:07,026 - main - INFO - Found 2 image URLs for SETID 5036dc50-e95b-ea8d-e063-6394a90a6cfe
+2026-06-03 11:47:08,332 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+StrwHny+16ct+Eff.jpg&setid=5036dc50-e95b-ea8d-e063-6394a90a6cfe&type=img -> Downloaded
+2026-06-03 11:47:08,541 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+StrwHny+16ct+Eff.jpg&setid=5036dc50-e95b-ea8d-e063-6394a90a6cfe -> Rejected: Duplicate (hash: b266e330b3e347a4)
+2026-06-03 11:47:08,543 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5054a055-50d0-f12a-e063-6294a90ad78e (Attempt 1/3)
+2026-06-03 11:47:09,788 - main - INFO - Found 3 image URLs for SETID 5054a055-50d0-f12a-e063-6294a90ad78e
+2026-06-03 11:47:10,023 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Inactive+Ingredient.jpg&setid=5054a055-50d0-f12a-e063-6294a90ad78e -> Downloaded
+2026-06-03 11:47:10,473 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Principal+Display+Panel.jpg&setid=5054a055-50d0-f12a-e063-6294a90ad78e -> Downloaded
+2026-06-03 11:47:10,666 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Principal+Display+Panel.jpg&setid=5054a055-50d0-f12a-e063-6294a90ad78e&type=img -> Rejected: Duplicate (hash: b332cccd3432cbcc)
+2026-06-03 11:47:10,668 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=507150a0-9c20-4a2e-e063-6394a90ab9c7 (Attempt 1/3)
+2026-06-03 11:47:11,918 - main - INFO - Found 4 image URLs for SETID 507150a0-9c20-4a2e-e063-6394a90ab9c7
+2026-06-03 11:47:12,795 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+Tube+P12714.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7&type=img -> Downloaded
+2026-06-03 11:47:13,011 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+Tube+P12714.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7 -> Rejected: Duplicate (hash: e6393339d9c0e0e3)
+2026-06-03 11:47:13,012 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+carton+P12715.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7&type=img -> Downloaded
+2026-06-03 11:47:13,436 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+carton+P12715.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7 -> Rejected: Duplicate (hash: e333783159536cc6)
+2026-06-03 11:47:13,439 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=507214ad-1e06-fe21-e063-6294a90a59cd (Attempt 1/3)
+2026-06-03 11:47:14,682 - main - INFO - Found 2 image URLs for SETID 507214ad-1e06-fe21-e063-6294a90a59cd
+2026-06-03 11:47:15,998 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+StrHny+24ct+EFF.jpg&setid=507214ad-1e06-fe21-e063-6294a90a59cd -> Downloaded
+2026-06-03 11:47:17,248 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+StrHny+24ct+EFF.jpg&setid=507214ad-1e06-fe21-e063-6294a90a59cd&type=img -> Rejected: Duplicate (hash: b222e739b3e34326)
+2026-06-03 11:47:17,249 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=507284c3-cad9-d65c-e063-6394a90a58a8 (Attempt 1/3)
+2026-06-03 11:47:18,488 - main - INFO - Found 2 image URLs for SETID 507284c3-cad9-d65c-e063-6394a90a58a8
+2026-06-03 11:47:20,210 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+Berry+24ct+Eff.jpg&setid=507284c3-cad9-d65c-e063-6394a90a58a8 -> Downloaded
+2026-06-03 11:47:21,096 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+Berry+24ct+Eff.jpg&setid=507284c3-cad9-d65c-e063-6394a90a58a8&type=img -> Rejected: Duplicate (hash: b262e738d3c36686)
+2026-06-03 11:47:21,097 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50738a43-7299-270c-e063-6294a90af2cc (Attempt 1/3)
+2026-06-03 11:47:22,359 - main - INFO - Found 2 image URLs for SETID 50738a43-7299-270c-e063-6294a90af2cc
+2026-06-03 11:47:25,153 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cong+Severe+DN+48ct+Eff.jpg&setid=50738a43-7299-270c-e063-6294a90af2cc -> Downloaded
+2026-06-03 11:47:25,780 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cong+Severe+DN+48ct+Eff.jpg&setid=50738a43-7299-270c-e063-6294a90af2cc&type=img -> Rejected: Duplicate (hash: a9edcd31f01702ce)
+2026-06-03 11:47:25,782 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50762d7c-5efd-4f83-e063-6294a90abf7f (Attempt 1/3)
+2026-06-03 11:47:27,040 - main - INFO - Found 4 image URLs for SETID 50762d7c-5efd-4f83-e063-6294a90abf7f
+2026-06-03 11:47:27,917 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Carton%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f -> Downloaded
+2026-06-03 11:47:28,133 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Carton%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f&type=img -> Rejected: Duplicate (hash: ec66ac4d61a94d93)
+2026-06-03 11:47:28,765 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Booklet%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f&type=img -> Downloaded
+2026-06-03 11:47:28,980 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Booklet%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f -> Rejected: Duplicate (hash: ae1de2026e1d2fd1)
+2026-06-03 11:47:28,982 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5114aff8-adde-e610-e063-6294a90a77ea (Attempt 1/3)
+2026-06-03 11:47:30,229 - main - INFO - Found 2 image URLs for SETID 5114aff8-adde-e610-e063-6294a90a77ea
+2026-06-03 11:47:31,113 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Boo-Boo+Magic.jpg&setid=5114aff8-adde-e610-e063-6294a90a77ea -> Downloaded
+2026-06-03 11:47:31,522 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Boo-Boo+Magic.jpg&setid=5114aff8-adde-e610-e063-6294a90a77ea&type=img -> Rejected: Duplicate (hash: a3d23474de81dc2d)
+2026-06-03 11:47:31,524 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51173330-d537-fb9c-e063-6394a90ae342 (Attempt 1/3)
+2026-06-03 11:47:32,772 - main - INFO - Found 2 image URLs for SETID 51173330-d537-fb9c-e063-6394a90ae342
+2026-06-03 11:47:33,893 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+LG+24ct.jpg&setid=51173330-d537-fb9c-e063-6394a90ae342&type=img -> Downloaded
+2026-06-03 11:47:34,323 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+LG+24ct.jpg&setid=51173330-d537-fb9c-e063-6394a90ae342 -> Rejected: Duplicate (hash: eeb1ee54aa4c6a22)
+2026-06-03 11:47:34,325 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=512af63d-2f09-4baa-e063-6394a90a86bd (Attempt 1/3)
+2026-06-03 11:47:35,572 - main - INFO - Found 2 image URLs for SETID 512af63d-2f09-4baa-e063-6394a90a86bd
+2026-06-03 11:47:36,897 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+LG+24ct.jpg&setid=512af63d-2f09-4baa-e063-6394a90a86bd&type=img -> Downloaded
+2026-06-03 11:47:36,901 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+LG+24ct.jpg&setid=512af63d-2f09-4baa-e063-6394a90a86bd -> Rejected: Duplicate (hash: eeb1ee52aa6a6a02)
+2026-06-03 11:47:36,903 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5150ff85-85bb-9cd9-e063-6294a90a1144 (Attempt 1/3)
+2026-06-03 11:47:38,152 - main - INFO - Found 2 image URLs for SETID 5150ff85-85bb-9cd9-e063-6294a90a1144
+2026-06-03 11:47:40,206 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+Night+LG+24ct.jpg&setid=5150ff85-85bb-9cd9-e063-6294a90a1144 -> Downloaded
+2026-06-03 11:47:40,520 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+Night+LG+24ct.jpg&setid=5150ff85-85bb-9cd9-e063-6294a90a1144&type=img -> Rejected: Duplicate (hash: eeb1aa52ea4ac86a)
+2026-06-03 11:47:40,522 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51a4195b-8776-964c-e063-6294a90aa075 (Attempt 1/3)
+2026-06-03 11:47:41,824 - main - INFO - Found 2 image URLs for SETID 51a4195b-8776-964c-e063-6294a90aa075
+2026-06-03 11:47:44,034 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+DN+LG+24ct.jpg&setid=51a4195b-8776-964c-e063-6294a90aa075 -> Downloaded
+2026-06-03 11:47:44,896 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+DN+LG+24ct.jpg&setid=51a4195b-8776-964c-e063-6294a90aa075&type=img -> Rejected: Duplicate (hash: b8c689e3d879d826)
+2026-06-03 11:47:44,898 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51a45db8-2bee-6fd0-e063-6394a90ab587 (Attempt 1/3)
+2026-06-03 11:47:46,142 - main - INFO - Found 2 image URLs for SETID 51a45db8-2bee-6fd0-e063-6394a90ab587
+2026-06-03 11:47:47,452 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+LG+24ct.jpg&setid=51a45db8-2bee-6fd0-e063-6394a90ab587 -> Downloaded
+2026-06-03 11:47:47,883 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+LG+24ct.jpg&setid=51a45db8-2bee-6fd0-e063-6394a90ab587&type=img -> Rejected: Duplicate (hash: eab1aed2aa4aea11)
+2026-06-03 11:47:47,885 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51d59378-df72-e438-e063-6294a90a97f1 (Attempt 1/3)
+2026-06-03 11:47:49,129 - main - INFO - Found 2 image URLs for SETID 51d59378-df72-e438-e063-6294a90a97f1
+2026-06-03 11:47:51,988 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Aveeno_1.jpg&setid=51d59378-df72-e438-e063-6294a90a97f1&type=img -> Downloaded
+2026-06-03 11:47:53,447 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Aveeno_1.jpg&setid=51d59378-df72-e438-e063-6294a90a97f1 -> Rejected: Duplicate (hash: 9fcca572f0855a07)
+2026-06-03 11:47:53,449 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51d843af-dad3-75fd-e063-6394a90a6b57 (Attempt 1/3)
+2026-06-03 11:47:54,687 - main - INFO - Found 4 image URLs for SETID 51d843af-dad3-75fd-e063-6394a90a6b57
+2026-06-03 11:47:56,201 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+1.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57 -> Downloaded
+2026-06-03 11:47:56,209 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+1.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57&type=img -> Rejected: Duplicate (hash: 9dc1ec70a1e1ece4)
+2026-06-03 11:47:56,217 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+2.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57&type=img -> Downloaded
+2026-06-03 11:47:56,840 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+2.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57 -> Rejected: Duplicate (hash: a295cecd85cfa134)
+2026-06-03 11:47:56,842 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51e03b5b-b05a-07c1-e063-6394a90ab201 (Attempt 1/3)
+2026-06-03 11:47:58,110 - main - INFO - Found 2 image URLs for SETID 51e03b5b-b05a-07c1-e063-6394a90ab201
+2026-06-03 11:47:59,686 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+DN+LG+24ct.jpg&setid=51e03b5b-b05a-07c1-e063-6394a90ab201&type=img -> Downloaded
+2026-06-03 11:48:00,522 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+DN+LG+24ct.jpg&setid=51e03b5b-b05a-07c1-e063-6394a90ab201 -> Rejected: Duplicate (hash: b838c9b9d938d938)
+2026-06-03 11:48:00,523 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52275eda-9964-0f51-e063-6294a90ad88c (Attempt 1/3)
+2026-06-03 11:48:01,768 - main - INFO - Found 4 image URLs for SETID 52275eda-9964-0f51-e063-6294a90ad88c
+2026-06-03 11:48:03,300 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+1.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c -> Downloaded
+2026-06-03 11:48:03,311 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+1.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c&type=img -> Rejected: Duplicate (hash: 9de0e8e0ecb4e4b4)
+2026-06-03 11:48:03,525 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+2.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c&type=img -> Downloaded
+2026-06-03 11:48:03,941 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+2.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c -> Rejected: Duplicate (hash: a495dac8ad4ac93d)
+2026-06-03 11:48:03,942 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5228794d-0048-bb6d-e063-6394a90acdae (Attempt 1/3)
+2026-06-03 11:48:05,189 - main - INFO - Found 4 image URLs for SETID 5228794d-0048-bb6d-e063-6394a90acdae
+2026-06-03 11:48:06,295 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+1.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae -> Downloaded
+2026-06-03 11:48:06,501 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+1.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae&type=img -> Rejected: Duplicate (hash: 9f1ce8e0c781b8bc)
+2026-06-03 11:48:06,729 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+2.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae -> Downloaded
+2026-06-03 11:48:06,731 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+2.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae&type=img -> Rejected: Duplicate (hash: a785dacc8c4ee135)
+2026-06-03 11:48:06,733 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=522b6376-bae8-adb0-e063-6294a90a318d (Attempt 1/3)
+2026-06-03 11:48:07,974 - main - INFO - Found 4 image URLs for SETID 522b6376-bae8-adb0-e063-6294a90a318d
+2026-06-03 11:48:09,078 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+1.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d -> Downloaded
+2026-06-03 11:48:09,082 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+1.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d&type=img -> Rejected: Duplicate (hash: b971e087bce0ec34)
+2026-06-03 11:48:09,326 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+2.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d -> Downloaded
+2026-06-03 11:48:09,955 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+2.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d&type=img -> Rejected: Duplicate (hash: a7a4da8facca8934)
+2026-06-03 11:48:09,956 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5241b11a-72c8-5e67-e063-6394a90a4353 (Attempt 1/3)
+2026-06-03 11:48:11,204 - main - INFO - Found 2 image URLs for SETID 5241b11a-72c8-5e67-e063-6394a90a4353
+2026-06-03 11:48:12,516 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+Raspberry+Fast+Chewable+Tablets+Raspberry+24ct.jpg&setid=5241b11a-72c8-5e67-e063-6394a90a4353&type=img -> Downloaded
+2026-06-03 11:48:12,737 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+Raspberry+Fast+Chewable+Tablets+Raspberry+24ct.jpg&setid=5241b11a-72c8-5e67-e063-6394a90a4353 -> Rejected: Duplicate (hash: e7658e4ab36ac0b4)
+2026-06-03 11:48:12,738 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=525467fb-510d-0b4b-e063-6294a90acd36 (Attempt 1/3)
+2026-06-03 11:48:13,987 - main - INFO - Found 2 image URLs for SETID 525467fb-510d-0b4b-e063-6294a90acd36
+2026-06-03 11:48:17,285 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Tylenol-1.jpg&setid=525467fb-510d-0b4b-e063-6294a90acd36 -> Downloaded
+2026-06-03 11:48:17,337 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Tylenol-1.jpg&setid=525467fb-510d-0b4b-e063-6294a90acd36&type=img -> Rejected: Duplicate (hash: ee4a621b331f954a)
+2026-06-03 11:48:17,339 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5258cef2-0e5c-4ccd-e063-6394a90a9e5c (Attempt 1/3)
+2026-06-03 11:48:18,577 - main - INFO - Found 2 image URLs for SETID 5258cef2-0e5c-4ccd-e063-6394a90a9e5c
+2026-06-03 11:48:19,510 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=807113-001-revA_FDA.jpg&setid=5258cef2-0e5c-4ccd-e063-6394a90a9e5c&type=img -> Downloaded
+2026-06-03 11:48:19,918 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=807113-001-revA_FDA.jpg&setid=5258cef2-0e5c-4ccd-e063-6394a90a9e5c -> Rejected: Duplicate (hash: c211d24b8deaadba)
+2026-06-03 11:48:19,920 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5258ea3f-87f1-7f86-e063-6394a90ab82f (Attempt 1/3)
+2026-06-03 11:48:21,220 - main - INFO - Found 2 image URLs for SETID 5258ea3f-87f1-7f86-e063-6394a90ab82f
+2026-06-03 11:48:23,396 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+DN+LG+24ct.jpg&setid=5258ea3f-87f1-7f86-e063-6394a90ab82f -> Downloaded
+2026-06-03 11:48:23,400 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+DN+LG+24ct.jpg&setid=5258ea3f-87f1-7f86-e063-6394a90ab82f&type=img -> Rejected: Duplicate (hash: b8ce98a39839f83c)
+2026-06-03 11:48:23,402 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5322934b-666b-4cef-e063-6394a90a3362 (Attempt 1/3)
+2026-06-03 11:48:24,645 - main - INFO - Found 2 image URLs for SETID 5322934b-666b-4cef-e063-6394a90a3362
+2026-06-03 11:48:25,326 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Calc+Phos.jpg&setid=5322934b-666b-4cef-e063-6394a90a3362 -> Downloaded
+2026-06-03 11:48:25,739 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Calc+Phos.jpg&setid=5322934b-666b-4cef-e063-6394a90a3362&type=img -> Rejected: Duplicate (hash: a7734e0ed0a791d1)
+2026-06-03 11:48:25,740 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=532302ff-e18c-de15-e063-6394a90a2b1c (Attempt 1/3)
+2026-06-03 11:48:26,988 - main - INFO - Found 2 image URLs for SETID 532302ff-e18c-de15-e063-6394a90a2b1c
+2026-06-03 11:48:27,663 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=BM+115+-+Label.jpg&setid=532302ff-e18c-de15-e063-6394a90a2b1c&type=img -> Downloaded
+2026-06-03 11:48:27,667 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=BM+115+-+Label.jpg&setid=532302ff-e18c-de15-e063-6394a90a2b1c -> Rejected: Duplicate (hash: eb3e5c6b9493c091)
+2026-06-03 11:48:27,668 - main - INFO - Pipeline finished.
+2026-06-03 12:06:24,923 - main - INFO - Starting continuous scraping pipeline. Target images: 100
+2026-06-03 12:06:24,927 - main - INFO - Resuming... Already have 50 downloaded images.
+2026-06-03 12:06:24,931 - main - INFO - Fetching bulk SETIDs from API page 1...
+2026-06-03 12:06:24,931 - crawler - INFO - Fetching API page 1 (Attempt 1/3)
+2026-06-03 12:06:33,332 - crawler - ERROR - API request failed: HTTPSConnectionPool(host='dailymed.nlm.nih.gov', port=443): Max retries exceeded with url: /dailymed/services/v2/spls.json?page=1&pagesize=100 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002239E7A67B0>: Failed to resolve 'dailymed.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+2026-06-03 12:06:34,333 - crawler - INFO - Fetching API page 1 (Attempt 2/3)
+2026-06-03 12:06:41,645 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=328148a1-f32e-47a8-99ec-1614c291a450 (Attempt 1/3)
+2026-06-03 12:06:43,269 - main - INFO - Found 6 image URLs for SETID 328148a1-f32e-47a8-99ec-1614c291a450
+2026-06-03 12:06:45,626 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-05.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x117)
+2026-06-03 12:06:45,627 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-04.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x116)
+2026-06-03 12:06:45,628 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-06.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (192x115)
+2026-06-03 12:06:45,629 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-03.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x119)
+2026-06-03 12:06:46,459 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-07.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450&type=img -> Downloaded
+2026-06-03 12:06:46,463 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-07.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Duplicate (hash: ac93972cb146ada9)
+2026-06-03 12:06:46,470 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3849f5ce-d077-4318-935d-294be6948142 (Attempt 1/3)
+2026-06-03 12:06:48,156 - main - INFO - Found 2 image URLs for SETID 3849f5ce-d077-4318-935d-294be6948142
+2026-06-03 12:06:48,186 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72485519-2.jpg&setid=3849f5ce-d077-4318-935d-294be6948142&type=img -> Resumed
+2026-06-03 12:06:48,865 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72485519-2.jpg&setid=3849f5ce-d077-4318-935d-294be6948142 -> Rejected: Duplicate (hash: 9f4cb380d04e6dad)
+2026-06-03 12:06:48,870 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4250e5bf-dbc7-7b2d-e063-6294a90ab741 (Attempt 1/3)
+2026-06-03 12:06:50,191 - main - INFO - Found 2 image URLs for SETID 4250e5bf-dbc7-7b2d-e063-6294a90ab741
+2026-06-03 12:06:50,216 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Screenshot+2025-10-29+164048.jpg&setid=4250e5bf-dbc7-7b2d-e063-6294a90ab741&type=img -> Resumed
+2026-06-03 12:06:51,057 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Screenshot+2025-10-29+164048.jpg&setid=4250e5bf-dbc7-7b2d-e063-6294a90ab741 -> Rejected: Duplicate (hash: f3e156f329920d1a)
+2026-06-03 12:06:51,074 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4779288a-9850-8490-e063-6394a90abe51 (Attempt 1/3)
+2026-06-03 12:06:52,433 - main - INFO - Found 2 image URLs for SETID 4779288a-9850-8490-e063-6394a90abe51
+2026-06-03 12:06:52,674 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=911R+tgt.jpg&setid=4779288a-9850-8490-e063-6394a90abe51 -> Rejected: Too small (279x148)
+2026-06-03 12:06:52,681 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=911R+tgt.jpg&setid=4779288a-9850-8490-e063-6394a90abe51&type=img -> Rejected: Too small (279x148)
+2026-06-03 12:06:52,690 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=47a218a0-6395-36bd-e063-6394a90a265a (Attempt 1/3)
+2026-06-03 12:06:54,055 - main - INFO - Found 2 image URLs for SETID 47a218a0-6395-36bd-e063-6394a90a265a
+2026-06-03 12:06:54,062 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=678R+PDP.jpg&setid=47a218a0-6395-36bd-e063-6394a90a265a -> Resumed
+2026-06-03 12:06:54,306 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=678R+PDP.jpg&setid=47a218a0-6395-36bd-e063-6394a90a265a&type=img -> Rejected: Duplicate (hash: ae1ad0cf91a587d2)
+2026-06-03 12:06:54,311 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=484b0833-9f8a-f155-e063-6294a90a1869 (Attempt 1/3)
+2026-06-03 12:06:55,614 - main - INFO - Found 4 image URLs for SETID 484b0833-9f8a-f155-e063-6294a90a1869
+2026-06-03 12:06:55,667 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NCOOL-33_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869&type=img -> Resumed
+2026-06-03 12:06:55,669 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NOLGE-76_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869&type=img -> Resumed
+2026-06-03 12:06:56,334 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NCOOL-33_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869 -> Rejected: Duplicate (hash: c799c953b2b34c46)
+2026-06-03 12:06:56,748 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NOLGE-76_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869 -> Rejected: Duplicate (hash: b9cc9d3be3c2a301)
+2026-06-03 12:06:56,754 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49f1f415-8017-0974-e063-6294a90a8918 (Attempt 1/3)
+2026-06-03 12:06:58,100 - main - INFO - Found 4 image URLs for SETID 49f1f415-8017-0974-e063-6294a90a8918
+2026-06-03 12:06:58,130 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+front+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918&type=img -> Resumed
+2026-06-03 12:06:58,150 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+back+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918 -> Resumed
+2026-06-03 12:06:58,864 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+back+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918&type=img -> Rejected: Duplicate (hash: a4b541b65b4b39c6)
+2026-06-03 12:06:58,918 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+front+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918 -> Rejected: Duplicate (hash: bc9bcbb8cac6c260)
+2026-06-03 12:06:58,929 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a938e15-a996-8538-e063-6294a90ad4ee (Attempt 1/3)
+2026-06-03 12:07:00,335 - main - INFO - Found 4 image URLs for SETID 4a938e15-a996-8538-e063-6294a90ad4ee
+2026-06-03 12:07:00,359 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+front+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee -> Resumed
+2026-06-03 12:07:00,361 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+back+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee -> Resumed
+2026-06-03 12:07:01,023 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+front+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee&type=img -> Rejected: Duplicate (hash: eeae3e1b1394a4a4)
+2026-06-03 12:07:01,065 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+back+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee&type=img -> Rejected: Duplicate (hash: ae6cd91ca593b5c0)
+2026-06-03 12:07:01,071 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ab83b34-9376-d169-e063-6394a90a18cd (Attempt 1/3)
+2026-06-03 12:07:02,378 - main - INFO - Found 2 image URLs for SETID 4ab83b34-9376-d169-e063-6394a90a18cd
+2026-06-03 12:07:02,396 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=wotnot100.jpg&setid=4ab83b34-9376-d169-e063-6394a90a18cd -> Resumed
+2026-06-03 12:07:03,064 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=wotnot100.jpg&setid=4ab83b34-9376-d169-e063-6394a90a18cd&type=img -> Rejected: Duplicate (hash: bbd8c227a79878c8)
+2026-06-03 12:07:03,069 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c6094b7-c1ef-26a3-e063-6394a90af4cc (Attempt 1/3)
+2026-06-03 12:07:04,372 - main - INFO - Found 2 image URLs for SETID 4c6094b7-c1ef-26a3-e063-6394a90af4cc
+2026-06-03 12:07:04,732 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=JF+new+label+.jpg&setid=4c6094b7-c1ef-26a3-e063-6394a90af4cc -> Resumed
+2026-06-03 12:07:07,450 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=JF+new+label+.jpg&setid=4c6094b7-c1ef-26a3-e063-6394a90af4cc&type=img -> Rejected: Duplicate (hash: b8c7c7380dc738c3)
+2026-06-03 12:07:07,455 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f0c1b8e-3fb1-ccf2-e063-6394a90acd15 (Attempt 1/3)
+2026-06-03 12:07:08,786 - main - INFO - Found 2 image URLs for SETID 4f0c1b8e-3fb1-ccf2-e063-6394a90acd15
+2026-06-03 12:07:08,838 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=ASC+Cold+and+Congestion+Fast+Dissolve+24+ct.jpg&setid=4f0c1b8e-3fb1-ccf2-e063-6394a90acd15 -> Resumed
+2026-06-03 12:07:10,130 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=ASC+Cold+and+Congestion+Fast+Dissolve+24+ct.jpg&setid=4f0c1b8e-3fb1-ccf2-e063-6394a90acd15&type=img -> Rejected: Duplicate (hash: b838f93adce031b1)
+2026-06-03 12:07:10,134 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50228b3c-d54a-485d-e063-6394a90a4403 (Attempt 1/3)
+2026-06-03 12:07:11,453 - main - INFO - Found 2 image URLs for SETID 50228b3c-d54a-485d-e063-6394a90a4403
+2026-06-03 12:07:11,502 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+Citrus+24ct+Eff.jpg&setid=50228b3c-d54a-485d-e063-6394a90a4403 -> Resumed
+2026-06-03 12:07:12,800 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+Citrus+24ct+Eff.jpg&setid=50228b3c-d54a-485d-e063-6394a90a4403&type=img -> Rejected: Duplicate (hash: b839d93ed8e031e1)
+2026-06-03 12:07:12,806 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50230cad-3d04-8882-e063-6294a90acf3c (Attempt 1/3)
+2026-06-03 12:07:14,127 - main - INFO - Found 2 image URLs for SETID 50230cad-3d04-8882-e063-6294a90acf3c
+2026-06-03 12:07:14,166 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+MS+Orange+24ct+Eff.jpg&setid=50230cad-3d04-8882-e063-6294a90acf3c&type=img -> Resumed
+2026-06-03 12:07:15,280 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+MS+Orange+24ct+Eff.jpg&setid=50230cad-3d04-8882-e063-6294a90acf3c -> Rejected: Duplicate (hash: b262e738d3c37286)
+2026-06-03 12:07:15,285 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5025a333-6378-bf59-e063-6394a90af4f0 (Attempt 1/3)
+2026-06-03 12:07:16,602 - main - INFO - Found 2 image URLs for SETID 5025a333-6378-bf59-e063-6394a90af4f0
+2026-06-03 12:07:16,637 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+Fast+Chewable+Tablets+Orange+24ct.jpg&setid=5025a333-6378-bf59-e063-6394a90af4f0 -> Resumed
+2026-06-03 12:07:17,938 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+Fast+Chewable+Tablets+Orange+24ct.jpg&setid=5025a333-6378-bf59-e063-6394a90af4f0&type=img -> Rejected: Duplicate (hash: e76c8d6ae38cc464)
+2026-06-03 12:07:17,942 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5026611c-93e7-8f90-e063-6394a90a7baa (Attempt 1/3)
+2026-06-03 12:07:19,184 - main - INFO - Found 2 image URLs for SETID 5026611c-93e7-8f90-e063-6394a90a7baa
+2026-06-03 12:07:19,195 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Allergy+MS+LG+24ct.jpg&setid=5026611c-93e7-8f90-e063-6394a90a7baa -> Resumed
+2026-06-03 12:07:20,292 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Allergy+MS+LG+24ct.jpg&setid=5026611c-93e7-8f90-e063-6394a90a7baa&type=img -> Rejected: Duplicate (hash: ee29ae92ae4aea84)
+2026-06-03 12:07:20,294 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50364a42-3333-51fe-e063-6394a90ab71e (Attempt 1/3)
+2026-06-03 12:07:21,544 - main - INFO - Found 2 image URLs for SETID 50364a42-3333-51fe-e063-6394a90ab71e
+2026-06-03 12:07:21,555 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+Original+Flavor+24ct+Eff.jpg&setid=50364a42-3333-51fe-e063-6394a90ab71e&type=img -> Resumed
+2026-06-03 12:07:22,642 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+Original+Flavor+24ct+Eff.jpg&setid=50364a42-3333-51fe-e063-6394a90ab71e -> Rejected: Duplicate (hash: b266c738d3c36686)
+2026-06-03 12:07:22,645 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5036dc50-e95b-ea8d-e063-6394a90a6cfe (Attempt 1/3)
+2026-06-03 12:07:23,893 - main - INFO - Found 2 image URLs for SETID 5036dc50-e95b-ea8d-e063-6394a90a6cfe
+2026-06-03 12:07:23,912 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+StrwHny+16ct+Eff.jpg&setid=5036dc50-e95b-ea8d-e063-6394a90a6cfe&type=img -> Resumed
+2026-06-03 12:07:24,984 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+StrwHny+16ct+Eff.jpg&setid=5036dc50-e95b-ea8d-e063-6394a90a6cfe -> Rejected: Duplicate (hash: b266e330b3e347a4)
+2026-06-03 12:07:24,985 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5054a055-50d0-f12a-e063-6294a90ad78e (Attempt 1/3)
+2026-06-03 12:07:26,222 - main - INFO - Found 3 image URLs for SETID 5054a055-50d0-f12a-e063-6294a90ad78e
+2026-06-03 12:07:26,227 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Inactive+Ingredient.jpg&setid=5054a055-50d0-f12a-e063-6294a90ad78e -> Resumed
+2026-06-03 12:07:26,240 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Principal+Display+Panel.jpg&setid=5054a055-50d0-f12a-e063-6294a90ad78e -> Resumed
+2026-06-03 12:07:26,681 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Principal+Display+Panel.jpg&setid=5054a055-50d0-f12a-e063-6294a90ad78e&type=img -> Rejected: Duplicate (hash: b332cccd3432cbcc)
+2026-06-03 12:07:26,683 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=507150a0-9c20-4a2e-e063-6394a90ab9c7 (Attempt 1/3)
+2026-06-03 12:07:27,925 - main - INFO - Found 4 image URLs for SETID 507150a0-9c20-4a2e-e063-6394a90ab9c7
+2026-06-03 12:07:27,931 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+Tube+P12714.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7&type=img -> Resumed
+2026-06-03 12:07:27,933 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+carton+P12715.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7&type=img -> Resumed
+2026-06-03 12:07:28,586 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+Tube+P12714.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7 -> Rejected: Duplicate (hash: e6393339d9c0e0e3)
+2026-06-03 12:07:28,601 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+carton+P12715.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7 -> Rejected: Duplicate (hash: e333783159536cc6)
+2026-06-03 12:07:28,603 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=507214ad-1e06-fe21-e063-6294a90a59cd (Attempt 1/3)
+2026-06-03 12:07:29,851 - main - INFO - Found 2 image URLs for SETID 507214ad-1e06-fe21-e063-6294a90a59cd
+2026-06-03 12:07:29,863 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+StrHny+24ct+EFF.jpg&setid=507214ad-1e06-fe21-e063-6294a90a59cd -> Resumed
+2026-06-03 12:07:30,951 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+StrHny+24ct+EFF.jpg&setid=507214ad-1e06-fe21-e063-6294a90a59cd&type=img -> Rejected: Duplicate (hash: b222e739b3e34326)
+2026-06-03 12:07:30,952 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=507284c3-cad9-d65c-e063-6394a90a58a8 (Attempt 1/3)
+2026-06-03 12:07:32,197 - main - INFO - Found 2 image URLs for SETID 507284c3-cad9-d65c-e063-6394a90a58a8
+2026-06-03 12:07:32,210 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+Berry+24ct+Eff.jpg&setid=507284c3-cad9-d65c-e063-6394a90a58a8 -> Resumed
+2026-06-03 12:07:33,306 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+Berry+24ct+Eff.jpg&setid=507284c3-cad9-d65c-e063-6394a90a58a8&type=img -> Rejected: Duplicate (hash: b262e738d3c36686)
+2026-06-03 12:07:33,307 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50738a43-7299-270c-e063-6294a90af2cc (Attempt 1/3)
+2026-06-03 12:07:34,569 - main - INFO - Found 2 image URLs for SETID 50738a43-7299-270c-e063-6294a90af2cc
+2026-06-03 12:07:34,587 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cong+Severe+DN+48ct+Eff.jpg&setid=50738a43-7299-270c-e063-6294a90af2cc -> Resumed
+2026-06-03 12:07:36,334 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cong+Severe+DN+48ct+Eff.jpg&setid=50738a43-7299-270c-e063-6294a90af2cc&type=img -> Rejected: Duplicate (hash: a9edcd31f01702ce)
+2026-06-03 12:07:36,335 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50762d7c-5efd-4f83-e063-6294a90abf7f (Attempt 1/3)
+2026-06-03 12:07:37,592 - main - INFO - Found 4 image URLs for SETID 50762d7c-5efd-4f83-e063-6294a90abf7f
+2026-06-03 12:07:37,605 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Carton%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f -> Resumed
+2026-06-03 12:07:37,608 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Booklet%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f&type=img -> Resumed
+2026-06-03 12:07:38,287 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Carton%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f&type=img -> Rejected: Duplicate (hash: ec66ac4d61a94d93)
+2026-06-03 12:07:38,719 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Booklet%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f -> Rejected: Duplicate (hash: ae1de2026e1d2fd1)
+2026-06-03 12:07:38,721 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5114aff8-adde-e610-e063-6294a90a77ea (Attempt 1/3)
+2026-06-03 12:07:39,970 - main - INFO - Found 2 image URLs for SETID 5114aff8-adde-e610-e063-6294a90a77ea
+2026-06-03 12:07:39,978 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Boo-Boo+Magic.jpg&setid=5114aff8-adde-e610-e063-6294a90a77ea -> Resumed
+2026-06-03 12:07:41,279 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Boo-Boo+Magic.jpg&setid=5114aff8-adde-e610-e063-6294a90a77ea&type=img -> Rejected: Duplicate (hash: a3d23474de81dc2d)
+2026-06-03 12:07:41,284 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51173330-d537-fb9c-e063-6394a90ae342 (Attempt 1/3)
+2026-06-03 12:07:42,532 - main - INFO - Found 2 image URLs for SETID 51173330-d537-fb9c-e063-6394a90ae342
+2026-06-03 12:07:42,542 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+LG+24ct.jpg&setid=51173330-d537-fb9c-e063-6394a90ae342&type=img -> Resumed
+2026-06-03 12:07:43,833 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+LG+24ct.jpg&setid=51173330-d537-fb9c-e063-6394a90ae342 -> Rejected: Duplicate (hash: eeb1ee54aa4c6a22)
+2026-06-03 12:07:43,834 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=512af63d-2f09-4baa-e063-6394a90a86bd (Attempt 1/3)
+2026-06-03 12:07:45,083 - main - INFO - Found 2 image URLs for SETID 512af63d-2f09-4baa-e063-6394a90a86bd
+2026-06-03 12:07:45,094 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+LG+24ct.jpg&setid=512af63d-2f09-4baa-e063-6394a90a86bd&type=img -> Resumed
+2026-06-03 12:07:46,172 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+LG+24ct.jpg&setid=512af63d-2f09-4baa-e063-6394a90a86bd -> Rejected: Duplicate (hash: eeb1ee52aa6a6a02)
+2026-06-03 12:07:46,174 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5150ff85-85bb-9cd9-e063-6294a90a1144 (Attempt 1/3)
+2026-06-03 12:07:47,427 - main - INFO - Found 2 image URLs for SETID 5150ff85-85bb-9cd9-e063-6294a90a1144
+2026-06-03 12:07:47,439 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+Night+LG+24ct.jpg&setid=5150ff85-85bb-9cd9-e063-6294a90a1144 -> Resumed
+2026-06-03 12:07:48,739 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+Night+LG+24ct.jpg&setid=5150ff85-85bb-9cd9-e063-6294a90a1144&type=img -> Rejected: Duplicate (hash: eeb1aa52ea4ac86a)
+2026-06-03 12:07:48,741 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51a4195b-8776-964c-e063-6294a90aa075 (Attempt 1/3)
+2026-06-03 12:07:50,007 - main - INFO - Found 2 image URLs for SETID 51a4195b-8776-964c-e063-6294a90aa075
+2026-06-03 12:07:50,027 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+DN+LG+24ct.jpg&setid=51a4195b-8776-964c-e063-6294a90aa075 -> Resumed
+2026-06-03 12:07:51,558 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+DN+LG+24ct.jpg&setid=51a4195b-8776-964c-e063-6294a90aa075&type=img -> Rejected: Duplicate (hash: b8c689e3d879d826)
+2026-06-03 12:07:51,559 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51a45db8-2bee-6fd0-e063-6394a90ab587 (Attempt 1/3)
+2026-06-03 12:07:52,810 - main - INFO - Found 2 image URLs for SETID 51a45db8-2bee-6fd0-e063-6394a90ab587
+2026-06-03 12:07:52,821 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+LG+24ct.jpg&setid=51a45db8-2bee-6fd0-e063-6394a90ab587 -> Resumed
+2026-06-03 12:07:53,903 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+LG+24ct.jpg&setid=51a45db8-2bee-6fd0-e063-6394a90ab587&type=img -> Rejected: Duplicate (hash: eab1aed2aa4aea11)
+2026-06-03 12:07:53,905 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51d59378-df72-e438-e063-6294a90a97f1 (Attempt 1/3)
+2026-06-03 12:07:55,146 - main - INFO - Found 2 image URLs for SETID 51d59378-df72-e438-e063-6294a90a97f1
+2026-06-03 12:07:55,203 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Aveeno_1.jpg&setid=51d59378-df72-e438-e063-6294a90a97f1&type=img -> Resumed
+2026-06-03 12:07:57,774 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Aveeno_1.jpg&setid=51d59378-df72-e438-e063-6294a90a97f1 -> Rejected: Duplicate (hash: 9fcca572f0855a07)
+2026-06-03 12:07:57,776 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51d843af-dad3-75fd-e063-6394a90a6b57 (Attempt 1/3)
+2026-06-03 12:07:59,021 - main - INFO - Found 4 image URLs for SETID 51d843af-dad3-75fd-e063-6394a90a6b57
+2026-06-03 12:07:59,029 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+1.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57 -> Resumed
+2026-06-03 12:07:59,031 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+2.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57&type=img -> Resumed
+2026-06-03 12:08:00,113 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+1.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57&type=img -> Rejected: Duplicate (hash: 9dc1ec70a1e1ece4)
+2026-06-03 12:08:00,342 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+2.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57 -> Rejected: Duplicate (hash: a295cecd85cfa134)
+2026-06-03 12:08:00,343 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51e03b5b-b05a-07c1-e063-6394a90ab201 (Attempt 1/3)
+2026-06-03 12:08:01,604 - main - INFO - Found 2 image URLs for SETID 51e03b5b-b05a-07c1-e063-6394a90ab201
+2026-06-03 12:08:01,622 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+DN+LG+24ct.jpg&setid=51e03b5b-b05a-07c1-e063-6394a90ab201&type=img -> Resumed
+2026-06-03 12:08:03,359 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+DN+LG+24ct.jpg&setid=51e03b5b-b05a-07c1-e063-6394a90ab201 -> Rejected: Duplicate (hash: b838c9b9d938d938)
+2026-06-03 12:08:03,360 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52275eda-9964-0f51-e063-6294a90ad88c (Attempt 1/3)
+2026-06-03 12:08:04,602 - main - INFO - Found 4 image URLs for SETID 52275eda-9964-0f51-e063-6294a90ad88c
+2026-06-03 12:08:04,610 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+1.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c -> Resumed
+2026-06-03 12:08:04,612 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+2.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c&type=img -> Resumed
+2026-06-03 12:08:05,695 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+1.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c&type=img -> Rejected: Duplicate (hash: 9de0e8e0ecb4e4b4)
+2026-06-03 12:08:06,122 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+2.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c -> Rejected: Duplicate (hash: a495dac8ad4ac93d)
+2026-06-03 12:08:06,124 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5228794d-0048-bb6d-e063-6394a90acdae (Attempt 1/3)
+2026-06-03 12:08:07,369 - main - INFO - Found 4 image URLs for SETID 5228794d-0048-bb6d-e063-6394a90acdae
+2026-06-03 12:08:07,377 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+1.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae -> Resumed
+2026-06-03 12:08:07,380 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+2.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae -> Resumed
+2026-06-03 12:08:08,252 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+1.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae&type=img -> Rejected: Duplicate (hash: 9f1ce8e0c781b8bc)
+2026-06-03 12:08:08,891 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+2.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae&type=img -> Rejected: Duplicate (hash: a785dacc8c4ee135)
+2026-06-03 12:08:08,893 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=522b6376-bae8-adb0-e063-6294a90a318d (Attempt 1/3)
+2026-06-03 12:08:10,140 - main - INFO - Found 4 image URLs for SETID 522b6376-bae8-adb0-e063-6294a90a318d
+2026-06-03 12:08:10,148 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+1.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d -> Resumed
+2026-06-03 12:08:10,151 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+2.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d -> Resumed
+2026-06-03 12:08:11,022 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+1.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d&type=img -> Rejected: Duplicate (hash: b971e087bce0ec34)
+2026-06-03 12:08:11,252 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+2.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d&type=img -> Rejected: Duplicate (hash: a7a4da8facca8934)
+2026-06-03 12:08:11,254 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5241b11a-72c8-5e67-e063-6394a90a4353 (Attempt 1/3)
+2026-06-03 12:08:12,540 - main - INFO - Found 2 image URLs for SETID 5241b11a-72c8-5e67-e063-6394a90a4353
+2026-06-03 12:08:12,553 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+Raspberry+Fast+Chewable+Tablets+Raspberry+24ct.jpg&setid=5241b11a-72c8-5e67-e063-6394a90a4353&type=img -> Resumed
+2026-06-03 12:08:13,645 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+Raspberry+Fast+Chewable+Tablets+Raspberry+24ct.jpg&setid=5241b11a-72c8-5e67-e063-6394a90a4353 -> Rejected: Duplicate (hash: e7658e4ab36ac0b4)
+2026-06-03 12:08:13,647 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=525467fb-510d-0b4b-e063-6294a90acd36 (Attempt 1/3)
+2026-06-03 12:08:14,896 - main - INFO - Found 2 image URLs for SETID 525467fb-510d-0b4b-e063-6294a90acd36
+2026-06-03 12:08:14,961 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Tylenol-1.jpg&setid=525467fb-510d-0b4b-e063-6294a90acd36 -> Resumed
+2026-06-03 12:08:17,130 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Tylenol-1.jpg&setid=525467fb-510d-0b4b-e063-6294a90acd36&type=img -> Rejected: Duplicate (hash: ee4a621b331f954a)
+2026-06-03 12:08:17,132 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5258cef2-0e5c-4ccd-e063-6394a90a9e5c (Attempt 1/3)
+2026-06-03 12:08:18,376 - main - INFO - Found 2 image URLs for SETID 5258cef2-0e5c-4ccd-e063-6394a90a9e5c
+2026-06-03 12:08:18,413 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=807113-001-revA_FDA.jpg&setid=5258cef2-0e5c-4ccd-e063-6394a90a9e5c&type=img -> Resumed
+2026-06-03 12:08:19,291 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=807113-001-revA_FDA.jpg&setid=5258cef2-0e5c-4ccd-e063-6394a90a9e5c -> Rejected: Duplicate (hash: c211d24b8deaadba)
+2026-06-03 12:08:19,293 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5258ea3f-87f1-7f86-e063-6394a90ab82f (Attempt 1/3)
+2026-06-03 12:08:20,584 - main - INFO - Found 2 image URLs for SETID 5258ea3f-87f1-7f86-e063-6394a90ab82f
+2026-06-03 12:08:20,608 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+DN+LG+24ct.jpg&setid=5258ea3f-87f1-7f86-e063-6394a90ab82f -> Resumed
+2026-06-03 12:08:22,134 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+DN+LG+24ct.jpg&setid=5258ea3f-87f1-7f86-e063-6394a90ab82f&type=img -> Rejected: Duplicate (hash: b8ce98a39839f83c)
+2026-06-03 12:08:22,136 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5322934b-666b-4cef-e063-6394a90a3362 (Attempt 1/3)
+2026-06-03 12:08:23,386 - main - INFO - Found 2 image URLs for SETID 5322934b-666b-4cef-e063-6394a90a3362
+2026-06-03 12:08:23,399 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Calc+Phos.jpg&setid=5322934b-666b-4cef-e063-6394a90a3362 -> Resumed
+2026-06-03 12:08:24,055 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Calc+Phos.jpg&setid=5322934b-666b-4cef-e063-6394a90a3362&type=img -> Rejected: Duplicate (hash: a7734e0ed0a791d1)
+2026-06-03 12:08:24,056 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=532302ff-e18c-de15-e063-6394a90a2b1c (Attempt 1/3)
+2026-06-03 12:08:25,295 - main - INFO - Found 2 image URLs for SETID 532302ff-e18c-de15-e063-6394a90a2b1c
+2026-06-03 12:08:25,306 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=BM+115+-+Label.jpg&setid=532302ff-e18c-de15-e063-6394a90a2b1c&type=img -> Resumed
+2026-06-03 12:08:25,960 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=BM+115+-+Label.jpg&setid=532302ff-e18c-de15-e063-6394a90a2b1c -> Rejected: Duplicate (hash: eb3e5c6b9493c091)
+2026-06-03 12:08:25,962 - main - INFO - Pipeline finished.
+2026-06-03 12:11:36,748 - main - INFO - Starting continuous scraping pipeline. Target images: 150
+2026-06-03 12:11:36,774 - main - INFO - Resuming... Already have 100 downloaded images.
+2026-06-03 12:11:36,779 - main - INFO - Fetching bulk SETIDs from API page 1...
+2026-06-03 12:11:36,779 - crawler - INFO - Fetching API page 1 (Attempt 1/3)
+2026-06-03 12:11:42,739 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=328148a1-f32e-47a8-99ec-1614c291a450 (Attempt 1/3)
+2026-06-03 12:11:44,208 - main - INFO - Found 6 image URLs for SETID 328148a1-f32e-47a8-99ec-1614c291a450
+2026-06-03 12:11:45,287 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-04.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x116)
+2026-06-03 12:11:45,288 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-06.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (192x115)
+2026-06-03 12:11:45,289 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-05.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x117)
+2026-06-03 12:11:45,289 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-03.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Too small (191x119)
+2026-06-03 12:11:48,099 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-07.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450&type=img -> Resumed
+2026-06-03 12:11:48,100 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=attero-07.jpg&setid=328148a1-f32e-47a8-99ec-1614c291a450 -> Rejected: Duplicate (hash: ac93972cb146ada9)
+2026-06-03 12:11:48,103 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3849f5ce-d077-4318-935d-294be6948142 (Attempt 1/3)
+2026-06-03 12:11:49,587 - main - INFO - Found 2 image URLs for SETID 3849f5ce-d077-4318-935d-294be6948142
+2026-06-03 12:11:49,596 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72485519-2.jpg&setid=3849f5ce-d077-4318-935d-294be6948142&type=img -> Resumed
+2026-06-03 12:11:50,467 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72485519-2.jpg&setid=3849f5ce-d077-4318-935d-294be6948142 -> Rejected: Duplicate (hash: 9f4cb380d04e6dad)
+2026-06-03 12:11:50,469 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4250e5bf-dbc7-7b2d-e063-6294a90ab741 (Attempt 1/3)
+2026-06-03 12:11:51,709 - main - INFO - Found 2 image URLs for SETID 4250e5bf-dbc7-7b2d-e063-6294a90ab741
+2026-06-03 12:11:51,717 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Screenshot+2025-10-29+164048.jpg&setid=4250e5bf-dbc7-7b2d-e063-6294a90ab741&type=img -> Resumed
+2026-06-03 12:11:52,399 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Screenshot+2025-10-29+164048.jpg&setid=4250e5bf-dbc7-7b2d-e063-6294a90ab741 -> Rejected: Duplicate (hash: f3e156f329920d1a)
+2026-06-03 12:11:52,401 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4779288a-9850-8490-e063-6394a90abe51 (Attempt 1/3)
+2026-06-03 12:11:53,665 - main - INFO - Found 2 image URLs for SETID 4779288a-9850-8490-e063-6394a90abe51
+2026-06-03 12:11:53,901 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=911R+tgt.jpg&setid=4779288a-9850-8490-e063-6394a90abe51&type=img -> Rejected: Too small (279x148)
+2026-06-03 12:11:54,111 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=911R+tgt.jpg&setid=4779288a-9850-8490-e063-6394a90abe51 -> Rejected: Too small (279x148)
+2026-06-03 12:11:54,114 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=47a218a0-6395-36bd-e063-6394a90a265a (Attempt 1/3)
+2026-06-03 12:11:55,370 - main - INFO - Found 2 image URLs for SETID 47a218a0-6395-36bd-e063-6394a90a265a
+2026-06-03 12:11:55,373 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=678R+PDP.jpg&setid=47a218a0-6395-36bd-e063-6394a90a265a -> Resumed
+2026-06-03 12:11:55,605 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=678R+PDP.jpg&setid=47a218a0-6395-36bd-e063-6394a90a265a&type=img -> Rejected: Duplicate (hash: ae1ad0cf91a587d2)
+2026-06-03 12:11:55,607 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=484b0833-9f8a-f155-e063-6294a90a1869 (Attempt 1/3)
+2026-06-03 12:11:56,852 - main - INFO - Found 4 image URLs for SETID 484b0833-9f8a-f155-e063-6294a90a1869
+2026-06-03 12:11:56,929 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NCOOL-33_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869&type=img -> Resumed
+2026-06-03 12:11:56,929 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NOLGE-76_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869&type=img -> Resumed
+2026-06-03 12:11:57,551 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NCOOL-33_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869 -> Rejected: Duplicate (hash: c799c953b2b34c46)
+2026-06-03 12:11:57,577 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=CVS-NOLGE-76_R1.jpg&setid=484b0833-9f8a-f155-e063-6294a90a1869 -> Rejected: Duplicate (hash: b9cc9d3be3c2a301)
+2026-06-03 12:11:57,581 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49f1f415-8017-0974-e063-6294a90a8918 (Attempt 1/3)
+2026-06-03 12:11:58,829 - main - INFO - Found 4 image URLs for SETID 49f1f415-8017-0974-e063-6294a90a8918
+2026-06-03 12:11:58,835 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+front+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918&type=img -> Resumed
+2026-06-03 12:11:58,836 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+back+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918 -> Resumed
+2026-06-03 12:11:59,714 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+back+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918&type=img -> Rejected: Duplicate (hash: a4b541b65b4b39c6)
+2026-06-03 12:12:00,133 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-001+front+label.jpg&setid=49f1f415-8017-0974-e063-6294a90a8918 -> Rejected: Duplicate (hash: bc9bcbb8cac6c260)
+2026-06-03 12:12:00,135 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a938e15-a996-8538-e063-6294a90ad4ee (Attempt 1/3)
+2026-06-03 12:12:01,385 - main - INFO - Found 4 image URLs for SETID 4a938e15-a996-8538-e063-6294a90ad4ee
+2026-06-03 12:12:01,392 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+front+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee -> Resumed
+2026-06-03 12:12:01,393 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+back+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee -> Resumed
+2026-06-03 12:12:02,048 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+front+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee&type=img -> Rejected: Duplicate (hash: eeae3e1b1394a4a4)
+2026-06-03 12:12:02,065 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=72854-268+back+label.jpg&setid=4a938e15-a996-8538-e063-6294a90ad4ee&type=img -> Rejected: Duplicate (hash: ae6cd91ca593b5c0)
+2026-06-03 12:12:02,067 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ab83b34-9376-d169-e063-6394a90a18cd (Attempt 1/3)
+2026-06-03 12:12:03,312 - main - INFO - Found 2 image URLs for SETID 4ab83b34-9376-d169-e063-6394a90a18cd
+2026-06-03 12:12:03,318 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=wotnot100.jpg&setid=4ab83b34-9376-d169-e063-6394a90a18cd -> Resumed
+2026-06-03 12:12:03,990 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=wotnot100.jpg&setid=4ab83b34-9376-d169-e063-6394a90a18cd&type=img -> Rejected: Duplicate (hash: bbd8c227a79878c8)
+2026-06-03 12:12:03,991 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c6094b7-c1ef-26a3-e063-6394a90af4cc (Attempt 1/3)
+2026-06-03 12:12:05,243 - main - INFO - Found 2 image URLs for SETID 4c6094b7-c1ef-26a3-e063-6394a90af4cc
+2026-06-03 12:12:05,303 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=JF+new+label+.jpg&setid=4c6094b7-c1ef-26a3-e063-6394a90af4cc -> Resumed
+2026-06-03 12:12:07,288 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=JF+new+label+.jpg&setid=4c6094b7-c1ef-26a3-e063-6394a90af4cc&type=img -> Rejected: Duplicate (hash: b8c7c7380dc738c3)
+2026-06-03 12:12:07,290 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f0c1b8e-3fb1-ccf2-e063-6394a90acd15 (Attempt 1/3)
+2026-06-03 12:12:08,561 - main - INFO - Found 2 image URLs for SETID 4f0c1b8e-3fb1-ccf2-e063-6394a90acd15
+2026-06-03 12:12:08,577 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=ASC+Cold+and+Congestion+Fast+Dissolve+24+ct.jpg&setid=4f0c1b8e-3fb1-ccf2-e063-6394a90acd15 -> Resumed
+2026-06-03 12:12:09,674 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=ASC+Cold+and+Congestion+Fast+Dissolve+24+ct.jpg&setid=4f0c1b8e-3fb1-ccf2-e063-6394a90acd15&type=img -> Rejected: Duplicate (hash: b838f93adce031b1)
+2026-06-03 12:12:09,676 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50228b3c-d54a-485d-e063-6394a90a4403 (Attempt 1/3)
+2026-06-03 12:12:10,923 - main - INFO - Found 2 image URLs for SETID 50228b3c-d54a-485d-e063-6394a90a4403
+2026-06-03 12:12:10,939 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+Citrus+24ct+Eff.jpg&setid=50228b3c-d54a-485d-e063-6394a90a4403 -> Resumed
+2026-06-03 12:12:12,250 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+Citrus+24ct+Eff.jpg&setid=50228b3c-d54a-485d-e063-6394a90a4403&type=img -> Rejected: Duplicate (hash: b839d93ed8e031e1)
+2026-06-03 12:12:12,252 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50230cad-3d04-8882-e063-6294a90acf3c (Attempt 1/3)
+2026-06-03 12:12:13,495 - main - INFO - Found 2 image URLs for SETID 50230cad-3d04-8882-e063-6294a90acf3c
+2026-06-03 12:12:13,508 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+MS+Orange+24ct+Eff.jpg&setid=50230cad-3d04-8882-e063-6294a90acf3c&type=img -> Resumed
+2026-06-03 12:12:14,818 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+MS+Orange+24ct+Eff.jpg&setid=50230cad-3d04-8882-e063-6294a90acf3c -> Rejected: Duplicate (hash: b262e738d3c37286)
+2026-06-03 12:12:14,819 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5025a333-6378-bf59-e063-6394a90af4f0 (Attempt 1/3)
+2026-06-03 12:12:16,061 - main - INFO - Found 2 image URLs for SETID 5025a333-6378-bf59-e063-6394a90af4f0
+2026-06-03 12:12:16,072 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+Fast+Chewable+Tablets+Orange+24ct.jpg&setid=5025a333-6378-bf59-e063-6394a90af4f0 -> Resumed
+2026-06-03 12:12:17,389 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+Fast+Chewable+Tablets+Orange+24ct.jpg&setid=5025a333-6378-bf59-e063-6394a90af4f0&type=img -> Rejected: Duplicate (hash: e76c8d6ae38cc464)
+2026-06-03 12:12:17,391 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5026611c-93e7-8f90-e063-6394a90a7baa (Attempt 1/3)
+2026-06-03 12:12:18,635 - main - INFO - Found 2 image URLs for SETID 5026611c-93e7-8f90-e063-6394a90a7baa
+2026-06-03 12:12:18,646 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Allergy+MS+LG+24ct.jpg&setid=5026611c-93e7-8f90-e063-6394a90a7baa -> Resumed
+2026-06-03 12:12:19,750 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Allergy+MS+LG+24ct.jpg&setid=5026611c-93e7-8f90-e063-6394a90a7baa&type=img -> Rejected: Duplicate (hash: ee29ae92ae4aea84)
+2026-06-03 12:12:19,752 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50364a42-3333-51fe-e063-6394a90ab71e (Attempt 1/3)
+2026-06-03 12:12:20,997 - main - INFO - Found 2 image URLs for SETID 50364a42-3333-51fe-e063-6394a90ab71e
+2026-06-03 12:12:21,008 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+Original+Flavor+24ct+Eff.jpg&setid=50364a42-3333-51fe-e063-6394a90ab71e&type=img -> Resumed
+2026-06-03 12:12:22,113 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Headache+Original+Flavor+24ct+Eff.jpg&setid=50364a42-3333-51fe-e063-6394a90ab71e -> Rejected: Duplicate (hash: b266c738d3c36686)
+2026-06-03 12:12:22,114 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5036dc50-e95b-ea8d-e063-6394a90a6cfe (Attempt 1/3)
+2026-06-03 12:12:23,358 - main - INFO - Found 2 image URLs for SETID 5036dc50-e95b-ea8d-e063-6394a90a6cfe
+2026-06-03 12:12:23,370 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+StrwHny+16ct+Eff.jpg&setid=5036dc50-e95b-ea8d-e063-6394a90a6cfe&type=img -> Resumed
+2026-06-03 12:12:24,480 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Severe+StrwHny+16ct+Eff.jpg&setid=5036dc50-e95b-ea8d-e063-6394a90a6cfe -> Rejected: Duplicate (hash: b266e330b3e347a4)
+2026-06-03 12:12:24,482 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5054a055-50d0-f12a-e063-6294a90ad78e (Attempt 1/3)
+2026-06-03 12:12:25,724 - main - INFO - Found 3 image URLs for SETID 5054a055-50d0-f12a-e063-6294a90ad78e
+2026-06-03 12:12:25,730 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Inactive+Ingredient.jpg&setid=5054a055-50d0-f12a-e063-6294a90ad78e -> Resumed
+2026-06-03 12:12:25,743 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Principal+Display+Panel.jpg&setid=5054a055-50d0-f12a-e063-6294a90ad78e -> Resumed
+2026-06-03 12:12:26,196 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Principal+Display+Panel.jpg&setid=5054a055-50d0-f12a-e063-6294a90ad78e&type=img -> Rejected: Duplicate (hash: b332cccd3432cbcc)
+2026-06-03 12:12:26,198 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=507150a0-9c20-4a2e-e063-6394a90ab9c7 (Attempt 1/3)
+2026-06-03 12:12:27,444 - main - INFO - Found 4 image URLs for SETID 507150a0-9c20-4a2e-e063-6394a90ab9c7
+2026-06-03 12:12:27,450 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+Tube+P12714.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7&type=img -> Resumed
+2026-06-03 12:12:27,450 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+carton+P12715.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7&type=img -> Resumed
+2026-06-03 12:12:28,111 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+Tube+P12714.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7 -> Rejected: Duplicate (hash: e6393339d9c0e0e3)
+2026-06-03 12:12:28,739 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=1oz+carton+P12715.00.jpg&setid=507150a0-9c20-4a2e-e063-6394a90ab9c7 -> Rejected: Duplicate (hash: e333783159536cc6)
+2026-06-03 12:12:28,742 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=507214ad-1e06-fe21-e063-6294a90a59cd (Attempt 1/3)
+2026-06-03 12:12:29,992 - main - INFO - Found 2 image URLs for SETID 507214ad-1e06-fe21-e063-6294a90a59cd
+2026-06-03 12:12:30,004 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+StrHny+24ct+EFF.jpg&setid=507214ad-1e06-fe21-e063-6294a90a59cd -> Resumed
+2026-06-03 12:12:31,540 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+StrHny+24ct+EFF.jpg&setid=507214ad-1e06-fe21-e063-6294a90a59cd&type=img -> Rejected: Duplicate (hash: b222e739b3e34326)
+2026-06-03 12:12:31,542 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=507284c3-cad9-d65c-e063-6394a90a58a8 (Attempt 1/3)
+2026-06-03 12:12:32,787 - main - INFO - Found 2 image URLs for SETID 507284c3-cad9-d65c-e063-6394a90a58a8
+2026-06-03 12:12:32,799 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+Berry+24ct+Eff.jpg&setid=507284c3-cad9-d65c-e063-6394a90a58a8 -> Resumed
+2026-06-03 12:12:34,101 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+Berry+24ct+Eff.jpg&setid=507284c3-cad9-d65c-e063-6394a90a58a8&type=img -> Rejected: Duplicate (hash: b262e738d3c36686)
+2026-06-03 12:12:34,103 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50738a43-7299-270c-e063-6294a90af2cc (Attempt 1/3)
+2026-06-03 12:12:35,365 - main - INFO - Found 2 image URLs for SETID 50738a43-7299-270c-e063-6294a90af2cc
+2026-06-03 12:12:35,383 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cong+Severe+DN+48ct+Eff.jpg&setid=50738a43-7299-270c-e063-6294a90af2cc -> Resumed
+2026-06-03 12:12:37,370 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cong+Severe+DN+48ct+Eff.jpg&setid=50738a43-7299-270c-e063-6294a90af2cc&type=img -> Rejected: Duplicate (hash: a9edcd31f01702ce)
+2026-06-03 12:12:37,372 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50762d7c-5efd-4f83-e063-6294a90abf7f (Attempt 1/3)
+2026-06-03 12:12:38,627 - main - INFO - Found 4 image URLs for SETID 50762d7c-5efd-4f83-e063-6294a90abf7f
+2026-06-03 12:12:38,638 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Carton%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f -> Resumed
+2026-06-03 12:12:38,640 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Booklet%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f&type=img -> Resumed
+2026-06-03 12:12:39,305 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Carton%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f&type=img -> Rejected: Duplicate (hash: ec66ac4d61a94d93)
+2026-06-03 12:12:39,960 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+%28Booklet%29+ASC+Cold+Flu+Severe+DN+24ct+Eff.jpg&setid=50762d7c-5efd-4f83-e063-6294a90abf7f -> Rejected: Duplicate (hash: ae1de2026e1d2fd1)
+2026-06-03 12:12:39,961 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5114aff8-adde-e610-e063-6294a90a77ea (Attempt 1/3)
+2026-06-03 12:12:41,202 - main - INFO - Found 2 image URLs for SETID 5114aff8-adde-e610-e063-6294a90a77ea
+2026-06-03 12:12:41,210 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Boo-Boo+Magic.jpg&setid=5114aff8-adde-e610-e063-6294a90a77ea -> Resumed
+2026-06-03 12:12:42,085 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Boo-Boo+Magic.jpg&setid=5114aff8-adde-e610-e063-6294a90a77ea&type=img -> Rejected: Duplicate (hash: a3d23474de81dc2d)
+2026-06-03 12:12:42,087 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51173330-d537-fb9c-e063-6394a90ae342 (Attempt 1/3)
+2026-06-03 12:12:43,338 - main - INFO - Found 2 image URLs for SETID 51173330-d537-fb9c-e063-6394a90ae342
+2026-06-03 12:12:43,348 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+LG+24ct.jpg&setid=51173330-d537-fb9c-e063-6394a90ae342&type=img -> Resumed
+2026-06-03 12:12:44,280 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+MS+LG+24ct.jpg&setid=51173330-d537-fb9c-e063-6394a90ae342 -> Rejected: Duplicate (hash: eeb1ee54aa4c6a22)
+2026-06-03 12:12:44,282 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=512af63d-2f09-4baa-e063-6394a90a86bd (Attempt 1/3)
+2026-06-03 12:12:45,556 - main - INFO - Found 2 image URLs for SETID 512af63d-2f09-4baa-e063-6394a90a86bd
+2026-06-03 12:12:45,565 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+LG+24ct.jpg&setid=512af63d-2f09-4baa-e063-6394a90a86bd&type=img -> Resumed
+2026-06-03 12:12:46,462 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+LG+24ct.jpg&setid=512af63d-2f09-4baa-e063-6394a90a86bd -> Rejected: Duplicate (hash: eeb1ee52aa6a6a02)
+2026-06-03 12:12:46,463 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5150ff85-85bb-9cd9-e063-6294a90a1144 (Attempt 1/3)
+2026-06-03 12:12:47,708 - main - INFO - Found 2 image URLs for SETID 5150ff85-85bb-9cd9-e063-6294a90a1144
+2026-06-03 12:12:47,720 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+Night+LG+24ct.jpg&setid=5150ff85-85bb-9cd9-e063-6294a90a1144 -> Resumed
+2026-06-03 12:12:49,058 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+Night+LG+24ct.jpg&setid=5150ff85-85bb-9cd9-e063-6294a90a1144&type=img -> Rejected: Duplicate (hash: eeb1aa52ea4ac86a)
+2026-06-03 12:12:49,061 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51a4195b-8776-964c-e063-6294a90aa075 (Attempt 1/3)
+2026-06-03 12:12:50,322 - main - INFO - Found 2 image URLs for SETID 51a4195b-8776-964c-e063-6294a90aa075
+2026-06-03 12:12:50,341 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+DN+LG+24ct.jpg&setid=51a4195b-8776-964c-e063-6294a90aa075 -> Resumed
+2026-06-03 12:12:52,085 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+DN+LG+24ct.jpg&setid=51a4195b-8776-964c-e063-6294a90aa075&type=img -> Rejected: Duplicate (hash: b8c689e3d879d826)
+2026-06-03 12:12:52,087 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51a45db8-2bee-6fd0-e063-6394a90ab587 (Attempt 1/3)
+2026-06-03 12:12:53,338 - main - INFO - Found 2 image URLs for SETID 51a45db8-2bee-6fd0-e063-6394a90ab587
+2026-06-03 12:12:53,348 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+LG+24ct.jpg&setid=51a45db8-2bee-6fd0-e063-6394a90ab587 -> Resumed
+2026-06-03 12:12:54,459 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Mucus+Cong+MS+LG+24ct.jpg&setid=51a45db8-2bee-6fd0-e063-6394a90ab587&type=img -> Rejected: Duplicate (hash: eab1aed2aa4aea11)
+2026-06-03 12:12:54,461 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51d59378-df72-e438-e063-6294a90a97f1 (Attempt 1/3)
+2026-06-03 12:12:55,707 - main - INFO - Found 2 image URLs for SETID 51d59378-df72-e438-e063-6294a90a97f1
+2026-06-03 12:12:55,766 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Aveeno_1.jpg&setid=51d59378-df72-e438-e063-6294a90a97f1&type=img -> Resumed
+2026-06-03 12:12:58,381 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Aveeno_1.jpg&setid=51d59378-df72-e438-e063-6294a90a97f1 -> Rejected: Duplicate (hash: 9fcca572f0855a07)
+2026-06-03 12:12:58,382 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51d843af-dad3-75fd-e063-6394a90a6b57 (Attempt 1/3)
+2026-06-03 12:12:59,624 - main - INFO - Found 4 image URLs for SETID 51d843af-dad3-75fd-e063-6394a90a6b57
+2026-06-03 12:12:59,632 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+1.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57 -> Resumed
+2026-06-03 12:12:59,634 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+2.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57&type=img -> Resumed
+2026-06-03 12:13:00,733 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+1.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57&type=img -> Rejected: Duplicate (hash: 9dc1ec70a1e1ece4)
+2026-06-03 12:13:01,152 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Berry+Bougie+Label+2.jpg&setid=51d843af-dad3-75fd-e063-6394a90a6b57 -> Rejected: Duplicate (hash: a295cecd85cfa134)
+2026-06-03 12:13:01,153 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51e03b5b-b05a-07c1-e063-6394a90ab201 (Attempt 1/3)
+2026-06-03 12:13:02,417 - main - INFO - Found 2 image URLs for SETID 51e03b5b-b05a-07c1-e063-6394a90ab201
+2026-06-03 12:13:02,436 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+DN+LG+24ct.jpg&setid=51e03b5b-b05a-07c1-e063-6394a90ab201&type=img -> Resumed
+2026-06-03 12:13:04,184 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Flu+Cong+Severe+DN+LG+24ct.jpg&setid=51e03b5b-b05a-07c1-e063-6394a90ab201 -> Rejected: Duplicate (hash: b838c9b9d938d938)
+2026-06-03 12:13:04,186 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52275eda-9964-0f51-e063-6294a90ad88c (Attempt 1/3)
+2026-06-03 12:13:05,429 - main - INFO - Found 4 image URLs for SETID 52275eda-9964-0f51-e063-6294a90ad88c
+2026-06-03 12:13:05,437 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+1.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c -> Resumed
+2026-06-03 12:13:05,440 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+2.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c&type=img -> Resumed
+2026-06-03 12:13:06,564 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+1.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c&type=img -> Rejected: Duplicate (hash: 9de0e8e0ecb4e4b4)
+2026-06-03 12:13:07,016 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Rio+Glow+Label+2.jpg&setid=52275eda-9964-0f51-e063-6294a90ad88c -> Rejected: Duplicate (hash: a495dac8ad4ac93d)
+2026-06-03 12:13:07,023 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5228794d-0048-bb6d-e063-6394a90acdae (Attempt 1/3)
+2026-06-03 12:13:08,338 - main - INFO - Found 4 image URLs for SETID 5228794d-0048-bb6d-e063-6394a90acdae
+2026-06-03 12:13:08,363 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+1.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae -> Resumed
+2026-06-03 12:13:08,376 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+2.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae -> Resumed
+2026-06-03 12:13:09,254 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+1.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae&type=img -> Rejected: Duplicate (hash: 9f1ce8e0c781b8bc)
+2026-06-03 12:13:09,910 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Vanilla+Salt+Air+Label+2.jpg&setid=5228794d-0048-bb6d-e063-6394a90acdae&type=img -> Rejected: Duplicate (hash: a785dacc8c4ee135)
+2026-06-03 12:13:09,919 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=522b6376-bae8-adb0-e063-6294a90a318d (Attempt 1/3)
+2026-06-03 12:13:11,230 - main - INFO - Found 4 image URLs for SETID 522b6376-bae8-adb0-e063-6294a90a318d
+2026-06-03 12:13:11,265 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+1.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d -> Resumed
+2026-06-03 12:13:11,275 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+2.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d -> Resumed
+2026-06-03 12:13:12,154 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+1.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d&type=img -> Rejected: Duplicate (hash: b971e087bce0ec34)
+2026-06-03 12:13:12,433 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Watermelon+Whirl+Label+2.jpg&setid=522b6376-bae8-adb0-e063-6294a90a318d&type=img -> Rejected: Duplicate (hash: a7a4da8facca8934)
+2026-06-03 12:13:12,443 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5241b11a-72c8-5e67-e063-6394a90a4353 (Attempt 1/3)
+2026-06-03 12:13:13,692 - main - INFO - Found 2 image URLs for SETID 5241b11a-72c8-5e67-e063-6394a90a4353
+2026-06-03 12:13:13,702 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+Raspberry+Fast+Chewable+Tablets+Raspberry+24ct.jpg&setid=5241b11a-72c8-5e67-e063-6394a90a4353&type=img -> Resumed
+2026-06-03 12:13:14,815 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Cough+Raspberry+Fast+Chewable+Tablets+Raspberry+24ct.jpg&setid=5241b11a-72c8-5e67-e063-6394a90a4353 -> Rejected: Duplicate (hash: e7658e4ab36ac0b4)
+2026-06-03 12:13:14,817 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=525467fb-510d-0b4b-e063-6294a90acd36 (Attempt 1/3)
+2026-06-03 12:13:16,065 - main - INFO - Found 2 image URLs for SETID 525467fb-510d-0b4b-e063-6294a90acd36
+2026-06-03 12:13:16,139 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Tylenol-1.jpg&setid=525467fb-510d-0b4b-e063-6294a90acd36 -> Resumed
+2026-06-03 12:13:18,513 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Tylenol-1.jpg&setid=525467fb-510d-0b4b-e063-6294a90acd36&type=img -> Rejected: Duplicate (hash: ee4a621b331f954a)
+2026-06-03 12:13:18,518 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5258cef2-0e5c-4ccd-e063-6394a90a9e5c (Attempt 1/3)
+2026-06-03 12:13:19,899 - main - INFO - Found 2 image URLs for SETID 5258cef2-0e5c-4ccd-e063-6394a90a9e5c
+2026-06-03 12:13:20,034 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=807113-001-revA_FDA.jpg&setid=5258cef2-0e5c-4ccd-e063-6394a90a9e5c&type=img -> Resumed
+2026-06-03 12:13:20,962 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=807113-001-revA_FDA.jpg&setid=5258cef2-0e5c-4ccd-e063-6394a90a9e5c -> Rejected: Duplicate (hash: c211d24b8deaadba)
+2026-06-03 12:13:20,968 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5258ea3f-87f1-7f86-e063-6394a90ab82f (Attempt 1/3)
+2026-06-03 12:13:22,230 - main - INFO - Found 2 image URLs for SETID 5258ea3f-87f1-7f86-e063-6394a90ab82f
+2026-06-03 12:13:22,248 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+DN+LG+24ct.jpg&setid=5258ea3f-87f1-7f86-e063-6394a90ab82f -> Resumed
+2026-06-03 12:13:23,792 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Final+Artwork+ASC+Cold+Sinus+MS+DN+LG+24ct.jpg&setid=5258ea3f-87f1-7f86-e063-6394a90ab82f&type=img -> Rejected: Duplicate (hash: b8ce98a39839f83c)
+2026-06-03 12:13:23,794 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5322934b-666b-4cef-e063-6394a90a3362 (Attempt 1/3)
+2026-06-03 12:13:25,035 - main - INFO - Found 2 image URLs for SETID 5322934b-666b-4cef-e063-6394a90a3362
+2026-06-03 12:13:25,046 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Calc+Phos.jpg&setid=5322934b-666b-4cef-e063-6394a90a3362 -> Resumed
+2026-06-03 12:13:25,711 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=Calc+Phos.jpg&setid=5322934b-666b-4cef-e063-6394a90a3362&type=img -> Rejected: Duplicate (hash: a7734e0ed0a791d1)
+2026-06-03 12:13:25,712 - crawler - INFO - Fetching URL: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=532302ff-e18c-de15-e063-6394a90a2b1c (Attempt 1/3)
+2026-06-03 12:13:26,958 - main - INFO - Found 2 image URLs for SETID 532302ff-e18c-de15-e063-6394a90a2b1c
+2026-06-03 12:13:26,968 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=BM+115+-+Label.jpg&setid=532302ff-e18c-de15-e063-6394a90a2b1c&type=img -> Resumed
+2026-06-03 12:13:27,631 - downloader - INFO - https://dailymed.nlm.nih.gov/dailymed/image.cfm?name=BM+115+-+Label.jpg&setid=532302ff-e18c-de15-e063-6394a90a2b1c -> Rejected: Duplicate (hash: eb3e5c6b9493c091)
+2026-06-03 12:13:27,633 - main - INFO - Pipeline finished.
