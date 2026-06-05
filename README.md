@@ -682,8 +682,6 @@ pip install torch torchvision
 | `CLOSE_KERNEL_SIZE` | `(5, 5)` | Larger → bridges wider text-removal gaps |
 | `MIN_COMPONENT_AREA` | `100 px` | Raise → more aggressive noise removal |
 
----
-
 <div align="center">
 
 Built during a Computer Vision internship at **Silvertouch Technologies**  
