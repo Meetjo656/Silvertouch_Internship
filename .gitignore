@@ -1,3 +1,26 @@
+# Python Environments & Cache
 .venv/
-task2/weights/
+__pycache__/
+*.pyc
+
+# PyTorch & YOLO Models
+*.pt
+*.pth
+
+# YOLO Cache
+*.cache
+
+# Task 2
 task2_neural_network/data
+
+# Task 3 Datasets
+task3/yolo_dataset_output
+task3/yolo_detection_dataset
+task3/Scrapped/output
+task3/train
+task3/test
+task3/valid
+
+# Task 3 Training Outputs
+task3/trained_models/structural_yolov8n_512_feasibility/weights
+task3/runs/

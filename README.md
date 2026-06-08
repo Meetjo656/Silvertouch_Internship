@@ -1,6 +1,6 @@
-# 🧪 Silvertouch Internship — Computer Vision Research Pipeline
+# 🧪 Silvertouch Internship — Computer Vision & Machine Learning Pipeline
 
-> **Pharmaceutical packaging analysis** using perceptual color science, dense segmentation, and SAM-powered structural extraction.
+> **Pharmaceutical packaging analysis** using perceptual color science, geometry-first structural layout reconstruction, deep segmentation models, and custom data scraping.
 
 ---
 
@@ -16,18 +16,19 @@
   - [Module Breakdown](#task-1-module-breakdown)
   - [Configuration](#task-1-configuration)
   - [Running Task 1](#running-task-1)
-- [Task 2 — Pharmaceutical Carton Segmentation](#-task-2--pharmaceutical-carton-segmentation)
-  - [Dual-Pipeline Architecture](#dual-pipeline-architecture)
-  - [Structural Pipeline](#structural-pipeline)
-  - [SAM Pipeline](#sam-pipeline)
-  - [Text-Removal Branch](#text-removal-branch)
+- [Task 2 — Structural Packaging Layout Reconstruction](#-task-2--structural-packaging-layout-reconstruction)
+  - [Architecture & Pipelines](#task-2-architecture--pipelines)
+  - [Geometric Feature Extraction](#geometric-feature-extraction)
+  - [Model Classifier](#model-classifier)
   - [Module Breakdown](#task-2-module-breakdown)
-  - [Configuration](#task-2-configuration)
   - [Running Task 2](#running-task-2)
+- [Task 3 — DailyMed Scraper & Dataset Curation](#-task-3--dailymed-scraper--dataset-curation)
+  - [DailyMed Artwork Scraper](#dailymed-artwork-scraper)
+  - [Roboflow Dataset Curation](#roboflow-dataset-curation)
+  - [Module Breakdown](#task-3-module-breakdown)
+  - [Running Task 3](#running-task-3)
+- [Task 4 — Future Workspace](#-task-4--future-workspace)
 - [Setup & Installation](#-setup--installation)
-- [Environment Variables](#-environment-variables)
-- [Output Artifacts](#-output-artifacts)
-- [Thresholds & Tuning](#-thresholds--tuning)
 
 </details>
 
@@ -35,15 +36,15 @@
 
 ## 🔭 Overview
 
-This repository contains two independent computer vision research tasks developed during a Silvertouch Technologies internship, both targeting **pharmaceutical carton imagery**:
+This repository contains computer vision and machine learning pipelines developed during a Silvertouch Technologies internship, focusing on **pharmaceutical packaging design and structural analysis**:
 
-| | Task 1 | Task 2 |
-|---|---|---|
-| **Goal** | Perceptually compare text color between two crop images | Segment carton structural panels, detect & suppress text regions |
-| **Core Tech** | LAB MeanShift clustering + ΔE CIE2000 | OpenCV structural segmentation + SAM (Segment Anything Model) |
-| **Input** | Two cropped text images | Folder of full carton images |
-| **Output** | Comparison dashboard PNG | Overlay PNGs, JSON reports, segment maps |
-| **Key Metric** | ΔE ≤ 8.0 → MATCH | Coverage, IoU, mask stability |
+| Component | [Task 1](file:///mnt/d/Silvertouch%20Internship/task1) | [Task 2 (Neural Network)](file:///mnt/d/Silvertouch%20Internship/task2_neural_network) | [Task 3](file:///mnt/d/Silvertouch%20Internship/task3) |
+|---|---|---|---|
+| **Goal** | Perceptually compare text color between two crop images. | Reconstruct packaging structural layout (panels, flaps, glue tabs) using geometry-first PSLGs and classify masks using geometric features. | Build packaging artwork scraper and curate/normalize annotations. |
+| **Core Tech** | LAB MeanShift clustering + ΔE CIE2000 | PSLG builder + Polygonizer + Random Forest classification (scikit-learn) | Multi-threaded Scraper + PIL Lanczos resizing + COCO label mapping |
+| **Input** | Two cropped text images. | Original carton images + candidate segment masks. | DailyMed SETIDs / Roboflow dataset annotated in COCO format. |
+| **Output** | Comparison dashboard PNG. | GeoJSON partitions, boundary overlay PNGs, trained classifier model. | Deduplicated artwork, resized images, unified COCO annotations. |
+| **Key Metric** | ΔE ≤ 8.0 → MATCH | Coverage %, Overlap %, classification accuracy. | Scrape speed, deduplication rate, resolution consistency. |
 
 ---
 
@@ -55,12 +56,16 @@ Silvertouch Internship/
 ├── .gitignore
 ├── README.md
 │
-├── task1/                          ← Color comparison pipeline
-│   ├── main.py                     ← Entry point
-│   ├── config.py                   ← Thresholds & paths
+├── src/                                ← Shared Utilities
+│   └── visualization/
+│       └── face_boundary_renderer.py   ← Renders recovered polygon faces as boundaries onto images
+│
+├── task1/                              ← Text Color Comparison Pipeline
+│   ├── main.py                         ← Entry point
+│   ├── config.py                       ← Thresholds & paths
 │   ├── data/
-│   │   ├── reference.png           ← Reference text crop
-│   │   └── target.png              ← Target text crop
+│   │   ├── reference.png
+│   │   └── target.png
 │   ├── outputs/
 │   │   └── comparison_dashboard.png
 │   ├── preprocessing/
@@ -78,58 +83,54 @@ Silvertouch Internship/
 │   │   └── dashboard.py
 │   └── utils/
 │
-└── task2/                          ← Carton segmentation pipeline
-    ├── main.py                     ← Entry point (dual pipeline)
-    ├── configs/
-    │   ├── config.py               ← Structural config
-    │   └── sam_config.py           ← SAM config
-    ├── weights/
-    │   └── sam_vit_h.pth           ← SAM ViT-H checkpoint (~2.4 GB)
-    ├── data/
-    │   ├── input/                  ← Source carton images
-    │   └── output/                 ← Per-image result folders
-    ├── segmentation/
-    │   ├── structural_segmenter.py
-    │   ├── sam_segmenter.py
-    │   ├── sam_region_extractor.py
-    │   ├── sam_mask_filler.py
-    │   ├── mask_reconstructor.py   ← Text-removal branch
-    │   ├── sam_text_classifier.py  ← Text-removal branch
-    │   ├── sam_text_suppressor.py  ← Text-removal branch
-    │   ├── region_analyzer.py
-    │   ├── region_merger.py
-    │   ├── region_splitter.py
-    │   ├── rectangle_fitter.py
-    │   └── segmentation_evaluator.py
-    ├── geometry/
-    │   ├── extract_polygon.py
-    │   ├── polygon_metrics.py
-    │   ├── polygon_refiner.py
-    │   ├── polygon_utils.py
-    │   ├── polygon_validator.py
-    │   └── sam_polygon_builder.py
-    ├── visualization/
-    │   ├── sam_overlay_generator.py
-    │   ├── polygon_overlay_generator.py
-    │   ├── overlay_generator.py
-    │   ├── segment_map_generator.py
-    │   └── text_suppression_overlay.py
-    ├── evaluation/
-    │   ├── sam_segmentation_evaluator.py
-    │   ├── batch_runner.py
-    │   ├── batch_summary.py
-    │   └── text_suppressor_evaluation.py
-    ├── debug/
-    │   ├── sam_debug_exporter.py
-    │   ├── debug_exporter.py
-    │   └── text_suppression_debug_exporter.py
-    ├── models/
-    │   ├── sam_mask.py
-    │   └── segment.py
-    ├── serialization/
-    │   └── segment_serializer.py
-    └── utils/
-        └── loader.py
+├── task2_neural_network/               ← Structural Layout Reconstruction & Machine Learning Pipeline
+│   ├── generate_and_ingest.py          ← Ingests images and SAM masks
+│   ├── analyze_masks.py                ← Computes area histograms & cumulative coverage stats
+│   ├── requirements.txt                ← Dependencies
+│   ├── config/                         ← Configuration files
+│   ├── data/                           ← Data storage
+│   │   ├── raw/                        ← Source carton images
+│   │   ├── raw_temp/                   ← Temporary processing storage
+│   │   ├── interim/                    ← Intermediate outputs (GeoJSONs, CSV stats)
+│   │   ├── metadata/                   ← JSON dataset metadata
+│   │   ├── processed/                  ← Final processed datasets
+│   │   └── output_segments/
+│   ├── models/                         ← Trained models (.joblib outputs)
+│   ├── notebooks/                      ← Jupyter Notebooks
+│   ├── tests/                          ← Unit tests
+│   └── src/                            ← Core Source Code
+│       ├── analysis/                   ← Audits (Outer boundary, ambiguity, overlap, topology)
+│       ├── blueprint/                  ← Planar partitioning, validation, filters (Containment, Tiny face)
+│       ├── core/                       ← Shared data structures & enums (labels.py)
+│       ├── data/                       ← Dataset building & SAM pipeline ingestion
+│       ├── features/                   ← Geometric feature extraction (geometric.py)
+│       ├── geometry/                   ← Line detection/regularization, PSLG construction, polygonizer, artwork suppressor
+│       ├── models/                     ← Baseline models (Random Forest classifier wrapper)
+│       ├── pipeline/                   ← Orchestration (Geometry pipeline, face cleanup pipeline)
+│       ├── tools/                      ← Audits, labeling tools (Label GUI, reset labels, candidate filter)
+│       ├── training/                   ← Model training scripts
+│       └── utils/                      ← Shared helpers & loggers
+│
+├── task3/                              ← DailyMed Scraper & Roboflow Dataset Curation
+│   ├── README.dataset.txt              ← Roboflow dataset information
+│   ├── README.roboflow.txt             ← Dataset statistics (217 images, 640x640 resize, horizontal flip)
+│   ├── combine_eval.py                 ← Combines test and validation splits with mapped category IDs
+│   ├── migrate_test.py                 ← Maps test set annotation coordinates/labels
+│   ├── migrate_valid.py                ← Maps validation set annotation coordinates/labels
+│   ├── resize_dataset.py               ← Standardizes image sizes to max 1000px using Lanczos downsampling
+│   ├── train/                          ← Dataset split for training
+│   ├── test/                           ← Dataset split for testing
+│   ├── valid/                          ← Dataset split for validation
+│   └── Scrapped/                       ← DailyMed packaging artwork scraper
+│       ├── README.md
+│       ├── requirements.txt
+│       ├── output/
+│       │   ├── images/                 ← Downloaded packaging artwork
+│       │   ├── metadata/               ← Metadata outputs (images.csv, duplicates.csv)
+│       │   └── logs/                   ← Detailed logging logs
+│       └── src/                        ← Python crawler, downloader, filters, parser, and main script
+│
+└── task4/                              ← Blank directory created for future tasks
 ```
 
 ---
@@ -170,7 +171,7 @@ get_meta_family()     get_meta_family()
      generate_comparison_dashboard()
                  │
                  ▼
-        outputs/comparison_dashboard.png
+         outputs/comparison_dashboard.png
 ```
 
 ### Task 1 Module Breakdown
@@ -270,209 +271,77 @@ Success: Comparative pipeline executed flawlessly.
 
 ---
 
-## 🏭 Task 2 — Pharmaceutical Carton Segmentation
+## 🏭 Task 2 — Structural Packaging Layout Reconstruction
 
-Segments every structural region of a pharmaceutical carton (panels, flaps, glue tabs) using **two parallel pipelines** — a classical OpenCV approach and a SAM-based deep learning approach — then compares and evaluates both.
+Reconstructs the structural panels, dust flaps, and glue tabs of a pharmaceutical carton using **two parallel systems**: a geometry-first planar partition pipeline (line detection and graph-based polygonization) and a machine learning feature-classification pipeline (Random Forest models evaluating shape geometry).
 
-A dedicated **text-removal branch** suppresses printed text regions from the structural mask, producing a clean `new_closed_mask` ready for downstream geometry processing.
+### Architecture & Pipelines
 
-### Dual-Pipeline Architecture
+1. **Geometry-First Partition Pipeline**:
+   ```
+   Original Image
+         │
+         ▼
+     Stage 0: Artwork Suppression (Bilateral + Opening)
+         │
+         ▼
+     Stage 1: Edge Recovery (Canny + Sobel)
+         │
+         ▼
+     Stage 2: Line Detection & Regularization (Hough Transformations)
+         │
+         ▼
+     Stage 3: PSLG Construction & Planar Face Polygonization
+         │
+         ▼
+     Stage 4: Planar Partition Building (Shared borders, closed polygons)
+         │
+         ▼
+     Outputs: GeoJSON Face Boundary polygons & visual _blueprint_final.png
+   ```
 
-```
-                    data/input/*.png
-                          │
-              ┌───────────┴────────────┐
-              ▼                        ▼
-    StructuralSegmenter          SAMSegmenter
-    (OpenCV / classical)      (ViT-H checkpoint)
-              │                        │
-              ▼                        ▼
-      Contour analysis         Raw automatic masks
-      Rectangle fitting        SAMRegionExtractor
-      Region labeling          SAMMaskFiller (filter)
-              │                        │
-              ▼                        ▼
-         overlay.png            sam_overlay.png
-         segment_map.png        sam_report.json
-         segments.json          sam_summary.json
-              │                        │
-              └───────────┬────────────┘
-                          ▼
-                 batch_summary report
-```
+2. **Cleanup & Auditing Pipeline (Phase 7B-Lite)**:
+   Performs topological filtering and structural region consolidation:
+   - **FaceCleanupAudit**: Verifies polygon coordinates against image dimensions.
+   - **ContainmentFilter**: Eliminates nested and duplicate containment loops.
+   - **TinyFaceFilter**: Rejects micro-polygons (noise generated around labels or small text artifacts).
+   - **StructuralRegionMerger**: Consolidates overlapping and adjacent shapes into clean structural regions.
+   - **StructuralConnectivityValidator**: Confirms final boundary connectivity.
 
-### Structural Pipeline
+### Geometric Feature Extraction
 
-> Classical OpenCV-based segmentation: thresholding → contour detection → rectangle fitting → region labeling.
+`extract_geometric_features()` processes binary segment masks (such as those output by SAM) to extract a complete 17-dimensional geometric profile:
 
-```
-Image + Binary Mask
-        │
-        ▼
-StructuralSegmenter.segment()
-        │
-   ┌────┴────────────────────┐
-   ▼                         ▼
-RegionAnalyzer          RectangleFitter
-(contour stats)         (minAreaRect)
-   │                         │
-   ▼                         ▼
-RegionMerger            Segment labels
-RegionSplitter          (panel / flap / tab)
-   │
-   ▼
-SegmentationEvaluator
-   │
-   ├── overlay.png
-   ├── segment_map.png
-   ├── report.json
-   └── segments.json
-```
+* **Basic Shape Properties**: `area`, `relative_area`, `perimeter`.
+* **Bounding Attributes**: `bbox_width`, `bbox_height`, `aspect_ratio`.
+* **Topological Complexity**: `solidity` (contour area vs convex hull area), `extent` (contour area vs bounding box area), `vertex_count` (Douglas-Peucker simplification).
+* **Circular Properties**: `equiv_diameter`, `circularity`.
+* **Rotation-Invariant Properties**: rotated width/height (`rotated_width`, `rotated_height`), rotation-invariant aspect ratio (`rotated_aspect_ratio`), and minimum enclosing rectangle area (`rotated_area`).
+* **Spatial Centroids**: `centroid_x`, `centroid_y` moments.
 
-### SAM Pipeline
+### Model Classifier
 
-> Deep learning segmentation using Meta's Segment Anything Model (ViT-H).
-
-```
-Image
-  │
-  ▼
-SAMSegmenter.generate_masks()          ← automatic mask generation
-  │
-  ▼
-SAMRegionExtractor.extract_regions()   ← normalise to project region dicts
-  │
-  ▼
-SAMMaskFiller.filter_masks()           ← filter by:
-  │                                        area bounds
-  │                                        IoU threshold
-  │                                        stability score
-  │                                        geometry constraints
-  │                                        duplicate removal
-  ▼
-SAMSegmentationEvaluator.evaluate()    ← coverage, panel/flap/tab counts
-  │
-  ▼
-SAMOverlayGenerator                    ← overlay + IoU heatmap + stability heatmap
-  │
-  ▼
-SAMDebugExporter                       ← debug frames, mask strips, score logs
-  │
-  ├── sam_overlay.png
-  ├── sam_report.json
-  └── sam_summary.json
-```
-
-**SAM is optional.** If `weights/sam_vit_h.pth` is absent, the structural pipeline runs normally and SAM steps are skipped with a clear message.
-
-### Text-Removal Branch
-
-The text-removal branch is a **self-contained sub-pipeline** that runs after SAM classification to strip printed text from the structural mask. The three core files work in sequence:
-
-```
-SAMTextClassifier          →    SAMTextSuppressor      →    MaskReconstructor
-(feature extraction             (route by label)              (merge + repair)
- + labeling)
-```
-
-#### Flow in Detail
-
-```
-SAM filtered_regions
-        │
-        ▼
-SAMTextClassifier.classify_masks()
-        │
-        │  compute_features() per mask:
-        │    mask_area      ← foreground pixel count
-        │    contour_area   ← cv2.contourArea
-        │    fill_ratio     ← mask_area / bbox_area
-        │    solidity       ← contour_area / hull_area
-        │    stability_score← mask_area / image_size
-        │    predicted_iou  ← min/union of pixel vs contour area
-        │    eccentricity   ← fitEllipse axis ratio
-        │    thinness_ratio ← short/long side of minAreaRect
-        │    elongation     ← long/short side of minAreaRect
-        │
-        │  label decision:
-        │    mask_area < 3000 AND fill_ratio < 0.45  →  "text"
-        │    mask_area > 5000 AND fill_ratio > 0.50  →  "structure"
-        │    otherwise                               →  "unknown"
-        │
-        ▼
-[{"label": "text"|"structure"|"unknown", "features": {...}}, ...]
-        │
-        ▼
-SAMTextSuppressor.suppress()
-        │
-        ├── separate_masks()   ← single routing point
-        │     ├── text_masks
-        │     ├── structure_masks
-        │     └── unknown_masks
-        │
-        ├── kept_masks = structure_masks + unknown_masks
-        ├── removed_masks = text_masks
-        └── summary dict (counts, no string formatting)
-                │
-                ▼
-MaskReconstructor.reconstruct(kept_masks, image_shape)
-        │
-        ├── draw_masks()    ← paint kept masks onto blank canvas
-        ├── close_gaps()    ← MORPH_CLOSE (5×5 rect kernel)
-        ├── fill_holes()    ← flood-fill inversion → OR combine
-        ├── clean_noise()   ← drop components < 100 px
-        └── validate_mask() ← raise if fully empty
-                │
-                ▼
-        new_closed_mask  (uint8, values 0/1)
-                │
-                ▼
-   Connected Components
-          ↓
-   Polygon Extraction
-          ↓
-   Region Segmentation
-```
-
-#### Text Classification Thresholds
-
-| Feature | Text | Structure |
-|---|---|---|
-| `mask_area` | `< 3 000 px` | `> 5 000 px` |
-| `fill_ratio` | `< 0.45` | `> 0.50` |
-| Everything else | `"unknown"` (kept) | — |
-
-> Text tends to be **small** and **sparse**. Structure tends to be **large** and **dense**.
-
-#### MaskReconstructor — Morphological Repair
-
-| Step | Method | Algorithm |
-|---|---|---|
-| 1 | `draw_masks()` | Paint `mask["mask"]` arrays onto zeros canvas |
-| 2 | `close_gaps()` | `cv2.morphologyEx(MORPH_CLOSE, 5×5)` |
-| 3 | `fill_holes()` | Flood-fill from border → invert → OR with mask |
-| 4 | `clean_noise()` | `connectedComponentsWithStats` — drop area < 100 |
-| 5 | `validate_mask()` | Raise `ValueError` if no foreground survives |
+`StructuralMaskRFClassifier` wraps a scikit-learn `RandomForestClassifier` trained on the geometric features of candidate masks.
+* **Leakage Prevention**: Employs `GroupShuffleSplit` (80/20 grouped by image ID) to guarantee that masks from the same carton are never mixed between training and validation sets.
+* **Structural Labels** (defined in `labels.py`):
+  * `PANEL`: Principal structural faces of the carton (Front, Back, Side, Top, Bottom).
+  * `FLAP`: Closing dust flaps.
+  * `GLUE_TAB`: Connection flaps.
+  * `DUST_FLAP`: Dust flaps.
+  * `BACKGROUND` / `UNKNOWN`.
 
 ### Task 2 Module Breakdown
 
 <details>
-<summary><strong>segmentation/</strong></summary>
+<summary><strong>pipeline/ & blueprint/</strong></summary>
 
 | File | Class | Role |
 |---|---|---|
-| `structural_segmenter.py` | `StructuralSegmenter` | Classical OpenCV full pipeline |
-| `sam_segmenter.py` | `SAMSegmenter` | SAM checkpoint loader + automatic mask generator |
-| `sam_region_extractor.py` | `SAMRegionExtractor` | Normalise SAM dicts → project region format |
-| `sam_mask_filler.py` | `SAMMaskFiller` | Multi-criteria mask filtering |
-| `region_analyzer.py` | `RegionAnalyzer` | Contour statistics, aspect ratios, centroids |
-| `region_merger.py` | `RegionMerger` | Merge adjacent/overlapping regions |
-| `region_splitter.py` | `RegionSplitter` | Split over-merged regions |
-| `rectangle_fitter.py` | `RectangleFitter` | Fit minimum-area rectangles to contours |
-| `segmentation_evaluator.py` | `SegmentationEvaluator` | IoU, coverage, classification metrics |
-| `sam_text_classifier.py` | `SAMTextClassifier` | Feature extraction + text/structure labeling |
-| `sam_text_suppressor.py` | `SAMTextSuppressor` | Separate & suppress text masks |
-| `mask_reconstructor.py` | `MaskReconstructor` | Merge → close → fill → clean → validate |
+| `geometry_pipeline.py` | `run_geometry_pipeline()` | Runs full line detection and planar straight line graph polygonizer |
+| `phase_7b_lite_pipeline.py` | `run_phase_7b_lite_pipeline()` | Consolidation, filtering, and validation of faces |
+| `containment_filter.py` | `ContainmentFilter` | Filters out duplicate nested containment polygons |
+| `tiny_face_filter.py` | `TinyFaceFilter` | Removes micro-polygons representing background noise |
+| `structural_region_merger.py` | `StructuralRegionMerger` | Merges fragmented polygon structures |
 
 </details>
 
@@ -481,146 +350,158 @@ MaskReconstructor.reconstruct(kept_masks, image_shape)
 
 | File | Class | Role |
 |---|---|---|
-| `extract_polygon.py` | — | Contour → polygon vertices |
-| `polygon_metrics.py` | — | Area, perimeter, compactness |
-| `polygon_refiner.py` | `PolygonRefiner` | Smooth and simplify polygon vertices |
-| `polygon_utils.py` | — | Shared geometry helpers |
-| `polygon_validator.py` | `PolygonValidator` | Self-intersection checks, minimum vertex count |
-| `sam_polygon_builder.py` | `SAMPolygonBuilder` | Build polygons from SAM mask contours |
+| `artwork_suppressor.py` | `ArtworkSuppressor` | Suppresses high-contrast graphics and text using morphological openings |
+| `edge_detector.py` | `EdgeDetector` | Extracts sharp carton edges |
+| `line_detector.py` | `LineDetector` | Executes Hough line transforms |
+| `line_regularizer.py` | `LineRegularizer` | Groups, snaps, and straightens lines |
+| `pslg_builder.py` | `PSLGBuilder` | Generates planar straight-line graphs |
+| `polygonizer.py` | `Polygonizer` | Extracts closed polygons from graph edges |
 
 </details>
 
 <details>
-<summary><strong>visualization/</strong></summary>
+<summary><strong>features/ & models/ & training/</strong></summary>
 
 | File | Class | Role |
 |---|---|---|
-| `sam_overlay_generator.py` | `SAMOverlayGenerator` | Coloured mask overlays, IoU heatmap, stability heatmap |
-| `polygon_overlay_generator.py` | `PolygonOverlayGenerator` | Draw polygon outlines on image |
-| `overlay_generator.py` | — | Generic structural overlay |
-| `segment_map_generator.py` | — | False-colour segment map |
-| `text_suppression_overlay.py` | — | Green = kept, Red = removed text |
-
-</details>
-
-<details>
-<summary><strong>evaluation/</strong></summary>
-
-| File | Class | Role |
-|---|---|---|
-| `sam_segmentation_evaluator.py` | `SAMSegmentationEvaluator` | Coverage, panel/flap/tab counts, status, JSON report |
-| `batch_runner.py` | `BatchRunner` | Run pipeline over all images |
-| `batch_summary.py` | `BatchSummary` | Aggregate per-image results, console + file report |
-| `text_suppressor_evaluation.py` | — | Evaluate text suppression quality |
-
-</details>
-
-<details>
-<summary><strong>debug/</strong></summary>
-
-| File | Class | Role |
-|---|---|---|
-| `sam_debug_exporter.py` | `SAMDebugExporter` | Export raw/filtered frames, mask strips, score logs |
-| `debug_exporter.py` | `DebugExporter` | Export structural pipeline intermediates |
-| `text_suppression_debug_exporter.py` | — | Export text-removal intermediates |
-
-</details>
-
-<details>
-<summary><strong>models/</strong></summary>
-
-| File | Class | Role |
-|---|---|---|
-| `sam_mask.py` | `SAMMask` | Typed wrapper for a single SAM mask dict |
-| `segment.py` | `Segment` | Typed representation of a labeled carton segment |
-
-</details>
-
-### Task 2 Configuration
-
-<details>
-<summary><strong>configs/config.py</strong> — Structural pipeline</summary>
-
-```python
-config = {
-    "input_dir":  "data/input",
-    "output_dir": "data/output",
-    # thresholds set inside config.py
-}
-```
-
-</details>
-
-<details>
-<summary><strong>configs/sam_config.py</strong> — SAM pipeline</summary>
-
-```python
-sam_config = {
-    # Mask generator parameters
-    "points_per_side":        32,
-    "pred_iou_thresh":        0.88,
-    "stability_score_thresh": 0.95,
-    "min_mask_region_area":   500,
-
-    # Filtering bounds
-    "min_area_ratio":   0.005,
-    "max_area_ratio":   0.95,
-
-    # Geometry constraints
-    "min_aspect_ratio": 0.1,
-    "max_aspect_ratio": 10.0,
-}
-```
+| `geometric.py` | `extract_geometric_features` | Calculates 17 geometric shape features from binary masks |
+| `rf_classifier.py` | `StructuralMaskRFClassifier` | Scikit-learn RandomForest pipeline wrapper |
+| `train.py` | `train_model()` | Loads datasets, extracts features, trains classifier, and dumps model |
+| `analyze_masks.py` | `analyze()` | Performs dataset-wide coverage and cumulative area analysis |
+| `generate_and_ingest.py` | `main()` | Auto-generates SAM masks and registers them into dataset metadata |
 
 </details>
 
 ### Running Task 2
 
 ```bash
-cd "task2"
+cd "task2_neural_network"
 
-# With SAM (checkpoint must exist at weights/sam_vit_h.pth)
-python main.py
+# 1. Run mask analysis (creates histograms & outputs coverage logs)
+python analyze_masks.py
 
-# Without SAM (structural pipeline only)
-# Just run the same command — SAM is auto-skipped if checkpoint is missing
-python main.py
+# 2. Train the Random Forest geometric classifier
+python -m src.training.train --project_root . --n_estimators 500
 
-# Override checkpoint path
-set SAM_CHECKPOINT=C:\path\to\sam_vit_h_4b8939.pth
-python main.py
+# 3. Run the geometry-first PSLG polygonization pipeline
+python -m src.pipeline.geometry_pipeline
+
+# 4. Clean up faces and render structural layout blueprints
+python -m src.pipeline.phase_7b_lite_pipeline
 ```
 
-**Expected console output (per image):**
+---
+
+## 📥 Task 3 — DailyMed Scraper & Dataset Curation
+
+A two-part data engineering pipeline designed to collect raw pharmaceutical packaging graphics from DailyMed and standardize annotated image datasets for downstream segmentation.
+
+### DailyMed Artwork Scraper
+
+Located in the [task3/Scrapped](file:///mnt/d/Silvertouch%20Internship/task3/Scrapped) directory, this pipeline crawls and downloads packaging artwork images using multi-threading and duplicate detection:
+
+* **Robust Multi-threading**: Rapid parallel image downloads.
+* **Perceptual Image Hashing**: Deduplication using `imagehash` (perceptual hashing) to automatically flag duplicate uploads.
+* **Logo Filtering**: Rejects tiny files, aspect-ratio outliers, logos, and UI graphics.
+* **Interrupted Session Resumption**: Tracks downloaded SETIDs and resumes seamlessly.
+
+### Roboflow Dataset Curation
+
+Processes and maps inconsistent Roboflow image annotations (COCO format) into standard structural partitions:
+
+1. **Resolution Normalization**:
+   - `resize_dataset.py` uses PIL's Lanczos filter to downsample high-resolution packaging images to a maximum size of 1000px, reducing model memory footprints.
+2. **COCO Annotation Mapping**:
+   - `migrate_test.py` and `migrate_valid.py` map raw category IDs from different label exports into unified IDs:
+     * `1` → `Artwork`
+     * `2` → `not_artwork`
+     * `3` → `Front_Panel`
+     * `4` → `Side_Panel`
+     * `5` → `Back_Panel`
+     * `6` → `Extra_Areas`
+     * `7` → `Bottom_Part`
+     * `8` → `Top_Panel`
+3. **Split Consolidation**:
+   - `combine_eval.py` merges test and validation splits to compile a standardized evaluation dataset (`eval_combined`).
+
+### Task 3 Module Breakdown
+
+<details>
+<summary><strong>Scrapped/src/ (DailyMed Scraper)</strong></summary>
+
+| File | Module | Role |
+|---|---|---|
+| `main.py` | Main entry point | Configures scraping loops, reads SETIDs, and drives downloads |
+| `crawler.py` | DailyMed Crawler | Crawls product XML pages to find artwork image URLs |
+| `downloader.py` | Multi-threaded Downloader | Handles requests, saves to disk, and tracks downloads |
+| `filters.py` | Size & Format Filter | Filters out thumbnails and non-artwork logos |
+| `parser.py` | HTML XML Parser | Extracts image metadata and media nodes |
+| `utils.py` | Hashing & Deduplicator | Generates perceptual hashes (`phash`) to flag duplicate shapes |
+
+</details>
+
+<details>
+<summary><strong>Dataset Curation Scripts</strong></summary>
+
+| File | Purpose |
+|---|---|
+| `resize_dataset.py` | Downsamples training, validation, and scrapped image paths to a maximum resolution of 1000px |
+| `combine_eval.py` | Merges test and validation splits, mapping COCO categories to standard panels |
+| `migrate_test.py` / `migrate_valid.py` | Individual category mapping scripts for dataset splits |
+
+</details>
+
+### Running Task 3
+
+```bash
+cd "task3"
+
+# 1. Run the DailyMed artwork scraper
+python Scrapped/src/main.py
+
+# 2. Downsample dataset to a standard maximum size of 1000px
+python resize_dataset.py
+
+# 3. Standardize and map COCO annotation categories for splits
+python migrate_test.py
+python migrate_valid.py
+
+# 4. Combine test and validation splits for unified evaluation
+python combine_eval.py
 ```
-============================================================
-  Processing: carton_01.png
-============================================================
-  [Structural] segments=12  rectangles=10
-  [SAM] raw= 87  filtered= 23
-  [SAM] status=good  P=4  F=6  T=3  coverage=0.91
-```
+
+---
+
+## 🔭 Task 4 — Future Workspace
+
+The [task4](file:///mnt/d/Silvertouch%20Internship/task4) directory is a clean workspace initialized for future computer vision research tasks, modeling pipelines, or dataset curation scripts.
 
 ---
 
 ## ⚙️ Setup & Installation
 
+### Requirements
+
+- **Python Version**: 3.11+
+- **Core Dependencies**: `opencv-python`, `numpy`, `scikit-learn`, `colour-science`, `scikit-image`, `pandas`, `shapely`, `matplotlib`, `seaborn`, `joblib`, `ImageHash`
+
+### Virtual Environment Setup
+
 ```bash
-# 1. Clone the repository
+# Clone the repository
 git clone <repo-url>
 cd "Silvertouch Internship"
 
-# 2. Create and activate a virtual environment
+# Create a virtual environment
 python -m venv .venv
-.venv\Scripts\activate       # Windows
-# source .venv/bin/activate  # macOS / Linux
+source .venv/bin/activate  # macOS / Linux
+# .venv\Scripts\activate  # Windows
 
-# 3. Install dependencies
-pip install opencv-python numpy scikit-learn colour-science
+# Install main task2 requirements
+pip install -r task2_neural_network/requirements.txt
 
-# 4. (Task 2 SAM only) Install SAM
-pip install git+https://github.com/facebookresearch/segment-anything.git
-pip install torch torchvision
+# Install task3 scraper requirements
+pip install -r task3/Scrapped/requirements.txt
 ```
 
 **Python version:** 3.10+ required (uses `X | Y` type union syntax and `match` statements).
@@ -682,9 +563,10 @@ pip install torch torchvision
 | `CLOSE_KERNEL_SIZE` | `(5, 5)` | Larger → bridges wider text-removal gaps |
 | `MIN_COMPONENT_AREA` | `100 px` | Raise → more aggressive noise removal |
 
+---
 <div align="center">
 
-Built during a Computer Vision internship at **Silvertouch Technologies**  
-Python · OpenCV · NumPy · scikit-learn · colour-science · SAM (Meta AI)
+Built during a Computer Vision & Machine Learning Internship at **Silvertouch Technologies**  
+Python · OpenCV · NumPy · scikit-learn · colour-science · PIL · Shapely
 
 </div>
