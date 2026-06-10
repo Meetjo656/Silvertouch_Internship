@@ -1,0 +1,2524 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "file_name": "Back_Panel_Back_Panel_ADAKVEO-100-mg-1-vial-AUS_jpg.rf.03bdf8eb4ef0e64701e0ed1cf9c70a64_crop1.jpg",
+            "width": 386,
+            "height": 254
+        },
+        {
+            "id": 2,
+            "file_name": "Back_Panel_Back_Panel_ADAKVEO-100-mg-1-vial-AUS_jpg.rf.5d560f041b5d9e347b6876aa22123dc0_crop1.jpg",
+            "width": 386,
+            "height": 254
+        },
+        {
+            "id": 3,
+            "file_name": "Back_Panel_Back_Panel_AHZANTIVE-carton-gimp-AUS_jpg.rf.ffe6aeed5da060beec1e7e72114e6f8b_crop1.jpg",
+            "width": 192,
+            "height": 299
+        },
+        {
+            "id": 4,
+            "file_name": "Back_Panel_Back_Panel_ALHEMO-60-mg-1AI-AUS_jpg.rf.bd1da4372969e062fe3742507ddad429_crop1.jpg",
+            "width": 581,
+            "height": 195
+        },
+        {
+            "id": 5,
+            "file_name": "Back_Panel_Back_Panel_ALPROLIX-AUS-alp0b-0002-27_jpg.rf.15b291c57d806fe9f64cba6dbede8fb0_crop1.jpg",
+            "width": 238,
+            "height": 375
+        },
+        {
+            "id": 6,
+            "file_name": "Back_Panel_Back_Panel_ALPROLIX-AUS-alp0b-0002-27_jpg.rf.2dc91d8d28edfe62a01ec525c35fc18e_crop1.jpg",
+            "width": 238,
+            "height": 375
+        },
+        {
+            "id": 7,
+            "file_name": "Back_Panel_Back_Panel_ALYGLO-carton-ivig-AUS_jpg.rf.786403d4a10c3fd796cc41ad5319d3dd_crop1.jpg",
+            "width": 205,
+            "height": 390
+        },
+        {
+            "id": 8,
+            "file_name": "Back_Panel_Back_Panel_ALYGLO-carton-ivig-AUS_jpg.rf.8202408817f9d4682cbdb6b0931680b7_crop1.jpg",
+            "width": 205,
+            "height": 390
+        },
+        {
+            "id": 9,
+            "file_name": "Back_Panel_Back_Panel_ALYMSYS-maly-400-carton-label-AUS_jpg.rf.6cba6e6fd74d147e25f22321bc623311_crop1.jpg",
+            "width": 209,
+            "height": 401
+        },
+        {
+            "id": 10,
+            "file_name": "Back_Panel_Back_Panel_ALYMSYS-maly-400-carton-label-AUS_jpg.rf.8428d2a4433a53e5a4d0d90ecfc43f1b_crop1.jpg",
+            "width": 209,
+            "height": 401
+        },
+        {
+            "id": 11,
+            "file_name": "Back_Panel_Back_Panel_ANDEMBRY-1-AI-AUS_jpg.rf.5c0faea0f490ed518117165190bb9ae0_crop1.jpg",
+            "width": 578,
+            "height": 208
+        },
+        {
+            "id": 12,
+            "file_name": "Back_Panel_Back_Panel_ANDEMBRY-1-AI-AUS_jpg.rf.7ae19044f3d063a2979084bc9ee297af_crop1.jpg",
+            "width": 578,
+            "height": 208
+        },
+        {
+            "id": 13,
+            "file_name": "Back_Panel_Back_Panel_AVONEX-carton-AUS_jpg.rf.bb6f74c2279c58e2c63da82e3d691341_crop1.jpg",
+            "width": 612,
+            "height": 277
+        },
+        {
+            "id": 14,
+            "file_name": "Back_Panel_Back_Panel_AVONEX-carton-AUS_jpg.rf.e3abe7118dfc461ca5966463ad930f65_crop1.jpg",
+            "width": 612,
+            "height": 277
+        },
+        {
+            "id": 15,
+            "file_name": "Back_Panel_Back_Panel_AVTOZMA-syinge-carton-AUS_jpg.rf.af884258139d1180300bf3cc35a74f9b_crop1.jpg",
+            "width": 495,
+            "height": 171
+        },
+        {
+            "id": 16,
+            "file_name": "Back_Panel_Back_Panel_AVTOZMA-syinge-carton-AUS_jpg.rf.dbac86f782f5ae5b8db38f85678a3bb0_crop1.jpg",
+            "width": 495,
+            "height": 171
+        },
+        {
+            "id": 17,
+            "file_name": "Back_Panel_Back_Panel_AVTOZMA-VIAL-carton-AUS_jpg.rf.85c9ba717943f207aac179e15624749f_crop1.jpg",
+            "width": 187,
+            "height": 399
+        },
+        {
+            "id": 18,
+            "file_name": "Back_Panel_Back_Panel_AVTOZMA-VIAL-carton-AUS_jpg.rf.aab411b4dc1f0a55ddc5e52081673e6a_crop1.jpg",
+            "width": 187,
+            "height": 399
+        },
+        {
+            "id": 19,
+            "file_name": "Back_Panel_Back_Panel_AVZIVI-AUS_jpg.rf.7b264ae49dfc8672348bcc4cfe5440d0_crop1.jpg",
+            "width": 265,
+            "height": 523
+        },
+        {
+            "id": 20,
+            "file_name": "Back_Panel_Back_Panel_BAVENCIO-carton-AUS_jpg.rf.5a06ca6d1b8c8203f0440deedd54c105_crop1.jpg",
+            "width": 205,
+            "height": 364
+        },
+        {
+            "id": 21,
+            "file_name": "Back_Panel_Back_Panel_BAVENCIO-carton-AUS_jpg.rf.ebf1a15693992f8b4ba1679b74247e8d_crop1.jpg",
+            "width": 205,
+            "height": 364
+        },
+        {
+            "id": 22,
+            "file_name": "Back_Panel_Back_Panel_BEOVU-6-mg-1PFS-AUS_jpg.rf.9fac0c82b9da2bdc5978030630e15d57_crop1.jpg",
+            "width": 472,
+            "height": 244
+        },
+        {
+            "id": 23,
+            "file_name": "Back_Panel_Back_Panel_BEOVU-6-mg-1PFS-AUS_jpg.rf.c06c29c38d2f13d4f9241a691e09ceb6_crop1.jpg",
+            "width": 472,
+            "height": 244
+        },
+        {
+            "id": 24,
+            "file_name": "Back_Panel_Back_Panel_BOMYNTRO-1vial-AUS_jpg.rf.2627287401b604faa0c4d6b12416903f_crop1.jpg",
+            "width": 425,
+            "height": 244
+        },
+        {
+            "id": 25,
+            "file_name": "Back_Panel_Back_Panel_BOMYNTRO-1vial-AUS_jpg.rf.ebd0b62f8330678f30f78ee339530014_crop1.jpg",
+            "width": 425,
+            "height": 244
+        },
+        {
+            "id": 26,
+            "file_name": "Back_Panel_Back_Panel_BYOOVIZ-AUS_jpg.rf.5cc307c09b5d551447f2bfd2dd16635e_crop1.jpg",
+            "width": 500,
+            "height": 235
+        },
+        {
+            "id": 27,
+            "file_name": "Back_Panel_Back_Panel_CAMPATH-30-mg-1-vial-AUS_jpg.rf.30d5d0d5a7010531c0eb84db4093308d_crop1.jpg",
+            "width": 182,
+            "height": 280
+        },
+        {
+            "id": 28,
+            "file_name": "Back_Panel_Back_Panel_CAMPATH-30-mg-1-vial-AUS_jpg.rf.e177c89d9a977ccc9533034cbb8e84e8_crop1.jpg",
+            "width": 182,
+            "height": 280
+        },
+        {
+            "id": 29,
+            "file_name": "Back_Panel_Back_Panel_CHARON-AI-AUS_jpg.rf.261d5c75f2ccb4afa99a09052acce424_crop1.jpg",
+            "width": 538,
+            "height": 202
+        },
+        {
+            "id": 30,
+            "file_name": "Back_Panel_Back_Panel_CHARON-AI-AUS_jpg.rf.7c607bc834b0c274e90324c59d911729_crop1.jpg",
+            "width": 538,
+            "height": 202
+        },
+        {
+            "id": 31,
+            "file_name": "Back_Panel_Back_Panel_CIMZIA-200-mg-2PFS-AUS_jpg.rf.3f384a912cd5231f7f87eb17e3bfcd8e_crop1.jpg",
+            "width": 217,
+            "height": 613
+        },
+        {
+            "id": 32,
+            "file_name": "Back_Panel_Back_Panel_CIMZIA-200-mg-2PFS-AUS_jpg.rf.ac9968a690350237306f886db4a4ef2b_crop1.jpg",
+            "width": 217,
+            "height": 613
+        },
+        {
+            "id": 33,
+            "file_name": "Back_Panel_Back_Panel_COSENTYX-carton-AUS_jpg.rf.11a3a38bb1445c55ae8b85549be0527a_crop1.jpg",
+            "width": 506,
+            "height": 195
+        },
+        {
+            "id": 34,
+            "file_name": "Back_Panel_Back_Panel_COSENTYX-carton-AUS_jpg.rf.8fa60a2070b8d6b83c057953c82a0208_crop1.jpg",
+            "width": 506,
+            "height": 195
+        },
+        {
+            "id": 35,
+            "file_name": "Back_Panel_Back_Panel_CRYSVITA-10-mg-1-vial-AUS_jpg.rf.7bce900871f4f2819a569b842d64f452_crop1.jpg",
+            "width": 156,
+            "height": 330
+        },
+        {
+            "id": 36,
+            "file_name": "Back_Panel_Back_Panel_CUVITRU-carton-AUS_jpg.rf.7dd9d50a5794fc099159d954ae4e62c0_crop1.jpg",
+            "width": 188,
+            "height": 247
+        },
+        {
+            "id": 37,
+            "file_name": "Back_Panel_Back_Panel_cyltezo-34-PFS-carton-AUS_jpg.rf.4e5de9ac811d36ecb9563edc1b226719_crop1.jpg",
+            "width": 640,
+            "height": 165
+        },
+        {
+            "id": 38,
+            "file_name": "Back_Panel_Back_Panel_cyltezo-34-PFS-carton-AUS_jpg.rf.748ba04c513952e3eecc87c7b9f7de71_crop1.jpg",
+            "width": 640,
+            "height": 165
+        },
+        {
+            "id": 39,
+            "file_name": "Back_Panel_Back_Panel_Darzalex_Injection_20-mg-per-mL_5-mL-AUS_jpg.rf.d88c1ad834aca3611377ac3c71a4961a_crop1.jpg",
+            "width": 187,
+            "height": 353
+        },
+        {
+            "id": 40,
+            "file_name": "Back_Panel_Back_Panel_DATROWAY-100-mg-1-vial-AUS_jpg.rf.5b936ce67078e17d4372540aa0b58da9_crop1.jpg",
+            "width": 218,
+            "height": 331
+        },
+        {
+            "id": 41,
+            "file_name": "Back_Panel_Back_Panel_DATROWAY-100-mg-1-vial-AUS_jpg.rf.7f02cfe67e414047675478d3bb73250b_crop1.jpg",
+            "width": 218,
+            "height": 331
+        },
+        {
+            "id": 42,
+            "file_name": "Back_Panel_Back_Panel_DUPIXIENT-300-AUS_jpg.rf.7b90c116448d0eda11a9b74ec8062d91_crop1.jpg",
+            "width": 640,
+            "height": 166
+        },
+        {
+            "id": 43,
+            "file_name": "Back_Panel_Back_Panel_DUPIXIENT-300-AUS_jpg.rf.976e10526b99120ed060e765ed979089_crop1.jpg",
+            "width": 640,
+            "height": 166
+        },
+        {
+            "id": 44,
+            "file_name": "Back_Panel_Back_Panel_ELREXFIO-76-mg-1vial-AUS_jpg.rf.8838dbcc0c6250c138d2dc7c035236ae_crop0.jpg",
+            "width": 140,
+            "height": 315
+        },
+        {
+            "id": 45,
+            "file_name": "Back_Panel_Back_Panel_ELREXFIO-76-mg-1vial-AUS_jpg.rf.e26495004aedca17a9cc4d988e9957ad_crop0.jpg",
+            "width": 140,
+            "height": 315
+        },
+        {
+            "id": 46,
+            "file_name": "Back_Panel_Back_Panel_ELRXFIO-elranatamab-AUS-04_jpg.rf.080e89226f43ff72df0e8473264f943c_crop1.jpg",
+            "width": 127,
+            "height": 305
+        },
+        {
+            "id": 47,
+            "file_name": "Back_Panel_Back_Panel_ELRXFIO-elranatamab-AUS-04_jpg.rf.2543b9828037671d20f3f311efe4f49d_crop1.jpg",
+            "width": 127,
+            "height": 305
+        },
+        {
+            "id": 48,
+            "file_name": "Back_Panel_Back_Panel_Enhurtu-gimp-AUS_jpg.rf.a64afaf838d48fa140938d9ab5bfc35e_crop1.jpg",
+            "width": 176,
+            "height": 304
+        },
+        {
+            "id": 49,
+            "file_name": "Back_Panel_Back_Panel_ENOXAPARIN-sodium-100-mg-ml-carton-AUS_jpg.rf.de0eb1b8a2a8665beb1edc9daf443419_crop1.jpg",
+            "width": 264,
+            "height": 438
+        },
+        {
+            "id": 50,
+            "file_name": "Back_Panel_Back_Panel_ENTYVIO-carton-AUS_jpg.rf.00bc0e5489a3327a5b96c1d991ea1e3a_crop1.jpg",
+            "width": 184,
+            "height": 332
+        },
+        {
+            "id": 51,
+            "file_name": "Back_Panel_Back_Panel_ENTYVIO-carton-AUS_jpg.rf.b30d7638008d808172bb35bc3fbe664b_crop1.jpg",
+            "width": 185,
+            "height": 332
+        },
+        {
+            "id": 52,
+            "file_name": "Back_Panel_Back_Panel_EPYSQLI-carton-AUS_jpg.rf.09c07e45ba12ad5b33252cff621a0692_crop1.jpg",
+            "width": 203,
+            "height": 368
+        },
+        {
+            "id": 53,
+            "file_name": "Back_Panel_Back_Panel_EPYSQLI-carton-AUS_jpg.rf.ab3b3b29c37c1f07a83dd77995082fcf_crop1.jpg",
+            "width": 203,
+            "height": 368
+        },
+        {
+            "id": 54,
+            "file_name": "Back_Panel_Back_Panel_ERBITUX-carton-AUS_jpg.rf.93f306405f1931c058479caa500ebe15_crop1.jpg",
+            "width": 171,
+            "height": 452
+        },
+        {
+            "id": 55,
+            "file_name": "Back_Panel_Back_Panel_EYLEA-2-mg-PFS-carton-AUS_jpg.rf.9d891b2dd86bc5721272bfe17f201fa9_crop1.jpg",
+            "width": 255,
+            "height": 578
+        },
+        {
+            "id": 56,
+            "file_name": "Back_Panel_Back_Panel_EYLEA-2-mg-PFS-carton-AUS_jpg.rf.ec457a76218c067e1f5ac504dfcf6e2e_crop1.jpg",
+            "width": 255,
+            "height": 578
+        },
+        {
+            "id": 57,
+            "file_name": "Back_Panel_Back_Panel_EYLEA-HD-8-mg-PFS-carton-AUS_jpg.rf.572c0e7d50fb132ccb6df57de7fe895d_crop1.jpg",
+            "width": 505,
+            "height": 286
+        },
+        {
+            "id": 58,
+            "file_name": "Back_Panel_Back_Panel_EYLEA-HD-8-mg-PFS-carton-AUS_jpg.rf.df74420a946f3f9800e4221bfd63f698_crop1.jpg",
+            "width": 505,
+            "height": 286
+        },
+        {
+            "id": 59,
+            "file_name": "Back_Panel_Back_Panel_FAKEIDACIO2PFS-AUS_jpg.rf.b72efdf88e15b774efe240cd695a5b49_crop1.jpg",
+            "width": 539,
+            "height": 201
+        },
+        {
+            "id": 60,
+            "file_name": "Back_Panel_Back_Panel_FAKEIDACIO2PFS-AUS_jpg.rf.ed78f048491329cca14c8dec3556429f_crop1.jpg",
+            "width": 539,
+            "height": 201
+        },
+        {
+            "id": 61,
+            "file_name": "Back_Panel_Back_Panel_FIASP-carton-cartirdge-AUS1_jpg.rf.3e57a9e6ab0f37684b7194967f339282_crop1.jpg",
+            "width": 307,
+            "height": 436
+        },
+        {
+            "id": 62,
+            "file_name": "Back_Panel_Back_Panel_Forteo-pen-carton-20mcg-002-07-AUS_jpg.rf.6ffdafd76da516932f56630857469de1_crop1.jpg",
+            "width": 609,
+            "height": 255
+        },
+        {
+            "id": 63,
+            "file_name": "Back_Panel_Back_Panel_Forteo-pen-carton-20mcg-002-07-AUS_jpg.rf.782dbec749f009842004eb2f0c17a777_crop1.jpg",
+            "width": 609,
+            "height": 255
+        },
+        {
+            "id": 64,
+            "file_name": "Back_Panel_Back_Panel_FYLNETRA-carton-AUS_jpg.rf.073fae71eea6b081fe7dd061d2ea2341_crop1.jpg",
+            "width": 508,
+            "height": 239
+        },
+        {
+            "id": 65,
+            "file_name": "Back_Panel_Back_Panel_GAMASTAN-carton-AUS_jpg.rf.0f67757b2670d1eea3bfbc909dcf9eb7_crop1.jpg",
+            "width": 192,
+            "height": 333
+        },
+        {
+            "id": 66,
+            "file_name": "Back_Panel_Back_Panel_GAMASTAN-carton-AUS_jpg.rf.9d04e2533fa5b7723a51dcbc93f7095d_crop1.jpg",
+            "width": 192,
+            "height": 333
+        },
+        {
+            "id": 67,
+            "file_name": "Back_Panel_Back_Panel_GAMMAGARD-carton-AUS_jpg.rf.5d5c19736811d9ced8d690530fae203e_crop1.jpg",
+            "width": 192,
+            "height": 322
+        },
+        {
+            "id": 68,
+            "file_name": "Back_Panel_Back_Panel_GAMMAGARD-carton-AUS_jpg.rf.baa71676426c714404fcd0534717f53e_crop1.jpg",
+            "width": 192,
+            "height": 322
+        },
+        {
+            "id": 69,
+            "file_name": "Back_Panel_Back_Panel_GAMUNEX-carton-AUS_jpg.rf.66045c02010b476c698a7aa80ee1d86f_crop1.jpg",
+            "width": 184,
+            "height": 383
+        },
+        {
+            "id": 70,
+            "file_name": "Back_Panel_Back_Panel_GAMUNEX-carton-AUS_jpg.rf.99b17f208b5d37ba092bbe1449400512_crop1.jpg",
+            "width": 184,
+            "height": 383
+        },
+        {
+            "id": 71,
+            "file_name": "Back_Panel_Back_Panel_GENOTROPIN-carton-AUS_jpg.rf.9d16a06d0f30348dd8498e90c3da5a4c_crop1.jpg",
+            "width": 477,
+            "height": 240
+        },
+        {
+            "id": 72,
+            "file_name": "Back_Panel_Back_Panel_GENOTROPIN-carton-AUS_jpg.rf.aff0e8cb96088469b1679bb0efb55e9d_crop1.jpg",
+            "width": 477,
+            "height": 240
+        },
+        {
+            "id": 73,
+            "file_name": "Back_Panel_Back_Panel_GVOKE-glucagon-carton-AUS_jpg.rf.3fd8b28f1d75025a90d714d5a884873d_crop1.jpg",
+            "width": 460,
+            "height": 231
+        },
+        {
+            "id": 74,
+            "file_name": "Back_Panel_Back_Panel_HADLIMA-penimage-68-AUS_jpg.rf.08366bd1cceba5ff5701323eb685eb3c_crop1.jpg",
+            "width": 236,
+            "height": 607
+        },
+        {
+            "id": 75,
+            "file_name": "Back_Panel_Back_Panel_HADLIMA-penimage-68-AUS_jpg.rf.9c3ee4c101ace4a8ec316eab573cc2a3_crop1.jpg",
+            "width": 236,
+            "height": 607
+        },
+        {
+            "id": 76,
+            "file_name": "Back_Panel_Back_Panel_HADLIMA-PFS-image-67-AUS_jpg.rf.ab0a82be03073660a6e8019902292b0e_crop1.jpg",
+            "width": 221,
+            "height": 531
+        },
+        {
+            "id": 77,
+            "file_name": "Back_Panel_Back_Panel_HADLIMA-PFS-image-67-AUS_jpg.rf.c554be6f7cf2e0b47d6ef12d7b92f4e5_crop1.jpg",
+            "width": 221,
+            "height": 531
+        },
+        {
+            "id": 78,
+            "file_name": "Back_Panel_Back_Panel_HEMGENIX-carton-AUS_jpg.rf.c36da5a1d0d24e68c1014928a175968b_crop1.jpg",
+            "width": 185,
+            "height": 332
+        },
+        {
+            "id": 79,
+            "file_name": "Back_Panel_Back_Panel_HEMGENIX-carton-AUS_jpg.rf.fc57a74a3a0ebf7eb7f53ebadb66b789_crop1.jpg",
+            "width": 185,
+            "height": 332
+        },
+        {
+            "id": 80,
+            "file_name": "Back_Panel_Back_Panel_HERCESSI-150-vial-carton-AUS_jpg.rf.dfa14f49193055063fa5351382ee7b1b_crop1.jpg",
+            "width": 133,
+            "height": 265
+        },
+        {
+            "id": 81,
+            "file_name": "Back_Panel_Back_Panel_HERCESSI-150-vial-carton-AUS_jpg.rf.e0b27de485424b45921cc1d77af79076_crop1.jpg",
+            "width": 133,
+            "height": 265
+        },
+        {
+            "id": 82,
+            "file_name": "Back_Panel_Back_Panel_HIZENTRA-carton-Aus_jpg.rf.40be9214050d6a32e47d57d7dbb7d06d_crop1.jpg",
+            "width": 526,
+            "height": 261
+        },
+        {
+            "id": 83,
+            "file_name": "Back_Panel_Back_Panel_HIZENTRA-carton-Aus_jpg.rf.fb1ccc430be3c6745b494476b2c14f9a_crop1.jpg",
+            "width": 526,
+            "height": 261
+        },
+        {
+            "id": 84,
+            "file_name": "Back_Panel_Back_Panel_HUMULIN-carton-AUS_jpg.rf.06dd88b4c5deeb99599deb4bccbc89c3_crop1.jpg",
+            "width": 280,
+            "height": 594
+        },
+        {
+            "id": 85,
+            "file_name": "Back_Panel_Back_Panel_HUMULIN-carton-AUS_jpg.rf.b006a4937a56a4b60bd266b0ca6a78e8_crop1.jpg",
+            "width": 280,
+            "height": 594
+        },
+        {
+            "id": 86,
+            "file_name": "Back_Panel_Back_Panel_IDACIO-carton-AUS_jpg.rf.3e1d42ad87eab308064cf8fbdb373d67_crop1.jpg",
+            "width": 535,
+            "height": 201
+        },
+        {
+            "id": 87,
+            "file_name": "Back_Panel_Back_Panel_IDACIO-carton-AUS_jpg.rf.95992ac5516703f198da6fe4af578c3f_crop1.jpg",
+            "width": 535,
+            "height": 201
+        },
+        {
+            "id": 88,
+            "file_name": "Back_Panel_Back_Panel_ILARIS-150-mg-1via-AUSl_jpg.rf.c0a917cd613cc64edbaa53ae9825c7a5_crop1.jpg",
+            "width": 385,
+            "height": 261
+        },
+        {
+            "id": 89,
+            "file_name": "Back_Panel_Back_Panel_IMULDOSA-130-mg-1vial-AUS_jpg.rf.0d5329854b214022a5ee7036b4262b33_crop0.jpg",
+            "width": 158,
+            "height": 323
+        },
+        {
+            "id": 90,
+            "file_name": "Back_Panel_Back_Panel_IMULDOSA-130-mg-1vial-AUS_jpg.rf.a83edaaa1781821287c47387ba8f9760_crop0.jpg",
+            "width": 158,
+            "height": 323
+        },
+        {
+            "id": 91,
+            "file_name": "Back_Panel_Back_Panel_IMULDOSA-45-mg-1PFS-AUS_jpg.rf.83a9305b29d6792aef7bc5b83c53abf7_crop1.jpg",
+            "width": 471,
+            "height": 263
+        },
+        {
+            "id": 92,
+            "file_name": "Back_Panel_Back_Panel_IMULDOSA-90-mg-1PFS-AUS-_jpg.rf.5c78fe0a8bd5b9dd8eec4197d4a6653f_crop1.jpg",
+            "width": 460,
+            "height": 262
+        },
+        {
+            "id": 93,
+            "file_name": "Back_Panel_Back_Panel_INFLECTRA-vial-AUS_jpg.rf.3b99010d01958efa57fb866c5330b53e_crop1.jpg",
+            "width": 193,
+            "height": 316
+        },
+        {
+            "id": 94,
+            "file_name": "Back_Panel_Back_Panel_INFLECTRA-vial-AUS_jpg.rf.a0f055343ce693919e524d4ee5292362_crop1.jpg",
+            "width": 193,
+            "height": 316
+        },
+        {
+            "id": 95,
+            "file_name": "Back_Panel_Back_Panel_INSULIN-ASPART-flexpen-carton-AUS_jpg.rf.a6a5ba1d42d3277594e2fc963fdab10a_crop1.jpg",
+            "width": 287,
+            "height": 585
+        },
+        {
+            "id": 96,
+            "file_name": "Back_Panel_Back_Panel_INSULIN-ASPART-flexpen-carton-AUS_jpg.rf.c7e3862715f4df3306e23b265db11f21_crop1.jpg",
+            "width": 287,
+            "height": 585
+        },
+        {
+            "id": 97,
+            "file_name": "Back_Panel_Back_Panel_JOBEVNE-AUS_jpg.rf.6c5eb623696cbe84e0c7624b45d45fe8_crop1.jpg",
+            "width": 479,
+            "height": 235
+        },
+        {
+            "id": 98,
+            "file_name": "Back_Panel_Back_Panel_keytruda-07-50-mg-powder-AUS_jpg.rf.2b4c0883195f71384674fbd114bba6e9_crop1.jpg",
+            "width": 175,
+            "height": 391
+        },
+        {
+            "id": 99,
+            "file_name": "Back_Panel_Back_Panel_LEMTRADA-12-mg-1-vial-AUS_jpg.rf.3825d646a46610f5186e12ea90bfd4f4_crop1.jpg",
+            "width": 191,
+            "height": 360
+        },
+        {
+            "id": 100,
+            "file_name": "Back_Panel_Back_Panel_LIBTAYO-carton-AUS_jpg.rf.2791b82ee561e0c41a5da245dd7c4524_crop1.jpg",
+            "width": 361,
+            "height": 266
+        },
+        {
+            "id": 101,
+            "file_name": "Back_Panel_Back_Panel_MERILOG-carton-AUS_jpg.rf.a8b5addf41eda39292b9b37355014e44_crop1.jpg",
+            "width": 195,
+            "height": 357
+        },
+        {
+            "id": 102,
+            "file_name": "Back_Panel_Back_Panel_MONJUVI-200-mg-1-via-AUSl_jpg.rf.1d95486fe8ac90377c7d1aedf04ffe7a_crop1.jpg",
+            "width": 194,
+            "height": 429
+        },
+        {
+            "id": 103,
+            "file_name": "Back_Panel_Back_Panel_MONJUVI-200-mg-1-via-AUSl_jpg.rf.2fe5002a01b1eb18c67acc66951486b6_crop1.jpg",
+            "width": 194,
+            "height": 429
+        },
+        {
+            "id": 104,
+            "file_name": "Back_Panel_Back_Panel_MOUNJARO-AUS-new-text_jpg.rf.2e0659fb9975f1d9f90a4e2b7f3914fa_crop1.jpg",
+            "width": 479,
+            "height": 292
+        },
+        {
+            "id": 105,
+            "file_name": "Back_Panel_Back_Panel_mylotarg-06-AUS_jpg.rf.1252bf02d09102e8258ea93d3e89e5bc_crop1.jpg",
+            "width": 202,
+            "height": 318
+        },
+        {
+            "id": 106,
+            "file_name": "Back_Panel_Back_Panel_mylotarg-06-AUS_jpg.rf.91c2d179fadb206dc9662065a841b56f_crop1.jpg",
+            "width": 202,
+            "height": 318
+        },
+        {
+            "id": 107,
+            "file_name": "Back_Panel_Back_Panel_NYVEPRIA-carton-AUS_jpg.rf.4a15ff00f8b5fe031c8918da9d3f59f7_crop1.jpg",
+            "width": 422,
+            "height": 203
+        },
+        {
+            "id": 108,
+            "file_name": "Back_Panel_Back_Panel_NYVEPRIA-carton-AUS_jpg.rf.cdddd50705aa1a9cbb92e60271c79a8d_crop1.jpg",
+            "width": 422,
+            "height": 203
+        },
+        {
+            "id": 109,
+            "file_name": "Back_Panel_Back_Panel_OCTAGAM-carton-AUS_jpg.rf.15d16adf2d7c159fb9b097774b6a79b6_crop1.jpg",
+            "width": 209,
+            "height": 327
+        },
+        {
+            "id": 110,
+            "file_name": "Back_Panel_Back_Panel_omvoh-carton-300mg-vial-AUS-049-00_jpg.rf.409d8f4fdc1f21d2049af4c6f7dc7985_crop0.jpg",
+            "width": 181,
+            "height": 351
+        },
+        {
+            "id": 111,
+            "file_name": "Back_Panel_Back_Panel_ONTRUZANT-AUS_jpg.rf.78e61768e33651120236a402575a8c0d_crop1.jpg",
+            "width": 185,
+            "height": 291
+        },
+        {
+            "id": 112,
+            "file_name": "Back_Panel_Back_Panel_ONTRUZANT-AUS_jpg.rf.7f10be686eee96fc0c0b533250c9c3cc_crop1.jpg",
+            "width": 185,
+            "height": 291
+        },
+        {
+            "id": 113,
+            "file_name": "Back_Panel_Back_Panel_OPDULAG-240-mg-revise-1vial-carton-AUS_jpg.rf.0a51535d66e15c9eca3e91c6d70b5f42_crop1.jpg",
+            "width": 200,
+            "height": 390
+        },
+        {
+            "id": 114,
+            "file_name": "Back_Panel_Back_Panel_OPDULAG-240-mg-revise-1vial-carton-AUS_jpg.rf.de0a153065a6895f3015a223a2154a40_crop1.jpg",
+            "width": 200,
+            "height": 390
+        },
+        {
+            "id": 115,
+            "file_name": "Back_Panel_Back_Panel_OPUVIZ-PFS-AUS_jpg.rf.979d6f046af253bb3a148baa0b59f80f_crop1.jpg",
+            "width": 443,
+            "height": 286
+        },
+        {
+            "id": 116,
+            "file_name": "Back_Panel_Back_Panel_OSENVELT-1-vial-AUS_jpg.rf.212da55e751bc091a74b189e47ef317a_crop1.jpg",
+            "width": 209,
+            "height": 334
+        },
+        {
+            "id": 117,
+            "file_name": "Back_Panel_Back_Panel_OTULFI-carton-AUS_jpg.rf.58651661372500b00b6469b71c04188c_crop1.jpg",
+            "width": 581,
+            "height": 203
+        },
+        {
+            "id": 118,
+            "file_name": "Back_Panel_Back_Panel_OTULFI-carton-AUS_jpg.rf.9494b8c523d752daaf810ef2ee0c1c18_crop1.jpg",
+            "width": 581,
+            "height": 203
+        },
+        {
+            "id": 119,
+            "file_name": "Back_Panel_Back_Panel_OZEMPIC-AUS_jpg.rf.59cdc10758401a184f44a77f28180763_crop1.jpg",
+            "width": 565,
+            "height": 178
+        },
+        {
+            "id": 120,
+            "file_name": "Back_Panel_Back_Panel_OZEMPIC-AUS_jpg.rf.ae5b8d0d7fbddb1e11a77c2b13e26b44_crop1.jpg",
+            "width": 565,
+            "height": 178
+        },
+        {
+            "id": 121,
+            "file_name": "Back_Panel_Back_Panel_PADCEV-20-mg-1-vial-AUS_jpg.rf.4e9e3de54b0ca10122426dd743dbc308_crop1.jpg",
+            "width": 144,
+            "height": 339
+        },
+        {
+            "id": 122,
+            "file_name": "Back_Panel_Back_Panel_PADCEV-20-mg-1-vial-AUS_jpg.rf.92f03b1dd2d79332ff9fc1c7a24c7d8f_crop1.jpg",
+            "width": 144,
+            "height": 339
+        },
+        {
+            "id": 123,
+            "file_name": "Back_Panel_Back_Panel_PADCEV-30-mg-1-vial-AUS_jpg.rf.64a401a021f97615f7c2e588225b6b28_crop1.jpg",
+            "width": 149,
+            "height": 338
+        },
+        {
+            "id": 124,
+            "file_name": "Back_Panel_Back_Panel_PLEGRIDY-carton-AUS_jpg.rf.129d34564bdf1c2cce3488709f76eae4_crop1.jpg",
+            "width": 539,
+            "height": 307
+        },
+        {
+            "id": 125,
+            "file_name": "Back_Panel_Back_Panel_POTELIGEO-20-mg-1-vial-AUS_jpg.rf.63c04ce479458c5b09053b59465c5aa0_crop1.jpg",
+            "width": 122,
+            "height": 325
+        },
+        {
+            "id": 126,
+            "file_name": "Back_Panel_Back_Panel_POTELIGEO-20-mg-1-vial-AUS_jpg.rf.e5267b2dd100d25aa3f718067391d848_crop1.jpg",
+            "width": 122,
+            "height": 325
+        },
+        {
+            "id": 127,
+            "file_name": "Back_Panel_Back_Panel_PRALUENT-75-mg-2AI-AUS_jpg.rf.1e59cc6272889a14a88e18151121d7f5_crop1.jpg",
+            "width": 461,
+            "height": 220
+        },
+        {
+            "id": 128,
+            "file_name": "Back_Panel_Back_Panel_PRALUENT-75-mg-2AI-AUS_jpg.rf.76581731960291684064634511063618_crop1.jpg",
+            "width": 461,
+            "height": 220
+        },
+        {
+            "id": 129,
+            "file_name": "Back_Panel_Back_Panel_PRIVIGEN-carton-AUS_jpg.rf.5eaa7ceb5ac16342f7b4785969141513_crop1.jpg",
+            "width": 197,
+            "height": 331
+        },
+        {
+            "id": 130,
+            "file_name": "Back_Panel_Back_Panel_PRIVIGEN-carton-AUS_jpg.rf.8fca1c4db88cf3f5ab31c04058c4cb75_crop1.jpg",
+            "width": 197,
+            "height": 331
+        },
+        {
+            "id": 131,
+            "file_name": "Back_Panel_Back_Panel_PYZCHIVA-1PFS-AUS_jpg.rf.ae467bf9d9ef110c5cadb6dcd730cbdf_crop1.jpg",
+            "width": 552,
+            "height": 227
+        },
+        {
+            "id": 132,
+            "file_name": "Back_Panel_Back_Panel_PYZCHIVA-1PFS-AUS_jpg.rf.eca3dde182d5d210d7db2f6944714122_crop1.jpg",
+            "width": 552,
+            "height": 227
+        },
+        {
+            "id": 133,
+            "file_name": "Back_Panel_Back_Panel_REMICADE-carton-AUS_jpg.rf.0aaf8c02fa7698b2c24921f0c99bb90b_crop1.jpg",
+            "width": 204,
+            "height": 305
+        },
+        {
+            "id": 134,
+            "file_name": "Back_Panel_Back_Panel_REMICADE-carton-AUS_jpg.rf.b9dec68afcb32637a326b5d90de3765b_crop1.jpg",
+            "width": 204,
+            "height": 305
+        },
+        {
+            "id": 135,
+            "file_name": "Back_Panel_Back_Panel_RENFLEXIS-100-mg-1-vial-AUS_jpg.rf.ed6a6dc8951f63659b9422ee892bdf3a_crop1.jpg",
+            "width": 193,
+            "height": 331
+        },
+        {
+            "id": 136,
+            "file_name": "Back_Panel_Back_Panel_ROCTAVIAN-carton-AUS_jpg.rf.7e71d5945784c1c4e2807c1e071a1816_crop1.jpg",
+            "width": 229,
+            "height": 334
+        },
+        {
+            "id": 137,
+            "file_name": "Back_Panel_Back_Panel_ROCTAVIAN-carton-AUS_jpg.rf.9e5a657b9a88e10c29dc81a31a99d779_crop1.jpg",
+            "width": 229,
+            "height": 334
+        },
+        {
+            "id": 138,
+            "file_name": "Back_Panel_Back_Panel_RUXIENCE-carton-AUS_jpg.rf.69b9f35b83e50742ffd7f3c9d5fd53bb_crop1.jpg",
+            "width": 212,
+            "height": 431
+        },
+        {
+            "id": 139,
+            "file_name": "Back_Panel_Back_Panel_RYBREVANT-350-mg-1-vial-AUS_jpg.rf.0df0d2972fbe66fe00220a71bf7883e0_crop1.jpg",
+            "width": 196,
+            "height": 390
+        },
+        {
+            "id": 140,
+            "file_name": "Back_Panel_Back_Panel_RYBREVANT-350-mg-1-vial-AUS_jpg.rf.56c76c771c9d75f1458113796267bf05_crop1.jpg",
+            "width": 196,
+            "height": 390
+        },
+        {
+            "id": 141,
+            "file_name": "Back_Panel_Back_Panel_rystiggo-02-AUS_jpg.rf.1df12e84a3c19b889ed1d1a308aea0bc_crop1.jpg",
+            "width": 438,
+            "height": 238
+        },
+        {
+            "id": 142,
+            "file_name": "Back_Panel_Back_Panel_rystiggo-02-AUS_jpg.rf.48cc0b2df3adc2d39e099cdc33bf5d99_crop1.jpg",
+            "width": 438,
+            "height": 238
+        },
+        {
+            "id": 143,
+            "file_name": "Back_Panel_Back_Panel_SARCALISA-100-mg-1vial-AUS_jpg.rf.42ad1f2aecf9856754a9377003badb5d_crop1.jpg",
+            "width": 462,
+            "height": 262
+        },
+        {
+            "id": 144,
+            "file_name": "Back_Panel_Back_Panel_SIMPONI-carton-AUS_jpg.rf.0a2c521368012da1e6808c6b380d32e9_crop1.jpg",
+            "width": 438,
+            "height": 168
+        },
+        {
+            "id": 145,
+            "file_name": "Back_Panel_Back_Panel_SIMPONI-carton-AUS_jpg.rf.a9f1a6470e538b2d6b038d973812980a_crop1.jpg",
+            "width": 438,
+            "height": 168
+        },
+        {
+            "id": 146,
+            "file_name": "Back_Panel_Back_Panel_soliris-02-AUS_jpg.rf.58b6aea1ac1e5ee1e6f05b238568c7c0_crop1.jpg",
+            "width": 160,
+            "height": 286
+        },
+        {
+            "id": 147,
+            "file_name": "Back_Panel_Back_Panel_SOMAVERT-carton-AUS_jpg.rf.1bbfe2240ac0450e15622a4dd1470c66_crop1.jpg",
+            "width": 481,
+            "height": 161
+        },
+        {
+            "id": 148,
+            "file_name": "Back_Panel_Back_Panel_SOMAVERT-carton-AUS_jpg.rf.2d71b9a07c83553f4b87f6db83026004_crop1.jpg",
+            "width": 481,
+            "height": 161
+        },
+        {
+            "id": 149,
+            "file_name": "Back_Panel_Back_Panel_SPEVIGO-150-mg-2PFS-AUS_jpg.rf.11273dafcc053ab70c8d8337102410bf_crop1.jpg",
+            "width": 496,
+            "height": 280
+        },
+        {
+            "id": 150,
+            "file_name": "Back_Panel_Back_Panel_SPEVIGO-150-mg-2PFS-AUS_jpg.rf.dd822752c9fc848f74036b135460bd0c_crop1.jpg",
+            "width": 496,
+            "height": 280
+        },
+        {
+            "id": 151,
+            "file_name": "Back_Panel_Back_Panel_SPEVIGO-450-mg-2vials-AUS_jpg.rf.a554d707e4d9075539ce68b0fb4520cf_crop1.jpg",
+            "width": 309,
+            "height": 257
+        },
+        {
+            "id": 152,
+            "file_name": "Back_Panel_Back_Panel_STELARA-carton-AUS_jpg.rf.4e30b106dc76af254fa7c57ba706912a_crop1.jpg",
+            "width": 175,
+            "height": 395
+        },
+        {
+            "id": 153,
+            "file_name": "Back_Panel_Back_Panel_STELARA-carton-AUS_jpg.rf.e3d08651b8cdf34fb0450bc6f72c6dc7_crop1.jpg",
+            "width": 175,
+            "height": 395
+        },
+        {
+            "id": 154,
+            "file_name": "Back_Panel_Back_Panel_STEQEYMA-AUS-carton_jpg.rf.b32db677d57ae95db72780673978c614_crop1.jpg",
+            "width": 489,
+            "height": 174
+        },
+        {
+            "id": 155,
+            "file_name": "Back_Panel_Back_Panel_STEQEYMA-AUS-carton_jpg.rf.f556384dc77a9eb6ebdc675b9c855802_crop1.jpg",
+            "width": 489,
+            "height": 174
+        },
+        {
+            "id": 156,
+            "file_name": "Back_Panel_Back_Panel_STOBOCLO-AUS_jpg.rf.7a8adb629887ded1a3509346f9133067_crop1.jpg",
+            "width": 499,
+            "height": 176
+        },
+        {
+            "id": 157,
+            "file_name": "Back_Panel_Back_Panel_SYLVANT-carton-AUS_jpg.rf.c5b962d8f772f157a4123f265a29d306_crop1.jpg",
+            "width": 184,
+            "height": 375
+        },
+        {
+            "id": 158,
+            "file_name": "Back_Panel_Back_Panel_TALVEY-01-2-mg-mL-AUS_jpg.rf.8c1aca0d056b1b04b8d8b135c5cfe06b_crop1.jpg",
+            "width": 186,
+            "height": 327
+        },
+        {
+            "id": 159,
+            "file_name": "Back_Panel_Back_Panel_TALVEY-02-40-mg-mL-AUS_jpg.rf.2aa5cee05c5b7be88cb03be477430567_crop1.jpg",
+            "width": 200,
+            "height": 324
+        },
+        {
+            "id": 160,
+            "file_name": "Back_Panel_Back_Panel_TALVEY-02-40-mg-mL-AUS_jpg.rf.46869da1de488786b6ef6a36111ed5df_crop1.jpg",
+            "width": 200,
+            "height": 324
+        },
+        {
+            "id": 161,
+            "file_name": "Back_Panel_Back_Panel_tecvayli-01-10-mg-mL-AUS_jpg.rf.3330a270324aeb076696790d0bf7f302_crop1.jpg",
+            "width": 192,
+            "height": 339
+        },
+        {
+            "id": 162,
+            "file_name": "Back_Panel_Back_Panel_tecvayli-01-10-mg-mL-AUS_jpg.rf.5eeb4f87bb4ba7075474628dfc466495_crop1.jpg",
+            "width": 192,
+            "height": 339
+        },
+        {
+            "id": 163,
+            "file_name": "Back_Panel_Back_Panel_tecvayli-02-90-mg-mL-AUS_jpg.rf.86fdff47db5c2b6c80290c2ea7bd5ff2_crop1.jpg",
+            "width": 206,
+            "height": 338
+        },
+        {
+            "id": 164,
+            "file_name": "Back_Panel_Back_Panel_tecvayli-02-90-mg-mL-AUS_jpg.rf.9b88abbb5a3c29d07ed9e269d407141c_crop1.jpg",
+            "width": 206,
+            "height": 338
+        },
+        {
+            "id": 165,
+            "file_name": "Back_Panel_Back_Panel_tepezza-02-AUS_jpg.rf.3212168eee1ca730e89e953f4f8d12e6_crop1.jpg",
+            "width": 229,
+            "height": 327
+        },
+        {
+            "id": 166,
+            "file_name": "Back_Panel_Back_Panel_tepezza-02-AUS_jpg.rf.90b658948e8cafc8623c68c0398853f5_crop1.jpg",
+            "width": 229,
+            "height": 327
+        },
+        {
+            "id": 167,
+            "file_name": "Back_Panel_Back_Panel_TEVIMBRA-100-mg-1-vial-AUS_jpg.rf.8a54197e73a0fb6daa51bf75c2125db2_crop1.jpg",
+            "width": 200,
+            "height": 326
+        },
+        {
+            "id": 168,
+            "file_name": "Back_Panel_Back_Panel_TEVIMBRA-100-mg-1-vial-AUS_jpg.rf.cb56ba2c59c033ecd70bcfec13af251c_crop1.jpg",
+            "width": 200,
+            "height": 326
+        },
+        {
+            "id": 169,
+            "file_name": "Back_Panel_Back_Panel_TOCILIZUMAB-200-mg-Celltrion-1-vial-AUS_jpg.rf.df8c74d6f499d3982648dd2ae487fd39_crop1.jpg",
+            "width": 200,
+            "height": 400
+        },
+        {
+            "id": 170,
+            "file_name": "Back_Panel_Back_Panel_TOCILIZUMAB-200-mg-Celltrion-1-vial-AUS_jpg.rf.e88363a6697c3ed6b6f68ccbfe10b207_crop1.jpg",
+            "width": 200,
+            "height": 400
+        },
+        {
+            "id": 171,
+            "file_name": "Back_Panel_Back_Panel_TOFIDENCE-200-mg-1-vial-AUS_jpg.rf.34230f99f65f5caff43ad975a08041de_crop1.jpg",
+            "width": 178,
+            "height": 281
+        },
+        {
+            "id": 172,
+            "file_name": "Back_Panel_Back_Panel_trazimera-420-AUS_jpg.rf.66ef2c342e5980ebe22949bb50c3bc2f_crop1.jpg",
+            "width": 236,
+            "height": 420
+        },
+        {
+            "id": 173,
+            "file_name": "Back_Panel_Back_Panel_TRAZIMERA-carton-150t-AUS_jpg.rf.179af620f7a167f7c7c1ed55501af6ae_crop1.jpg",
+            "width": 214,
+            "height": 431
+        },
+        {
+            "id": 174,
+            "file_name": "Back_Panel_Back_Panel_TRAZIMERA-carton-150t-AUS_jpg.rf.86df15ca892d296fef034a2682b039f5_crop1.jpg",
+            "width": 214,
+            "height": 431
+        },
+        {
+            "id": 175,
+            "file_name": "Back_Panel_Back_Panel_TREMFYA-PFS-carton-AUS_jpg.rf.ac769283ca7e6471230a3d5ee3999858_crop1.jpg",
+            "width": 552,
+            "height": 188
+        },
+        {
+            "id": 176,
+            "file_name": "Back_Panel_Back_Panel_TREMFYA-vial-carton-AUS_jpg.rf.7d11bb94925fd56d2a8417c4e57967ff_crop1.jpg",
+            "width": 185,
+            "height": 384
+        },
+        {
+            "id": 177,
+            "file_name": "Back_Panel_Back_Panel_TRODELVY-carton-AUS_jpg.rf.56150c0c54ba37a6a65707489f529ddc_crop1.jpg",
+            "width": 192,
+            "height": 335
+        },
+        {
+            "id": 178,
+            "file_name": "Back_Panel_Back_Panel_TRULICITY-1_5-carton-AUS_jpg.rf.ae25d7225795253cb21774993382a397_crop1.jpg",
+            "width": 497,
+            "height": 297
+        },
+        {
+            "id": 179,
+            "file_name": "Back_Panel_Back_Panel_TRULICITY-1_5-carton-AUS_jpg.rf.bde3ba7213f6e40cbf3d884ccb29d5c6_crop1.jpg",
+            "width": 497,
+            "height": 297
+        },
+        {
+            "id": 180,
+            "file_name": "Back_Panel_Back_Panel_TYSABRI-carton-AUS_jpg.rf.447ea2909a132e33ca93bf87ac2da584_crop1.jpg",
+            "width": 184,
+            "height": 281
+        },
+        {
+            "id": 181,
+            "file_name": "Back_Panel_Back_Panel_TYSABRI-carton-AUS_jpg.rf.d2eb20cefc62813b3b70dc181335d8fe_crop1.jpg",
+            "width": 184,
+            "height": 281
+        },
+        {
+            "id": 182,
+            "file_name": "Back_Panel_Back_Panel_ultomiris-03-AUS_jpg.rf.77d78a7ea585cea038155cc80cf0fa0d_crop1.jpg",
+            "width": 197,
+            "height": 286
+        },
+        {
+            "id": 183,
+            "file_name": "Back_Panel_Back_Panel_ultomiris-03-AUS_jpg.rf.ab5b8e6df15d1079b823b0e0d4248994_crop1.jpg",
+            "width": 197,
+            "height": 286
+        },
+        {
+            "id": 184,
+            "file_name": "Back_Panel_Back_Panel_UNITUXIN-AUS_jpg.rf.9642bc613ea17024a3dc7c9ebb28ef0a_crop1.jpg",
+            "width": 205,
+            "height": 332
+        },
+        {
+            "id": 185,
+            "file_name": "Back_Panel_Back_Panel_uplizna-04-AUS_jpg.rf.e5fe71c18a3d6d6c2533066d1c5bb9ea_crop1.jpg",
+            "width": 191,
+            "height": 233
+        },
+        {
+            "id": 186,
+            "file_name": "Back_Panel_Back_Panel_USTEKINUMAB-aekn-1vial-carton-AUS_jpg.rf.959608577078f13ee0e892c8f88cf475_crop1.jpg",
+            "width": 481,
+            "height": 211
+        },
+        {
+            "id": 187,
+            "file_name": "Back_Panel_Back_Panel_USTEKINUMAB-carton-AUS_jpg.rf.0df5e51c74cbf88d29964588e2a4599d_crop1.jpg",
+            "width": 215,
+            "height": 287
+        },
+        {
+            "id": 188,
+            "file_name": "Back_Panel_Back_Panel_USTEKINUMAB-carton-AUS_jpg.rf.d2e16cdd055c02a84217bab7c6557273_crop1.jpg",
+            "width": 215,
+            "height": 287
+        },
+        {
+            "id": 189,
+            "file_name": "Back_Panel_Back_Panel_VYEPTI-100-mg-1-vial-AUS_jpg.rf.1b376e57131a768a9c941b3c301c13cb_crop1.jpg",
+            "width": 123,
+            "height": 234
+        },
+        {
+            "id": 190,
+            "file_name": "Back_Panel_Back_Panel_VYEPTI-100-mg-1-vial-AUS_jpg.rf.8dadf36edd9711310490cd98ba8ce47f_crop1.jpg",
+            "width": 123,
+            "height": 234
+        },
+        {
+            "id": 191,
+            "file_name": "Back_Panel_Back_Panel_VYLOY-carton-AUS_jpg.rf.2d20dee90c3d76743a11ab935d9eaa70_crop1.jpg",
+            "width": 125,
+            "height": 252
+        },
+        {
+            "id": 192,
+            "file_name": "Back_Panel_Back_Panel_VYLOY-carton-AUS_jpg.rf.61420150465948fd7fbc4d80029d272c_crop1.jpg",
+            "width": 125,
+            "height": 252
+        },
+        {
+            "id": 193,
+            "file_name": "Back_Panel_Back_Panel_ZALTRAP-AUS_jpg.rf.1f82533098f06e7936cdf697b4a092df_crop1.jpg",
+            "width": 196,
+            "height": 356
+        },
+        {
+            "id": 194,
+            "file_name": "Back_Panel_Back_Panel_ziihera-AUS-carton-label_jpg.rf.7273c20637faa96b6bc2ff2779e8e7e0_crop1.jpg",
+            "width": 253,
+            "height": 247
+        },
+        {
+            "id": 195,
+            "file_name": "Back_Panel_Back_Panel_ziihera-AUS-carton-label_jpg.rf.a9e1643b9f2b7afa38020e23223c385c_crop1.jpg",
+            "width": 253,
+            "height": 247
+        },
+        {
+            "id": 196,
+            "file_name": "Back_Panel_Back_Panel_ZIRABEV-1vial-carton-AUS_jpg.rf.05ea868bd5a942a02771d832d527ae05_crop1.jpg",
+            "width": 136,
+            "height": 314
+        },
+        {
+            "id": 197,
+            "file_name": "Back_Panel_Back_Panel_zynyz-2-AUS_jpg.rf.744e6a44c365da285a3972edec68813e_crop1.jpg",
+            "width": 256,
+            "height": 352
+        },
+        {
+            "id": 198,
+            "file_name": "Front_Panel_Front_Panel_20260111-SDeimos_jpg.rf.192b6b114e4fd367e8ea2422e6cffb60_crop0.jpg",
+            "width": 188,
+            "height": 315
+        },
+        {
+            "id": 199,
+            "file_name": "Front_Panel_Front_Panel_20260111-SDeimos_jpg.rf.d7fd0a530a42f938552c2ed4bad5669a_crop0.jpg",
+            "width": 188,
+            "height": 315
+        },
+        {
+            "id": 200,
+            "file_name": "Front_Panel_Front_Panel_20260111-S_ENCELADUS_jpg.rf.5ec7ec7a6d9ccc1bf9d68c8381cc19a7_crop0.jpg",
+            "width": 175,
+            "height": 378
+        },
+        {
+            "id": 201,
+            "file_name": "Front_Panel_Front_Panel_20260111-S_ENCELADUS_jpg.rf.c3680a6cd4eb6dba27079cee7f1ccad3_crop0.jpg",
+            "width": 175,
+            "height": 378
+        },
+        {
+            "id": 202,
+            "file_name": "Front_Panel_Front_Panel_20260111-S_MIMAS_jpg.rf.621c5ac9e0ecb0dba2c875539ab99aeb_crop0.jpg",
+            "width": 175,
+            "height": 379
+        },
+        {
+            "id": 203,
+            "file_name": "Front_Panel_Front_Panel_20260111-S_TITAN_jpg.rf.6e1ce3f4aef731a7974daa788359bf5e_crop0.jpg",
+            "width": 191,
+            "height": 314
+        },
+        {
+            "id": 204,
+            "file_name": "Front_Panel_Front_Panel_20260112-SPhobos_jpg.rf.35e7d1bbfafb6641b55fe399a0ef4f88_crop0.jpg",
+            "width": 188,
+            "height": 314
+        },
+        {
+            "id": 205,
+            "file_name": "Front_Panel_Front_Panel_20260114-S_EUROPA_jpg.rf.4523d859b5b173c2f793902178043c8b_crop0.jpg",
+            "width": 192,
+            "height": 313
+        },
+        {
+            "id": 206,
+            "file_name": "Front_Panel_Front_Panel_20260114-S_EUROPA_jpg.rf.72fb3ca0cfd61dce7e29f8d53c90ce23_crop0.jpg",
+            "width": 192,
+            "height": 313
+        },
+        {
+            "id": 207,
+            "file_name": "Front_Panel_Front_Panel_20260115-S_CALLISTO_jpg.rf.6203c118ff1f1f0c185b2c7188ac4882_crop0.jpg",
+            "width": 191,
+            "height": 314
+        },
+        {
+            "id": 208,
+            "file_name": "Front_Panel_Front_Panel_20260115-S_CALLISTO_jpg.rf.7a0de7f422022f2ec1b4269eb089ceb0_crop0.jpg",
+            "width": 191,
+            "height": 314
+        },
+        {
+            "id": 209,
+            "file_name": "Front_Panel_Front_Panel_20260115-S_GANYMEDE_jpg.rf.061e32c1e1b09ed15d32f634c81f6abb_crop0.jpg",
+            "width": 188,
+            "height": 316
+        },
+        {
+            "id": 210,
+            "file_name": "Front_Panel_Front_Panel_20260115-S_GANYMEDE_jpg.rf.3c9d2065b8f3d0c7814b2549e897001a_crop0.jpg",
+            "width": 188,
+            "height": 316
+        },
+        {
+            "id": 211,
+            "file_name": "Front_Panel_Front_Panel_20260115-S_IO_jpg.rf.f4fdb49b9a94164cd70aab09ea3572d1_crop0.jpg",
+            "width": 191,
+            "height": 314
+        },
+        {
+            "id": 212,
+            "file_name": "Front_Panel_Front_Panel_20260117-S_DIONE_jpg.rf.7ccc1bf2c0a396dbf98cce5327a9b00e_crop0.jpg",
+            "width": 175,
+            "height": 379
+        },
+        {
+            "id": 213,
+            "file_name": "Front_Panel_Front_Panel_ADAKVEO-100-mg-1-vial-AUS_jpg.rf.03bdf8eb4ef0e64701e0ed1cf9c70a64_crop0.jpg",
+            "width": 385,
+            "height": 252
+        },
+        {
+            "id": 214,
+            "file_name": "Front_Panel_Front_Panel_ADAKVEO-100-mg-1-vial-AUS_jpg.rf.5d560f041b5d9e347b6876aa22123dc0_crop0.jpg",
+            "width": 385,
+            "height": 252
+        },
+        {
+            "id": 215,
+            "file_name": "Front_Panel_Front_Panel_AHZANTIVE-carton-gimp-AUS_jpg.rf.ffe6aeed5da060beec1e7e72114e6f8b_crop0.jpg",
+            "width": 191,
+            "height": 301
+        },
+        {
+            "id": 216,
+            "file_name": "Front_Panel_Front_Panel_ALHEMO-60-mg-1AI-AUS_jpg.rf.bd1da4372969e062fe3742507ddad429_crop0.jpg",
+            "width": 578,
+            "height": 201
+        },
+        {
+            "id": 217,
+            "file_name": "Front_Panel_Front_Panel_ALPROLIX-AUS-alp0b-0002-27_jpg.rf.15b291c57d806fe9f64cba6dbede8fb0_crop0.jpg",
+            "width": 212,
+            "height": 377
+        },
+        {
+            "id": 218,
+            "file_name": "Front_Panel_Front_Panel_ALPROLIX-AUS-alp0b-0002-27_jpg.rf.2dc91d8d28edfe62a01ec525c35fc18e_crop0.jpg",
+            "width": 212,
+            "height": 377
+        },
+        {
+            "id": 219,
+            "file_name": "Front_Panel_Front_Panel_ALYGLO-carton-ivig-AUS_jpg.rf.786403d4a10c3fd796cc41ad5319d3dd_crop0.jpg",
+            "width": 209,
+            "height": 385
+        },
+        {
+            "id": 220,
+            "file_name": "Front_Panel_Front_Panel_ALYGLO-carton-ivig-AUS_jpg.rf.8202408817f9d4682cbdb6b0931680b7_crop0.jpg",
+            "width": 209,
+            "height": 385
+        },
+        {
+            "id": 221,
+            "file_name": "Front_Panel_Front_Panel_ALYMSYS-maly-400-carton-label-AUS_jpg.rf.6cba6e6fd74d147e25f22321bc623311_crop0.jpg",
+            "width": 226,
+            "height": 400
+        },
+        {
+            "id": 222,
+            "file_name": "Front_Panel_Front_Panel_ALYMSYS-maly-400-carton-label-AUS_jpg.rf.8428d2a4433a53e5a4d0d90ecfc43f1b_crop0.jpg",
+            "width": 226,
+            "height": 400
+        },
+        {
+            "id": 223,
+            "file_name": "Front_Panel_Front_Panel_ANDEMBRY-1-AI-AUS_jpg.rf.5c0faea0f490ed518117165190bb9ae0_crop0.jpg",
+            "width": 578,
+            "height": 208
+        },
+        {
+            "id": 224,
+            "file_name": "Front_Panel_Front_Panel_ANDEMBRY-1-AI-AUS_jpg.rf.7ae19044f3d063a2979084bc9ee297af_crop0.jpg",
+            "width": 578,
+            "height": 208
+        },
+        {
+            "id": 225,
+            "file_name": "Front_Panel_Front_Panel_AVONEX-carton-AUS_jpg.rf.bb6f74c2279c58e2c63da82e3d691341_crop0.jpg",
+            "width": 610,
+            "height": 331
+        },
+        {
+            "id": 226,
+            "file_name": "Front_Panel_Front_Panel_AVONEX-carton-AUS_jpg.rf.e3abe7118dfc461ca5966463ad930f65_crop0.jpg",
+            "width": 610,
+            "height": 331
+        },
+        {
+            "id": 227,
+            "file_name": "Front_Panel_Front_Panel_AVTOZMA-syinge-carton-AUS_jpg.rf.af884258139d1180300bf3cc35a74f9b_crop0.jpg",
+            "width": 500,
+            "height": 177
+        },
+        {
+            "id": 228,
+            "file_name": "Front_Panel_Front_Panel_AVTOZMA-syinge-carton-AUS_jpg.rf.dbac86f782f5ae5b8db38f85678a3bb0_crop0.jpg",
+            "width": 500,
+            "height": 177
+        },
+        {
+            "id": 229,
+            "file_name": "Front_Panel_Front_Panel_AVTOZMA-VIAL-carton-AUS_jpg.rf.85c9ba717943f207aac179e15624749f_crop0.jpg",
+            "width": 210,
+            "height": 396
+        },
+        {
+            "id": 230,
+            "file_name": "Front_Panel_Front_Panel_AVTOZMA-VIAL-carton-AUS_jpg.rf.aab411b4dc1f0a55ddc5e52081673e6a_crop0.jpg",
+            "width": 210,
+            "height": 396
+        },
+        {
+            "id": 231,
+            "file_name": "Front_Panel_Front_Panel_AVZIVI-AUS_jpg.rf.7b264ae49dfc8672348bcc4cfe5440d0_crop0.jpg",
+            "width": 254,
+            "height": 524
+        },
+        {
+            "id": 232,
+            "file_name": "Front_Panel_Front_Panel_BAVENCIO-carton-AUS_jpg.rf.5a06ca6d1b8c8203f0440deedd54c105_crop0.jpg",
+            "width": 185,
+            "height": 364
+        },
+        {
+            "id": 233,
+            "file_name": "Front_Panel_Front_Panel_BAVENCIO-carton-AUS_jpg.rf.ebf1a15693992f8b4ba1679b74247e8d_crop0.jpg",
+            "width": 185,
+            "height": 364
+        },
+        {
+            "id": 234,
+            "file_name": "Front_Panel_Front_Panel_BEOVU-6-mg-1PFS-AUS_jpg.rf.9fac0c82b9da2bdc5978030630e15d57_crop0.jpg",
+            "width": 472,
+            "height": 247
+        },
+        {
+            "id": 235,
+            "file_name": "Front_Panel_Front_Panel_BEOVU-6-mg-1PFS-AUS_jpg.rf.c06c29c38d2f13d4f9241a691e09ceb6_crop0.jpg",
+            "width": 472,
+            "height": 247
+        },
+        {
+            "id": 236,
+            "file_name": "Front_Panel_Front_Panel_BOMYNTRO-1vial-AUS_jpg.rf.2627287401b604faa0c4d6b12416903f_crop0.jpg",
+            "width": 421,
+            "height": 280
+        },
+        {
+            "id": 237,
+            "file_name": "Front_Panel_Front_Panel_BOMYNTRO-1vial-AUS_jpg.rf.ebd0b62f8330678f30f78ee339530014_crop0.jpg",
+            "width": 421,
+            "height": 280
+        },
+        {
+            "id": 238,
+            "file_name": "Front_Panel_Front_Panel_BYOOVIZ-AUS_jpg.rf.5cc307c09b5d551447f2bfd2dd16635e_crop0.jpg",
+            "width": 490,
+            "height": 234
+        },
+        {
+            "id": 239,
+            "file_name": "Front_Panel_Front_Panel_CAMPATH-30-mg-1-vial-AUS_jpg.rf.30d5d0d5a7010531c0eb84db4093308d_crop0.jpg",
+            "width": 183,
+            "height": 280
+        },
+        {
+            "id": 240,
+            "file_name": "Front_Panel_Front_Panel_CAMPATH-30-mg-1-vial-AUS_jpg.rf.e177c89d9a977ccc9533034cbb8e84e8_crop0.jpg",
+            "width": 183,
+            "height": 280
+        },
+        {
+            "id": 241,
+            "file_name": "Front_Panel_Front_Panel_CHARON-AI-AUS_jpg.rf.261d5c75f2ccb4afa99a09052acce424_crop0.jpg",
+            "width": 539,
+            "height": 204
+        },
+        {
+            "id": 242,
+            "file_name": "Front_Panel_Front_Panel_CHARON-AI-AUS_jpg.rf.7c607bc834b0c274e90324c59d911729_crop0.jpg",
+            "width": 539,
+            "height": 204
+        },
+        {
+            "id": 243,
+            "file_name": "Front_Panel_Front_Panel_CIMZIA-200-mg-2PFS-AUS_jpg.rf.3f384a912cd5231f7f87eb17e3bfcd8e_crop0.jpg",
+            "width": 214,
+            "height": 620
+        },
+        {
+            "id": 244,
+            "file_name": "Front_Panel_Front_Panel_CIMZIA-200-mg-2PFS-AUS_jpg.rf.ac9968a690350237306f886db4a4ef2b_crop0.jpg",
+            "width": 214,
+            "height": 620
+        },
+        {
+            "id": 245,
+            "file_name": "Front_Panel_Front_Panel_COSENTYX-carton-AUS_jpg.rf.11a3a38bb1445c55ae8b85549be0527a_crop0.jpg",
+            "width": 505,
+            "height": 196
+        },
+        {
+            "id": 246,
+            "file_name": "Front_Panel_Front_Panel_COSENTYX-carton-AUS_jpg.rf.8fa60a2070b8d6b83c057953c82a0208_crop0.jpg",
+            "width": 505,
+            "height": 196
+        },
+        {
+            "id": 247,
+            "file_name": "Front_Panel_Front_Panel_CRYSVITA-10-mg-1-vial-AUS_jpg.rf.7bce900871f4f2819a569b842d64f452_crop0.jpg",
+            "width": 156,
+            "height": 330
+        },
+        {
+            "id": 248,
+            "file_name": "Front_Panel_Front_Panel_CUVITRU-carton-AUS_jpg.rf.7dd9d50a5794fc099159d954ae4e62c0_crop0.jpg",
+            "width": 191,
+            "height": 245
+        },
+        {
+            "id": 249,
+            "file_name": "Front_Panel_Front_Panel_cyltezo-34-PFS-carton-AUS_jpg.rf.4e5de9ac811d36ecb9563edc1b226719_crop0.jpg",
+            "width": 640,
+            "height": 145
+        },
+        {
+            "id": 250,
+            "file_name": "Front_Panel_Front_Panel_cyltezo-34-PFS-carton-AUS_jpg.rf.748ba04c513952e3eecc87c7b9f7de71_crop0.jpg",
+            "width": 640,
+            "height": 145
+        },
+        {
+            "id": 251,
+            "file_name": "Front_Panel_Front_Panel_Darzalex_Injection_20-mg-per-mL_5-mL-AUS_jpg.rf.d88c1ad834aca3611377ac3c71a4961a_crop0.jpg",
+            "width": 186,
+            "height": 352
+        },
+        {
+            "id": 252,
+            "file_name": "Front_Panel_Front_Panel_DATROWAY-100-mg-1-vial-AUS_jpg.rf.5b936ce67078e17d4372540aa0b58da9_crop0.jpg",
+            "width": 218,
+            "height": 334
+        },
+        {
+            "id": 253,
+            "file_name": "Front_Panel_Front_Panel_DATROWAY-100-mg-1-vial-AUS_jpg.rf.7f02cfe67e414047675478d3bb73250b_crop0.jpg",
+            "width": 218,
+            "height": 334
+        },
+        {
+            "id": 254,
+            "file_name": "Front_Panel_Front_Panel_DUPIXIENT-300-AUS_jpg.rf.7b90c116448d0eda11a9b74ec8062d91_crop0.jpg",
+            "width": 640,
+            "height": 168
+        },
+        {
+            "id": 255,
+            "file_name": "Front_Panel_Front_Panel_DUPIXIENT-300-AUS_jpg.rf.976e10526b99120ed060e765ed979089_crop0.jpg",
+            "width": 640,
+            "height": 168
+        },
+        {
+            "id": 256,
+            "file_name": "Front_Panel_Front_Panel_ELREXFIO-76-mg-1vial-AUS_jpg.rf.8838dbcc0c6250c138d2dc7c035236ae_crop1.jpg",
+            "width": 129,
+            "height": 315
+        },
+        {
+            "id": 257,
+            "file_name": "Front_Panel_Front_Panel_ELREXFIO-76-mg-1vial-AUS_jpg.rf.e26495004aedca17a9cc4d988e9957ad_crop1.jpg",
+            "width": 129,
+            "height": 315
+        },
+        {
+            "id": 258,
+            "file_name": "Front_Panel_Front_Panel_ELRXFIO-elranatamab-AUS-04_jpg.rf.080e89226f43ff72df0e8473264f943c_crop0.jpg",
+            "width": 141,
+            "height": 306
+        },
+        {
+            "id": 259,
+            "file_name": "Front_Panel_Front_Panel_ELRXFIO-elranatamab-AUS-04_jpg.rf.2543b9828037671d20f3f311efe4f49d_crop0.jpg",
+            "width": 141,
+            "height": 306
+        },
+        {
+            "id": 260,
+            "file_name": "Front_Panel_Front_Panel_Enhurtu-gimp-AUS_jpg.rf.a64afaf838d48fa140938d9ab5bfc35e_crop0.jpg",
+            "width": 175,
+            "height": 306
+        },
+        {
+            "id": 261,
+            "file_name": "Front_Panel_Front_Panel_ENOXAPARIN-sodium-100-mg-ml-carton-AUS_jpg.rf.de0eb1b8a2a8665beb1edc9daf443419_crop0.jpg",
+            "width": 266,
+            "height": 438
+        },
+        {
+            "id": 262,
+            "file_name": "Front_Panel_Front_Panel_ENTYVIO-carton-AUS_jpg.rf.00bc0e5489a3327a5b96c1d991ea1e3a_crop0.jpg",
+            "width": 193,
+            "height": 338
+        },
+        {
+            "id": 263,
+            "file_name": "Front_Panel_Front_Panel_ENTYVIO-carton-AUS_jpg.rf.b30d7638008d808172bb35bc3fbe664b_crop0.jpg",
+            "width": 193,
+            "height": 338
+        },
+        {
+            "id": 264,
+            "file_name": "Front_Panel_Front_Panel_EPYSQLI-carton-AUS_jpg.rf.09c07e45ba12ad5b33252cff621a0692_crop0.jpg",
+            "width": 189,
+            "height": 369
+        },
+        {
+            "id": 265,
+            "file_name": "Front_Panel_Front_Panel_EPYSQLI-carton-AUS_jpg.rf.ab3b3b29c37c1f07a83dd77995082fcf_crop0.jpg",
+            "width": 189,
+            "height": 369
+        },
+        {
+            "id": 266,
+            "file_name": "Front_Panel_Front_Panel_ERBITUX-carton-AUS_jpg.rf.93f306405f1931c058479caa500ebe15_crop0.jpg",
+            "width": 192,
+            "height": 454
+        },
+        {
+            "id": 267,
+            "file_name": "Front_Panel_Front_Panel_extavia-15-AUS_jpg.rf.cb98450749226a9d8b5553f5a7ccb179_crop0.jpg",
+            "width": 231,
+            "height": 281
+        },
+        {
+            "id": 268,
+            "file_name": "Front_Panel_Front_Panel_EYLEA-2-mg-PFS-carton-AUS_jpg.rf.9d891b2dd86bc5721272bfe17f201fa9_crop0.jpg",
+            "width": 261,
+            "height": 567
+        },
+        {
+            "id": 269,
+            "file_name": "Front_Panel_Front_Panel_EYLEA-2-mg-PFS-carton-AUS_jpg.rf.ec457a76218c067e1f5ac504dfcf6e2e_crop0.jpg",
+            "width": 261,
+            "height": 567
+        },
+        {
+            "id": 270,
+            "file_name": "Front_Panel_Front_Panel_EYLEA-HD-8-mg-PFS-carton-AUS_jpg.rf.572c0e7d50fb132ccb6df57de7fe895d_crop0.jpg",
+            "width": 509,
+            "height": 287
+        },
+        {
+            "id": 271,
+            "file_name": "Front_Panel_Front_Panel_EYLEA-HD-8-mg-PFS-carton-AUS_jpg.rf.df74420a946f3f9800e4221bfd63f698_crop0.jpg",
+            "width": 509,
+            "height": 287
+        },
+        {
+            "id": 272,
+            "file_name": "Front_Panel_Front_Panel_FAKEIDACIO2PFS-AUS_jpg.rf.b72efdf88e15b774efe240cd695a5b49_crop0.jpg",
+            "width": 535,
+            "height": 203
+        },
+        {
+            "id": 273,
+            "file_name": "Front_Panel_Front_Panel_FAKEIDACIO2PFS-AUS_jpg.rf.ed78f048491329cca14c8dec3556429f_crop0.jpg",
+            "width": 535,
+            "height": 203
+        },
+        {
+            "id": 274,
+            "file_name": "Front_Panel_Front_Panel_FIASP-carton-cartirdge-AUS1_jpg.rf.3e57a9e6ab0f37684b7194967f339282_crop0.jpg",
+            "width": 306,
+            "height": 430
+        },
+        {
+            "id": 275,
+            "file_name": "Front_Panel_Front_Panel_Forteo-pen-carton-20mcg-002-07-AUS_jpg.rf.6ffdafd76da516932f56630857469de1_crop0.jpg",
+            "width": 609,
+            "height": 286
+        },
+        {
+            "id": 276,
+            "file_name": "Front_Panel_Front_Panel_Forteo-pen-carton-20mcg-002-07-AUS_jpg.rf.782dbec749f009842004eb2f0c17a777_crop0.jpg",
+            "width": 609,
+            "height": 286
+        },
+        {
+            "id": 277,
+            "file_name": "Front_Panel_Front_Panel_FYLNETRA-carton-AUS_jpg.rf.073fae71eea6b081fe7dd061d2ea2341_crop0.jpg",
+            "width": 507,
+            "height": 239
+        },
+        {
+            "id": 278,
+            "file_name": "Front_Panel_Front_Panel_GAMASTAN-carton-AUS_jpg.rf.0f67757b2670d1eea3bfbc909dcf9eb7_crop0.jpg",
+            "width": 188,
+            "height": 333
+        },
+        {
+            "id": 279,
+            "file_name": "Front_Panel_Front_Panel_GAMASTAN-carton-AUS_jpg.rf.9d04e2533fa5b7723a51dcbc93f7095d_crop0.jpg",
+            "width": 188,
+            "height": 333
+        },
+        {
+            "id": 280,
+            "file_name": "Front_Panel_Front_Panel_GAMMAGARD-carton-AUS_jpg.rf.5d5c19736811d9ced8d690530fae203e_crop0.jpg",
+            "width": 192,
+            "height": 322
+        },
+        {
+            "id": 281,
+            "file_name": "Front_Panel_Front_Panel_GAMMAGARD-carton-AUS_jpg.rf.baa71676426c714404fcd0534717f53e_crop0.jpg",
+            "width": 192,
+            "height": 322
+        },
+        {
+            "id": 282,
+            "file_name": "Front_Panel_Front_Panel_GAMUNEX-carton-AUS_jpg.rf.66045c02010b476c698a7aa80ee1d86f_crop0.jpg",
+            "width": 193,
+            "height": 386
+        },
+        {
+            "id": 283,
+            "file_name": "Front_Panel_Front_Panel_GAMUNEX-carton-AUS_jpg.rf.99b17f208b5d37ba092bbe1449400512_crop0.jpg",
+            "width": 193,
+            "height": 386
+        },
+        {
+            "id": 284,
+            "file_name": "Front_Panel_Front_Panel_GENOTROPIN-carton-AUS_jpg.rf.9d16a06d0f30348dd8498e90c3da5a4c_crop0.jpg",
+            "width": 471,
+            "height": 144
+        },
+        {
+            "id": 285,
+            "file_name": "Front_Panel_Front_Panel_GENOTROPIN-carton-AUS_jpg.rf.aff0e8cb96088469b1679bb0efb55e9d_crop0.jpg",
+            "width": 471,
+            "height": 144
+        },
+        {
+            "id": 286,
+            "file_name": "Front_Panel_Front_Panel_GVOKE-glucagon-carton-AUS_jpg.rf.3fd8b28f1d75025a90d714d5a884873d_crop0.jpg",
+            "width": 461,
+            "height": 231
+        },
+        {
+            "id": 287,
+            "file_name": "Front_Panel_Front_Panel_HADLIMA-penimage-68-AUS_jpg.rf.08366bd1cceba5ff5701323eb685eb3c_crop0.jpg",
+            "width": 265,
+            "height": 606
+        },
+        {
+            "id": 288,
+            "file_name": "Front_Panel_Front_Panel_HADLIMA-penimage-68-AUS_jpg.rf.9c3ee4c101ace4a8ec316eab573cc2a3_crop0.jpg",
+            "width": 265,
+            "height": 606
+        },
+        {
+            "id": 289,
+            "file_name": "Front_Panel_Front_Panel_HADLIMA-PFS-image-67-AUS_jpg.rf.ab0a82be03073660a6e8019902292b0e_crop0.jpg",
+            "width": 247,
+            "height": 529
+        },
+        {
+            "id": 290,
+            "file_name": "Front_Panel_Front_Panel_HADLIMA-PFS-image-67-AUS_jpg.rf.c554be6f7cf2e0b47d6ef12d7b92f4e5_crop0.jpg",
+            "width": 247,
+            "height": 529
+        },
+        {
+            "id": 291,
+            "file_name": "Front_Panel_Front_Panel_HEMGENIX-carton-AUS_jpg.rf.c36da5a1d0d24e68c1014928a175968b_crop0.jpg",
+            "width": 205,
+            "height": 332
+        },
+        {
+            "id": 292,
+            "file_name": "Front_Panel_Front_Panel_HEMGENIX-carton-AUS_jpg.rf.fc57a74a3a0ebf7eb7f53ebadb66b789_crop0.jpg",
+            "width": 205,
+            "height": 332
+        },
+        {
+            "id": 293,
+            "file_name": "Front_Panel_Front_Panel_HERCESSI-150-vial-carton-AUS_jpg.rf.dfa14f49193055063fa5351382ee7b1b_crop0.jpg",
+            "width": 133,
+            "height": 263
+        },
+        {
+            "id": 294,
+            "file_name": "Front_Panel_Front_Panel_HERCESSI-150-vial-carton-AUS_jpg.rf.e0b27de485424b45921cc1d77af79076_crop0.jpg",
+            "width": 133,
+            "height": 263
+        },
+        {
+            "id": 295,
+            "file_name": "Front_Panel_Front_Panel_HIZENTRA-carton-Aus_jpg.rf.40be9214050d6a32e47d57d7dbb7d06d_crop0.jpg",
+            "width": 525,
+            "height": 262
+        },
+        {
+            "id": 296,
+            "file_name": "Front_Panel_Front_Panel_HIZENTRA-carton-Aus_jpg.rf.fb1ccc430be3c6745b494476b2c14f9a_crop0.jpg",
+            "width": 525,
+            "height": 262
+        },
+        {
+            "id": 297,
+            "file_name": "Front_Panel_Front_Panel_HUMULIN-carton-AUS_jpg.rf.06dd88b4c5deeb99599deb4bccbc89c3_crop0.jpg",
+            "width": 313,
+            "height": 590
+        },
+        {
+            "id": 298,
+            "file_name": "Front_Panel_Front_Panel_HUMULIN-carton-AUS_jpg.rf.b006a4937a56a4b60bd266b0ca6a78e8_crop0.jpg",
+            "width": 313,
+            "height": 590
+        },
+        {
+            "id": 299,
+            "file_name": "Front_Panel_Front_Panel_IDACIO-carton-AUS_jpg.rf.3e1d42ad87eab308064cf8fbdb373d67_crop0.jpg",
+            "width": 535,
+            "height": 204
+        },
+        {
+            "id": 300,
+            "file_name": "Front_Panel_Front_Panel_IDACIO-carton-AUS_jpg.rf.95992ac5516703f198da6fe4af578c3f_crop0.jpg",
+            "width": 535,
+            "height": 204
+        },
+        {
+            "id": 301,
+            "file_name": "Front_Panel_Front_Panel_ILARIS-150-mg-1via-AUSl_jpg.rf.c0a917cd613cc64edbaa53ae9825c7a5_crop0.jpg",
+            "width": 387,
+            "height": 256
+        },
+        {
+            "id": 302,
+            "file_name": "Front_Panel_Front_Panel_IMULDOSA-130-mg-1vial-AUS_jpg.rf.0d5329854b214022a5ee7036b4262b33_crop1.jpg",
+            "width": 156,
+            "height": 323
+        },
+        {
+            "id": 303,
+            "file_name": "Front_Panel_Front_Panel_IMULDOSA-130-mg-1vial-AUS_jpg.rf.a83edaaa1781821287c47387ba8f9760_crop1.jpg",
+            "width": 156,
+            "height": 323
+        },
+        {
+            "id": 304,
+            "file_name": "Front_Panel_Front_Panel_IMULDOSA-45-mg-1PFS-AUS_jpg.rf.83a9305b29d6792aef7bc5b83c53abf7_crop0.jpg",
+            "width": 471,
+            "height": 263
+        },
+        {
+            "id": 305,
+            "file_name": "Front_Panel_Front_Panel_IMULDOSA-90-mg-1PFS-AUS-_jpg.rf.5c78fe0a8bd5b9dd8eec4197d4a6653f_crop0.jpg",
+            "width": 461,
+            "height": 262
+        },
+        {
+            "id": 306,
+            "file_name": "Front_Panel_Front_Panel_INFLECTRA-vial-AUS_jpg.rf.3b99010d01958efa57fb866c5330b53e_crop0.jpg",
+            "width": 193,
+            "height": 316
+        },
+        {
+            "id": 307,
+            "file_name": "Front_Panel_Front_Panel_INFLECTRA-vial-AUS_jpg.rf.a0f055343ce693919e524d4ee5292362_crop0.jpg",
+            "width": 193,
+            "height": 316
+        },
+        {
+            "id": 308,
+            "file_name": "Front_Panel_Front_Panel_INSULIN-ASPART-flexpen-carton-AUS_jpg.rf.a6a5ba1d42d3277594e2fc963fdab10a_crop0.jpg",
+            "width": 288,
+            "height": 585
+        },
+        {
+            "id": 309,
+            "file_name": "Front_Panel_Front_Panel_INSULIN-ASPART-flexpen-carton-AUS_jpg.rf.c7e3862715f4df3306e23b265db11f21_crop0.jpg",
+            "width": 288,
+            "height": 585
+        },
+        {
+            "id": 310,
+            "file_name": "Front_Panel_Front_Panel_JOBEVNE-AUS_jpg.rf.6c5eb623696cbe84e0c7624b45d45fe8_crop0.jpg",
+            "width": 479,
+            "height": 257
+        },
+        {
+            "id": 311,
+            "file_name": "Front_Panel_Front_Panel_keytruda-07-50-mg-powder-AUS_jpg.rf.2b4c0883195f71384674fbd114bba6e9_crop0.jpg",
+            "width": 200,
+            "height": 391
+        },
+        {
+            "id": 312,
+            "file_name": "Front_Panel_Front_Panel_LEMTRADA-12-mg-1-vial-AUS_jpg.rf.3825d646a46610f5186e12ea90bfd4f4_crop0.jpg",
+            "width": 191,
+            "height": 360
+        },
+        {
+            "id": 313,
+            "file_name": "Front_Panel_Front_Panel_LIBTAYO-carton-AUS_jpg.rf.2791b82ee561e0c41a5da245dd7c4524_crop0.jpg",
+            "width": 361,
+            "height": 269
+        },
+        {
+            "id": 314,
+            "file_name": "Front_Panel_Front_Panel_MERILOG-carton-AUS_jpg.rf.a8b5addf41eda39292b9b37355014e44_crop0.jpg",
+            "width": 194,
+            "height": 358
+        },
+        {
+            "id": 315,
+            "file_name": "Front_Panel_Front_Panel_MONJUVI-200-mg-1-via-AUSl_jpg.rf.1d95486fe8ac90377c7d1aedf04ffe7a_crop0.jpg",
+            "width": 176,
+            "height": 426
+        },
+        {
+            "id": 316,
+            "file_name": "Front_Panel_Front_Panel_MONJUVI-200-mg-1-via-AUSl_jpg.rf.2fe5002a01b1eb18c67acc66951486b6_crop0.jpg",
+            "width": 176,
+            "height": 426
+        },
+        {
+            "id": 317,
+            "file_name": "Front_Panel_Front_Panel_MOUNJARO-AUS-new-text_jpg.rf.2e0659fb9975f1d9f90a4e2b7f3914fa_crop0.jpg",
+            "width": 481,
+            "height": 259
+        },
+        {
+            "id": 318,
+            "file_name": "Front_Panel_Front_Panel_mylotarg-06-AUS_jpg.rf.1252bf02d09102e8258ea93d3e89e5bc_crop0.jpg",
+            "width": 203,
+            "height": 318
+        },
+        {
+            "id": 319,
+            "file_name": "Front_Panel_Front_Panel_mylotarg-06-AUS_jpg.rf.91c2d179fadb206dc9662065a841b56f_crop0.jpg",
+            "width": 203,
+            "height": 318
+        },
+        {
+            "id": 320,
+            "file_name": "Front_Panel_Front_Panel_NYVEPRIA-carton-AUS_jpg.rf.4a15ff00f8b5fe031c8918da9d3f59f7_crop0.jpg",
+            "width": 427,
+            "height": 203
+        },
+        {
+            "id": 321,
+            "file_name": "Front_Panel_Front_Panel_NYVEPRIA-carton-AUS_jpg.rf.cdddd50705aa1a9cbb92e60271c79a8d_crop0.jpg",
+            "width": 427,
+            "height": 203
+        },
+        {
+            "id": 322,
+            "file_name": "Front_Panel_Front_Panel_OCTAGAM-carton-AUS_jpg.rf.15d16adf2d7c159fb9b097774b6a79b6_crop0.jpg",
+            "width": 210,
+            "height": 330
+        },
+        {
+            "id": 323,
+            "file_name": "Front_Panel_Front_Panel_omvoh-carton-300mg-vial-AUS-049-00_jpg.rf.409d8f4fdc1f21d2049af4c6f7dc7985_crop1.jpg",
+            "width": 200,
+            "height": 350
+        },
+        {
+            "id": 324,
+            "file_name": "Front_Panel_Front_Panel_ONTRUZANT-AUS_jpg.rf.78e61768e33651120236a402575a8c0d_crop0.jpg",
+            "width": 205,
+            "height": 290
+        },
+        {
+            "id": 325,
+            "file_name": "Front_Panel_Front_Panel_ONTRUZANT-AUS_jpg.rf.7f10be686eee96fc0c0b533250c9c3cc_crop0.jpg",
+            "width": 205,
+            "height": 290
+        },
+        {
+            "id": 326,
+            "file_name": "Front_Panel_Front_Panel_OPDULAG-240-mg-revise-1vial-carton-AUS_jpg.rf.0a51535d66e15c9eca3e91c6d70b5f42_crop0.jpg",
+            "width": 183,
+            "height": 390
+        },
+        {
+            "id": 327,
+            "file_name": "Front_Panel_Front_Panel_OPDULAG-240-mg-revise-1vial-carton-AUS_jpg.rf.de0a153065a6895f3015a223a2154a40_crop0.jpg",
+            "width": 183,
+            "height": 390
+        },
+        {
+            "id": 328,
+            "file_name": "Front_Panel_Front_Panel_OPUVIZ-PFS-AUS_jpg.rf.979d6f046af253bb3a148baa0b59f80f_crop0.jpg",
+            "width": 442,
+            "height": 286
+        },
+        {
+            "id": 329,
+            "file_name": "Front_Panel_Front_Panel_OSENVELT-1-vial-AUS_jpg.rf.212da55e751bc091a74b189e47ef317a_crop0.jpg",
+            "width": 189,
+            "height": 338
+        },
+        {
+            "id": 330,
+            "file_name": "Front_Panel_Front_Panel_OTULFI-carton-AUS_jpg.rf.58651661372500b00b6469b71c04188c_crop0.jpg",
+            "width": 582,
+            "height": 203
+        },
+        {
+            "id": 331,
+            "file_name": "Front_Panel_Front_Panel_OTULFI-carton-AUS_jpg.rf.9494b8c523d752daaf810ef2ee0c1c18_crop0.jpg",
+            "width": 582,
+            "height": 203
+        },
+        {
+            "id": 332,
+            "file_name": "Front_Panel_Front_Panel_OZEMPIC-AUS_jpg.rf.59cdc10758401a184f44a77f28180763_crop0.jpg",
+            "width": 561,
+            "height": 178
+        },
+        {
+            "id": 333,
+            "file_name": "Front_Panel_Front_Panel_OZEMPIC-AUS_jpg.rf.ae5b8d0d7fbddb1e11a77c2b13e26b44_crop0.jpg",
+            "width": 561,
+            "height": 178
+        },
+        {
+            "id": 334,
+            "file_name": "Front_Panel_Front_Panel_PADCEV-20-mg-1-vial-AUS_jpg.rf.4e9e3de54b0ca10122426dd743dbc308_crop0.jpg",
+            "width": 148,
+            "height": 340
+        },
+        {
+            "id": 335,
+            "file_name": "Front_Panel_Front_Panel_PADCEV-20-mg-1-vial-AUS_jpg.rf.92f03b1dd2d79332ff9fc1c7a24c7d8f_crop0.jpg",
+            "width": 148,
+            "height": 340
+        },
+        {
+            "id": 336,
+            "file_name": "Front_Panel_Front_Panel_PADCEV-30-mg-1-vial-AUS_jpg.rf.64a401a021f97615f7c2e588225b6b28_crop0.jpg",
+            "width": 149,
+            "height": 340
+        },
+        {
+            "id": 337,
+            "file_name": "Front_Panel_Front_Panel_PLEGRIDY-carton-AUS_jpg.rf.129d34564bdf1c2cce3488709f76eae4_crop0.jpg",
+            "width": 541,
+            "height": 308
+        },
+        {
+            "id": 338,
+            "file_name": "Front_Panel_Front_Panel_POTELIGEO-20-mg-1-vial-AUS_jpg.rf.63c04ce479458c5b09053b59465c5aa0_crop0.jpg",
+            "width": 133,
+            "height": 325
+        },
+        {
+            "id": 339,
+            "file_name": "Front_Panel_Front_Panel_POTELIGEO-20-mg-1-vial-AUS_jpg.rf.e5267b2dd100d25aa3f718067391d848_crop0.jpg",
+            "width": 133,
+            "height": 325
+        },
+        {
+            "id": 340,
+            "file_name": "Front_Panel_Front_Panel_PRALUENT-75-mg-2AI-AUS_jpg.rf.1e59cc6272889a14a88e18151121d7f5_crop0.jpg",
+            "width": 463,
+            "height": 222
+        },
+        {
+            "id": 341,
+            "file_name": "Front_Panel_Front_Panel_PRALUENT-75-mg-2AI-AUS_jpg.rf.76581731960291684064634511063618_crop0.jpg",
+            "width": 463,
+            "height": 222
+        },
+        {
+            "id": 342,
+            "file_name": "Front_Panel_Front_Panel_PRIVIGEN-carton-AUS_jpg.rf.5eaa7ceb5ac16342f7b4785969141513_crop0.jpg",
+            "width": 195,
+            "height": 334
+        },
+        {
+            "id": 343,
+            "file_name": "Front_Panel_Front_Panel_PRIVIGEN-carton-AUS_jpg.rf.8fca1c4db88cf3f5ab31c04058c4cb75_crop0.jpg",
+            "width": 195,
+            "height": 334
+        },
+        {
+            "id": 344,
+            "file_name": "Front_Panel_Front_Panel_PYZCHIVA-1PFS-AUS_jpg.rf.ae467bf9d9ef110c5cadb6dcd730cbdf_crop0.jpg",
+            "width": 555,
+            "height": 229
+        },
+        {
+            "id": 345,
+            "file_name": "Front_Panel_Front_Panel_PYZCHIVA-1PFS-AUS_jpg.rf.eca3dde182d5d210d7db2f6944714122_crop0.jpg",
+            "width": 555,
+            "height": 229
+        },
+        {
+            "id": 346,
+            "file_name": "Front_Panel_Front_Panel_REMICADE-carton-AUS_jpg.rf.0aaf8c02fa7698b2c24921f0c99bb90b_crop0.jpg",
+            "width": 203,
+            "height": 306
+        },
+        {
+            "id": 347,
+            "file_name": "Front_Panel_Front_Panel_REMICADE-carton-AUS_jpg.rf.b9dec68afcb32637a326b5d90de3765b_crop0.jpg",
+            "width": 203,
+            "height": 306
+        },
+        {
+            "id": 348,
+            "file_name": "Front_Panel_Front_Panel_RENFLEXIS-100-mg-1-vial-AUS_jpg.rf.ed6a6dc8951f63659b9422ee892bdf3a_crop0.jpg",
+            "width": 196,
+            "height": 332
+        },
+        {
+            "id": 349,
+            "file_name": "Front_Panel_Front_Panel_ROCTAVIAN-carton-AUS_jpg.rf.7e71d5945784c1c4e2807c1e071a1816_crop0.jpg",
+            "width": 256,
+            "height": 331
+        },
+        {
+            "id": 350,
+            "file_name": "Front_Panel_Front_Panel_ROCTAVIAN-carton-AUS_jpg.rf.9e5a657b9a88e10c29dc81a31a99d779_crop0.jpg",
+            "width": 256,
+            "height": 331
+        },
+        {
+            "id": 351,
+            "file_name": "Front_Panel_Front_Panel_RUXIENCE-carton-AUS_jpg.rf.69b9f35b83e50742ffd7f3c9d5fd53bb_crop0.jpg",
+            "width": 213,
+            "height": 427
+        },
+        {
+            "id": 352,
+            "file_name": "Front_Panel_Front_Panel_RYBREVANT-350-mg-1-vial-AUS_jpg.rf.0df0d2972fbe66fe00220a71bf7883e0_crop0.jpg",
+            "width": 200,
+            "height": 392
+        },
+        {
+            "id": 353,
+            "file_name": "Front_Panel_Front_Panel_RYBREVANT-350-mg-1-vial-AUS_jpg.rf.56c76c771c9d75f1458113796267bf05_crop0.jpg",
+            "width": 200,
+            "height": 392
+        },
+        {
+            "id": 354,
+            "file_name": "Front_Panel_Front_Panel_rystiggo-02-AUS_jpg.rf.1df12e84a3c19b889ed1d1a308aea0bc_crop0.jpg",
+            "width": 434,
+            "height": 239
+        },
+        {
+            "id": 355,
+            "file_name": "Front_Panel_Front_Panel_rystiggo-02-AUS_jpg.rf.48cc0b2df3adc2d39e099cdc33bf5d99_crop0.jpg",
+            "width": 434,
+            "height": 239
+        },
+        {
+            "id": 356,
+            "file_name": "Front_Panel_Front_Panel_SARCALISA-100-mg-1vial-AUS_jpg.rf.42ad1f2aecf9856754a9377003badb5d_crop0.jpg",
+            "width": 462,
+            "height": 261
+        },
+        {
+            "id": 357,
+            "file_name": "Front_Panel_Front_Panel_SIMPONI-carton-AUS_jpg.rf.0a2c521368012da1e6808c6b380d32e9_crop0.jpg",
+            "width": 436,
+            "height": 169
+        },
+        {
+            "id": 358,
+            "file_name": "Front_Panel_Front_Panel_SIMPONI-carton-AUS_jpg.rf.a9f1a6470e538b2d6b038d973812980a_crop0.jpg",
+            "width": 436,
+            "height": 169
+        },
+        {
+            "id": 359,
+            "file_name": "Front_Panel_Front_Panel_skytrofa-01-AUS_jpg.rf.cc21253ef3d502f7899a90a8f777a7d2_crop0.jpg",
+            "width": 197,
+            "height": 387
+        },
+        {
+            "id": 360,
+            "file_name": "Front_Panel_Front_Panel_soliris-02-AUS_jpg.rf.58b6aea1ac1e5ee1e6f05b238568c7c0_crop0.jpg",
+            "width": 158,
+            "height": 286
+        },
+        {
+            "id": 361,
+            "file_name": "Front_Panel_Front_Panel_SOMAVERT-carton-AUS_jpg.rf.1bbfe2240ac0450e15622a4dd1470c66_crop0.jpg",
+            "width": 482,
+            "height": 165
+        },
+        {
+            "id": 362,
+            "file_name": "Front_Panel_Front_Panel_SOMAVERT-carton-AUS_jpg.rf.2d71b9a07c83553f4b87f6db83026004_crop0.jpg",
+            "width": 482,
+            "height": 165
+        },
+        {
+            "id": 363,
+            "file_name": "Front_Panel_Front_Panel_SPEVIGO-150-mg-2PFS-AUS_jpg.rf.11273dafcc053ab70c8d8337102410bf_crop0.jpg",
+            "width": 496,
+            "height": 280
+        },
+        {
+            "id": 364,
+            "file_name": "Front_Panel_Front_Panel_SPEVIGO-150-mg-2PFS-AUS_jpg.rf.dd822752c9fc848f74036b135460bd0c_crop0.jpg",
+            "width": 496,
+            "height": 280
+        },
+        {
+            "id": 365,
+            "file_name": "Front_Panel_Front_Panel_SPEVIGO-450-mg-2vials-AUS_jpg.rf.a554d707e4d9075539ce68b0fb4520cf_crop0.jpg",
+            "width": 308,
+            "height": 262
+        },
+        {
+            "id": 366,
+            "file_name": "Front_Panel_Front_Panel_STELARA-carton-AUS_jpg.rf.4e30b106dc76af254fa7c57ba706912a_crop0.jpg",
+            "width": 177,
+            "height": 402
+        },
+        {
+            "id": 367,
+            "file_name": "Front_Panel_Front_Panel_STELARA-carton-AUS_jpg.rf.e3d08651b8cdf34fb0450bc6f72c6dc7_crop0.jpg",
+            "width": 177,
+            "height": 402
+        },
+        {
+            "id": 368,
+            "file_name": "Front_Panel_Front_Panel_STEQEYMA-AUS-carton_jpg.rf.b32db677d57ae95db72780673978c614_crop0.jpg",
+            "width": 497,
+            "height": 176
+        },
+        {
+            "id": 369,
+            "file_name": "Front_Panel_Front_Panel_STEQEYMA-AUS-carton_jpg.rf.f556384dc77a9eb6ebdc675b9c855802_crop0.jpg",
+            "width": 497,
+            "height": 176
+        },
+        {
+            "id": 370,
+            "file_name": "Front_Panel_Front_Panel_STOBOCLO-AUS_jpg.rf.7a8adb629887ded1a3509346f9133067_crop0.jpg",
+            "width": 507,
+            "height": 176
+        },
+        {
+            "id": 371,
+            "file_name": "Front_Panel_Front_Panel_SYLVANT-carton-AUS_jpg.rf.c5b962d8f772f157a4123f265a29d306_crop0.jpg",
+            "width": 183,
+            "height": 376
+        },
+        {
+            "id": 372,
+            "file_name": "Front_Panel_Front_Panel_TALVEY-01-2-mg-mL-AUS_jpg.rf.8c1aca0d056b1b04b8d8b135c5cfe06b_crop0.jpg",
+            "width": 203,
+            "height": 327
+        },
+        {
+            "id": 373,
+            "file_name": "Front_Panel_Front_Panel_TALVEY-02-40-mg-mL-AUS_jpg.rf.2aa5cee05c5b7be88cb03be477430567_crop0.jpg",
+            "width": 197,
+            "height": 324
+        },
+        {
+            "id": 374,
+            "file_name": "Front_Panel_Front_Panel_TALVEY-02-40-mg-mL-AUS_jpg.rf.46869da1de488786b6ef6a36111ed5df_crop0.jpg",
+            "width": 197,
+            "height": 324
+        },
+        {
+            "id": 375,
+            "file_name": "Front_Panel_Front_Panel_tecvayli-01-10-mg-mL-AUS_jpg.rf.3330a270324aeb076696790d0bf7f302_crop0.jpg",
+            "width": 204,
+            "height": 339
+        },
+        {
+            "id": 376,
+            "file_name": "Front_Panel_Front_Panel_tecvayli-01-10-mg-mL-AUS_jpg.rf.5eeb4f87bb4ba7075474628dfc466495_crop0.jpg",
+            "width": 204,
+            "height": 339
+        },
+        {
+            "id": 377,
+            "file_name": "Front_Panel_Front_Panel_tecvayli-02-90-mg-mL-AUS_jpg.rf.86fdff47db5c2b6c80290c2ea7bd5ff2_crop0.jpg",
+            "width": 220,
+            "height": 338
+        },
+        {
+            "id": 378,
+            "file_name": "Front_Panel_Front_Panel_tecvayli-02-90-mg-mL-AUS_jpg.rf.9b88abbb5a3c29d07ed9e269d407141c_crop0.jpg",
+            "width": 220,
+            "height": 338
+        },
+        {
+            "id": 379,
+            "file_name": "Front_Panel_Front_Panel_tepezza-02-AUS_jpg.rf.3212168eee1ca730e89e953f4f8d12e6_crop0.jpg",
+            "width": 257,
+            "height": 323
+        },
+        {
+            "id": 380,
+            "file_name": "Front_Panel_Front_Panel_tepezza-02-AUS_jpg.rf.90b658948e8cafc8623c68c0398853f5_crop0.jpg",
+            "width": 257,
+            "height": 323
+        },
+        {
+            "id": 381,
+            "file_name": "Front_Panel_Front_Panel_TEVIMBRA-100-mg-1-vial-AUS_jpg.rf.8a54197e73a0fb6daa51bf75c2125db2_crop0.jpg",
+            "width": 200,
+            "height": 326
+        },
+        {
+            "id": 382,
+            "file_name": "Front_Panel_Front_Panel_TEVIMBRA-100-mg-1-vial-AUS_jpg.rf.cb56ba2c59c033ecd70bcfec13af251c_crop0.jpg",
+            "width": 200,
+            "height": 326
+        },
+        {
+            "id": 383,
+            "file_name": "Front_Panel_Front_Panel_TOCILIZUMAB-200-mg-Celltrion-1-vial-AUS_jpg.rf.df8c74d6f499d3982648dd2ae487fd39_crop0.jpg",
+            "width": 197,
+            "height": 399
+        },
+        {
+            "id": 384,
+            "file_name": "Front_Panel_Front_Panel_TOCILIZUMAB-200-mg-Celltrion-1-vial-AUS_jpg.rf.e88363a6697c3ed6b6f68ccbfe10b207_crop0.jpg",
+            "width": 197,
+            "height": 399
+        },
+        {
+            "id": 385,
+            "file_name": "Front_Panel_Front_Panel_TOFIDENCE-200-mg-1-vial-AUS_jpg.rf.34230f99f65f5caff43ad975a08041de_crop0.jpg",
+            "width": 197,
+            "height": 281
+        },
+        {
+            "id": 386,
+            "file_name": "Front_Panel_Front_Panel_trazimera-420-AUS_jpg.rf.66ef2c342e5980ebe22949bb50c3bc2f_crop0.jpg",
+            "width": 215,
+            "height": 419
+        },
+        {
+            "id": 387,
+            "file_name": "Front_Panel_Front_Panel_TRAZIMERA-carton-150t-AUS_jpg.rf.179af620f7a167f7c7c1ed55501af6ae_crop0.jpg",
+            "width": 217,
+            "height": 426
+        },
+        {
+            "id": 388,
+            "file_name": "Front_Panel_Front_Panel_TRAZIMERA-carton-150t-AUS_jpg.rf.86df15ca892d296fef034a2682b039f5_crop0.jpg",
+            "width": 217,
+            "height": 426
+        },
+        {
+            "id": 389,
+            "file_name": "Front_Panel_Front_Panel_TREMFYA-PFS-carton-AUS_jpg.rf.ac769283ca7e6471230a3d5ee3999858_crop0.jpg",
+            "width": 547,
+            "height": 191
+        },
+        {
+            "id": 390,
+            "file_name": "Front_Panel_Front_Panel_TREMFYA-vial-carton-AUS_jpg.rf.7d11bb94925fd56d2a8417c4e57967ff_crop0.jpg",
+            "width": 185,
+            "height": 385
+        },
+        {
+            "id": 391,
+            "file_name": "Front_Panel_Front_Panel_TRODELVY-carton-AUS_jpg.rf.56150c0c54ba37a6a65707489f529ddc_crop0.jpg",
+            "width": 193,
+            "height": 338
+        },
+        {
+            "id": 392,
+            "file_name": "Front_Panel_Front_Panel_TRULICITY-1_5-carton-AUS_jpg.rf.ae25d7225795253cb21774993382a397_crop0.jpg",
+            "width": 497,
+            "height": 263
+        },
+        {
+            "id": 393,
+            "file_name": "Front_Panel_Front_Panel_TRULICITY-1_5-carton-AUS_jpg.rf.bde3ba7213f6e40cbf3d884ccb29d5c6_crop0.jpg",
+            "width": 497,
+            "height": 263
+        },
+        {
+            "id": 394,
+            "file_name": "Front_Panel_Front_Panel_TYSABRI-carton-AUS_jpg.rf.447ea2909a132e33ca93bf87ac2da584_crop0.jpg",
+            "width": 184,
+            "height": 286
+        },
+        {
+            "id": 395,
+            "file_name": "Front_Panel_Front_Panel_TYSABRI-carton-AUS_jpg.rf.d2eb20cefc62813b3b70dc181335d8fe_crop0.jpg",
+            "width": 184,
+            "height": 286
+        },
+        {
+            "id": 396,
+            "file_name": "Front_Panel_Front_Panel_ultomiris-03-AUS_jpg.rf.77d78a7ea585cea038155cc80cf0fa0d_crop0.jpg",
+            "width": 197,
+            "height": 287
+        },
+        {
+            "id": 397,
+            "file_name": "Front_Panel_Front_Panel_ultomiris-03-AUS_jpg.rf.ab5b8e6df15d1079b823b0e0d4248994_crop0.jpg",
+            "width": 197,
+            "height": 287
+        },
+        {
+            "id": 398,
+            "file_name": "Front_Panel_Front_Panel_UNITUXIN-AUS_jpg.rf.9642bc613ea17024a3dc7c9ebb28ef0a_crop0.jpg",
+            "width": 204,
+            "height": 333
+        },
+        {
+            "id": 399,
+            "file_name": "Front_Panel_Front_Panel_uplizna-04-AUS_jpg.rf.e5fe71c18a3d6d6c2533066d1c5bb9ea_crop0.jpg",
+            "width": 218,
+            "height": 291
+        },
+        {
+            "id": 400,
+            "file_name": "Front_Panel_Front_Panel_USTEKINUMAB-aekn-1vial-carton-AUS_jpg.rf.959608577078f13ee0e892c8f88cf475_crop0.jpg",
+            "width": 481,
+            "height": 213
+        },
+        {
+            "id": 401,
+            "file_name": "Front_Panel_Front_Panel_USTEKINUMAB-carton-AUS_jpg.rf.0df5e51c74cbf88d29964588e2a4599d_crop0.jpg",
+            "width": 236,
+            "height": 287
+        },
+        {
+            "id": 402,
+            "file_name": "Front_Panel_Front_Panel_USTEKINUMAB-carton-AUS_jpg.rf.d2e16cdd055c02a84217bab7c6557273_crop0.jpg",
+            "width": 236,
+            "height": 287
+        },
+        {
+            "id": 403,
+            "file_name": "Front_Panel_Front_Panel_VYEPTI-100-mg-1-vial-AUS_jpg.rf.1b376e57131a768a9c941b3c301c13cb_crop0.jpg",
+            "width": 123,
+            "height": 235
+        },
+        {
+            "id": 404,
+            "file_name": "Front_Panel_Front_Panel_VYEPTI-100-mg-1-vial-AUS_jpg.rf.8dadf36edd9711310490cd98ba8ce47f_crop0.jpg",
+            "width": 123,
+            "height": 235
+        },
+        {
+            "id": 405,
+            "file_name": "Front_Panel_Front_Panel_VYLOY-carton-AUS_jpg.rf.2d20dee90c3d76743a11ab935d9eaa70_crop0.jpg",
+            "width": 126,
+            "height": 252
+        },
+        {
+            "id": 406,
+            "file_name": "Front_Panel_Front_Panel_VYLOY-carton-AUS_jpg.rf.61420150465948fd7fbc4d80029d272c_crop0.jpg",
+            "width": 126,
+            "height": 252
+        },
+        {
+            "id": 407,
+            "file_name": "Front_Panel_Front_Panel_WINREVAIR-45-2-vial-AUS_jpg.rf.406bc55978d36917364ae154adf7c697_crop0.jpg",
+            "width": 226,
+            "height": 334
+        },
+        {
+            "id": 408,
+            "file_name": "Front_Panel_Front_Panel_WINREVAIR-45-2-vial-AUS_jpg.rf.5e766c0312303a802e19bac6f885fdc9_crop0.jpg",
+            "width": 226,
+            "height": 334
+        },
+        {
+            "id": 409,
+            "file_name": "Front_Panel_Front_Panel_WINREVAIR-60-2-Vial-AUS_jpg.rf.353ca8fc717a8661eb0bd4f9f91c933e_crop0.jpg",
+            "width": 228,
+            "height": 323
+        },
+        {
+            "id": 410,
+            "file_name": "Front_Panel_Front_Panel_ZALTRAP-AUS_jpg.rf.1f82533098f06e7936cdf697b4a092df_crop0.jpg",
+            "width": 196,
+            "height": 359
+        },
+        {
+            "id": 411,
+            "file_name": "Front_Panel_Front_Panel_ziihera-AUS-carton-label_jpg.rf.7273c20637faa96b6bc2ff2779e8e7e0_crop0.jpg",
+            "width": 253,
+            "height": 248
+        },
+        {
+            "id": 412,
+            "file_name": "Front_Panel_Front_Panel_ziihera-AUS-carton-label_jpg.rf.a9e1643b9f2b7afa38020e23223c385c_crop0.jpg",
+            "width": 253,
+            "height": 248
+        },
+        {
+            "id": 413,
+            "file_name": "Front_Panel_Front_Panel_ZIRABEV-1vial-carton-AUS_jpg.rf.05ea868bd5a942a02771d832d527ae05_crop0.jpg",
+            "width": 142,
+            "height": 314
+        },
+        {
+            "id": 414,
+            "file_name": "Front_Panel_Front_Panel_zynyz-2-AUS_jpg.rf.744e6a44c365da285a3972edec68813e_crop0.jpg",
+            "width": 237,
+            "height": 352
+        }
+    ],
+    "annotations": [
+        {
+            "id": 1,
+            "image_id": 346,
+            "category_id": 1,
+            "bbox": [
+                4.0,
+                272.0,
+                34.0,
+                19.0
+            ],
+            "area": 646.0,
+            "iscrowd": 0,
+            "confidence": 0.869
+        },
+        {
+            "id": 2,
+            "image_id": 371,
+            "category_id": 1,
+            "bbox": [
+                31.0,
+                347.0,
+                138.0,
+                18.0
+            ],
+            "area": 2484.0,
+            "iscrowd": 0,
+            "confidence": 0.9506
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Rx"
+        }
+    ]
+}

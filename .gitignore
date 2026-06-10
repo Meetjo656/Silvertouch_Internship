@@ -24,3 +24,8 @@ task3/valid
 # Task 3 Training Outputs
 task3/trained_models/structural_yolov8n_512_feasibility/weights
 task3/runs/
+
+task3/audit_samples
+task3/dataset_cleaned
+task3/Only Images
+task3/outputs

@@ -1,0 +1,50 @@
+{
+    "Front_Panel": {
+        "count": 584,
+        "median_width": 168.0,
+        "median_height": 243.00032000000002,
+        "median_area": 46200.0,
+        "min_area": 17195.088320102397,
+        "max_area": 109414.14528
+    },
+    "Back_Panel": {
+        "count": 567,
+        "median_width": 168.0,
+        "median_height": 242.0,
+        "median_area": 46374.9212798976,
+        "min_area": 17100.057599999996,
+        "max_area": 111294.14656000001
+    },
+    "Side_Panel": {
+        "count": 1168,
+        "median_width": 150.0,
+        "median_height": 236.0,
+        "median_area": 33000.0,
+        "min_area": 8854.01216,
+        "max_area": 61363.96288
+    },
+    "Top_Panel": {
+        "count": 564,
+        "median_width": 141.49984,
+        "median_height": 142.0,
+        "median_area": 19302.9052801024,
+        "min_area": 7220.024319999999,
+        "max_area": 33480.0
+    },
+    "Bottom_Panel": {
+        "count": 576,
+        "median_width": 144.99968,
+        "median_height": 140.49984,
+        "median_area": 19278.04032,
+        "min_area": 5200.0,
+        "max_area": 29808.0
+    },
+    "Extra_Areas": {
+        "count": 4379,
+        "median_width": 116.0,
+        "median_height": 78.0,
+        "median_area": 8453.0089598976,
+        "min_area": 95.98976,
+        "max_area": 78186.05312
+    }
+}

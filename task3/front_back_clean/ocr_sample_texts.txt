@@ -1,0 +1,488 @@
+OCR Extraction Samples (10 Front, 10 Back)
+==================================================
+
+Filename: Front_Panel_ROCTAVIAN-carton-AUS_jpg.rf.9e5a657b9a88e10c29dc81a31a99d779_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+PRESCRIPTION ONLY MEDICINE
+KEEP OUT OF REACH OF CHILDREN
+ROCTAVIAN
+valoctocogene
+roxaparvovec
+16 x1013 vector genomes/8 mL
+(2x1013vector genomes/mL)
+Injection for intravenous infusion
+For intravenous infusion only
+Contains one single-dose vial.
+AUST R 888111
+BiOMARIN®
+==================================================
+
+Filename: Front_Panel_OPUVIZ-PFS-AUS_jpg.rf.979d6f046af253bb3a148baa0b59f80f_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+PRESCRIPTION ONLY MEDICINE
+KEEP OUT OF REACH OF CHILDREN
+Opuviz
+aflibercept
+2 mg (0.05 mL of 40 mg/mL solution)
+Solution for injection
+For Intravitreal Injection
+2 mg single-dose vial. Discard unused portion.
+Carton contents: Each Opuviz carton contains
+• ane single-dose glass vial of Opuviz
+ one 18-gauge x 1%-inch, 5-micron, fiter needle for
+to be used for instravitreal injection)
+withdrawal of the vial contents (fiter needle not
+one I-ml. plastic syringe for administration
+• one 30-gauge x S-inch needle for intravitreal injectior
+one Prescribing Information
+AUST R ASUS2T
+SAMSUNG BEDEPES
+==================================================
+
+Filename: Front_Panel_BAVENCIO-carton-AUS_jpg.rf.5a06ca6d1b8c8203f0440deedd54c105_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+PRESCRIPTION ONLY MEDICINE
+KEEP OUT OF REACH OF CHILDREN
+BAVENCIO®
+avelumab
+200 mg/10 mL
+(20 ma/mL)
+Concentrated solution
+for intravenous infusion
+Single-dose vial
+Discard unused portion.
+Dispense the enclosed
+Medication Guide to each
+patient.
+1 vial
+Rx only
+AUSTR 282729
+SRDNN
+==================================================
+
+Filename: Front_Panel_AVONEX-carton-AUS_jpg.rf.bb6f74c2279c58e2c63da82e3d691341_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+PRESCRIPTION ONLY MEDICINE
+Biogen.
+KEEP OUT OF REACH OF CHILDREN
+Avonex
+interferon beta-1a 30 mcg/0.5 mL
+30 mcg/0.5 mL. Single-Dose Prefilled Syringe
+Solution for injection
+For Intramuscular Injection
+Once a Week
+Caution: This Product Contains Natural Rubber Latex
+Which May Cause Allergic Reactions.
+4 Avonex Administration Dose Packs
+Contents:
+Store refrigerated at 2°C to 8°C
+in the
+original carton to protect from light. Do not freeze or
+ATTENTION: Dispense the enclosed
+syringe may be stored at room temperature up to
+expose to high temperatures. Alternatively, a prefilled
+Medication Guide to each patient.
+AAunA
+Use in one patient on one occasion only.
+25°C
+for a period up to 7 days.
+Contains no antimicrobial preservative.
+AUST R 96419
+Dosage: See Prescribing Information
+Avonex
+==================================================
+
+Filename: Front_Panel_TRODELVY-carton-AUS_jpg.rf.56150c0c54ba37a6a65707489f529ddc_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+sacituzumab govitecan 180 mg
+180 mg per vial
+PRESCRIPTION ONLY MEDICINE
+KEEP OUT OF REACH OF CHILDREN
+TRODELVY
+sacituzumab govitecan 180 mg
+Powder for injection
+For Intravenous Infusion only
+Warning: Hazardous Drug
+Reconstitute and dilute
+Immediately prior to use
+Do not administer
+Single-dose vial
+undiluted
+Discard unused portion
+1 Vial
+AUST R 353081
+GILEAD
+TRODELVY
+==================================================
+
+Filename: Front_Panel_MERILOG-carton-AUS_jpg.rf.a8b5addf41eda39292b9b37355014e44_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+PRESCRIPTION
+ONLY MEDICINE
+KEEP OUT OF REACH
+OF CHILDREN
+Merilog'
+insulin aspart 100 units/mL
+100 units/mL (U-100)
+Solution for subcutaneous
+injection
+Use only with a U-100 syringe
+One 10 mL multiple-dose vial
+AUST R 999955
+sanofi
+Merilog
+==================================================
+
+Filename: Front_Panel_GAMASTAN-carton-AUS_jpg.rf.0f67757b2670d1eea3bfbc909dcf9eb7_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+Jm Or
+GETCON
+IIE
+HEERRE TEE RE
+CIHIO
+ATesmsO
+niludolponummi Icmmoll
+(aar _ Jigoar) Im Ot nigd.I
+noitosjni sot noitulo2
+Jm Or
+noitoejnl tsluoeumetrl
+C28088 A TEUA
+RAJU32UMARTMI R09
+YMO HOITOLMI
+UDVAATIEII TOE OY
+CLIIE
+==================================================
+
+Filename: Front_Panel_HADLIMA-penimage-68-AUS_jpg.rf.08366bd1cceba5ff5701323eb685eb3c_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+HADLIMA"PushTouch
+adalimumab
+40 mg/0.8 ml
+Solution for injection
+For subcutaneous use only
+Single-dose Preflied Autoinjector
+PRESCRIPTION ONLY MEDICINE
+KEEP OUT OF REACH OF CHILDREN
+40
+mg/0.8m
+HADLIMA" PushTouch
+adalimumab
+40 mg/0.8 mL
+Solution for injection
+Single-dose Prefilled Autoinjector
+For Subcutaneous Use only
+Dispense the enclosed
+Medication Guide to each
+patient.
+2 single-dose prefilled
+autoinjectors
+The entire carton Is
+to be dispensed as a unit.
+This carton contains:
+·2 single-dose prefilled
+autoinjectors
+· 1 package Insert
++ 1 Medication Guide
+· 1 Instructions for Use
+There Is NO BUTTON on yOU
+autoinjector.
+Each prefilled autoinjector contains
+40 mg/O.8 mL adalimnumab-bwwd.
+AUST R 284249
+==================================================
+
+Filename: Front_Panel_tepezza-02-AUS_jpg.rf.3212168eee1ca730e89e953f4f8d12e6_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+audho-qoas ase Decsiq nunasq boupou
+doe Sq L D o po oe
+112B 4A
+LOL uaone Juniu Qu
+Ca0c
+boqeL lolulecou
+6bLopnwnw9p 200 wa
+AESESST
+KEEb ON OL BEACH OL CHITDBEM
+BBECBIbION ONFA WEDICINE
+==================================================
+
+Filename: Front_Panel_rystiggo-02-AUS_jpg.rf.1df12e84a3c19b889ed1d1a308aea0bc_crop0.jpg
+Folder: Front_Panel
+Extracted Text:
+--------------------
+KEEP OUTOF REACH OF CHILDREN
+PRESCRIPTION ONLY MEDICINE
+RYSTIGGO
+o
+rozanolixizumab
+280 mg/2 mL
+280 mg/2 mL
+(1.40 mg/mL)
+Solution for injection for infusion
+OPEN HERE
+For Subcutaneous Use Only
+One single-dose vial - Discard unused portion.
+To be administered by a healthcare provider only
+Recommended Dosage: See prescribing information.
+AUST R 427684
+==================================================
+
+Filename: Back_Panel_NYVEPRIA-carton-AUS_jpg.rf.cdddd50705aa1a9cbb92e60271c79a8d_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+Eahinndo
+The syringe plunger stopper and needle cover
+
+re not awi na 
+t poy 20mgusm
+F 
+Watertr lijation
+Use incne pariet on ore octasi ony
+  
+Cortilns ro arfnicabial pesenative
+Lake Forest IIL BAS 1ISA
+Rigerate a
+Potectrunight
+D stbuad by PFiw Labs,
+ageSee eing
+    S
+==================================================
+
+Filename: Back_Panel_ELRXFIO-elranatamab-AUS-04_jpg.rf.080e89226f43ff72df0e8473264f943c_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+MEDICALTION GOUNE TO GACH PATIENT
+DISPENSE THE ACCOMPANYING
+Racomneoded Dosagpe:
+S Prescrthing information
+No Prussrvatios
+STORAGE Stome rafigenated at
+PCnFC
+cartse to protect foms light.
+is the original
+Do not froaze or thake
+Use in one patient on one
+occasion only
+Menefactarad by
+Plear Iinc.
+New York, NY 10001
+US Licerso No. 2081
+Distributed by
+Plear Labs
+Divisien of Pizer Inc.
+New York, NY 1001
+==================================================
+
+Filename: Back_Panel_SPEVIGO-150-mg-2PFS-AUS_jpg.rf.11273dafcc053ab70c8d8337102410bf_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+For Sxbortinecus Uow Oely
+TWO s5e ng Single-Orooe Prertileed Syringes
+This Carton Contains:
+2 Singie-Oose Pherled Syringes (150 mglin)
+1 Insitructions fur Use
+Prescrilbaing Informatior/Miedicatien Qulde
+Prescribaing Infarmanation
+Store In the refrigeretor betwneen
+( 
+prior tp adiminlatration
+EacDs Srerile Inand. SieglaDose
+origlnal carton to protect from fght.
+DO NOT FREEZE
+Dlucand
+ISOV OLAICN
+PrefiBed Suringe Conains
+Spesolimab
+whedis ren onagelie Ba
+Sodum acatate
+Water for Dnjection
+Teke your prerfillied syrieges out of
+Not made with naturall
+medicine to rescth room
+Pharmeceuricala, Inc.
+Soefringer Ingntthels
+rep aut of reach of chiiddien
+US Licenue
+2006
+==================================================
+
+Filename: Back_Panel_HERCESSI-150-vial-carton-AUS_jpg.rf.dfa14f49193055063fa5351382ee7b1b_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+HEEEEEL.
+damusutast
+edetmanco of wolteini sof vobecl
+loiv 1og prn 0ar
+yailbrsursolunetl
+AaU Tait S4 /epial
+loiV seo0-sipnie
+==================================================
+
+Filename: Back_Panel_CUVITRU-carton-AUS_jpg.rf.7dd9d50a5794fc099159d954ae4e62c0_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+2a
+Product Code: 1506205
+CUVITRU
+Ngm to
+Soliution for injection
+for ubcoten
+Stbilisud with .2 to 1.SM plycine.
+Read aaclosed package irsert for dinactions for use.
+The tatient and gibuticiat
+ripke and beeelits
+bould discess #
+of this prodect.
+CUVITRU product of Belgiun
+Cambridige MA C2142
+Takede Pharmacouticals U.S.A. Inc
+U.S. License Nio 185E
+==================================================
+
+Filename: Back_Panel_REMICADE-carton-AUS_jpg.rf.0aaf8c02fa7698b2c24921f0c99bb90b_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+GTIN 00357894030010
+udsesoge Dusgusad ag sedesod (enin
+e   s e s 
+w o og n oo Jog Jo
+oug  a un % p
+on di i os p
+reconstituted, each ml, contains t0 mg
+infilaimalb, 50 mg sucrose, 0.05 rg
+phosphate, monohydrate, and 0u61 mg
+polysorbate 80, 0.22 mg monobasic sodiun
+dibasic sodium phosphate, diydrats
+Contains no preservathes.
+Nio U. S. standand of potency.
+at 2Cto8C
+Store un
+pened wtals in rufrioerato
+Unopened vials can be stored up
+to 6 months. If stored undar these
+to 30%C
+for a sinple period of up
+conditions, dicardafter//
+See padcage insart.
+==================================================
+
+Filename: Back_Panel_EYLEA-2-mg-PFS-carton-AUS_jpg.rf.9d891b2dd86bc5721272bfe17f201fa9_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+cs0s u np" Cu T
+bLLacerpareIijAce
+EAEV  a o dU
+L OR r jeE yeL o' ⊥ LAoU H 100
+aucred pk yd
+cepcap c
+BECEMEBON
+ancscee ('u@) (uq Map. jueogou a #b0s
+@  dy oqn bo-eb|raje qr peb pahqe ('05 udl)
+@   dy soqy bele upe qape
+po bsogece g.cu plj
+ob wup-ecebe r bslaopmp 5o lyrougwudy soqruu cuyoqe
+ueose@ote u o0 cp  sse on -
+po qm 0'02 war (20 uaea) c aopou coumuut  8
+2pose Lepy deeq os 5-8.C
+"Do uo
+grc ArEv epudje-qoee buo-pq Dyroe akse  qeodaeq
+sndu
+bkd-Leq shajBe couapen
+sul nureeq boxgyou ju eocauqmuce mag) jocej
+Coupu Lo l/g-Luopq bualelpnee' Dtr
+214p-qoas b46-y/pq aijbe
+ne* ju oue bre ou cue occeou cujh
+kresb ong q sasq o cuequaur
+(naituloe Jm\gm O sto JmcQ.O) gmS
+eeu sot enottoes bre
+nottosiynd inardiverdrt o7
+noiterclni egeeob sot noitarmoln gnidhoeen eed
+Im 80.0 ri gm à.E tosodits
+naitoeje tol noitulol
+Doodde ud hg ou
+EARE
+==================================================
+
+Filename: Back_Panel_RYBREVANT-350-mg-1-vial-AUS_jpg.rf.0df0d2972fbe66fe00220a71bf7883e0_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+uUxxO
+Each vial contains 350 mg
+(50 mg/mL) amivantamab
+EDTA disodium salt dihydrate
+(0.14 mg). histidine (2.3 mg)
+histidine hydrochloride
+monohydrate (8.6 mg),
+methionine (7 mg),
+polysorbate 80 (4.2 mg),
+sucrose (595 mg), and water for
+injection, USP.
+Dosage: See Prescribing
+Information.
+Store refrigerated at 2*C to 8"C
+in the original
+carton to protect from light.
+Do not freeze.
+Use in one patient on one
+occasion only
+Contains no antimicrobial
+preservative
+==================================================
+
+Filename: Back_Panel_LEMTRADA-12-mg-1-vial-AUS_jpg.rf.3825d646a46610f5186e12ea90bfd4f4_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+Manufactured and Distributed
+By:
+Genzyme Corporation
+Cambridge, MA 02141
+A SANOFI COMPANY
+US License No. 1596
+Product of Germany
+For single use only.
+Store in a refrigerator at
+2C to 8°C
+Do not freeze or shake,
+Store in original carton to
+protect from light.
+sanofi
+==================================================
+
+Filename: Back_Panel_PRIVIGEN-carton-AUS_jpg.rf.8fca1c4db88cf3f5ab31c04058c4cb75_crop1.jpg
+Folder: Back_Panel
+Extracted Text:
+--------------------
+sno no trsiteq ao ni sel
+vinto noiee330
+Inidomimitos on enintino?
+avitevsennh
+nhrs8 2
+20 wr
+==================================================
+
