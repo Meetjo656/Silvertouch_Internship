@@ -1,0 +1,135 @@
+[
+  {
+    "point_id": "0d658992-2581-59b9-94ce-b035d088ed29",
+    "payload": {
+      "documentation": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "location_of_head_quarter",
+        "rural",
+        "urban"
+      ]
+    }
+  },
+  {
+    "point_id": "12a235df-28c0-5cc3-9756-f262e88d33bc",
+    "payload": {
+      "documentation": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...).",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "rankings",
+        "date_time",
+        "subquery",
+        "current",
+        "accurate"
+      ]
+    }
+  },
+  {
+    "point_id": "22b4aa91-1862-5215-b553-e3b743b5fd48",
+    "payload": {
+      "documentation": "Mandatory Sorting: ALL ranking list queries MUST use 'ORDER BY flag ASC, rank ASC'. The 'flag' column handles high-level business prioritizations and must take precedence over 'rank'.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "rankings",
+        "prioritizations",
+        "flag",
+        "rank"
+      ]
+    }
+  },
+  {
+    "point_id": "372a49e6-8e71-5e25-b4f0-99b49e3ef89f",
+    "payload": {
+      "documentation": "Rank Types: Supported levels are 'State', 'District', and 'Block (State Nodal)'. Queries default to 'State' level if location granularity is not specified. Use the 'rank_type_name' column to filter.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "rank",
+        "state",
+        "district",
+        "block",
+        "rank_type_name"
+      ]
+    }
+  },
+  {
+    "point_id": "4cf5e8d6-6b5a-5b1e-bc09-97a2b3de7852",
+    "payload": {
+      "documentation": "PACS Sector Filter: Every PACS query must use the combined triplet for accurate coverage: (sector_name ILIKE '%PACS%' OR sector_name ILIKE '%LAMPS%' OR sector_name ILIKE '%FSS%').",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "pacs",
+        "lamps",
+        "fss",
+        "sector",
+        "query"
+      ]
+    }
+  },
+  {
+    "point_id": "8e13a450-891c-5a93-9160-35ec2b0ac08e",
+    "payload": {
+      "documentation": "Quarterly Record Logic: Data for a quarter is recorded on the 1st day of the following month. Q1 (Jan-Mar) = Apr 1st; Q2 (Apr-Jun) = Jul 1st; Q3 (Jul-Sep) = Oct 1st; Q4 (Oct-Dec) = Jan 1st.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "quarterly",
+        "record",
+        "quarter",
+        "january",
+        "april",
+        "july",
+        "october",
+        "december"
+      ]
+    }
+  },
+  {
+    "point_id": "c338f834-048c-5a17-ad9e-fb3ef4208c31",
+    "payload": {
+      "documentation": "Sector Name Variants: Only UCB has an alternative name mapping: UCB includes 'Urban Cooperative Bank'. For all other sectors, use the standard sector name from the schema.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "sector",
+        "ucb",
+        "urban",
+        "cooperative",
+        "bank",
+        "variant",
+        "mapping",
+        "schema"
+      ]
+    }
+  },
+  {
+    "point_id": "cf7dc4c0-95d3-5c58-97e7-5249bbe79d33",
+    "payload": {
+      "documentation": "Ranking Source Table: All ranking data is pulled from the materialized view 'public.chatbot_cooperative_rankings'. This is the single source of truth for ranks and scores.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [
+        "chatbot_cooperative_rankings"
+      ],
+      "business_terms": [
+        "rankings",
+        "scores",
+        "materialized",
+        "source",
+        "truth"
+      ]
+    }
+  }
+]

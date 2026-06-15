@@ -1,0 +1,7 @@
+{
+  "Module Accuracy": 40.0,
+  "Documentation Retrieval Accuracy": 40.0,
+  "DDL Retrieval Accuracy": 32.666666666666664,
+  "SQL Example Retrieval Accuracy": 20.0,
+  "Overall Retrieval Accuracy": 33.166666666666664
+}

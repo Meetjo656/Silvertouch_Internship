@@ -1,0 +1,40 @@
+[
+  {
+    "point_id": "8ae38a2c-51be-5255-bd37-6cecf629921d",
+    "payload": {
+      "ddl": "CREATE TABLE public.chatbot_cooperative_rankings ( id INTEGER, main_id INTEGER, cooperative_id TEXT, /* cooperative id of the society, */ cooperative_name TEXT, /* Cooperative Name of the society, */ full_address TEXT, /* Full address of the society, */ date_registration DATE, /* Date of registration of the society, */ state_name TEXT, /* State name of the society, */ district_name TEXT, /* District name of the society, */ block_name TEXT, /* Block name of the society, */ urban_local_body_name TEXT, /* Urban local body name of the society, */ location_of_head_quarter TEXT, /* Location of head quarter (Urban or Rural), */ sector_name TEXT, /* Sector name of the society, */ total_score NUMERIC, /* Total score of the society, */ rank INTEGER, /* Rank of the society, */ rank_type_name TEXT, /* Rank type (State, District, Block (State Nodal), District (District Nodal), Block (District Nodal), Admin), */ date_time TIMESTAMP, /* Date and time of the record, */ created_by_name TEXT, /* Created by name of the society, */ flag INTEGER /* Flag */ );",
+      "type": "ddl",
+      "module": "RANKINGS",
+      "tables": [
+        "chatbot_cooperative_rankings"
+      ],
+      "columns": [
+        "chatbot_cooperative_rankings.id",
+        "chatbot_cooperative_rankings.main_id",
+        "chatbot_cooperative_rankings.cooperative_id",
+        "chatbot_cooperative_rankings.cooperative_name",
+        "chatbot_cooperative_rankings.full_address",
+        "chatbot_cooperative_rankings.date_registration",
+        "chatbot_cooperative_rankings.state_name",
+        "chatbot_cooperative_rankings.district_name",
+        "chatbot_cooperative_rankings.block_name",
+        "chatbot_cooperative_rankings.urban_local_body_name",
+        "chatbot_cooperative_rankings.location_of_head_quarter",
+        "chatbot_cooperative_rankings.sector_name",
+        "chatbot_cooperative_rankings.total_score",
+        "chatbot_cooperative_rankings.rank",
+        "chatbot_cooperative_rankings.rank_type_name",
+        "chatbot_cooperative_rankings.date_time",
+        "chatbot_cooperative_rankings.created_by_name",
+        "chatbot_cooperative_rankings.flag"
+      ],
+      "business_terms": [
+        "rankings",
+        "cooperative",
+        "chatbot",
+        "society",
+        "performance"
+      ]
+    }
+  }
+]

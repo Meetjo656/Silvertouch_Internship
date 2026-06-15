@@ -1,0 +1,33 @@
+{
+  "sql_by_module": {
+    "COOPERATIVE": 997,
+    "GP_COVERAGE": 1150,
+    "RANKINGS": 456,
+    "FEDERATION": 937,
+    "BANKS": 144,
+    "OFFICES": 40,
+    "AT_A_GLANCE": 27,
+    "EDUCATION": 60,
+    "PUBLIC": 1
+  },
+  "ddl_by_module": {
+    "BANKS": 5,
+    "FEDERATION": 28,
+    "GP_COVERAGE": 2,
+    "COOPERATIVE": 29,
+    "AT_A_GLANCE": 4,
+    "EDUCATION": 1,
+    "RANKINGS": 1,
+    "OFFICES": 1
+  },
+  "doc_by_module": {
+    "GP_COVERAGE": 5,
+    "EDUCATION": 6,
+    "RANKINGS": 8,
+    "BANKS": 9,
+    "COOPERATIVE": 18,
+    "FEDERATION": 9,
+    "OFFICES": 4,
+    "AT_A_GLANCE": 6
+  }
+}

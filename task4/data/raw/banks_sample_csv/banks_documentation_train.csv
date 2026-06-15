@@ -1,0 +1,10 @@
+documentation
+"Data Dictionary for chatbot_scb_ master tables: scb_dcb_flag (1=SCB, 2=DCB, 3=SCARDB, 4=PCARDB); location_urban_rural (1=Urban, 2=Rural); functional_status (1=Functional, 2=Under Liquidation, 3=Non Functional); is_city/is_comp/is_dividend_paid (1=Yes, 0=No); status (1=Active, 0=Inactive); scheme_type (1=Central Govt Scheme, 2=State Govt Scheme); class_membership (1=Ordinary/Regular/Voting, 2=Associate/Nominal/Voting)."
+The table chatbot_scb_master_private is the master table for all state and district cooperative banks.
+"All other bank-related tables (contact details, schemes, areas, other members) are linked to chatbot_scb_master_private via the id column."
+Contact details for bank personnel are stored in the table chatbot_scb_contact_details.
+Information about various government schemes implemented by the banks is stored in chatbot_scb_schemes_private.
+The name of a DCCB (District Central Cooperative Bank) should be fetched from the name column of the district_central_cooperative_bank table by mapping it to the scb_name in the master table.
+"When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+"Audit figures like net_profit, annual_turnover, etc. are stored in lakhs."
+"State cooperative banks, state banks , SCBs , SCB are the same thing (State cooperative bank) so use the scb_dcb_flag = 1 , District cooperative bank, District banks, DCCBs, DCB are the same thing (District cooperative bank) so use the scb_dcb_flag = 2 , State cooperative agricultural and rural development banks, State cooperative agricultural and rural development banks, SCARDBs, SCARDB are the same thing (State cooperative agricultural and rural development banks) so use the scb_dcb_flag = 3 , Primary cooperative agricultural and rural development banks, Primary cooperative agricultural and rural development banks, PCARDBs, PCARDB are the same thing (Primary cooperative agricultural and rural development banks) so use the scb_dcb_flag = 4"

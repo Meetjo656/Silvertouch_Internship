@@ -1,0 +1,1483 @@
+[
+  {
+    "point_id": "171919dc-f5fd-5072-b69b-778a1b765b1b",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_education ( /* This table contains information about the education sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ society_type_name TEXT, /* Sub sector / sub category of the education cooperative */ has_building TEXT, /* Whether the co-operative society has an office building ( 1 = Yes, 0 = No ) */ building_type_name TEXT, /* Type of office building */ has_land TEXT, /* Whether the co-operative society has land ( 1 = Yes, 0 = No ) */ individual_member TEXT, /* Number of individual members */ institutional_member TEXT, /* Number of institutional members */ authorised_share TEXT, /* Authorised share capital (in Rs) */ paid_up_share TEXT, /* Paid up share capital (in Rs) */ total_deposit TEXT, /* Total deposit (in Rs) */ paid_up_share_date TEXT, /* Paid up share capital date */ pack_total_outstanding_loan TEXT, /* Total amount of loan outstanding (in Rs) */ paid_up_members TEXT, /* Total paid up members (in Rs) */ paid_up_government_bodies TEXT, /* Total paid up government bodies (in Rs) */ paid_up_total TEXT, /* Total paid up share capital by different entity (paid_up_members + paid_up_government_bodies) (in Rs) */ annual_turn_over TEXT, /* Annual turnover of the cooperative society (in Rs) */ level_of_education_name TEXT, /* Level of education courses offered by the cooperative society */ duration_of_course_name TEXT, /* Duration of training course offered by the cooperative society */ level_and_duration_course_name TEXT, /* Level and duration of training and education courses offered by the cooperative society */ course_in_audit TEXT, /* Number of courses offered in the audited year */ stu_in_audit TEXT, /* Number of students completed courses offered in the audited year */ training_course_in_audit TEXT, /* Number of training courses conducted in the audited year */ participants_in_audit TEXT, /* Number of participants attended training in the audited year */ course_international_participant TEXT, /* Whether the Society conduct any course/training for international Participants ( 1 = Yes , 0 = No ) */ no_of_training_course TEXT, /* Number of training/courses conducted */ attended_training TEXT, /* Number of participants attended training/course */ society_recruit TEXT, /* Whether the Society has recruited own faculty ( 1 = Yes , 0 = No ) */ no_regular_faculty TEXT, /* Number of regular faculties */ no_other_faculty TEXT, /* Number of Adhoc/Contractual/Visiting Faculties */ facilities_names TEXT, /* List of the facility provided by the cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_education"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_education.id",
+        "chatbot_cooperative_registration_education.cooperative_registration_id",
+        "chatbot_cooperative_registration_education.society_type_name",
+        "chatbot_cooperative_registration_education.has_building",
+        "chatbot_cooperative_registration_education.building_type_name",
+        "chatbot_cooperative_registration_education.has_land",
+        "chatbot_cooperative_registration_education.individual_member",
+        "chatbot_cooperative_registration_education.institutional_member",
+        "chatbot_cooperative_registration_education.authorised_share",
+        "chatbot_cooperative_registration_education.paid_up_share",
+        "chatbot_cooperative_registration_education.total_deposit",
+        "chatbot_cooperative_registration_education.paid_up_share_date",
+        "chatbot_cooperative_registration_education.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_education.paid_up_members",
+        "chatbot_cooperative_registration_education.paid_up_government_bodies",
+        "chatbot_cooperative_registration_education.paid_up_total",
+        "chatbot_cooperative_registration_education.annual_turn_over",
+        "chatbot_cooperative_registration_education.level_of_education_name",
+        "chatbot_cooperative_registration_education.duration_of_course_name",
+        "chatbot_cooperative_registration_education.level_and_duration_course_name",
+        "chatbot_cooperative_registration_education.course_in_audit",
+        "chatbot_cooperative_registration_education.stu_in_audit",
+        "chatbot_cooperative_registration_education.training_course_in_audit",
+        "chatbot_cooperative_registration_education.participants_in_audit",
+        "chatbot_cooperative_registration_education.course_international_participant",
+        "chatbot_cooperative_registration_education.no_of_training_course",
+        "chatbot_cooperative_registration_education.attended_training",
+        "chatbot_cooperative_registration_education.society_recruit",
+        "chatbot_cooperative_registration_education.no_regular_faculty",
+        "chatbot_cooperative_registration_education.no_other_faculty",
+        "chatbot_cooperative_registration_education.facilities_names",
+        "chatbot_cooperative_registration_education.ncd_id"
+      ],
+      "business_terms": [
+        "education",
+        "sector",
+        "cooperative",
+        "registration",
+        "societies"
+      ]
+    }
+  },
+  {
+    "point_id": "1c6f1240-314e-5180-88df-78fd8357e9fe",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_bee_farming ( /* This table contains information about the bee farming sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ type_bee_names TEXT, /* List of Type of Bees are rearing by cooperative society */ has_building TEXT, /* Whether the cooperative society has an office building ( 1 = Yes, 0 = No ) */ building_type_name TEXT, /* Type of office building */ authorised_share TEXT, /* Authorised share capital (in Rs.) */ paid_up_share TEXT, /* Paid up share capital (in Rs.) */ total_deposit TEXT, /* Total deposit with the cooperative society (in Rs.) */ paid_up_share_date TEXT, /* Date when paid-up share was recorded */ pack_total_outstanding_loan TEXT, /* Total Amount of loan outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up share capital by members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up share capital by government bodies (in Rs.) */ paid_up_total TEXT, /* Total paid up share capital (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual turnover of the cooperative society (in Rs.) */ common_yard TEXT, /* Whether the Cooperative society has Common Beehive Yard ( 1 = Yes, 0 = No ) */ no_of_behives TEXT, /* Number of Beehives in the cooperative society */ type_behives_name TEXT, /* Type of Beehives are used for rearing bee by cooperative */ rear_by_member TEXT, /* Whether the rearing of bees is done by member themselves ( 1 = Yes, 0 = No ) */ guidance_by_member TEXT, /* Whether the regular guidance/training is provided by cooperative society to members ( 1 = Yes, 0 = No ) */ product_name TEXT, /* Type of products of bee farming */ is_bee_plant_grow TEXT, /* Whether the Honey Bee Plants/Flowers are grown by cooperative society ( 1 = Yes, 0 = No ) */ is_cleaning_process TEXT, /* Whether the cleaning, processing & packaging facility is available with cooperative society ( 1 = Yes , 0 = No) */ is_waste_facility TEXT, /* Whether the waste management facility is available in the cooperative society ( 1 = Yes , 0 = No) */ own_brand_honey TEXT, /* Whether the Cooperative society ha its own Brand for Honey Products ( 1 = Yes , 0 = No) */ is_operate_retail TEXT, /* Whether the cooperative society operates retail shops/outlets to sale products ( 1 = Yes , 0 = No) */ no_of_retail TEXT, /* Number of retail shops operated by cooperative society */ is_product_sale_out TEXT, /* Whether products are sale out of the area of operation of the cooperative society ( 1 = Yes , 0 = No) */ facilities_names TEXT, /* List of facilities provided by the cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_bee_farming"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_bee_farming.id",
+        "chatbot_cooperative_registration_bee_farming.cooperative_registration_id",
+        "chatbot_cooperative_registration_bee_farming.type_bee_names",
+        "chatbot_cooperative_registration_bee_farming.has_building",
+        "chatbot_cooperative_registration_bee_farming.building_type_name",
+        "chatbot_cooperative_registration_bee_farming.authorised_share",
+        "chatbot_cooperative_registration_bee_farming.paid_up_share",
+        "chatbot_cooperative_registration_bee_farming.total_deposit",
+        "chatbot_cooperative_registration_bee_farming.paid_up_share_date",
+        "chatbot_cooperative_registration_bee_farming.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_bee_farming.paid_up_members",
+        "chatbot_cooperative_registration_bee_farming.paid_up_government_bodies",
+        "chatbot_cooperative_registration_bee_farming.paid_up_total",
+        "chatbot_cooperative_registration_bee_farming.annual_turn_over",
+        "chatbot_cooperative_registration_bee_farming.common_yard",
+        "chatbot_cooperative_registration_bee_farming.no_of_behives",
+        "chatbot_cooperative_registration_bee_farming.type_behives_name",
+        "chatbot_cooperative_registration_bee_farming.rear_by_member",
+        "chatbot_cooperative_registration_bee_farming.guidance_by_member",
+        "chatbot_cooperative_registration_bee_farming.product_name",
+        "chatbot_cooperative_registration_bee_farming.is_bee_plant_grow",
+        "chatbot_cooperative_registration_bee_farming.is_cleaning_process",
+        "chatbot_cooperative_registration_bee_farming.is_waste_facility",
+        "chatbot_cooperative_registration_bee_farming.own_brand_honey",
+        "chatbot_cooperative_registration_bee_farming.is_operate_retail",
+        "chatbot_cooperative_registration_bee_farming.no_of_retail",
+        "chatbot_cooperative_registration_bee_farming.is_product_sale_out",
+        "chatbot_cooperative_registration_bee_farming.facilities_names",
+        "chatbot_cooperative_registration_bee_farming.ncd_id"
+      ],
+      "business_terms": [
+        "bee farming",
+        "honey",
+        "apiary",
+        "pollination",
+        "hive",
+        "bees",
+        "colony",
+        "pollen",
+        "wax",
+        "queen"
+      ]
+    }
+  },
+  {
+    "point_id": "2538eb82-6b73-5555-b228-2a925699d935",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registrations_credit_miscellaneous ( /* This table contains information about the credit miscellaneous sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the society has an office building ( 1 = Yes, 0 = No ) */ building_type_name TEXT, /* Type of office building */ authorised_share TEXT, /* Authorised share capital (in Rs.) */ paid_up_share TEXT, /* Paid up share capital (in Rs.) */ paid_up_share_date TEXT, /* Date when paid-up share was recorded */ total_deposit TEXT, /* Total deposit with the society (in Rs.) */ pack_total_outstanding_loan TEXT, /* Total Amount of loan outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up share capital by individual members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up share capital by government bodies (in Rs.) */ paid_up_total TEXT, /* Total paid up share capital (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual turnover of the cooperatives (in Rs.) */ loan_outstanding TEXT, /* Total outstanding loan (in Rs.) */ individual_member TEXT, /* Number of individual members */ institutional_member TEXT, /* Number of institutional members */ facilities_names TEXT, /* List of facilities provided by the society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registrations_credit_miscellaneous"
+      ],
+      "columns": [
+        "chatbot_cooperative_registrations_credit_miscellaneous.id",
+        "chatbot_cooperative_registrations_credit_miscellaneous.cooperative_registration_id",
+        "chatbot_cooperative_registrations_credit_miscellaneous.has_building",
+        "chatbot_cooperative_registrations_credit_miscellaneous.building_type_name",
+        "chatbot_cooperative_registrations_credit_miscellaneous.authorised_share",
+        "chatbot_cooperative_registrations_credit_miscellaneous.paid_up_share",
+        "chatbot_cooperative_registrations_credit_miscellaneous.paid_up_share_date",
+        "chatbot_cooperative_registrations_credit_miscellaneous.total_deposit",
+        "chatbot_cooperative_registrations_credit_miscellaneous.pack_total_outstanding_loan",
+        "chatbot_cooperative_registrations_credit_miscellaneous.paid_up_members",
+        "chatbot_cooperative_registrations_credit_miscellaneous.paid_up_government_bodies",
+        "chatbot_cooperative_registrations_credit_miscellaneous.paid_up_total",
+        "chatbot_cooperative_registrations_credit_miscellaneous.annual_turn_over",
+        "chatbot_cooperative_registrations_credit_miscellaneous.loan_outstanding",
+        "chatbot_cooperative_registrations_credit_miscellaneous.individual_member",
+        "chatbot_cooperative_registrations_credit_miscellaneous.institutional_member",
+        "chatbot_cooperative_registrations_credit_miscellaneous.facilities_names",
+        "chatbot_cooperative_registrations_credit_miscellaneous.created_at",
+        "chatbot_cooperative_registrations_credit_miscellaneous.updated_at",
+        "chatbot_cooperative_registrations_credit_miscellaneous.ncd_id"
+      ],
+      "business_terms": [
+        "credit",
+        "miscellaneous",
+        "sector",
+        "cooperatives",
+        "societies"
+      ]
+    }
+  },
+  {
+    "point_id": "317949cf-355d-50ee-93a6-6f62973cb16c",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registrations_ucb ( /* Main table for Urban Cooperative Bank (UCB) sector data. */ id TEXT, cooperative_registrations_id TEXT, /* Registration id of the cooperative */ ucb_branch TEXT, /* Total number of branches of UCB */ has_nafcub TEXT, /* Whether the UCB is affiliated to NAFCUB ( 1 = Yes, 0 = No ) */ has_building TEXT, /* Whether the UCB has an office building ( 1 = Yes, 0 = No ) */ building_type_name TEXT, /* Type of office building */ is_computerized TEXT, /* Whether the UCB is Fully computerized or not ( 1 = Yes, 0 = No ) */ no_computer_working TEXT, /* No. of computer system linked to the server in working condition */ have_ifsc TEXT, /* Whether the UCB Having own IFSC code ( 1 = Yes, 0 = No ) */ have_corebanking TEXT, /* Whether the UCB has core banking facility ( 1 = Yes, 0 = No ) */ have_doorstepservice TEXT, /* Whether the UCB has doorstep banking service facility ( 1 = Yes, 0 = No ) */ is_aeps TEXT, /* Whether the UCB Onboarded on Adhar enabled payment system (AePS) or Not ( 1 = Yes, 0 = No ) */ offer_debitcard TEXT, /* Whether the UCB offers Debit Card to the customers ( 1 = Yes, 0 = No ) */ have_internetbanking TEXT, /* Whether the UCB has internet banking with transaction facility ( 1 = Yes, 0 = No ) */ offer_creditcard TEXT, /* Whether the UCB offers Credit Card to the customers ( 1 = Yes, 0 = No ) */ cibil_membership TEXT, /* Whether the UCB is a member of CIBIL/Transunion ( 1 = Yes, 0 = No ) */ conducting_gab TEXT, /* Whether the UCB conducts Government agency business ( 1 = Yes, 0 = No ) */ cgtmsemli_member TEXT, /* Whether the UCB is a member of CGTMSE MLI ( 1 = Yes, 0 = No ) */ is_saf_to_cust TEXT, /* Whether the UCB provides SAF to customers ( 1 = Yes, 0 = No ) */ fswm_comp TEXT, /* Whether the UCB provides FSWM to customers ( 1 = Yes, 0 = No ) */ networth TEXT, /* Networth of the UCB (in Rs.) */ authorised_share TEXT, /* Authorised share capital (in Rs.) */ paid_up_share TEXT, /* Paid up share capital (in Rs.) */ paid_up_share_date TEXT, /* Date when paid-up share was recorded */ total_deposit TEXT, /* Total deposit with the UCB (in Rs.) */ loan_outstanding TEXT, /* Total Amount of outstanding loan with the UCB (in Rs.) */ annual_turn_over TEXT, /* Annual turnover of the UCB (in Rs.) */ annual_income TEXT, /* Annual income of the UCB (in Rs.) */ annual_ucb_expenditr TEXT, /* Annual expenditure of the UCB (in Rs.) */ asset_ucb TEXT, /* Assets of the UCB (in Rs.) */ liability_ucb TEXT, /* Liabilities of the UCB (in Rs.) */ is_gov_scheme_implemented TEXT, /* Whether the UCB implements any Central/State Government scheme ( 1 = Yes, 0 = No ) */ gov_scheme_type TEXT, /* Type of Government scheme (Central/State) */ total_amount TEXT, /* Total Amount Spent through UCB (Rs) */ gov_scheme_name TEXT, /* Name of Government scheme */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registrations_ucb"
+      ],
+      "columns": [
+        "chatbot_cooperative_registrations_ucb.id",
+        "chatbot_cooperative_registrations_ucb.cooperative_registrations_id",
+        "chatbot_cooperative_registrations_ucb.ucb_branch",
+        "chatbot_cooperative_registrations_ucb.has_nafcub",
+        "chatbot_cooperative_registrations_ucb.has_building",
+        "chatbot_cooperative_registrations_ucb.building_type_name",
+        "chatbot_cooperative_registrations_ucb.is_computerized",
+        "chatbot_cooperative_registrations_ucb.no_computer_working",
+        "chatbot_cooperative_registrations_ucb.have_ifsc",
+        "chatbot_cooperative_registrations_ucb.have_corebanking",
+        "chatbot_cooperative_registrations_ucb.have_doorstepservice",
+        "chatbot_cooperative_registrations_ucb.is_aeps",
+        "chatbot_cooperative_registrations_ucb.offer_debitcard",
+        "chatbot_cooperative_registrations_ucb.have_internetbanking",
+        "chatbot_cooperative_registrations_ucb.offer_creditcard",
+        "chatbot_cooperative_registrations_ucb.cibil_membership",
+        "chatbot_cooperative_registrations_ucb.conducting_gab",
+        "chatbot_cooperative_registrations_ucb.cgtmsemli_member",
+        "chatbot_cooperative_registrations_ucb.is_saf_to_cust",
+        "chatbot_cooperative_registrations_ucb.fswm_comp",
+        "chatbot_cooperative_registrations_ucb.networth",
+        "chatbot_cooperative_registrations_ucb.authorised_share",
+        "chatbot_cooperative_registrations_ucb.paid_up_share",
+        "chatbot_cooperative_registrations_ucb.paid_up_share_date",
+        "chatbot_cooperative_registrations_ucb.total_deposit",
+        "chatbot_cooperative_registrations_ucb.loan_outstanding",
+        "chatbot_cooperative_registrations_ucb.annual_turn_over",
+        "chatbot_cooperative_registrations_ucb.annual_income",
+        "chatbot_cooperative_registrations_ucb.annual_ucb_expenditr",
+        "chatbot_cooperative_registrations_ucb.asset_ucb",
+        "chatbot_cooperative_registrations_ucb.liability_ucb",
+        "chatbot_cooperative_registrations_ucb.is_gov_scheme_implemented",
+        "chatbot_cooperative_registrations_ucb.gov_scheme_type",
+        "chatbot_cooperative_registrations_ucb.total_amount",
+        "chatbot_cooperative_registrations_ucb.gov_scheme_name",
+        "chatbot_cooperative_registrations_ucb.created_at",
+        "chatbot_cooperative_registrations_ucb.updated_at",
+        "chatbot_cooperative_registrations_ucb.ncd_id"
+      ],
+      "business_terms": [
+        "urban",
+        "banking",
+        "sector",
+        "registrations",
+        "cooperative"
+      ]
+    }
+  },
+  {
+    "point_id": "3ce9586b-0c42-5a9c-a5be-cd9f3565bf1c",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_agriculture ( /* This table contains information about the agriculture sector of the cooperative societies. */ id TEXT, cooperative_registrations_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the cooperative society has an office building ( 1 = Yes, 0 = No ) */ building_type_name TEXT, /* Type of office building */ individual_member TEXT, /* Number of individual members */ institutional_member TEXT, /* Number of institutional members */ authorised_share TEXT, /* Authorised share capital (in Rs.) */ paid_up_share TEXT, /* Paid up share capital (in Rs.) */ total_deposit TEXT, /* Total deposit with the cooperative society (in Rs.) */ paid_up_share_date TEXT, /* Date when paid-up share was recorded */ pack_total_outstanding_loan TEXT, /* Total Amount of loan outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up share capital by members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up share capital by government bodies (in Rs.) */ paid_up_total TEXT, /* Total paid up share capital (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual turnover of the cooperative society (in Rs.) */ has_pool_land TEXT, /* Do the members themselves have pooled land for the cooperative society ( 1 = Yes, 0 = No ) */ has_gov_land TEXT, /* Apart from the pooled/common land of individuals, has the society taken any land from the government ( 1 = Yes, 0 = No ) */ member_vested_right TEXT, /* Is the right vested with the members to take back the land from the society ( 1 = Yes, 0 = No ) */ is_member_work TEXT, /* Do the members themselves work on pooled/common land of the cooperative society ( 1 = Yes, 0 = No ) */ society_common_pool TEXT, /* Do the society have common pool of bullocks, machinery, equipments, etc. ( 1 = Yes, 0 = No ) */ is_utilize_pool TEXT, /* Do the society fully utilize common pool resource ( 1 = Yes, 0 = No ) */ harvesting TEXT, /* Does the society have the provision of rain water harvesting ( 1 = Manual, 2 = Mechanical, 3 = Both ) */ farming_mechanisms TEXT, /* List of Farming mechanisms adopted by the cooperative society */ irrigation_facilities TEXT, /* List of irrigation means available with the society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_agriculture"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_agriculture.id",
+        "chatbot_cooperative_registration_agriculture.cooperative_registrations_id",
+        "chatbot_cooperative_registration_agriculture.has_building",
+        "chatbot_cooperative_registration_agriculture.building_type_name",
+        "chatbot_cooperative_registration_agriculture.individual_member",
+        "chatbot_cooperative_registration_agriculture.institutional_member",
+        "chatbot_cooperative_registration_agriculture.authorised_share",
+        "chatbot_cooperative_registration_agriculture.paid_up_share",
+        "chatbot_cooperative_registration_agriculture.total_deposit",
+        "chatbot_cooperative_registration_agriculture.paid_up_share_date",
+        "chatbot_cooperative_registration_agriculture.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_agriculture.paid_up_members",
+        "chatbot_cooperative_registration_agriculture.paid_up_government_bodies",
+        "chatbot_cooperative_registration_agriculture.paid_up_total",
+        "chatbot_cooperative_registration_agriculture.annual_turn_over",
+        "chatbot_cooperative_registration_agriculture.has_pool_land",
+        "chatbot_cooperative_registration_agriculture.has_gov_land",
+        "chatbot_cooperative_registration_agriculture.member_vested_right",
+        "chatbot_cooperative_registration_agriculture.is_member_work",
+        "chatbot_cooperative_registration_agriculture.society_common_pool",
+        "chatbot_cooperative_registration_agriculture.is_utilize_pool",
+        "chatbot_cooperative_registration_agriculture.harvesting",
+        "chatbot_cooperative_registration_agriculture.farming_mechanisms",
+        "chatbot_cooperative_registration_agriculture.irrigation_facilities",
+        "chatbot_cooperative_registration_agriculture.created_at",
+        "chatbot_cooperative_registration_agriculture.updated_at",
+        "chatbot_cooperative_registration_agriculture.ncd_id"
+      ],
+      "business_terms": [
+        "agriculture",
+        "sector",
+        "cooperative",
+        "registration",
+        "farming",
+        "production",
+        "cultivation",
+        "harvest",
+        "livestock",
+        "agricultural"
+      ]
+    }
+  },
+  {
+    "point_id": "41658c82-8b26-5c01-9d93-2272589e8033",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_credit_thrift ( /* This table contains information about the credit and thrift sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT /* Registration id of the cooperative, */ has_building TEXT, /* Whether the society has an office building ( 1 = Yes, 0 = No ) */ building_type_name TEXT, /* Type of office building */ authorised_share TEXT, /* Authorised share capital (in Rs.) */ paid_up_share TEXT, /* Paid up share capital (in Rs.) */ total_deposit TEXT, /* Total deposit (in Rs.) */ pack_total_outstanding_loan TEXT, /* Total outstanding loan (in Rs.) */ facilities_names TEXT, /* lists of facilities provided by the society */ ncd_id TEXT, /* Main NCD ID used to join with master table and the members table */ paid_up_share_date TEXT /* Date when paid-up share was recorded */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_credit_thrift"
+      ],
+      "columns": [
+        "chatbot_cooperative_credit_thrift.id",
+        "chatbot_cooperative_credit_thrift.cooperative_registration_id",
+        "chatbot_cooperative_credit_thrift.has_building",
+        "chatbot_cooperative_credit_thrift.building_type_name",
+        "chatbot_cooperative_credit_thrift.authorised_share",
+        "chatbot_cooperative_credit_thrift.paid_up_share",
+        "chatbot_cooperative_credit_thrift.total_deposit",
+        "chatbot_cooperative_credit_thrift.pack_total_outstanding_loan",
+        "chatbot_cooperative_credit_thrift.facilities_names",
+        "chatbot_cooperative_credit_thrift.ncd_id",
+        "chatbot_cooperative_credit_thrift.created_at",
+        "chatbot_cooperative_credit_thrift.updated_at",
+        "chatbot_cooperative_credit_thrift.paid_up_share_date"
+      ],
+      "business_terms": [
+        "credit",
+        "thrift",
+        "sector",
+        "loan",
+        "savings"
+      ]
+    }
+  },
+  {
+    "point_id": "42d37634-bd4f-54f1-9085-bdfedab6677a",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_member_details_private ( /* It is the master table of the cooperative societies. It contains all the details of the members of the cooperative societies. */ id TEXT, cooperative_registrations_id TEXT, /* Registration id of the cooperative */ m_general TEXT, /* Number of male general members */ m_sc TEXT, /* Number of male sc members */ m_st TEXT, /* Number of male st members */ m_obc TEXT, /* Number of male obc members */ f_general TEXT, /* Number of female general members */ f_sc TEXT, /* Number of female sc members */ f_st TEXT, /* Number of female st members */ f_obc TEXT, /* Number of female obc members */ t_general TEXT, /* Number of transgender general members */ t_sc TEXT, /* Number of transgender sc members */ t_st TEXT, /* Number of transgender st members */ t_obc TEXT, /* Number of transgender obc members */ ncd_id TEXT, /* National Cooperative ID (used to join with cooperative_master_chatbot_tbl and with other sectors table) */ m_total TEXT, /* Total number of male members */ f_total TEXT, /* Total number of female members */ t_total TEXT, /* Total number of transgender members */ total TEXT /* Total number of members */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_member_details_private"
+      ],
+      "columns": [
+        "chatbot_member_details_private.id",
+        "chatbot_member_details_private.cooperative_registrations_id",
+        "chatbot_member_details_private.m_general",
+        "chatbot_member_details_private.m_sc",
+        "chatbot_member_details_private.m_st",
+        "chatbot_member_details_private.m_obc",
+        "chatbot_member_details_private.f_general",
+        "chatbot_member_details_private.f_sc",
+        "chatbot_member_details_private.f_st",
+        "chatbot_member_details_private.f_obc",
+        "chatbot_member_details_private.t_general",
+        "chatbot_member_details_private.t_sc",
+        "chatbot_member_details_private.t_st",
+        "chatbot_member_details_private.t_obc",
+        "chatbot_member_details_private.ncd_id",
+        "chatbot_member_details_private.m_total",
+        "chatbot_member_details_private.f_total",
+        "chatbot_member_details_private.t_total",
+        "chatbot_member_details_private.total"
+      ],
+      "business_terms": [
+        "member",
+        "cooperative",
+        "society",
+        "registration",
+        "financial"
+      ]
+    }
+  },
+  {
+    "point_id": "46d34cc3-7f27-5dd2-8aec-ddd97b52dd2a",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_labour ( /* This table contains information about the labour sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ labour_society_type_name TEXT, /* Sub category / sub sector of the labour cooperative */ has_building TEXT, /* Whether the cooperative has an office building ( 1 = Yes , 0 = No ) */ building_type_name TEXT, /* Type of the office building */ work_allot_state_dist_federation TEXT, /* Whether the work is alloted by State/District Federation to the Society ( 1 = Yes , 0 = No ) */ work_guide_state_dist_federation TEXT, /* Whether the proper guidance/training for execution of the work provided by State/District Federation ( 1 = Yes , 0 = No ) */ concession_state_gov TEXT, /* Whether cooperative availing any Concession provided by State Government ( 1 = Yes , 0 = No ) */ concession_centre_gov TEXT, /* Whether cooperative availing any Concession provided by Centre Government ( 1 = Yes , 0 = No ) */ authorised_share TEXT, /* Authorized Share capital (in Rs.) */ paid_up_share TEXT, /* paid up share capital ( in Rs. ) */ total_deposit TEXT, /* Total Deposit ( in Rs. ) */ paid_up_share_date TEXT, /* Paid up share capital Date */ pack_total_outstanding_loan TEXT, /* Total amount of loan outstanding ( in Rs. ) */ paid_up_members TEXT, /* Paid up share capital by members ( in Rs. ) */ paid_up_government_bodies TEXT, /* Paid up share capital by government or government bodies (in Rs.) */ paid_up_total TEXT, /* paid up share capital total (paid_ip_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ facilities_names TEXT, /* list of the facilities provided by the societies */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_labour"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_labour.id",
+        "chatbot_cooperative_registration_labour.cooperative_registration_id",
+        "chatbot_cooperative_registration_labour.labour_society_type_name",
+        "chatbot_cooperative_registration_labour.has_building",
+        "chatbot_cooperative_registration_labour.building_type_name",
+        "chatbot_cooperative_registration_labour.work_allot_state_dist_federation",
+        "chatbot_cooperative_registration_labour.work_guide_state_dist_federation",
+        "chatbot_cooperative_registration_labour.concession_state_gov",
+        "chatbot_cooperative_registration_labour.concession_centre_gov",
+        "chatbot_cooperative_registration_labour.authorised_share",
+        "chatbot_cooperative_registration_labour.paid_up_share",
+        "chatbot_cooperative_registration_labour.total_deposit",
+        "chatbot_cooperative_registration_labour.paid_up_share_date",
+        "chatbot_cooperative_registration_labour.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_labour.paid_up_members",
+        "chatbot_cooperative_registration_labour.paid_up_government_bodies",
+        "chatbot_cooperative_registration_labour.paid_up_total",
+        "chatbot_cooperative_registration_labour.annual_turn_over",
+        "chatbot_cooperative_registration_labour.facilities_names",
+        "chatbot_cooperative_registration_labour.created_at",
+        "chatbot_cooperative_registration_labour.updated_at",
+        "chatbot_cooperative_registration_labour.ncd_id"
+      ],
+      "business_terms": [
+        "labour",
+        "sector",
+        "cooperative",
+        "registration",
+        "employment"
+      ]
+    }
+  },
+  {
+    "point_id": "509b7553-b7f5-553f-b467-57943395fa9b",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_multi_state_cooperatives ( /* This table contains information regarding the multi state cooperative societies. */ cooperative_id TEXT, /* Cooperative ID */ area_of_operation_state_names TEXT /* List of Area of operation state names */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_multi_state_cooperatives"
+      ],
+      "columns": [
+        "chatbot_multi_state_cooperatives.cooperative_id",
+        "chatbot_multi_state_cooperatives.area_of_operation_state_code",
+        "chatbot_multi_state_cooperatives.area_of_operation_state_names"
+      ],
+      "business_terms": [
+        "multi-state",
+        "cooperatives",
+        "societies",
+        "cooperative",
+        "multi-state cooperatives"
+      ]
+    }
+  },
+  {
+    "point_id": "51c34daf-2e2e-5296-90bd-81d1ecf049f9",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_sericulture ( /* This table contains information about the sericulture sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ silkworm_type_names TEXT, /* List of Silkworm rearing carried out by cooperative (Eri, Muga, Mulberry, Tasar, Oak Tasar, etc.) */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ authorised_share TEXT, /* Authorised Share Capital (in Rs.) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ common_work_place TEXT, /* Whether the cooperative society has common rearing house (1=Yes, 0=No) */ no_rear_house TEXT, /* Number of rearing houses operated by the cooperative society */ is_work_by_member TEXT, /* Whether the rearing of silkworm is done by member themselves (1=Yes, 0=No) */ is_training_provide TEXT, /* Whether the regular guidance or training is provided by cooperative society to members (1=Yes, 0=No) */ is_rear_appliance TEXT, /* Whether the cooperative society has sufficient rearing appliances for rearing house (1=Yes, 0=No) */ is_mulberry_easy_available TEXT, /* Whether mulberry leaves are easily available to the cooperative society (1=Yes, 0=No) */ is_cleaning_facility_cocoon TEXT, /* Whether the cleaning facility of cocoon is available with the cooperative society (1=Yes, 0=No) */ is_spinning_weav TEXT, /* Whether the spinning and weaving activities are carried out by the cooperative society (1=Yes, 0=No) */ is_waste_facility TEXT, /* Whether the waste management facility is available in the society (1=Yes, 0=No) */ is_operate_retail TEXT, /* Whether the cooperative society operate retail shops or outlet to sale products (1=Yes, 0=No) */ no_of_retail TEXT, /* Number of retail shops or outlets operated by the cooperative society */ facilities_names TEXT, /* List of Facilities provided by the cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_sericulture"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_sericulture.id",
+        "chatbot_cooperative_registration_sericulture.cooperative_registration_id",
+        "chatbot_cooperative_registration_sericulture.silkworm_type_names",
+        "chatbot_cooperative_registration_sericulture.has_building",
+        "chatbot_cooperative_registration_sericulture.building_type_name",
+        "chatbot_cooperative_registration_sericulture.authorised_share",
+        "chatbot_cooperative_registration_sericulture.paid_up_share",
+        "chatbot_cooperative_registration_sericulture.total_deposit",
+        "chatbot_cooperative_registration_sericulture.paid_up_share_date",
+        "chatbot_cooperative_registration_sericulture.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_sericulture.common_work_place",
+        "chatbot_cooperative_registration_sericulture.no_rear_house",
+        "chatbot_cooperative_registration_sericulture.is_work_by_member",
+        "chatbot_cooperative_registration_sericulture.is_training_provide",
+        "chatbot_cooperative_registration_sericulture.is_rear_appliance",
+        "chatbot_cooperative_registration_sericulture.is_mulberry_easy_available",
+        "chatbot_cooperative_registration_sericulture.is_cleaning_facility_cocoon",
+        "chatbot_cooperative_registration_sericulture.is_spinning_weav",
+        "chatbot_cooperative_registration_sericulture.is_waste_facility",
+        "chatbot_cooperative_registration_sericulture.is_operate_retail",
+        "chatbot_cooperative_registration_sericulture.no_of_retail",
+        "chatbot_cooperative_registration_sericulture.facilities_names",
+        "chatbot_cooperative_registration_sericulture.created_at",
+        "chatbot_cooperative_registration_sericulture.updated_at",
+        "chatbot_cooperative_registration_sericulture.ncd_id"
+      ],
+      "business_terms": [
+        "sericulture",
+        "cooperative",
+        "sector",
+        "silk",
+        "cocoon",
+        "rearing",
+        "mulberry",
+        "farming",
+        "production"
+      ]
+    }
+  },
+  {
+    "point_id": "54ca9eca-c6e8-5b8d-ba11-9cf9c3493338",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registrations_master ( cooperative_society_name TEXT, /* Name of Cooperative Society */ local_langauge_society_name TEXT, registration_authority_name TEXT, /* Name of the Registration Authority */ reference_year TEXT, /* Reference year of the record */ date_registration TEXT, /* Date of Registration */ registration_number TEXT, /* Registration number of the cooperative society */ cooperative_society_type_id TEXT, is_multi_state TEXT, /* Whether the cooperative society is multi-state (1=Yes, 0=No) */ area_of_operation_name TEXT, /* Area of operation of the cooperative society */ sector_of_operation TEXT, /* 1=Credit, 2=Non-Credit */ primary_activity_name TEXT, /* Sector of the cooperative */ functional_status TEXT, /* Functional status of the cooperative (1=Functional, 2=Under Liquidation, 3=Non Functional) */ location_of_head_quarter TEXT, /* Location of the head quarter of the cooperative */ state_name TEXT, /* State name of the cooperative */ district_name TEXT, /* District name of the cooperative */ block_name TEXT, /* Block name of the cooperative */ gram_panchayat_name TEXT, /* Gram panchayat name of the cooperative */ village_name TEXT, /* Village name of the cooperative */ urban_local_body_type_name TEXT, /* Urban local body type of the cooperative (Town Panchayat/Municipality/etc.) */ urban_local_body_name TEXT, /* Urban local body name of the cooperative */ ward_name TEXT, /* Ward name of the cooperative */ pincode TEXT, /* Pincode of the cooperative society */ full_address TEXT, /* Full address of the cooperative society */ contact_person TEXT, /* Contact person of the cooperative society */ designation_name TEXT, /* Designation of the contact person */ mobile TEXT, /* Mobile number of the cooperative society */ landline TEXT, /* Landline number of the cooperative society */ email TEXT, /* Email of the cooperative society */ is_coastal TEXT, /* Whether the cooperative society is coastal (1=Yes, 0=No) */ water_body_name TEXT, /* Water body name of the cooperative society */ bank_name TEXT, /* Name of the bank of the cooperative society */ is_msme TEXT, /* Whether the cooperative society is MSME (1=Yes, 0=No) */ udyam_no TEXT, /* Udyam number of the cooperative society */ is_affiliated_union_federation TEXT, /* Whether the cooperative society is affiliated to union federation (1=Yes, 0=No) */ affiliated_union_level_name TEXT, /* Level of affiliated union federation */ affiliated_union_federation_name TEXT, /* Name of the affiliated union federation */ members_of_society TEXT, /* Number of members of the cooperative society */ financial_audit TEXT, /* Whether the cooperative has done the financial audit or not (1=Yes, 0=No) */ category_audit_name TEXT, /* Category of financial audit of the cooperative society */ audit_complete_year TEXT, /* Year of audit of the cooperative society */ an_turnover TEXT, /* Annual turnover of the cooperative society */ is_profit_making TEXT, /* Whether the cooperative society is profit making (1=Yes, 0=No) */ annual_profit TEXT, /* Annual profit of the cooperative society */ annual_loss TEXT, /* Annual loss of the cooperative society */ is_dividend_paid TEXT, /* Whether the cooperative society has paid dividend (1=Yes, 0=No) */ dividend_rate TEXT, /* Dividend rate of the cooperative society */ is_draft TEXT, /* Whether the cooperative society is draft (1=Yes, 0=No) */ status TEXT, /* Status of the cooperative society (1=active, 0=deleted) */ is_approved TEXT, /* Whether the cooperative society is approved (1=Approved, 0=Pending, 2=Rejected) */ cooperative_id TEXT /* Main NCD ID (Primary Key) - used as FK in all other tables */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registrations_master"
+      ],
+      "columns": [
+        "chatbot_cooperative_registrations_master.id",
+        "chatbot_cooperative_registrations_master.cooperative_society_name",
+        "chatbot_cooperative_registrations_master.local_langauge_society_name",
+        "chatbot_cooperative_registrations_master.registration_authority_name",
+        "chatbot_cooperative_registrations_master.reference_year",
+        "chatbot_cooperative_registrations_master.date_registration",
+        "chatbot_cooperative_registrations_master.registration_number",
+        "chatbot_cooperative_registrations_master.cooperative_society_type_id",
+        "chatbot_cooperative_registrations_master.is_multi_state",
+        "chatbot_cooperative_registrations_master.area_of_operation_name",
+        "chatbot_cooperative_registrations_master.sector_of_operation",
+        "chatbot_cooperative_registrations_master.primary_activity_name",
+        "chatbot_cooperative_registrations_master.functional_status",
+        "chatbot_cooperative_registrations_master.location_of_head_quarter",
+        "chatbot_cooperative_registrations_master.state_name",
+        "chatbot_cooperative_registrations_master.district_name",
+        "chatbot_cooperative_registrations_master.block_name",
+        "chatbot_cooperative_registrations_master.gram_panchayat_name",
+        "chatbot_cooperative_registrations_master.village_name",
+        "chatbot_cooperative_registrations_master.urban_local_body_type_name",
+        "chatbot_cooperative_registrations_master.urban_local_body_name",
+        "chatbot_cooperative_registrations_master.ward_name",
+        "chatbot_cooperative_registrations_master.pincode",
+        "chatbot_cooperative_registrations_master.full_address",
+        "chatbot_cooperative_registrations_master.contact_person",
+        "chatbot_cooperative_registrations_master.designation_name",
+        "chatbot_cooperative_registrations_master.mobile",
+        "chatbot_cooperative_registrations_master.landline",
+        "chatbot_cooperative_registrations_master.email",
+        "chatbot_cooperative_registrations_master.is_coastal",
+        "chatbot_cooperative_registrations_master.water_body_name",
+        "chatbot_cooperative_registrations_master.bank_name",
+        "chatbot_cooperative_registrations_master.is_msme",
+        "chatbot_cooperative_registrations_master.udyam_no",
+        "chatbot_cooperative_registrations_master.is_affiliated_union_federation",
+        "chatbot_cooperative_registrations_master.affiliated_union_level_name",
+        "chatbot_cooperative_registrations_master.affiliated_union_federation_name",
+        "chatbot_cooperative_registrations_master.members_of_society",
+        "chatbot_cooperative_registrations_master.financial_audit",
+        "chatbot_cooperative_registrations_master.category_audit_name",
+        "chatbot_cooperative_registrations_master.audit_complete_year",
+        "chatbot_cooperative_registrations_master.an_turnover",
+        "chatbot_cooperative_registrations_master.is_profit_making",
+        "chatbot_cooperative_registrations_master.annual_profit",
+        "chatbot_cooperative_registrations_master.annual_loss",
+        "chatbot_cooperative_registrations_master.is_dividend_paid",
+        "chatbot_cooperative_registrations_master.dividend_rate",
+        "chatbot_cooperative_registrations_master.is_draft",
+        "chatbot_cooperative_registrations_master.status",
+        "chatbot_cooperative_registrations_master.is_approved",
+        "chatbot_cooperative_registrations_master.cooperative_id"
+      ],
+      "business_terms": [
+        "cooperative",
+        "society",
+        "registration",
+        "membership",
+        "cooperation"
+      ]
+    }
+  },
+  {
+    "point_id": "5fcf643e-7e03-59c4-b7ce-781c59b98d9a",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_livestock ( /* This table contains information about the livestock sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ livestock_society_type_names TEXT, /* Type of Livestock or Poultry reared by the cooperative society */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ authorised_share TEXT, /* Authorised Share Capital (in Rs.) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs.) */ produce_names TEXT, /* Type of product produced by cooperative society */ common_work_place TEXT, /* Whether the cooperative society has common Livestock Shade or poultry farm (1=Yes, 0=No) */ is_work_by_member TEXT, /* Whether the caretaking of livestock or poultry is done by member themselves (1=Yes, 0=No) */ is_training_provide TEXT, /* Whether the regular guidance or training is provided by cooperative society to members (1=Yes, 0=No) */ is_poultry_feed TEXT, /* Whether the cooperative society provide livestock or poultry feed to members (1=Yes, 0=No) */ is_collected_from_member TEXT, /* Whether livestock or poultry products are collected from members for marketing (1=Yes, 0=No) */ is_waste_facility TEXT, /* Whether the livestock or poultry waste management facility is available (1=Yes, 0=No) */ is_operate_retail TEXT, /* Whether the cooperative society operate retail shops or outlet to sale products (1=Yes, 0=No) */ no_of_retail TEXT, /* Number of retail shops or outlets operated by the cooperative society */ is_product_sale_out TEXT, /* Whether the products are sale out of the area of operation of the cooperative society (1=Yes, 0=No) */ facilities_names TEXT, /* list of Facilities provided by the cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_livestock"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_livestock.id",
+        "chatbot_cooperative_registration_livestock.cooperative_registration_id",
+        "chatbot_cooperative_registration_livestock.livestock_society_type_names",
+        "chatbot_cooperative_registration_livestock.has_building",
+        "chatbot_cooperative_registration_livestock.building_type_name",
+        "chatbot_cooperative_registration_livestock.authorised_share",
+        "chatbot_cooperative_registration_livestock.paid_up_share",
+        "chatbot_cooperative_registration_livestock.total_deposit",
+        "chatbot_cooperative_registration_livestock.paid_up_share_date",
+        "chatbot_cooperative_registration_livestock.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_livestock.annual_turn_over",
+        "chatbot_cooperative_registration_livestock.individual_member",
+        "chatbot_cooperative_registration_livestock.institutional_member",
+        "chatbot_cooperative_registration_livestock.type_pa",
+        "chatbot_cooperative_registration_livestock.produce_names",
+        "chatbot_cooperative_registration_livestock.common_work_place",
+        "chatbot_cooperative_registration_livestock.square_meter",
+        "chatbot_cooperative_registration_livestock.is_work_by_member",
+        "chatbot_cooperative_registration_livestock.is_training_provide",
+        "chatbot_cooperative_registration_livestock.is_poultry_feed",
+        "chatbot_cooperative_registration_livestock.is_collected_from_member",
+        "chatbot_cooperative_registration_livestock.is_waste_facility",
+        "chatbot_cooperative_registration_livestock.is_operate_retail",
+        "chatbot_cooperative_registration_livestock.no_of_retail",
+        "chatbot_cooperative_registration_livestock.is_product_sale_out",
+        "chatbot_cooperative_registration_livestock.facilities_names",
+        "chatbot_cooperative_registration_livestock.created_at",
+        "chatbot_cooperative_registration_livestock.updated_at",
+        "chatbot_cooperative_registration_livestock.ncd_id"
+      ],
+      "business_terms": [
+        "livestock",
+        "cooperative",
+        "sector",
+        "breeding",
+        "farming",
+        "herd",
+        "pasture",
+        "breed",
+        "animal"
+      ]
+    }
+  },
+  {
+    "point_id": "63635f77-65e7-5eae-abae-f7803a330a1f",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_dairy ( /* This table contains information about the dairy sector of the cooperative societies. */ id TEXT, cooperative_registrations_id TEXT, /* Main NCD ID used to join with master table and the members table */ milk_collection TEXT, /* Annual Total Milk Collection (In Liters) */ credit_facility TEXT, /* Whether the society provides credit facality or not ( 1 = Yes , 0 = No ) */ credit_provided TEXT, /* Total Credit Provided in the Financial Year (In Rs.) */ milk_collection_unit TEXT, /* Whether the society has Milk collection unit or not ( 1 = Yes , 0 = No ) */ milk_collection_capicity TEXT, /* Total Credit Provided in the Financial Year (In Rs.) */ transport_milk TEXT, /* Whether the society is doing the transportation of milk or not ( 1 = Yes , 0 = No ) */ bulk_milk_unit TEXT, /* Whether the society has Bulk Cooling Unit or not (BMC) */ milk_testing TEXT, /* Whether the society has milk testing facality or not ( 1 = Yes , 0 = No ) */ processing TEXT, /* Whether the society has Pasteurization and Processing Facility ( 1 = Yes , 0 = No ) */ is_bank_mitra TEXT, /* Whether the cooperative society has bank mitra or not ( 1 = Yes , 0 = No ) */ bank_mitra_details TEXT, /* Details of the Bank Mitra */ is_micro_atm TEXT, /* Whether the bank has micro atm facality or not ( 1 = Yes , 0 = No) */ authorised_share TEXT, /* Authorised Share Capital (in Rs.) */ paid_up_share TEXT, /* Authorised Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_dairy"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_dairy.id",
+        "chatbot_cooperative_registration_dairy.cooperative_registrations_id",
+        "chatbot_cooperative_registration_dairy.milk_collection",
+        "chatbot_cooperative_registration_dairy.credit_facility",
+        "chatbot_cooperative_registration_dairy.credit_provided",
+        "chatbot_cooperative_registration_dairy.milk_collection_unit",
+        "chatbot_cooperative_registration_dairy.milk_collection_capicity",
+        "chatbot_cooperative_registration_dairy.transport_milk",
+        "chatbot_cooperative_registration_dairy.bulk_milk_unit",
+        "chatbot_cooperative_registration_dairy.milk_testing",
+        "chatbot_cooperative_registration_dairy.processing",
+        "chatbot_cooperative_registration_dairy.is_bank_mitra",
+        "chatbot_cooperative_registration_dairy.bank_mitra_details",
+        "chatbot_cooperative_registration_dairy.is_micro_atm",
+        "chatbot_cooperative_registration_dairy.authorised_share",
+        "chatbot_cooperative_registration_dairy.paid_up_share",
+        "chatbot_cooperative_registration_dairy.total_deposit",
+        "chatbot_cooperative_registration_dairy.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_dairy.paid_up_share_date",
+        "chatbot_cooperative_registration_dairy.created_at",
+        "chatbot_cooperative_registration_dairy.updated_at",
+        "chatbot_cooperative_registration_dairy.ncd_id"
+      ],
+      "business_terms": [
+        "dairy",
+        "milk",
+        "collection",
+        "sector",
+        "cooperative"
+      ]
+    }
+  },
+  {
+    "point_id": "8290230c-5694-54aa-bfac-56163524261e",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_handloom ( /* This table contains information about the handloom sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ individual_member TEXT, /* Number of individual members */ institutional_member TEXT, /* Number of institutional members */ authorised_share TEXT, /* Authorised Share Capital (in Rs.) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up Share Capital by Members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up Share Capital by Government or Government Bodies (in Rs.) */ paid_up_total TEXT, /* Total Paid up Share Capital by different entity (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs.) */ power_loom_type TEXT, /* Number of Power Looms used by the cooperative society */ hand_loom_type TEXT, /* Number of Handlooms used by the cooperative society */ no_of_loom TEXT, /* number of looms operated by the cooperative society */ operated_member_themself TEXT, /* Whether the looms are operated by members themselves (1=Yes, 0=No) */ is_user_work_divide TEXT, /* Whether the work is divided among the members as per their skill (1=Yes, 0=No) */ raw_product_taken TEXT, /* Whether the cooperative society provide raw material to members and produced product taken after processing (1=Yes, 0=No) */ raw_material_available TEXT, /* Whether the raw material is easily available to the cooperative society (1=Yes, 0=No) */ waste_generate TEXT, /* Whether the wastes are generated in the production process (1=Yes, 0=No) */ is_waste_facility TEXT, /* Whether the waste management facility is available in the society (1=Yes, 0=No) */ operate_retail TEXT, /* Whether the cooperative society operate retail shops or outlet to sale products (1=Yes, 0=No) */ no_of_retail TEXT, /* Number of retail shops or outlets operated by the cooperative society */ product_sale_out TEXT, /* Whether the products are sale out of area of operation of the cooperative society (1=Yes, 0=No) */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_handloom"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_handloom.id",
+        "chatbot_cooperative_registration_handloom.cooperative_registration_id",
+        "chatbot_cooperative_registration_handloom.has_building",
+        "chatbot_cooperative_registration_handloom.building_type_name",
+        "chatbot_cooperative_registration_handloom.individual_member",
+        "chatbot_cooperative_registration_handloom.institutional_member",
+        "chatbot_cooperative_registration_handloom.authorised_share",
+        "chatbot_cooperative_registration_handloom.paid_up_share",
+        "chatbot_cooperative_registration_handloom.total_deposit",
+        "chatbot_cooperative_registration_handloom.paid_up_share_date",
+        "chatbot_cooperative_registration_handloom.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_handloom.paid_up_members",
+        "chatbot_cooperative_registration_handloom.paid_up_government_bodies",
+        "chatbot_cooperative_registration_handloom.paid_up_total",
+        "chatbot_cooperative_registration_handloom.annual_turn_over",
+        "chatbot_cooperative_registration_handloom.power_loom_type",
+        "chatbot_cooperative_registration_handloom.hand_loom_type",
+        "chatbot_cooperative_registration_handloom.no_of_loom",
+        "chatbot_cooperative_registration_handloom.operated_member_themself",
+        "chatbot_cooperative_registration_handloom.is_user_work_divide",
+        "chatbot_cooperative_registration_handloom.raw_product_taken",
+        "chatbot_cooperative_registration_handloom.raw_material_available",
+        "chatbot_cooperative_registration_handloom.waste_generate",
+        "chatbot_cooperative_registration_handloom.is_waste_facility",
+        "chatbot_cooperative_registration_handloom.operate_retail",
+        "chatbot_cooperative_registration_handloom.no_of_retail",
+        "chatbot_cooperative_registration_handloom.product_sale_out",
+        "chatbot_cooperative_registration_handloom.ncd_id"
+      ],
+      "business_terms": [
+        "handloom",
+        "sector",
+        "cooperative",
+        "weaving",
+        "textile",
+        "artisan",
+        "craft",
+        "fabric",
+        "design",
+        "loom"
+      ]
+    }
+  },
+  {
+    "point_id": "8c140d92-a7b9-5060-87ae-7222217359e0",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_consumer ( /* This table contains information about the consumer sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ has_store TEXT, /* Whether the co-operative society is operating Own Departmental Store/Supermarket? (1=Yes, 0=No) */ no_of_outlets TEXT, /* Number of outlets/shops of Cooperative Society */ authorised_share TEXT, /* Authorised Share Capital (in Rs) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ total_deposit TEXT, /* Total Deposit (in Rs) */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ facilities_names TEXT, /* List of Facilities provided by Cooperative Society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_consumer"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_consumer.id",
+        "chatbot_cooperative_registration_consumer.cooperative_registration_id",
+        "chatbot_cooperative_registration_consumer.has_building",
+        "chatbot_cooperative_registration_consumer.building_type_name",
+        "chatbot_cooperative_registration_consumer.has_store",
+        "chatbot_cooperative_registration_consumer.no_of_outlets",
+        "chatbot_cooperative_registration_consumer.authorised_share",
+        "chatbot_cooperative_registration_consumer.paid_up_share",
+        "chatbot_cooperative_registration_consumer.paid_up_share_date",
+        "chatbot_cooperative_registration_consumer.total_deposit",
+        "chatbot_cooperative_registration_consumer.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_consumer.annual_turn_over",
+        "chatbot_cooperative_registration_consumer.facilities_names",
+        "chatbot_cooperative_registration_consumer.ncd_id",
+        "chatbot_cooperative_registration_consumer.created_at",
+        "chatbot_cooperative_registration_consumer.updated_at"
+      ],
+      "business_terms": [
+        "consumer",
+        "sector",
+        "cooperative",
+        "registration",
+        "society"
+      ]
+    }
+  },
+  {
+    "point_id": "8e0ffa1b-9e20-5667-8747-392e71540382",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_multipurpose ( /* This table contains information about the multi purpose sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ secondary_activity_names TEXT, /* List of secondary activities (Agriculture, Consumer, Credit, etc.) */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ authorised_share TEXT, /* Authorised Share Capital (in Rs.) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up Share Capital by Members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up Share Capital by Government or Government Bodies (in Rs.) */ paid_up_total TEXT, /* Total Paid up Share Capital (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs.) */ has_storage TEXT, /* Whether the Cooperative society has Storage/GODOWN/Warehouse (1=Yes, 0=No) */ storage_capacity TEXT, /* Number of rearing houses/godowns operated by the cooperative society */ provide_raw TEXT, /* Whether the cooperative society provide raw material to members and take back produced products (1=Yes, 0=No) */ guidance_by_member TEXT, /* Whether the regular guidance/training is provided by cooperative society to members (1=Yes, 0=No) */ is_operate_retail TEXT, /* Whether the cooperative society operate retail shops/outlet to sale their products (1=Yes, 0=No) */ no_of_retail TEXT, /* Number of retail shops/outlets operated by the cooperative society */ is_product_sale_out TEXT, /* Whether products of society are sale out of the area of operation (1=Yes, 0=No) */ facilities_names TEXT, /* List of Facilities provided by the cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_multipurpose"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_multipurpose.id",
+        "chatbot_cooperative_registration_multipurpose.cooperative_registration_id",
+        "chatbot_cooperative_registration_multipurpose.secondary_activity_names",
+        "chatbot_cooperative_registration_multipurpose.has_building",
+        "chatbot_cooperative_registration_multipurpose.building_type_name",
+        "chatbot_cooperative_registration_multipurpose.authorised_share",
+        "chatbot_cooperative_registration_multipurpose.paid_up_share",
+        "chatbot_cooperative_registration_multipurpose.total_deposit",
+        "chatbot_cooperative_registration_multipurpose.paid_up_share_date",
+        "chatbot_cooperative_registration_multipurpose.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_multipurpose.paid_up_members",
+        "chatbot_cooperative_registration_multipurpose.paid_up_government_bodies",
+        "chatbot_cooperative_registration_multipurpose.paid_up_total",
+        "chatbot_cooperative_registration_multipurpose.annual_turn_over",
+        "chatbot_cooperative_registration_multipurpose.has_storage",
+        "chatbot_cooperative_registration_multipurpose.storage_capacity",
+        "chatbot_cooperative_registration_multipurpose.provide_raw",
+        "chatbot_cooperative_registration_multipurpose.guidance_by_member",
+        "chatbot_cooperative_registration_multipurpose.is_operate_retail",
+        "chatbot_cooperative_registration_multipurpose.no_of_retail",
+        "chatbot_cooperative_registration_multipurpose.is_product_sale_out",
+        "chatbot_cooperative_registration_multipurpose.facilities_names",
+        "chatbot_cooperative_registration_multipurpose.created_at",
+        "chatbot_cooperative_registration_multipurpose.updated_at",
+        "chatbot_cooperative_registration_multipurpose.ncd_id"
+      ],
+      "business_terms": [
+        "multipurpose",
+        "sector",
+        "cooperative",
+        "registration",
+        "society"
+      ]
+    }
+  },
+  {
+    "point_id": "8fadd257-b57f-5648-a703-f0988ff0ee16",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_sugar ( /* This table contains information regarding the sugarmills sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ authorised_share TEXT, /* Authorised Share Capital (in Rs.) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up Share Capital by Members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up Share Capital by Government or Government Bodies (in Rs.) */ paid_up_total TEXT, /* Total Paid up Share Capital (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs.) */ suger_mills_no TEXT, /* Number of sugar mills or manufacturing plants operated by the cooperative society */ build_up_area TEXT, /* Build-up area of the sugar mill(s) (in acre) */ open_land_area TEXT, /* Open land area of the sugar mill(s) (in acre) */ total_area TEXT, /* Total area of the sugar mill(s) (build_up_areas + open_land_area) (in acre) */ liecensed_capicity TEXT, /* Licensed capacity in terms of Tonne Crushing per Day (TCD) */ installed_capicity TEXT, /* Installed capacity in terms of Tonne Crushing per day (TCD) */ crushing_period_start TEXT, /* Start date of sugarcane crushing period */ crushing_period_end TEXT, /* End date of sugarcane crushing period */ product_names TEXT, /* List of product produced by the cooperative society */ retail_shops TEXT, /* Whether the cooperative society operate retail shops or outlet to sale products (1=Yes, 0=No) */ retail_shops_no TEXT, /* Number of retail shops or outlets operated by the cooperative society */ sugercane_input_provided TEXT, /* Whether inputs for sugarcane cultivation are provided to members (1=Yes, 0=No) */ loan_facility TEXT, /* Whether the facilities of loans and advances are offered to the members (1=Yes, 0=No) */ waste_management TEXT, /* Whether the waste management facility is available in the cooperative mill (1=Yes, 0=No) */ central_government_benefits TEXT, /* Whether any benefits (subsidy/scheme) received from central government (1=Yes, 0=No) */ state_government_benefits TEXT, /* Whether any benefits (subsidy/scheme) received from state government (1=Yes, 0=No) */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_sugar"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_sugar.id",
+        "chatbot_cooperative_registration_sugar.cooperative_registration_id",
+        "chatbot_cooperative_registration_sugar.has_building",
+        "chatbot_cooperative_registration_sugar.building_type_name",
+        "chatbot_cooperative_registration_sugar.authorised_share",
+        "chatbot_cooperative_registration_sugar.paid_up_share",
+        "chatbot_cooperative_registration_sugar.total_deposit",
+        "chatbot_cooperative_registration_sugar.paid_up_share_date",
+        "chatbot_cooperative_registration_sugar.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_sugar.paid_up_members",
+        "chatbot_cooperative_registration_sugar.paid_up_government_bodies",
+        "chatbot_cooperative_registration_sugar.paid_up_total",
+        "chatbot_cooperative_registration_sugar.annual_turn_over",
+        "chatbot_cooperative_registration_sugar.suger_mills_no",
+        "chatbot_cooperative_registration_sugar.build_up_area",
+        "chatbot_cooperative_registration_sugar.open_land_area",
+        "chatbot_cooperative_registration_sugar.total_area",
+        "chatbot_cooperative_registration_sugar.liecensed_capicity",
+        "chatbot_cooperative_registration_sugar.installed_capicity",
+        "chatbot_cooperative_registration_sugar.crushing_period_start",
+        "chatbot_cooperative_registration_sugar.crushing_period_end",
+        "chatbot_cooperative_registration_sugar.product_names",
+        "chatbot_cooperative_registration_sugar.retail_shops",
+        "chatbot_cooperative_registration_sugar.retail_shops_no",
+        "chatbot_cooperative_registration_sugar.sugercane_input_provided",
+        "chatbot_cooperative_registration_sugar.loan_facility",
+        "chatbot_cooperative_registration_sugar.waste_management",
+        "chatbot_cooperative_registration_sugar.central_government_benefits",
+        "chatbot_cooperative_registration_sugar.state_government_benefits",
+        "chatbot_cooperative_registration_sugar.created_at",
+        "chatbot_cooperative_registration_sugar.updated_at",
+        "chatbot_cooperative_registration_sugar.ncd_id"
+      ],
+      "business_terms": [
+        "sugarmills",
+        "sector",
+        "registration",
+        "sugar"
+      ]
+    }
+  },
+  {
+    "point_id": "9b191b54-9549-5d06-a6d8-bef109d184a7",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_housing ( /* This table contains information about the housing sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ housing_society_type_name TEXT, /* sub Sectors / sub category of the housing society */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ has_land TEXT, /* Whether the co-operative society has land (1=Yes, 0=No) */ authorised_share TEXT, /* Authorised Share Capital (in Rs.) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up Share Capital by Members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up Share Capital by Government or Government Bodies (in Rs.) */ paid_up_total TEXT, /* Total Paid up Share Capital by different entity (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs.) */ annual_expenses TEXT, /* Annual Expenses of the Cooperative Society (in Rs.) */ number_of_houses_audit_year TEXT, /* Number of houses/flats completed till end of audited year */ number_of_houses_during_year TEXT, /* Number of houses/flats handover to the members till end of audited year */ number_of_houses_construction TEXT, /* Number of houses/flats under construction till end of audited year */ loan_facilities TEXT, /* Whether the Society facilitate its member in getting Loan for construction of houses or additional structures within the complex ( 1 = Yes , 0 = No ) */ facilities_names TEXT, /* List of facilities provided by the cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_housing"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_housing.id",
+        "chatbot_cooperative_registration_housing.cooperative_registration_id",
+        "chatbot_cooperative_registration_housing.housing_society_type_name",
+        "chatbot_cooperative_registration_housing.has_building",
+        "chatbot_cooperative_registration_housing.building_type_name",
+        "chatbot_cooperative_registration_housing.has_land",
+        "chatbot_cooperative_registration_housing.authorised_share",
+        "chatbot_cooperative_registration_housing.paid_up_share",
+        "chatbot_cooperative_registration_housing.total_deposit",
+        "chatbot_cooperative_registration_housing.paid_up_share_date",
+        "chatbot_cooperative_registration_housing.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_housing.paid_up_members",
+        "chatbot_cooperative_registration_housing.paid_up_government_bodies",
+        "chatbot_cooperative_registration_housing.paid_up_total",
+        "chatbot_cooperative_registration_housing.annual_turn_over",
+        "chatbot_cooperative_registration_housing.annual_expenses",
+        "chatbot_cooperative_registration_housing.number_of_houses_audit_year",
+        "chatbot_cooperative_registration_housing.number_of_houses_during_year",
+        "chatbot_cooperative_registration_housing.number_of_houses_construction",
+        "chatbot_cooperative_registration_housing.loan_facilities",
+        "chatbot_cooperative_registration_housing.facilities_names",
+        "chatbot_cooperative_registration_housing.created_at",
+        "chatbot_cooperative_registration_housing.updated_at",
+        "chatbot_cooperative_registration_housing.ncd_id"
+      ],
+      "business_terms": [
+        "housing",
+        "sector",
+        "society",
+        "building",
+        "property"
+      ]
+    }
+  },
+  {
+    "point_id": "a5a28f4d-0246-5ff6-9bcb-750842eb57db",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_khadi_gram ( /* This table contains information about the khadi and village industries sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ activity_names TEXT, /* List of activities of the cooperative society */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ individual_member TEXT, /* Number of the Individual Members of the society */ institutional_member TEXT, /* Number of the Institutional Members of the society */ total_member TEXT, /* Total Number of Members of the society */ authorised_share TEXT, /* Authorized share capital (in Rs.) */ paid_up_share TEXT, /* Paid up share capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up share capital Date (in Rs.) */ pack_total_outstanding_loan TEXT, /* Total Amount of loan outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up share capital by members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up share capital by government bodies (in Rs.) */ paid_up_total TEXT, /* Total Paid up share capital by different entity (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs.) */ power_loom_type TEXT, /* Number of power looms used by cooperative society */ hand_loom_type TEXT, /* Number of handlooms used by cooperative society */ hand_loom_other_type TEXT, no_of_loom TEXT, /* Number of looms operated by cooperative society */ operated_member_themself TEXT, /* Whether the looms are operated by members themself ( 1 = Yes , 0 = No ) */ is_user_work_divide TEXT, /* Whether the work is divided among the members as per their skill ( 1 = Yes , 0 = No ) */ raw_product_taken TEXT, /* Whether the cooperative society provide raw material to members & produced product taken after processing ( 1 = Yes , 0 = No ) */ raw_material_available TEXT, /* Whether the raw material easily available to cooperative society ( 1 = Yes , 0 = No ) */ waste_generate TEXT, /* Whether the wastes are generated in production process ( 1 = Yes , 0 = No ) */ waste_available TEXT, /* Whether the waste management facility is available in the society ( 1 = Yes , 0 = No ) */ operate_retail TEXT, /* Whether the cooperative society operate retail shops/outlet to sale products ( 1 = Yes , 0 = No ) */ no_of_retail TEXT, /* Number of retail shops/outlets operated by cooperative society */ product_sale_out TEXT, /* Whether the products are sale out of the area of operation of the cooperative society ( 1 = Yes , 0 = No ) */ do_you_want_to_enter_type_products_produced TEXT, /* Do you want to enter type of products produced by cooperative society ( 1 = Yes , 0 = No ) */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_khadi_gram"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_khadi_gram.id",
+        "chatbot_cooperative_registration_khadi_gram.cooperative_registration_id",
+        "chatbot_cooperative_registration_khadi_gram.activity_names",
+        "chatbot_cooperative_registration_khadi_gram.has_building",
+        "chatbot_cooperative_registration_khadi_gram.building_type_name",
+        "chatbot_cooperative_registration_khadi_gram.individual_member",
+        "chatbot_cooperative_registration_khadi_gram.institutional_member",
+        "chatbot_cooperative_registration_khadi_gram.total_member",
+        "chatbot_cooperative_registration_khadi_gram.authorised_share",
+        "chatbot_cooperative_registration_khadi_gram.paid_up_share",
+        "chatbot_cooperative_registration_khadi_gram.total_deposit",
+        "chatbot_cooperative_registration_khadi_gram.paid_up_share_date",
+        "chatbot_cooperative_registration_khadi_gram.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_khadi_gram.paid_up_members",
+        "chatbot_cooperative_registration_khadi_gram.paid_up_government_bodies",
+        "chatbot_cooperative_registration_khadi_gram.paid_up_total",
+        "chatbot_cooperative_registration_khadi_gram.annual_turn_over",
+        "chatbot_cooperative_registration_khadi_gram.power_loom_type",
+        "chatbot_cooperative_registration_khadi_gram.hand_loom_type",
+        "chatbot_cooperative_registration_khadi_gram.hand_loom_other_type",
+        "chatbot_cooperative_registration_khadi_gram.no_of_loom",
+        "chatbot_cooperative_registration_khadi_gram.operated_member_themself",
+        "chatbot_cooperative_registration_khadi_gram.is_user_work_divide",
+        "chatbot_cooperative_registration_khadi_gram.raw_product_taken",
+        "chatbot_cooperative_registration_khadi_gram.raw_material_available",
+        "chatbot_cooperative_registration_khadi_gram.waste_generate",
+        "chatbot_cooperative_registration_khadi_gram.waste_available",
+        "chatbot_cooperative_registration_khadi_gram.operate_retail",
+        "chatbot_cooperative_registration_khadi_gram.no_of_retail",
+        "chatbot_cooperative_registration_khadi_gram.product_sale_out",
+        "chatbot_cooperative_registration_khadi_gram.is_the_society_run_by_women_members",
+        "chatbot_cooperative_registration_khadi_gram.type_of_activities_khadi_gram_other",
+        "chatbot_cooperative_registration_khadi_gram.total_value_in_rs",
+        "chatbot_cooperative_registration_khadi_gram.do_you_want_to_enter_type_products_produced",
+        "chatbot_cooperative_registration_khadi_gram.created_at",
+        "chatbot_cooperative_registration_khadi_gram.updated_at",
+        "chatbot_cooperative_registration_khadi_gram.ncd_id"
+      ],
+      "business_terms": [
+        "khadi",
+        "village",
+        "industries",
+        "sector",
+        "cooperatives"
+      ]
+    }
+  },
+  {
+    "point_id": "ad2a9056-79ab-5032-b5db-53deb2e7e0bb",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_tourism ( /* This table contains information regarding the tourism sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ tourism_society_type_name TEXT, /* Sub sector / sub category of the tourism cooperative */ has_building TEXT, /* Whether the co-operative society has an office building ( 1 = Yes , 0 = No ) */ building_type_name TEXT, /* Type of Office Building */ individual_member TEXT, /* Number of the Individual members of the society */ institutional_member TEXT, /* Number of the Institutional members of the society */ authorised_share TEXT, /* Authorised Share Capital (in Rs) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up share capital by members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up share capital by government or government bodies (in Rs.) */ paid_up_total TEXT, /* Paid up share capital total (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ pool_resource TEXT, /* Do the members themselves have pooled resources (vehicles, accommodation, land etc.) for the cooperative society ( 1 = Yes , 0 = No ) */ any_resource_taken TEXT, /* Apart from the pooled/common resources of individuals, has the society taken any resources from the government or non-members ( 1 = Yes , 0 = No ) */ is_right_vested TEXT, /* Is the right vested with the members to take back the shared resources from the society ( 1 = Yes , 0 = No ) */ facilities_names TEXT, /* list of facilities provided by the cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_tourism"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_tourism.id",
+        "chatbot_cooperative_registration_tourism.cooperative_registration_id",
+        "chatbot_cooperative_registration_tourism.tourism_society_type_name",
+        "chatbot_cooperative_registration_tourism.has_building",
+        "chatbot_cooperative_registration_tourism.building_type_name",
+        "chatbot_cooperative_registration_tourism.individual_member",
+        "chatbot_cooperative_registration_tourism.institutional_member",
+        "chatbot_cooperative_registration_tourism.authorised_share",
+        "chatbot_cooperative_registration_tourism.paid_up_share",
+        "chatbot_cooperative_registration_tourism.total_deposit",
+        "chatbot_cooperative_registration_tourism.paid_up_share_date",
+        "chatbot_cooperative_registration_tourism.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_tourism.paid_up_members",
+        "chatbot_cooperative_registration_tourism.paid_up_government_bodies",
+        "chatbot_cooperative_registration_tourism.paid_up_total",
+        "chatbot_cooperative_registration_tourism.annual_turn_over",
+        "chatbot_cooperative_registration_tourism.pool_resource",
+        "chatbot_cooperative_registration_tourism.any_resource_taken",
+        "chatbot_cooperative_registration_tourism.is_right_vested",
+        "chatbot_cooperative_registration_tourism.facilities_names",
+        "chatbot_cooperative_registration_tourism.created_at",
+        "chatbot_cooperative_registration_tourism.updated_at",
+        "chatbot_cooperative_registration_tourism.ncd_id"
+      ],
+      "business_terms": [
+        "tourism",
+        "sector",
+        "registration",
+        "societies",
+        "cooperative"
+      ]
+    }
+  },
+  {
+    "point_id": "b04e47ba-ec08-5351-a0d4-375b163b9dee",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperatie_registration_marketing ( /* This table contains information about the marketing sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ has_land TEXT, /* Whether the co-operative society has land (1=Yes, 0=No) */ has_warehouses TEXT, /* Does the co-operative society have warehouses or godowns (1=Yes, 0=No) */ capacity_warehouses TEXT, /* Capacity of the Warehouses or Godowns (in MT) */ authorised_share TEXT, /* Authorised Share Capital (in Rs.) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up Share Capital by Members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up Share Capital by Government or Government Bodies (in Rs.) */ paid_up_total TEXT, /* Total Paid up Share Capital (paid_up_members + paid_up_government) (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs.) */ annual_expenses TEXT, /* Annual Expenses of the Cooperative Society (in Rs.) */ liecense_to_sell TEXT, /* Whether the society has license to sell specified items (Seeds, Food grains Procurement on MSP, PDS Shop, Fertilizer, Pesticide, Agricultural Equipment on Rent) */ sell_the_item TEXT, /* Details of items the cooperative society has license to sell */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperatie_registration_marketing"
+      ],
+      "columns": [
+        "chatbot_cooperatie_registration_marketing.id",
+        "chatbot_cooperatie_registration_marketing.cooperative_registration_id",
+        "chatbot_cooperatie_registration_marketing.has_building",
+        "chatbot_cooperatie_registration_marketing.building_type_name",
+        "chatbot_cooperatie_registration_marketing.has_land",
+        "chatbot_cooperatie_registration_marketing.has_warehouses",
+        "chatbot_cooperatie_registration_marketing.capacity_warehouses",
+        "chatbot_cooperatie_registration_marketing.authorised_share",
+        "chatbot_cooperatie_registration_marketing.paid_up_share",
+        "chatbot_cooperatie_registration_marketing.total_deposit",
+        "chatbot_cooperatie_registration_marketing.paid_up_share_date",
+        "chatbot_cooperatie_registration_marketing.pack_total_outstanding_loan",
+        "chatbot_cooperatie_registration_marketing.paid_up_members",
+        "chatbot_cooperatie_registration_marketing.paid_up_government_bodies",
+        "chatbot_cooperatie_registration_marketing.paid_up_total",
+        "chatbot_cooperatie_registration_marketing.annual_turn_over",
+        "chatbot_cooperatie_registration_marketing.annual_expenses",
+        "chatbot_cooperatie_registration_marketing.liecense_to_sell",
+        "chatbot_cooperatie_registration_marketing.sell_the_item",
+        "chatbot_cooperatie_registration_marketing.created_at",
+        "chatbot_cooperatie_registration_marketing.updated_at",
+        "chatbot_cooperatie_registration_marketing.ncd_id"
+      ],
+      "business_terms": [
+        "marketing",
+        "sector",
+        "cooperatives",
+        "registration",
+        "societies"
+      ]
+    }
+  },
+  {
+    "point_id": "bcd3d82e-a5a7-53f4-b857-5de2427a01cf",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_handicraft ( /* This table contains information about the handicraft sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ individual_member TEXT, /* Number of Individual members of the cooperative society */ institutional_member TEXT, /* Number of Institutional members of the society */ authorised_share TEXT, /* Authorised Share Capital (in Rs) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs) */ total_deposit TEXT, /* Total Deposit (in Rs) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs) */ paid_up_members TEXT, /* Paid up Share Capital by Members (in Rs) */ paid_up_government_bodies TEXT, /* Paid up Share Capital by Government or Government Bodies (in Rs) */ paid_up_total TEXT, /* Total Paid up Share Capital (in Rs) (paid_up_members + paid_up_government_bodies) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ type_raw TEXT, /* Type of raw material is using */ type_produce TEXT, /* List of product produced by cooperative society */ common_work_place TEXT, /* Whether the cooperative society has common working place or manufacturing unit (1=Yes, 0=No) */ workplace_operate TEXT, /* Number of work places or manufacturing units operated by cooperative society */ is_work_by_member TEXT, /* whether the processing or handicraft work is done by members themself (1=Yes, 0=No) */ is_training_provide TEXT, /* Whether the regular guidance/training is provided by cooperative society to members (1=Yes, 0=No) */ is_raw_provide TEXT, /* Whether the cooperative society provide raw material to members & finished products taken after processing (1=Yes, 0=No) */ is_raw_easy_avail TEXT, /* Whether the raw material easily available to cooperative society (1=Yes, 0=No) */ is_waste_generate TEXT, /* whether the waste are generated in handicraft process (1=Yes, 0=No) */ is_waste_facility TEXT, /* Whether the waste management facility is available in the society (1=Yes, 0=No) */ is_operate_retail TEXT, /* whether the cooperative society operate retail shops/outlet to sale products (1=Yes, 0=No) */ no_of_retail TEXT, /* Number of retail shops operated by cooperative society */ is_product_sale_out TEXT, /* whether the products are sale out of the area of operation of the cooperative society (1=Yes, 0=No) */ facilities_names TEXT, /* List of Facilities provided by cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_handicraft"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_handicraft.id",
+        "chatbot_cooperative_registration_handicraft.cooperative_registration_id",
+        "chatbot_cooperative_registration_handicraft.has_building",
+        "chatbot_cooperative_registration_handicraft.building_type_name",
+        "chatbot_cooperative_registration_handicraft.individual_member",
+        "chatbot_cooperative_registration_handicraft.institutional_member",
+        "chatbot_cooperative_registration_handicraft.authorised_share",
+        "chatbot_cooperative_registration_handicraft.paid_up_share",
+        "chatbot_cooperative_registration_handicraft.total_deposit",
+        "chatbot_cooperative_registration_handicraft.paid_up_share_date",
+        "chatbot_cooperative_registration_handicraft.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_handicraft.paid_up_members",
+        "chatbot_cooperative_registration_handicraft.paid_up_government_bodies",
+        "chatbot_cooperative_registration_handicraft.paid_up_total",
+        "chatbot_cooperative_registration_handicraft.annual_turn_over",
+        "chatbot_cooperative_registration_handicraft.type_raw",
+        "chatbot_cooperative_registration_handicraft.type_produce",
+        "chatbot_cooperative_registration_handicraft.common_work_place",
+        "chatbot_cooperative_registration_handicraft.workplace_operate",
+        "chatbot_cooperative_registration_handicraft.is_work_by_member",
+        "chatbot_cooperative_registration_handicraft.is_training_provide",
+        "chatbot_cooperative_registration_handicraft.is_raw_provide",
+        "chatbot_cooperative_registration_handicraft.is_raw_easy_avail",
+        "chatbot_cooperative_registration_handicraft.is_waste_generate",
+        "chatbot_cooperative_registration_handicraft.is_waste_facility",
+        "chatbot_cooperative_registration_handicraft.is_operate_retail",
+        "chatbot_cooperative_registration_handicraft.no_of_retail",
+        "chatbot_cooperative_registration_handicraft.is_product_sale_out",
+        "chatbot_cooperative_registration_handicraft.facilities_names",
+        "chatbot_cooperative_registration_handicraft.created_at",
+        "chatbot_cooperative_registration_handicraft.updated_at",
+        "chatbot_cooperative_registration_handicraft.ncd_id"
+      ],
+      "business_terms": [
+        "handicraft",
+        "sector",
+        "cooperative",
+        "craft",
+        "artisan"
+      ]
+    }
+  },
+  {
+    "point_id": "c1e82d7e-374b-5abb-8ca4-c6cbd1e28dcb",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_fishery ( /* This table contains information about the fishery sector of the cooperative societies. */ id TEXT, cooperative_registrations_id TEXT, /* Registration id of the cooperative */ annual_fish_catch TEXT, /* Annual Total Fish Catch (in Tonne) */ credit_facility TEXT, /* Credit Facility (1=Yes, 0=No) */ total_credit_provided TEXT, /* Total Credit Provided in the Financial Year (in Rs) */ fuel_distribution TEXT, /* Distribution of Fuel (1=Yes, 0=No) */ marketing TEXT, /* Marketing (1=Yes, 0=No) */ cold_storage TEXT, /* Cold Storage (1=Yes, 0=No) */ transportation TEXT, /* Transportation (1=Yes, 0=No) */ is_fpo_fisheries TEXT, /* FPO for Fisheries (1=Yes, 0=No) */ fpo_fisheries_details TEXT, /* FPO for Fisheries Details */ authorised_share TEXT, /* Authorised Share Capital (in Rs) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs) */ total_deposit TEXT, /* Total Deposit (in Rs) */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_fishery"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_fishery.id",
+        "chatbot_cooperative_registration_fishery.cooperative_registrations_id",
+        "chatbot_cooperative_registration_fishery.annual_fish_catch",
+        "chatbot_cooperative_registration_fishery.credit_facility",
+        "chatbot_cooperative_registration_fishery.total_credit_provided",
+        "chatbot_cooperative_registration_fishery.fuel_distribution",
+        "chatbot_cooperative_registration_fishery.marketing",
+        "chatbot_cooperative_registration_fishery.cold_storage",
+        "chatbot_cooperative_registration_fishery.transportation",
+        "chatbot_cooperative_registration_fishery.is_fpo_fisheries",
+        "chatbot_cooperative_registration_fishery.fpo_fisheries_details",
+        "chatbot_cooperative_registration_fishery.authorised_share",
+        "chatbot_cooperative_registration_fishery.paid_up_share",
+        "chatbot_cooperative_registration_fishery.total_deposit",
+        "chatbot_cooperative_registration_fishery.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_fishery.paid_up_share_date",
+        "chatbot_cooperative_registration_fishery.created_at",
+        "chatbot_cooperative_registration_fishery.updated_at",
+        "chatbot_cooperative_registration_fishery.ncd_id"
+      ],
+      "business_terms": [
+        "fishery",
+        "sector",
+        "cooperative",
+        "registration",
+        "society"
+      ]
+    }
+  },
+  {
+    "point_id": "ced8ace9-4df0-5854-9ed3-76eae70d06d0",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registrations_processing ( /* This table contains information about the processing sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ individual_member TEXT, /* Number of individual members */ institutional_member TEXT, /* Number of institutional members */ total_member TEXT, /* Total number of members (individual_member + institutional_member) */ type_society TEXT, /* Type of product produced by this cooperative society */ has_building TEXT, /* Whether the cooperative society has an office building ( 1 = Yes, 0 = No ) */ building_type_name TEXT, /* Type of office building */ authorised_share TEXT, /* Authorised share capital (in Rs.) */ paid_up_share TEXT, /* Paid up share capital (in Rs.) */ total_deposit TEXT, /* Total deposit with the cooperative society (in Rs.) */ paid_up_share_date TEXT, /* Date when paid-up share was recorded */ pack_total_outstanding_loan TEXT, /* Total Amount of loan outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up share capital by members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up share capital by government bodies (in Rs.) */ paid_up_total TEXT, /* Total paid up share capital (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual turnover of the cooperative society (in Rs.) */ processing_unit TEXT, /* Whether the cooperative society has Processing Unit or Manufacturing Unit in Operation ( 1 = Yes, 0 = No ) */ processing_unit_number TEXT, /* Number of Processing Unit or Manufacturing Unit operated by cooperative society */ processing_by_members TEXT, /* Whether the Processing or Manufacturing work is done by members themself ( 1 = Yes, 0 = No ) */ work_divided TEXT, /* Whether the work of processing or manufacturing is divided among members ( 1 = Yes, 0 = No ) */ product_taken TEXT, /* Whether the cooperative society provide raw material to members & produced product taken after processing ( 1 = Yes, 0 = No ) */ material_available TEXT, /* Whether the raw material is available with the cooperative society ( 1 = Yes, 0 = No ) */ wastes_generated TEXT, /* Whether the waste is generated during production process ( 1 = Yes, 0 = No ) */ waste_management_facility TEXT, /* Whether the waste management facility is available with the cooperative society ( 1 = Yes, 0 = No ) */ operate_shops TEXT, /* Whether the cooperative society operate retail shops/outlets to sale products ( 1 = Yes, 0 = No ) */ operate_shops_number TEXT, /* Number of shops operated by cooperative society */ product_sale_out_of_area TEXT, /* Whether products are sale out of the area of operation of the cooperative society ( 1 = Yes, 0 = No ) */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registrations_processing"
+      ],
+      "columns": [
+        "chatbot_cooperative_registrations_processing.id",
+        "chatbot_cooperative_registrations_processing.cooperative_registration_id",
+        "chatbot_cooperative_registrations_processing.individual_member",
+        "chatbot_cooperative_registrations_processing.institutional_member",
+        "chatbot_cooperative_registrations_processing.total_member",
+        "chatbot_cooperative_registrations_processing.type_society",
+        "chatbot_cooperative_registrations_processing.has_building",
+        "chatbot_cooperative_registrations_processing.building_type_name",
+        "chatbot_cooperative_registrations_processing.authorised_share",
+        "chatbot_cooperative_registrations_processing.paid_up_share",
+        "chatbot_cooperative_registrations_processing.total_deposit",
+        "chatbot_cooperative_registrations_processing.paid_up_share_date",
+        "chatbot_cooperative_registrations_processing.pack_total_outstanding_loan",
+        "chatbot_cooperative_registrations_processing.paid_up_members",
+        "chatbot_cooperative_registrations_processing.paid_up_government_bodies",
+        "chatbot_cooperative_registrations_processing.paid_up_total",
+        "chatbot_cooperative_registrations_processing.annual_turn_over",
+        "chatbot_cooperative_registrations_processing.processing_unit",
+        "chatbot_cooperative_registrations_processing.processing_unit_number",
+        "chatbot_cooperative_registrations_processing.processing_by_members",
+        "chatbot_cooperative_registrations_processing.work_divided",
+        "chatbot_cooperative_registrations_processing.product_taken",
+        "chatbot_cooperative_registrations_processing.material_available",
+        "chatbot_cooperative_registrations_processing.wastes_generated",
+        "chatbot_cooperative_registrations_processing.waste_management_facility",
+        "chatbot_cooperative_registrations_processing.operate_shops",
+        "chatbot_cooperative_registrations_processing.operate_shops_number",
+        "chatbot_cooperative_registrations_processing.product_sale_out_of_area",
+        "chatbot_cooperative_registrations_processing.created_at",
+        "chatbot_cooperative_registrations_processing.updated_at",
+        "chatbot_cooperative_registrations_processing.ncd_id"
+      ],
+      "business_terms": [
+        "processing",
+        "sector",
+        "cooperative",
+        "societies",
+        "registrations"
+      ]
+    }
+  },
+  {
+    "point_id": "e01f3092-5743-528d-a158-2c0d8cd5424d",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registrations_transport ( /* This table contains information regarding the transport sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ transport_society_type_name TEXT, /* Sub sector / sub category of the transport cooperative */ has_building TEXT, /* Whether the co-operative society has an office building ( 1 = Yes , 0 = No ) */ building_type_name TEXT, /* Type of Office Building */ individual_member TEXT, /* Number of the Individual members of the society */ institutional_member TEXT, /* Number of the Institutional members of the society */ authorised_share TEXT, /* Authorised Share Capital (in Rs) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_members TEXT, /* Paid up share capital by members (in Rs.) */ paid_up_government_bodies TEXT, /* Paid up share capital by government or government bodies (in Rs.) */ paid_up_total TEXT, /* Paid up share capital total (paid_up_members + paid_up_government_bodies) (in Rs.) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ type_owner TEXT, /* Type of Vehicle Ownership in Operation */ bus_type_detail TEXT, /* Number of buses operated by society */ truck_type_detail TEXT, /* Number of Truck or Lory operated by society */ other_type_detail TEXT, /* Number of other vehicles operated by society */ no_passenger_vehicle TEXT, /* Number of Passenger vehicle in Audit year */ no_member_travel TEXT, /* Number of member travel in Audit year */ no_freight_vehicle TEXT, /* Number of freight vehicle in Audit year */ quantity_good_transport TEXT, /* Number of Good Transported in Audit year */ member_themself TEXT, /* Whether the vehicle are operated/maintained by members themself ( 1 = Yes , 0 = No ) */ is_user_transport_facility TEXT, /* Whether the members are users of the transport facility of Cooperative Societry( 1 = Yes , 0 = No ) */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ ); CREATE TABLE chatbot_cooperative_registration_tribal ( /* This table contains information regarding the tribal sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ tribal_society_type_name TEXT, /* Sub category / sub sector of SC/ST Cooperative */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ authorised_share TEXT, /* Authorised Share Capital (in Rs) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs) */ total_deposit TEXT, /* Total Deposit (in Rs) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs) */ paid_up_members TEXT, /* Paid up Share Capital by Members (in Rs) */ paid_up_government_bodies TEXT, /* Paid up Share Capital by Government or Government Bodies (in Rs) */ paid_up_total TEXT, /* Total Paid up Share Capital (paid_up_members + paid_up_government_bodies) (in Rs) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ state_district_federation TEXT, /* Whether the work is allotted by State/District Federation to the Society? (1=Yes, 0=No) */ society_provide_raw_material TEXT, /* Whether the cooperative society provide raw material to members & finished products taken after processing (1=Yes, 0=No) */ facilities_names TEXT, /* List of Facilities provided by Cooperative Society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ ); CREATE TABLE chatbot_cooperative_registration_women_cooperative ( /* This table contains information regarding the women cooperative sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ women_cooperative_type_name TEXT, /* Sub category or sub sector of Women Cooperative */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ authorised_share TEXT, /* Authorised Share Capital (in Rs) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs) */ total_deposit TEXT, /* Total Deposit (in Rs) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ is_raw_material_taken TEXT, /* Whether the cooperative society provide raw material to members & finished products taken after processing (1=Yes, 0=No) */ facilities_names TEXT, /* List of Facility provided by cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ ); CREATE TABLE chatbot_cooperative_registration_miscellaneous ( /* This table contains information regarding the non credit miscellaneous sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ authorised_share TEXT, /* Authorised Share Capital (in Rs) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_members TEXT, /* paid up share capitals by members */ paid_up_government_bodies TEXT, /* paid up share capitals by government bodies */ paid_up_total TEXT, /* paid up total ( paid_up_members + paid_up_government_bodies ) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_miscellaneous"
+      ],
+      "columns": [
+        "chatbot_cooperative_registrations_transport.id",
+        "chatbot_cooperative_registrations_transport.cooperative_registration_id",
+        "chatbot_cooperative_registrations_transport.transport_society_type_name",
+        "chatbot_cooperative_registrations_transport.has_building",
+        "chatbot_cooperative_registrations_transport.building_type_name",
+        "chatbot_cooperative_registrations_transport.individual_member",
+        "chatbot_cooperative_registrations_transport.institutional_member",
+        "chatbot_cooperative_registrations_transport.authorised_share",
+        "chatbot_cooperative_registrations_transport.paid_up_share",
+        "chatbot_cooperative_registrations_transport.total_deposit",
+        "chatbot_cooperative_registrations_transport.paid_up_share_date",
+        "chatbot_cooperative_registrations_transport.pack_total_outstanding_loan",
+        "chatbot_cooperative_registrations_transport.paid_up_members",
+        "chatbot_cooperative_registrations_transport.paid_up_government_bodies",
+        "chatbot_cooperative_registrations_transport.paid_up_total",
+        "chatbot_cooperative_registrations_transport.annual_turn_over",
+        "chatbot_cooperative_registrations_transport.type_owner",
+        "chatbot_cooperative_registrations_transport.bus_type_detail",
+        "chatbot_cooperative_registrations_transport.truck_type_detail",
+        "chatbot_cooperative_registrations_transport.other_type_detail",
+        "chatbot_cooperative_registrations_transport.no_passenger_vehicle",
+        "chatbot_cooperative_registrations_transport.no_member_travel",
+        "chatbot_cooperative_registrations_transport.no_freight_vehicle",
+        "chatbot_cooperative_registrations_transport.quantity_good_transport",
+        "chatbot_cooperative_registrations_transport.member_themself",
+        "chatbot_cooperative_registrations_transport.is_user_transport_facility",
+        "chatbot_cooperative_registrations_transport.created_at",
+        "chatbot_cooperative_registrations_transport.updated_at",
+        "chatbot_cooperative_registrations_transport.ncd_id",
+        "chatbot_cooperative_registration_tribal.id",
+        "chatbot_cooperative_registration_tribal.cooperative_registration_id",
+        "chatbot_cooperative_registration_tribal.tribal_society_type_name",
+        "chatbot_cooperative_registration_tribal.has_building",
+        "chatbot_cooperative_registration_tribal.building_type_name",
+        "chatbot_cooperative_registration_tribal.authorised_share",
+        "chatbot_cooperative_registration_tribal.paid_up_share",
+        "chatbot_cooperative_registration_tribal.total_deposit",
+        "chatbot_cooperative_registration_tribal.paid_up_share_date",
+        "chatbot_cooperative_registration_tribal.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_tribal.paid_up_members",
+        "chatbot_cooperative_registration_tribal.paid_up_government_bodies",
+        "chatbot_cooperative_registration_tribal.paid_up_total",
+        "chatbot_cooperative_registration_tribal.annual_turn_over",
+        "chatbot_cooperative_registration_tribal.state_district_federation",
+        "chatbot_cooperative_registration_tribal.society_provide_raw_material",
+        "chatbot_cooperative_registration_tribal.bank_type",
+        "chatbot_cooperative_registration_tribal.coop_bank",
+        "chatbot_cooperative_registration_tribal.comm_bank",
+        "chatbot_cooperative_registration_tribal.other_bank",
+        "chatbot_cooperative_registration_tribal.facilities_names",
+        "chatbot_cooperative_registration_tribal.created_at",
+        "chatbot_cooperative_registration_tribal.updated_at",
+        "chatbot_cooperative_registration_tribal.ncd_id",
+        "chatbot_cooperative_registration_women_cooperative.id",
+        "chatbot_cooperative_registration_women_cooperative.cooperative_registration_id",
+        "chatbot_cooperative_registration_women_cooperative.women_cooperative_type_name",
+        "chatbot_cooperative_registration_women_cooperative.has_building",
+        "chatbot_cooperative_registration_women_cooperative.building_type_name",
+        "chatbot_cooperative_registration_women_cooperative.authorised_share",
+        "chatbot_cooperative_registration_women_cooperative.paid_up_share",
+        "chatbot_cooperative_registration_women_cooperative.total_deposit",
+        "chatbot_cooperative_registration_women_cooperative.paid_up_share_date",
+        "chatbot_cooperative_registration_women_cooperative.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_women_cooperative.paid_up_members",
+        "chatbot_cooperative_registration_women_cooperative.paid_up_government_bodies",
+        "chatbot_cooperative_registration_women_cooperative.paid_up_total",
+        "chatbot_cooperative_registration_women_cooperative.annual_turn_over",
+        "chatbot_cooperative_registration_women_cooperative.is_raw_material_taken",
+        "chatbot_cooperative_registration_women_cooperative.facilities_names",
+        "chatbot_cooperative_registration_women_cooperative.created_at",
+        "chatbot_cooperative_registration_women_cooperative.updated_at",
+        "chatbot_cooperative_registration_women_cooperative.ncd_id",
+        "chatbot_cooperative_registration_miscellaneous.id",
+        "chatbot_cooperative_registration_miscellaneous.cooperative_registration_id",
+        "chatbot_cooperative_registration_miscellaneous.has_building",
+        "chatbot_cooperative_registration_miscellaneous.building_type_name",
+        "chatbot_cooperative_registration_miscellaneous.authorised_share",
+        "chatbot_cooperative_registration_miscellaneous.paid_up_share",
+        "chatbot_cooperative_registration_miscellaneous.total_deposit",
+        "chatbot_cooperative_registration_miscellaneous.paid_up_share_date",
+        "chatbot_cooperative_registration_miscellaneous.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_miscellaneous.paid_up_members",
+        "chatbot_cooperative_registration_miscellaneous.paid_up_government_bodies",
+        "chatbot_cooperative_registration_miscellaneous.paid_up_total",
+        "chatbot_cooperative_registration_miscellaneous.annual_turn_over",
+        "chatbot_cooperative_registration_miscellaneous.created_at",
+        "chatbot_cooperative_registration_miscellaneous.updated_at",
+        "chatbot_cooperative_registration_miscellaneous.ncd_id"
+      ],
+      "business_terms": [
+        "transport",
+        "logistics",
+        "vehicles",
+        "routes",
+        "freight",
+        "shipment",
+        "haulage",
+        "fleet",
+        "carriage",
+        "haulage"
+      ]
+    }
+  },
+  {
+    "point_id": "e37f805d-65b7-542c-a9f1-a9cbc9e51282",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_khadi_products /* This table contains information about the products produced by khadi gramodyog sector of the cooperative societies. ( */ cooperative_registrations_id TEXT, /* Registration id of the cooperative */ item_name TEXT, /* Name of the product produced by khadi gramodyog */ yearly_production TEXT, /* Yearly production of that product */ unit TEXT, /* Unit of the product (kg. , ltr. , Tonne) etc */ value_in_rs TEXT, /* Value of the product (in Rs.) */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_khadi_products"
+      ],
+      "columns": [
+        "chatbot_khadi_products.id",
+        "chatbot_khadi_products.cooperative_registrations_id",
+        "chatbot_khadi_products.item_name",
+        "chatbot_khadi_products.yearly_production",
+        "chatbot_khadi_products.unit",
+        "chatbot_khadi_products.value_in_rs",
+        "chatbot_khadi_products.created_date",
+        "chatbot_khadi_products.ncd_id"
+      ],
+      "business_terms": [
+        "khadi",
+        "gramodyog",
+        "products",
+        "sector",
+        "handicrafts",
+        "artisanal",
+        "crafts",
+        "handmade",
+        "traditional"
+      ]
+    }
+  },
+  {
+    "point_id": "eaabf616-8cd3-52c1-aa9f-44e9d52ae783",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_pacs ( /* This table contains information about the PACS or LAMPS or FSS sector of the cooperative societies. */ id TEXT, cooperative_registrations_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the society has an office building ( 1 = Yes, 0 = No ) */ building_type_name TEXT, /* Type of office building */ is_socitey_has_land TEXT, /* Whether the society has land ( 1 = Yes, 0 = No ) */ authorised_share TEXT, /* Authorised share capital (in Rs.) */ paid_up_share TEXT, /* Paid up share capital (in Rs.) */ total_deposit TEXT, /* Total deposit (in Rs.) */ paid_up_share_date TEXT, /* Date when paid-up share was recorded */ pack_total_outstanding_loan TEXT, /* Total outstanding loan (in Rs.) */ pack_revenue_non_credit TEXT, /* Last Financial Year Revenue (Other than interest) from Non-Credit Activities (in Rs.) */ pesticide_distribution TEXT, /* Whether PACS is engaged in Pesticide Distribution ( 1 = Yes, 0 = No ) */ pesticide_distribution_qty TEXT, /* Quantity of pesticide distributed in last financial year (In MT) */ fertilizer_distribution TEXT, /* Does the PACS possess a Fertilizer Distribution Centre ( 1 = Yes, 0 = No ) */ fertilizer_distribution_qty TEXT, /* Quantity of fertilizer distributed in last financial year (In MT) */ fertilizer_distribution_details TEXT, /* Details of Fertilizer Distributed */ seed_distribution TEXT, /* Whether PACS is engaged in Seed Distribution ( 1 = Yes, 0 = No ) */ seed_distribution_qty TEXT, /* Quantity of seed distributed in last financial year (In MT) */ is_foodgrains TEXT, /* Whether PACS is engaged in Procurement of food grains ( 1 = Yes, 0 = No ) */ foodgrains_qty TEXT, /* Quantity of food grains Procurement done in last financial year (In MT) */ agricultural_implements TEXT, /* Whether PACS is engaged in Custom Hiring Centre for hiring of Agricultural equipments by farmers ( 1 = Yes, 0 = No ) */ agricultural_implements_text TEXT, /* Type of equipment */ dry_storage TEXT, /* Does the PACS possess Dry Storage Infrastructure (Godown) ( 1 = Yes, 0 = No ) */ dry_storage_capicity TEXT, /* Capacity of Dry Storage Infrastructure (Godown) (In MT) */ cold_storage TEXT, /* Does the PACS possess Cold Storage Infrastructure ( 1 = Yes, 0 = No ) */ cold_storage_capicity TEXT, /* Capacity of Cold Storage Infrastructure (In MT) */ is_lgs_program TEXT, /* Whether the PACS has participated in the 'Worlds largest Grain Storage Project' (1 = Yes , 0 = No) */ lgs_capacity TEXT, /* Capacity of LGS Project (In MT) */ lgs_program_details TEXT, /* Details of LGS Project */ milk_unit TEXT, /* Does the PACS have Milk Collection Unit ( 1 = Yes, 0 = No ) */ milk_capicity_unit TEXT, /* Capacity of Milk Collection Unit (In Litres) */ food_processing TEXT, /* Does the PACS have Food Processing facilities ( 1 = Yes, 0 = No ) */ food_processing_type TEXT, /* Type of Food Processing facilities */ is_csc TEXT, /* Does the PACS have Common Service Centre ( 1 = Yes, 0 = No ) */ csc_revenue TEXT, /* Revenue from Common Service Centre per month (In Rs.) */ csc_details TEXT, /* Service provided by Common Service Centre */ pack_involved_fish_catch TEXT, /* Whether PACS is engaged in Fishery activities ( 1 = Yes, 0 = No ) */ pack_annual_fish_catch TEXT, /* Total fish catch in last financial year (In MT) */ is_fpo TEXT, /* Whether PACS is functioning as Farmer Producer Organization (FPO) ( 1 = Yes, 0 = No ) */ fpo_details TEXT, /* Details of Farmer Producer Organization (FPO) */ is_lpg_distributership TEXT, /* Whether PACS is engaged in LPG Dealership ( 1 = Yes, 0 = No ) */ lpg_distributership_details TEXT, /* Details of LPG Dealership */ is_bcp_pump TEXT, /* Does the PACS have a bulk petrol/ diesel consumer pump ( 1 = Yes, 0 = No ) */ bcp_pump_details TEXT, /* Details of Bulk dealership */ is_dpp_diesel TEXT, /* Whether PACS is engaged in petrol/diesel retail dealership ( 1 = Yes, 0 = No ) */ dpp_diesel_details TEXT, /* Details of Retail dealership */ is_pm_kusum_scheme TEXT, /* Whether PACS has participated in PM-KUSUM Scheme ( 1 = Yes, 0 = No ) */ pm_kusum_scheme_details TEXT, /* Benefits availed under PM-KUSUM Scheme */ fair_price TEXT, /* Does the PACS have Fair Price Shop/PDS License ( 1 = Yes, 0 = No ) */ fair_price_qty TEXT, /* Average monthly distribution quantity (in Kg) */ fair_price_details TEXT, /* Details of Fair Price Shop */ is_jak TEXT, /* Whether PACS is operational as Pradhan Mantri Bhartiya Jan Aushadhi Kendra (PMBJK) */ jak_qty TEXT, /* Average monthly revenue under PMBJK (in Rs.) */ is_paani_samity TEXT, /* Does the PACS carry out Operation & Maintenance under 'Nal-se-Jal Yojana' ( 1 = Yes, 0 = No ) */ paani_samity_details TEXT, /* Activities being carried out under 'Nal-se-Jal Yojana' */ is_consumer_business TEXT, /* Does PACS Involved in Consumer Business ( 1 = Yes, 0 = No ) */ consumer_business_details TEXT, /* Details of Consumer Business */ is_tourism TEXT, /* Does PACS Involved in Tourism ( 1 = Yes, 0 = No ) */ tourism_details TEXT, /* Details of Tourism */ is_cash_kendra_facilities TEXT, /* Does PACS have Cash Kendra Facilities ( 1 = Yes, 0 = No ) */ cash_kendra_facilities_details TEXT, /* Details of Cash Kendra Facilities */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_pacs"
+      ],
+      "columns": [
+        "chatbot_cooperative_pacs.id",
+        "chatbot_cooperative_pacs.cooperative_registrations_id",
+        "chatbot_cooperative_pacs.has_building",
+        "chatbot_cooperative_pacs.building_type_name",
+        "chatbot_cooperative_pacs.is_socitey_has_land",
+        "chatbot_cooperative_pacs.authorised_share",
+        "chatbot_cooperative_pacs.paid_up_share",
+        "chatbot_cooperative_pacs.total_deposit",
+        "chatbot_cooperative_pacs.paid_up_share_date",
+        "chatbot_cooperative_pacs.pack_total_outstanding_loan",
+        "chatbot_cooperative_pacs.pack_revenue_non_credit",
+        "chatbot_cooperative_pacs.pesticide_distribution",
+        "chatbot_cooperative_pacs.pesticide_distribution_qty",
+        "chatbot_cooperative_pacs.fertilizer_distribution",
+        "chatbot_cooperative_pacs.fertilizer_distribution_qty",
+        "chatbot_cooperative_pacs.fertilizer_distribution_details",
+        "chatbot_cooperative_pacs.seed_distribution",
+        "chatbot_cooperative_pacs.seed_distribution_qty",
+        "chatbot_cooperative_pacs.is_foodgrains",
+        "chatbot_cooperative_pacs.foodgrains_qty",
+        "chatbot_cooperative_pacs.agricultural_implements",
+        "chatbot_cooperative_pacs.agricultural_implements_text",
+        "chatbot_cooperative_pacs.dry_storage",
+        "chatbot_cooperative_pacs.dry_storage_capicity",
+        "chatbot_cooperative_pacs.cold_storage",
+        "chatbot_cooperative_pacs.cold_storage_capicity",
+        "chatbot_cooperative_pacs.is_lgs_program",
+        "chatbot_cooperative_pacs.lgs_capacity",
+        "chatbot_cooperative_pacs.lgs_program_details",
+        "chatbot_cooperative_pacs.milk_unit",
+        "chatbot_cooperative_pacs.milk_capicity_unit",
+        "chatbot_cooperative_pacs.food_processing",
+        "chatbot_cooperative_pacs.food_processing_type",
+        "chatbot_cooperative_pacs.is_csc",
+        "chatbot_cooperative_pacs.csc_revenue",
+        "chatbot_cooperative_pacs.csc_details",
+        "chatbot_cooperative_pacs.pack_involved_fish_catch",
+        "chatbot_cooperative_pacs.pack_annual_fish_catch",
+        "chatbot_cooperative_pacs.is_fpo",
+        "chatbot_cooperative_pacs.fpo_details",
+        "chatbot_cooperative_pacs.is_lpg_distributership",
+        "chatbot_cooperative_pacs.lpg_distributership_details",
+        "chatbot_cooperative_pacs.is_bcp_pump",
+        "chatbot_cooperative_pacs.bcp_pump_details",
+        "chatbot_cooperative_pacs.is_dpp_diesel",
+        "chatbot_cooperative_pacs.dpp_diesel_details",
+        "chatbot_cooperative_pacs.is_pm_kusum_scheme",
+        "chatbot_cooperative_pacs.pm_kusum_scheme_details",
+        "chatbot_cooperative_pacs.fair_price",
+        "chatbot_cooperative_pacs.fair_price_qty",
+        "chatbot_cooperative_pacs.fair_price_details",
+        "chatbot_cooperative_pacs.is_jak",
+        "chatbot_cooperative_pacs.jak_qty",
+        "chatbot_cooperative_pacs.is_paani_samity",
+        "chatbot_cooperative_pacs.paani_samity_details",
+        "chatbot_cooperative_pacs.is_consumer_business",
+        "chatbot_cooperative_pacs.consumer_business_details",
+        "chatbot_cooperative_pacs.is_tourism",
+        "chatbot_cooperative_pacs.tourism_details",
+        "chatbot_cooperative_pacs.is_cash_kendra_facilities",
+        "chatbot_cooperative_pacs.cash_kendra_facilities_details",
+        "chatbot_cooperative_pacs.created_at",
+        "chatbot_cooperative_pacs.updated_at",
+        "chatbot_cooperative_pacs.ncd_id"
+      ],
+      "business_terms": [
+        "pacs",
+        "lamps",
+        "fss",
+        "sector",
+        "cooperative"
+      ]
+    }
+  },
+  {
+    "point_id": "f1a9a0fb-381e-5fa9-97ba-7e8b2d421e6d",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_land ( /* It contains land information of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ land_owned TEXT, /* Land owned by the cooperative society (in Acres) */ land_leased TEXT, /* Land leased by the cooperative society (in Acres) */ land_allotted TEXT, /* Land allotted to the cooperative society (in Acres) */ land_total TEXT, /* Total land owned, leased and allotted to the cooperative society (in Acres) */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_land"
+      ],
+      "columns": [
+        "chatbot_cooperative_land.id",
+        "chatbot_cooperative_land.cooperative_registration_id",
+        "chatbot_cooperative_land.land_owned",
+        "chatbot_cooperative_land.land_leased",
+        "chatbot_cooperative_land.land_allotted",
+        "chatbot_cooperative_land.land_total",
+        "chatbot_cooperative_land.created_at",
+        "chatbot_cooperative_land.ncd_id"
+      ],
+      "business_terms": [
+        "land",
+        "cooperative",
+        "agricultural",
+        "property",
+        "farmland",
+        "plot",
+        "acreage",
+        "lease",
+        "ownership"
+      ]
+    }
+  },
+  {
+    "point_id": "f999d7a2-3de5-51f9-a510-fc7f39b7bed1",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_social ( /* This table contains information about the social welfare and cultural sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ type_society_name TEXT, /* Type of the social welfare and cultural society */ authorised_share TEXT, /* Authorised Share Capital (in Rs.) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs.) */ total_deposit TEXT, /* Total Deposit (in Rs.) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs.) */ paid_up_members TEXT, /* paid up share capitals by members */ paid_up_government_bodies TEXT, /* paid up share capitals by government or government bodies */ paid_up_total TEXT, /* paid up total ( paid_up_members + paid_up_government_bodies) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ has_common TEXT, /* Whether the Cooperative society has common/pooled resource for its social & cultural activities ( 1 = Yes , 0 = No ) */ is_operate_by_member TEXT, /* Whether the social & cultural activities are carried by member themself ( 1 = Yes , 0 = No ) */ guidance_by_member TEXT, /* Whether the proper guidance/training is provided by cooperative society to members ( 1 = Yes , 0 = No ) */ is_operate_vehicle TEXT, /* Whether the society is operating utility Vehicle(like ambulance,van,bus,goods container etc) ( 1 = Yes , 0 = No ) */ no_of_vehicle TEXT, /* Number of vehicles operated by the cooperative society */ type_social_culture_activity_name TEXT, /* Type of Social & Cultural activities are carried out by Cooperatives comma seperated */ facilities_names TEXT, /* facilities provided by the cooperative society comma seperated multiple values */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_social"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_social.id",
+        "chatbot_cooperative_registration_social.cooperative_registration_id",
+        "chatbot_cooperative_registration_social.has_building",
+        "chatbot_cooperative_registration_social.building_type_name",
+        "chatbot_cooperative_registration_social.type_society",
+        "chatbot_cooperative_registration_social.type_society_name",
+        "chatbot_cooperative_registration_social.authorised_share",
+        "chatbot_cooperative_registration_social.paid_up_share",
+        "chatbot_cooperative_registration_social.total_deposit",
+        "chatbot_cooperative_registration_social.paid_up_share_date",
+        "chatbot_cooperative_registration_social.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_social.paid_up_members",
+        "chatbot_cooperative_registration_social.paid_up_government_bodies",
+        "chatbot_cooperative_registration_social.paid_up_total",
+        "chatbot_cooperative_registration_social.annual_turn_over",
+        "chatbot_cooperative_registration_social.has_common",
+        "chatbot_cooperative_registration_social.is_operate_by_member",
+        "chatbot_cooperative_registration_social.guidance_by_member",
+        "chatbot_cooperative_registration_social.is_operate_vehicle",
+        "chatbot_cooperative_registration_social.no_of_vehicle",
+        "chatbot_cooperative_registration_social.type_social_culture_activity",
+        "chatbot_cooperative_registration_social.type_social_culture_activity_name",
+        "chatbot_cooperative_registration_social.facilities_names",
+        "chatbot_cooperative_registration_social.created_at",
+        "chatbot_cooperative_registration_social.updated_at",
+        "chatbot_cooperative_registration_social.ncd_id"
+      ],
+      "business_terms": [
+        "social welfare",
+        "cultural sector",
+        "cooperative societies"
+      ]
+    }
+  },
+  {
+    "point_id": "fa44c28e-e1d8-51da-b499-c85d3d2ab2a6",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_cooperative_registration_jute ( /* This table contains information about the jute sector of the cooperative societies. */ id TEXT, cooperative_registration_id TEXT, /* Registration id of the cooperative */ has_building TEXT, /* Whether the co-operative society has an office building (1=Yes, 0=No) */ building_type_name TEXT, /* Type of Office Building */ authorised_share TEXT, /* Authorised Share Capital (in Rs) */ paid_up_share TEXT, /* Paid up Share Capital (in Rs) */ total_deposit TEXT, /* Total Deposit (in Rs) */ paid_up_share_date TEXT, /* Paid up Share Capital Date */ pack_total_outstanding_loan TEXT, /* Total Amount of Loan Outstanding (in Rs) */ annual_turn_over TEXT, /* Annual Turn Over of the Cooperative Society (in Rs) */ type_raw TEXT, /* Type of raw material is using */ produce_names TEXT, /* List of product produced by cooperative society */ common_work_place TEXT, /* Whether the cooperative society has common working place or manufacturing unit (1=Yes, 0=No) */ workplace_operate TEXT, /* Number of work places or manufacturing units operated by cooperative society */ is_work_by_member TEXT, /* whether the processing or handwork is done by members themselves (1=Yes, 0=No) */ is_training_provide TEXT, /* Whether the regular guidance/training is provided by cooperative society to members (1=Yes, 0=No) */ is_raw_provide TEXT, /* Whether the cooperative society provide raw material to members & finished products taken after processing (1=Yes, 0=No) */ is_raw_easy_avail TEXT, /* whether the raw material easily available to cooperative society (1=Yes, 0=No) */ is_waste_generate TEXT, /* whether the waste are generated in jute process (1=Yes, 0=No) */ is_waste_facility TEXT, /* Whether the waste management facility is available in the society (1=Yes, 0=No) */ is_operate_retail TEXT, /* whether the cooperative society operate retail shops/outlet to sale products (1=Yes, 0=No) */ no_of_retail TEXT, /* Number of retail shops/outlets operated by cooperative society */ is_product_sale_out TEXT, /* whether the products are sale out of the area of operation of the cooperative society (1=Yes, 0=No) */ facilities_names TEXT, /* List of Facilities provided by cooperative society */ ncd_id TEXT /* Main NCD ID used to join with master table and the members table */ );",
+      "type": "ddl",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_jute"
+      ],
+      "columns": [
+        "chatbot_cooperative_registration_jute.id",
+        "chatbot_cooperative_registration_jute.cooperative_registration_id",
+        "chatbot_cooperative_registration_jute.has_building",
+        "chatbot_cooperative_registration_jute.building_type_name",
+        "chatbot_cooperative_registration_jute.authorised_share",
+        "chatbot_cooperative_registration_jute.paid_up_share",
+        "chatbot_cooperative_registration_jute.total_deposit",
+        "chatbot_cooperative_registration_jute.paid_up_share_date",
+        "chatbot_cooperative_registration_jute.pack_total_outstanding_loan",
+        "chatbot_cooperative_registration_jute.annual_turn_over",
+        "chatbot_cooperative_registration_jute.type_raw",
+        "chatbot_cooperative_registration_jute.produce_names",
+        "chatbot_cooperative_registration_jute.common_work_place",
+        "chatbot_cooperative_registration_jute.workplace_operate",
+        "chatbot_cooperative_registration_jute.is_work_by_member",
+        "chatbot_cooperative_registration_jute.is_training_provide",
+        "chatbot_cooperative_registration_jute.is_raw_provide",
+        "chatbot_cooperative_registration_jute.is_raw_easy_avail",
+        "chatbot_cooperative_registration_jute.is_waste_generate",
+        "chatbot_cooperative_registration_jute.is_waste_facility",
+        "chatbot_cooperative_registration_jute.is_operate_retail",
+        "chatbot_cooperative_registration_jute.no_of_retail",
+        "chatbot_cooperative_registration_jute.is_product_sale_out",
+        "chatbot_cooperative_registration_jute.facilities_names",
+        "chatbot_cooperative_registration_jute.created_at",
+        "chatbot_cooperative_registration_jute.updated_at",
+        "chatbot_cooperative_registration_jute.ncd_id"
+      ],
+      "business_terms": [
+        "jute",
+        "sector",
+        "cooperative",
+        "registration",
+        "fiber",
+        "textile",
+        "agriculture",
+        "industry",
+        "production",
+        "trade"
+      ]
+    }
+  }
+]

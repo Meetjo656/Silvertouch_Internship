@@ -1,0 +1,667 @@
+[
+  {
+    "question": "Count multi-state societies by their primary activity",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "How many NCCT institutes have projector facilities?",
+    "expected_tables": [
+      "chatbot_education_training_institute_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_education_training_institute_private"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "List of multi-state societies which are under liquidation",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Show me all functional cooperative societies",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)?",
+    "expected_tables": [
+      "chatbot_ncdc_offices_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_ncdc_offices_private"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "Get the names of all federations along with their auditors' categories.",
+    "expected_tables": [
+      "chatbot_state_district_federation_private"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Count of offices specialized in Financial by state.",
+    "expected_tables": [
+      "chatbot_ncdc_offices_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_ncdc_offices_private"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "What is the total number of members in all state federations?",
+    "expected_tables": [
+      "chatbot_state_district_federation_private"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Total turnover of all multi-state societies",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Total loss of multi-state societies in the Handloom sector",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "How many full covered GPs are there in gaya for Handloom?",
+    "expected_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "retrieved_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "Latest top 10 Credit & Thrift rankings in tamil nadu",
+    "expected_tables": [
+      "chatbot_cooperative_rankings"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_rankings"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "List all members from National Film Federation in Karnataka state. ",
+    "expected_tables": [
+      "chatbot_national_federations_members",
+      "chatbot_national_federations"
+    ],
+    "retrieved_tables": [
+      "chatbot_national_federations",
+      "chatbot_national_federations_members"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "List partially covered Gram Panchayats in papum pare for Multi-purpose",
+    "expected_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "retrieved_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+    "expected_tables": [
+      "chatbot_cooperative_registration_khadi_gram",
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_registration_khadi_gram"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 50.0,
+    "recall_at_5": 50.0,
+    "recall_at_10": 50.0
+  },
+  {
+    "question": "Find profit making Dairy federations in Uttar Pradesh.",
+    "expected_tables": [
+      "chatbot_state_district_federation_private",
+      "chatbot_state_district_federation_dairy"
+    ],
+    "retrieved_tables": [
+      "chatbot_state_district_federation_dairy"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 50.0,
+    "recall_at_5": 50.0,
+    "recall_at_10": 50.0
+  },
+  {
+    "question": "Show me coverage details for all blocks in belagavi for Multi-purpose",
+    "expected_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "retrieved_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "How many full covered GPs are there in madurai for Fishery?",
+    "expected_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "retrieved_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "Find phone numbers for PCARDB banks in Rajasthan",
+    "expected_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 50.0,
+    "recall_at_5": 50.0,
+    "recall_at_10": 50.0
+  },
+  {
+    "question": "List partially covered Gram Panchayats in pune for Credit",
+    "expected_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "retrieved_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "List urban area of operation wards for PCARDB banks",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_scb_area_urban_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_area_urban_private"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 50.0,
+    "recall_at_5": 50.0,
+    "recall_at_10": 50.0
+  },
+  {
+    "question": "Total deposits of Chatbot Cooperative Pacs societies",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master",
+      "chatbot_cooperative_pacs"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_pacs"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 50.0,
+    "recall_at_5": 50.0,
+    "recall_at_10": 50.0
+  },
+  {
+    "question": "Top 5 profitable DCCB banks",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "List StCBs that are reporting a net loss greater than 0",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Total annual expense of StCBs compared by dividend paid status",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Total number of members in all PCARDB banks",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Show last 5 registered cooperative banks",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Count of banks that have a negative net loss and no dividend paid",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Show organization type for other members of PCARDBs",
+    "expected_tables": [
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_other_members_private"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 50.0,
+    "recall_at_5": 50.0,
+    "recall_at_10": 50.0
+  },
+  {
+    "question": "Show scheme amounts for banks in metro cities Mumbai/Delhi",
+    "expected_tables": [
+      "chatbot_scb_schemes_private",
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_schemes_private"
+    ],
+    "recall_at_1": 50.0,
+    "recall_at_3": 50.0,
+    "recall_at_5": 50.0,
+    "recall_at_10": 50.0
+  },
+  {
+    "question": "Total count of functional National Federations",
+    "expected_tables": [
+      "chatbot_national_federations"
+    ],
+    "retrieved_tables": [
+      "chatbot_national_federations"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "Total number of functional cooperative societies",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "Multi state ucb",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "Total number of computerized cooperative banks",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "UCB count",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "How many profit-making cooperatives are recorded?",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "How many non-credit cooperative societies are there?",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "How many State Level Federations are functional?",
+    "expected_tables": [
+      "chatbot_state_district_federation_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_state_district_federation_private"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "SCARDB cooperative bank count",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "Count of cooperatives in Urban locations",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "recall_at_1": 100.0,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "Which DCCBs have no email listed in contact details?",
+    "expected_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details"
+    ],
+    "recall_at_1": 33.33333333333333,
+    "recall_at_3": 33.33333333333333,
+    "recall_at_5": 33.33333333333333,
+    "recall_at_10": 33.33333333333333
+  },
+  {
+    "question": "Find federation detail, the member detail and contact information which mapped with federation name is Nafed.",
+    "expected_tables": [
+      "chatbot_national_federations_contact_details",
+      "chatbot_national_federations_members",
+      "chatbot_national_federations"
+    ],
+    "retrieved_tables": [
+      "chatbot_national_federations_contact_details",
+      "chatbot_national_federations",
+      "chatbot_national_federations_members"
+    ],
+    "recall_at_1": 33.33333333333333,
+    "recall_at_3": 100.0,
+    "recall_at_5": 100.0,
+    "recall_at_10": 100.0
+  },
+  {
+    "question": "Show area of operation for PCARDB banks in GUJARAT",
+    "expected_tables": [
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_master_private",
+      "chatbot_scb_area_urban_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private"
+    ],
+    "recall_at_1": 33.33333333333333,
+    "recall_at_3": 66.66666666666666,
+    "recall_at_5": 66.66666666666666,
+    "recall_at_10": 66.66666666666666
+  },
+  {
+    "question": "Get phone number and email for DCCB in Pune",
+    "expected_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details"
+    ],
+    "recall_at_1": 33.33333333333333,
+    "recall_at_3": 33.33333333333333,
+    "recall_at_5": 33.33333333333333,
+    "recall_at_10": 33.33333333333333
+  },
+  {
+    "question": "Show contact person and phone for all functional DCCBs",
+    "expected_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details"
+    ],
+    "recall_at_1": 33.33333333333333,
+    "recall_at_3": 33.33333333333333,
+    "recall_at_5": 33.33333333333333,
+    "recall_at_10": 33.33333333333333
+  },
+  {
+    "question": "Show contact information for all profit making DCCBs",
+    "expected_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details"
+    ],
+    "recall_at_1": 33.33333333333333,
+    "recall_at_3": 33.33333333333333,
+    "recall_at_5": 33.33333333333333,
+    "recall_at_10": 33.33333333333333
+  },
+  {
+    "question": "List all members for DCCBs with turnover > 100 Lakhs",
+    "expected_tables": [
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_other_members_private"
+    ],
+    "recall_at_1": 33.33333333333333,
+    "recall_at_3": 33.33333333333333,
+    "recall_at_5": 33.33333333333333,
+    "recall_at_10": 33.33333333333333
+  },
+  {
+    "question": "Fetch member pincode for DCCB affiliates",
+    "expected_tables": [
+      "chatbot_scb_members_private",
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [],
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.0
+  },
+  {
+    "question": "Show scheme details for DCCBs in Tamil Nadu",
+    "expected_tables": [
+      "chatbot_scb_schemes_private",
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_schemes_private"
+    ],
+    "recall_at_1": 33.33333333333333,
+    "recall_at_3": 33.33333333333333,
+    "recall_at_5": 33.33333333333333,
+    "recall_at_10": 33.33333333333333
+  },
+  {
+    "question": "Show details of other members affiliate with DCCBs",
+    "expected_tables": [
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_other_members_private"
+    ],
+    "recall_at_1": 33.33333333333333,
+    "recall_at_3": 33.33333333333333,
+    "recall_at_5": 33.33333333333333,
+    "recall_at_10": 33.33333333333333
+  }
+]

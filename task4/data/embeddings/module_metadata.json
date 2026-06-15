@@ -1,0 +1,2011 @@
+[
+  {
+    "index": 0,
+    "module": "COOPERATIVE",
+    "theme": "Handloom",
+    "text": "Module: COOPERATIVE. Theme: Handloom. Terms: district, handloom, turnover, deposits, training, west, paid, rajasthan, maharashtra, pradesh, multi-state, madhya, andhra, sector, bengal, cooperative, kerala, loss, uttar, gujarat, societies, karnataka, bihar, building, haryana, share, office, telangana, registration. Example questions: How many Handloom societies are in Karnataka? | How many Handloom societies are in Maharashtra? | How many Handloom societies are in Uttar Pradesh? | Total loss of multi-state societies in the Handloom sector | List Handloom societies in Maharashtra with turnover > 10 lakhs | How many Handloom societies are in Gujarat? | Show all Handloom societies that provide training | District-wise count of Handloom in Bihar | List Handloom societies in Madhya Pradesh with turnover > 10 lakhs | District-wise count of Handloom in Kerala",
+    "payload_count": 26
+  },
+  {
+    "index": 1,
+    "module": "COOPERATIVE",
+    "theme": "Tribal",
+    "text": "Module: COOPERATIVE. Theme: Tribal. Terms: district, turnover, deposits, training, west, paid, rajasthan, madhya, pradesh, maharashtra, andhra, bengal, cooperative, kerala, tamil, uttar, societies, karnataka, bihar, building, haryana, tribal, punjab, share, office, telangana, registration. Example questions: Total deposits of Tribal societies | Show all Tribal societies that provide training | How many Tribal societies are in Uttar Pradesh? | How many Tribal societies are in West Bengal? | How many Tribal societies are in Punjab? | List Tribal societies in Telangana with turnover > 10 lakhs | District-wise count of Tribal in Tamil Nadu | How many Tribal societies are in Rajasthan? | List Tribal societies in Rajasthan with turnover > 10 lakhs | Total paid up share of Tribal in Madhya Pradesh",
+    "payload_count": 27
+  },
+  {
+    "index": 2,
+    "module": "COOPERATIVE",
+    "theme": "Handicraft",
+    "text": "Module: COOPERATIVE. Theme: Handicraft. Terms: district, turnover, training, west, paid, rajasthan, handicraft, maharashtra, pradesh, madhya, count, andhra, west bengal, bengal, cooperative, nadu, tamil, uttar, paid up share, societies, karnataka, haryana, punjab, share. Example questions: How many Handicraft societies are in West Bengal? | Total paid up share of Handicraft in West Bengal | Total paid up share of Handicraft in Tamil Nadu | District-wise count of Handicraft in Madhya Pradesh | Total paid up share of Handicraft in Rajasthan | How many Handicraft societies are in Punjab? | How many Handicraft societies are in Haryana? | How many Handicraft societies are in Maharashtra? | District-wise count of Handicraft in Maharashtra | Total paid up share of Handicraft in Maharashtra",
+    "payload_count": 21
+  },
+  {
+    "index": 3,
+    "module": "COOPERATIVE",
+    "theme": "Jute",
+    "text": "Module: COOPERATIVE. Theme: Jute. Terms: district, turnover, deposits, training, west, rajasthan, andhra pradesh, pradesh, andhra, bengal, cooperative, tamil, uttar, gujarat, societies, karnataka, building, bihar, punjab, office, nad, jute, registration. Example questions: How many Jute societies have an office building? | How many Jute societies are in Uttar Pradesh? | List Jute societies in Gujarat with turnover > 10 lakhs | Show all Jute societies that provide training | List Jute societies in Rajasthan with turnover > 10 lakhs | How many Jute societies are in West Bengal? | District-wise count of Jute in Rajasthan | How many Jute societies are in Punjab? | How many Jute societies are in Andhra Pradesh? | District-wise count of Jute in Karnataka",
+    "payload_count": 19
+  },
+  {
+    "index": 4,
+    "module": "COOPERATIVE",
+    "theme": "Tourism",
+    "text": "Module: COOPERATIVE. Theme: Tourism. Terms: district, turnover, training, west, tourism, paid, rajasthan, multi-state, pradesh, madhya, maharashtra, count, andhra, bengal, cooperative, tamil, uttar, societies, karnataka, bihar, building, haryana, details, share, office, contact. Example questions: How many Tourism societies are in Uttar Pradesh? | How many Tourism societies are in West Bengal? | Total paid up share of Tourism in Haryana | How many Tourism societies are in Haryana? | District-wise count of Tourism in Uttar Pradesh | List Tourism societies in Karnataka with turnover > 10 lakhs | How many Tourism societies are in Madhya Pradesh? | District-wise count of Tourism in Rajasthan | List Tourism societies in Bihar with turnover > 10 lakhs | Total paid up share of Tourism in Rajasthan",
+    "payload_count": 20
+  },
+  {
+    "index": 5,
+    "module": "COOPERATIVE",
+    "theme": "Cooperative",
+    "text": "Module: COOPERATIVE. Theme: Cooperative. Terms: district, turnover, deposits, training, west, rajasthan, person, multi-state, pradesh, madhya, maharashtra, andhra, members, state-wise, sector, bank, registered, bengal, cooperative, master, registrations, thrift, loss, functional, tamil, kribhco, uttar, authority, societies, multipurpose, karnataka, bihar, building, haryana, delhi, details, land, state, operating, credit, women, office, contact, nad, development, telangana, non-functional, registration. Example questions: District-wise count of Women Cooperative in Bihar | How many Women Cooperative societies are in Maharashtra? | How many Chatbot Cooperative Land societies are in West Bengal? | List Women Cooperative societies in Bihar with turnover > 10 lakhs | Show all non-functional multi-state societies | How many Women Cooperative societies are in Andhra Pradesh? | Who is the contact person for 'Multi-State Cooperative Land Development Bank'? | List Chatbot Cooperative Credit Thrift societies in Tamil Nadu with turnover > 10 lakhs | Total deposits of Chatbot Cooperative Pacs societies | Who is the registration authority for most multi-state societies?",
+    "payload_count": 40
+  },
+  {
+    "index": 6,
+    "module": "COOPERATIVE",
+    "theme": "Ucb",
+    "text": "Module: COOPERATIVE. Theme: Ucb. Terms: district, deposits, turnover, training, west, maharashtra, pradesh, madhya, count, andhra, bengal, cooperative, registrations, kerala, nadu, tamil, uttar, societies, bihar, building, ucb, punjab, office. Example questions: Total deposits of Ucb societies | Show all Ucb societies that provide training | List Ucb societies in Uttar Pradesh with turnover > 10 lakhs | How many Ucb societies are in Maharashtra? | List Ucb societies in West Bengal with turnover > 10 lakhs | How many Ucb societies are in West Bengal? | List Ucb societies in Punjab with turnover > 10 lakhs | How many Ucb societies are in Punjab? | District-wise count of Ucb in Bihar | District-wise count of Ucb in West Bengal",
+    "payload_count": 19
+  },
+  {
+    "index": 7,
+    "module": "COOPERATIVE",
+    "theme": "Sugar",
+    "text": "Module: COOPERATIVE. Theme: Sugar. Terms: district, turnover, deposits, training, west, paid, rajasthan, madhya, pradesh, maharashtra, andhra, bengal, cooperative, registrations, nadu, kerala, tamil, uttar, gujarat, societies, karnataka, bihar, building, haryana, punjab, share, office, sugar, telangana, registration. Example questions: How many Sugar societies are in Maharashtra? | Total paid up share of Sugar in Rajasthan | How many Sugar societies are in Uttar Pradesh? | How many Sugar societies are in Haryana? | Total paid up share of Sugar in Gujarat | District-wise count of Sugar in West Bengal | How many Sugar societies are in Andhra Pradesh? | How many Sugar societies are in Madhya Pradesh? | List Sugar societies in Andhra Pradesh with turnover > 10 lakhs | How many Sugar societies are in Kerala?",
+    "payload_count": 27
+  },
+  {
+    "index": 8,
+    "module": "COOPERATIVE",
+    "theme": "Societies",
+    "text": "Module: COOPERATIVE. Theme: Societies. Terms: district, turnover, profit, west, rajasthan, south, multi-state, pradesh, maharashtra, madhya, financial, andhra, members, count, sector, cooperatives, east, processing, bengal, cooperative, registrations, nadu, loss, tamil, uttar, authority, gujarat, miscellaneous, societies, karnataka, building, bihar, annual, audit, haryana, delhi, activity, punjab, state, office, nad, tamilnadu, registration, operation. Example questions: List multi-state societies registered in district 'SOUTH' of state 'DELHI' | Multi-state societies registered before 2010 | List Miscellaneous societies in Rajasthan with turnover > 10 lakhs | State-wise count of societies | How many Social societies have an office building? | How many Processing societies have an office building? | List Miscellaneous societies in Uttar Pradesh with turnover > 10 lakhs | How many societies are multi-state? | Total turnover of all societies in Uttar Pradesh | Multi-state societies with more than 500 members",
+    "payload_count": 39
+  },
+  {
+    "index": 9,
+    "module": "COOPERATIVE",
+    "theme": "Uttar",
+    "text": "Module: COOPERATIVE. Theme: Uttar. Terms: member, uttar, miscellaneous, pradesh, housing, societies, district, credit, women, multipurpose, bee, turnover, female, processing, farming, cooperative, thrift, male. Example questions: How many Miscellaneous societies are in Uttar Pradesh? | District-wise count of Housing in Uttar Pradesh | How many Multipurpose societies are in Uttar Pradesh? | Total male and female members in Uttar Pradesh | How many Processing societies are in Uttar Pradesh? | How many Credit Miscellaneous societies are in Uttar Pradesh? | Count of SC members in Uttar Pradesh | District-wise count of Bee Farming in Uttar Pradesh | How many Women Cooperative societies are in Uttar Pradesh? | List Chatbot Cooperative Credit Thrift societies in Uttar Pradesh with turnover > 10 lakhs",
+    "payload_count": 11
+  },
+  {
+    "index": 10,
+    "module": "COOPERATIVE",
+    "theme": "Chatbot",
+    "text": "Module: COOPERATIVE. Theme: Chatbot. Terms: turnover, deposits, training, west, paid, marketing, pacs, rajasthan, maharashtra, pradesh, madhya, andhra, bengal, cooperative, thrift, nadu, kerala, tamil, uttar, gujarat, cooperatie, societies, chatbot, building, bihar, haryana, punjab, land, credit, share, office, telangana, registration. Example questions: How many Chatbot Cooperative Pacs societies are in Andhra Pradesh? | How many Chatbot Cooperative Pacs societies are in Maharashtra? | How many Chatbot Cooperatie Registration Marketing societies are in Andhra Pradesh? | How many Chatbot Cooperative Pacs societies are in Telangana? | How many Chatbot Cooperative Land societies are in Maharashtra? | How many Chatbot Cooperatie Registration Marketing societies are in Bihar? | How many Chatbot Cooperatie Registration Marketing societies are in Telangana? | Total paid up share of Chatbot Cooperatie Registration Marketing in Andhra Pradesh | List Chatbot Cooperatie Registration Marketing societies in Rajasthan with turnover > 10 lakhs | District-wise count of Chatbot Cooperatie Registration Marketing in Uttar Pradesh",
+    "payload_count": 34
+  },
+  {
+    "index": 11,
+    "module": "COOPERATIVE",
+    "theme": "Multipurpose",
+    "text": "Module: COOPERATIVE. Theme: Multipurpose. Terms: uttar, district, pradesh, paid up share, societies, share, andhra, multipurpose, haryana, paid, west bengal, cooperative, rajasthan. Example questions: Total paid up share of Multipurpose in Uttar Pradesh | Total paid up share of Multipurpose in Andhra Pradesh | Total paid up share of Multipurpose in West Bengal | District-wise count of Multipurpose in Rajasthan | Total paid up share of Multipurpose in Rajasthan | Total paid up share of Multipurpose in Haryana | How many Multipurpose societies are in Rajasthan?",
+    "payload_count": 7
+  },
+  {
+    "index": 12,
+    "module": "COOPERATIVE",
+    "theme": "Cooperatives",
+    "text": "Module: COOPERATIVE. Theme: Cooperatives. Terms: headquarters, district, profit, block, non-credit, paid, rajasthan, nafed, multistate, multi-state, maharashtra, andhra, cooperatives, operate, registrations, functional, gujarat, societies, liquidation, jharkhand, audit, urban, haryana, delhi, email, operating, uttarakhand, location, dividends, telangana, states, headquarter. Example questions: Which multi-state cooperatives have not paid dividends? | List of multi-state cooperatives under liquidation in Maharashtra | List multi-state cooperatives operating in Rajasthan | How many multi-state cooperatives have 'Urban' headquarters? | List multi-state cooperatives operating in Uttarakhand | Which multi-state cooperatives are profit making in Gujarat? | Find multi-state cooperatives that operate in Delhi | List of multi-state cooperatives operating in Jharkhand | Show the district name and block name of multi-state cooperatives | Show the headquarter location of all multi-state cooperatives",
+    "payload_count": 18
+  },
+  {
+    "index": 13,
+    "module": "COOPERATIVE",
+    "theme": "Haryana",
+    "text": "Module: COOPERATIVE. Theme: Haryana. Terms: member, district, turnover, profit, female, education, paid, multi-state, housing, members, registration, cooperative, thrift, registrations, miscellaneous, societies, annual, haryana, credit, share, social, male. Example questions: Total annual profit of multi-state societies in Haryana | Total paid up share of Credit Miscellaneous in Haryana | Total turnover of all societies in Haryana | Total paid up share of Miscellaneous in Haryana | How many Chatbot Cooperative Credit Thrift societies are in Haryana? | Count of SC members in Haryana | Total male and female members in Haryana | List all profit making societies in Haryana | District-wise count of Education in Haryana | District-wise count of Housing in Haryana",
+    "payload_count": 12
+  },
+  {
+    "index": 14,
+    "module": "COOPERATIVE",
+    "theme": "West",
+    "text": "Module: COOPERATIVE. Theme: West. Terms: member, district, west, education, bengal, cooperative, registration. Example questions: Count of SC members in West Bengal | Count of ST members in West Bengal | District-wise count of Education in West Bengal",
+    "payload_count": 3
+  },
+  {
+    "index": 15,
+    "module": "COOPERATIVE",
+    "theme": "Gujarat",
+    "text": "Module: COOPERATIVE. Theme: Gujarat. Terms: member, district, turnover, profit, products, female, paid, pacs, handicraft, bee, count, members, livestock, khadi, processing, farming, cooperative, thrift, registrations, labour, transport, male, gujarat, miscellaneous, societies, multipurpose, chatbot, land, credit, share, registration. Example questions: How many Credit Miscellaneous societies are in Gujarat? | How many Labour societies are in Gujarat? | Total paid up share of Processing in Gujarat | District-wise count of Chatbot Cooperative Land in Gujarat | District-wise count of Chatbot Khadi Products in Gujarat | How many Multipurpose societies are in Gujarat? | How many Transport societies are in Gujarat? | How many Chatbot Cooperative Land societies are in Gujarat? | How many Chatbot Cooperative Credit Thrift societies are in Gujarat? | Count of ST members in Gujarat",
+    "payload_count": 23
+  },
+  {
+    "index": 16,
+    "module": "COOPERATIVE",
+    "theme": "Msmes",
+    "text": "Module: COOPERATIVE. Theme: Msmes. Terms: societies, msmes, registrations, multi-state. Example questions: Which multi-state societies are MSMEs?",
+    "payload_count": 1
+  },
+  {
+    "index": 17,
+    "module": "COOPERATIVE",
+    "theme": "Fishery",
+    "text": "Module: COOPERATIVE. Theme: Fishery. Terms: district, turnover, deposits, training, west, fishery, madhya, pradesh, maharashtra, multi-state, andhra, sector, bengal, cooperative, tamil, uttar, gujarat, societies, karnataka, bihar, building, haryana, state, office, nad, telangana, registration. Example questions: Total deposits of Fishery societies | How many Fishery societies are in Tamil Nadu? | List Fishery societies in Uttar Pradesh with turnover > 10 lakhs | List Fishery societies in Bihar with turnover > 10 lakhs | List of multi-state societies in the Fishery sector | District-wise count of Fishery in West Bengal | How many Fishery societies are in Telangana? | How many Fishery societies are in Haryana? | How many Fishery societies are in Gujarat? | District-wise count of Fishery in Tamil Nadu",
+    "payload_count": 20
+  },
+  {
+    "index": 18,
+    "module": "COOPERATIVE",
+    "theme": "Labour",
+    "text": "Module: COOPERATIVE. Theme: Labour. Terms: labour, uttar, madhya, pradesh, turnover, societies, share, maharashtra, office, training, west, bihar, building, telangana, paid, bengal, cooperative, rajasthan. Example questions: How many Labour societies are in Rajasthan? | Total paid up share of Labour in Uttar Pradesh | How many Labour societies have an office building? | Total paid up share of Labour in Maharashtra | Total paid up share of Labour in Bihar | Show all Labour societies that provide training | How many Labour societies are in Uttar Pradesh? | How many Labour societies are in West Bengal? | List Labour societies in Madhya Pradesh with turnover > 10 lakhs | How many Labour societies are in Telangana?",
+    "payload_count": 10
+  },
+  {
+    "index": 19,
+    "module": "COOPERATIVE",
+    "theme": "Transport",
+    "text": "Module: COOPERATIVE. Theme: Transport. Terms: district, turnover, training, west, paid, rajasthan, madhya, pradesh, count, andhra, bengal, cooperative, registrations, nadu, tamil, uttar, transport, societies, building, punjab, share, office. Example questions: Total paid up share of Transport in Uttar Pradesh | List Transport societies in Rajasthan with turnover > 10 lakhs | How many Transport societies are in Rajasthan? | Total paid up share of Transport in Tamil Nadu | Total paid up share of Transport in Andhra Pradesh | Total paid up share of Transport in Punjab | How many Transport societies are in Madhya Pradesh? | District-wise count of Transport in Tamil Nadu | Total paid up share of Transport in West Bengal | How many Transport societies are in Tamil Nadu?",
+    "payload_count": 13
+  },
+  {
+    "index": 20,
+    "module": "COOPERATIVE",
+    "theme": "Livestock",
+    "text": "Module: COOPERATIVE. Theme: Livestock. Terms: district, turnover, deposits, training, west, rajasthan, maharashtra, pradesh, andhra, livestock, bengal, cooperative, tamil, uttar, gujarat, societies, karnataka, building, haryana, office, nad, telangana, registration. Example questions: District-wise count of Livestock in West Bengal | How many Livestock societies are in Tamil Nadu? | How many Livestock societies have an office building? | How many Livestock societies are in Telangana? | How many Livestock societies are in Andhra Pradesh? | How many Livestock societies are in Karnataka? | List Livestock societies in Gujarat with turnover > 10 lakhs | How many Livestock societies are in Uttar Pradesh? | Show all Livestock societies that provide training | List Livestock societies in Rajasthan with turnover > 10 lakhs",
+    "payload_count": 19
+  },
+  {
+    "index": 21,
+    "module": "COOPERATIVE",
+    "theme": "Punjab",
+    "text": "Module: COOPERATIVE. Theme: Punjab. Terms: district, turnover, tourism, society, female, education, housing, members, livestock, processing, cooperative, thrift, registrations, labour, transport, miscellaneous, male, societies, chatbot, multipurpose, punjab, land, credit, consumer, social, registration. Example questions: District-wise count of Credit Miscellaneous in Punjab | List Processing societies in Punjab with turnover > 10 lakhs | List Social societies in Punjab with turnover > 10 lakhs | How many Credit Miscellaneous societies are in Punjab? | District-wise count of Transport in Punjab | How many Processing societies are in Punjab? | Count of SC members in Punjab | How many Chatbot Cooperative Land societies are in Punjab? | District-wise count of Housing in Punjab | District-wise count of Chatbot Cooperative Land in Punjab",
+    "payload_count": 30
+  },
+  {
+    "index": 22,
+    "module": "COOPERATIVE",
+    "theme": "Bihar",
+    "text": "Module: COOPERATIVE. Theme: Bihar. Terms: member, district, turnover, profit, female, paid, multi-state, housing, cooperatives, processing, cooperative, registrations, uttar, transport, miscellaneous, labour, male, societies, multipurpose, bihar, share, social, registration. Example questions: How many Miscellaneous societies are in Bihar? | List Multipurpose societies in Bihar with turnover > 10 lakhs | Total paid up share of Housing in Bihar | Total male and female members in Bihar | List Transport societies in Bihar with turnover > 10 lakhs | How many Labour societies are in Bihar? | District-wise count of societies in Bihar | Total turnover of all societies in Bihar | How many Multipurpose societies are in Bihar? | District-wise count of Miscellaneous in Bihar",
+    "payload_count": 17
+  },
+  {
+    "index": 23,
+    "module": "COOPERATIVE",
+    "theme": "Delhi",
+    "text": "Module: COOPERATIVE. Theme: Delhi. Terms: year, multistate, societies, delhi, registration. Example questions: Count multi-state societies in Delhi by registration year",
+    "payload_count": 1
+  },
+  {
+    "index": 24,
+    "module": "COOPERATIVE",
+    "theme": "Dairy",
+    "text": "Module: COOPERATIVE. Theme: Dairy. Terms: district, turnover, training, west, rajasthan, multi-state, madhya, pradesh, maharashtra, andhra, sector, bengal, cooperative, functional, kerala, uttar, dairy, gujarat, societies, bihar, building, punjab, office, telangana, registration. Example questions: How many Dairy societies have an office building? | How many Dairy societies are in West Bengal? | How many Dairy societies are in Gujarat? | District-wise count of Dairy in Uttar Pradesh | How many Dairy societies are in Maharashtra? | Total annual turnover of multi-state societies in the Dairy sector | District-wise count of Dairy in Kerala | List multi-state societies that are functional and in the Dairy sector | How many Dairy societies are in Punjab? | District-wise count of Dairy in Madhya Pradesh",
+    "payload_count": 22
+  },
+  {
+    "index": 25,
+    "module": "COOPERATIVE",
+    "theme": "Sericulture",
+    "text": "Module: COOPERATIVE. Theme: Sericulture. Terms: district, turnover, deposits, training, rajasthan, madhya, pradesh, andhra, west bengal, sericulture, cooperative, registrations, nadu, kerala, tamil, uttar, gujarat, societies, karnataka, building, haryana, punjab, office, telangana. Example questions: How many Sericulture societies are in Punjab? | How many Sericulture societies are in Haryana? | How many Sericulture societies are in Tamil Nadu? | How many Sericulture societies are in Telangana? | How many Sericulture societies are in Madhya Pradesh? | List Sericulture societies in Punjab with turnover > 10 lakhs | Show all Sericulture societies that provide training | Total deposits of Sericulture societies | List Sericulture societies in Andhra Pradesh with turnover > 10 lakhs | District-wise count of Sericulture in Gujarat",
+    "payload_count": 21
+  },
+  {
+    "index": 26,
+    "module": "COOPERATIVE",
+    "theme": "Pacs",
+    "text": "Module: COOPERATIVE. Theme: Pacs. Terms: tamil, punjab, district, turnover, pacs, societies, madhya, pradesh, maharashtra, chatbot, karnataka, bihar, haryana, tamilnadu, west bengal, cooperative, registrations, kerala. Example questions: List Chatbot Cooperative Pacs societies in Maharashtra with turnover > 10 lakhs | How many Chatbot Cooperative Pacs societies are in Tamil Nadu? | List Chatbot Cooperative Pacs societies in Bihar with turnover > 10 lakhs | District-wise count of Chatbot Cooperative Pacs in Kerala | List Chatbot Cooperative Pacs societies in Karnataka with turnover > 10 lakhs | How many Chatbot Cooperative Pacs societies are in Karnataka? | District-wise count of Chatbot Cooperative Pacs in Karnataka | List Chatbot Cooperative Pacs societies in Punjab with turnover > 10 lakhs | District-wise count of Chatbot Cooperative Pacs in Haryana | District-wise count of Chatbot Cooperative Pacs in Madhya Pradesh",
+    "payload_count": 12
+  },
+  {
+    "index": 27,
+    "module": "COOPERATIVE",
+    "theme": "Agriculture",
+    "text": "Module: COOPERATIVE. Theme: Agriculture. Terms: district, turnover, deposits, west, paid up, paid, rajasthan, maharashtra, madhya, pradesh, andhra, west bengal, bengal, cooperative, registrations, kerala, tamil, gujarat, agriculture, societies, karnataka, bihar, building, punjab, share, office, tamilnadu, registration. Example questions: District-wise count of Agriculture in Tamil Nadu | How many Agriculture societies are in Madhya Pradesh? | Total paid up share of Agriculture in West Bengal | Total paid up share of Agriculture in Bihar | List Agriculture societies in Tamil Nadu with turnover > 10 lakhs | How many Agriculture societies are in Gujarat? | How many Agriculture societies are in Kerala? | How many Agriculture societies are in Karnataka? | Total deposits of Agriculture societies | List Agriculture societies in Maharashtra with turnover > 10 lakhs",
+    "payload_count": 23
+  },
+  {
+    "index": 28,
+    "module": "COOPERATIVE",
+    "theme": "Education",
+    "text": "Module: COOPERATIVE. Theme: Education. Terms: turnover, training, west, education, paid, maharashtra, pradesh, madhya, bengal, cooperative, nadu, kerala, tamil, uttar, gujarat, societies, building, bihar, punjab, share, office. Example questions: Show all Education societies that provide training | How many Education societies are in Tamil Nadu? | Total paid up share of Education in Kerala | How many Education societies have an office building? | How many Education societies are in Uttar Pradesh? | Total paid up share of Education in Madhya Pradesh | How many Education societies are in Maharashtra? | How many Education societies are in Bihar? | List Education societies in Tamil Nadu with turnover > 10 lakhs | List Education societies in West Bengal with turnover > 10 lakhs",
+    "payload_count": 15
+  },
+  {
+    "index": 29,
+    "module": "COOPERATIVE",
+    "theme": "West Bengal",
+    "text": "Module: COOPERATIVE. Theme: West Bengal. Terms: transport, district, turnover, miscellaneous, societies, count, tourism, female, west bengal, cooperative, registrations, male. Example questions: District-wise count of Tourism in West Bengal | How many Miscellaneous societies are in West Bengal? | Total turnover of all societies in West Bengal | Total male and female members in West Bengal | How many Transport societies are in West Bengal?",
+    "payload_count": 5
+  },
+  {
+    "index": 30,
+    "module": "COOPERATIVE",
+    "theme": "Consumer",
+    "text": "Module: COOPERATIVE. Theme: Consumer. Terms: district, turnover, training, madhya, pradesh, maharashtra, andhra, cooperative, nadu, tamil, uttar, gujarat, societies, bihar, building, consumer, office, nad, registration. Example questions: How many Consumer societies are in Madhya Pradesh? | District-wise count of Consumer in Tamil Nadu | List Consumer societies in Madhya Pradesh with turnover > 10 lakhs | How many Consumer societies are in Tamil Nadu? | District-wise count of Consumer in Bihar | List Consumer societies in Bihar with turnover > 10 lakhs | District-wise count of Consumer in Uttar Pradesh | How many Consumer societies are in Bihar? | List Consumer societies in Uttar Pradesh with turnover > 10 lakhs | How many Consumer societies are in Uttar Pradesh?",
+    "payload_count": 16
+  },
+  {
+    "index": 31,
+    "module": "COOPERATIVE",
+    "theme": "Tamil",
+    "text": "Module: COOPERATIVE. Theme: Tamil. Terms: tamil, member, labour, transport, district, turnover, male, societies, members, multipurpose, female, education, cooperative, registrations, nadu. Example questions: List Labour societies in Tamil Nadu with turnover > 10 lakhs | District-wise count of Education in Tamil Nadu | Count of SC members in Tamil Nadu | List Multipurpose societies in Tamil Nadu with turnover > 10 lakhs | List Transport societies in Tamil Nadu with turnover > 10 lakhs | Count of ST members in Tamil Nadu | Total male and female members in Tamil Nadu",
+    "payload_count": 7
+  },
+  {
+    "index": 32,
+    "module": "COOPERATIVE",
+    "theme": "Social",
+    "text": "Module: COOPERATIVE. Theme: Social. Terms: punjab, uttar, district, pradesh, maharashtra, turnover, share, societies, karnataka, west, social, training, haryana, paid, telangana, bengal, cooperative, registration. Example questions: Total paid up share of Social in Uttar Pradesh | How many Social societies are in Uttar Pradesh? | List Social societies in Maharashtra with turnover > 10 lakhs | Total paid up share of Social in Punjab | Total paid up share of Social in Maharashtra | Show all Social societies that provide training | Total paid up share of Social in Karnataka | How many Social societies are in Karnataka? | How many Social societies are in Telangana? | How many Social societies are in West Bengal?",
+    "payload_count": 13
+  },
+  {
+    "index": 33,
+    "module": "COOPERATIVE",
+    "theme": "Bee",
+    "text": "Module: COOPERATIVE. Theme: Bee. Terms: district, turnover, deposits, training, paid, rajasthan, bee, pradesh, madhya, maharashtra, andhra, farming, cooperative, kerala, tamil, uttar, shares, societies, karnataka, building, bihar, punjab, share, office, nad, telangana. Example questions: Total deposits of Bee Farming societies | How many Bee Farming societies are in Telangana? | List Bee Farming societies in Telangana with turnover > 10 lakhs | How many Bee Farming societies are in Madhya Pradesh? | Total paid up share of Bee Farming in Karnataka | How many Bee Farming societies are in Uttar Pradesh? | Total paid up share of Bee Farming in Rajasthan | List Bee Farming societies in Uttar Pradesh with turnover > 10 lakhs | Total paid up share of Bee Farming in Kerala | Total paid up share of Bee Farming in Madhya Pradesh",
+    "payload_count": 20
+  },
+  {
+    "index": 34,
+    "module": "COOPERATIVE",
+    "theme": "Maharashtra",
+    "text": "Module: COOPERATIVE. Theme: Maharashtra. Terms: district, turnover, profit, society, paid, fishery, multi-state, maharashtra, housing, members, livestock, registered, processing, cooperative, registrations, labour, transport, miscellaneous, societies, multipurpose, share, consumer, registration. Example questions: List all profit making societies in Maharashtra | Count of ST members in Maharashtra | List Multipurpose societies in Maharashtra with turnover > 10 lakhs | List Chatbot Khadi Products societies in Maharashtra with turnover > 10 lakhs | How many Labour societies are in Maharashtra? | List Labour societies in Maharashtra with turnover > 10 lakhs | Total paid up share of Miscellaneous in Maharashtra | Count of societies in Maharashtra | List Transport societies in Maharashtra with turnover > 10 lakhs | List Consumer societies in Maharashtra with turnover > 10 lakhs",
+    "payload_count": 18
+  },
+  {
+    "index": 35,
+    "module": "COOPERATIVE",
+    "theme": "Khadi",
+    "text": "Module: COOPERATIVE. Theme: Khadi. Terms: district, turnover, deposits, products, training, west, paid, rajasthan, maharashtra, pradesh, madhya, andhra, khadi, lakhs, bengal, gram, cooperative, registrations, nadu, kerala, tamil, uttar, gujarat, societies, karnataka, chatbot, bihar, building, haryana, punjab, share, office, telangana, registration. Example questions: List Khadi Gram societies in Rajasthan with turnover > 10 lakhs | District-wise count of Khadi Gram in Punjab | Total paid up share of Khadi Gram in Bihar | List Khadi Gram societies in Tamil Nadu with turnover > 10 lakhs | List Chatbot Khadi Products societies in Tamil Nadu with turnover > 10 lakhs | How many Khadi Gram societies are in West Bengal? | How many Khadi Gram societies are in Punjab? | District-wise count of Khadi Gram in Telangana | How many Chatbot Khadi Products societies are in Bihar? | How many Khadi Gram societies are in Madhya Pradesh?",
+    "payload_count": 44
+  },
+  {
+    "index": 36,
+    "module": "COOPERATIVE",
+    "theme": "Andhra",
+    "text": "Module: COOPERATIVE. Theme: Andhra. Terms: district, products, education, housing, pradesh, bee, andhra, livestock, members, khadi, farming, cooperative, thrift, labour, miscellaneous, societies, chatbot, credit, share, social. Example questions: How many Housing societies are in Andhra Pradesh? | District-wise count of Chatbot Cooperative Credit Thrift in Andhra Pradesh | District-wise count of Credit Miscellaneous in Andhra Pradesh | Total paid up share of Labour in Andhra Pradesh | District-wise count of Livestock in Andhra Pradesh | District-wise count of Chatbot Khadi Products in Andhra Pradesh | District-wise count of Labour in Andhra Pradesh | District-wise count of Education in Andhra Pradesh | Count of SC members in Andhra Pradesh | District-wise count of societies in Andhra Pradesh",
+    "payload_count": 13
+  },
+  {
+    "index": 37,
+    "module": "COOPERATIVE",
+    "theme": "Andhra Pradesh",
+    "text": "Module: COOPERATIVE. Theme: Andhra Pradesh. Terms: labour, miscellaneous, andhra pradesh, turnover, consumer societies, societies, members, credit, paid up share, multipurpose, female, labour societies, processing, education, cooperative, thrift, registrations, male. Example questions: How many Multipurpose societies are in Andhra Pradesh? | How many Education societies are in Andhra Pradesh? | How many Miscellaneous societies are in Andhra Pradesh? | Count of ST members in Andhra Pradesh | List Consumer societies in Andhra Pradesh with turnover > 10 lakhs | Total turnover of all societies in Andhra Pradesh | How many Processing societies are in Andhra Pradesh? | Total male and female members in Andhra Pradesh | List Labour societies in Andhra Pradesh with turnover > 10 lakhs | How many Labour societies are in Andhra Pradesh?",
+    "payload_count": 14
+  },
+  {
+    "index": 38,
+    "module": "COOPERATIVE",
+    "theme": "Credit",
+    "text": "Module: COOPERATIVE. Theme: Credit. Terms: turnover, deposits, training, paid, multistate, multi-state, pradesh, madhya, maharashtra, andhra, status, sector, cooperative, thrift, functional, nadu, tamil, miscellaneous, societies, karnataka, building, haryana, credit, share, office, telangana. Example questions: How many Credit Miscellaneous societies are in Madhya Pradesh? | Total members in multi-state Credit societies in Karnataka | List Credit Miscellaneous societies in Madhya Pradesh with turnover > 10 lakhs | Count multi-state societies in the Credit sector by functional status | Total paid up share of Credit Miscellaneous in Andhra Pradesh | How many Credit Miscellaneous societies are in Haryana? | List Credit Miscellaneous societies in Maharashtra with turnover > 10 lakhs | How many Credit Miscellaneous societies are in Telangana? | How many Chatbot Cooperative Credit Thrift societies have an office building? | Total paid up share of Credit Miscellaneous in Tamil Nadu",
+    "payload_count": 19
+  },
+  {
+    "index": 39,
+    "module": "COOPERATIVE",
+    "theme": "Kerala",
+    "text": "Module: COOPERATIVE. Theme: Kerala. Terms: member, district, turnover, profit, tourism, female, education, paid, fishery, handicraft, housing, multi-state, members, processing, cooperative, registrations, kerala, labour, transport, male, miscellaneous, societies, multipurpose, land, operating, credit, share, women, social, central, registration. Example questions: Count of SC members in Kerala | How many Processing societies are in Kerala? | How many Tourism societies are in Kerala? | Total turnover of all societies in Kerala | List Chatbot Cooperative Land societies in Kerala with turnover > 10 lakhs | Count of ST members in Kerala | List Women Cooperative societies in Kerala with turnover > 10 lakhs | List Tourism societies in Kerala with turnover > 10 lakhs | List Labour societies in Kerala with turnover > 10 lakhs | District-wise count of Processing in Kerala",
+    "payload_count": 28
+  },
+  {
+    "index": 40,
+    "module": "COOPERATIVE",
+    "theme": "Telangana",
+    "text": "Module: COOPERATIVE. Theme: Telangana. Terms: district, turnover, profit, tourism, society, paid, marketing, housing, members, processing, cooperative, thrift, registrations, labour, transport, miscellaneous, societies, cooperatie, tribal, credit, share, telangana, registration. Example questions: List Chatbot Cooperative Credit Thrift societies in Telangana with turnover > 10 lakhs | District-wise count of Chatbot Cooperative Credit Thrift in Telangana | Total paid up share of Labour in Telangana | District-wise count of Transport in Telangana | List Transport societies in Telangana with turnover > 10 lakhs | How many Tribal societies are in Telangana? | Count of SC members in Telangana | How many Tourism societies are in Telangana? | How many Miscellaneous societies are in Telangana? | Count of ST members in Telangana",
+    "payload_count": 21
+  },
+  {
+    "index": 41,
+    "module": "COOPERATIVE",
+    "theme": "Mscs",
+    "text": "Module: COOPERATIVE. Theme: Mscs. Terms: multi, district, turnover, profit, west, block, himachal, fishery, rajasthan, maharashtra, pradesh, person, madhya, count, status, members, mobile, andhra, sector, livestock, jammu, kashmir, cooperatives, operate, bengal, cooperative, registrations, functional, loss, kerala, tamil, uttar, authority, gujarat, dairy, purpose, karnataka, bihar, mscs, annual, haryana, delhi, punjab, operating, contact, sugar, telangana, tamilnadu, jute, registration. Example questions: Total annual loss of MSCS in Uttar Pradesh | Show email and mobile of functional MSCS in Bihar | List registration authority-wise count of MSCS | Show the district and block of MSCS in the Multi Purpose sector | List all functional MSCS with turnover > 0 | Average annual profit of MSCS in the Multi Purpose sector | Total members in MSCS in Bihar | Which MSCS are located in Kerala? | How many MSCS have annual turnover between 50 lakhs and 1 crore? | How many MSCS are profit making and functional?",
+    "payload_count": 34
+  },
+  {
+    "index": 42,
+    "module": "COOPERATIVE",
+    "theme": "Members",
+    "text": "Module: COOPERATIVE. Theme: Members. Terms: uttar, madhya, pradesh, multi-state, societies, members, cooperative. Example questions: Total number of members in multi-state societies in Uttar Pradesh | Count of SC members in Madhya Pradesh",
+    "payload_count": 2
+  },
+  {
+    "index": 43,
+    "module": "COOPERATIVE",
+    "theme": "Male",
+    "text": "Module: COOPERATIVE. Theme: Male. Terms: maharashtra, members, female, cooperatives, cooperative, registrations, male. Example questions: Total male and female members in Maharashtra | Total male members in cooperatives",
+    "payload_count": 2
+  },
+  {
+    "index": 44,
+    "module": "COOPERATIVE",
+    "theme": "District",
+    "text": "Module: COOPERATIVE. Theme: District. Terms: district, west, education, marketing, rajasthan, maharashtra, madhya, pradesh, housing, andhra, processing, bengal, cooperative, thrift, registrations, tamil, uttar, miscellaneous, cooperatie, societies, multipurpose, bihar, haryana, punjab, land, credit, social, nad, registration. Example questions: District-wise count of Credit Miscellaneous in Rajasthan | District-wise count of Processing in Uttar Pradesh | District-wise count of Housing in Tamil Nadu | District-wise count of Miscellaneous in Uttar Pradesh | District-wise count of Processing in Haryana | District-wise count of Chatbot Cooperative Land in Bihar | District-wise count of Processing in Andhra Pradesh | District-wise count of Processing in West Bengal | District-wise count of societies in Rajasthan | District-wise count of societies in West Bengal",
+    "payload_count": 22
+  },
+  {
+    "index": 45,
+    "module": "COOPERATIVE",
+    "theme": "Housing",
+    "text": "Module: COOPERATIVE. Theme: Housing. Terms: turnover, training, west, paid, rajasthan, housing, madhya, pradesh, andhra, bengal, cooperative, nadu, kerala, tamil, uttar, societies, karnataka, building, share, office, telangana, registration. Example questions: Total paid up share of Housing in Kerala | Show all Housing societies that provide training | Total paid up share of Housing in Andhra Pradesh | How many Housing societies are in Karnataka? | How many Housing societies are in Rajasthan? | How many Housing societies have an office building? | Total paid up share of Housing in Rajasthan | How many Housing societies are in Tamil Nadu? | How many Housing societies are in West Bengal? | List Housing societies in Uttar Pradesh with turnover > 10 lakhs",
+    "payload_count": 13
+  },
+  {
+    "index": 46,
+    "module": "COOPERATIVE",
+    "theme": "Processing",
+    "text": "Module: COOPERATIVE. Theme: Processing. Terms: tamil, uttar, madhya, pradesh, turnover, societies, processing, telangana, nadu. Example questions: List Processing societies in Madhya Pradesh with turnover > 10 lakhs | How many Processing societies are in Telangana? | How many Processing societies are in Tamil Nadu? | List Processing societies in Uttar Pradesh with turnover > 10 lakhs",
+    "payload_count": 4
+  },
+  {
+    "index": 47,
+    "module": "COOPERATIVE",
+    "theme": "Women",
+    "text": "Module: COOPERATIVE. Theme: Women. Terms: madhya, pradesh, societies, women, west, bengal, cooperative, rajasthan. Example questions: How many Women Cooperative societies are in Rajasthan? | How many Women Cooperative societies are in Madhya Pradesh? | How many Women Cooperative societies are in West Bengal?",
+    "payload_count": 3
+  },
+  {
+    "index": 48,
+    "module": "COOPERATIVE",
+    "theme": "Coastal",
+    "text": "Module: COOPERATIVE. Theme: Coastal. Terms: societies, cooperatives, multi-state, coastal. Example questions: How many multi-state societies are coastal cooperatives?",
+    "payload_count": 1
+  },
+  {
+    "index": 49,
+    "module": "COOPERATIVE",
+    "theme": "Liquidation",
+    "text": "Module: COOPERATIVE. Theme: Liquidation. Terms: societies, liquidation, multistate. Example questions: List of multi-state societies which are under liquidation",
+    "payload_count": 1
+  },
+  {
+    "index": 50,
+    "module": "COOPERATIVE",
+    "theme": "Karnataka",
+    "text": "Module: COOPERATIVE. Theme: Karnataka. Terms: member, district, turnover, profit, products, female, paid, members, khadi, processing, gram, cooperative, registrations, labour, transport, miscellaneous, male, societies, karnataka, multipurpose, credit, share, women, registration. Example questions: How many Multipurpose societies are in Karnataka? | Total turnover of all societies in Karnataka | How many Transport societies are in Karnataka? | List all profit making societies in Karnataka | How many Miscellaneous societies are in Karnataka? | Total male and female members in Karnataka | Total paid up share of Credit Miscellaneous in Karnataka | How many Credit Miscellaneous societies are in Karnataka? | District-wise count of Khadi Gram in Karnataka | District-wise count of societies in Karnataka",
+    "payload_count": 18
+  },
+  {
+    "index": 51,
+    "module": "COOPERATIVE",
+    "theme": "Dividends",
+    "text": "Module: COOPERATIVE. Theme: Dividends. Terms: societies, dividends, cooperative, multi-state. Example questions: How many multi-state societies have paid dividends?",
+    "payload_count": 1
+  },
+  {
+    "index": 52,
+    "module": "COOPERATIVE",
+    "theme": "Deposits",
+    "text": "Module: COOPERATIVE. Theme: Deposits. Terms: labour, transport, miscellaneous, deposits, housing, societies, credit, consumer, dairy, multipurpose, social, education, cooperative, thrift, registrations, registration. Example questions: Total deposits of Labour societies | Total deposits of Consumer societies | Total deposits of Chatbot Cooperative Credit Thrift societies | Total deposits of Dairy societies | Total deposits of Social societies | Total deposits of Miscellaneous societies | Total deposits of Housing societies | Total deposits of Transport societies | Total deposits of Education societies | Total deposits of Multipurpose societies",
+    "payload_count": 10
+  },
+  {
+    "index": 53,
+    "module": "COOPERATIVE",
+    "theme": "Cooperatie",
+    "text": "Module: COOPERATIVE. Theme: Cooperatie. Terms: district, pradesh, turnover, cooperatie, societies, andhra, karnataka, west, bihar, haryana, marketing, bengal, registration. Example questions: List Chatbot Cooperatie Registration Marketing societies in Andhra Pradesh with turnover > 10 lakhs | List Chatbot Cooperatie Registration Marketing societies in Karnataka with turnover > 10 lakhs | List Chatbot Cooperatie Registration Marketing societies in Bihar with turnover > 10 lakhs | District-wise count of Chatbot Cooperatie Registration Marketing in Haryana | List Chatbot Cooperatie Registration Marketing societies in West Bengal with turnover > 10 lakhs",
+    "payload_count": 5
+  },
+  {
+    "index": 54,
+    "module": "COOPERATIVE",
+    "theme": "Training",
+    "text": "Module: COOPERATIVE. Theme: Training. Terms: miscellaneous, societies, training, cooperative, registration. Example questions: Show all Miscellaneous societies that provide training",
+    "payload_count": 1
+  },
+  {
+    "index": 55,
+    "module": "COOPERATIVE",
+    "theme": "General",
+    "text": "Module: COOPERATIVE. Theme: General. Terms: . Example questions: How many Ucb societies are in Haryana? | How many Agriculture societies are in Maharashtra? | Total paid up share of Handloom in Uttar Pradesh | Show me multi-state societies operating in Maharashtra | How many Sericulture societies are in Kerala? | Count of ST members in Haryana | List Social societies in Telangana with turnover > 10 lakhs | List Dairy societies in Punjab with turnover > 10 lakhs | Show all Processing societies that provide training | District-wise count of Agriculture in Rajasthan",
+    "payload_count": 71
+  },
+  {
+    "index": 56,
+    "module": "COOPERATIVE",
+    "theme": "Iffco",
+    "text": "Module: COOPERATIVE. Theme: Iffco. Terms: multi-state, cooperatives, states, iffco, operation. Example questions: What are the states of operation for 'IFFCO'?",
+    "payload_count": 1
+  },
+  {
+    "index": 57,
+    "module": "COOPERATIVE",
+    "theme": "Madhya",
+    "text": "Module: COOPERATIVE. Theme: Madhya. Terms: madhya, pradesh, profit, societies, miscellaneous, multipurpose, social, female, cooperative, male. Example questions: List all profit making societies in Madhya Pradesh | Total male and female members in Madhya Pradesh | How many Miscellaneous societies are in Madhya Pradesh? | How many Social societies are in Madhya Pradesh? | Count of ST members in Madhya Pradesh | How many Multipurpose societies are in Madhya Pradesh?",
+    "payload_count": 6
+  },
+  {
+    "index": 58,
+    "module": "COOPERATIVE",
+    "theme": "Rajasthan",
+    "text": "Module: COOPERATIVE. Theme: Rajasthan. Terms: registration, member, bee, district, turnover, credit, societies, female, farming, cooperative, thrift, rajasthan, male. Example questions: Count of ST members in Rajasthan | District-wise count of Bee Farming in Rajasthan | Count of SC members in Rajasthan | List Chatbot Cooperative Credit Thrift societies in Rajasthan with turnover > 10 lakhs | Total male and female members in Rajasthan",
+    "payload_count": 5
+  },
+  {
+    "index": 59,
+    "module": "COOPERATIVE",
+    "theme": "Pincode",
+    "text": "Module: COOPERATIVE. Theme: Pincode. Terms: address, punjab, uttar, gujarat, pradesh, societies, mscs, pincode, functional. Example questions: Show pincode and address of multi-state societies in Gujarat | Show the pincode of functional MSCS in Uttar Pradesh | Show pincode and address of MSCS in Punjab",
+    "payload_count": 3
+  },
+  {
+    "index": 60,
+    "module": "COOPERATIVE",
+    "theme": "Land",
+    "text": "Module: COOPERATIVE. Theme: Land. Terms: land, madhya, turnover, societies, office, building, cooperative. Example questions: How many Chatbot Cooperative Land societies have an office building? | List Chatbot Cooperative Land societies in Madhya Pradesh with turnover > 10 lakhs",
+    "payload_count": 2
+  },
+  {
+    "index": 61,
+    "module": "COOPERATIVE",
+    "theme": "Contact",
+    "text": "Module: COOPERATIVE. Theme: Contact. Terms: societies, contact, multi-state, karnataka. Example questions: Who is the contact person for multi-state societies in Karnataka?",
+    "payload_count": 1
+  },
+  {
+    "index": 62,
+    "module": "COOPERATIVE",
+    "theme": "Profit",
+    "text": "Module: COOPERATIVE. Theme: Profit. Terms: multi-state, profit, societies, cooperative, functional. Example questions: Total profit of functional multi-state societies | Show me profit making multi-state societies",
+    "payload_count": 2
+  },
+  {
+    "index": 63,
+    "module": "COOPERATIVE",
+    "theme": "Share",
+    "text": "Module: COOPERATIVE. Theme: Share. Terms: tamil, miscellaneous, share, karnataka, education, paid, processing, haryana, cooperative, rajasthan, nadu. Example questions: Total paid up share of Processing in Tamil Nadu | Total paid up share of Miscellaneous in Tamil Nadu | Total paid up share of Education in Tamil Nadu | Total paid up share of Education in Haryana | Total paid up share of Processing in Karnataka | Total paid up share of Education in Rajasthan",
+    "payload_count": 6
+  },
+  {
+    "index": 64,
+    "module": "COOPERATIVE",
+    "theme": "Campco",
+    "text": "Module: COOPERATIVE. Theme: Campco. Terms: campco, contact, person. Example questions: Who is the contact person for 'Campco'?",
+    "payload_count": 1
+  },
+  {
+    "index": 65,
+    "module": "COOPERATIVE",
+    "theme": "Odisha",
+    "text": "Module: COOPERATIVE. Theme: Odisha. Terms: operating, multi-state, societies, chhattisgarh, odisha, cooperatives. Example questions: Show me multi-state societies operating in Odisha | List multi-state societies operating in Odisha and Chhattisgarh",
+    "payload_count": 2
+  },
+  {
+    "index": 66,
+    "module": "COOPERATIVE",
+    "theme": "Shares",
+    "text": "Module: COOPERATIVE. Theme: Shares. Terms: miscellaneous, shares, credit, paid, cooperative, rajasthan. Example questions: Total paid up share of Miscellaneous in Rajasthan | Total paid up share of Credit Miscellaneous in Rajasthan",
+    "payload_count": 2
+  },
+  {
+    "index": 67,
+    "module": "COOPERATIVE",
+    "theme": "Assam",
+    "text": "Module: COOPERATIVE. Theme: Assam. Terms: operating, multi-state, societies, cooperatives, assam. Example questions: List multi-state societies operating in Assam",
+    "payload_count": 1
+  },
+  {
+    "index": 68,
+    "module": "COOPERATIVE",
+    "theme": "Sector",
+    "text": "Module: COOPERATIVE. Theme: Sector. Terms: multi-state, societies, sector, cooperative, operation. Example questions: Count multi-state societies by sector of operation",
+    "payload_count": 1
+  },
+  {
+    "index": 69,
+    "module": "COOPERATIVE",
+    "theme": "Districts",
+    "text": "Module: COOPERATIVE. Theme: Districts. Terms: members, cooperative, transgender, districts, registrations. Example questions: Districts with more than 1000 transgender members",
+    "payload_count": 1
+  },
+  {
+    "index": 70,
+    "module": "COOPERATIVE",
+    "theme": "Msme",
+    "text": "Module: COOPERATIVE. Theme: Msme. Terms: cooperatives, msme. Example questions: How many MSME cooperatives are there?",
+    "payload_count": 1
+  },
+  {
+    "index": 71,
+    "module": "COOPERATIVE",
+    "theme": "Nafed",
+    "text": "Module: COOPERATIVE. Theme: Nafed. Terms: cooperative, contact, person, nafed. Example questions: Who is the contact person for 'NAFED'?",
+    "payload_count": 1
+  },
+  {
+    "index": 72,
+    "module": "COOPERATIVE",
+    "theme": "Miscellaneous",
+    "text": "Module: COOPERATIVE. Theme: Miscellaneous. Terms: societies, rajasthan, miscellaneous. Example questions: How many Miscellaneous societies are in Rajasthan?",
+    "payload_count": 1
+  },
+  {
+    "index": 73,
+    "module": "COOPERATIVE",
+    "theme": "Turnover",
+    "text": "Module: COOPERATIVE. Theme: Turnover. Terms: societies, functional, multi-state, turnover. Example questions: Average turnover of functional societies | Total turnover of all multi-state societies",
+    "payload_count": 2
+  },
+  {
+    "index": 74,
+    "module": "COOPERATIVE",
+    "theme": "Female",
+    "text": "Module: COOPERATIVE. Theme: Female. Terms: members, female, cooperatives. Example questions: Total female members in cooperatives",
+    "payload_count": 1
+  },
+  {
+    "index": 75,
+    "module": "COOPERATIVE",
+    "theme": "Registrations",
+    "text": "Module: COOPERATIVE. Theme: Registrations. Terms: societies, registrations, telangana, multistate. Example questions: List registration numbers of multi-state societies in Telangana",
+    "payload_count": 1
+  },
+  {
+    "index": 76,
+    "module": "GP_COVERAGE",
+    "theme": "Gps",
+    "text": "Module: GP_COVERAGE. Theme: Gps. Terms: belagavi, pune, district, gps, handloom, ludhiana, hisar, nagpur, jodhpur, pare, faridabad, coverage, pacs, fishery, rajasthan, kanpur, coimbatore, maharashtra, pradesh, bengaluru, arunachal, sector, full, villages, chennai, tawang, madurai, nadu, covered, tamil, gaya, mysore, uttar, dairy, jaipur, agriculture, multi-purpose, surat, karnataka, bihar, amritsar, blocks, sectors, haryana, udaipur, bharuch, patna, districts, patiala, lohit, muzaffarpur, ahmedabad, nashik, non-covered, credit, lucknow, vadodara, areas, gurugram, varanasi, papum. Example questions: Give me list of covered GPs in muzaffarpur district in Agriculture sector | List non-covered GPs in kanpur for Dairy | List non-covered GPs in pune for Fishery | List non-covered GPs in amritsar for Fishery | List non-covered GPs in jaipur for Multi-purpose | Give me list of covered GPs in jodhpur district in Multi-purpose sector | Give me list of covered GPs in bharuch district in Credit sector | How many full covered GPs are there in bharuch for Agriculture? | List non-covered GPs in jaipur for Credit | How many full covered GPs are there in surat for Multi-purpose?",
+    "payload_count": 507
+  },
+  {
+    "index": 77,
+    "module": "GP_COVERAGE",
+    "theme": "Pacs",
+    "text": "Module: GP_COVERAGE. Theme: Pacs. Terms: belagavi, pune, ludhiana, faridabad, coverage, pacs, bengaluru, villages, chennai, gram, madurai, mysore, panchayats, surat, amritsar, blocks, udaipur, bharuch, patna, lohit, patiala, muzaffarpur, ahmedabad, nashik, lucknow, areas, varanasi. Example questions: List partially covered Gram Panchayats in lucknow for PACS | List partially covered Gram Panchayats in lohit for PACS | List partially covered Gram Panchayats in chennai for PACS | List partially covered Gram Panchayats in ahmedabad for PACS | Show me coverage details for all blocks in chennai for PACS | List partially covered Gram Panchayats in nashik for PACS | List partially covered Gram Panchayats in mysore for PACS | List partially covered Gram Panchayats in bengaluru for PACS | List partially covered Gram Panchayats in patna for PACS | List partially covered Gram Panchayats in faridabad for PACS",
+    "payload_count": 23
+  },
+  {
+    "index": 78,
+    "module": "GP_COVERAGE",
+    "theme": "Muzaffarpur",
+    "text": "Module: GP_COVERAGE. Theme: Muzaffarpur. Terms: coverage, dairy, panchayats, sector, full, blocks, villages, pacs, fishery, muzaffarpur. Example questions: How many full covered GPs are there in muzaffarpur for Dairy? | Show me coverage details for all blocks in muzaffarpur for Dairy | List non-covered GPs in muzaffarpur for Fishery | Show me coverage details for all blocks in muzaffarpur for PACS | List partially covered Gram Panchayats in muzaffarpur for Dairy | Give me list of covered GPs in muzaffarpur district in PACS sector",
+    "payload_count": 6
+  },
+  {
+    "index": 79,
+    "module": "GP_COVERAGE",
+    "theme": "Gram",
+    "text": "Module: GP_COVERAGE. Theme: Gram. Terms: multi, belagavi, pune, ludhiana, handloom, hisar, nagpur, jodhpur, pare, faridabad, coverage, fishery, pacs, kanpur, coimbatore, partially, bengaluru, villages, chennai, tawang, gram, madurai, thane, covered, gaya, mysore, dairy, jaipur, agriculture, panchayats, multi-purpose, purpose, surat, amritsar, udaipur, bharuch, patna, lohit, patiala, muzaffarpur, ahmedabad, nashik, vadodara, credit, lucknow, areas, gurugram, varanasi, papum. Example questions: List partially covered Gram Panchayats in belagavi for Dairy | List partially covered Gram Panchayats in nagpur for Multi-purpose | List partially covered Gram Panchayats in bharuch for Agriculture | List partially covered Gram Panchayats in nagpur for Fishery | List partially covered Gram Panchayats in papum pare for Credit | List partially covered Gram Panchayats in udaipur for Credit | List partially covered Gram Panchayats in thane for Multi-purpose | List partially covered Gram Panchayats in patiala for Agriculture | List partially covered Gram Panchayats in hisar for Agriculture | List partially covered Gram Panchayats in tawang for Multi-purpose",
+    "payload_count": 164
+  },
+  {
+    "index": 80,
+    "module": "GP_COVERAGE",
+    "theme": "Gurugram",
+    "text": "Module: GP_COVERAGE. Theme: Gurugram. Terms: districts, gps, pacs, credit, panchayats, dairy, handloom, multi-purpose, agriculture, sector, blocks, sectors, villages, gurugram, coverage, fishery. Example questions: Show me coverage details for all blocks in gurugram for Handloom | List non-covered GPs in gurugram for Credit | Show me coverage details for all blocks in gurugram for PACS | How many full covered GPs are there in gurugram for Handloom? | Show me coverage details for all blocks in gurugram for Agriculture | Give me list of covered GPs in gurugram district in Handloom sector | List non-covered GPs in gurugram for Handloom | Show me coverage details for all blocks in gurugram for Dairy | Show me coverage details for all blocks in gurugram for Credit | Show me coverage details for all blocks in gurugram for Multi-purpose",
+    "payload_count": 19
+  },
+  {
+    "index": 81,
+    "module": "GP_COVERAGE",
+    "theme": "Dairy",
+    "text": "Module: GP_COVERAGE. Theme: Dairy. Terms: faridabad, dairy, vadodara, panchayats, bengaluru, blocks, villages, chennai, coverage. Example questions: How many full covered GPs are there in vadodara for Dairy? | List partially covered Gram Panchayats in chennai for Dairy | Show me coverage details for all blocks in vadodara for Dairy | How many full covered GPs are there in bengaluru for Dairy? | List partially covered Gram Panchayats in faridabad for Dairy | How many full covered GPs are there in chennai for Dairy?",
+    "payload_count": 6
+  },
+  {
+    "index": 82,
+    "module": "GP_COVERAGE",
+    "theme": "Ahmedabad",
+    "text": "Module: GP_COVERAGE. Theme: Ahmedabad. Terms: ahmedabad, districts, handloom, gps, agriculture, dairy, pacs, blocks, villages, coverage, fishery. Example questions: Show me coverage details for all blocks in ahmedabad for Fishery | List non-covered GPs in ahmedabad for Dairy | List non-covered GPs in ahmedabad for Agriculture | Show me coverage details for all blocks in ahmedabad for Handloom | Show me coverage details for all blocks in ahmedabad for Agriculture | Show me coverage details for all blocks in ahmedabad for Dairy | Show me coverage details for all blocks in ahmedabad for PACS | How many full covered GPs are there in ahmedabad for Dairy? | List non-covered GPs in ahmedabad for Handloom",
+    "payload_count": 9
+  },
+  {
+    "index": 83,
+    "module": "GP_COVERAGE",
+    "theme": "Fishery",
+    "text": "Module: GP_COVERAGE. Theme: Fishery. Terms: panchayats, blocks, villages, chennai, coverage, fishery. Example questions: Show me coverage details for all blocks in chennai for Fishery | List partially covered Gram Panchayats in chennai for Fishery",
+    "payload_count": 2
+  },
+  {
+    "index": 84,
+    "module": "GP_COVERAGE",
+    "theme": "Coverage",
+    "text": "Module: GP_COVERAGE. Theme: Coverage. Terms: belagavi, pune, ludhiana, handloom, hisar, jodhpur, pare, faridabad, coverage, fishery, pacs, kanpur, coimbatore, bengaluru, full, villages, chennai, tawang, madurai, gram, gaya, mysore, dairy, jaipur, agriculture, panchayats, multi-purpose, surat, multipurpose, amritsar, blocks, bharuch, patna, districts, lohit, patiala, muzaffarpur, ahmedabad, nashik, credit, lucknow, vadodara, varanasi, papum. Example questions: Show me coverage details for all blocks in pune for Multi-purpose | List non-covered GPs in coimbatore for Fishery | Show me coverage details for all blocks in vadodara for Multi-purpose | Show me coverage details for all blocks in tawang for Multi-purpose | Show me coverage details for all blocks in chennai for Credit | How many full covered GPs are there in muzaffarpur for Agriculture? | Show me coverage details for all blocks in mysore for Credit | Show me coverage details for all blocks in ludhiana for Fishery | Show me coverage details for all blocks in ludhiana for Multi-purpose | Show me coverage details for all blocks in jaipur for Credit",
+    "payload_count": 110
+  },
+  {
+    "index": 85,
+    "module": "GP_COVERAGE",
+    "theme": "Thane",
+    "text": "Module: GP_COVERAGE. Theme: Thane. Terms: district, gps, handloom, coverage, pacs, fishery, sector, villages, thane, covered, dairy, agriculture, panchayats, multi-purpose, blocks, sectors, districts, non-covered, credit, areas. Example questions: Show me coverage details for all blocks in thane for Dairy | Give me list of covered GPs in thane district in Handloom sector | List partially covered Gram Panchayats in thane for Dairy | How many full covered GPs are there in thane for PACS? | How many full covered GPs are there in thane for Fishery? | List non-covered GPs in thane for Dairy | Give me list of covered GPs in thane district in Credit sector | Give me list of covered GPs in thane district in Multi-purpose sector | Show me coverage details for all blocks in thane for Agriculture | Show me coverage details for all blocks in thane for Credit",
+    "payload_count": 27
+  },
+  {
+    "index": 86,
+    "module": "GP_COVERAGE",
+    "theme": "Nashik",
+    "text": "Module: GP_COVERAGE. Theme: Nashik. Terms: nashik, handloom, pacs, blocks, villages, coverage. Example questions: Show me coverage details for all blocks in nashik for PACS | Show me coverage details for all blocks in nashik for Handloom",
+    "payload_count": 2
+  },
+  {
+    "index": 87,
+    "module": "GP_COVERAGE",
+    "theme": "Nagpur",
+    "text": "Module: GP_COVERAGE. Theme: Nagpur. Terms: handloom, pacs, dairy, credit, agriculture, nagpur, multipurpose, full, blocks, villages, coverage, fishery. Example questions: Show me coverage details for all blocks in nagpur for Fishery | Show me coverage details for all blocks in nagpur for Agriculture | How many full covered GPs are there in nagpur for Dairy? | How many full covered GPs are there in nagpur for PACS? | Show me coverage details for all blocks in nagpur for Multi-purpose | Show me coverage details for all blocks in nagpur for Handloom | Show me coverage details for all blocks in nagpur for PACS | Show me coverage details for all blocks in nagpur for Credit | Show me coverage details for all blocks in nagpur for Dairy",
+    "payload_count": 9
+  },
+  {
+    "index": 88,
+    "module": "GP_COVERAGE",
+    "theme": "Amritsar",
+    "text": "Module: GP_COVERAGE. Theme: Amritsar. Terms: handloom, pacs, dairy, multipurpose, sector, amritsar, blocks, villages, coverage. Example questions: Show me coverage details for all blocks in amritsar for Multi-purpose | Show me coverage details for all blocks in amritsar for Dairy | Give me list of covered GPs in amritsar district in PACS sector | Show me coverage details for all blocks in amritsar for PACS | Show me coverage details for all blocks in amritsar for Handloom",
+    "payload_count": 5
+  },
+  {
+    "index": 89,
+    "module": "GP_COVERAGE",
+    "theme": "Madurai",
+    "text": "Module: GP_COVERAGE. Theme: Madurai. Terms: coverage, district, dairy, pacs, handloom, panchayats, multi-purpose, sector, blocks, villages, madurai, fishery. Example questions: Give me list of covered GPs in madurai district in Dairy sector | Show me coverage details for all blocks in madurai for Dairy | Show me coverage details for all blocks in madurai for PACS | Give me list of covered GPs in madurai district in PACS sector | How many full covered GPs are there in madurai for Dairy? | List partially covered Gram Panchayats in madurai for Dairy | Show me coverage details for all blocks in madurai for Fishery | Show me coverage details for all blocks in madurai for Handloom | Show me coverage details for all blocks in madurai for Multi-purpose",
+    "payload_count": 9
+  },
+  {
+    "index": 90,
+    "module": "GP_COVERAGE",
+    "theme": "Pune",
+    "text": "Module: GP_COVERAGE. Theme: Pune. Terms: pune, district, dairy, sector, full, blocks, villages, coverage. Example questions: List non-covered GPs in pune for Dairy | Show me coverage details for all blocks in pune for Dairy | How many full covered GPs are there in pune for Dairy? | Give me list of covered GPs in pune district in Dairy sector",
+    "payload_count": 4
+  },
+  {
+    "index": 91,
+    "module": "GP_COVERAGE",
+    "theme": "Handloom",
+    "text": "Module: GP_COVERAGE. Theme: Handloom. Terms: pune, handloom, faridabad, coverage, kanpur, bengaluru, villages, chennai, gaya, mysore, jaipur, panchayats, blocks, bharuch, patna, patiala, lohit, muzaffarpur, lucknow, vadodara. Example questions: Show me coverage details for all blocks in bengaluru for Handloom | Show me coverage details for all blocks in jaipur for Handloom | Show me coverage details for all blocks in chennai for Handloom | Show me coverage details for all blocks in patna for Handloom | Show me coverage details for all blocks in gaya for Handloom | Show me coverage details for all blocks in patiala for Handloom | Show me coverage details for all blocks in muzaffarpur for Handloom | Show me coverage details for all blocks in mysore for Handloom | Show me coverage details for all blocks in pune for Handloom | List partially covered Gram Panchayats in faridabad for Handloom",
+    "payload_count": 15
+  },
+  {
+    "index": 92,
+    "module": "GP_COVERAGE",
+    "theme": "Faridabad",
+    "text": "Module: GP_COVERAGE. Theme: Faridabad. Terms: districts, dairy, gps, pacs, multi-purpose, blocks, villages, faridabad, coverage, fishery. Example questions: Show me coverage details for all blocks in faridabad for Multi-purpose | List non-covered GPs in faridabad for Dairy | How many full covered GPs are there in faridabad for Dairy? | Show me coverage details for all blocks in faridabad for Fishery | Show me coverage details for all blocks in faridabad for Dairy | Show me coverage details for all blocks in faridabad for PACS",
+    "payload_count": 6
+  },
+  {
+    "index": 93,
+    "module": "GP_COVERAGE",
+    "theme": "Bharuch",
+    "text": "Module: GP_COVERAGE. Theme: Bharuch. Terms: district, dairy, pacs, agriculture, panchayats, sector, full, blocks, villages, bharuch, coverage. Example questions: How many full covered GPs are there in bharuch for PACS? | Give me list of covered GPs in bharuch district in Dairy sector | Give me list of covered GPs in bharuch district in PACS sector | Show me coverage details for all blocks in bharuch for PACS | List partially covered Gram Panchayats in bharuch for Dairy | How many full covered GPs are there in bharuch for Dairy? | Give me list of covered GPs in bharuch district in Agriculture sector | Show me coverage details for all blocks in bharuch for Dairy",
+    "payload_count": 8
+  },
+  {
+    "index": 94,
+    "module": "GP_COVERAGE",
+    "theme": "Udaipur",
+    "text": "Module: GP_COVERAGE. Theme: Udaipur. Terms: dairy, pacs, agriculture, panchayats, credit, handloom, multi-purpose, full, blocks, villages, udaipur, coverage, fishery. Example questions: Show me coverage details for all blocks in udaipur for Agriculture | Show me coverage details for all blocks in udaipur for Dairy | Show me coverage details for all blocks in udaipur for Multi-purpose | Show me coverage details for all blocks in udaipur for PACS | Show me coverage details for all blocks in udaipur for Credit | How many full covered GPs are there in udaipur for Dairy? | Show me coverage details for all blocks in udaipur for Handloom | List partially covered Gram Panchayats in udaipur for Dairy | Show me coverage details for all blocks in udaipur for Fishery | How many full covered GPs are there in udaipur for PACS?",
+    "payload_count": 11
+  },
+  {
+    "index": 95,
+    "module": "GP_COVERAGE",
+    "theme": "Lucknow",
+    "text": "Module: GP_COVERAGE. Theme: Lucknow. Terms: dairy, lucknow, pacs, full, blocks, coverage. Example questions: Show me coverage details for all blocks in lucknow for Dairy | How many full covered GPs are there in lucknow for Dairy? | Show me coverage details for all blocks in lucknow for PACS",
+    "payload_count": 3
+  },
+  {
+    "index": 96,
+    "module": "GP_COVERAGE",
+    "theme": "Belagavi",
+    "text": "Module: GP_COVERAGE. Theme: Belagavi. Terms: covered, belagavi, coverage, district, non-covered, gps, handloom, dairy, districts, credit, multi-purpose, areas, sector, blocks, villages, pacs, fishery. Example questions: List non-covered GPs in belagavi for Dairy | List non-covered GPs in belagavi for PACS | Show me coverage details for all blocks in belagavi for Dairy | List non-covered GPs in belagavi for Handloom | Show me coverage details for all blocks in belagavi for Credit | How many full covered GPs are there in belagavi for Dairy? | Give me list of covered GPs in belagavi district in PACS sector | Show me coverage details for all blocks in belagavi for Fishery | List non-covered GPs in belagavi for Fishery | Show me coverage details for all blocks in belagavi for Multi-purpose",
+    "payload_count": 11
+  },
+  {
+    "index": 97,
+    "module": "GP_COVERAGE",
+    "theme": "Villages",
+    "text": "Module: GP_COVERAGE. Theme: Villages. Terms: pune, district, ludhiana, coverage, rajasthan, maharashtra, pradesh, bengaluru, villages, chennai, nadu, tamil, uttar, gujarat, jaipur, karnataka, bihar, blocks, bharuch, patna, districts, punjab, lucknow. Example questions: Count total villages in lucknow district of uttar pradesh | Count total villages in pune district of maharashtra | Count total villages in bharuch district of gujarat | Count total villages in bengaluru district of karnataka | Count total villages in ludhiana district of punjab | Count total villages in chennai district of tamil nadu | Count total villages in jaipur district of rajasthan | Count total villages in patna district of bihar",
+    "payload_count": 8
+  },
+  {
+    "index": 98,
+    "module": "GP_COVERAGE",
+    "theme": "Jaipur",
+    "text": "Module: GP_COVERAGE. Theme: Jaipur. Terms: dairy, pacs, jaipur, full, villages, coverage, fishery. Example questions: How many full covered GPs are there in jaipur for Fishery? | List non-covered GPs in jaipur for PACS | How many full covered GPs are there in jaipur for Dairy? | List non-covered GPs in jaipur for Dairy",
+    "payload_count": 4
+  },
+  {
+    "index": 99,
+    "module": "GP_COVERAGE",
+    "theme": "Gujarat",
+    "text": "Module: GP_COVERAGE. Theme: Gujarat. Terms: coverage, gujarat, blocks, villages, districts. Example questions: How many districts are there in gujarat? | Total GPs in gujarat",
+    "payload_count": 2
+  },
+  {
+    "index": 100,
+    "module": "GP_COVERAGE",
+    "theme": "Rajasthan",
+    "text": "Module: GP_COVERAGE. Theme: Rajasthan. Terms: districts, coverage, rajasthan. Example questions: How many districts are there in rajasthan?",
+    "payload_count": 1
+  },
+  {
+    "index": 101,
+    "module": "GP_COVERAGE",
+    "theme": "Punjab",
+    "text": "Module: GP_COVERAGE. Theme: Punjab. Terms: punjab, districts, gps, chatbot, blocks, villages, coverage. Example questions: Total GPs in punjab",
+    "payload_count": 1
+  },
+  {
+    "index": 102,
+    "module": "GP_COVERAGE",
+    "theme": "Surat",
+    "text": "Module: GP_COVERAGE. Theme: Surat. Terms: coverage, district, dairy, surat, sector, full, blocks, villages, pacs. Example questions: Give me list of covered GPs in surat district in PACS sector | Give me list of covered GPs in surat district in Dairy sector | How many full covered GPs are there in surat for Dairy? | Show me coverage details for all blocks in surat for Dairy",
+    "payload_count": 4
+  },
+  {
+    "index": 103,
+    "module": "GP_COVERAGE",
+    "theme": "General",
+    "text": "Module: GP_COVERAGE. Theme: General. Terms: . Example questions: List non-covered GPs in jodhpur for Multi-purpose | Show me coverage details for all blocks in nashik for Credit | How many full covered GPs are there in gaya for Dairy? | List non-covered GPs in faridabad for Handloom | How many full covered GPs are there in nashik for Agriculture? | List non-covered GPs in jaipur for Handloom | Give me list of covered GPs in jaipur district in Credit sector | How many full covered GPs are there in kanpur for Handloom? | Give me list of covered GPs in udaipur district in PACS sector | How many full covered GPs are there in coimbatore for Multi-purpose?",
+    "payload_count": 113
+  },
+  {
+    "index": 104,
+    "module": "GP_COVERAGE",
+    "theme": "Mysore",
+    "text": "Module: GP_COVERAGE. Theme: Mysore. Terms: coverage, mysore, district, dairy, sector, full, blocks, villages, pacs. Example questions: Show me coverage details for all blocks in mysore for Dairy | How many full covered GPs are there in mysore for Dairy? | Give me list of covered GPs in mysore district in PACS sector | List non-covered GPs in mysore for Dairy",
+    "payload_count": 4
+  },
+  {
+    "index": 105,
+    "module": "GP_COVERAGE",
+    "theme": "Papum Pare",
+    "text": "Module: GP_COVERAGE. Theme: Papum Pare. Terms: coverage, handloom, dairy, papum pare, blocks, villages, arunachal pradesh, districts. Example questions: Count total villages in papum pare district of arunachal pradesh | Show me coverage details for all blocks in papum pare for Handloom | Show me coverage details for all blocks in papum pare for Dairy",
+    "payload_count": 3
+  },
+  {
+    "index": 106,
+    "module": "GP_COVERAGE",
+    "theme": "Bengaluru",
+    "text": "Module: GP_COVERAGE. Theme: Bengaluru. Terms: dairy, pacs, bengaluru, sector, blocks, coverage. Example questions: Give me list of covered GPs in bengaluru district in PACS sector | Show me coverage details for all blocks in bengaluru for Dairy",
+    "payload_count": 2
+  },
+  {
+    "index": 107,
+    "module": "GP_COVERAGE",
+    "theme": "Varanasi",
+    "text": "Module: GP_COVERAGE. Theme: Varanasi. Terms: district, non-covered, dairy, pacs, handloom, sector, blocks, villages, varanasi, coverage. Example questions: Give me list of covered GPs in varanasi district in Dairy sector | Give me list of covered GPs in varanasi district in PACS sector | Show me coverage details for all blocks in varanasi for Dairy | Show me coverage details for all blocks in varanasi for PACS | Show me coverage details for all blocks in varanasi for Handloom | List non-covered GPs in varanasi for Dairy",
+    "payload_count": 6
+  },
+  {
+    "index": 108,
+    "module": "GP_COVERAGE",
+    "theme": "Ludhiana",
+    "text": "Module: GP_COVERAGE. Theme: Ludhiana. Terms: ludhiana, dairy, pacs, sector, full, blocks, villages, coverage, fishery. Example questions: Give me list of covered GPs in ludhiana district in PACS sector | How many full covered GPs are there in ludhiana for Dairy? | Show me coverage details for all blocks in ludhiana for Dairy | Show me coverage details for all blocks in ludhiana for PACS | How many full covered GPs are there in ludhiana for Fishery?",
+    "payload_count": 5
+  },
+  {
+    "index": 109,
+    "module": "GP_COVERAGE",
+    "theme": "Maharashtra",
+    "text": "Module: GP_COVERAGE. Theme: Maharashtra. Terms: districts, coverage, maharashtra. Example questions: How many districts are there in maharashtra?",
+    "payload_count": 1
+  },
+  {
+    "index": 110,
+    "module": "GP_COVERAGE",
+    "theme": "Coimbatore",
+    "text": "Module: GP_COVERAGE. Theme: Coimbatore. Terms: dairy, panchayats, villages, coverage, coimbatore. Example questions: List partially covered Gram Panchayats in coimbatore for Dairy",
+    "payload_count": 1
+  },
+  {
+    "index": 111,
+    "module": "GP_COVERAGE",
+    "theme": "Tawang",
+    "text": "Module: GP_COVERAGE. Theme: Tawang. Terms: covered, coverage, district, dairy, handloom, non-covered, sector, full, blocks, villages, tawang, pacs, fishery. Example questions: List non-covered GPs in tawang for Handloom | Give me list of covered GPs in tawang district in Dairy sector | How many full covered GPs are there in tawang for Handloom? | List non-covered GPs in tawang for PACS | Give me list of covered GPs in tawang district in Fishery sector | How many full covered GPs are there in tawang for PACS? | How many full covered GPs are there in tawang for Dairy? | List non-covered GPs in tawang for Dairy | Give me list of covered GPs in tawang district in PACS sector | Show me coverage details for all blocks in tawang for Dairy",
+    "payload_count": 10
+  },
+  {
+    "index": 112,
+    "module": "GP_COVERAGE",
+    "theme": "Jodhpur",
+    "text": "Module: GP_COVERAGE. Theme: Jodhpur. Terms: dairy, jodhpur, full, blocks, coverage. Example questions: Show me coverage details for all blocks in jodhpur for Dairy | How many full covered GPs are there in jodhpur for Dairy?",
+    "payload_count": 2
+  },
+  {
+    "index": 113,
+    "module": "GP_COVERAGE",
+    "theme": "Papum",
+    "text": "Module: GP_COVERAGE. Theme: Papum. Terms: dairy, coverage, pare, papum. Example questions: How many full covered GPs are there in papum pare for Dairy?",
+    "payload_count": 1
+  },
+  {
+    "index": 114,
+    "module": "GP_COVERAGE",
+    "theme": "Gaya",
+    "text": "Module: GP_COVERAGE. Theme: Gaya. Terms: gaya, coverage, dairy, panchayats, blocks, villages, pacs, fishery. Example questions: List partially covered Gram Panchayats in gaya for Fishery | Show me coverage details for all blocks in gaya for PACS | Show me coverage details for all blocks in gaya for Dairy | List partially covered Gram Panchayats in gaya for PACS | List partially covered Gram Panchayats in gaya for Dairy | List non-covered GPs in gaya for Dairy",
+    "payload_count": 6
+  },
+  {
+    "index": 115,
+    "module": "GP_COVERAGE",
+    "theme": "Blocks",
+    "text": "Module: GP_COVERAGE. Theme: Blocks. Terms: credit, pacs, jodhpur, blocks, villages, pare, patna, coverage, papum. Example questions: Show me coverage details for all blocks in papum pare for Credit | Show me coverage details for all blocks in patna for Credit | Show me coverage details for all blocks in jodhpur for PACS | Show me coverage details for all blocks in papum pare for PACS",
+    "payload_count": 4
+  },
+  {
+    "index": 116,
+    "module": "GP_COVERAGE",
+    "theme": "Vadodara",
+    "text": "Module: GP_COVERAGE. Theme: Vadodara. Terms: blocks, coverage, fishery, vadodara. Example questions: Show me coverage details for all blocks in vadodara for Fishery",
+    "payload_count": 1
+  },
+  {
+    "index": 117,
+    "module": "GP_COVERAGE",
+    "theme": "Patna",
+    "text": "Module: GP_COVERAGE. Theme: Patna. Terms: dairy, full, blocks, villages, patna, coverage. Example questions: Show me coverage details for all blocks in patna for Dairy | How many full covered GPs are there in patna for Dairy?",
+    "payload_count": 2
+  },
+  {
+    "index": 118,
+    "module": "GP_COVERAGE",
+    "theme": "Patiala",
+    "text": "Module: GP_COVERAGE. Theme: Patiala. Terms: dairy, full, blocks, villages, coverage, patiala. Example questions: Show me coverage details for all blocks in patiala for Dairy | How many full covered GPs are there in patiala for Dairy?",
+    "payload_count": 2
+  },
+  {
+    "index": 119,
+    "module": "GP_COVERAGE",
+    "theme": "Uttar",
+    "text": "Module: GP_COVERAGE. Theme: Uttar. Terms: districts, uttar, pradesh, coverage. Example questions: How many districts are there in uttar pradesh?",
+    "payload_count": 1
+  },
+  {
+    "index": 120,
+    "module": "GP_COVERAGE",
+    "theme": "Districts",
+    "text": "Module: GP_COVERAGE. Theme: Districts. Terms: tamil, districts, coverage, nadu. Example questions: How many districts are there in tamil nadu?",
+    "payload_count": 1
+  },
+  {
+    "index": 121,
+    "module": "GP_COVERAGE",
+    "theme": "Haryana",
+    "text": "Module: GP_COVERAGE. Theme: Haryana. Terms: districts, coverage, haryana. Example questions: How many districts are there in haryana?",
+    "payload_count": 1
+  },
+  {
+    "index": 122,
+    "module": "GP_COVERAGE",
+    "theme": "Karnataka",
+    "text": "Module: GP_COVERAGE. Theme: Karnataka. Terms: districts, coverage, karnataka. Example questions: How many districts are there in karnataka?",
+    "payload_count": 1
+  },
+  {
+    "index": 123,
+    "module": "GP_COVERAGE",
+    "theme": "Kanpur",
+    "text": "Module: GP_COVERAGE. Theme: Kanpur. Terms: pacs, sector, blocks, villages, coverage, fishery, kanpur. Example questions: Show me coverage details for all blocks in kanpur for PACS | How many full covered GPs are there in kanpur for Fishery? | Give me list of covered GPs in kanpur district in PACS sector",
+    "payload_count": 3
+  },
+  {
+    "index": 124,
+    "module": "GP_COVERAGE",
+    "theme": "Bihar",
+    "text": "Module: GP_COVERAGE. Theme: Bihar. Terms: districts, coverage, bihar. Example questions: How many districts are there in bihar?",
+    "payload_count": 1
+  },
+  {
+    "index": 125,
+    "module": "GP_COVERAGE",
+    "theme": "Hisar",
+    "text": "Module: GP_COVERAGE. Theme: Hisar. Terms: full, coverage, hisar, dairy. Example questions: How many full covered GPs are there in hisar for Dairy?",
+    "payload_count": 1
+  },
+  {
+    "index": 126,
+    "module": "GP_COVERAGE",
+    "theme": "Chennai",
+    "text": "Module: GP_COVERAGE. Theme: Chennai. Terms: dairy, blocks, villages, chennai, coverage. Example questions: Show me coverage details for all blocks in chennai for Dairy",
+    "payload_count": 1
+  },
+  {
+    "index": 127,
+    "module": "GP_COVERAGE",
+    "theme": "Arunachal",
+    "text": "Module: GP_COVERAGE. Theme: Arunachal. Terms: districts, coverage, arunachal, pradesh. Example questions: How many districts are there in arunachal pradesh?",
+    "payload_count": 1
+  },
+  {
+    "index": 128,
+    "module": "RANKINGS",
+    "theme": "Dairy",
+    "text": "Module: RANKINGS. Theme: Dairy. Terms: pune, shillong, kavaratti, west, meghalaya, hyderabad, kanpur, coimbatore, maharashtra, pradesh, warangal, bengaluru, rankings, 2025, chennai, bengal, west bengal, cooperative, madurai, thane, nadu, kerala, tamil, uttar, mysore, lakshadweep, dairy, gujarat, societies, kochi, karnataka, kolkata, thiruvananthapuram, surat, howrah, quarter, bharuch, mangaluru, nizamabad, anand, nashik, lucknow, kozhikode, telangana, varanasi, hooghly, tura. Example questions: Show me Dairy rankings in west bengal for Q1 2025 | Current rankings for Dairy societies in varanasi | Show me Dairy rankings in karnataka for Q2 2025 | Show me Dairy rankings in west bengal for Q3 2025 | Show me Dairy rankings in telangana for Q4 2025 | Compare Dairy rankings in gujarat between Q3 2025 and Q4 2025 | Show me Dairy rankings in maharashtra for Q1 2025 | Show me Dairy rankings in kerala for Q3 2025 | Current rankings for Dairy societies in kavaratti | Show me Dairy rankings in kerala for Q4 2025",
+    "payload_count": 82
+  },
+  {
+    "index": 129,
+    "module": "RANKINGS",
+    "theme": "Agro",
+    "text": "Module: RANKINGS. Theme: Agro. Terms: tamil, uttar, nadu, maharashtra, gujarat, pradesh, lakshadweep, rankings, karnataka, west, 2025, meghalaya, agro, processing, telangana, bengal, kerala. Example questions: Show me Agro Processing rankings in tamil nadu for Q4 2025 | Show me Agro Processing rankings in telangana for Q4 2025 | Show me Agro Processing rankings in tamil nadu for Q3 2025 | Latest top 10 Agro Processing rankings in tamil nadu | Show me Agro Processing rankings in lakshadweep for Q3 2025 | Show me Agro Processing rankings in maharashtra for Q4 2025 | Show me Agro Processing rankings in uttar pradesh for Q1 2025 | Latest top 10 Agro Processing rankings in uttar pradesh | Show me Agro Processing rankings in uttar pradesh for Q4 2025 | Show me Agro Processing rankings in karnataka for Q1 2025",
+    "payload_count": 50
+  },
+  {
+    "index": 130,
+    "module": "RANKINGS",
+    "theme": "Handloom",
+    "text": "Module: RANKINGS. Theme: Handloom. Terms: handloom, west, meghalaya, maharashtra, pradesh, rankings, latest, 2025, bengal, west bengal, cooperative, nadu, kerala, tamil, uttar, lakshadweep, gujarat, karnataka, top, telangana. Example questions: Show me Handloom rankings in uttar pradesh for Q4 2025 | Show me Handloom rankings in lakshadweep for Q3 2025 | Show me Handloom rankings in meghalaya for Q3 2025 | Show me Handloom rankings in uttar pradesh for Q1 2025 | Show me Handloom rankings in kerala for Q4 2025 | Show me Handloom rankings in west bengal for Q4 2025 | Show me Handloom rankings in lakshadweep for Q1 2025 | Show me Handloom rankings in gujarat for Q1 2025 | Show me Handloom rankings in telangana for Q3 2025 | Latest top 10 Handloom rankings in uttar pradesh",
+    "payload_count": 50
+  },
+  {
+    "index": 131,
+    "module": "RANKINGS",
+    "theme": "Pacs",
+    "text": "Module: RANKINGS. Theme: Pacs. Terms: pune, shillong, kavaratti, west, meghalaya, pacs, hyderabad, kanpur, coimbatore, maharashtra, pradesh, warangal, bengaluru, rankings, 2025, chennai, west bengal, bengal, madurai, thane, nadu, kerala, tamil, uttar, lakshadweep, mysore, gujarat, societies, varanasi, kochi, surat, karnataka, thiruvananthapuram, howrah, mangaluru, bharuch, nizamabad, anand, nashik, lucknow, kozhikode, telangana, kolkata, hooghly, tura. Example questions: Show me PACS rankings in gujarat for Q1 2025 | Current rankings for PACS societies in nashik | Show me PACS rankings in gujarat for Q4 2025 | Show me PACS rankings in uttar pradesh for Q3 2025 | Show me PACS rankings in maharashtra for Q4 2025 | Show me PACS rankings in west bengal for Q4 2025 | Show me PACS rankings in karnataka for Q4 2025 | Latest top 10 PACS rankings in tamil nadu | Show me PACS rankings in telangana for Q1 2025 | Show me PACS rankings in karnataka for Q3 2025",
+    "payload_count": 82
+  },
+  {
+    "index": 132,
+    "module": "RANKINGS",
+    "theme": "Housing",
+    "text": "Module: RANKINGS. Theme: Housing. Terms: tamil, uttar, lakshadweep, housing, gujarat, pradesh, maharashtra, rankings, karnataka, west, quarterly, 2025, meghalaya, quarter, telangana, bengal, nadu, kerala. Example questions: Show me Housing rankings in west bengal for Q1 2025 | Show me Housing rankings in kerala for Q3 2025 | Show me Housing rankings in meghalaya for Q4 2025 | Compare Housing rankings in maharashtra between Q3 2025 and Q4 2025 | Show me Housing rankings in karnataka for Q2 2025 | Show me Housing rankings in tamil nadu for Q3 2025 | Show me Housing rankings in telangana for Q1 2025 | Show me Housing rankings in meghalaya for Q3 2025 | Show me Housing rankings in meghalaya for Q2 2025 | Compare Housing rankings in gujarat between Q3 2025 and Q4 2025",
+    "payload_count": 52
+  },
+  {
+    "index": 133,
+    "module": "RANKINGS",
+    "theme": "Rankings",
+    "text": "Module: RANKINGS. Theme: Rankings. Terms: pune, shillong, kavaratti, west, meghalaya, hyderabad, kanpur, coimbatore, housing, pradesh, maharashtra, warangal, bengaluru, rankings, bank, bengal, cooperative, madurai, nadu, kerala, tamil, uttar, lakshadweep, mysore, gujarat, societies, varanasi, kochi, multipurpose, surat, thiruvananthapuram, karnataka, howrah, urban, bharuch, mangaluru, nizamabad, anand, nashik, lucknow, kozhikode, telangana, kolkata, hooghly, tura. Example questions: Current rankings for Housing societies in hooghly | Latest top 10 Multipurpose rankings in telangana | Current rankings for Housing societies in anand | Current rankings for Housing societies in shillong | Latest top 10 Urban Cooperative Bank rankings in kerala | Current rankings for Housing societies in warangal | Latest top 10 Housing rankings in tamil nadu | Latest top 10 Multipurpose rankings in uttar pradesh | Latest top 10 Multipurpose rankings in gujarat | Current rankings for Housing societies in kolkata",
+    "payload_count": 48
+  },
+  {
+    "index": 134,
+    "module": "RANKINGS",
+    "theme": "Credit",
+    "text": "Module: RANKINGS. Theme: Credit. Terms: tamil, uttar, lakshadweep, maharashtra, pradesh, credit, nadu, gujarat, rankings, karnataka, west, 2025, meghalaya, telangana, bengal, thrift, kerala. Example questions: Show me Credit & Thrift rankings in west bengal for Q3 2025 | Show me Credit & Thrift rankings in west bengal for Q4 2025 | Show me Credit & Thrift rankings in gujarat for Q4 2025 | Latest top 10 Credit & Thrift rankings in lakshadweep | Show me Credit & Thrift rankings in uttar pradesh for Q3 2025 | Latest top 10 Credit & Thrift rankings in meghalaya | Show me Credit & Thrift rankings in gujarat for Q1 2025 | Latest top 10 Credit & Thrift rankings in gujarat | Latest top 10 Credit & Thrift rankings in karnataka | Show me Credit & Thrift rankings in kerala for Q3 2025",
+    "payload_count": 50
+  },
+  {
+    "index": 135,
+    "module": "RANKINGS",
+    "theme": "Sugar",
+    "text": "Module: RANKINGS. Theme: Sugar. Terms: tamil, uttar, lakshadweep, top, pradesh, nadu, maharashtra, gujarat, rankings, karnataka, west, sugar, meghalaya, telangana, mills, bengal, kerala. Example questions: Latest top 10 Sugar Mills rankings in gujarat | Latest top 10 Sugar Mills rankings in meghalaya | Latest top 10 Sugar Mills rankings in west bengal | Latest top 10 Sugar Mills rankings in tamil nadu | Latest top 10 Sugar Mills rankings in karnataka | Latest top 10 Sugar Mills rankings in maharashtra | Latest top 10 Sugar Mills rankings in lakshadweep | Latest top 10 Sugar Mills rankings in kerala | Latest top 10 Sugar Mills rankings in uttar pradesh | Latest top 10 Sugar Mills rankings in telangana",
+    "payload_count": 10
+  },
+  {
+    "index": 136,
+    "module": "RANKINGS",
+    "theme": "Fishery",
+    "text": "Module: RANKINGS. Theme: Fishery. Terms: tamil, uttar, top, lakshadweep, pradesh, gujarat, maharashtra, rankings, karnataka, west, meghalaya, telangana, bengal, fishery, nadu, kerala. Example questions: Latest top 10 Fishery rankings in maharashtra | Latest top 10 Fishery rankings in lakshadweep | Latest top 10 Fishery rankings in tamil nadu | Latest top 10 Fishery rankings in gujarat | Latest top 10 Fishery rankings in kerala | Latest top 10 Fishery rankings in west bengal | Latest top 10 Fishery rankings in telangana | Latest top 10 Fishery rankings in karnataka | Latest top 10 Fishery rankings in meghalaya | Latest top 10 Fishery rankings in uttar pradesh",
+    "payload_count": 10
+  },
+  {
+    "index": 137,
+    "module": "RANKINGS",
+    "theme": "Thane",
+    "text": "Module: RANKINGS. Theme: Thane. Terms: societies, rankings, thane, housing. Example questions: Current rankings for Housing societies in thane",
+    "payload_count": 1
+  },
+  {
+    "index": 138,
+    "module": "RANKINGS",
+    "theme": "Handicraft",
+    "text": "Module: RANKINGS. Theme: Handicraft. Terms: tamil, uttar, top, maharashtra, gujarat, pradesh, kerala, lakshadweep, rankings, karnataka, west, latest, meghalaya, telangana, bengal, nadu, handicraft. Example questions: Latest top 10 Handicraft rankings in uttar pradesh | Latest top 10 Handicraft rankings in meghalaya | Latest top 10 Handicraft rankings in maharashtra | Latest top 10 Handicraft rankings in west bengal | Latest top 10 Handicraft rankings in karnataka | Latest top 10 Handicraft rankings in gujarat | Latest top 10 Handicraft rankings in lakshadweep | Latest top 10 Handicraft rankings in telangana | Latest top 10 Handicraft rankings in kerala | Latest top 10 Handicraft rankings in tamil nadu",
+    "payload_count": 10
+  },
+  {
+    "index": 139,
+    "module": "RANKINGS",
+    "theme": "Khadi",
+    "text": "Module: RANKINGS. Theme: Khadi. Terms: tamil, uttar, top, maharashtra, gujarat, lakshadweep, pradesh, rankings, karnataka, west, meghalaya, khadi, telangana, bengal, nadu, kerala. Example questions: Latest top 10 Khadi rankings in uttar pradesh | Latest top 10 Khadi rankings in tamil nadu | Latest top 10 Khadi rankings in west bengal | Latest top 10 Khadi rankings in kerala | Latest top 10 Khadi rankings in telangana | Latest top 10 Khadi rankings in meghalaya | Latest top 10 Khadi rankings in maharashtra | Latest top 10 Khadi rankings in karnataka | Latest top 10 Khadi rankings in gujarat | Latest top 10 Khadi rankings in lakshadweep",
+    "payload_count": 10
+  },
+  {
+    "index": 140,
+    "module": "RANKINGS",
+    "theme": "Chennai",
+    "text": "Module: RANKINGS. Theme: Chennai. Terms: societies, rankings, housing, chennai. Example questions: Current rankings for Housing societies in chennai",
+    "payload_count": 1
+  },
+  {
+    "index": 141,
+    "module": "FEDERATION",
+    "theme": "Federation",
+    "text": "Module: FEDERATION. Theme: Federation. Terms: headquarters, district, film, groups, society, value, association, marketing, maharashtra, pradesh, rented, financial, livestock, vehicle, cooperatives, processing, chennai, cooperative, functional, nadu, exports, kribhco, miscellaneous, gujarat, agriculture, local, class, building, urban, database, email, secretary, bodies, number, address, activity, located, auditors, storage, draft, location, social, allot, chairman, dividends, branch, development, tamilnadu, fertiliser, pune, federation, handloom, region, chhattisgarh, west, block, paid, department, detail, general, fishery, nafed, common, bee, indian, members, andhra, phone, type, mobile, net, nonfunctional, registered, corporation, bengal, iffco, west bengal, organics, designation, involve, rediffmail, societies, liquidation, mandal, trifed, haryana, categories, banks, primary, punjab, contact, federations, sugar, fish, average, entries, farmers, registration, identification, taluka, multi, turnover, profit, catch, himachal, work, hyderabad, gmail, pending, person, audited, regional, status, odisha, involvement, active, beekeeping, sericulture, gov, cold, consumers, loss, nafcub, uttar, ordinary, group, dairy, karnataka, pool, accommodation, authorised, tribal, officer, rural, names, state, land, credit, lucknow, share, office, women, mumbai, nad, telangana, india, poultry, ranking, member, associate, approval, name, tourism, market, membership, rajasthan, manager, sec, madhya, housing, count, sector, managing, bank, product, seed, director, kerala, tamil, labour, transport, business, bihar, union, audit, factory, organization, delhi, national, fisheries, weavers, pincode, details, cooperation, ahmedabad, capital, ncui, activities, year, fishermen, consumer, warehouse, produce, limited, seeds, major, head. Example questions: Which Marketing federations have has land? | List national federations having more than 50 members in their contact details. | Find profit making Urban Cooperative Bank federations in Maharashtra. | What is the Identification Number of National Cooperative Consumers' Federation? | How many Social federations are in Rajasthan? | Find profit making Multi federations in Uttar Pradesh. | Find profit making Labour federations in Bihar. | Find the registration date for IFFCO. | Who is contact person for National Housing Federation bank? | List all federations that are profit making.",
+    "payload_count": 523
+  },
+  {
+    "index": 142,
+    "module": "FEDERATION",
+    "theme": "Beekeeping",
+    "text": "Module: FEDERATION. Theme: Beekeeping. Terms: federation, profit, west, paid, rajasthan, madhya, pradesh, maharashtra, beekeeping, bengal, nadu, kerala, tamil, uttar, karnataka, bihar, total, federations, tamilnadu. Example questions: Find profit making Beekeeping federations in Madhya Pradesh. | Find profit making Beekeeping federations in Karnataka. | How many Beekeeping federations are in Rajasthan? | How many Beekeeping federations are in Madhya Pradesh? | Find profit making Beekeeping federations in Maharashtra. | Find profit making Beekeeping federations in Rajasthan. | How many Beekeeping federations are in Kerala? | Find profit making Beekeeping federations in Kerala. | Find profit making Beekeeping federations in West Bengal. | How many Beekeeping federations are in Uttar Pradesh?",
+    "payload_count": 19
+  },
+  {
+    "index": 143,
+    "module": "FEDERATION",
+    "theme": "Housing",
+    "text": "Module: FEDERATION. Theme: Housing. Terms: federation, profit, west, name, society, rajasthan, maharashtra, housing, pradesh, madhya, type, bank, bengal, kerala, nadu, tamil, uttar, group, karnataka, land, office, contact. Example questions: Give me phone number, address and email for National Housing Federation bank office. | Find profit making Housing federations in Rajasthan. | Which Housing federations have has land? | Find profit making Housing federations in Karnataka. | How many Housing federations are in Tamil Nadu? | List all Housing federations. | Which Housing federations have type society name? | How many Housing federations are in Kerala? | Find profit making Housing federations in Maharashtra. | How many Housing federations are in Maharashtra?",
+    "payload_count": 20
+  },
+  {
+    "index": 144,
+    "module": "FEDERATION",
+    "theme": "Women",
+    "text": "Module: FEDERATION. Theme: Women. Terms: tamil, uttar, nadu, federation, maharashtra, profit, madhya, pradesh, women, gujarat, karnataka, west, bihar, bengal, cooperative, rajasthan, kerala. Example questions: How many Women Cooperative federations are in Uttar Pradesh? | Find profit making Women Cooperative federations in West Bengal. | Find profit making Women Cooperative federations in Gujarat. | Find profit making Women Cooperative federations in Tamil Nadu. | How many Women Cooperative federations are in West Bengal? | How many Women Cooperative federations are in Madhya Pradesh? | Find profit making Women Cooperative federations in Kerala. | How many Women Cooperative federations are in Maharashtra? | Find profit making Women Cooperative federations in Rajasthan. | How many Women Cooperative federations are in Tamil Nadu?",
+    "payload_count": 16
+  },
+  {
+    "index": 145,
+    "module": "FEDERATION",
+    "theme": "Tourism",
+    "text": "Module: FEDERATION. Theme: Tourism. Terms: madhya, federation, pradesh, tourism. Example questions: How many Tourism federations are in Madhya Pradesh?",
+    "payload_count": 1
+  },
+  {
+    "index": 146,
+    "module": "FEDERATION",
+    "theme": "Kerala",
+    "text": "Module: FEDERATION. Theme: Kerala. Terms: member, federation, associate, profit, tourism, department, count, registered, sericulture, seed, cooperative, kerala, kribhco, ordinary, transport, miscellaneous, labour, national, tribal, credit, women, federations. Example questions: Find profit making Transport federations in Kerala. | How many Miscellaneous (Credit) federations are in Kerala? | How many ordinary member are registered in Kerala in KRIBHCO? | How many Tourism federations are in Kerala? | How many ordinary member in Kerala of National Seed federation? | Show member counts belonging to the class Ordinary for all national federations in Kerala? | List all national federations in Kerala? | Find profit making Miscellaneous (Credit) federations in Kerala. | How many Miscellaneous (Non-Credit) federations are in Kerala? | How many Tribal federations are in Kerala?",
+    "payload_count": 17
+  },
+  {
+    "index": 147,
+    "module": "FEDERATION",
+    "theme": "Sericulture",
+    "text": "Module: FEDERATION. Theme: Sericulture. Terms: federation, district, profit, west, society, rajasthan, workplace, madhya, pradesh, maharashtra, type, bengal, sericulture, kerala, tamil, uttar, gujarat, karnataka, bihar, state. Example questions: Find profit making Sericulture federations in Maharashtra. | How many Sericulture federations are in Madhya Pradesh? | How many Sericulture federations are in Rajasthan? | Which Sericulture federations have common work place? | Find profit making Sericulture federations in Madhya Pradesh. | How many Sericulture federations are in Tamil Nadu? | How many Sericulture federations are in West Bengal? | Find profit making Sericulture federations in Gujarat. | How many Sericulture federations are in Gujarat? | Find profit making Sericulture federations in Uttar Pradesh.",
+    "payload_count": 21
+  },
+  {
+    "index": 148,
+    "module": "FEDERATION",
+    "theme": "Consumer",
+    "text": "Module: FEDERATION. Theme: Consumer. Terms: store, tamil, uttar, federation, madhya, pradesh, profit, maharashtra, consumer, gujarat, karnataka, west, bihar, nad, bengal, rajasthan, kerala, outlets. Example questions: Find profit making Consumer federations in Gujarat. | How many Consumer federations are in Rajasthan? | How many Consumer federations are in Madhya Pradesh? | How many Consumer federations are in Gujarat? | Find profit making Consumer federations in Bihar. | Find profit making Consumer federations in Madhya Pradesh. | How many Consumer federations are in Uttar Pradesh? | How many Consumer federations are in West Bengal? | Find profit making Consumer federations in Karnataka. | Find profit making Consumer federations in Uttar Pradesh.",
+    "payload_count": 21
+  },
+  {
+    "index": 149,
+    "module": "FEDERATION",
+    "theme": "Sugar",
+    "text": "Module: FEDERATION. Theme: Sugar. Terms: tamil, uttar, land, federation, pradesh, profit, gujarat, madhya, maharashtra, karnataka, west, bihar, sugar, bengal, rajasthan, kerala. Example questions: How many Sugar federations are in Maharashtra? | How many Sugar federations are in Gujarat? | Find profit making Sugar federations in Uttar Pradesh. | Find profit making Sugar federations in Kerala. | How many Sugar federations are in West Bengal? | How many Sugar federations are in Tamil Nadu? | Find profit making Sugar federations in Rajasthan. | Find profit making Sugar federations in West Bengal. | Find profit making Sugar federations in Karnataka. | How many Sugar federations are in Kerala?",
+    "payload_count": 21
+  },
+  {
+    "index": 150,
+    "module": "FEDERATION",
+    "theme": "Jute",
+    "text": "Module: FEDERATION. Theme: Jute. Terms: federation, profit, west, rajasthan, maharashtra, pradesh, madhya, type, bengal, nadu, kerala, tamil, uttar, gujarat, karnataka, bihar, names, raw, produce, jute. Example questions: How many Jute federations are in West Bengal? | How many Jute federations are in Bihar? | How many Jute federations are in Uttar Pradesh? | How many Jute federations are in Karnataka? | Find profit making Jute federations in Tamil Nadu. | Find profit making Jute federations in Rajasthan. | Find profit making Jute federations in Madhya Pradesh. | Find profit making Jute federations in Gujarat. | How many Jute federations are in Gujarat? | How many Jute federations are in Tamil Nadu?",
+    "payload_count": 23
+  },
+  {
+    "index": 151,
+    "module": "FEDERATION",
+    "theme": "Uttar",
+    "text": "Module: FEDERATION. Theme: Uttar. Terms: kribhco, uttar, miscellaneous, federation, pradesh, credit, members. Example questions: How many Miscellaneous (Credit) federations are in Uttar Pradesh? | How many members from Uttar Pradesh are in KRIBHCO? | List all federations in Uttar Pradesh. | What is the total number of members in federations within Uttar Pradesh?",
+    "payload_count": 4
+  },
+  {
+    "index": 152,
+    "module": "FEDERATION",
+    "theme": "Handicraft",
+    "text": "Module: FEDERATION. Theme: Handicraft. Terms: federation, profit, west, rajasthan, handicraft, maharashtra, madhya, pradesh, type, bengal, nadu, kerala, tamil, uttar, gujarat, karnataka, bihar, names, raw, federations, produce. Example questions: Find profit making Handicraft federations in Kerala. | How many Handicraft federations are in Uttar Pradesh? | How many Handicraft federations are in Gujarat? | Find profit making Handicraft federations in Tamil Nadu. | How many Handicraft federations are in Kerala? | Find profit making Handicraft federations in West Bengal. | How many Handicraft federations are in Rajasthan? | How many Handicraft federations are in Tamil Nadu? | How many Handicraft federations are in Madhya Pradesh? | How many Handicraft federations are in West Bengal?",
+    "payload_count": 22
+  },
+  {
+    "index": 153,
+    "module": "FEDERATION",
+    "theme": "Agriculture",
+    "text": "Module: FEDERATION. Theme: Agriculture. Terms: federation, profit, west, department, rajasthan, maharashtra, madhya, pradesh, tamil nadu, bengal, nadu, kerala, tamil, uttar, gujarat, agriculture, karnataka, urban, national, activities, contact. Example questions: Find profit making Agriculture federations in Tamil Nadu. | How many Agriculture federations are in Madhya Pradesh? | Contact details for feds associated with Department of Agriculture. | Find profit making Agriculture federations in Gujarat. | How many Agriculture federations are in Uttar Pradesh? | How many Agriculture federations are in Gujarat? | How many Agriculture federations are in Tamil Nadu? | Find profit making Agriculture federations in Uttar Pradesh. | How many Agriculture federations are in Karnataka? | How many Agriculture federations are in West Bengal?",
+    "payload_count": 17
+  },
+  {
+    "index": 154,
+    "module": "FEDERATION",
+    "theme": "Dairy",
+    "text": "Module: FEDERATION. Theme: Dairy. Terms: federation, turnover, profit, west, rajasthan, manager, madhya, pradesh, person, maharashtra, sector, tamil nadu, bengal, procurement, cooperative, plant, nadu, kerala, tamil, uttar, dairy, gujarat, karnataka, bihar, urban, national, rural, details, activity, address, chilling, milk, office, contact, head. Example questions: Find profit making Dairy federations in Karnataka. | Show all national federations in the Dairy sector. | How many Dairy federations are in Tamil Nadu? | How many Dairy federations are in Kerala? | How many Dairy federations are in Bihar? | Find profit making Dairy federations in Uttar Pradesh. | List all Dairy federations. | How many Dairy federations are in Gujarat? | How many Dairy federations are in Rajasthan? | List all national federation having Dairy activity registered into Kerala state in Rural HQ.",
+    "payload_count": 31
+  },
+  {
+    "index": 155,
+    "module": "FEDERATION",
+    "theme": "Karnataka",
+    "text": "Module: FEDERATION. Theme: Karnataka. Terms: member, group, office, karnataka, registered, organization, iffco, head. Example questions: Count member organization from Karnataka registered into IFFCO HEAD office group. | Count member organization from Karnataka registered into IFFCO.",
+    "payload_count": 2
+  },
+  {
+    "index": 156,
+    "module": "FEDERATION",
+    "theme": "Labour",
+    "text": "Module: FEDERATION. Theme: Labour. Terms: tamil, labour, uttar, maharashtra, federation, profit, madhya, pradesh, gujarat, federations, west, karnataka, bengal, rajasthan, nadu, kerala. Example questions: Find profit making Labour federations in Tamil Nadu. | Find profit making Labour federations in Gujarat. | How many Labour federations are in Tamil Nadu? | How many Labour federations are in West Bengal? | Find profit making Labour federations in West Bengal. | How many Labour federations are in Maharashtra? | How many Labour federations are in Rajasthan? | Find profit making Labour federations in Uttar Pradesh. | Find profit making Labour federations in Rajasthan. | Find profit making Labour federations in Maharashtra.",
+    "payload_count": 16
+  },
+  {
+    "index": 157,
+    "module": "FEDERATION",
+    "theme": "Credit",
+    "text": "Module: FEDERATION. Theme: Credit. Terms: federation, profit, west, outstanding, rajasthan, madhya, pradesh, maharashtra, facilities, loan, bengal, nadu, kerala, tamil, uttar, miscellaneous, gujarat, karnataka, bihar, credit, deposit. Example questions: Find profit making Credit federations in Madhya Pradesh. | Find profit making Credit federations in Kerala. | Find profit making Credit federations in Karnataka. | Find profit making Credit federations in Tamil Nadu. | Find profit making Credit federations in Bihar. | Find profit making Credit federations in Gujarat. | How many Credit federations are in Karnataka? | How many Credit federations are in Kerala? | How many Credit federations are in Tamil Nadu? | How many Credit federations are in Uttar Pradesh?",
+    "payload_count": 25
+  },
+  {
+    "index": 158,
+    "module": "FEDERATION",
+    "theme": "Handloom",
+    "text": "Module: FEDERATION. Theme: Handloom. Terms: federation, handloom, profit, west, rajasthan, maharashtra, pradesh, madhya, type, bengal, nadu, kerala, tamil, uttar, gujarat, karnataka, bihar, national, names, raw. Example questions: How many Handloom federations are in Kerala? | How many Handloom federations are in Karnataka? | How many Handloom federations are in Tamil Nadu? | Find profit making Handloom federations in Maharashtra. | How many Handloom federations are in Rajasthan? | How many Handloom federations are in Uttar Pradesh? | Find profit making Handloom federations in Uttar Pradesh. | Find profit making Handloom federations in Gujarat. | Find profit making Handloom federations in Bihar. | Find profit making Handloom federations in Tamil Nadu.",
+    "payload_count": 22
+  },
+  {
+    "index": 159,
+    "module": "FEDERATION",
+    "theme": "Tribal",
+    "text": "Module: FEDERATION. Theme: Tribal. Terms: names, uttar, maharashtra, federation, pradesh, profit, warehouse, karnataka, west, produce, bengal, tribal. Example questions: Which Tribal federations have has warehouses? | How many Tribal federations are in Karnataka? | Find profit making Tribal federations in West Bengal. | How many Tribal federations are in Maharashtra? | Which Tribal federations have type produce names? | Find profit making Tribal federations in Maharashtra. | Find profit making Tribal federations in Uttar Pradesh. | How many Tribal federations are in Uttar Pradesh?",
+    "payload_count": 8
+  },
+  {
+    "index": 160,
+    "module": "FEDERATION",
+    "theme": "Gujarat",
+    "text": "Module: FEDERATION. Theme: Gujarat. Terms: federation, profit, tourism, handicraft, housing, livestock, beekeeping, cooperative, transport, miscellaneous, gujarat, dairy, authorised, rural, capital, credit, share, women, headquarter. Example questions: How many Housing federations are in Gujarat? | Find profit making Miscellaneous (Credit) federations in Gujarat. | Get the total authorised share capital for all federations in Gujarat. | Find profit making Beekeeping federations in Gujarat. | Find profit making Handicraft federations in Gujarat. | How many Beekeeping federations are in Gujarat? | How many Tourism federations are in Gujarat? | How many Miscellaneous (Non-Credit) federations are in Gujarat? | Find national federations in Gujarat that have 'Dairy' activity and are Rural headquarter. | How many Miscellaneous (Credit) federations are in Gujarat?",
+    "payload_count": 15
+  },
+  {
+    "index": 161,
+    "module": "FEDERATION",
+    "theme": "Marketing",
+    "text": "Module: FEDERATION. Theme: Marketing. Terms: tamil, uttar, federation, gujarat, profit, madhya, pradesh, maharashtra, karnataka, west, nad, marketing, bengal, rajasthan, nadu. Example questions: Find profit making Marketing federations in Tamil Nadu. | Find profit making Marketing federations in Rajasthan. | How many Marketing federations are in Karnataka? | How many Marketing federations are in Madhya Pradesh? | How many Marketing federations are in Maharashtra? | Find profit making Marketing federations in Karnataka. | Find profit making Marketing federations in West Bengal. | How many Marketing federations are in Tamil Nadu? | How many Marketing federations are in Uttar Pradesh? | How many Marketing federations are in Gujarat?",
+    "payload_count": 12
+  },
+  {
+    "index": 162,
+    "module": "FEDERATION",
+    "theme": "Nafed",
+    "text": "Module: FEDERATION. Theme: Nafed. Terms: address, member, uttar, ordinary, federation, pradesh, lucknow, members, office, karnataka, status, registered, delhi, pincode, rajasthan, head, nafed, functional. Example questions: Show address of NAFED. | List all members of Nafed into Delhi. | Who is the current functional status of Nafed? | How many ordinary member are registered in Nafed in Uttar Pradesh? | List all members of NAFED from Karnataka region. | List all members from Nafed into Rajasthan. | What is the pincode for NAFED head office? | How many ordinary member are registered in Nafed in Uttar Pradesh into Lucknow?",
+    "payload_count": 8
+  },
+  {
+    "index": 163,
+    "module": "FEDERATION",
+    "theme": "West",
+    "text": "Module: FEDERATION. Theme: West. Terms: miscellaneous, federation, credit, west, bengal. Example questions: How many Miscellaneous (Credit) federations are in West Bengal?",
+    "payload_count": 1
+  },
+  {
+    "index": 164,
+    "module": "FEDERATION",
+    "theme": "Ward",
+    "text": "Module: FEDERATION. Theme: Ward. Terms: ward, federation, block, iffco. Example questions: What is the ward name and block name of IFFCO?",
+    "payload_count": 1
+  },
+  {
+    "index": 165,
+    "module": "FEDERATION",
+    "theme": "Maharashtra",
+    "text": "Module: FEDERATION. Theme: Maharashtra. Terms: headquarters, maharashtra, federation, miscellaneous, credit, district, members, urban, national. Example questions: How many Miscellaneous (Non-Credit) federations are in Maharashtra? | How many Miscellaneous (Credit) federations are in Maharashtra? | Total members from Maharashtra | Get the names of all district federations in Maharashtra. | National federations in Maharashtra with urban head quarters.",
+    "payload_count": 5
+  },
+  {
+    "index": 166,
+    "module": "FEDERATION",
+    "theme": "Haryana",
+    "text": "Module: FEDERATION. Theme: Haryana. Terms: member, office, haryana, department, nafed. Example questions: Count member in Haryana for Nafed department office.",
+    "payload_count": 1
+  },
+  {
+    "index": 167,
+    "module": "FEDERATION",
+    "theme": "Trifed",
+    "text": "Module: FEDERATION. Theme: Trifed. Terms: member, ordinary, federation, chhattisgarh, members, status, jharkhand, location, bihar, registered, trifed, urban, chennai, rajasthan, functional, rural. Example questions: Find members of TRIFED in Chhattisgarh. | List all members from Chennai city of TRIFED. | What is functional status of TRIFED? | List all members from TRIFED in Bihar state based having Rural location area.  | List all members from TRIFED in Rajasthan where HQ is Urban. | How many ordinary member are registered into TRIFED in Bihar? | List all members from TRIFED in Bihar state having Rural location. | How many members of TRIFED are in Jharkhand? | List all members from TRIFED in Bihar state based having Rural location. ",
+    "payload_count": 9
+  },
+  {
+    "index": 168,
+    "module": "FEDERATION",
+    "theme": "Transport",
+    "text": "Module: FEDERATION. Theme: Transport. Terms: uttar, transport, madhya, federation, profit, pradesh, karnataka, rajasthan. Example questions: Find profit making Transport federations in Karnataka. | How many Transport federations are in Uttar Pradesh? | How many Transport federations are in Madhya Pradesh? | Find profit making Transport federations in Madhya Pradesh. | Find profit making Transport federations in Uttar Pradesh. | Find profit making Transport federations in Rajasthan.",
+    "payload_count": 6
+  },
+  {
+    "index": 169,
+    "module": "FEDERATION",
+    "theme": "Kribhco",
+    "text": "Module: FEDERATION. Theme: Kribhco. Terms: kribhco, activities, federation, members, telangana, email, major, rajasthan. Example questions: What is the email for members of KRIBHCO in Telangana? | How many members of KRIBHCO are in Rajasthan state? | What are the major activities of KRIBHCO?",
+    "payload_count": 3
+  },
+  {
+    "index": 170,
+    "module": "FEDERATION",
+    "theme": "Mumbai",
+    "text": "Module: FEDERATION. Theme: Mumbai. Terms: members, mumbai, federation, housing. Example questions: List all members from Mumbai in the National Housing Federation.",
+    "payload_count": 1
+  },
+  {
+    "index": 171,
+    "module": "FEDERATION",
+    "theme": "Iffco",
+    "text": "Module: FEDERATION. Theme: Iffco. Terms: tamil, member, activities, federation, region, gujarat, associate, maharashtra, members, status, iffco, rajasthan, nadu, functional, kerala. Example questions: Show member detail count of IFFCO associated in Maharashtra state region region area. | Count associate members of IFFCO in Gujarat state. | Show functional status and major activities of IFFCO. | List all members from IFFCO in Rajasthan. | Show me the detail of member of IFFCO from Kerala state. | Show member detail count of IFFCO associated in Maharashtra state region. | List all members of IFFCO from Tamil Nadu region area.",
+    "payload_count": 7
+  },
+  {
+    "index": 172,
+    "module": "FEDERATION",
+    "theme": "Federations",
+    "text": "Module: FEDERATION. Theme: Federations. Terms: federations, farming, rajasthan, kerala, functional. Example questions: Which national federations are functional and based in Kerala? | Find federations in Rajasthan having 'Farming' as major activity.",
+    "payload_count": 2
+  },
+  {
+    "index": 173,
+    "module": "FEDERATION",
+    "theme": "Livestock",
+    "text": "Module: FEDERATION. Theme: Livestock. Terms: tamil, workplace, district, federation, profit, maharashtra, madhya, pradesh, livestock, karnataka, type, west, produce, tamilnadu, bengal, kerala. Example questions: How many Livestock federations are in West Bengal? | How many Livestock federations are in Madhya Pradesh? | Find profit making Livestock federations in Karnataka. | Which Livestock federations have common work place? | Which Livestock federations have type produce names? | How many Livestock federations are in Karnataka? | Find profit making Livestock federations in Tamil Nadu. | Find profit making Livestock federations in Maharashtra. | How many Livestock federations are in Maharashtra? | How many Livestock federations are in Kerala?",
+    "payload_count": 14
+  },
+  {
+    "index": 174,
+    "module": "FEDERATION",
+    "theme": "Chairman",
+    "text": "Module: FEDERATION. Theme: Chairman. Terms: kribhco, group, federation, chairman, union, limited, india, cooperative, national. Example questions: Who is chairman for National Cooperative Union India? | Who is Chairman for National Cooperative Union India? | Who is Chairman for KRIBHCO group? | Who is Chairman for KRIBHCO group limited? | Who is chairman for KRIBHCO?",
+    "payload_count": 5
+  },
+  {
+    "index": 175,
+    "module": "FEDERATION",
+    "theme": "Social",
+    "text": "Module: FEDERATION. Theme: Social. Terms: maharashtra, gujarat, federation, karnataka, social. Example questions: How many Social federations are in Maharashtra? | How many Social federations are in Karnataka? | How many Social federations are in Gujarat?",
+    "payload_count": 3
+  },
+  {
+    "index": 176,
+    "module": "FEDERATION",
+    "theme": "Agro",
+    "text": "Module: FEDERATION. Theme: Agro. Terms: national, agro, processing, federation. Example questions: Total national federations involved in Agro Processing.",
+    "payload_count": 1
+  },
+  {
+    "index": 177,
+    "module": "FEDERATION",
+    "theme": "Bihar",
+    "text": "Module: FEDERATION. Theme: Bihar. Terms: profit, housing, federation, bihar. Example questions: Find profit making Housing federations in Bihar. | How many Housing federations are in Bihar?",
+    "payload_count": 2
+  },
+  {
+    "index": 178,
+    "module": "FEDERATION",
+    "theme": "Miscellaneous",
+    "text": "Module: FEDERATION. Theme: Miscellaneous. Terms: maharashtra, miscellaneous, profit, federation, credit. Example questions: Find profit making Miscellaneous (Credit) federations in Maharashtra.",
+    "payload_count": 1
+  },
+  {
+    "index": 179,
+    "module": "FEDERATION",
+    "theme": "Email",
+    "text": "Module: FEDERATION. Theme: Email. Terms: address, federation, dairy, phone, contact, email. Example questions: Email, Phone and Address for National Dairy Federation contact person.",
+    "payload_count": 1
+  },
+  {
+    "index": 180,
+    "module": "FEDERATION",
+    "theme": "State",
+    "text": "Module: FEDERATION. Theme: State. Terms: state, district, federation, national, maximum, number. Example questions: Which state has the maximum number of federations? | In which state and district is the ID '303' national federation located?",
+    "payload_count": 2
+  },
+  {
+    "index": 181,
+    "module": "FEDERATION",
+    "theme": "Bank",
+    "text": "Module: FEDERATION. Theme: Bank. Terms: federation, banking, core, bank, urban, cooperative. Example questions: Which Urban Cooperative Bank federations have is core banking?",
+    "payload_count": 1
+  },
+  {
+    "index": 182,
+    "module": "FEDERATION",
+    "theme": "Urban",
+    "text": "Module: FEDERATION. Theme: Urban. Terms: urban, federation, sector. Example questions: Which federations have 'Urban' as their sector of operation?",
+    "payload_count": 1
+  },
+  {
+    "index": 183,
+    "module": "FEDERATION",
+    "theme": "Member",
+    "text": "Module: FEDERATION. Theme: Member. Terms: punjab, member, kribhco, housing, gujarat, federation, associate. Example questions: In the national federation chatbot_national_federations which member is Associate member from Gujarat of KRIBHCO. | In the national federation chatbot_national_federations which member is Ordinary member from Punjab into National Housing federation.",
+    "payload_count": 2
+  },
+  {
+    "index": 184,
+    "module": "FEDERATION",
+    "theme": "Film",
+    "text": "Module: FEDERATION. Theme: Film. Terms: address, member, federation, film, national. Example questions: Give member count and address for National Film federation.",
+    "payload_count": 1
+  },
+  {
+    "index": 185,
+    "module": "FEDERATION",
+    "theme": "Cooperative",
+    "text": "Module: FEDERATION. Theme: Cooperative. Terms: cooperative, produce, federation, women. Example questions: Which Women Cooperative federations have type produce names?",
+    "payload_count": 1
+  },
+  {
+    "index": 186,
+    "module": "FEDERATION",
+    "theme": "Fishery",
+    "text": "Module: FEDERATION. Theme: Fishery. Terms: fishery, federations, kerala. Example questions: List national federations involved in Fishery in Kerala state.",
+    "payload_count": 1
+  },
+  {
+    "index": 187,
+    "module": "FEDERATION",
+    "theme": "Pincode",
+    "text": "Module: FEDERATION. Theme: Pincode. Terms: union, india, cooperative, national, pincode. Example questions: What is the pincode for National Cooperative Union of India?",
+    "payload_count": 1
+  },
+  {
+    "index": 188,
+    "module": "BANKS",
+    "theme": "Schemes",
+    "text": "Module: BANKS. Theme: Schemes. Terms: scbs, profit, schemes, amount, extended, implementation, cooperative, functional, loss, implementing, amounts, delhi, banks, city, stcbs, contact, mumbai, central, metro. Example questions: List all schemes implemented by SCARDB banks and their amounts | Total central scheme funds implemented by profit vs loss making cooperative banks | Show scheme amounts for banks in metro cities Mumbai/Delhi | Sum of total amount extended in state schemes by StCBs grouped by city | Show scheme implementation amounts for functional SCBs | Show contact details for banks implementing Central schemes | Total schemes amount for all cooperative banks",
+    "payload_count": 7
+  },
+  {
+    "index": 189,
+    "module": "BANKS",
+    "theme": "Urban",
+    "text": "Module: BANKS. Theme: Urban. Terms: pacardbs, karnataka, west, pcardb, operation, ward, urban, wards, bengal, coverage, banks, bodies. Example questions: Show ward details for urban PCARDBs in Karnataka | List urban area of operation wards for PCARDB banks | List urban area bodies coverage for PCARDB in West Bengal",
+    "payload_count": 3
+  },
+  {
+    "index": 190,
+    "module": "BANKS",
+    "theme": "Scarb",
+    "text": "Module: BANKS. Theme: Scarb. Terms: tamil, rbi, assam, district, active, license, rural, blocks, branch, date, registration, banks, scarb, operation. Example questions: Show registration details and RBI license for SCARDB in Tamil Nadu | Find SCARDBs with registered RBI license but missing license date | Count of active SCARDB branches in each district of Assam | Show rural area of operation blocks for SCARDB banks | List all SCARDB banks with no RBI license",
+    "payload_count": 5
+  },
+  {
+    "index": 191,
+    "module": "BANKS",
+    "theme": "Pcar",
+    "text": "Module: BANKS. Theme: Pcar. Terms: tamil, pcar, nadu, profit, members, type, computerized, organization, banks, registration. Example questions: List all profit making PCARDBs in Tamil Nadu | List all PCARDB banks and their registration dates | Show organization type for other members of PCARDBs | Total number of members in all PCARDB banks | List all non-computerized PCARDB banks",
+    "payload_count": 5
+  },
+  {
+    "index": 192,
+    "module": "BANKS",
+    "theme": "Dccb",
+    "text": "Module: BANKS. Theme: Dccb. Terms: member, pune, profit, west, pacs, dccb, count, members, phone, affiliate, bengal, affiliates, functional, computerised, building, organization, email, banks, information, pincode, details, state, office, contact, india, non-computerised. Example questions: Total count of other members for DCCBs that have an office building | Show contact person and phone for all functional DCCBs | Show contact information for all profit making DCCBs | Which DCCBs have more than 10 affiliate members? | Show maximum net profit recorded by a DCCB in each state | How many DCCB banks are profit making in India? | Count of other members for each DCCB in West Bengal | Show organization names of other members for DCCBs | Top 5 profitable DCCB banks | Which DCCBs have no email listed in contact details?",
+    "payload_count": 15
+  },
+  {
+    "index": 193,
+    "module": "BANKS",
+    "theme": "Bank",
+    "text": "Module: BANKS. Theme: Bank. Terms: state, person, maharashtra, office, contact, karnataka, building, bank, cooperative. Example questions: Who is the contact person for State Cooperative Bank in MAHARASHTRA? | Show contact details for State Cooperative Bank in Karnataka | How many banks have an office building?",
+    "payload_count": 3
+  },
+  {
+    "index": 194,
+    "module": "BANKS",
+    "theme": "Affiliate",
+    "text": "Module: BANKS. Theme: Affiliate. Terms: office, affiliate, cardb, building. Example questions: Total number of affiliate members for PCARDBs grouped by whether they have an office building",
+    "payload_count": 1
+  },
+  {
+    "index": 195,
+    "module": "BANKS",
+    "theme": "State",
+    "text": "Module: BANKS. Theme: State. Terms: state, uttar, pradesh, cooperative, banks. Example questions: List all State Cooperative Banks in UTTAR PRADESH | List all State Cooperative Banks (StCB)",
+    "payload_count": 2
+  },
+  {
+    "index": 196,
+    "module": "BANKS",
+    "theme": "Audit",
+    "text": "Module: BANKS. Theme: Audit. Terms: state, district, report, audit, cooperative, banks. Example questions: Show the latest audit report for all State Cooperative Banks | Show the audit report for all District Cooperative Banks",
+    "payload_count": 2
+  },
+  {
+    "index": 197,
+    "module": "BANKS",
+    "theme": "Dccbs",
+    "text": "Module: BANKS. Theme: Dccbs. Terms: turnover, profit, schemes, dccbs, maharashtra, pradesh, members, status, affiliate, income, lakhs, implementation, functional, kerala, nadu, tamil, cities, uttar, gujarat, bihar, annual, audit, details, state, contact, telangana, assets, non-functional. Example questions: Show contact information for DCCBs with annual income > 50 Lakhs | What is the total number of members in DCCBs of Kerala? | List all members for DCCBs with turnover > 100 Lakhs | Show scheme implementation for DCCBs in Telangana | What is the total sum of assets for DCCBs in each city of Gujarat? | Total net profit of DCCBs grouped by state | Which DCCBs in MAHARASHTRA are functional? | Show details of other members affiliate with DCCBs | Which DCCBs in Uttar Pradesh or Bihar are non-functional? | Show scheme details for DCCBs in Tamil Nadu",
+    "payload_count": 12
+  },
+  {
+    "index": 198,
+    "module": "BANKS",
+    "theme": "Pcarbs",
+    "text": "Module: BANKS. Theme: Pcarbs. Terms: state, maharashtra, turnover, schemes, pcarbs, urban, government, states, central, implemented, rural. Example questions: What is the total annual turnover of PCARDBs in urban vs rural areas of Maharashtra? | Show PCARDBs that have not implemented any central or state schemes | Count of PCARDBs implementing government schemes per state",
+    "payload_count": 3
+  },
+  {
+    "index": 199,
+    "module": "BANKS",
+    "theme": "Scardbs",
+    "text": "Module: BANKS. Theme: Scardbs. Terms: tamil, schemes, scardbs, blocks, districts, rajasthan, nadu, rural. Example questions: Find the total count of rural blocks served by SCARDBs per district in Rajasthan | Total scheme amount extended by SCARDBs in each district of Tamil Nadu",
+    "payload_count": 2
+  },
+  {
+    "index": 200,
+    "module": "BANKS",
+    "theme": "Scb",
+    "text": "Module: BANKS. Theme: Scb. Terms: member, schemes, implemented, scb, large, members, kerala, liquidation, karnataka, building, audit, banks, secretary, details, state, office, contact, government, states, registration, operation. Example questions: Final audit details with contact info for large SCBs | Who is the secretary in the contact details for SCB Kerala? | Total member count from member details table for SCBs | Show me audit details for SCBs in Karnataka | Show registration number and state of all SCBs | Find SCBs that implemented State Government schemes | Count of other members for each SCB in Kerala | List all SCBs and their corresponding offices buildings | Show me SCBs under liquidation | List all SCBs and their area of operation states",
+    "payload_count": 10
+  },
+  {
+    "index": 201,
+    "module": "BANKS",
+    "theme": "Banks",
+    "text": "Module: BANKS. Theme: Banks. Terms: liabilities, schemes, paid, rajasthan, members, dividend, affiliate, phone, net, registered, info, income, lakhs, numbers, persons, cooperative, loss, implementing, audit, email, banks, reports, details, operating, contact, mumbai, pcardb, government, assets, central. Example questions: Which banks have affiliate members with email? | Get contact details for PCARDB banks | Which banks have active audit reports and contact info? | Which banks have members with designated contact persons? | Find banks implemented schemes in Rajasthan | Count of banks that have a negative net loss and no dividend paid | Show banks operating in Mumbai | Show last 5 registered cooperative banks | Which banks are implementing Central Government schemes? | Find phone numbers for PCARDB banks in Rajasthan",
+    "payload_count": 12
+  },
+  {
+    "index": 202,
+    "module": "BANKS",
+    "theme": "Stcb",
+    "text": "Module: BANKS. Theme: Stcb. Terms: ranking, member, associate, stcb, schemes, membership, paid, north-east, count, dividend, members, affiliate, net, registered, operate, loss, authority, blocks, annual, rural, served, state, spending, expense, average, registration. Example questions: Count of rural blocks served by StCBs grouped by state | What is the average number of members in StCBs grouped by whether they have implemented schemes? | List StCBs that are reporting a net loss greater than 0 | List all StCBs and their affiliate member counts | How many StCB members have associate membership classes per state? | List StCBs registered before 2000 in North-East states | Total annual expense of StCBs compared by dividend paid status | Count of StCBs that operate in each registration authority | What are the top 3 highest spending StCBs by annual expense?",
+    "payload_count": 9
+  },
+  {
+    "index": 203,
+    "module": "BANKS",
+    "theme": "Phone",
+    "text": "Module: BANKS. Theme: Phone. Terms: chhattisgarh, contact, phone, numbers, persons. Example questions: Find phone numbers for contact persons in Chhattisgarh",
+    "payload_count": 1
+  },
+  {
+    "index": 204,
+    "module": "BANKS",
+    "theme": "Dividend",
+    "text": "Module: BANKS. Theme: Dividend. Terms: profit, stcb, dividend, status, andhra, rate, dccbs, highest, banks, functional. Example questions: Average dividend rate of DCCBs in Andhra Pradesh grouped by functional status | Average dividend rate of StCBs grouped by profit making status | Which banks have the highest dividend rate?",
+    "payload_count": 3
+  },
+  {
+    "index": 205,
+    "module": "BANKS",
+    "theme": "Rural",
+    "text": "Module: BANKS. Theme: Rural. Terms: village, assam, coverage, banks, rural. Example questions: Show rural area village coverage for banks in Assam",
+    "payload_count": 1
+  },
+  {
+    "index": 206,
+    "module": "BANKS",
+    "theme": "Assets",
+    "text": "Module: BANKS. Theme: Assets. Terms: audit, liabilities, scbs, assets. Example questions: Sum of total assets and liabilities for SCBs per year of latest audit",
+    "payload_count": 1
+  },
+  {
+    "index": 207,
+    "module": "BANKS",
+    "theme": "District",
+    "text": "Module: BANKS. Theme: District. Terms: uttar, district, pradesh, madhya, dccb, dccbs, cooperative, banks. Example questions: Find the district with the maximum number of DCCBs in Madhya Pradesh | Show all District Cooperative Banks in UTTAR PRADESH | Show details of all District Cooperative Banks (DCCB)",
+    "payload_count": 3
+  },
+  {
+    "index": 208,
+    "module": "BANKS",
+    "theme": "Income",
+    "text": "Module: BANKS. Theme: Income. Terms: state, stcb, annual, bank, income, india, banks. Example questions: Highest annual income among StCBs in each state | Find minimum and maximum annual income across StCBs in India",
+    "payload_count": 2
+  },
+  {
+    "index": 209,
+    "module": "BANKS",
+    "theme": "Gujarat",
+    "text": "Module: BANKS. Theme: Gujarat. Terms: gujarat, pcardb, rural, blocks, urban, operation. Example questions: Show rural area of operation blocks for PCARDB in Gujarat | Show area of operation for PCARDB banks in GUJARAT",
+    "payload_count": 2
+  },
+  {
+    "index": 210,
+    "module": "BANKS",
+    "theme": "Pcardbs",
+    "text": "Module: BANKS. Theme: Pcardbs. Terms: revenue, territories, gujarat, profit, union, pcardbs. Example questions: Total revenue of PCARDBs in Gujarat | Total profit of PCARDBs in Union Territories",
+    "payload_count": 2
+  },
+  {
+    "index": 211,
+    "module": "BANKS",
+    "theme": "Scbs",
+    "text": "Module: BANKS. Theme: Scbs. Terms: scbs, turnover, profit, pradesh, madhya, office, members, class, membership, buildings. Example questions: List other members with class membership 1 for SCBs | Show profit and turnover details for SCBs in Madhya Pradesh | Show building type name for SCBs with office buildings",
+    "payload_count": 3
+  },
+  {
+    "index": 212,
+    "module": "BANKS",
+    "theme": "Pacs",
+    "text": "Module: BANKS. Theme: Pacs. Terms: punjab, district, turnover, location, bihar, pcardbs, area, dccbs, telangana, scardb, pacs, rajasthan, operation. Example questions: Total number of pacs members affiliated to DCCBs grouped by district in Telangana | Find average turnover of PCARDBs grouped by district in Bihar | Total members of PACS affiliated with PCARDBs by district in Rajasthan | Total pacs members in SCARDBs compared by operation area location | What is the total number of members in PACS affiliated with DCCBs in Punjab grouped by city?",
+    "payload_count": 5
+  },
+  {
+    "index": 213,
+    "module": "BANKS",
+    "theme": "Liabilities",
+    "text": "Module: BANKS. Theme: Liabilities. Terms: liabilities, state, scardbs. Example questions: Average total liabilities of SCARDBs by state",
+    "payload_count": 1
+  },
+  {
+    "index": 214,
+    "module": "BANKS",
+    "theme": "Pcardb",
+    "text": "Module: BANKS. Theme: Pcardb. Terms: operating, members, block, pcardb, haryana, banks, rural. Example questions: Number of PCARDBs operating in each rural block of Haryana | Find PCARDB banks with more than 1000 members",
+    "payload_count": 2
+  },
+  {
+    "index": 215,
+    "module": "BANKS",
+    "theme": "Scardb",
+    "text": "Module: BANKS. Theme: Scardb. Terms: tamil, member, year, madhya, pradesh, block, audit, wards, urban, scardb, coverage, banks, functional, nadu, declaration. Example questions: Show details of all SCARDB banks | Show other member count for functional SCARDBs | Find SCARDBs that have not declared any latest audit year | Count of SCARDBs per Urban body in Tamil Nadu | Show block names covered by SCARDB in Madhya Pradesh | List urban wards covered by SCARDB in Tamil Nadu",
+    "payload_count": 6
+  },
+  {
+    "index": 216,
+    "module": "BANKS",
+    "theme": "Haryana",
+    "text": "Module: BANKS. Theme: Haryana. Terms: schemes, haryana, extended, amount. Example questions: Total amount extended for state schemes in Haryana",
+    "payload_count": 1
+  },
+  {
+    "index": 217,
+    "module": "BANKS",
+    "theme": "Profit",
+    "text": "Module: BANKS. Theme: Profit. Terms: pradesh, profit, andhra, office, type, building, dccbs, loss. Example questions: Average net profit for DCCBs grouped by their office building type | Show audit profit vs loss for DCCBs in Andhra Pradesh",
+    "payload_count": 2
+  },
+  {
+    "index": 218,
+    "module": "BANKS",
+    "theme": "Bihar",
+    "text": "Module: BANKS. Theme: Bihar. Terms: contact, bihar, pacs, banks, designation. Example questions: Show contact designation for PCARDB banks in Bihar",
+    "payload_count": 1
+  },
+  {
+    "index": 219,
+    "module": "BANKS",
+    "theme": "Turnover",
+    "text": "Module: BANKS. Theme: Turnover. Terms: pcar, state, turnover, schemes, computerized, banks. Example questions: Average annual turnover of PCARDBs grouped by whether they are computerized | Total turnover for StCB banks implementing state schemes",
+    "payload_count": 2
+  },
+  {
+    "index": 220,
+    "module": "BANKS",
+    "theme": "Central",
+    "text": "Module: BANKS. Theme: Central. Terms: central, schemes, odisha, banks. Example questions: List all Central schemes implemented by banks in Odisha",
+    "payload_count": 1
+  },
+  {
+    "index": 221,
+    "module": "BANKS",
+    "theme": "Affiliates",
+    "text": "Module: BANKS. Theme: Affiliates. Terms: activity, membership, affiliates, primary, scb. Example questions: List membership primary activity for SCB affiliates",
+    "payload_count": 1
+  },
+  {
+    "index": 222,
+    "module": "BANKS",
+    "theme": "Branches",
+    "text": "Module: BANKS. Theme: Branches. Terms: pcardbs, states, branches. Example questions: Average number of branches for PCARDBs across all states",
+    "payload_count": 1
+  },
+  {
+    "index": 223,
+    "module": "BANKS",
+    "theme": "Cooperative",
+    "text": "Module: BANKS. Theme: Cooperative. Terms: state, office, building, cooperative, banks. Example questions: List all State Cooperative Banks that do NOT have an office building",
+    "payload_count": 1
+  },
+  {
+    "index": 224,
+    "module": "BANKS",
+    "theme": "Scarbs",
+    "text": "Module: BANKS. Theme: Scarbs. Terms: scarbs, uttarakhand, contact, himachal, details. Example questions: Show contact details for SCARDBs in Himachal Pradesh and Uttarakhand",
+    "payload_count": 1
+  },
+  {
+    "index": 225,
+    "module": "BANKS",
+    "theme": "Ifsc",
+    "text": "Module: BANKS. Theme: Ifsc. Terms: ifsc, pattern, dccb, contact, matching, banks. Example questions: Find DCCBs by IFSC code | Show contact info for banks matching IFSC pattern ABHY006% | List DCCB bank names and their IFSC codes",
+    "payload_count": 3
+  },
+  {
+    "index": 226,
+    "module": "BANKS",
+    "theme": "Email",
+    "text": "Module: BANKS. Theme: Email. Terms: state, person, profit, stcb, schemes, contact, email, banks. Example questions: Fetch email for banks implementing State schemes in UP | Show email for contact person in profit making StCBs",
+    "payload_count": 2
+  },
+  {
+    "index": 227,
+    "module": "BANKS",
+    "theme": "Registration",
+    "text": "Module: BANKS. Theme: Registration. Terms: audit, banks, registration. Example questions: Show registration and audit year for all banks",
+    "payload_count": 1
+  },
+  {
+    "index": 228,
+    "module": "BANKS",
+    "theme": "Membership",
+    "text": "Module: BANKS. Theme: Membership. Terms: joined, membership, master, other, scb. Example questions: List membership types for other members joined with scb master",
+    "payload_count": 1
+  },
+  {
+    "index": 229,
+    "module": "BANKS",
+    "theme": "Ward",
+    "text": "Module: BANKS. Theme: Ward. Terms: ward, urban, building. Example questions: Fetch ward and building type for urban banks",
+    "payload_count": 1
+  },
+  {
+    "index": 230,
+    "module": "BANKS",
+    "theme": "Scheme",
+    "text": "Module: BANKS. Theme: Scheme. Terms: city, state, amount, distributed, scheme, cooperative, banks. Example questions: Total scheme amount distributed by State Cooperative Banks in each city",
+    "payload_count": 1
+  },
+  {
+    "index": 231,
+    "module": "BANKS",
+    "theme": "Punjab",
+    "text": "Module: BANKS. Theme: Punjab. Terms: members, punjab, address, organization. Example questions: Show organization address for other members in Punjab",
+    "payload_count": 1
+  },
+  {
+    "index": 232,
+    "module": "OFFICES",
+    "theme": "Telangana",
+    "text": "Module: OFFICES. Theme: Telangana. Terms: offices, pincodes, telangana. Example questions: List all offices in Telangana with their pin codes.",
+    "payload_count": 1
+  },
+  {
+    "index": 233,
+    "module": "OFFICES",
+    "theme": "Ncdc",
+    "text": "Module: OFFICES. Theme: Ncdc. Terms: owned, offices, training, specialization, maharashtra, rented, ncdc, director, designations, buildings, office, chief, sub, controllers, area, controller, india, directors, head. Example questions: List all NCDC offices where the controller is a Chief Director. | Total area of all Rented NCDC offices in Maharashtra. | Where is the NCDC Head Office? | Total area of NCDC offices controlled by Chief Directors. | List all NCDC Sub Offices in India. | How many NCDC offices are in owned buildings? | Which NCDC office has specialization in Training? | List unique designations of NCDC office controllers.",
+    "payload_count": 8
+  },
+  {
+    "index": 234,
+    "module": "OFFICES",
+    "theme": "Financial",
+    "text": "Module: OFFICES. Theme: Financial. Terms: punjab, state, matters, offices, financial, north, specialized, haryana, delhi. Example questions: Count of offices specialized in Financial by state. | What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)? | Find offices specialized in Financial matters.",
+    "payload_count": 3
+  },
+  {
+    "index": 235,
+    "module": "OFFICES",
+    "theme": "Controller",
+    "text": "Module: OFFICES. Theme: Controller. Terms: jaipur, regional, office, phone, controller, head, number. Example questions: What is the controller phone number for Head Office? | Who is the controller of the Regional Office in Jaipur?",
+    "payload_count": 2
+  },
+  {
+    "index": 236,
+    "module": "OFFICES",
+    "theme": "Geometry",
+    "text": "Module: OFFICES. Theme: Geometry. Terms: point, owned, offices, geometry, ncdc, polygon. Example questions: Total count of Point vs Polygon geometry types in NCDC offices. | List Point geometry offices that are Owned by NCDC.",
+    "payload_count": 2
+  },
+  {
+    "index": 237,
+    "module": "OFFICES",
+    "theme": "Office",
+    "text": "Module: OFFICES. Theme: Office. Terms: office, sub, phone. Example questions: List all Sub Office names with their phone numbers.",
+    "payload_count": 1
+  },
+  {
+    "index": 238,
+    "module": "OFFICES",
+    "theme": "Gujarat",
+    "text": "Module: OFFICES. Theme: Gujarat. Terms: geometry, gujarat, polygon. Example questions: Show offices with Polygon geometry type in Gujarat.",
+    "payload_count": 1
+  },
+  {
+    "index": 239,
+    "module": "OFFICES",
+    "theme": "Area",
+    "text": "Module: OFFICES. Theme: Area. Terms: geometry, office, area, feet, square, maximum, polygon. Example questions: Total area in square feet for all Polygon geometry offices. | Which office has the maximum area sq ft?",
+    "payload_count": 2
+  },
+  {
+    "index": 240,
+    "module": "OFFICES",
+    "theme": "Email",
+    "text": "Module: OFFICES. Theme: Email. Terms: deputy, phone, email, delhi, director. Example questions: Show email and phone of Deputy Director in Delhi office.",
+    "payload_count": 1
+  },
+  {
+    "index": 241,
+    "module": "OFFICES",
+    "theme": "Director",
+    "text": "Module: OFFICES. Theme: Director. Terms: assistant, offices, regional, office, managing, headed, controlled, controller, general, director, head, designation. Example questions: How many Regional Offices are controlled by a Director? | How many offices are controlled by a Managing Director? | List all offices whose controller designation is Assistant Director. | Show all offices headed by a Director General or Managing Director. | Find the Managing Director of the Head Office. | Which office is controlled by Director General?",
+    "payload_count": 6
+  },
+  {
+    "index": 242,
+    "module": "OFFICES",
+    "theme": "Maharashtra",
+    "text": "Module: OFFICES. Theme: Maharashtra. Terms: geometry, maharashtra, polygon. Example questions: Which offices in Maharashtra have Polygon geometry?",
+    "payload_count": 1
+  },
+  {
+    "index": 243,
+    "module": "OFFICES",
+    "theme": "Pin",
+    "text": "Module: OFFICES. Theme: Pin. Terms: jaipur, regional, office, ncdc, email, pin. Example questions: Find Pin Code and Email for NCDC Regional Office Jaipur.",
+    "payload_count": 1
+  },
+  {
+    "index": 244,
+    "module": "OFFICES",
+    "theme": "Regional",
+    "text": "Module: OFFICES. Theme: Regional. Terms: address, regional, office, phone, west, bangalore, chennai, bengal, email, hyderabad. Example questions: Where is the Regional Office in Bangalore? | List all Regional Offices in West Bengal. | Show address of Regional Office in Hyderabad. | Show phone number and email for the Regional Office in Chennai.",
+    "payload_count": 4
+  },
+  {
+    "index": 245,
+    "module": "OFFICES",
+    "theme": "Bihar",
+    "text": "Module: OFFICES. Theme: Bihar. Terms: offices, located, bihar. Example questions: How many offices are located in Bihar?",
+    "payload_count": 1
+  },
+  {
+    "index": 246,
+    "module": "OFFICES",
+    "theme": "Training",
+    "text": "Module: OFFICES. Theme: Training. Terms: specialized, training, office, karnataka. Example questions: Find office specialized in Training in Karnataka.",
+    "payload_count": 1
+  },
+  {
+    "index": 247,
+    "module": "OFFICES",
+    "theme": "Assistant",
+    "text": "Module: OFFICES. Theme: Assistant. Terms: assistant, offices, training, specialized, controlled, director. Example questions: Find Assistant Director controlled offices specialized in Training.",
+    "payload_count": 1
+  },
+  {
+    "index": 248,
+    "module": "OFFICES",
+    "theme": "Designation",
+    "text": "Module: OFFICES. Theme: Designation. Terms: karnataka, designation, controllers. Example questions: List designation of controllers for all offices in Karnataka.",
+    "payload_count": 1
+  },
+  {
+    "index": 249,
+    "module": "OFFICES",
+    "theme": "Rented",
+    "text": "Module: OFFICES. Theme: Rented. Terms: geometry, rented, point. Example questions: Find all Rented offices with Point geometry type.",
+    "payload_count": 1
+  },
+  {
+    "index": 250,
+    "module": "OFFICES",
+    "theme": "Offices",
+    "text": "Module: OFFICES. Theme: Offices. Terms: offices, regional, chief, directors, heading. Example questions: Who are the Chief Directors heading Regional Offices?",
+    "payload_count": 1
+  },
+  {
+    "index": 251,
+    "module": "OFFICES",
+    "theme": "Mumbai",
+    "text": "Module: OFFICES. Theme: Mumbai. Terms: owned, regional, office, rented, mumbai. Example questions: Is the Mumbai Regional Office Owned or Rented?",
+    "payload_count": 1
+  },
+  {
+    "index": 252,
+    "module": "AT_A_GLANCE",
+    "theme": "Federation",
+    "text": "Module: AT_A_GLANCE. Theme: Federation. Terms: state, federation, district, count, national, functional, level. Example questions: How many State Level Federations are functional? | State Federation count | National Federation count | Total number of District Level Federations",
+    "payload_count": 4
+  },
+  {
+    "index": 253,
+    "module": "AT_A_GLANCE",
+    "theme": "Cooperatives",
+    "text": "Module: AT_A_GLANCE. Theme: Cooperatives. Terms: msme, profit, liquidation, financial, count, non functional, cooperatives, urban, audit, registration, registrations, functional, locations, rural. Example questions: Number of cooperatives with MSME registration | Count of cooperatives in Rural locations | Total number of cooperatives that have completed financial audit | How many cooperatives are categorized as Non Functional? | Count of cooperatives in Urban locations | How many cooperatives are currently under liquidation? | Primary cooperatives count | How many profit-making cooperatives are recorded?",
+    "payload_count": 8
+  },
+  {
+    "index": 254,
+    "module": "AT_A_GLANCE",
+    "theme": "Chatbot",
+    "text": "Module: AT_A_GLANCE. Theme: Chatbot. Terms: master, chatbot, bank, cooperative, registration. Example questions: Total cooperative bank count",
+    "payload_count": 1
+  },
+  {
+    "index": 255,
+    "module": "AT_A_GLANCE",
+    "theme": "Bank",
+    "text": "Module: AT_A_GLANCE. Theme: Bank. Terms: bank, cooperative, district. Example questions: District cooperative bank count",
+    "payload_count": 1
+  },
+  {
+    "index": 256,
+    "module": "AT_A_GLANCE",
+    "theme": "Credit",
+    "text": "Module: AT_A_GLANCE. Theme: Credit. Terms: cooperatives, sector, credit. Example questions: Total count of cooperatives in the Credit sector",
+    "payload_count": 1
+  },
+  {
+    "index": 257,
+    "module": "AT_A_GLANCE",
+    "theme": "Federations",
+    "text": "Module: AT_A_GLANCE. Theme: Federations. Terms: national, federations, functional. Example questions: Total count of functional National Federations",
+    "payload_count": 1
+  },
+  {
+    "index": 258,
+    "module": "AT_A_GLANCE",
+    "theme": "Cooperative",
+    "text": "Module: AT_A_GLANCE. Theme: Cooperative. Terms: multi, state, master, credit, societies, count, bank, computerized, private, cooperative, banks, functional, registrations, details. Example questions: Cooperative Banks | SCARDB cooperative bank count | Total number of functional cooperative societies | Total number of computerized cooperative banks | Multi state cooperative count | How many non-credit cooperative societies are there? | Total cooperative bank count in details | PCARDB cooperative bank count | State cooperative bank count",
+    "payload_count": 9
+  },
+  {
+    "index": 259,
+    "module": "AT_A_GLANCE",
+    "theme": "Ucb",
+    "text": "Module: AT_A_GLANCE. Theme: Ucb. Terms: multi, state, count, chatbot, cooperative, registration, ucb. Example questions: Multi state ucb | UCB count",
+    "payload_count": 2
+  },
+  {
+    "index": 260,
+    "module": "EDUCATION",
+    "theme": "Odisha",
+    "text": "Module: EDUCATION. Theme: Odisha. Terms: reading, odisha, capacity, seating, institutes. Example questions: Find reading room seating capacity for all institutes in Odisha.",
+    "payload_count": 1
+  },
+  {
+    "index": 261,
+    "module": "EDUCATION",
+    "theme": "Ncct",
+    "text": "Module: EDUCATION. Theme: Ncct. Terms: attended, programs, international, open, rooms, facilities, land, reading, ncct, completed, projector, participants, promoted, built-up, area, institutes, education, rural. Example questions: How many NCCT institutes have projector facilities? | List Rural education institutes promoted by NCCT. | How many international participants attended programs in NCCT institutes? | Calculate total participants (attended + completed) for NCCT institutes. | Show built-up area and open land area for NCCT HO. | Find NCCT institutes with more than 5 reading rooms.",
+    "payload_count": 6
+  },
+  {
+    "index": 262,
+    "module": "EDUCATION",
+    "theme": "Ricm",
+    "text": "Module: EDUCATION. Theme: Ricm. Terms: longitude, training, ricm, west, stage, south, budget, faculty, hostel, institute, regional, bengal, cooperative, kerala, latitude, tamil, opening, jaipur, karnataka, annual, bangalore, private, national, hours, management, draft, capacity, india. Example questions: Show faculty details for RICM Jaipur. | Show all RICM in South India states (Tamil Nadu, Karnataka, Kerala, AP). | Which RICM has the highest hostel capacity? | Average annual budget for RICM institutes in the National Level. | What are the opening hours for RICM Bangalore? | Show latitude and longitude for all RICMs. | How manyed RICM (Regional Institute of Cooperative Management) are there in total? | Which RICM is currently in draft stage? | List all RICM located in West Bengal.",
+    "payload_count": 9
+  },
+  {
+    "index": 263,
+    "module": "EDUCATION",
+    "theme": "Icm",
+    "text": "Module: EDUCATION. Theme: Icm. Terms: faculty, tamil, activity, institute, adhoc, gujarat, maharashtra, bhopal, capacity, icm, seating, private, nadu. Example questions: List all ICM institutes in Maharashtra. | Which ICM has the largest seating capacity in Tamil Nadu? | How many ICM are there in Tamil Nadu? | Show details for the ICM in Bhopal. | Which ICM has the most Adhoc faculty members? | List all ICMs in Gujarat and their primary activity names.",
+    "payload_count": 6
+  },
+  {
+    "index": 264,
+    "module": "EDUCATION",
+    "theme": "Urban",
+    "text": "Module: EDUCATION. Theme: Urban. Terms: hostel, tamil, uttar, institute, pradesh, facilities, registered, urban, ricms, nadu. Example questions: How many institutes are registered in 'Urban' area of Tamil Nadu? | Find Urban RICMs in Uttar Pradesh with hostel facilities.",
+    "payload_count": 2
+  },
+  {
+    "index": 265,
+    "module": "EDUCATION",
+    "theme": "Research",
+    "text": "Module: EDUCATION. Theme: Research. Terms: faculty, studies, institute, research, recruited. Example questions: Show institutes with both Research studies and own faculty recruited.",
+    "payload_count": 1
+  },
+  {
+    "index": 266,
+    "module": "EDUCATION",
+    "theme": "Institute",
+    "text": "Module: EDUCATION. Theme: Institute. Terms: lab, programs, approval, training, faculty, hostel, institute, pending, status, active, largest, classroom, transport, computer, facility, services, total, area, regular. Example questions: Which institute has the largest total area? | List institutes with more than 5 classrooms and a hostel facility. | List institutes that have a computer lab. | Show institutes with active status but pending approval. | Which institute conducted the most training programs? | Show institutes with more than 10 regular faculty members. | Which institutes provide both transport and hostel services?",
+    "payload_count": 7
+  },
+  {
+    "index": 267,
+    "module": "EDUCATION",
+    "theme": "Faculty",
+    "text": "Module: EDUCATION. Theme: Faculty. Terms: faculty, adhoc, ncct, institutes, bangalore, visiting, regular. Example questions: Total headcount of faculty (Regular + Adhoc) in NCCT institutes. | Compare Regular vs Visiting faculty in Bangalore institutes.",
+    "payload_count": 2
+  },
+  {
+    "index": 268,
+    "module": "EDUCATION",
+    "theme": "Budget",
+    "text": "Module: EDUCATION. Theme: Budget. Terms: institute, maharashtra, jaipur, ricm, bangalore, budget. Example questions: Compare the annual budget of RICM Jaipur vs RICM Bangalore. | Total annual budget for all institutes in Maharashtra.",
+    "payload_count": 2
+  },
+  {
+    "index": 269,
+    "module": "EDUCATION",
+    "theme": "Bihar",
+    "text": "Module: EDUCATION. Theme: Bihar. Terms: programs, education, bihar. Example questions: Get the count of education programs conducted in Bihar.",
+    "payload_count": 1
+  },
+  {
+    "index": 270,
+    "module": "EDUCATION",
+    "theme": "Ricms",
+    "text": "Module: EDUCATION. Theme: Ricms. Terms: ricms, education, programmes, conducted. Example questions: List all education programmes conducted by RICMs.",
+    "payload_count": 1
+  },
+  {
+    "index": 271,
+    "module": "EDUCATION",
+    "theme": "Institutes",
+    "text": "Module: EDUCATION. Theme: Institutes. Terms: studies, organisation, transport, library, sports, areas, playground, training, capacity, services, seating, research, institutes, financed, conducted, delhi, rural, playgrounds. Example questions: Show institutes that provide transport services. | Show institutes with available sports playgrounds in Rural areas. | List institutes with more than 3 research studies conducted. | Find institutes with a seating capacity greater than 100. | Which institutes in Delhi have both a library and a sports playground? | Which institutes are financed by Promoting Organisation/Institute?",
+    "payload_count": 6
+  },
+  {
+    "index": 272,
+    "module": "EDUCATION",
+    "theme": "Karnataka",
+    "text": "Module: EDUCATION. Theme: Karnataka. Terms: state, karnataka, institutes, registration, level. Example questions: List all State Level institutes in Karnataka with their registration dates.",
+    "payload_count": 1
+  },
+  {
+    "index": 273,
+    "module": "EDUCATION",
+    "theme": "Fishery",
+    "text": "Module: EDUCATION. Theme: Fishery. Terms: fishery, kerala. Example questions: Find institutes covering Fishery in Kerala.",
+    "payload_count": 1
+  },
+  {
+    "index": 274,
+    "module": "EDUCATION",
+    "theme": "Head",
+    "text": "Module: EDUCATION. Theme: Head. Terms: vamnicom, office, ncct, mobile, email, head, number. Example questions: Who is the head of NCCT Head Office? | Who is the head of VAMNICOM and what is their email? | Get the mobile number of the head of NCCT Head Office.",
+    "payload_count": 3
+  },
+  {
+    "index": 275,
+    "module": "EDUCATION",
+    "theme": "Handicraft",
+    "text": "Module: EDUCATION. Theme: Handicraft. Terms: institute, sectoral, training, coverage, handicraft. Example questions: List institutes with sectoral coverage in Handicraft.",
+    "payload_count": 1
+  },
+  {
+    "index": 276,
+    "module": "EDUCATION",
+    "theme": "Funding",
+    "text": "Module: EDUCATION. Theme: Funding. Terms: state, govt, institutes, central, funding. Example questions: Show institutes that receive funding from both Central and State Govt.",
+    "payload_count": 1
+  },
+  {
+    "index": 277,
+    "module": "EDUCATION",
+    "theme": "Sugar",
+    "text": "Module: EDUCATION. Theme: Sugar. Terms: dairy, sugar, institutes, sectors, coverage. Example questions: Which institutes cover both Sugar and Dairy sectors?",
+    "payload_count": 1
+  },
+  {
+    "index": 278,
+    "module": "EDUCATION",
+    "theme": "India",
+    "text": "Module: EDUCATION. Theme: India. Terms: programs, completed, participants, education, india. Example questions: Total participants who completed education programs in India.",
+    "payload_count": 1
+  },
+  {
+    "index": 279,
+    "module": "EDUCATION",
+    "theme": "Dairy",
+    "text": "Module: EDUCATION. Theme: Dairy. Terms: coverage, institutes, dairy, sectoral. Example questions: List institutes whose sectoral coverage includes Dairy.",
+    "payload_count": 1
+  },
+  {
+    "index": 280,
+    "module": "EDUCATION",
+    "theme": "Credit",
+    "text": "Module: EDUCATION. Theme: Credit. Terms: institutes, sector, credit. Example questions: Show institutes involved in the Credit sector.",
+    "payload_count": 1
+  },
+  {
+    "index": 281,
+    "module": "EDUCATION",
+    "theme": "Contact",
+    "text": "Module: EDUCATION. Theme: Contact. Terms: institute, training, contact, education, details. Example questions: Get the contact details of VAMNICOM.",
+    "payload_count": 1
+  },
+  {
+    "index": 282,
+    "module": "EDUCATION",
+    "theme": "Central",
+    "text": "Module: EDUCATION. Theme: Central. Terms: funded, central, institutes, government. Example questions: List institutes funded by Central Govt.",
+    "payload_count": 1
+  },
+  {
+    "index": 283,
+    "module": "EDUCATION",
+    "theme": "International",
+    "text": "Module: EDUCATION. Theme: International. Terms: institutes, programs, international, training. Example questions: List institutes that offer International training programs.",
+    "payload_count": 1
+  },
+  {
+    "index": 284,
+    "module": "EDUCATION",
+    "theme": "Ncd",
+    "text": "Module: EDUCATION. Theme: Ncd. Terms: institute, lucknow, icm, identification, ncd. Example questions: Get NCD ID and identification number for ICM Lucknow.",
+    "payload_count": 1
+  },
+  {
+    "index": 285,
+    "module": "EDUCATION",
+    "theme": "Organization",
+    "text": "Module: EDUCATION. Theme: Organization. Terms: institute, promoting, training, education, organization. Example questions: List all unique promoting organization names.",
+    "payload_count": 1
+  },
+  {
+    "index": 286,
+    "module": "PUBLIC",
+    "theme": "Hii",
+    "text": "Module: PUBLIC. Theme: Hii. Terms: hii. Example questions: hii",
+    "payload_count": 1
+  }
+]

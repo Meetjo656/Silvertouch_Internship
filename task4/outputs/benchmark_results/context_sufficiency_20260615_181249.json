@@ -1,0 +1,381 @@
+[
+  {
+    "question": "Count multi-state societies by their primary activity",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "How many NCCT institutes have projector facilities?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "List of multi-state societies which are under liquidation",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show me all functional cooperative societies",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Get the names of all federations along with their auditors' categories.",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Count of offices specialized in Financial by state.",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "What is the total number of members in all state federations?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Total turnover of all multi-state societies",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Total loss of multi-state societies in the Handloom sector",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "How many full covered GPs are there in gaya for Handloom?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Latest top 10 Credit & Thrift rankings in tamil nadu",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "List all members from National Film Federation in Karnataka state. ",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "List partially covered Gram Panchayats in papum pare for Multi-purpose",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Find profit making Dairy federations in Uttar Pradesh.",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show me coverage details for all blocks in belagavi for Multi-purpose",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "How many full covered GPs are there in madurai for Fishery?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Find phone numbers for PCARDB banks in Rajasthan",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "List partially covered Gram Panchayats in pune for Credit",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "List urban area of operation wards for PCARDB banks",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Total deposits of Chatbot Cooperative Pacs societies",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Top 5 profitable DCCB banks",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "List StCBs that are reporting a net loss greater than 0",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Total annual expense of StCBs compared by dividend paid status",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Total number of members in all PCARDB banks",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show last 5 registered cooperative banks",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Count of banks that have a negative net loss and no dividend paid",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show organization type for other members of PCARDBs",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show scheme amounts for banks in metro cities Mumbai/Delhi",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Total count of functional National Federations",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Total number of functional cooperative societies",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Multi state ucb",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Total number of computerized cooperative banks",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "UCB count",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "How many profit-making cooperatives are recorded?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "How many non-credit cooperative societies are there?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "How many State Level Federations are functional?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "SCARDB cooperative bank count",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Count of cooperatives in Urban locations",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Which DCCBs have no email listed in contact details?",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Find federation detail, the member detail and contact information which mapped with federation name is Nafed.",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show area of operation for PCARDB banks in GUJARAT",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Get phone number and email for DCCB in Pune",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show contact person and phone for all functional DCCBs",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show contact information for all profit making DCCBs",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "List all members for DCCBs with turnover > 100 Lakhs",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Fetch member pincode for DCCB affiliates",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show scheme details for DCCBs in Tamil Nadu",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  },
+  {
+    "question": "Show details of other members affiliate with DCCBs",
+    "context_sufficient": false,
+    "missing_components": [
+      "Missing DDL",
+      "Missing Documentation"
+    ]
+  }
+]

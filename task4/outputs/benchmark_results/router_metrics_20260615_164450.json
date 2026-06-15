@@ -1,0 +1,14 @@
+{
+  "Experiment A (Regex Router)": {
+    "Top-1 Accuracy": 20.0,
+    "Top-3 Accuracy": 34.0
+  },
+  "Experiment B (Representative Embedding Router)": {
+    "Top-1 Accuracy": 86.0,
+    "Top-3 Accuracy": 100.0
+  },
+  "Experiment C (Retrieval-Driven Router)": {
+    "Top-1 Accuracy": 84.0,
+    "Top-3 Accuracy": 100.0
+  }
+}

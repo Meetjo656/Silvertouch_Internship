@@ -1,0 +1,811 @@
+[
+  {
+    "question": "Count multi-state societies by their primary activity",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_multi_state_cooperatives",
+      "chatbot_districts_blocks_gp_villages",
+      "chatbot_cooperative_registration_jute",
+      "chatbot_member_details_private",
+      "chatbot_cooperative_registration_social"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "List of multi-state societies which are under liquidation",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_multi_state_cooperatives",
+      "chatbot_districts_blocks_gp_villages",
+      "chatbot_cooperative_registration_jute",
+      "chatbot_member_details_private",
+      "chatbot_cooperative_registration_social"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Show me all functional cooperative societies",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_multi_state_cooperatives",
+      "chatbot_cooperative_registration_jute",
+      "chatbot_member_details_private",
+      "chatbot_cooperative_registration_social",
+      "chatbot_cooperative_registration_multipurpose"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Get the names of all federations along with their auditors' categories.",
+    "expected_tables": [
+      "chatbot_state_district_federation_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_state_district_federation_multi",
+      "chatbot_state_district_federation_cmiscellaneous",
+      "chatbot_state_district_federation_wocoop",
+      "chatbot_state_district_federation_tribal",
+      "chatbot_state_district_federation_miscellaneous"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "What is the total number of members in all state federations?",
+    "expected_tables": [
+      "chatbot_state_district_federation_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_national_federations",
+      "chatbot_state_district_federation_wocoop",
+      "chatbot_state_district_federation_tribal",
+      "chatbot_state_district_federation_miscellaneous",
+      "chatbot_state_district_federation_housing"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Total turnover of all multi-state societies",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_multi_state_cooperatives",
+      "chatbot_districts_blocks_gp_villages",
+      "chatbot_cooperative_registration_jute",
+      "chatbot_member_details_private",
+      "chatbot_cooperative_registration_social"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Total loss of multi-state societies in the Handloom sector",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_registration_handloom",
+      "chatbot_multi_state_cooperatives",
+      "chatbot_districts_blocks_gp_villages",
+      "chatbot_cooperative_registration_jute",
+      "chatbot_member_details_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+    "expected_tables": [
+      "chatbot_cooperative_registrations_master",
+      "chatbot_cooperative_registration_khadi_gram"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_registration_khadi_gram",
+      "chatbot_multi_state_cooperatives",
+      "chatbot_cooperative_registration_jute",
+      "chatbot_member_details_private",
+      "chatbot_cooperative_registration_social"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Find profit making Dairy federations in Uttar Pradesh.",
+    "expected_tables": [
+      "chatbot_state_district_federation_dairy",
+      "chatbot_state_district_federation_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_state_district_federation_dairy",
+      "chatbot_state_district_federation_livestock",
+      "chatbot_state_district_federation_wocoop",
+      "chatbot_state_district_federation_tribal",
+      "chatbot_state_district_federation_miscellaneous"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Find phone numbers for PCARDB banks in Rajasthan",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_scb_contact_details"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private",
+      "chatbot_scb_other_members_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "List urban area of operation wards for PCARDB banks",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_scb_area_urban_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Total deposits of Chatbot Cooperative Pacs societies",
+    "expected_tables": [
+      "chatbot_cooperative_pacs",
+      "chatbot_cooperative_registrations_master"
+    ],
+    "retrieved_tables": [
+      "chatbot_cooperative_pacs",
+      "chatbot_multi_state_cooperatives",
+      "chatbot_cooperative_registration_jute",
+      "chatbot_member_details_private",
+      "chatbot_cooperative_registration_social"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Top 5 profitable DCCB banks",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "List StCBs that are reporting a net loss greater than 0",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Total annual expense of StCBs compared by dividend paid status",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Total number of members in all PCARDB banks",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Show last 5 registered cooperative banks",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Count of banks that have a negative net loss and no dividend paid",
+    "expected_tables": [
+      "chatbot_scb_master_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Show organization type for other members of PCARDBs",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_scb_other_members_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Show scheme amounts for banks in metro cities Mumbai/Delhi",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_scb_schemes_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Which DCCBs have no email listed in contact details?",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private",
+      "chatbot_scb_contact_details"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Show area of operation for PCARDB banks in GUJARAT",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_area_rural_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Get phone number and email for DCCB in Pune",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private",
+      "chatbot_scb_contact_details"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Show contact person and phone for all functional DCCBs",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private",
+      "chatbot_scb_contact_details"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_contact_details",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Show contact information for all profit making DCCBs",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private",
+      "chatbot_scb_contact_details"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "List all members for DCCBs with turnover > 100 Lakhs",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private",
+      "chatbot_scb_other_members_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Fetch member pincode for DCCB affiliates",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private",
+      "chatbot_scb_members_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Show scheme details for DCCBs in Tamil Nadu",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private",
+      "chatbot_scb_schemes_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_schemes_private",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_contact_details"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  },
+  {
+    "question": "Show details of other members affiliate with DCCBs",
+    "expected_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_dccb_master_private",
+      "chatbot_scb_other_members_private"
+    ],
+    "retrieved_tables": [
+      "chatbot_scb_other_members_private",
+      "chatbot_scb_contact_details",
+      "chatbot_scb_area_rural_private",
+      "chatbot_scb_area_urban_private",
+      "chatbot_scb_schemes_private"
+    ],
+    "expected_docs": [
+      ""
+    ],
+    "retrieved_docs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "missing_context": [
+      "DDL"
+    ],
+    "failure_reason": "Ranker failed to push expected items into Top-5. Missing: ['DDL']"
+  }
+]

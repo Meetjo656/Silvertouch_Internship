@@ -1,0 +1,106 @@
+[
+  {
+    "point_id": "45a18bb4-8787-5869-84c4-283299242ffd",
+    "payload": {
+      "documentation": "chatbot_cooperative_registrations_master: Always filter using is_draft=0, is_approved=1, and status=1. Use is_multi_state=0 for non multi-state societies and is_multi_state=1 for multi-state societies.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [
+        "chatbot_cooperative_registrations_master"
+      ],
+      "business_terms": [
+        "societies",
+        "registrations",
+        "multi-state",
+        "cooperative",
+        "approval"
+      ]
+    }
+  },
+  {
+    "point_id": "6119a31d-f57c-5e0f-9df8-eca98dbdb6e5",
+    "payload": {
+      "documentation": "chatbot_national_federations: Always filter using is_draft = 0 and is_new = 1.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [
+        "chatbot_national_federations"
+      ],
+      "business_terms": [
+        "national_federations",
+        "draft",
+        "new"
+      ]
+    }
+  },
+  {
+    "point_id": "a90e2320-9c74-5b5b-a9b5-42b74e349b31",
+    "payload": {
+      "documentation": "chatbot_scb_master_private: Always filter using is_draft!=1, is_delete=0, and status=1. Use scb_dcb_flag to distinguish bank types: 1 = State Cooperative Bank (SCB), 2 = District Cooperative Bank (DCB), 3 = SCARDB, 4 = PCARDB.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [
+        "chatbot_scb_master_private"
+      ],
+      "business_terms": [
+        "scb",
+        "dcb",
+        "scardb",
+        "pcardb",
+        "cooperative",
+        "bank",
+        "types"
+      ]
+    }
+  },
+  {
+    "point_id": "ac0699d1-8d5b-5be9-8fbf-e7060416bb8a",
+    "payload": {
+      "documentation": "chatbot_state_district_federation_private: Always filter using is_draft=0, is_approved=1, and status=1.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [
+        "chatbot_state_district_federation_private"
+      ],
+      "business_terms": [
+        "chatbot",
+        "state",
+        "district",
+        "federation",
+        "private"
+      ]
+    }
+  },
+  {
+    "point_id": "b401111f-eea1-57ab-9eaa-86bc06b3d4e7",
+    "payload": {
+      "documentation": "Pattern Consistency: Leverage similar query patterns from the training dataset. Prioritize using the same SQL structure and join logic for related metrics to ensure consistency.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [],
+      "business_terms": [
+        "metrics",
+        "consistency",
+        "patterns",
+        "structure",
+        "logic"
+      ]
+    }
+  },
+  {
+    "point_id": "fbbb119f-06ec-55f5-858c-e7456c6f1860",
+    "payload": {
+      "documentation": "Counting Rule: This is a high-level summary/count module. Queries should always return aggregate counts (COUNT, SUM) rather than listing individual society or bank details.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [],
+      "business_terms": [
+        "count",
+        "aggregate",
+        "society",
+        "bank",
+        "summary"
+      ]
+    }
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "point_id": "1e362f40-2392-5a39-afb8-78e428698ea2",
+    "payload": {
+      "documentation": "LAND & INFRASTRUCTURE: Land details (owned/leased/allotted in Acres) are in chatbot_cooperative_land. Office building info (has_building) is found in most sector tables. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_land"
+      ],
+      "business_terms": [
+        "land",
+        "acres",
+        "infrastructure",
+        "building",
+        "ncd_id"
+      ]
+    }
+  },
+  {
+    "point_id": "29542153-581e-5284-9783-6b6e8f384bf4",
+    "payload": {
+      "documentation": "GLOBAL QUERY FILTERS: For ALL queries, you MUST apply: status=1 (Active), is_draft=0 (Not a draft), is_approved=1 (Approved), and is_multi_state=0 (unless the user specifically asks for multi-state). is_approved=2 means rejected.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "cooperative",
+        "multi-state",
+        "approval",
+        "draft",
+        "rejected"
+      ]
+    }
+  },
+  {
+    "point_id": "2d7b4e23-4db4-5e93-affb-cbfd0f07f7a0",
+    "payload": {
+      "documentation": "PACS / LAMPS / FSS SECTOR: Detailed information for PACS, LAMPS, and FSS is in chatbot_cooperative_pacs. Join using ncd_id. It includes storage capacity, fertilizer distribution, and grain storage projects.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_pacs"
+      ],
+      "business_terms": [
+        "pacs",
+        "lamps",
+        "fss",
+        "storage capacity",
+        "fertilizer distribution",
+        "grain storage",
+        "ncd_id"
+      ]
+    }
+  },
+  {
+    "point_id": "4939c438-0ecc-538a-b7a6-ae8b64788403",
+    "payload": {
+      "documentation": "FISHERY SECTOR: Catch data (in Metric Tonnes/MT), cooling units, and marketing details are in chatbot_cooperative_registration_fishery. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_fishery"
+      ],
+      "business_terms": [
+        "catch",
+        "cooling",
+        "marketing",
+        "fishery",
+        "metric tonnes",
+        "ncd"
+      ]
+    }
+  },
+  {
+    "point_id": "4c64e25d-3a31-525e-8aa2-7579a8765cc3",
+    "payload": {
+      "documentation": "MPACS are the PACS society which are registered after 2023-02-15 , MDCS are the Dairy cooperative societies which are registered after 2023-02-15 , MFCS are the Fishery cooperative societies which are registered after 2023-02-15",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "mpacs",
+        "mdcs",
+        "mfcs",
+        "pacs",
+        "dairy",
+        "fishery",
+        "cooperative",
+        "societies"
+      ]
+    }
+  },
+  {
+    "point_id": "6cd6a126-b7b4-5875-b512-db0073fec550",
+    "payload": {
+      "documentation": "DATA DICTIONARY - FLAGS: functional_status (1=Functional, 2=Under Liquidation, 3=Non Functional); status (1=active, 0=deleted); is_approved (1=Approved, 0=Pending, 2=Rejected); sector_of_operation (1=Credit, 2=Non-Credit); is_multi_state/is_coastal/is_msme/is_profit_making (1=Yes, 0=No).",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "functional_status",
+        "liquidation",
+        "sector_of_operation",
+        "msme",
+        "profit_making"
+      ]
+    }
+  },
+  {
+    "point_id": "6f09a8e8-5380-52ee-bc92-e5dcc7f8b433",
+    "payload": {
+      "documentation": "TERMINOLOGY & ABBREVIATIONS: PACS - Primary Agricultural Credit Society; DCCB - District Central Cooperative Bank; SCB - State Cooperative Bank; SCARDB - State Cooperative Agricultural and Rural Development Bank; UCB - Urban Cooperative Bank; FSS - Farmers Service Societies; LAMPS - Large Area Multipurpose Society; NAFCARD - National Cooperative Agricultural & Rural Development Banks Federation; NAFSCOB - National Federation of State Cooperative Banks Limited; NAFCUB - National Federation of Urban Cooperative Banks & Credit Societies; PCARDB - Primary Cooperative Agriculture and Rural Development Bank; SCU - Supply Chain Unit; MSCS - Multistate cooperative society; PMKSK - Pradhan Mantri Kisan Samridhi Kendra; LGS - largest Grain Storage Project; Common Service Centres (CSC); Farmer Producer Organization (FPO); BCP - Bulk Consumer Pump; MSCS - Multistate cooperative society.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "pacs",
+        "dccb",
+        "scb",
+        "scardb",
+        "ucb",
+        "fss",
+        "lamps",
+        "nafcard",
+        "nafscomb",
+        "nafcub"
+      ]
+    }
+  },
+  {
+    "point_id": "7e1fb114-f424-503c-b8e7-6e7c1f3d6af9",
+    "payload": {
+      "documentation": "DAIRY SECTOR: Information on milk collection (in Litres), transport, and processing is in chatbot_cooperative_registration_dairy. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_dairy"
+      ],
+      "business_terms": [
+        "dairy",
+        "milk",
+        "collection",
+        "transport",
+        "processing"
+      ]
+    }
+  },
+  {
+    "point_id": "8405398f-ba13-583e-9581-4ebe475b8fa4",
+    "payload": {
+      "documentation": "TERMINOLOGY: PACS (Primary Agricultural Credit Society), LAMPS (Large Area Multipurpose Society), FSS (Farmers Service Societies), DCCB (District Central Cooperative Bank), LGS (Largest Grain Storage), PMKSK (Pradhan Mantri Kisan Samridhi Kendra).",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "pacs",
+        "lamps",
+        "fss",
+        "dccb",
+        "lgs",
+        "pmksk"
+      ]
+    }
+  },
+  {
+    "point_id": "a5c9b821-0364-5553-88f0-53ece93d3470",
+    "payload": {
+      "documentation": "MEMBER DEMOGRAPHICS: For questions about member counts, gender ratios, or category-wise members (SC/ST/OBC), join with chatbot_member_details_private using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_member_details_private"
+      ],
+      "business_terms": [
+        "member",
+        "demographics",
+        "gender",
+        "category",
+        "ncd"
+      ]
+    }
+  },
+  {
+    "point_id": "c278277d-293b-5bac-81dd-25f11294a045",
+    "payload": {
+      "documentation": "MULTI-STATE SOCIETIES: If a question specifically asks about multi-state cooperative societies, filter by is_multi_state = '1' and join the master table with chatbot_multi_state_cooperatives on cooperative_id to retrieve the area of operation state names.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_multi_state_cooperatives"
+      ],
+      "business_terms": [
+        "cooperative",
+        "multi-state",
+        "societies",
+        "operation",
+        "state",
+        "area"
+      ]
+    }
+  },
+  {
+    "point_id": "e269a23c-df4f-55ac-9728-089eb7087c65",
+    "payload": {
+      "documentation": "JOIN LOGIC: Join all sector-specific tables and member details to the master table using the NCD ID. (Master table Primary Key: cooperative_id, Sector table Foreign Key: ncd_id).",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "cooperative",
+        "sector",
+        "member",
+        "ncd",
+        "master"
+      ]
+    }
+  },
+  {
+    "point_id": "e65a7985-abe9-5975-82ba-4d96bccc3409",
+    "payload": {
+      "documentation": "MEASUREMENT UNITS: Financial values (share capital, deposits, turnover) are in Rupees (Rs.); Land is in Acres; Grain/Seed/Fertilizer/Fish weight is in Metric Tonnes (MT); Milk is in Litres; Sugar crushing is in TCD.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "rupees",
+        "acres",
+        "metric tonnes",
+        "litres",
+        "tcd"
+      ]
+    }
+  },
+  {
+    "point_id": "ed6efb2e-232b-5606-bc03-7d38042f963d",
+    "payload": {
+      "documentation": "PRIMARY MASTER TABLE: chatbot_cooperative_registrations_master is the core table. It contains the primary identity (cooperative_society_name), location (state_name, district_name, block_name, village_name), and global status of every society.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registrations_master"
+      ],
+      "business_terms": [
+        "cooperative",
+        "society",
+        "location",
+        "state",
+        "district",
+        "block",
+        "village"
+      ]
+    }
+  },
+  {
+    "point_id": "f3bbd5b8-4bf5-5490-b69f-a562d4257532",
+    "payload": {
+      "documentation": "LOCATION SEARCHES: When a user asks for societies in a specific State, District, or Block, always join with the master table and filter by its state_name, district_name, or block_name columns.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "societies",
+        "state",
+        "district",
+        "block",
+        "location"
+      ]
+    }
+  },
+  {
+    "point_id": "f68d939a-c6cb-59ec-9202-c39de02e11c7",
+    "payload": {
+      "documentation": "SPECIAL RULES (MPACS/MFCS/MDCS): These refer to societies registered after 2023-02-15. Map accordingly using the sector and date_registration columns.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "cooperative",
+        "societies",
+        "sector",
+        "date_registration",
+        "mpacs",
+        "mfcs",
+        "mdcs"
+      ]
+    }
+  },
+  {
+    "point_id": "fc7d2187-e447-536d-9fc2-289824995804",
+    "payload": {
+      "documentation": "SUGAR SECTOR: Details of sugar mills, build-up area, and crushing capacity (TCD) are in chatbot_cooperative_registration_sugar. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_sugar"
+      ],
+      "business_terms": [
+        "sugar",
+        "mills",
+        "capacity",
+        "crushing",
+        "sector",
+        "build-up",
+        "ncd"
+      ]
+    }
+  },
+  {
+    "point_id": "fd768417-f0e5-535b-9429-41aa8a832a56",
+    "payload": {
+      "documentation": "BANKING (UCB): Urban Cooperative Bank details such as IFSC, AEPS, core banking, and digital banking facilities are in chatbot_cooperative_registrations_ucb. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registrations_ucb"
+      ],
+      "business_terms": [
+        "ifsc",
+        "aeps",
+        "core banking",
+        "digital banking",
+        "urban cooperative bank"
+      ]
+    }
+  }
+]

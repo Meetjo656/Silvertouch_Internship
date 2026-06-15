@@ -1,0 +1,3721 @@
+[
+  {
+    "question": "Count multi-state societies by their primary activity",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Count multi-state societies by their primary activity",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "State"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        },
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        },
+        {
+          "module": "EDUCATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "OFFICES",
+          "confidence": 1.0
+        },
+        {
+          "module": "AT_A_GLANCE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_coverage_areas",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_education_training_institute_private",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_master_private",
+        "chatbot_scb_schemes_private",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_scb_contact_details",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_handicraft",
+        "chatbot_ncdc_offices_private",
+        "chatbot_cooperative_registrations_master",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_national_federations",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_state_district_federation_private",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Count multi-state societies by their primary activity",
+          "sql": "SELECT primary_activity_name, COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY primary_activity_name;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "State-wise count of societies",
+          "sql": "SELECT c.state_name, COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY c.state_name;",
+          "similarity_score": 0.88
+        },
+        {
+          "question": "Count multi-state societies by primary activity in Uttar Pradesh",
+          "sql": "SELECT primary_activity_name, COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.state_name ILIKE '%UTTAR PRADESH%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY primary_activity_name;",
+          "similarity_score": 0.87
+        }
+      ]
+    }
+  },
+  {
+    "question": "How many NCCT institutes have projector facilities?",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "How many NCCT institutes have projector facilities?",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "How many NCCT institutes have projector facilities?",
+          "sql": "SELECT count(*) FROM chatbot_education_training_institute_private WHERE promoting_organisation_name = 'NCCT' AND is_projector_available = '1' AND status = '1' AND is_approved = '1'",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "How many international participants attended programs in NCCT institutes?",
+          "sql": "SELECT sum(CAST(no_participants_attended_international AS INTEGER)) FROM chatbot_education_training_institute_private WHERE promoting_organisation_name = 'NCCT' AND status = '1' AND is_approved = '1'",
+          "similarity_score": 0.67
+        },
+        {
+          "question": "Find NCCT institutes with more than 5 reading rooms.",
+          "sql": "SELECT institute_name, no_reading_rooms FROM chatbot_education_training_institute_private WHERE promoting_organisation_name = 'NCCT' AND CAST(no_reading_rooms AS INTEGER) > 5 AND status = '1' AND is_approved = '1'",
+          "similarity_score": 0.64
+        }
+      ]
+    }
+  },
+  {
+    "question": "List of multi-state societies which are under liquidation",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "List of multi-state societies which are under liquidation",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "State"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        },
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        },
+        {
+          "module": "EDUCATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "OFFICES",
+          "confidence": 1.0
+        },
+        {
+          "module": "AT_A_GLANCE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_coverage_areas",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_education_training_institute_private",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_master_private",
+        "chatbot_scb_schemes_private",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_scb_contact_details",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_handicraft",
+        "chatbot_ncdc_offices_private",
+        "chatbot_cooperative_registrations_master",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_national_federations",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_state_district_federation_private",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "List of multi-state societies which are under liquidation",
+          "sql": "SELECT cooperative_society_name FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.functional_status = '2' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "List national federations under liquidation.",
+          "sql": "SELECT * FROM chatbot_national_federations nf WHERE nf.functional_status = '2' AND nf.is_new = '1' AND nf.is_draft = '0';",
+          "similarity_score": 0.77
+        },
+        {
+          "question": "List all federations which are under liquidation.",
+          "sql": "SELECT * FROM chatbot_state_district_federation_private WHERE functional_status_name = 'Under Liquidation' AND is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 0.76
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show me all functional cooperative societies",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show me all functional cooperative societies",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Show me all functional cooperative societies",
+          "sql": "SELECT * FROM chatbot_cooperative_registrations_master c WHERE c.functional_status = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Total number of functional cooperative societies",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE functional_status = '1' AND is_draft = 0 AND is_approved = 1 AND status = 1;",
+          "similarity_score": 0.84
+        },
+        {
+          "question": "List all multi-state cooperative societies",
+          "sql": "SELECT cooperative_society_name FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.76
+        }
+      ]
+    }
+  },
+  {
+    "question": "What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)?",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)?",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)?",
+          "sql": "SELECT name_of_office, state_name FROM chatbot_ncdc_offices_private WHERE state_name IN ('Delhi', 'Punjab', 'Haryana') AND specialization = 'Financial' AND status = '1' AND is_approved = '1'",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Which MSCS operate in Delhi and Haryana?",
+          "sql": "SELECT c.cooperative_society_name FROM chatbot_cooperative_registrations_master c JOIN chatbot_multi_state_cooperatives ms ON c.cooperative_id = ms.cooperative_id WHERE c.is_multi_state = '1' AND ms.area_of_operation_state_names ILIKE '%Delhi%' AND ms.area_of_operation_state_names ILIKE '%Haryana%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.69
+        },
+        {
+          "question": "List all NCDC Sub Offices in India.",
+          "sql": "SELECT name_of_office, state_name FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Sub Office%' AND status = '1' AND is_approved = '1'",
+          "similarity_score": 0.67
+        }
+      ]
+    }
+  },
+  {
+    "question": "Get the names of all federations along with their auditors' categories.",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Get the names of all federations along with their auditors' categories.",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Get the names of all federations along with their auditors' categories.",
+          "sql": "SELECT cooperative_federation_name, audit_category_name FROM chatbot_state_district_federation_private WHERE is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "List the names of federations along with their registration numbers.",
+          "sql": "SELECT cooperative_federation_name, registration_number FROM chatbot_state_district_federation_private WHERE is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 0.74
+        },
+        {
+          "question": "Which federations have 'A' as their audit category?",
+          "sql": "SELECT * FROM chatbot_state_district_federation_private WHERE audit_category_name = 'A' AND is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "question": "Count of offices specialized in Financial by state.",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Count of offices specialized in Financial by state.",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "State"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        },
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        },
+        {
+          "module": "EDUCATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "OFFICES",
+          "confidence": 1.0
+        },
+        {
+          "module": "AT_A_GLANCE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_coverage_areas",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_education_training_institute_private",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_master_private",
+        "chatbot_scb_schemes_private",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_scb_contact_details",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_handicraft",
+        "chatbot_ncdc_offices_private",
+        "chatbot_cooperative_registrations_master",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_national_federations",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_state_district_federation_private",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Count of offices specialized in Financial by state.",
+          "sql": "SELECT state_name, count(*) FROM chatbot_ncdc_offices_private WHERE specialization = 'Financial' AND status = '1' AND is_approved = '1' GROUP BY state_name",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Find offices specialized in Financial matters.",
+          "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE specialization = 'Financial' AND status = '1' AND is_approved = '1'",
+          "similarity_score": 0.65
+        },
+        {
+          "question": "How many banks have an office building?",
+          "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private scb WHERE scb.has_office_building = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.58
+        }
+      ]
+    }
+  },
+  {
+    "question": "What is the total number of members in all state federations?",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "What is the total number of members in all state federations?",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "State"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        },
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        },
+        {
+          "module": "EDUCATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "OFFICES",
+          "confidence": 1.0
+        },
+        {
+          "module": "AT_A_GLANCE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_coverage_areas",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_education_training_institute_private",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_master_private",
+        "chatbot_scb_schemes_private",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_scb_contact_details",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_handicraft",
+        "chatbot_ncdc_offices_private",
+        "chatbot_cooperative_registrations_master",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_national_federations",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_state_district_federation_private",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "What is the total number of members in all state federations?",
+          "sql": "SELECT sum(cast(members_of_federation as decimal)) FROM chatbot_state_district_federation_private WHERE federation_type_name = 'State Federation' AND is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Find the total number of members in all federations.",
+          "sql": "SELECT sum(cast(members_of_federation as decimal)) FROM chatbot_state_district_federation_private WHERE is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 0.85
+        },
+        {
+          "question": "State Federation count",
+          "sql": "SELECT COUNT(*) AS state_federations FROM chatbot_state_district_federation_private WHERE is_draft = 0 AND is_approved = 0 AND status = 1",
+          "similarity_score": 0.84
+        }
+      ]
+    }
+  },
+  {
+    "question": "Total turnover of all multi-state societies",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Total turnover of all multi-state societies",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "State"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        },
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        },
+        {
+          "module": "EDUCATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "OFFICES",
+          "confidence": 1.0
+        },
+        {
+          "module": "AT_A_GLANCE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_coverage_areas",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_education_training_institute_private",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_master_private",
+        "chatbot_scb_schemes_private",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_scb_contact_details",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_handicraft",
+        "chatbot_ncdc_offices_private",
+        "chatbot_cooperative_registrations_master",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_national_federations",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_state_district_federation_private",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Total turnover of all multi-state societies",
+          "sql": "SELECT SUM(cast(an_turnover as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "State-wise average turnover of multi-state societies",
+          "sql": "SELECT state_name, AVG(cast(an_turnover as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY state_name;",
+          "similarity_score": 0.92
+        },
+        {
+          "question": "Total loss of all multi-state societies",
+          "sql": "SELECT SUM(cast(annual_loss as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.78
+        }
+      ]
+    }
+  },
+  {
+    "question": "Total loss of multi-state societies in the Handloom sector",
+    "category": "Single-Module",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Total loss of multi-state societies in the Handloom sector",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "State"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        },
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        },
+        {
+          "module": "EDUCATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "OFFICES",
+          "confidence": 1.0
+        },
+        {
+          "module": "AT_A_GLANCE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_coverage_areas",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_education_training_institute_private",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_master_private",
+        "chatbot_scb_schemes_private",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_scb_contact_details",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_handicraft",
+        "chatbot_ncdc_offices_private",
+        "chatbot_cooperative_registrations_master",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_national_federations",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_state_district_federation_private",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Total loss of multi-state societies in the Handloom sector",
+          "sql": "SELECT SUM(cast(annual_loss as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.primary_activity_name ILIKE '%Handloom%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Total loss of all multi-state societies",
+          "sql": "SELECT SUM(cast(annual_loss as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.79
+        },
+        {
+          "question": "Total turnover of all multi-state societies",
+          "sql": "SELECT SUM(cast(an_turnover as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.67
+        }
+      ]
+    }
+  },
+  {
+    "question": "How many full covered GPs are there in gaya for Handloom?",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "How many full covered GPs are there in gaya for Handloom?",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "Gram Panchayat"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "The table chatbot_districts_blocks_gp_villages stores the geographic hierarchy including states, districts, blocks, gram panchayats (GPs), and villages. The table chatbot_coverage_areas contains information about cooperative societies present in those villages or blocks."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Data Dictionary for GP Coverage: state_code, district_code, block_code, panchayat_code, village_code are the primary keys for joining geographic data with coverage data. sector_of_operation_name identifies the society type (e.g., PACS, LAMPS)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Query types for coverage: 'fully covered' (all villages in a GP have coverage), 'partially covered' (some but not all villages in a GP have coverage), and 'non covered' (no villages in a GP have coverage)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Coverage Logic: 1) Fully Covered: Show only GPs where every single village is covered. 2) Partially Covered: Show only GPs where some villages are covered but at least one is missing (do not include GPs that are already fully covered). 3) Non-covered: Show only GPs that have zero villages with coverage."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_coverage_areas"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "How many full covered GPs are there in gaya for Handloom?",
+          "sql": "SELECT COUNT(*) AS covered_gp_count FROM (SELECT dbgv.gram_panchayat_name FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%handloom%' WHERE dbgv.state_name ILIKE '%BIHAR%' AND dbgv.district_name ILIKE '%GAYA%' AND dbgv.status = 1 GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)) AS sub;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "How many full covered GPs are there in patiala for Handloom?",
+          "sql": "SELECT COUNT(*) AS covered_gp_count FROM (SELECT dbgv.gram_panchayat_name FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%handloom%' WHERE dbgv.state_name ILIKE '%PUNJAB%' AND dbgv.district_name ILIKE '%PATIALA%' AND dbgv.status = 1 GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)) AS sub;",
+          "similarity_score": 0.9
+        },
+        {
+          "question": "How many full covered GPs are there in gaya for Multi-purpose?",
+          "sql": "SELECT COUNT(*) AS covered_gp_count FROM (SELECT dbgv.gram_panchayat_name FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%multi%' WHERE dbgv.state_name ILIKE '%BIHAR%' AND dbgv.district_name ILIKE '%GAYA%' AND dbgv.status = 1 GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)) AS sub;",
+          "similarity_score": 0.9
+        }
+      ]
+    }
+  },
+  {
+    "question": "Latest top 10 Credit & Thrift rankings in tamil nadu",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Latest top 10 Credit & Thrift rankings in tamil nadu",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Mandatory Sorting: ALL ranking list queries MUST use 'ORDER BY flag ASC, rank ASC'. The 'flag' column handles high-level business prioritizations and must take precedence over 'rank'."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rank Types: Supported levels are 'State', 'District', and 'Block (State Nodal)'. Queries default to 'State' level if location granularity is not specified. Use the 'rank_type_name' column to filter."
+        },
+        {
+          "category": "Business Rule",
+          "content": "PACS Sector Filter: Every PACS query must use the combined triplet for accurate coverage: (sector_name ILIKE '%PACS%' OR sector_name ILIKE '%LAMPS%' OR sector_name ILIKE '%FSS%')."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_cooperative_rankings"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Latest top 10 Credit & Thrift rankings in tamil nadu",
+          "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TAMIL NADU%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State' AND CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TAMIL NADU%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State') ORDER BY flag ASC, rank ASC LIMIT 10;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Latest top 10 Credit & Thrift rankings in karnataka",
+          "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%KARNATAKA%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State' AND CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%KARNATAKA%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State') ORDER BY flag ASC, rank ASC LIMIT 10;",
+          "similarity_score": 0.9
+        },
+        {
+          "question": "Latest top 10 Credit & Thrift rankings in kerala",
+          "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%KERALA%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State' AND CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%KERALA%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State') ORDER BY flag ASC, rank ASC LIMIT 10;",
+          "similarity_score": 0.89
+        }
+      ]
+    }
+  },
+  {
+    "question": "List all members from National Film Federation in Karnataka state. ",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "List all members from National Film Federation in Karnataka state. ",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "State"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        },
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        },
+        {
+          "module": "EDUCATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "OFFICES",
+          "confidence": 1.0
+        },
+        {
+          "module": "AT_A_GLANCE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_coverage_areas",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_education_training_institute_private",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_master_private",
+        "chatbot_scb_schemes_private",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_scb_contact_details",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_handicraft",
+        "chatbot_ncdc_offices_private",
+        "chatbot_cooperative_registrations_master",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_national_federations",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_state_district_federation_private",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "List all members from National Film Federation in Karnataka state. ",
+          "sql": "SELECT nfm.name_of_member FROM chatbot_national_federations nf JOIN chatbot_national_federations_members nfm ON nf.id = nfm.national_federations_id WHERE nf.cooperative_society_name ILIKE '%Film%' AND nfm.state_name ILIKE '%KARNATAKA%' AND nf.is_new = '1' AND nf.is_draft = '0';",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "List all members from National Film Federation in Karnataka state area region. ",
+          "sql": "SELECT nfm.name_of_member FROM chatbot_national_federations nf JOIN chatbot_national_federations_members nfm ON nf.id = nfm.national_federations_id WHERE nf.cooperative_society_name ILIKE '%Film%' AND nfm.state_name ILIKE '%KARNATAKA%' AND nf.is_new = '1' AND nf.is_draft = '0';",
+          "similarity_score": 0.99
+        },
+        {
+          "question": "List all members from National Film Federation in Karnataka state region area section. ",
+          "sql": "SELECT nfm.name_of_member FROM chatbot_national_federations nf JOIN chatbot_national_federations_members nfm ON nf.id = nfm.national_federations_id WHERE nf.cooperative_society_name ILIKE '%Film%' AND nfm.state_name ILIKE '%KARNATAKA%' AND nf.is_new = '1' AND nf.is_draft = '0';",
+          "similarity_score": 0.98
+        }
+      ]
+    }
+  },
+  {
+    "question": "List partially covered Gram Panchayats in papum pare for Multi-purpose",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "List partially covered Gram Panchayats in papum pare for Multi-purpose",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "The table chatbot_districts_blocks_gp_villages stores the geographic hierarchy including states, districts, blocks, gram panchayats (GPs), and villages. The table chatbot_coverage_areas contains information about cooperative societies present in those villages or blocks."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Data Dictionary for GP Coverage: state_code, district_code, block_code, panchayat_code, village_code are the primary keys for joining geographic data with coverage data. sector_of_operation_name identifies the society type (e.g., PACS, LAMPS)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Query types for coverage: 'fully covered' (all villages in a GP have coverage), 'partially covered' (some but not all villages in a GP have coverage), and 'non covered' (no villages in a GP have coverage)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Coverage Logic: 1) Fully Covered: Show only GPs where every single village is covered. 2) Partially Covered: Show only GPs where some villages are covered but at least one is missing (do not include GPs that are already fully covered). 3) Non-covered: Show only GPs that have zero villages with coverage."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_coverage_areas"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "List partially covered Gram Panchayats in papum pare for Multi-purpose",
+          "sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%multi%' WHERE dbgv.state_name ILIKE '%ARUNACHAL PRADESH%' AND dbgv.district_name ILIKE '%PAPUM PARE%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "List partially covered Gram Panchayats in papum pare for Agriculture",
+          "sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%agri%' WHERE dbgv.state_name ILIKE '%ARUNACHAL PRADESH%' AND dbgv.district_name ILIKE '%PAPUM PARE%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;",
+          "similarity_score": 0.95
+        },
+        {
+          "question": "List partially covered Gram Panchayats in papum pare for Handloom",
+          "sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%handloom%' WHERE dbgv.state_name ILIKE '%ARUNACHAL PRADESH%' AND dbgv.district_name ILIKE '%PAPUM PARE%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;",
+          "similarity_score": 0.92
+        }
+      ]
+    }
+  },
+  {
+    "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registration_khadi_gram s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%UTTAR PRADESH%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "How many Khadi Gram societies are in Andhra Pradesh?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registration_khadi_gram s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%ANDHRA PRADESH%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.92
+        },
+        {
+          "question": "How many Khadi Gram societies are in Maharashtra?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registration_khadi_gram s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%MAHARASHTRA%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.9
+        }
+      ]
+    }
+  },
+  {
+    "question": "Find profit making Dairy federations in Uttar Pradesh.",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 50.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Find profit making Dairy federations in Uttar Pradesh.",
+      "entities": {
+        "locations": [],
+        "sectors": [
+          "Dairy"
+        ],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "LAND & INFRASTRUCTURE: Land details (owned/leased/allotted in Acres) are in chatbot_cooperative_land. Office building info (has_building) is found in most sector tables. Join using ncd_id."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Mandatory Sorting: ALL ranking list queries MUST use 'ORDER BY flag ASC, rank ASC'. The 'flag' column handles high-level business prioritizations and must take precedence over 'rank'."
+        },
+        {
+          "category": "Business Rule",
+          "content": "The federation_type_name column in the main table is a key column. It contains details like 'State Federation', 'District Federation', 'Block/Taluka/Mandal Federation', and 'Regional Federation'. Filter out records asked by the user based on this column."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_national_federations",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_state_district_federation_handicraft"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Find profit making Dairy federations in Uttar Pradesh.",
+          "sql": "SELECT * FROM chatbot_state_district_federation_private sfp JOIN chatbot_state_district_federation_dairy st ON st.state_district_federation_id = sfp.id WHERE sfp.primary_activity_name ILIKE '%Dairy%' AND sfp.state_name ILIKE '%UTTAR PRADESH%' AND sfp.is_profit_making = '1' AND sfp.is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Find profit making Dairy federations in Maharashtra.",
+          "sql": "SELECT * FROM chatbot_state_district_federation_private sfp JOIN chatbot_state_district_federation_dairy st ON st.state_district_federation_id = sfp.id WHERE sfp.primary_activity_name ILIKE '%Dairy%' AND sfp.state_name ILIKE '%MAHARASHTRA%' AND sfp.is_profit_making = '1' AND sfp.is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 0.91
+        },
+        {
+          "question": "Find profit making Dairy federations in Madhya Pradesh.",
+          "sql": "SELECT * FROM chatbot_state_district_federation_private sfp JOIN chatbot_state_district_federation_dairy st ON st.state_district_federation_id = sfp.id WHERE sfp.primary_activity_name ILIKE '%Dairy%' AND sfp.state_name ILIKE '%MADHYA PRADESH%' AND sfp.is_profit_making = '1' AND sfp.is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 0.89
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show me coverage details for all blocks in belagavi for Multi-purpose",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show me coverage details for all blocks in belagavi for Multi-purpose",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "The table chatbot_districts_blocks_gp_villages stores the geographic hierarchy including states, districts, blocks, gram panchayats (GPs), and villages. The table chatbot_coverage_areas contains information about cooperative societies present in those villages or blocks."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Data Dictionary for GP Coverage: state_code, district_code, block_code, panchayat_code, village_code are the primary keys for joining geographic data with coverage data. sector_of_operation_name identifies the society type (e.g., PACS, LAMPS)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Query types for coverage: 'fully covered' (all villages in a GP have coverage), 'partially covered' (some but not all villages in a GP have coverage), and 'non covered' (no villages in a GP have coverage)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Coverage Logic: 1) Fully Covered: Show only GPs where every single village is covered. 2) Partially Covered: Show only GPs where some villages are covered but at least one is missing (do not include GPs that are already fully covered). 3) Non-covered: Show only GPs that have zero villages with coverage."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_coverage_areas"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Show me coverage details for all blocks in belagavi for Multi-purpose",
+          "sql": "SELECT sub.block_name, sub.total_villages, sub.covered_villages, ROUND((sub.covered_villages::numeric / sub.total_villages) * 100, 2) AS block_coverage_percent FROM (SELECT dbgv.block_name, COUNT(DISTINCT dbgv.village_code) AS total_villages, COUNT(DISTINCT cr.village_code) AS covered_villages FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.block_code = dbgv.block_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%multi%' WHERE dbgv.state_name ILIKE '%KARNATAKA%' AND dbgv.district_name ILIKE '%BELAGAVI%' AND dbgv.status = 1 GROUP BY dbgv.block_name, dbgv.block_code) AS sub ORDER BY sub.block_name;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show me coverage details for all blocks in belagavi for Handloom",
+          "sql": "SELECT sub.block_name, sub.total_villages, sub.covered_villages, ROUND((sub.covered_villages::numeric / sub.total_villages) * 100, 2) AS block_coverage_percent FROM (SELECT dbgv.block_name, COUNT(DISTINCT dbgv.village_code) AS total_villages, COUNT(DISTINCT cr.village_code) AS covered_villages FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.block_code = dbgv.block_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%handloom%' WHERE dbgv.state_name ILIKE '%KARNATAKA%' AND dbgv.district_name ILIKE '%BELAGAVI%' AND dbgv.status = 1 GROUP BY dbgv.block_name, dbgv.block_code) AS sub ORDER BY sub.block_name;",
+          "similarity_score": 0.92
+        },
+        {
+          "question": "Show me coverage details for all blocks in belagavi for PACS",
+          "sql": "SELECT sub.block_name, sub.total_villages, sub.covered_villages, ROUND((sub.covered_villages::numeric / sub.total_villages) * 100, 2) AS block_coverage_percent FROM (SELECT dbgv.block_name, COUNT(DISTINCT dbgv.village_code) AS total_villages, COUNT(DISTINCT cr.village_code) AS covered_villages FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.block_code = dbgv.block_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND (cr.sector_of_operation_name ILIKE '%pacs%' OR cr.sector_of_operation_name ILIKE '%lamps%' OR cr.sector_of_operation_name ILIKE '%fss%') WHERE dbgv.state_name ILIKE '%KARNATAKA%' AND dbgv.district_name ILIKE '%BELAGAVI%' AND dbgv.status = 1 GROUP BY dbgv.block_name, dbgv.block_code) AS sub ORDER BY sub.block_name;",
+          "similarity_score": 0.88
+        }
+      ]
+    }
+  },
+  {
+    "question": "How many full covered GPs are there in madurai for Fishery?",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "How many full covered GPs are there in madurai for Fishery?",
+      "entities": {
+        "locations": [],
+        "sectors": [
+          "Fishery"
+        ],
+        "institution_types": [],
+        "business_concepts": [
+          "Gram Panchayat"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "The table chatbot_districts_blocks_gp_villages stores the geographic hierarchy including states, districts, blocks, gram panchayats (GPs), and villages. The table chatbot_coverage_areas contains information about cooperative societies present in those villages or blocks."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Data Dictionary for GP Coverage: state_code, district_code, block_code, panchayat_code, village_code are the primary keys for joining geographic data with coverage data. sector_of_operation_name identifies the society type (e.g., PACS, LAMPS)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Query types for coverage: 'fully covered' (all villages in a GP have coverage), 'partially covered' (some but not all villages in a GP have coverage), and 'non covered' (no villages in a GP have coverage)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Coverage Logic: 1) Fully Covered: Show only GPs where every single village is covered. 2) Partially Covered: Show only GPs where some villages are covered but at least one is missing (do not include GPs that are already fully covered). 3) Non-covered: Show only GPs that have zero villages with coverage."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_coverage_areas"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "How many full covered GPs are there in madurai for Fishery?",
+          "sql": "SELECT COUNT(*) AS covered_gp_count FROM (SELECT dbgv.gram_panchayat_name FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%fishery%' WHERE dbgv.state_name ILIKE '%TAMIL NADU%' AND dbgv.district_name ILIKE '%MADURAI%' AND dbgv.status = 1 GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)) AS sub;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "How many full covered GPs are there in chennai for Fishery?",
+          "sql": "SELECT COUNT(*) AS covered_gp_count FROM (SELECT dbgv.gram_panchayat_name FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%fishery%' WHERE dbgv.state_name ILIKE '%TAMIL NADU%' AND dbgv.district_name ILIKE '%CHENNAI%' AND dbgv.status = 1 GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)) AS sub;",
+          "similarity_score": 0.89
+        },
+        {
+          "question": "List non-covered GPs in madurai for Fishery",
+          "sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, 0.00 AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%fishery%' WHERE dbgv.state_name ILIKE '%TAMIL NADU%' AND dbgv.district_name ILIKE '%MADURAI%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) = 0) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;",
+          "similarity_score": 0.89
+        }
+      ]
+    }
+  },
+  {
+    "question": "Find phone numbers for PCARDB banks in Rajasthan",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Find phone numbers for PCARDB banks in Rajasthan",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Find phone numbers for PCARDB banks in Rajasthan",
+          "sql": "SELECT scb.scb_name, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%RAJASTHAN%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Get contact details for PCARDB banks",
+          "sql": "SELECT scb.scb_name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.77
+        },
+        {
+          "question": "Show contact designation for PCARDB banks in Bihar",
+          "sql": "SELECT scb.scb_name, scd.contact_person, scd.designation_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%BIHAR%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.73
+        }
+      ]
+    }
+  },
+  {
+    "question": "List partially covered Gram Panchayats in pune for Credit",
+    "category": "Location-Heavy",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "List partially covered Gram Panchayats in pune for Credit",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "The table chatbot_districts_blocks_gp_villages stores the geographic hierarchy including states, districts, blocks, gram panchayats (GPs), and villages. The table chatbot_coverage_areas contains information about cooperative societies present in those villages or blocks."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Data Dictionary for GP Coverage: state_code, district_code, block_code, panchayat_code, village_code are the primary keys for joining geographic data with coverage data. sector_of_operation_name identifies the society type (e.g., PACS, LAMPS)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Query types for coverage: 'fully covered' (all villages in a GP have coverage), 'partially covered' (some but not all villages in a GP have coverage), and 'non covered' (no villages in a GP have coverage)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Coverage Logic: 1) Fully Covered: Show only GPs where every single village is covered. 2) Partially Covered: Show only GPs where some villages are covered but at least one is missing (do not include GPs that are already fully covered). 3) Non-covered: Show only GPs that have zero villages with coverage."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_coverage_areas"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "List partially covered Gram Panchayats in pune for Credit",
+          "sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%credit%' WHERE dbgv.state_name ILIKE '%MAHARASHTRA%' AND dbgv.district_name ILIKE '%PUNE%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "List partially covered Gram Panchayats in nashik for Credit",
+          "sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%credit%' WHERE dbgv.state_name ILIKE '%MAHARASHTRA%' AND dbgv.district_name ILIKE '%NASHIK%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;",
+          "similarity_score": 0.94
+        },
+        {
+          "question": "List partially covered Gram Panchayats in nagpur for Credit",
+          "sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%credit%' WHERE dbgv.state_name ILIKE '%MAHARASHTRA%' AND dbgv.district_name ILIKE '%NAGPUR%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;",
+          "similarity_score": 0.92
+        }
+      ]
+    }
+  },
+  {
+    "question": "List urban area of operation wards for PCARDB banks",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "List urban area of operation wards for PCARDB banks",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "List urban area of operation wards for PCARDB banks",
+          "sql": "SELECT scb.scb_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show area of operation for PCARDB banks in GUJARAT",
+          "sql": "SELECT scb.scb_name, r.block_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb LEFT JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id LEFT JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.76
+        },
+        {
+          "question": "Show rural area of operation blocks for SCARDB banks",
+          "sql": "SELECT scb.scb_name, r.block_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id WHERE scb.scb_dcb_flag = 3 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.69
+        }
+      ]
+    }
+  },
+  {
+    "question": "Total deposits of Chatbot Cooperative Pacs societies",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 50.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Total deposits of Chatbot Cooperative Pacs societies",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [
+          "Primary Agricultural Credit Society"
+        ],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        },
+        {
+          "category": "Business Rule",
+          "content": "LAND & INFRASTRUCTURE: Land details (owned/leased/allotted in Acres) are in chatbot_cooperative_land. Office building info (has_building) is found in most sector tables. Join using ncd_id."
+        },
+        {
+          "category": "Business Rule",
+          "content": "GLOBAL QUERY FILTERS: For ALL queries, you MUST apply: status=1 (Active), is_draft=0 (Not a draft), is_approved=1 (Approved), and is_multi_state=0 (unless the user specifically asks for multi-state). is_approved=2 means rejected."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Contact details for bank personnel are stored in the table chatbot_scb_contact_details."
+        },
+        {
+          "category": "Business Rule",
+          "content": "PACS / LAMPS / FSS SECTOR: Detailed information for PACS, LAMPS, and FSS is in chatbot_cooperative_pacs. Join using ncd_id. It includes storage capacity, fertilizer distribution, and grain storage projects."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_cooperative_pacs",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_schemes_private",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_scb_contact_details",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_member_details_private",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Total deposits of Chatbot Cooperative Pacs societies",
+          "sql": "SELECT SUM(s.total_deposit) FROM chatbot_cooperative_pacs s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "List Chatbot Cooperative Pacs societies in Uttar Pradesh with turnover > 10 lakhs",
+          "sql": "SELECT c.cooperative_society_name FROM chatbot_cooperative_pacs s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%UTTAR PRADESH%' AND s.annual_turn_over > 1000000 AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.85
+        },
+        {
+          "question": "List Chatbot Cooperative Pacs societies in Maharashtra with turnover > 10 lakhs",
+          "sql": "SELECT c.cooperative_society_name FROM chatbot_cooperative_pacs s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%MAHARASHTRA%' AND s.annual_turn_over > 1000000 AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.84
+        }
+      ]
+    }
+  },
+  {
+    "question": "Top 5 profitable DCCB banks",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Top 5 profitable DCCB banks",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [
+          "District Central Cooperative Bank"
+        ],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Contact details for bank personnel are stored in the table chatbot_scb_contact_details."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Data Dictionary for chatbot_scb_ master tables: scb_dcb_flag (1=SCB, 2=DCB, 3=SCARDB, 4=PCARDB); location_urban_rural (1=Urban, 2=Rural); functional_status (1=Functional, 2=Under Liquidation, 3=Non Functional); is_city/is_comp/is_dividend_paid (1=Yes, 0=No); status (1=Active, 0=Inactive); scheme_type (1=Central Govt Scheme, 2=State Govt Scheme); class_membership (1=Ordinary/Regular/Voting, 2=Associate/Nominal/Voting)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "State cooperative banks, state banks , SCBs , SCB are the same thing (State cooperative bank) so use the scb_dcb_flag = 1 , District cooperative bank, District banks, DCCBs, DCB are the same thing (District cooperative bank) so use the scb_dcb_flag = 2 , State cooperative agricultural and rural development banks, State cooperative agricultural and rural development banks, SCARDBs, SCARDB are the same thing (State cooperative agricultural and rural development banks) so use the scb_dcb_flag = 3 , Primary cooperative agricultural and rural development banks, Primary cooperative agricultural and rural development banks, PCARDBs, PCARDB are the same thing (Primary cooperative agricultural and rural development banks) so use the scb_dcb_flag = 4"
+        },
+        {
+          "category": "Business Rule",
+          "content": "Audit figures like net_profit, annual_turnover, etc. are stored in lakhs."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_scb_other_members_private",
+        "chatbot_scb_contact_details",
+        "chatbot_scb_area_rural_private",
+        "chatbot_scb_area_urban_private",
+        "chatbot_scb_schemes_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Top 5 profitable DCCB banks",
+          "sql": "SELECT dm.name, scb.net_profit, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY scb.net_profit DESC LIMIT 5;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "How many DCCB banks are profit making in India?",
+          "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.is_profit_making = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.76
+        },
+        {
+          "question": "Show details of all District Cooperative Banks (DCCB)",
+          "sql": "SELECT dm.name as bank_name, scb.scb_registration_no, scb.state_name, scb.registration_date, scb.ncd_id, scb.rbi_license, scb.rbi_license_date, scb.ifsc_code FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.64
+        }
+      ]
+    }
+  },
+  {
+    "question": "List StCBs that are reporting a net loss greater than 0",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "List StCBs that are reporting a net loss greater than 0",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "List StCBs that are reporting a net loss greater than 0",
+          "sql": "SELECT scb.scb_name, scb.state_name, scb.net_loss, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.is_profit_making = '0' AND cast(scb.net_loss as float) > 0 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Count of banks that have a negative net loss and no dividend paid",
+          "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private scb WHERE cast(scb.net_loss as float) > 0 AND scb.is_dividend_paid = '0' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.6
+        },
+        {
+          "question": "List all members for DCCBs with turnover > 100 Lakhs",
+          "sql": "SELECT dm.name, om.org_name, scb.annual_turnover, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_turnover > 100 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.51
+        }
+      ]
+    }
+  },
+  {
+    "question": "Total annual expense of StCBs compared by dividend paid status",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Total annual expense of StCBs compared by dividend paid status",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Total annual expense of StCBs compared by dividend paid status",
+          "sql": "SELECT scb.is_dividend_paid, SUM(cast(scb.annual_expense as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.is_dividend_paid;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Average dividend rate of StCBs grouped by profit making status",
+          "sql": "SELECT scb.is_profit_making, AVG(scb.dividend_paid_rate) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.is_profit_making;",
+          "similarity_score": 0.76
+        },
+        {
+          "question": "Average dividend rate of DCCBs in Andhra Pradesh grouped by functional status",
+          "sql": "SELECT scb.functional_status, AVG(cast(scb.dividend_paid_rate as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%ANDHRA PRADESH%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.functional_status;",
+          "similarity_score": 0.58
+        }
+      ]
+    }
+  },
+  {
+    "question": "Total number of members in all PCARDB banks",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Total number of members in all PCARDB banks",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Total number of members in all PCARDB banks",
+          "sql": "SELECT SUM(scb.number_of_member) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Find PCARDB banks with more than 1000 members",
+          "sql": "SELECT scb.scb_name, scb.number_of_member, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.number_of_member > 1000 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.86
+        },
+        {
+          "question": "PCARDB cooperative bank count",
+          "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 3",
+          "similarity_score": 0.83
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show last 5 registered cooperative banks",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show last 5 registered cooperative banks",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Show last 5 registered cooperative banks",
+          "sql": "SELECT scb.scb_name, scb.registration_date, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY scb.registration_date DESC LIMIT 5;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Total cooperative bank count in details",
+          "sql": "SELECT * FROM ( /* 1 UCB SELECT 'Urban Cooperative Bank (UCB)' AS bank_type, COUNT(*) AS total FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved = 1 AND status = 1 AND is_multi_state = 0 UNION ALL -- 2 Multi State UCB SELECT 'MSCS Urban Cooperative Bank (UCB)' AS bank_type, COUNT(*) AS total FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved != 2 AND status = 1 AND is_multi_state = 1 UNION ALL -- 3 SCB SELECT 'State Cooperative Bank' AS bank_type, COUNT(*) AS total FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 1 UNION ALL -- 4 DCB SELECT 'District Cooperative Bank' AS bank_type, COUNT(*) AS total FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 2 UNION ALL -- 5 SCARDB SELECT 'SCARDB' AS bank_type, COUNT(*) AS total FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 4 UNION ALL -- 6 PCARDB SELECT 'PACARD' AS bank_type, COUNT(*) AS total FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 3 ) t UNION ALL -- TOTAL ROW SELECT 'Total' AS bank_type, SUM(total) FROM ( SELECT COUNT(*) AS total FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND status = 1 AND is_approved = 1 AND is_multi_state = 0 UNION ALL SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND status = 1 AND is_approved != 2 AND is_multi_state = 1 UNION ALL SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag IN (1,2,3,4) ) x */",
+          "similarity_score": 0.75
+        },
+        {
+          "question": "Total cooperative bank count",
+          "sql": "SELECT /* SCB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 1 ) + -- DCB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 2 ) + -- PCARDB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 3 ) + -- SCARDB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 4 ) + -- Multi State UCB ( SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved != 2 AND status = 1 AND is_multi_state = 1 ) + -- Normal UCB ( SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved = 1 AND status = 1 AND is_multi_state = 0 ) AS total_bank_count */",
+          "similarity_score": 0.74
+        }
+      ]
+    }
+  },
+  {
+    "question": "Count of banks that have a negative net loss and no dividend paid",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Count of banks that have a negative net loss and no dividend paid",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Count of banks that have a negative net loss and no dividend paid",
+          "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private scb WHERE cast(scb.net_loss as float) > 0 AND scb.is_dividend_paid = '0' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "List StCBs that are reporting a net loss greater than 0",
+          "sql": "SELECT scb.scb_name, scb.state_name, scb.net_loss, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.is_profit_making = '0' AND cast(scb.net_loss as float) > 0 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.6
+        },
+        {
+          "question": "Which banks have the highest dividend rate?",
+          "sql": "SELECT scb.scb_name, scb.dividend_paid_rate, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.is_dividend_paid = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY scb.dividend_paid_rate DESC LIMIT 10;",
+          "similarity_score": 0.54
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show organization type for other members of PCARDBs",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show organization type for other members of PCARDBs",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Show organization type for other members of PCARDBs",
+          "sql": "SELECT scb.scb_name, om.org_name, om.type_membership_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show organization names of other members for DCCBs",
+          "sql": "SELECT dm.name as bank_name, om.org_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.56
+        },
+        {
+          "question": "Total number of affiliate members for PCARDBs grouped by whether they have an office building",
+          "sql": "SELECT scb.has_office_building, SUM(scb.other_member_count) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.has_office_building;",
+          "similarity_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show scheme amounts for banks in metro cities Mumbai/Delhi",
+    "category": "Institution-Type",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show scheme amounts for banks in metro cities Mumbai/Delhi",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Show scheme amounts for banks in metro cities Mumbai/Delhi",
+          "sql": "SELECT scb.scb_name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE (scb.city_name = 'Mumbai' OR scb.city_name = 'Delhi') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show banks operating in Mumbai",
+          "sql": "SELECT scb.scb_name, scb.full_address, scb.ncd_id FROM chatbot_scb_master_private scb WHERE (scb.full_address LIKE '%Mumbai%' OR scb.city_name = 'Mumbai') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.68
+        },
+        {
+          "question": "Total scheme amount distributed by State Cooperative Banks in each city",
+          "sql": "SELECT scb.city_name, SUM(cast(s.total_amount_extended as float)) FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.city_name;",
+          "similarity_score": 0.62
+        }
+      ]
+    }
+  },
+  {
+    "question": "Total count of functional National Federations",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Total count of functional National Federations",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Total count of functional National Federations",
+          "sql": "SELECT COUNT(*) FROM chatbot_national_federations WHERE functional_status = '1' AND is_draft = 0 AND is_new = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Total count of functional national federations.",
+          "sql": "SELECT count(*) FROM chatbot_national_federations nf WHERE nf.functional_status = '1' AND nf.is_new = '1' AND nf.is_draft = '0';",
+          "similarity_score": 0.99
+        },
+        {
+          "question": "National Federation count",
+          "sql": "SELECT COUNT(*) AS national_federation FROM chatbot_national_federations WHERE is_draft = 0 and is_new = 1",
+          "similarity_score": 0.88
+        }
+      ]
+    }
+  },
+  {
+    "question": "Total number of functional cooperative societies",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Total number of functional cooperative societies",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Total number of functional cooperative societies",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE functional_status = '1' AND is_draft = 0 AND is_approved = 1 AND status = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show me all functional cooperative societies",
+          "sql": "SELECT * FROM chatbot_cooperative_registrations_master c WHERE c.functional_status = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.84
+        },
+        {
+          "question": "How many cooperative societies are registered?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.79
+        }
+      ]
+    }
+  },
+  {
+    "question": "Multi state ucb",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Multi state ucb",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "State"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        },
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        },
+        {
+          "module": "EDUCATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "OFFICES",
+          "confidence": 1.0
+        },
+        {
+          "module": "AT_A_GLANCE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_coverage_areas",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_education_training_institute_private",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_master_private",
+        "chatbot_scb_schemes_private",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_scb_contact_details",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_handicraft",
+        "chatbot_ncdc_offices_private",
+        "chatbot_cooperative_registrations_master",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_national_federations",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_state_district_federation_private",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Multi state ucb",
+          "sql": "SELECT COUNT(*) AS mscs_ucb FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name ILIKE 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved != 2 AND status = 1 AND is_multi_state = 1",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "UCB count",
+          "sql": "SELECT COUNT(*) AS ucb FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name ILIKE 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved = 1 AND status = 1 AND is_multi_state = 0",
+          "similarity_score": 0.65
+        },
+        {
+          "question": "District-wise count of Ucb in Uttar Pradesh",
+          "sql": "SELECT c.district_name, COUNT(*) FROM chatbot_cooperative_registrations_ucb s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%UTTAR PRADESH%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY c.district_name;",
+          "similarity_score": 0.57
+        }
+      ]
+    }
+  },
+  {
+    "question": "Total number of computerized cooperative banks",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Total number of computerized cooperative banks",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Total number of computerized cooperative banks",
+          "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_comp = '1' AND is_delete = 0 AND status = 1 AND is_draft != 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Total cooperative bank count",
+          "sql": "SELECT /* SCB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 1 ) + -- DCB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 2 ) + -- PCARDB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 3 ) + -- SCARDB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 4 ) + -- Multi State UCB ( SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved != 2 AND status = 1 AND is_multi_state = 1 ) + -- Normal UCB ( SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved = 1 AND status = 1 AND is_multi_state = 0 ) AS total_bank_count */",
+          "similarity_score": 0.86
+        },
+        {
+          "question": "Total cooperative bank count in details",
+          "sql": "SELECT * FROM ( /* 1 UCB SELECT 'Urban Cooperative Bank (UCB)' AS bank_type, COUNT(*) AS total FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved = 1 AND status = 1 AND is_multi_state = 0 UNION ALL -- 2 Multi State UCB SELECT 'MSCS Urban Cooperative Bank (UCB)' AS bank_type, COUNT(*) AS total FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved != 2 AND status = 1 AND is_multi_state = 1 UNION ALL -- 3 SCB SELECT 'State Cooperative Bank' AS bank_type, COUNT(*) AS total FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 1 UNION ALL -- 4 DCB SELECT 'District Cooperative Bank' AS bank_type, COUNT(*) AS total FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 2 UNION ALL -- 5 SCARDB SELECT 'SCARDB' AS bank_type, COUNT(*) AS total FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 4 UNION ALL -- 6 PCARDB SELECT 'PACARD' AS bank_type, COUNT(*) AS total FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 3 ) t UNION ALL -- TOTAL ROW SELECT 'Total' AS bank_type, SUM(total) FROM ( SELECT COUNT(*) AS total FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND status = 1 AND is_approved = 1 AND is_multi_state = 0 UNION ALL SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND status = 1 AND is_approved != 2 AND is_multi_state = 1 UNION ALL SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag IN (1,2,3,4) ) x */",
+          "similarity_score": 0.84
+        }
+      ]
+    }
+  },
+  {
+    "question": "UCB count",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "UCB count",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "UCB count",
+          "sql": "SELECT COUNT(*) AS ucb FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name ILIKE 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved = 1 AND status = 1 AND is_multi_state = 0",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "District-wise count of Ucb in Uttar Pradesh",
+          "sql": "SELECT c.district_name, COUNT(*) FROM chatbot_cooperative_registrations_ucb s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%UTTAR PRADESH%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY c.district_name;",
+          "similarity_score": 0.73
+        },
+        {
+          "question": "District-wise count of Ucb in Punjab",
+          "sql": "SELECT c.district_name, COUNT(*) FROM chatbot_cooperative_registrations_ucb s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%PUNJAB%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY c.district_name;",
+          "similarity_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "question": "How many profit-making cooperatives are recorded?",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "How many profit-making cooperatives are recorded?",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "How many profit-making cooperatives are recorded?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE is_profit_making = '1' AND is_draft = 0 AND is_approved = 1 AND status = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "How many cooperatives are currently under liquidation?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE functional_status = '2' AND is_draft = 0 AND is_approved = 1 AND status = 1;",
+          "similarity_score": 0.74
+        },
+        {
+          "question": "How many cooperative societies are registered?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.72
+        }
+      ]
+    }
+  },
+  {
+    "question": "How many non-credit cooperative societies are there?",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "How many non-credit cooperative societies are there?",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "How many non-credit cooperative societies are there?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE sector_of_operation = '2' AND is_draft = 0 AND is_approved = 1 AND status = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "How many multi-state societies are non-credit cooperatives?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.sector_of_operation = '2' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.94
+        },
+        {
+          "question": "How many cooperative societies are registered?",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+          "similarity_score": 0.81
+        }
+      ]
+    }
+  },
+  {
+    "question": "How many State Level Federations are functional?",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 100.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "How many State Level Federations are functional?",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": [
+          "State"
+        ]
+      },
+      "predicted_modules": [
+        {
+          "module": "GP_COVERAGE",
+          "confidence": 1.0
+        },
+        {
+          "module": "COOPERATIVE",
+          "confidence": 1.0
+        },
+        {
+          "module": "FEDERATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "RANKINGS",
+          "confidence": 1.0
+        },
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        },
+        {
+          "module": "EDUCATION",
+          "confidence": 1.0
+        },
+        {
+          "module": "OFFICES",
+          "confidence": 1.0
+        },
+        {
+          "module": "AT_A_GLANCE",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1."
+        },
+        {
+          "category": "Business Rule",
+          "content": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_state_district_federation_housing",
+        "chatbot_state_district_federation_credit",
+        "chatbot_coverage_areas",
+        "chatbot_cooperative_registration_handloom",
+        "chatbot_khadi_products",
+        "chatbot_state_district_federation_consumer",
+        "chatbot_cooperative_registration_khadi_gram",
+        "chatbot_cooperative_land",
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_cooperative_pacs",
+        "chatbot_national_federations_contact_details",
+        "chatbot_education_training_institute_private",
+        "chatbot_cooperative_credit_thrift",
+        "chatbot_cooperative_registration_livestock",
+        "chatbot_state_district_federation_processing",
+        "chatbot_cooperative_registration_consumer",
+        "chatbot_state_district_federation_ucb",
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_cooperative_registration_education",
+        "chatbot_cooperative_registration_tribal",
+        "chatbot_cooperative_registration_social",
+        "chatbot_cooperative_registration_housing",
+        "chatbot_cooperative_registration_jute",
+        "chatbot_state_district_federation_sugar",
+        "chatbot_cooperatie_registration_marketing",
+        "chatbot_cooperative_registration_agriculture",
+        "chatbot_cooperative_registration_tourism",
+        "chatbot_scb_master_private",
+        "chatbot_scb_schemes_private",
+        "chatbot_state_district_federation_marketing",
+        "chatbot_national_federations_members",
+        "chatbot_cooperative_registration_handicraft",
+        "chatbot_state_district_federation_dairy",
+        "chatbot_state_district_federation_labour",
+        "chatbot_state_district_federation_multi",
+        "chatbot_cooperative_registration_sericulture",
+        "chatbot_state_district_federation_agriculture",
+        "chatbot_multi_state_cooperatives",
+        "chatbot_cooperative_registration_dairy",
+        "chatbot_scb_contact_details",
+        "chatbot_state_district_federation_sericulture",
+        "chatbot_state_district_federation_handloom",
+        "chatbot_scb_area_rural_private",
+        "chatbot_cooperative_registrations_ucb",
+        "chatbot_cooperative_registration_multipurpose",
+        "chatbot_cooperative_registration_bee_farming",
+        "chatbot_cooperative_registration_women_cooperative",
+        "chatbot_cooperative_registration_labour",
+        "chatbot_cooperative_registrations_processing",
+        "chatbot_state_district_federation_handicraft",
+        "chatbot_ncdc_offices_private",
+        "chatbot_cooperative_registrations_master",
+        "chatbot_state_district_federation_transport",
+        "chatbot_cooperative_rankings",
+        "chatbot_state_district_federation_bee",
+        "chatbot_state_district_federation_social",
+        "chatbot_state_district_federation_livestock",
+        "chatbot_state_district_federation_jute",
+        "chatbot_cooperative_registration_miscellaneous",
+        "chatbot_state_district_federation_wocoop",
+        "chatbot_state_district_federation_tourism",
+        "chatbot_state_district_federation_miscellaneous",
+        "chatbot_cooperative_registration_fishery",
+        "chatbot_scb_other_members_private",
+        "chatbot_national_federations",
+        "chatbot_cooperative_registration_sugar",
+        "chatbot_state_district_federation_fishery",
+        "chatbot_member_details_private",
+        "chatbot_state_district_federation_tribal",
+        "chatbot_cooperative_registrations_credit_miscellaneous",
+        "chatbot_state_district_federation_private",
+        "chatbot_cooperative_registrations_transport",
+        "chatbot_scb_area_urban_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "How many State Level Federations are functional?",
+          "sql": "SELECT COUNT(*) FROM chatbot_state_district_federation_private WHERE federation_type_name ILIKE '%State Federation%' AND functional_status_name = 'Functional' AND is_draft = 0 AND is_approved = 1 AND status = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Which state has the maximum number of federations?",
+          "sql": "SELECT state_name, count(*) FROM chatbot_state_district_federation_private WHERE is_draft = '0' AND is_approved = '0' AND status = '1' GROUP BY state_name ORDER BY count DESC LIMIT 1;",
+          "similarity_score": 0.8
+        },
+        {
+          "question": "Which federations are currently 'Non-Functional'?",
+          "sql": "SELECT * FROM chatbot_state_district_federation_private WHERE functional_status_name = 'Non-Functional' AND is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 0.77
+        }
+      ]
+    }
+  },
+  {
+    "question": "SCARDB cooperative bank count",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "SCARDB cooperative bank count",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "SCARDB cooperative bank count",
+          "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 4",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "PCARDB cooperative bank count",
+          "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 3",
+          "similarity_score": 0.79
+        },
+        {
+          "question": "Total cooperative bank count",
+          "sql": "SELECT /* SCB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 1 ) + -- DCB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 2 ) + -- PCARDB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 3 ) + -- SCARDB ( SELECT COUNT(*) FROM chatbot_scb_master_private WHERE is_delete = 0 AND status = 1 AND is_draft != 1 AND scb_dcb_flag = 4 ) + -- Multi State UCB ( SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved != 2 AND status = 1 AND is_multi_state = 1 ) + -- Normal UCB ( SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE sector_of_operation_name = 'Urban Cooperative Bank (UCB)' AND is_draft = 0 AND is_approved = 1 AND status = 1 AND is_multi_state = 0 ) AS total_bank_count */",
+          "similarity_score": 0.78
+        }
+      ]
+    }
+  },
+  {
+    "question": "Count of cooperatives in Urban locations",
+    "category": "Cross-Domain",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Count of cooperatives in Urban locations",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Count of cooperatives in Urban locations",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE location_of_head_quarter ILIKE '%Urban%' AND is_draft = 0 AND is_approved = 1 AND status = 1;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Count of cooperatives in Rural locations",
+          "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE location_of_head_quarter ILIKE '%Rural%' AND is_draft = 0 AND is_approved = 1 AND status = 1;",
+          "similarity_score": 0.86
+        },
+        {
+          "question": "Primary cooperatives count",
+          "sql": "SELECT COUNT(*) AS primary_cooperative FROM chatbot_cooperative_registrations_master WHERE is_draft = 0 AND is_approved != 1 AND status = 1 and is_multi_state=0",
+          "similarity_score": 0.77
+        }
+      ]
+    }
+  },
+  {
+    "question": "Which DCCBs have no email listed in contact details?",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Which DCCBs have no email listed in contact details?",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Which DCCBs have no email listed in contact details?",
+          "sql": "SELECT dm.name, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id LEFT JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND (scd.email IS NULL OR scd.email = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Which DCCBs have no email or phone number listed?",
+          "sql": "SELECT dm.name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id LEFT JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND (scd.email IS NULL OR scd.email = '') AND (scd.phone_number IS NULL OR scd.phone_number = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.95
+        },
+        {
+          "question": "Which DCCBs have zero PACS members?",
+          "sql": "SELECT dm.name, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND (scb.pacs_member_count = '0' OR scb.pacs_member_count IS NULL) AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.68
+        }
+      ]
+    }
+  },
+  {
+    "question": "Find federation detail, the member detail and contact information which mapped with federation name is Nafed.",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Find federation detail, the member detail and contact information which mapped with federation name is Nafed.",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Find federation detail, the member detail and contact information which mapped with federation name is Nafed.",
+          "sql": "SELECT nf.*, nfcd.*, nfm.* FROM chatbot_national_federations nf JOIN chatbot_national_federations_contact_details nfcd ON nf.id = nfcd.national_federations_id JOIN chatbot_national_federations_members nfm ON nf.id = nfm.national_federations_id WHERE nf.cooperative_society_name ILIKE '%Nafed%' AND nf.is_new = '1' AND nf.is_draft = '0';",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "List the names of federations along with their registration numbers.",
+          "sql": "SELECT cooperative_federation_name, registration_number FROM chatbot_state_district_federation_private WHERE is_draft = '0' AND is_approved = '0' AND status = '1';",
+          "similarity_score": 0.76
+        },
+        {
+          "question": "Give me functional status, total count of members and address for Nafed limited federation.",
+          "sql": "SELECT nf.functional_status, nfcd.total_number_of_members, nf.registered_office_address FROM chatbot_national_federations nf JOIN chatbot_national_federations_contact_details nfcd ON nf.id = nfcd.national_federations_id WHERE nf.cooperative_society_name ILIKE '%Nafed%' AND nf.is_new = '1' AND nf.is_draft = '0';",
+          "similarity_score": 0.73
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show area of operation for PCARDB banks in GUJARAT",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show area of operation for PCARDB banks in GUJARAT",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Show area of operation for PCARDB banks in GUJARAT",
+          "sql": "SELECT scb.scb_name, r.block_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb LEFT JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id LEFT JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show rural area of operation blocks for PCARDB in Gujarat",
+          "sql": "SELECT scb.scb_name, r.block_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.8
+        },
+        {
+          "question": "List urban area of operation wards for PCARDB banks",
+          "sql": "SELECT scb.scb_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.76
+        }
+      ]
+    }
+  },
+  {
+    "question": "Get phone number and email for DCCB in Pune",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 33.33333333333333,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Get phone number and email for DCCB in Pune",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [
+          "District Central Cooperative Bank"
+        ],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Contact details for bank personnel are stored in the table chatbot_scb_contact_details."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Data Dictionary for chatbot_scb_ master tables: scb_dcb_flag (1=SCB, 2=DCB, 3=SCARDB, 4=PCARDB); location_urban_rural (1=Urban, 2=Rural); functional_status (1=Functional, 2=Under Liquidation, 3=Non Functional); is_city/is_comp/is_dividend_paid (1=Yes, 0=No); status (1=Active, 0=Inactive); scheme_type (1=Central Govt Scheme, 2=State Govt Scheme); class_membership (1=Ordinary/Regular/Voting, 2=Associate/Nominal/Voting)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "State cooperative banks, state banks , SCBs , SCB are the same thing (State cooperative bank) so use the scb_dcb_flag = 1 , District cooperative bank, District banks, DCCBs, DCB are the same thing (District cooperative bank) so use the scb_dcb_flag = 2 , State cooperative agricultural and rural development banks, State cooperative agricultural and rural development banks, SCARDBs, SCARDB are the same thing (State cooperative agricultural and rural development banks) so use the scb_dcb_flag = 3 , Primary cooperative agricultural and rural development banks, Primary cooperative agricultural and rural development banks, PCARDBs, PCARDB are the same thing (Primary cooperative agricultural and rural development banks) so use the scb_dcb_flag = 4"
+        },
+        {
+          "category": "Business Rule",
+          "content": "Audit figures like net_profit, annual_turnover, etc. are stored in lakhs."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_scb_other_members_private",
+        "chatbot_scb_contact_details",
+        "chatbot_scb_area_rural_private",
+        "chatbot_scb_area_urban_private",
+        "chatbot_scb_schemes_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Get phone number and email for DCCB in Pune",
+          "sql": "SELECT dm.name, scd.phone_number, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.district_name ILIKE '%PUNE%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show phone numbers for contact persons in Maharashtra national federations.",
+          "sql": "SELECT nfcd.phone_number FROM chatbot_national_federations nf JOIN chatbot_national_federations_contact_details nfcd ON nf.id = nfcd.national_federations_id WHERE nf.state_name ILIKE '%MAHARASHTRA%' AND nf.is_new = '1' AND nf.is_draft = '0';",
+          "similarity_score": 0.63
+        },
+        {
+          "question": "Show scheme details for DCCBs in Tamil Nadu",
+          "sql": "SELECT dm.name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.62
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show contact person and phone for all functional DCCBs",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show contact person and phone for all functional DCCBs",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Show contact person and phone for all functional DCCBs",
+          "sql": "SELECT dm.name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.functional_status = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show contact information for all profit making DCCBs",
+          "sql": "SELECT dm.name, scd.contact_person, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.is_profit_making = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.72
+        },
+        {
+          "question": "Which DCCBs have no email or phone number listed?",
+          "sql": "SELECT dm.name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id LEFT JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND (scd.email IS NULL OR scd.email = '') AND (scd.phone_number IS NULL OR scd.phone_number = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.67
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show contact information for all profit making DCCBs",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show contact information for all profit making DCCBs",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Show contact information for all profit making DCCBs",
+          "sql": "SELECT dm.name, scd.contact_person, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.is_profit_making = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show contact information for DCCBs with annual income > 50 Lakhs",
+          "sql": "SELECT dm.name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_income > 50 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.8
+        },
+        {
+          "question": "Show email for contact person in profit making StCBs",
+          "sql": "SELECT scb.scb_name, scd.contact_person, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND scb.is_profit_making = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.73
+        }
+      ]
+    }
+  },
+  {
+    "question": "List all members for DCCBs with turnover > 100 Lakhs",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "List all members for DCCBs with turnover > 100 Lakhs",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "List all members for DCCBs with turnover > 100 Lakhs",
+          "sql": "SELECT dm.name, om.org_name, scb.annual_turnover, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_turnover > 100 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show contact information for DCCBs with annual income > 50 Lakhs",
+          "sql": "SELECT dm.name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_income > 50 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.7
+        },
+        {
+          "question": "Count of other members for each DCCB in West Bengal",
+          "sql": "SELECT dm.name, SUM(cast(scb.other_member_count as integer)) FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%WEST BENGAL%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY dm.name;",
+          "similarity_score": 0.64
+        }
+      ]
+    }
+  },
+  {
+    "question": "Fetch member pincode for DCCB affiliates",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 100,
+      "doc_score": 100,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Fetch member pincode for DCCB affiliates",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [
+          "District Central Cooperative Bank"
+        ],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "BANKS",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [
+        {
+          "category": "Business Rule",
+          "content": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Contact details for bank personnel are stored in the table chatbot_scb_contact_details."
+        },
+        {
+          "category": "Business Rule",
+          "content": "Data Dictionary for chatbot_scb_ master tables: scb_dcb_flag (1=SCB, 2=DCB, 3=SCARDB, 4=PCARDB); location_urban_rural (1=Urban, 2=Rural); functional_status (1=Functional, 2=Under Liquidation, 3=Non Functional); is_city/is_comp/is_dividend_paid (1=Yes, 0=No); status (1=Active, 0=Inactive); scheme_type (1=Central Govt Scheme, 2=State Govt Scheme); class_membership (1=Ordinary/Regular/Voting, 2=Associate/Nominal/Voting)."
+        },
+        {
+          "category": "Business Rule",
+          "content": "State cooperative banks, state banks , SCBs , SCB are the same thing (State cooperative bank) so use the scb_dcb_flag = 1 , District cooperative bank, District banks, DCCBs, DCB are the same thing (District cooperative bank) so use the scb_dcb_flag = 2 , State cooperative agricultural and rural development banks, State cooperative agricultural and rural development banks, SCARDBs, SCARDB are the same thing (State cooperative agricultural and rural development banks) so use the scb_dcb_flag = 3 , Primary cooperative agricultural and rural development banks, Primary cooperative agricultural and rural development banks, PCARDBs, PCARDB are the same thing (Primary cooperative agricultural and rural development banks) so use the scb_dcb_flag = 4"
+        },
+        {
+          "category": "Business Rule",
+          "content": "Audit figures like net_profit, annual_turnover, etc. are stored in lakhs."
+        }
+      ],
+      "relevant_tables": [
+        "chatbot_scb_other_members_private",
+        "chatbot_scb_contact_details",
+        "chatbot_scb_area_rural_private",
+        "chatbot_scb_area_urban_private",
+        "chatbot_scb_schemes_private"
+      ],
+      "similar_sql_examples": [
+        {
+          "question": "Fetch member pincode for DCCB affiliates",
+          "sql": "SELECT dm.name, m.organization_name, m.pincode, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_members_private m ON scb.id = m.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show details of other members affiliate with DCCBs",
+          "sql": "SELECT dm.name as bank_name, om.org_name, om.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.59
+        },
+        {
+          "question": "List DCCB bank names and their IFSC codes",
+          "sql": "SELECT dm.name, scb.ifsc_code, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.58
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show scheme details for DCCBs in Tamil Nadu",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show scheme details for DCCBs in Tamil Nadu",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Show scheme details for DCCBs in Tamil Nadu",
+          "sql": "SELECT dm.name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Show scheme implementation for DCCBs in Telangana",
+          "sql": "SELECT dm.name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TELANGANA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.78
+        },
+        {
+          "question": "Show audit status of DCCBs in Gujarat",
+          "sql": "SELECT dm.name, scb.latest_audit_year, scb.is_profit_making, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.67
+        }
+      ]
+    }
+  },
+  {
+    "question": "Show details of other members affiliate with DCCBs",
+    "category": "Multi-Table",
+    "scores": {
+      "module_score": 0,
+      "doc_score": 0,
+      "ddl_score": 0.0,
+      "sql_example_score": 100
+    },
+    "context_package": {
+      "question": "Show details of other members affiliate with DCCBs",
+      "entities": {
+        "locations": [],
+        "sectors": [],
+        "institution_types": [],
+        "business_concepts": []
+      },
+      "predicted_modules": [
+        {
+          "module": "LEGACY",
+          "confidence": 1.0
+        }
+      ],
+      "relevant_docs": [],
+      "relevant_tables": [],
+      "similar_sql_examples": [
+        {
+          "question": "Show details of other members affiliate with DCCBs",
+          "sql": "SELECT dm.name as bank_name, om.org_name, om.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 1.0
+        },
+        {
+          "question": "Which DCCBs have more than 10 affiliate members?",
+          "sql": "SELECT dm.name, scb.other_member_count, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.other_member_count > 10 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.76
+        },
+        {
+          "question": "Show organization names of other members for DCCBs",
+          "sql": "SELECT dm.name as bank_name, om.org_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+          "similarity_score": 0.72
+        }
+      ]
+    }
+  }
+]

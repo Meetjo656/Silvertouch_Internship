@@ -1,0 +1,476 @@
+[
+  {
+    "question": "Count multi-state societies by their primary activity",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Count multi-state societies by their primary activity",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "How many NCCT institutes have projector facilities?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "List of multi-state societies which are under liquidation",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "List of multi-state societies which are under liquidation",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show me all functional cooperative societies",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Show me all functional cooperative societies",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Get the names of all federations along with their auditors' categories.",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Get the names of all federations along with their auditors' categories.",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Count of offices specialized in Financial by state.",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "What is the total number of members in all state federations?",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "What is the total number of members in all state federations?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Total turnover of all multi-state societies",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Total turnover of all multi-state societies",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Total loss of multi-state societies in the Handloom sector",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Total loss of multi-state societies in the Handloom sector",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "How many full covered GPs are there in gaya for Handloom?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Latest top 10 Credit & Thrift rankings in tamil nadu",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "List all members from National Film Federation in Karnataka state. ",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "List partially covered Gram Panchayats in papum pare for Multi-purpose",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Find profit making Dairy federations in Uttar Pradesh.",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Find profit making Dairy federations in Uttar Pradesh.",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show me coverage details for all blocks in belagavi for Multi-purpose",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "How many full covered GPs are there in madurai for Fishery?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Find phone numbers for PCARDB banks in Rajasthan",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Find phone numbers for PCARDB banks in Rajasthan",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "List partially covered Gram Panchayats in pune for Credit",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "List urban area of operation wards for PCARDB banks",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "List urban area of operation wards for PCARDB banks",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Total deposits of Chatbot Cooperative Pacs societies",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Total deposits of Chatbot Cooperative Pacs societies",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Top 5 profitable DCCB banks",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Top 5 profitable DCCB banks",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "List StCBs that are reporting a net loss greater than 0",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "List StCBs that are reporting a net loss greater than 0",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Total annual expense of StCBs compared by dividend paid status",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Total annual expense of StCBs compared by dividend paid status",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Total number of members in all PCARDB banks",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Total number of members in all PCARDB banks",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show last 5 registered cooperative banks",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Show last 5 registered cooperative banks",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Count of banks that have a negative net loss and no dividend paid",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Count of banks that have a negative net loss and no dividend paid",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show organization type for other members of PCARDBs",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Show organization type for other members of PCARDBs",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show scheme amounts for banks in metro cities Mumbai/Delhi",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Show scheme amounts for banks in metro cities Mumbai/Delhi",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Total count of functional National Federations",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Total number of functional cooperative societies",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Multi state ucb",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Total number of computerized cooperative banks",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "UCB count",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "How many profit-making cooperatives are recorded?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "How many non-credit cooperative societies are there?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "How many State Level Federations are functional?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "SCARDB cooperative bank count",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Count of cooperatives in Urban locations",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Which DCCBs have no email listed in contact details?",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Which DCCBs have no email listed in contact details?",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Find federation detail, the member detail and contact information which mapped with federation name is Nafed.",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show area of operation for PCARDB banks in GUJARAT",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Show area of operation for PCARDB banks in GUJARAT",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Get phone number and email for DCCB in Pune",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Get phone number and email for DCCB in Pune",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show contact person and phone for all functional DCCBs",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Show contact person and phone for all functional DCCBs",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show contact information for all profit making DCCBs",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Show contact information for all profit making DCCBs",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "List all members for DCCBs with turnover > 100 Lakhs",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "List all members for DCCBs with turnover > 100 Lakhs",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Fetch member pincode for DCCB affiliates",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Fetch member pincode for DCCB affiliates",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show scheme details for DCCBs in Tamil Nadu",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Show scheme details for DCCBs in Tamil Nadu",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  },
+  {
+    "question": "Show details of other members affiliate with DCCBs",
+    "failure_type": "Missing DDL",
+    "root_cause": "DDL Retreiver failed to extract geographical/master tables or schema gap",
+    "recommended_fix": "Enhance DDL dependency mapping"
+  },
+  {
+    "question": "Show details of other members affiliate with DCCBs",
+    "failure_type": "Missing Documentation",
+    "root_cause": "Semantic mapping gap between expected business terms and doc metadata",
+    "recommended_fix": "Improve doc tagging"
+  }
+]
