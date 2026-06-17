@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # 🚀 Silvertouch Internship Portfolio
 
 > **Computer Vision, Machine Learning, Data Engineering & Semantic AI** — A comprehensive collection of intelligent systems developed during a technology internship, demonstrating the full AI/ML lifecycle from data collection to semantic decision-making.
@@ -11,11 +12,28 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 [Explore Projects](#-projects) • [View Architecture](#-architecture-journey) • [Tech Stack](#-technology-stack) • [Skills](#-skills-demonstrated)
+=======
+<div align="center">
+
+# 🧪 Silvertouch Technologies Internship Portfolio
+**Advanced Computer Vision, Geometric Machine Learning, and Information Retrieval Pipelines**
+
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)](https://opencv.org/)
+[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-Machine%20Learning-orange.svg)](https://scikit-learn.org/)
+[![FAISS](https://img.shields.io/badge/FAISS-Dense%20Retrieval-blueviolet.svg)](https://github.com/facebookresearch/faiss)
+[![Shapely](https://img.shields.io/badge/Shapely-Geometry-lightgrey.svg)](https://shapely.readthedocs.io/en/stable/)
+
+*A comprehensive technical showcase of real-world pharmaceutical packaging analysis, data engineering, and semantic AI systems developed during a professional internship.*
+
+[Overview](#-executive-summary) • [Architecture](#-architecture-deep-dive) • [Projects](#-project-showcase) • [Skills](#-skills-demonstrated) • [Roadmap](#-future-roadmap)
+>>>>>>> Stashed changes
 
 </div>
 
 ---
 
+<<<<<<< Updated upstream
 ## 📌 Quick Navigation
 
 - [Overview](#-overview)
@@ -420,11 +438,37 @@ sql = model.generate(prompt)
 ### Skills Demonstrated
 
 `NLP` • `LLM Fine-tuning` • `Semantic Search` • `Entity Extraction` • `Information Retrieval` • `RAG Systems` • `API Design`
+=======
+## 📋 Table of Contents
+
+<details open>
+<summary><strong>Expand / Collapse Contents</strong></summary>
+
+- [Executive Summary](#-executive-summary)
+- [Repository Highlights](#-repository-highlights)
+- [Internship Journey](#-internship-journey)
+- [Project Showcase](#-project-showcase)
+- [Detailed Project Sections](#-detailed-project-sections)
+  - [Task 1: Perceptual Text-Color Comparison](#1-task-1--perceptual-text-color-comparison)
+  - [Task 2: Structural Packaging Layout Reconstruction](#2-task-2--structural-packaging-layout-reconstruction)
+  - [Task 3: DailyMed Scraper & Dataset Curation](#3-task-3--dailymed-scraper--dataset-curation)
+  - [Task 4: Semantic Catalog & Dense Retrieval System](#4-task-4--semantic-catalog--dense-retrieval-system)
+- [Architecture Deep Dive](#-architecture-deep-dive)
+- [Technology Stack](#-technology-stack)
+- [Skills Demonstrated](#-skills-demonstrated)
+- [Engineering Principles](#-engineering-principles)
+- [Deliverables](#-deliverables)
+- [Challenges & Learnings](#-challenges--learnings)
+- [Repository Structure](#-repository-structure)
+- [Future Roadmap](#-future-roadmap)
+- [Appendix](#-appendix)
+>>>>>>> Stashed changes
 
 </details>
 
 ---
 
+<<<<<<< Updated upstream
 ## 🏗️ Architecture Journey
 
 The projects form an integrated AI/ML lifecycle:
@@ -454,12 +498,66 @@ graph LR
 | **3. Learning** | ML Classification | Features + labels | Trained models | scikit-learn, RF |
 | **4. Intelligence** | Semantic AI | Natural language | Structured queries | Transformers, retrieval |
 | **5. Action** | Decision Support | Queries + results | Insights & automation | LLMs, APIs |
+=======
+## 🚀 Executive Summary
+
+During my internship at **Silvertouch Technologies**, I focused on designing, architecting, and deploying sophisticated AI pipelines to solve complex problems in pharmaceutical packaging analysis and semantic data retrieval. This repository serves as a professional portfolio documenting the complete lifecycle of these engineered solutions.
+
+The internship traversed multiple advanced domains, including **Computer Vision (CV)**, **Geometric Machine Learning**, **Data Engineering**, and **Information Retrieval (IR)**. Instead of relying solely on black-box deep learning models, the projects heavily emphasize hybrid approaches—combining deterministic algorithms (like Planar Straight Line Graphs and morphological geometry) with statistical machine learning (Random Forests) and perceptual clustering (MeanShift in LAB space).
+
+### Core Systems Built
+1. **Perceptual Text-Color Matching System:** A pipeline that mimics human color perception using LAB color spaces and CIEDE2000 metrics to verify pharmaceutical warning label consistency.
+2. **Geometry-First Structural Reconstruction:** A mathematical and machine learning hybrid pipeline that reconstructs exact manufacturing blueprint layouts from raw 2D carton images.
+3. **Automated Data Engineering Pipeline:** A multi-threaded, robust web crawler and dataset normalization engine built to scrape, deduplicate, and curate the DailyMed pharmaceutical database.
+4. **Dense Retrieval Engine:** A high-performance Information Retrieval system leveraging FAISS and dense embeddings to accurately locate schema documentation and DDLs for a future Text-to-SQL architecture.
+
+This portfolio demonstrates my ability to tackle end-to-end software engineering challenges, from scraping raw data and designing core algorithms to establishing scalable, reproducible architectures and deploying dense vector search.
+>>>>>>> Stashed changes
 
 ---
 
-## 📁 Repository Structure
+## 📊 Repository Highlights
 
+The following dashboard summarizes the scale, focus, and core technologies leveraged throughout the internship.
+
+| Category | Value / Focus |
+| :--- | :--- |
+| **Primary AI Domains** | Computer Vision, Information Retrieval, Geometric Modeling, Data Engineering |
+| **Major Engineered Systems** | 4 Special-Purpose Pipelines |
+| **Core Languages** | Python 3.11+, Bash |
+| **Vision & Geometry Stack** | OpenCV, scikit-image, Shapely, PIL |
+| **Machine Learning Stack** | Scikit-learn (Random Forests, MeanShift), Joblib |
+| **Information Retrieval Stack** | FAISS (Vector Indexing), Dense Text Embeddings |
+| **Data Engineering** | Multithreading, Perceptual Hashing (ImageHash), Pandas |
+| **Key Optimization Metrics** | Geometric Overlap %, Vector Retrieval Recall, ΔE Perceptual Thresholds |
+| **Architectural Patterns** | Modular Pipelines, Dependency Injection, Extract-Transform-Load (ETL) |
+
+---
+
+## 🗺️ Internship Journey
+
+The internship followed a logical, progressive narrative. I began with fundamental data engineering to acquire raw assets, transitioned into perceptual vision analysis, escalated into complex geometric and machine learning hybrids, and ultimately arrived at advanced semantic AI systems.
+
+```mermaid
+flowchart TD
+    A[Data Collection] -->|Task 3| B(Dataset Engineering & Normalization)
+    B -->|Foundation Set| C[Computer Vision]
+    C -->|Task 1| D(Perceptual Color Science)
+    D -->|Task 2| E[Machine Learning & Geometry]
+    E -->|Geometry-First Modeling| F(Structural Layout Reconstruction)
+    F -->|Evolution| G[Information Retrieval]
+    G -->|Task 4| H(Semantic Catalogs & FAISS Retrieval)
+    
+    style A fill:#e1f5fe,stroke:#0288d1
+    style B fill:#e1f5fe,stroke:#0288d1
+    style C fill:#f3e5f5,stroke:#8e24aa
+    style D fill:#f3e5f5,stroke:#8e24aa
+    style E fill:#e8f5e9,stroke:#388e3c
+    style F fill:#e8f5e9,stroke:#388e3c
+    style G fill:#fff3e0,stroke:#f57c00
+    style H fill:#fff3e0,stroke:#f57c00
 ```
+<<<<<<< Updated upstream
 Silvertouch_Internship/
 │
 ├── task1/                          # 🎨 Perceptual Text Color Analysis
@@ -593,12 +691,374 @@ Silvertouch_Internship/
 | **Matplotlib/seaborn** | Visualization & plotting |
 
 ### Machine Learning & Classification
+=======
+
+* **Phase 1 (Data):** Harvesting and curating pharmaceutical imagery.
+* **Phase 2 (Vision):** Understanding images at the pixel and perceptual level.
+* **Phase 3 (Structure):** Extracting mathematical boundaries and training classification models.
+* **Phase 4 (Semantics):** Moving beyond pixels into text, schemas, and high-dimensional semantic search.
+
+---
+
+## 🏆 Project Showcase
+
+Below is a high-level showcase of the distinct engineering projects housed within this repository. All projects receive equal focus, demonstrating a well-rounded software engineering and applied AI skill set.
+
+| Project Directory | Domain | Status | Core Technologies | Primary Outcome |
+| :--- | :--- | :--- | :--- | :--- |
+| `task1/` | Computer Vision | **✅ Completed** | OpenCV, scikit-learn, colour-science | Perceptual Dashboard Output |
+| `task2_neural_network/` | ML & Geometry | **✅ Completed** | Shapely, scikit-learn, Random Forests | Structural GeoJSON Blueprints |
+| `task3/` | Data Engineering | **✅ Completed** | ImageHash, ThreadPoolExecutor, PIL | Deduplicated, Normalized Dataset |
+| `task4/` | Information Retrieval | **🚧 Active** | FAISS, Dense Embeddings | Semantic Retrieval Pipelines |
+
+---
+
+## 🔬 Detailed Project Sections
+
+### 1. Task 1 — Perceptual Text-Color Comparison
+
+#### Overview
+Task 1 evaluates whether the text color on two separate pharmaceutical carton crops is identical. Crucially, it models how the **human eye** perceives color rather than relying on naive mathematical RGB distances.
+
+#### Why It Matters
+In pharmaceutical manufacturing, strict brand and warning label consistency is required by law. Lighting anomalies, printing artifacts, and background gradients can drastically alter standard pixel values. A perceptual pipeline ensures absolute quality control without false positives caused by manufacturing gloss or scanner lighting.
+
+#### Problem Statement
+Simple color comparisons (like Euclidean distance in RGB space) fail because RGB is not perceptually uniform—a mathematical difference of 10 in blue looks entirely different to the human eye than a difference of 10 in green.
+
+#### What Was Built
+A high-fidelity comparison engine that isolates text, maps colors into the perceptually uniform **LAB color space**, groups them via density algorithms, and scores similarities using the **CIEDE2000 (ΔE)** industry standard.
+
+#### Workflow & Architecture
+
+```mermaid
+graph TD
+    Input[Reference & Target Images] --> FE[Foreground Extraction Masking]
+    FE --> LAB[Conversion to LAB Space]
+    LAB --> MS[MeanShift Density Clustering]
+    MS --> DC[Dominant Color Extraction]
+    DC --> CE[CIEDE2000 ΔE Comparison]
+    CE --> Decision{ΔE ≤ 8.0?}
+    Decision -->|Yes| Match[MATCH]
+    Decision -->|No| NoMatch[NO MATCH]
+    Match --> Dash[Comparison Dashboard Render]
+    NoMatch --> Dash
+```
+
+#### Technologies
+* **`scikit-learn`**: MeanShift clustering.
+* **`colour-science`**: Delta E (CIE2000) computation and family mapping.
+* **`numpy` & `cv2`**: Matrix operations and image transformations.
+
+#### Engineering Decisions
+* **Choosing MeanShift over K-Means:** We cannot predict how many ink colors exist on a crop. MeanShift finds density peaks dynamically without requiring a predefined `k` value.
+* **Using LAB Color Space:** LAB isolates luminance (L) from color channels (A, B), making it highly resistant to lighting/shadow variations across packaging.
+
+#### Key Deliverables
+* `outputs/comparison_dashboard.png`: A comprehensive side-by-side visualization showing extracted masks, spatial clusters, dominant swatches, and the final ΔE mathematical justification.
+
+---
+
+### 2. Task 2 — Structural Packaging Layout Reconstruction
+
+#### Overview
+Task 2 reconstructs the structural blueprint of a pharmaceutical carton—identifying the exact planar coordinates of panels, dust flaps, and glue tabs from a 2D image.
+
+#### Why It Matters
+While modern Deep Learning (like the Segment Anything Model / SAM) is excellent at finding objects, it outputs organic, wavy boundaries. Packaging and manufacturing require strict, mathematically perfect lines (straight edges, sharp corners). 
+
+#### Problem Statement
+How do we convert raw pixels or noisy neural network masks into a strict, topological blueprint composed of precise geometric polygons, and then classify the purpose of each polygon?
+
+#### What Was Built
+A **hybrid pipeline** comprising two parallel systems:
+1. **Geometry-First Planar Partitioning:** A mathematical pipeline that enforces structural rigidity.
+2. **Machine Learning Classifier:** A Random Forest model trained on 17 custom-extracted geometric properties.
+
+#### Workflow & Architecture
+
+<details>
+<summary><strong>View Architecture Diagram</strong></summary>
+
+```mermaid
+sequenceDiagram
+    participant Image
+    participant CV as Geometry Pipeline
+    participant Math as Graph Builder (PSLG)
+    participant ML as ML Feature Extractor
+    participant RF as Random Forest Classifier
+    
+    Image->>CV: Suppress Artwork & Detect Lines
+    CV->>Math: Regularize & Snap Lines
+    Math->>Math: Build Planar Straight Line Graph
+    Math->>Math: Polygonize Enclosed Faces
+    Math->>ML: Pass Geometric Polygons
+    ML->>ML: Compute Area, Aspect Ratio, Solidity, etc.
+    ML->>RF: Predict Polygon Structural Label
+    RF-->>Image: Overlay GeoJSON Blueprint & Labels
+```
+</details>
+
+#### Technologies
+* **`Shapely`**: Advanced geometric operations, intersections, and polygon building.
+* **`scikit-learn`**: Random Forest classification (`StructuralMaskRFClassifier`).
+* **`OpenCV`**: Hough line transforms, bilateral filtering, Canny edge detection.
+
+#### Engineering Decisions
+* **Geometry-First Design:** By enforcing a Planar Straight Line Graph (PSLG), we guarantee that no polygons overlap and that all edges are shared cleanly—perfectly mimicking a real CAD file.
+* **Custom Geometric Feature Engineering:** Instead of passing raw pixels to a CNN, we extract 17 features (solidity, circularity, rotated aspect ratio) allowing a lightweight, highly explainable Random Forest to perform classification.
+
+#### Key Deliverables
+* Automatically generated `segments.json` files mapping precise geometric coordinates.
+* Visual boundary overlays and false-color segment maps indicating structural hierarchy.
+* Trained `.joblib` classification models.
+
+---
+
+### 3. Task 3 — DailyMed Scraper & Dataset Curation
+
+#### Overview
+Task 3 is a robust Data Engineering project. It automates the scraping of pharmaceutical packaging artwork from the FDA's DailyMed database and curates/normalizes unstructured Roboflow annotation datasets for downstream model training.
+
+#### Why It Matters
+AI is only as good as its data. Manual downloading of datasets is unscalable. Furthermore, pharmaceutical databases are fraught with duplicate entries, irrelevant logos, and widely varying image resolutions that break neural network memory constraints.
+
+#### Problem Statement
+We required a fault-tolerant system to extract thousands of XML-based records from a web API, download relevant imagery, eliminate duplicates, and standardize existing dataset annotations into a unified taxonomy.
+
+#### What Was Built
+* A multi-threaded, robust web scraper.
+* A dataset curation engine that standardizes bounding box annotations and downsamples massive imagery.
+
+#### Workflow & Architecture
+
+```mermaid
+graph LR
+    A[DailyMed XML API] -->|Crawler| B(Extract Image URLs)
+    B -->|Thread Pool| C(Downloader)
+    C --> D{Filter Engine}
+    D -->|Invalid Size / UI Logo| E[Discard]
+    D -->|Valid Shape| F[Perceptual Hashing]
+    F -->|Is Duplicate?| E
+    F -->|Unique| G[(Processed Storage)]
+    
+    H[Raw Roboflow COCO Data] --> I[Category Mapping Migration]
+    I --> J[Lanczos Downsampling]
+    J --> K[(Normalized Dataset)]
+```
+
+#### Technologies
+* **`concurrent.futures`**: ThreadPoolExecutor for rapid, parallel I/O bound downloads.
+* **`ImageHash`**: Generating perceptual hashes (`phash`) to mathematically prove image duplication.
+* **`PIL (Pillow)`**: High-quality Lanczos resampling.
+* **`json` & `pandas`**: Metadata tracking and logging.
+
+#### Engineering Decisions
+* **Perceptual Hashing over MD5:** Standard cryptography hashes (MD5) change completely if a single pixel differs. Perceptual hashing generates the same fingerprint for visually similar images, effectively eliminating near-duplicates from the dataset.
+* **Lanczos Filtering:** Used for down-sampling high-resolution images because it preserves critical edge information much better than nearest-neighbor or bilinear interpolation.
+
+#### Key Deliverables
+* A clean repository of deduplicated artwork images.
+* Normalized `eval_combined` datasets with unified COCO label taxonomies and capped dimensions (max 1000px).
+
+---
+
+### 4. Task 4 — Semantic Catalog & Dense Retrieval System
+
+#### Overview
+Task 4 serves as the foundation for an advanced Information Retrieval (IR) architecture. It focuses on the **dense retrieval** of semantic catalogs, schema DDLs, and database documentation using vector search. 
+
+> **Important Status Correction:** Task 4 is currently an active Retrieval architecture. While the ultimate long-term goal involves Natural Language to SQL (Text-to-SQL) generation, **generation is NOT currently implemented or active.** The system currently focuses entirely on high-accuracy context retrieval.
+
+#### Current Status Breakdown
+
+| Phase | Status | Details |
+| :--- | :---: | :--- |
+| **Dataset Analysis** | ✅ | Schema analysis and taxonomy construction completed. |
+| **Semantic Catalog Development** | ✅ | Built metadata stores defining entity relationships. |
+| **Document/DDL Retrieval** | ✅ | Engine capable of fetching specific schema layouts. |
+| **Embedding Generation** | ✅ | Text chunks successfully mapped to dense vector spaces. |
+| **FAISS Indexing** | ✅ | High-speed vector index constructed and operational. |
+| **Retrieval Evaluation** | ✅ | Benchmarking top-K recall accuracy for context ranking. |
+| **Semantic Routing** | 🚧 | *In Progress* - Parsing user intent to target specific indices. |
+| **Context Assembly** | 🚧 | *In Progress* - Formatting retrieved vectors into LLM prompts. |
+| **NL → SQL Generation** | 🔮 | *Planned Future Work.* |
+| **LLM Fine-tuning / LoRA** | 🔮 | *Planned Future Work.* |
+
+#### Why It Matters
+Before a Large Language Model can accurately generate complex SQL queries, it must be fed the exact, correct database schema context. Relying on simple keyword search fails when users utilize domain-specific synonyms. A dense vector retrieval system understands semantic meaning.
+
+#### Problem Statement
+How do we rapidly and accurately retrieve the correct table DDLs and semantic definitions out of hundreds of possibilities, based purely on natural language queries?
+
+#### What Was Built
+A high-performance Dense Retrieval pipeline utilizing embeddings to represent schema concepts in a multi-dimensional space, indexed by Facebook AI Similarity Search (FAISS).
+
+#### Technologies
+* **`FAISS`**: Sub-millisecond dense vector similarity search.
+* **Dense Embeddings**: Converting textual catalogs into float vectors.
+* **Vector Metrics**: Cosine similarity / L2 distance ranking.
+
+#### Engineering Decisions
+* **Decoupling Retrieval from Generation:** We purposefully built and evaluated the retrieval engine independently. If the context retrieved is wrong, any downstream SQL generation will fail. Benchmarking retrieval guarantees system stability before introducing LLM token generation.
+
+#### Key Deliverables
+* Semantic catalog definitions.
+* FAISS vector indices mapping schema documentation.
+* Retrieval benchmark scripts and ranking experiments.
+
+---
+
+## 🏛️ Architecture Deep Dive
+
+This repository leverages distinct architectural paradigms depending on the domain.
+
+### Computer Vision Systems (Perceptual & Morphological)
+Instead of treating images purely as tensors, the architecture breaks them down into semantic components. In Task 1, foreground extraction relies on localized background estimation. In Task 2, "Artwork Suppression" uses `cv2.morphologyEx` (Bilateral filtering + Morphological Openings) to explicitly erase high-contrast text before edge detection even begins, preventing the Hough line transformer from hallucinating geometric edges around printed words.
+
+### Geometric Processing Systems (PSLG)
+The core architecture of Task 2 revolves around a Planar Straight Line Graph (PSLG). The `PSLGBuilder` treats intersection points as graph **Nodes** and lines as graph **Edges**. By traversing this mathematical graph, the `Polygonizer` can definitively extract closed regions without any pixel-level ambiguity.
+
+### Data Engineering Pipelines
+Task 3 implements an ETL (Extract, Transform, Load) pattern. It decouples the `Crawler` (parsing XML state), the `Downloader` (I/O thread pool execution), and the `Filters` (business logic for rejecting data). This separation of concerns allows execution to be paused and resumed seamlessly using local state files.
+
+### Retrieval Systems
+Task 4 implements a Dense Vector architecture. Documents (DDLs, semantic notes) are chunked, embedded into high-dimensional vectors, and stored in a FAISS index. At query time, the user's string is embedded, and the system performs a K-Nearest Neighbors (KNN) search across the index space.
+
+---
+
+## 🛠️ Technology Stack
+
+The internship utilized a diverse and robust technology stack:
+
+#### Programming & Core Utilities
+* **Python (3.11+)**: Strict typing, pattern matching (`match`/`case`), and object-oriented design.
+* **Pandas**: Tabular metadata manipulation and dataset analytics.
+* **Joblib**: Efficient serialization of trained machine learning models.
+
+#### Computer Vision & Geometry
+* **OpenCV (`cv2`)**: Core matrix manipulation, filtering, and edge detection.
+* **scikit-image (`skimage`)**: Advanced contouring and geometric property measurement.
+* **Pillow (`PIL`)**: Image resampling and format handling.
+* **Shapely**: Advanced polygon boolean logic and intersection math.
+
+#### Machine Learning & Retrieval
+* **scikit-learn**: Random Forests, MeanShift clustering, Model evaluation metrics.
+* **colour-science**: Complex CIE perceptual color space transformations.
+* **FAISS**: Facebook's library for efficient similarity search and clustering of dense vectors.
+
+---
+
+## 🧠 Skills Demonstrated
+
+The following professional skills were extensively developed and demonstrated across the codebase.
+
+| Area of Expertise | Demonstrated Skills | Repository Implementation Examples |
+| :--- | :--- | :--- |
+| **Computer Vision** | Morphological filtering, color space conversions, edge/line extraction | `task1` background estimation, `task2` artwork suppressor |
+| **Geometric Reasoning** | Graph traversal, polygonization, topological validity | `task2` PSLG builder, containment filtering |
+| **Feature Engineering** | Mathematical shape profiling, extracting translation-invariant bounds | `task2` 17-dimensional `extract_geometric_features` |
+| **Classification ML** | Training tree-based models, preventing data leakage via group splits | `task2` Structural Random Forest classifier |
+| **Data Engineering** | Multithreading, idempotent scraping, perceptual hashing | `task3` DailyMed crawler and deduplicator |
+| **Information Retrieval** | Dense vector search, indexing, top-k evaluation metrics | `task4` FAISS indexing and retrieval benchmark |
+| **Software Architecture** | Object-Oriented Pipelines, Strategy Patterns, clear module segregation | `src/` modular design across all tasks |
+
+---
+
+## 📐 Engineering Principles
+
+* **Modularity:** Pipelines are heavily broken into discrete classes (e.g., `EdgeDetector`, `LineRegularizer`, `FaceCleanupAudit`), allowing individual testing and swapping of logic without breaking the system.
+* **Explainability:** By avoiding end-to-end black-box deep learning for structure and color, the systems can mathematically explain *why* they made a decision (e.g., Outputting a specific ΔE value, or explicitly citing a polygon's aspect ratio).
+* **Reproducibility:** Use of deterministic random seeds during Random Forest training, configuration files (`config.py`), and explicit dependency management (`requirements.txt`).
+* **Robustness:** Web scrapers track session states to resume from network failures; CV pipelines utilize robust fallback thresholds.
+
+---
+
+## 📦 Deliverables
+
+Throughout the internship, the following key artifacts were produced:
+* **Dashboards:** Automated, visually rich PNG comparison reports.
+* **Datasets:** Cleaned, deduplicated, and unified packaging imagery.
+* **Blueprints:** Exact geometric GeoJSON outputs of packaging layouts.
+* **Models:** Trained `.joblib` machine learning classifiers.
+* **Indices:** Compiled FAISS semantic vector stores.
+* **Evaluation Assets:** CSV histograms, coverage reports, and ranking logs.
+
+---
+
+## 🧗 Challenges & Learnings
+
+### 1. The Reality of Neural Network Segmentation
+**Challenge:** Initially exploring raw Neural Network segmentation (like SAM) revealed that Deep Learning struggles with absolute physical rigidity. Masks would "bleed" across physical carton folds.
+**Learning:** Pure AI is not always the answer. Developing the geometry-first PSLG pipeline taught me the immense value of classical mathematical constraints. Forcing the system to snap to detected lines solved the bleeding issue entirely.
+
+### 2. The Nuance of Color Perception
+**Challenge:** Comparing text colors was failing due to lighting gradients causing massive RGB variances across a single box.
+**Learning:** I learned the intricacies of color science. Transitioning to the LAB color space separated the brightness (L) from the actual pigment (A/B), drastically improving the system's resilience to shadows.
+
+### 3. Engineering Resilient Data Pipelines
+**Challenge:** The DailyMed scraper would frequently fail midway through a 10,000 image download due to API timeouts, resulting in lost data.
+**Learning:** I learned to engineer resilient ETL pipelines by implementing local state caching. The system now logs completed IDs to disk, allowing it to resume exactly where it left off. Furthermore, implementing perceptual hashing taught me how to effectively deduplicate massive visual datasets.
+
+### 4. Dense Retrieval Ambiguity
+**Challenge:** In Task 4, creating the FAISS index highlighted how overlapping database schema definitions confuse retrieval systems if the context chunks are too large.
+**Learning:** Evaluating the retrieval system taught me the importance of optimal chunk sizing and comprehensive semantic metadata tagging prior to vectorization.
+
+---
+
+## 📂 Repository Structure
+
+Below is the high-level architecture of the repository workspace.
+
+<details open>
+<summary><strong>Expand Directory Tree</strong></summary>
+
+```text
+Silvertouch_Internship/
+├── .gitignore
+├── README.md                           ← This Documentation
+├── src/                                ← Shared Repository Utilities
+│
+├── task1/                              ← Text-Color Perceptual Matching
+│   ├── config.py                       
+│   ├── main.py                         
+│   ├── clustering/                     ← MeanShift Algorithms
+│   ├── color_processing/               ← LAB and CIEDE2000 math
+│   ├── preprocessing/                  ← Foreground/Background isolation
+│   └── visualization/                  
+│
+├── task2_neural_network/               ← Geometry & ML Layout Reconstruction
+│   ├── config/                         
+│   ├── src/
+│   │   ├── analysis/                   ← System audits and metrics
+│   │   ├── blueprint/                  ← Structural consolidation filters
+│   │   ├── features/                   ← Geometric feature engineering
+│   │   ├── geometry/                   ← Line detection & PSLG Builder
+│   │   ├── models/                     ← Random Forest classifiers
+│   │   └── pipeline/                   ← Orchestration logic
+│   └── training/                       ← Model generation scripts
+│
+├── task3/                              ← Data Engineering & Scraping
+│   ├── Scrapped/
+│   │   └── src/                        ← Crawler, Downloader, Hash Deduplicator
+│   ├── combine_eval.py                 ← Normalization scripts
+│   └── resize_dataset.py               
+│
+└── task4/                              ← Information Retrieval System
+    ├── configs/
+    ├── data/
+    ├── docs/
+    ├── src/                            ← Embeddings, FAISS indexing, Retrieval logic
+    └── scripts/
+```
+>>>>>>> Stashed changes
 
 | Technology | Usage |
 |------------|-------|
 | **scikit-learn** | Random Forest classification, feature processing |
 | **pandas** | Data manipulation and analysis |
 
+<<<<<<< Updated upstream
 ### NLP & Large Language Models
 
 | Technology | Usage |
@@ -902,4 +1362,36 @@ Built with 🐍 Python | 🎥 OpenCV | 🔢 NumPy | 🤖 Transformers | 📐 Sha
 
 [Report Issue](https://github.com/Meetjo656/Silvertouch_Internship/issues) • [View Project](https://github.com/Meetjo656/Silvertouch_Internship)
 
+=======
+---
+
+## 🔮 Future Roadmap
+
+The repository continues to evolve as new architectures are explored.
+
+### Near-Term
+* **Semantic Routing (Task 4):** Finalize the intent parser to route natural language queries to either the DDL index or the documentation index.
+* **Context Assembly (Task 4):** Build the formatting logic that takes retrieved FAISS vectors and formats them into strict, injected context blocks for Large Language Models.
+
+### Mid-Term
+* **Natural Language to SQL Generation:** Introduce an LLM inference layer to consume the assembled context and output syntactically valid SQL queries.
+* **SQL Generation Evaluation:** Construct automated testing pipelines using execution accuracy and exact-match schema evaluations.
+
+### Long-Term
+* **Model Fine-Tuning:** Utilize PEFT and LoRA techniques to fine-tune open-weight models specifically on the Silvertouch internal schema semantics.
+* **API Deployment:** Package the full end-to-end pipeline (Retrieval + Generation) into a scalable FastAPI production service.
+
+---
+
+## 📚 Appendix
+
+* **PSLG:** Planar Straight Line Graph. A fundamental computational geometry concept where edges intersect only at their endpoints.
+* **ΔE (CIEDE2000):** A metric developed by the International Commission on Illumination to measure the perceptual difference between two colors. A value under 8.0 is generally visually identical or highly similar.
+* **FAISS:** Facebook AI Similarity Search. A library that enables rapid search of multimedia documents representing dense vectors.
+* **ETL:** Extract, Transform, Load. Standard data pipeline methodology.
+
+<br>
+<div align="center">
+  <sub>Developed by Meet</sub>
+>>>>>>> Stashed changes
 </div>

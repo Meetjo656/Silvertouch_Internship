@@ -22,7 +22,7 @@ def main():
         plots=True
     )
     
-    print("15-epoch training completed successfully!")
+    print("20-epoch training completed successfully!")
 
 if __name__ == '__main__':
     main()

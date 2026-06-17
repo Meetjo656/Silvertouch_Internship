@@ -6,18 +6,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from src.utils.sql_structure_extractor import SQLStructureExtractor
 
 class StructuralMatch:
-    """
-    Most important evaluator for SQL generation.
-    Computes semantic similarity by comparing parsed SQL structures instead of pure text.
-    """
-    
     @staticmethod
     def _calculate_score(expected_items: list, generated_items: list) -> float:
-        """
-        Calculates the recall score: (intersection / expected)
-        If both are empty, they match perfectly (score 1.0).
-        If expected is empty but generated has items, it's considered noise (score 0.0 or penalty, here 0.0).
-        """
+
         if not expected_items and not generated_items:
             return 1.0
         if not expected_items and generated_items:
