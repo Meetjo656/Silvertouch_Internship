@@ -49,7 +49,6 @@ class HallucinationDetector:
             col_name = column.name
             if not col_name or col_name == "*":
                 continue
-                
             table_ref = column.table
             target_tables = []
             
