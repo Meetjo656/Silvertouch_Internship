@@ -1,0 +1,43 @@
+[
+  {
+    "table": "chatbot_dccb_master_private",
+    "schema_status": "INFERRED",
+    "confidence": 0.95,
+    "inferred_columns": [
+      "name",
+      "id"
+    ]
+  },
+  {
+    "table": "chatbot_cooperative_rankings",
+    "schema_status": "INFERRED",
+    "confidence": 0.95,
+    "inferred_columns": [
+      "date_time",
+      "sector_name",
+      "rank",
+      "rank_type_name",
+      "state_name",
+      "cooperative_name",
+      "total_score",
+      "flag",
+      "district_name"
+    ]
+  },
+  {
+    "table": "chatbot_scb_members_private",
+    "schema_status": "INFERRED",
+    "confidence": 0.95,
+    "inferred_columns": [
+      "state_cooperative_bank_id",
+      "organization_name",
+      "email",
+      "contact_person",
+      "designation",
+      "primary_activity_name",
+      "pincode",
+      "id",
+      "class_membership"
+    ]
+  }
+]

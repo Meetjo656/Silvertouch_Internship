@@ -1,0 +1,400 @@
+=== Sample 1 ===
+Expected SQL:
+SELECT primary_activity_name, COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY primary_activity_name;
+
+Generated SQL:
+SELECT scb_name, COUNT(*) 
+FROM chatbot_scb_master_private s 
+WHERE s.location_urban_rural = '1' -- Urban location
+AND s.status = '1' -- Active status
+AND s.is_draft = '0' -- Not in draft mode
+AND s.is_delete = '0' -- Not deleted
+GROUP BY scb_name;
+
+Extracted Tables: ['chatbot_scb_master_private']
+Extracted Columns: ['scb_name', 'scb_name', 'is_delete', 'is_draft', 'location_urban_rural', 'status']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: []
+
+Alias Map Check:
+  s -> chatbot_scb_master_private (Exists: True)
+
+Column Map Check:
+  Column: scb_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_scb_master_private']
+    -> Found in any? True
+  Column: scb_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_scb_master_private']
+    -> Found in any? True
+  Column: is_delete, Ref: s
+    -> Resolves to chatbot_scb_master_private. Exists: True
+  Column: is_draft, Ref: s
+    -> Resolves to chatbot_scb_master_private. Exists: True
+  Column: location_urban_rural, Ref: s
+    -> Resolves to chatbot_scb_master_private. Exists: True
+  Column: status, Ref: s
+    -> Resolves to chatbot_scb_master_private. Exists: True
+========================================
+
+=== Sample 2 ===
+Expected SQL:
+SELECT count(*) FROM chatbot_education_training_institute_private WHERE promoting_organisation_name = 'NCCT' AND is_projector_available = '1' AND status = '1' AND is_approved = '1'
+
+Generated SQL:
+SELECT COUNT(*) 
+FROM chatbot_cooperative_registration_sericulture 
+WHERE cooperative_registration_id = 'your_specific_id_here' 
+  AND silkworm_type_names LIKE '%Eri%' 
+  AND has_building = '1' 
+  AND building_type_name = 'Traditional Hut' 
+  AND authorised_share > 500000 
+  AND paid_up_share_date BETWEEN '2020-01-01' AND '2023-12-31' 
+  AND is_training_provide = '1' 
+  AND is_waste_facility = '1' 
+  AND is_operate_retail = '1';
+
+Extracted Tables: ['chatbot_cooperative_registration_sericulture']
+Extracted Columns: ['is_operate_retail', 'is_waste_facility', 'is_training_provide', 'paid_up_share_date', 'authorised_share', 'building_type_name', 'has_building', 'cooperative_registration_id', 'silkworm_type_names']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: []
+
+Alias Map Check:
+  chatbot_cooperative_registration_sericulture -> chatbot_cooperative_registration_sericulture (Exists: True)
+
+Column Map Check:
+  Column: is_operate_retail, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registration_sericulture']
+    -> Found in any? True
+  Column: is_waste_facility, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registration_sericulture']
+    -> Found in any? True
+  Column: is_training_provide, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registration_sericulture']
+    -> Found in any? True
+  Column: paid_up_share_date, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registration_sericulture']
+    -> Found in any? True
+  Column: authorised_share, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registration_sericulture']
+    -> Found in any? True
+  Column: building_type_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registration_sericulture']
+    -> Found in any? True
+  Column: has_building, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registration_sericulture']
+    -> Found in any? True
+  Column: cooperative_registration_id, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registration_sericulture']
+    -> Found in any? True
+  Column: silkworm_type_names, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registration_sericulture']
+    -> Found in any? True
+========================================
+
+=== Sample 3 ===
+Expected SQL:
+SELECT cooperative_society_name FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.functional_status = '2' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;
+
+Generated SQL:
+SELECT cooperative_society_name 
+FROM chatbot_cooperative_registrations_master c 
+WHERE c.is_multi_state = '1' 
+AND c.functional_status = '2' 
+AND c.status = 1 
+AND c.is_draft = 0 
+AND c.is_approved = 1;
+
+Extracted Tables: ['chatbot_cooperative_registrations_master']
+Extracted Columns: ['cooperative_society_name', 'is_approved', 'is_draft', 'status', 'is_multi_state', 'functional_status']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: []
+
+Alias Map Check:
+  c -> chatbot_cooperative_registrations_master (Exists: True)
+
+Column Map Check:
+  Column: cooperative_society_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_master']
+    -> Found in any? True
+  Column: is_approved, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+  Column: is_draft, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+  Column: status, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+  Column: is_multi_state, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+  Column: functional_status, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+========================================
+
+=== Sample 4 ===
+Expected SQL:
+SELECT * FROM chatbot_cooperative_registrations_master c WHERE c.functional_status = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;
+
+Generated SQL:
+SELECT * 
+FROM chatbot_education_training_institute_private e 
+WHERE e.location_type_name = 'Urban' 
+AND e.level_education = 'Graduate' 
+AND e.status = 1 
+AND e.is_draft = 0;
+
+Extracted Tables: ['chatbot_education_training_institute_private']
+Extracted Columns: ['is_draft', 'status', 'location_type_name', 'level_education']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: []
+
+Alias Map Check:
+  e -> chatbot_education_training_institute_private (Exists: True)
+
+Column Map Check:
+  Column: is_draft, Ref: e
+    -> Resolves to chatbot_education_training_institute_private. Exists: True
+  Column: status, Ref: e
+    -> Resolves to chatbot_education_training_institute_private. Exists: True
+  Column: location_type_name, Ref: e
+    -> Resolves to chatbot_education_training_institute_private. Exists: True
+  Column: level_education, Ref: e
+    -> Resolves to chatbot_education_training_institute_private. Exists: True
+========================================
+
+=== Sample 5 ===
+Expected SQL:
+SELECT name_of_office, state_name FROM chatbot_ncdc_offices_private WHERE state_name IN ('Delhi', 'Punjab', 'Haryana') AND specialization = 'Financial' AND status = '1' AND is_approved = '1'
+
+Generated SQL:
+SELECT cooperative_id, cooperative_society_name, date_registration 
+FROM chatbot_national_federations 
+WHERE state_name IN ('Delhi', 'Punjab', 'Haryana') 
+AND functional_status = '1' 
+AND is_draft = '0';
+
+Extracted Tables: ['chatbot_national_federations']
+Extracted Columns: ['cooperative_id', 'cooperative_society_name', 'date_registration', 'is_draft', 'state_name', 'functional_status']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: []
+
+Alias Map Check:
+  chatbot_national_federations -> chatbot_national_federations (Exists: True)
+
+Column Map Check:
+  Column: cooperative_id, Ref: 
+    -> Unqualified. Target tables: ['chatbot_national_federations']
+    -> Found in any? True
+  Column: cooperative_society_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_national_federations']
+    -> Found in any? True
+  Column: date_registration, Ref: 
+    -> Unqualified. Target tables: ['chatbot_national_federations']
+    -> Found in any? True
+  Column: is_draft, Ref: 
+    -> Unqualified. Target tables: ['chatbot_national_federations']
+    -> Found in any? True
+  Column: state_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_national_federations']
+    -> Found in any? True
+  Column: functional_status, Ref: 
+    -> Unqualified. Target tables: ['chatbot_national_federations']
+    -> Found in any? True
+========================================
+
+=== Sample 6 ===
+Expected SQL:
+SELECT cooperative_federation_name, audit_category_name FROM chatbot_state_district_federation_private WHERE is_draft = '0' AND is_approved = '0' AND status = '1';
+
+Generated SQL:
+SELECT cooperative_registration_id, annual_turn_over 
+FROM chatbot_cooperative_registrations_transport 
+WHERE has_building = '1' 
+AND building_type_name = 'Office Building' 
+AND individual_member > 50;
+
+Extracted Tables: ['chatbot_cooperative_registrations_transport']
+Extracted Columns: ['cooperative_registration_id', 'annual_turn_over', 'individual_member', 'has_building', 'building_type_name']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: []
+
+Alias Map Check:
+  chatbot_cooperative_registrations_transport -> chatbot_cooperative_registrations_transport (Exists: True)
+
+Column Map Check:
+  Column: cooperative_registration_id, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_transport']
+    -> Found in any? True
+  Column: annual_turn_over, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_transport']
+    -> Found in any? True
+  Column: individual_member, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_transport']
+    -> Found in any? True
+  Column: has_building, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_transport']
+    -> Found in any? True
+  Column: building_type_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_transport']
+    -> Found in any? True
+========================================
+
+=== Sample 7 ===
+Expected SQL:
+SELECT state_name, count(*) FROM chatbot_ncdc_offices_private WHERE specialization = 'Financial' AND status = '1' AND is_approved = '1' GROUP BY state_name
+
+Generated SQL:
+SELECT state_name, COUNT(*) 
+FROM chatbot_state_district_federation_dairy 
+WHERE credit_facility = '1' 
+  AND status = '1' 
+  AND is_approved = '1' 
+GROUP BY state_name;
+
+Extracted Tables: ['chatbot_state_district_federation_dairy']
+Extracted Columns: ['state_name', 'state_name', 'is_approved', 'credit_facility', 'status']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: ['state_name', 'is_approved', 'status']
+
+Alias Map Check:
+  chatbot_state_district_federation_dairy -> chatbot_state_district_federation_dairy (Exists: True)
+
+Column Map Check:
+  Column: state_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_dairy']
+    -> Found in any? False
+  Column: state_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_dairy']
+    -> Found in any? False
+  Column: is_approved, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_dairy']
+    -> Found in any? False
+  Column: credit_facility, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_dairy']
+    -> Found in any? True
+  Column: status, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_dairy']
+    -> Found in any? False
+========================================
+
+=== Sample 8 ===
+Expected SQL:
+SELECT sum(cast(members_of_federation as decimal)) FROM chatbot_state_district_federation_private WHERE federation_type_name = 'State Federation' AND is_draft = '0' AND is_approved = '0' AND status = '1';
+
+Generated SQL:
+SELECT sum(cast(total_member as decimal)) 
+FROM chatbot_state_district_federation_processing 
+WHERE type_society_name = 'Agricultural Products' 
+AND is_draft = '0' 
+AND is_approved = '0' 
+AND status = '1';
+
+Extracted Tables: ['chatbot_state_district_federation_processing']
+Extracted Columns: ['total_member', 'status', 'is_approved', 'type_society_name', 'is_draft']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: ['is_draft', 'is_approved', 'status']
+
+Alias Map Check:
+  chatbot_state_district_federation_processing -> chatbot_state_district_federation_processing (Exists: True)
+
+Column Map Check:
+  Column: total_member, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_processing']
+    -> Found in any? True
+  Column: status, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_processing']
+    -> Found in any? False
+  Column: is_approved, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_processing']
+    -> Found in any? False
+  Column: type_society_name, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_processing']
+    -> Found in any? True
+  Column: is_draft, Ref: 
+    -> Unqualified. Target tables: ['chatbot_state_district_federation_processing']
+    -> Found in any? False
+========================================
+
+=== Sample 9 ===
+Expected SQL:
+SELECT SUM(cast(an_turnover as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;
+
+Generated SQL:
+SELECT SUM(CAST(annual_turn_over AS DECIMAL)) 
+FROM chatbot_cooperative_registrations_credit_miscellaneous 
+WHERE cooperative_registration_id IN (
+    SELECT id 
+    FROM chatbot_cooperative_registrations_master 
+    WHERE is_multi_state = '1' 
+      AND status = 1 
+      AND is_draft = 0 
+      AND is_approved = 1
+);
+
+Extracted Tables: ['chatbot_cooperative_registrations_credit_miscellaneous', 'chatbot_cooperative_registrations_master']
+Extracted Columns: ['annual_turn_over', 'cooperative_registration_id', 'id', 'is_approved', 'is_draft', 'is_multi_state', 'status']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: []
+
+Alias Map Check:
+  chatbot_cooperative_registrations_credit_miscellaneous -> chatbot_cooperative_registrations_credit_miscellaneous (Exists: True)
+  chatbot_cooperative_registrations_master -> chatbot_cooperative_registrations_master (Exists: True)
+
+Column Map Check:
+  Column: annual_turn_over, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_credit_miscellaneous', 'chatbot_cooperative_registrations_master']
+    -> Found in any? True
+  Column: cooperative_registration_id, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_credit_miscellaneous', 'chatbot_cooperative_registrations_master']
+    -> Found in any? True
+  Column: id, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_credit_miscellaneous', 'chatbot_cooperative_registrations_master']
+    -> Found in any? True
+  Column: is_approved, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_credit_miscellaneous', 'chatbot_cooperative_registrations_master']
+    -> Found in any? True
+  Column: is_draft, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_credit_miscellaneous', 'chatbot_cooperative_registrations_master']
+    -> Found in any? True
+  Column: is_multi_state, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_credit_miscellaneous', 'chatbot_cooperative_registrations_master']
+    -> Found in any? True
+  Column: status, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_credit_miscellaneous', 'chatbot_cooperative_registrations_master']
+    -> Found in any? True
+========================================
+
+=== Sample 10 ===
+Expected SQL:
+SELECT SUM(cast(annual_loss as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.primary_activity_name ILIKE '%Handloom%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;
+
+Generated SQL:
+SELECT SUM(cast(annual_loss as decimal)) 
+FROM chatbot_cooperative_registrations_master c 
+WHERE c.is_multi_state = '1' 
+AND c.primary_activity_name ILIKE '%Handloom%' 
+AND c.status = 1 
+AND c.is_draft = 0 
+AND c.is_approved = 1;
+
+Extracted Tables: ['chatbot_cooperative_registrations_master']
+Extracted Columns: ['annual_loss', 'is_approved', 'is_draft', 'status', 'is_multi_state', 'primary_activity_name']
+Hallucinated Tables Detected: []
+Hallucinated Columns Detected: []
+
+Alias Map Check:
+  c -> chatbot_cooperative_registrations_master (Exists: True)
+
+Column Map Check:
+  Column: annual_loss, Ref: 
+    -> Unqualified. Target tables: ['chatbot_cooperative_registrations_master']
+    -> Found in any? True
+  Column: is_approved, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+  Column: is_draft, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+  Column: status, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+  Column: is_multi_state, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+  Column: primary_activity_name, Ref: c
+    -> Resolves to chatbot_cooperative_registrations_master. Exists: True
+========================================
+

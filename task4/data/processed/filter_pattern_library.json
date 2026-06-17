@@ -1,0 +1,183 @@
+{
+  "status": [
+    "status = '1' (8383 usages)"
+  ],
+  "is_draft": [
+    "is_draft = '0' (6465 usages)",
+    "is_draft = '1' (4 usages)"
+  ],
+  "is_approved": [
+    "is_approved = '1' (2245 usages)",
+    "is_approved = '0' (1255 usages)"
+  ],
+  "functional_status": [
+    "functional_status = '1' (66 usages)",
+    "functional_status = '3' (18 usages)",
+    "functional_status = '2' (12 usages)"
+  ],
+  "is_multi_state": [
+    "is_multi_state = '1' (235 usages)",
+    "is_multi_state = '0' (47 usages)"
+  ],
+  "is_delete": [
+    "is_delete = '0' (303 usages)"
+  ],
+  "is_new": [
+    "is_new = '1' (612 usages)"
+  ],
+  "is_profit_making": [
+    "is_profit_making = '1' (546 usages)",
+    "is_profit_making = '0' (6 usages)"
+  ],
+  "functional_status_name": [
+    "functional_status_name = 'Functional' (2 usages)",
+    "functional_status_name = 'Under Liquidation' (2 usages)",
+    "functional_status_name = 'Non-Functional' (2 usages)"
+  ],
+  "is_comp": [
+    "is_comp = '1' (2 usages)",
+    "is_comp = '0' (2 usages)"
+  ],
+  "is_msme": [
+    "is_msme = '1' (6 usages)"
+  ],
+  "scheme_type": [
+    "scheme_type = '2' (10 usages)",
+    "scheme_type = '1' (8 usages)"
+  ],
+  "has_office_building": [
+    "has_office_building = '1' (8 usages)",
+    "has_office_building = '0' (2 usages)"
+  ],
+  "is_scheme_implemented": [
+    "is_scheme_implemented = '0' (2 usages)"
+  ],
+  "is_dividend_paid": [
+    "is_dividend_paid = '1' (6 usages)",
+    "is_dividend_paid = '0' (4 usages)"
+  ],
+  "is_training_provide": [
+    "is_training_provide = '1' (60 usages)"
+  ],
+  "has_building": [
+    "has_building = '1' (64 usages)"
+  ],
+  "is_coastal": [
+    "is_coastal = '1' (2 usages)"
+  ],
+  "is_hostel_available": [
+    "is_hostel_available = '1' (6 usages)"
+  ],
+  "location_type_name": [
+    "location_type_name = 'Urban' (4 usages)",
+    "location_type_name = 'Rural' (4 usages)"
+  ],
+  "is_research_study": [
+    "is_research_study = '1' (2 usages)"
+  ],
+  "is_recruited_own_faculty": [
+    "is_recruited_own_faculty = '1' (2 usages)"
+  ],
+  "is_transport_service": [
+    "is_transport_service = '1' (4 usages)"
+  ],
+  "is_projector_available": [
+    "is_projector_available = '1' (2 usages)"
+  ],
+  "is_computer_lab_available": [
+    "is_computer_lab_available = '1' (2 usages)"
+  ],
+  "is_sports_playground": [
+    "is_sports_playground = '1' (4 usages)"
+  ],
+  "is_library": [
+    "is_library = '1' (2 usages)"
+  ],
+  "is_international_participants": [
+    "is_international_participants = '1' (2 usages)"
+  ],
+  "has_store": [
+    "has_store = '1' (2 usages)"
+  ],
+  "type_raw_names": [
+    "type_raw_names = '1' (6 usages)"
+  ],
+  "federation_type_name": [
+    "federation_type_name = 'State Federation' (8 usages)",
+    "federation_type_name = 'District Federation' (6 usages)",
+    "federation_type_name = 'Regional Federation' (4 usages)",
+    "federation_type_name = 'Block/Taluka/Mandal Federation' (2 usages)"
+  ],
+  "has_land": [
+    "has_land = '1' (6 usages)"
+  ],
+  "type_society_name": [
+    "type_society_name = '1' (6 usages)"
+  ],
+  "type_society_names": [
+    "type_society_names = '1' (2 usages)"
+  ],
+  "type_produce_names": [
+    "type_produce_names = '1' (12 usages)"
+  ],
+  "building_type_name": [
+    "building_type_name = 'Own Building' (2 usages)",
+    "building_type_name = 'Rented Building' (2 usages)"
+  ],
+  "work_allot_state_dist_federation": [
+    "work_allot_state_dist_federation = '1' (2 usages)"
+  ],
+  "type_vehicle_names": [
+    "type_vehicle_names = '1' (2 usages)"
+  ],
+  "has_common": [
+    "has_common = '1' (2 usages)"
+  ],
+  "has_pool_land": [
+    "has_pool_land = '1' (2 usages)"
+  ],
+  "type_bee_names": [
+    "type_bee_names = '1' (2 usages)"
+  ],
+  "has_accomodation": [
+    "has_accomodation = '1' (2 usages)"
+  ],
+  "is_core_banking": [
+    "is_core_banking = '1' (2 usages)"
+  ],
+  "is_work_by_member": [
+    "is_work_by_member = '1' (2 usages)"
+  ],
+  "is_chilling_plant": [
+    "is_chilling_plant = '1' (2 usages)"
+  ],
+  "has_gov_land": [
+    "has_gov_land = '1' (2 usages)"
+  ],
+  "is_operate_by_member": [
+    "is_operate_by_member = '1' (2 usages)"
+  ],
+  "has_warehouses": [
+    "has_warehouses = '1' (4 usages)"
+  ],
+  "has_factory": [
+    "has_factory = '1' (2 usages)"
+  ],
+  "has_storage": [
+    "has_storage = '1' (2 usages)"
+  ],
+  "type_tourism_names": [
+    "type_tourism_names = '1' (2 usages)"
+  ],
+  "has_cold_storage": [
+    "has_cold_storage = '1' (2 usages)"
+  ],
+  "rank_type_name": [
+    "rank_type_name = 'State' (960 usages)",
+    "rank_type_name = 'District' (324 usages)"
+  ],
+  "geometry_type": [
+    "geometry_type = 'Polygon' (6 usages)",
+    "geometry_type = 'Point' (4 usages)"
+  ]
+}

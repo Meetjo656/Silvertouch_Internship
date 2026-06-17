@@ -1,0 +1,220 @@
+{
+  "dataset_size": 21231,
+  "structure": {
+    "total_samples": 21231,
+    "missing_messages": 0,
+    "invalid_message_count": 0,
+    "invalid_roles": 0
+  },
+  "prompt_sections": {
+    "present": {
+      "QUESTION": 21231,
+      "AVAILABLE TABLES": 21231,
+      "Relevant Columns": 21231,
+      "KNOWN JOIN RELATIONSHIPS": 21231,
+      "BUSINESS SEMANTICS": 21231,
+      "DOCUMENTATION": 21231,
+      "REFERENCE SQL PATTERN": 21231
+    },
+    "missing": {}
+  },
+  "sql_targets": {
+    "empty_sql": 0,
+    "markdown_sql": 0,
+    "non_sql": 2,
+    "valid_sql": 21229
+  },
+  "metadata": {
+    "complexity": {
+      "MULTI_JOIN": 810,
+      "AGGREGATION": 4576,
+      "RANKING": 2440,
+      "SUBQUERY": 7941,
+      "FILTER_QUERY": 5402,
+      "CTE": 54,
+      "SIMPLE_SELECT": 8
+    },
+    "domain": {
+      "SYNTHETIC": 800,
+      "COOPERATIVE": 4597,
+      "RANKINGS": 3636,
+      "GP_COVERAGE": 6922,
+      "FEDERATION": 4932,
+      "OFFICES": 226,
+      "AT_A_GLANCE": 117,
+      "PUBLIC": 1
+    },
+    "joins": {
+      "HAS_JOIN": 15447
+    }
+  },
+  "token_stats": {
+    "min": 137.0,
+    "max": 2302.0,
+    "mean": 733.1309877066553,
+    "median": 733.0,
+    "p95": 918.0,
+    "p99": 1099.0
+  },
+  "sample_examples": [
+    {
+      "metadata": {
+        "question": "Show me coverage details for all blocks in lucknow for Handloom",
+        "complexity": "SUBQUERY",
+        "module": "GP_COVERAGE",
+        "expected_tables": [
+          "chatbot_districts_blocks_gp_villages",
+          "chatbot_coverage_areas"
+        ],
+        "contains_join": true,
+        "contains_filter": true,
+        "contains_business_semantics": false
+      },
+      "user_prompt": "---\nQUESTION\n\nShow me coverage details for all blocks in lucknow for Handloom\n\n---\nAVAILABLE TABLES\n\nTable: chatbot_districts_blocks_gp_villages\nRelevant Columns: Unknown\n\nTable: chatbot_coverage_areas\nRelevant Columns: Unknown\n\nTable: public\nRelevant Columns: Unknown\n\n---\nKNOWN JOIN RELATIONSHIPS\n\nNo join relationships known.\n\n---\nDOCUMENTATION\n\nNo documentation provided.\n\n---\nBUSINESS SEMANTICS\n\nNo business semantics needed.\n\n---\nREFERENCE SQL PATTERN\n\nSELECT sub.block_name, sub.total_villages...",
+      "target_sql": "SELECT sub.block_name, sub.total_villages, sub.covered_villages, ROUND((sub.covered_villages::numeric / sub.total_villages) * 100, 2) AS block_coverage_percent FROM (SELECT dbgv.block_name, COUNT(DISTINCT dbgv.village_code) AS total_villages, COUNT(DISTINCT cr.village_code) AS covered_villages FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.block_code = dbgv.block_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%handloom%' WHERE dbgv.state_name ILIKE '%UTTAR PRADESH%' AND dbgv.district_name ILIKE '%LUCKNOW%' AND dbgv.status = 1 GROUP BY dbgv.block_name, dbgv.block_code) AS sub ORDER BY sub.block_name;"
+    },
+    {
+      "metadata": {
+        "question": "List partially covered Gram Panchayats in hisar for Fishery",
+        "complexity": "SUBQUERY",
+        "module": "GP_COVERAGE",
+        "expected_tables": [
+          "chatbot_districts_blocks_gp_villages",
+          "chatbot_coverage_areas"
+        ],
+        "contains_join": true,
+        "contains_filter": true,
+        "contains_business_semantics": false
+      },
+      "user_prompt": "---\nQUESTION\n\nList partially covered Gram Panchayats in hisar for Fishery\n\n---\nAVAILABLE TABLES\n\nTable: chatbot_districts_blocks_gp_villages\nRelevant Columns: Unknown\n\nTable: chatbot_coverage_areas\nRelevant Columns: Unknown\n\nTable: public\nRelevant Columns: Unknown\n\n---\nKNOWN JOIN RELATIONSHIPS\n\nNo join relationships known.\n\n---\nDOCUMENTATION\n\nNo documentation provided.\n\n---\nBUSINESS SEMANTICS\n\nNo business semantics needed.\n\n---\nREFERENCE SQL PATTERN\n\nSELECT sub.state_name, sub.district_name, sub...",
+      "target_sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%fishery%' WHERE dbgv.state_name ILIKE '%HARYANA%' AND dbgv.district_name ILIKE '%HISAR%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;"
+    },
+    {
+      "metadata": {
+        "question": "List partially covered Gram Panchayats in nashik for Dairy",
+        "complexity": "SUBQUERY",
+        "module": "GP_COVERAGE",
+        "expected_tables": [
+          "chatbot_districts_blocks_gp_villages",
+          "chatbot_coverage_areas"
+        ],
+        "contains_join": true,
+        "contains_filter": true,
+        "contains_business_semantics": false
+      },
+      "user_prompt": "---\nQUESTION\n\nList partially covered Gram Panchayats in nashik for Dairy\n\n---\nAVAILABLE TABLES\n\nTable: chatbot_districts_blocks_gp_villages\nRelevant Columns: Unknown\n\nTable: chatbot_coverage_areas\nRelevant Columns: Unknown\n\nTable: public\nRelevant Columns: Unknown\n\n---\nKNOWN JOIN RELATIONSHIPS\n\nNo join relationships known.\n\n---\nDOCUMENTATION\n\nNo documentation provided.\n\n---\nBUSINESS SEMANTICS\n\nNo business semantics needed.\n\n---\nREFERENCE SQL PATTERN\n\nSELECT sub.state_name, sub.district_name, sub....",
+      "target_sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%dairy%' WHERE dbgv.state_name ILIKE '%MAHARASHTRA%' AND dbgv.district_name ILIKE '%NASHIK%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;"
+    },
+    {
+      "metadata": {
+        "question": "District-wise count of Processing in Kerala",
+        "complexity": "AGGREGATION",
+        "module": "COOPERATIVE",
+        "expected_tables": [
+          "chatbot_cooperative_registrations_processing",
+          "chatbot_cooperative_registrations_master"
+        ],
+        "contains_join": true,
+        "contains_filter": true,
+        "contains_business_semantics": true
+      },
+      "user_prompt": "---\nQUESTION\n\nDistrict-wise count of Processing in Kerala\n\n---\nAVAILABLE TABLES\n\nTable: chatbot_cooperative_registrations_processing\nRelevant Columns: id, cooperative_registration_id, has_building, processing_unit, processing_unit_number, processing_by_members, ncd_id\n\nTable: chatbot_cooperative_registrations_master\nRelevant Columns: cooperative_society_type_id, is_multi_state, functional_status, state_name, district_name, is_coastal, is_msme, is_affiliated_union_federation, is_profit_making, is...",
+      "target_sql": "SELECT c.district_name, COUNT(*) FROM chatbot_cooperative_registrations_processing s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%KERALA%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY c.district_name;"
+    },
+    {
+      "metadata": {
+        "question": "Show me coverage details for all blocks in thane for Multi-purpose",
+        "complexity": "SUBQUERY",
+        "module": "GP_COVERAGE",
+        "expected_tables": [
+          "chatbot_districts_blocks_gp_villages",
+          "chatbot_coverage_areas"
+        ],
+        "contains_join": true,
+        "contains_filter": true,
+        "contains_business_semantics": false
+      },
+      "user_prompt": "---\nQUESTION\n\nShow me coverage details for all blocks in thane for Multi-purpose\n\n---\nAVAILABLE TABLES\n\nTable: chatbot_districts_blocks_gp_villages\nRelevant Columns: Unknown\n\nTable: chatbot_coverage_areas\nRelevant Columns: Unknown\n\nTable: public\nRelevant Columns: Unknown\n\n---\nKNOWN JOIN RELATIONSHIPS\n\nNo join relationships known.\n\n---\nDOCUMENTATION\n\nNo documentation provided.\n\n---\nBUSINESS SEMANTICS\n\nNo business semantics needed.\n\n---\nREFERENCE SQL PATTERN\n\nSELECT sub.block_name, sub.total_villa...",
+      "target_sql": "SELECT sub.block_name, sub.total_villages, sub.covered_villages, ROUND((sub.covered_villages::numeric / sub.total_villages) * 100, 2) AS block_coverage_percent FROM (SELECT dbgv.block_name, COUNT(DISTINCT dbgv.village_code) AS total_villages, COUNT(DISTINCT cr.village_code) AS covered_villages FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.block_code = dbgv.block_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%multi%' WHERE dbgv.state_name ILIKE '%MAHARASHTRA%' AND dbgv.district_name ILIKE '%THANE%' AND dbgv.status = 1 GROUP BY dbgv.block_name, dbgv.block_code) AS sub ORDER BY sub.block_name;"
+    },
+    {
+      "metadata": {
+        "question": "Find profit making Tribal federations in Uttar Pradesh.",
+        "complexity": "FILTER_QUERY",
+        "module": "FEDERATION",
+        "expected_tables": [
+          "chatbot_state_district_federation_private",
+          "chatbot_state_district_federation_tribal"
+        ],
+        "contains_join": true,
+        "contains_filter": true,
+        "contains_business_semantics": true
+      },
+      "user_prompt": "---\nQUESTION\n\nFind profit making Tribal federations in Uttar Pradesh.\n\n---\nAVAILABLE TABLES\n\nTable: chatbot_state_district_federation_private\nRelevant Columns: id, primary_activity_name, functional_status_name, state_name, has_building, is_federation_member, is_profit_making, net_profit, is_dividend_paid, is_draft, is_approved, status, is_moved_primary, ncd_id\n\nTable: chatbot_state_district_federation_tribal\nRelevant Columns: id, state_district_federation_id, state_district_federation\n\nTable: ch...",
+      "target_sql": "SELECT * FROM chatbot_state_district_federation_private sfp JOIN chatbot_state_district_federation_tribal st ON st.state_district_federation_id = sfp.id WHERE sfp.primary_activity_name ILIKE '%Tribal%' AND sfp.state_name ILIKE '%UTTAR PRADESH%' AND sfp.is_profit_making = '1' AND sfp.is_draft = '0' AND is_approved = '0' AND status = '1';"
+    },
+    {
+      "metadata": {
+        "question": "How many full covered GPs are there in chennai for Fishery?",
+        "complexity": "SUBQUERY",
+        "module": "GP_COVERAGE",
+        "expected_tables": [
+          "chatbot_districts_blocks_gp_villages",
+          "chatbot_coverage_areas"
+        ],
+        "contains_join": true,
+        "contains_filter": true,
+        "contains_business_semantics": false
+      },
+      "user_prompt": "---\nQUESTION\n\nHow many full covered GPs are there in chennai for Fishery?\n\n---\nAVAILABLE TABLES\n\nTable: chatbot_districts_blocks_gp_villages\nRelevant Columns: Unknown\n\nTable: chatbot_coverage_areas\nRelevant Columns: Unknown\n\nTable: public\nRelevant Columns: Unknown\n\n---\nKNOWN JOIN RELATIONSHIPS\n\nNo join relationships known.\n\n---\nDOCUMENTATION\n\nNo documentation provided.\n\n---\nBUSINESS SEMANTICS\n\nNo business semantics needed.\n\n---\nREFERENCE SQL PATTERN\n\nSELECT COUNT(*) AS covered_gp_count FROM (SEL...",
+      "target_sql": "SELECT COUNT(*) AS covered_gp_count FROM (SELECT dbgv.gram_panchayat_name FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%fishery%' WHERE dbgv.state_name ILIKE '%TAMIL NADU%' AND dbgv.district_name ILIKE '%CHENNAI%' AND dbgv.status = 1 GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)) AS sub;"
+    },
+    {
+      "metadata": {
+        "question": "Find profit making Beekeeping federations in Rajasthan.",
+        "complexity": "FILTER_QUERY",
+        "module": "FEDERATION",
+        "expected_tables": [
+          "chatbot_state_district_federation_bee",
+          "chatbot_state_district_federation_private"
+        ],
+        "contains_join": true,
+        "contains_filter": true,
+        "contains_business_semantics": true
+      },
+      "user_prompt": "---\nQUESTION\n\nFind profit making Beekeeping federations in Rajasthan.\n\n---\nAVAILABLE TABLES\n\nTable: chatbot_state_district_federation_private\nRelevant Columns: id, primary_activity_name, functional_status_name, state_name, has_building, is_federation_member, is_profit_making, net_profit, is_dividend_paid, is_draft, is_approved, status, is_moved_primary, ncd_id\n\nTable: chatbot_state_district_federation_bee\nRelevant Columns: id, state_district_federation_id\n\nTable: chatbot_cooperative_registration...",
+      "target_sql": "SELECT * FROM chatbot_state_district_federation_private sfp JOIN chatbot_state_district_federation_bee st ON st.state_district_federation_id = sfp.id WHERE sfp.primary_activity_name ILIKE '%Beekeeping%' AND sfp.state_name ILIKE '%RAJASTHAN%' AND sfp.is_profit_making = '1' AND sfp.is_draft = '0' AND is_approved = '0' AND status = '1';"
+    },
+    {
+      "metadata": {
+        "question": "Who is the MD for National Cooperative Dairy Federation?",
+        "complexity": "FILTER_QUERY",
+        "module": "FEDERATION",
+        "expected_tables": [
+          "chatbot_national_federations",
+          "chatbot_national_federations_contact_details"
+        ],
+        "contains_join": true,
+        "contains_filter": true,
+        "contains_business_semantics": true
+      },
+      "user_prompt": "---\nQUESTION\n\nWho is the MD for National Cooperative Dairy Federation?\n\n---\nAVAILABLE TABLES\n\nTable: chatbot_national_federations\nRelevant Columns: id, cooperative_id, cooperative_society_name, functional_status, is_draft, is_new, ncd_id\n\nTable: chatbot_national_federations_contact_details\nRelevant Columns: id, national_federations_id, contact_person, designation_name\n\nTable: chatbot_state_district_federation_private\nRelevant Columns: id, cooperative_federation_name, functional_status_name, fede...",
+      "target_sql": "SELECT nfcd.contact_person FROM chatbot_national_federations nf JOIN chatbot_national_federations_contact_details nfcd ON nf.id = nfcd.national_federations_id WHERE nf.cooperative_society_name ILIKE '%Dairy Federation%' AND nfcd.designation_name ILIKE '%MD%' AND nf.is_new = '1' AND nf.is_draft = '0';"
+    },
+    {
+      "metadata": {
+        "question": "Current rankings for Dairy societies in nizamabad",
+        "complexity": "SUBQUERY",
+        "module": "RANKINGS",
+        "expected_tables": [
+          "chatbot_cooperative_rankings"
+        ],
+        "contains_join": false,
+        "contains_filter": true,
+        "contains_business_semantics": true
+      },
+      "user_prompt": "---\nQUESTION\n\nCurrent rankings for Dairy societies in nizamabad\n\n---\nAVAILABLE TABLES\n\nTable: public\nRelevant Columns: Unknown\n\nTable: chatbot_state_district_federation_private\nRelevant Columns: id, functional_status_name, district_name, has_building, is_federation_member, is_profit_making, is_dividend_paid, is_draft, is_approved, status, is_moved_primary, ncd_id\n\nTable: chatbot_cooperative_registrations_master\nRelevant Columns: cooperative_society_type_id, is_multi_state, functional_status, dis...",
+      "target_sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE district_name ILIKE '%NIZAMABAD%' AND sector_name ILIKE '%Dairy%' AND rank_type_name = 'District' AND CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM public.chatbot_cooperative_rankings WHERE district_name ILIKE '%NIZAMABAD%' AND sector_name ILIKE '%Dairy%' AND rank_type_name = 'District') ORDER BY flag ASC, rank ASC LIMIT 10;"
+    }
+  ]
+}

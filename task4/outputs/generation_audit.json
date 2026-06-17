@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Count multi-state societies by their primary activity",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "How many NCCT institutes have projector facilities?",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "List of multi-state societies which are under liquidation",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Show me all functional cooperative societies",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)?",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Get the names of all federations along with their auditors' categories.",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Count of offices specialized in Financial by state.",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "What is the total number of members in all state federations?",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Total turnover of all multi-state societies",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Total loss of multi-state societies in the Handloom sector",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "How many full covered GPs are there in gaya for Handloom?",
+    "retrieval_correct": true,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Latest top 10 Credit & Thrift rankings in tamil nadu",
+    "retrieval_correct": false,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "RETRIEVAL_FAILURE"
+  },
+  {
+    "question": "List all members from National Film Federation in Karnataka state. ",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "List partially covered Gram Panchayats in papum pare for Multi-purpose",
+    "retrieval_correct": true,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Find profit making Dairy federations in Uttar Pradesh.",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Show me coverage details for all blocks in belagavi for Multi-purpose",
+    "retrieval_correct": true,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "How many full covered GPs are there in madurai for Fishery?",
+    "retrieval_correct": true,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Find phone numbers for PCARDB banks in Rajasthan",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "List partially covered Gram Panchayats in pune for Credit",
+    "retrieval_correct": true,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "List urban area of operation wards for PCARDB banks",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Total deposits of Chatbot Cooperative Pacs societies",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Top 5 profitable DCCB banks",
+    "retrieval_correct": true,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "List StCBs that are reporting a net loss greater than 0",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Total annual expense of StCBs compared by dividend paid status",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Total number of members in all PCARDB banks",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Show last 5 registered cooperative banks",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Count of banks that have a negative net loss and no dividend paid",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Show organization type for other members of PCARDBs",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Show scheme amounts for banks in metro cities Mumbai/Delhi",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Total count of functional National Federations",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Total number of functional cooperative societies",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Multi state ucb",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Total number of computerized cooperative banks",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "UCB count",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "How many profit-making cooperatives are recorded?",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "How many non-credit cooperative societies are there?",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "How many State Level Federations are functional?",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "SCARDB cooperative bank count",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Count of cooperatives in Urban locations",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Which DCCBs have no email listed in contact details?",
+    "retrieval_correct": false,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "RETRIEVAL_FAILURE"
+  },
+  {
+    "question": "Find federation detail, the member detail and contact information which mapped with federation name is Nafed.",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Show area of operation for PCARDB banks in GUJARAT",
+    "retrieval_correct": true,
+    "ddl_correct": true,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Get phone number and email for DCCB in Pune",
+    "retrieval_correct": false,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "RETRIEVAL_FAILURE"
+  },
+  {
+    "question": "Show contact person and phone for all functional DCCBs",
+    "retrieval_correct": false,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "RETRIEVAL_FAILURE"
+  },
+  {
+    "question": "Show contact information for all profit making DCCBs",
+    "retrieval_correct": true,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "List all members for DCCBs with turnover > 100 Lakhs",
+    "retrieval_correct": true,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Fetch member pincode for DCCB affiliates",
+    "retrieval_correct": false,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "RETRIEVAL_FAILURE"
+  },
+  {
+    "question": "Show scheme details for DCCBs in Tamil Nadu",
+    "retrieval_correct": true,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "VALIDATION_FAILURE"
+  },
+  {
+    "question": "Show details of other members affiliate with DCCBs",
+    "retrieval_correct": false,
+    "ddl_correct": false,
+    "docs_correct": true,
+    "generation_correct": false,
+    "failure_type": "RETRIEVAL_FAILURE"
+  }
+]

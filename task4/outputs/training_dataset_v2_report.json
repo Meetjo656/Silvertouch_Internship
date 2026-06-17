@@ -1,0 +1,25 @@
+{
+  "Total Training Samples": 21231,
+  "Total Validation Samples": 408,
+  "Unique Tables Used": 77,
+  "Unique Domains": 8,
+  "Average Context Length (Characters)": 2032,
+  "SQL Complexity Distribution": {
+    "MULTI_JOIN": 810,
+    "AGGREGATION": 4574,
+    "RANKING": 2440,
+    "SUBQUERY": 7941,
+    "FILTER_QUERY": 5400,
+    "CTE": 54,
+    "UNKNOWN": 8,
+    "SIMPLE_SELECT": 4
+  },
+  "Join Distribution": {
+    "HAS_JOIN": 15447,
+    "NO_JOIN": 5784
+  },
+  "Filter Distribution": {
+    "NO_FILTER": 802,
+    "HAS_FILTER": 20429
+  }
+}

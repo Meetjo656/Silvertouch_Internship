@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "Recall@1": "50.00%",
+    "Recall@3": "80.00%",
+    "Recall@5": "88.00%",
+    "Recall@10": "96.00%",
+    "Recall@20": "96.00%"
+  },
+  "misses_at_5": [
+    {
+      "query": "Latest top 10 Credit & Thrift rankings in tamil nadu",
+      "expected_table": "chatbot_cooperative_rankings",
+      "rank": -1
+    },
+    {
+      "query": "Which DCCBs have no email listed in contact details?",
+      "expected_table": "chatbot_dccb_master_private",
+      "rank": 6
+    },
+    {
+      "query": "Get phone number and email for DCCB in Pune",
+      "expected_table": "chatbot_dccb_master_private",
+      "rank": 6
+    },
+    {
+      "query": "Show contact person and phone for all functional DCCBs",
+      "expected_table": "chatbot_dccb_master_private",
+      "rank": 6
+    },
+    {
+      "query": "Fetch member pincode for DCCB affiliates",
+      "expected_table": "chatbot_scb_members_private",
+      "rank": -1
+    },
+    {
+      "query": "Show details of other members affiliate with DCCBs",
+      "expected_table": "chatbot_dccb_master_private",
+      "rank": 7
+    }
+  ]
+}

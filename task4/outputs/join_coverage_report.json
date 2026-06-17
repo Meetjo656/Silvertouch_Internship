@@ -1,0 +1,7 @@
+{
+  "Total Tables": 73,
+  "Tables With Join Paths": 68,
+  "Tables Without Join Paths": 5,
+  "Total Unique Edges Resolvable": 864.0,
+  "Average Join Degree": 11.835616438356164
+}

@@ -1,0 +1,278 @@
+[
+  {
+    "question": "Count multi-state societies by their primary activity",
+    "expected_sql": "SELECT primary_activity_name, COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY primary_activity_name;",
+    "generated_sql": "SELECT scb_name, COUNT(*) \nFROM chatbot_scb_master_private s \nWHERE s.location_urban_rural = '1' -- Urban location\nAND s.status = '1' -- Active status\nAND s.is_draft = '0' -- Not in draft mode\nAND s.is_delete = '0' -- Not deleted\nGROUP BY scb_name;",
+    "valid": true,
+    "exact_match": false,
+    "structural_match": 0.5,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "TABLE_SELECTION_FAILURE"
+  },
+  {
+    "question": "How many NCCT institutes have projector facilities?",
+    "expected_sql": "SELECT count(*) FROM chatbot_education_training_institute_private WHERE promoting_organisation_name = 'NCCT' AND is_projector_available = '1' AND status = '1' AND is_approved = '1'",
+    "generated_sql": "SELECT COUNT(*) \nFROM chatbot_cooperative_registration_sericulture \nWHERE cooperative_registration_id = 'your_specific_id_here' \n  AND silkworm_type_names LIKE '%Eri%' \n  AND has_building = '1' \n  AND building_type_name = 'Traditional Hut' \n  AND authorised_share > 500000 \n  AND paid_up_share_date BETWEEN '2020-01-01' AND '2023-12-31' \n  AND is_training_provide = '1' \n  AND is_waste_facility = '1' \n  AND is_operate_retail = '1';",
+    "valid": true,
+    "exact_match": false,
+    "structural_match": 0.525,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "TABLE_SELECTION_FAILURE"
+  },
+  {
+    "question": "List of multi-state societies which are under liquidation",
+    "expected_sql": "SELECT cooperative_society_name FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.functional_status = '2' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+    "generated_sql": "SELECT cooperative_society_name \nFROM chatbot_cooperative_registrations_master c \nWHERE c.is_multi_state = '1' \nAND c.functional_status = '2' \nAND c.status = 1 \nAND c.is_draft = 0 \nAND c.is_approved = 1;",
+    "valid": true,
+    "exact_match": true,
+    "structural_match": 1.0,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "NONE"
+  },
+  {
+    "question": "Show me all functional cooperative societies",
+    "expected_sql": "SELECT * FROM chatbot_cooperative_registrations_master c WHERE c.functional_status = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+    "generated_sql": "SELECT * \nFROM chatbot_education_training_institute_private e \nWHERE e.location_type_name = 'Urban' \nAND e.level_education = 'Graduate' \nAND e.status = 1 \nAND e.is_draft = 0;",
+    "valid": true,
+    "exact_match": false,
+    "structural_match": 0.545,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "TABLE_SELECTION_FAILURE"
+  },
+  {
+    "question": "What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)?",
+    "expected_sql": "SELECT name_of_office, state_name FROM chatbot_ncdc_offices_private WHERE state_name IN ('Delhi', 'Punjab', 'Haryana') AND specialization = 'Financial' AND status = '1' AND is_approved = '1'",
+    "generated_sql": "SELECT cooperative_id, cooperative_society_name, date_registration \nFROM chatbot_national_federations \nWHERE state_name IN ('Delhi', 'Punjab', 'Haryana') \nAND functional_status = '1' \nAND is_draft = '0';",
+    "valid": true,
+    "exact_match": false,
+    "structural_match": 0.615,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "TABLE_SELECTION_FAILURE"
+  },
+  {
+    "question": "Get the names of all federations along with their auditors' categories.",
+    "expected_sql": "SELECT cooperative_federation_name, audit_category_name FROM chatbot_state_district_federation_private WHERE is_draft = '0' AND is_approved = '0' AND status = '1';",
+    "generated_sql": "SELECT cooperative_registration_id, annual_turn_over \nFROM chatbot_cooperative_registrations_transport \nWHERE has_building = '1' \nAND building_type_name = 'Office Building' \nAND individual_member > 50;",
+    "valid": true,
+    "exact_match": false,
+    "structural_match": 0.531,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "TABLE_SELECTION_FAILURE"
+  },
+  {
+    "question": "Count of offices specialized in Financial by state.",
+    "expected_sql": "SELECT state_name, count(*) FROM chatbot_ncdc_offices_private WHERE specialization = 'Financial' AND status = '1' AND is_approved = '1' GROUP BY state_name",
+    "generated_sql": "SELECT state_name, COUNT(*) \nFROM chatbot_state_district_federation_dairy \nWHERE credit_facility = '1' \n  AND status = '1' \n  AND is_approved = '1' \nGROUP BY state_name;",
+    "valid": false,
+    "exact_match": false,
+    "structural_match": 0.656,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [
+      "state_name",
+      "status",
+      "is_approved"
+    ],
+    "failure_type": "SYNTAX_FAILURE"
+  },
+  {
+    "question": "What is the total number of members in all state federations?",
+    "expected_sql": "SELECT sum(cast(members_of_federation as decimal)) FROM chatbot_state_district_federation_private WHERE federation_type_name = 'State Federation' AND is_draft = '0' AND is_approved = '0' AND status = '1';",
+    "generated_sql": "SELECT sum(cast(total_member as decimal)) \nFROM chatbot_state_district_federation_processing \nWHERE type_society_name = 'Agricultural Products' \nAND is_draft = '0' \nAND is_approved = '0' \nAND status = '1';",
+    "valid": false,
+    "exact_match": false,
+    "structural_match": 0.682,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [
+      "is_draft",
+      "status",
+      "is_approved"
+    ],
+    "failure_type": "SYNTAX_FAILURE"
+  },
+  {
+    "question": "Total turnover of all multi-state societies",
+    "expected_sql": "SELECT SUM(cast(an_turnover as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+    "generated_sql": "SELECT SUM(CAST(annual_turn_over AS DECIMAL)) \nFROM chatbot_cooperative_registrations_credit_miscellaneous \nWHERE cooperative_registration_id IN (\n    SELECT id \n    FROM chatbot_cooperative_registrations_master \n    WHERE is_multi_state = '1' \n      AND status = 1 \n      AND is_draft = 0 \n      AND is_approved = 1\n);",
+    "valid": true,
+    "exact_match": false,
+    "structural_match": 0.818,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "FILTER_FAILURE"
+  },
+  {
+    "question": "Total loss of multi-state societies in the Handloom sector",
+    "expected_sql": "SELECT SUM(cast(annual_loss as decimal)) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.primary_activity_name ILIKE '%Handloom%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+    "generated_sql": "SELECT SUM(cast(annual_loss as decimal)) \nFROM chatbot_cooperative_registrations_master c \nWHERE c.is_multi_state = '1' \nAND c.primary_activity_name ILIKE '%Handloom%' \nAND c.status = 1 \nAND c.is_draft = 0 \nAND c.is_approved = 1;",
+    "valid": true,
+    "exact_match": true,
+    "structural_match": 1.0,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "NONE"
+  },
+  {
+    "question": "How many full covered GPs are there in gaya for Handloom?",
+    "expected_sql": "SELECT COUNT(*) AS covered_gp_count FROM (SELECT dbgv.gram_panchayat_name FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%handloom%' WHERE dbgv.state_name ILIKE '%BIHAR%' AND dbgv.district_name ILIKE '%GAYA%' AND dbgv.status = 1 GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)) AS sub;",
+    "generated_sql": "SELECT COUNT(*) AS covered_gp_count \nFROM (\n    SELECT dbgv.gram_panchayat_name \n    FROM public.chatbot_districts_blocks_gp_villages dbgv \n    LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code \n        AND cr.district_code = dbgv.district_code \n        AND cr.panchayat_code = dbgv.gram_panchayat_code \n        AND cr.village_code = dbgv.village_code \n        AND cr.status = 1 \n        AND cr.is_approved != 2 \n        AND cr.is_draft = 0 \n        AND cr.sector_of_operation_name ILIKE '%handloom%' \n    WHERE dbgv.state_name ILIKE '%BIHAR%' \n        AND dbgv.district_name ILIKE '%GAYA%' \n        AND dbgv.status = 1 \n    GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code \n    HAVING COUNT(DISTINCT cr.village_code) > 0 \n        AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)\n) AS sub;",
+    "valid": false,
+    "exact_match": true,
+    "structural_match": 1.0,
+    "hallucinated_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "hallucinated_columns": [
+      "district_name",
+      "village_code",
+      "gram_panchayat_name",
+      "district_code",
+      "state_code",
+      "is_draft",
+      "is_approved",
+      "sector_of_operation_name",
+      "gram_panchayat_code",
+      "state_name",
+      "status",
+      "panchayat_code"
+    ],
+    "failure_type": "NONE"
+  },
+  {
+    "question": "Latest top 10 Credit & Thrift rankings in tamil nadu",
+    "expected_sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TAMIL NADU%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State' AND CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TAMIL NADU%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State') ORDER BY flag ASC, rank ASC LIMIT 10;",
+    "generated_sql": "SELECT \n    cooperative_society_name,\n    total_deposit,\n    pack_total_outstanding_loan\nFROM \n    chatbot_cooperative_registrations_master crm\nJOIN \n    chatbot_cooperative_credit_thrift cct ON crm.cooperative_id = cct.cooperative_registration_id\nWHERE \n    state_name ILIKE '%TAMIL NADU%'\n    AND sector_of_operation = 'Credit'\nORDER BY \n    total_deposit DESC, pack_total_outstanding_loan DESC\nLIMIT 10;",
+    "valid": true,
+    "exact_match": false,
+    "structural_match": 0.058,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "RETRIEVAL_FAILURE"
+  },
+  {
+    "question": "List all members from National Film Federation in Karnataka state. ",
+    "expected_sql": "SELECT nfm.name_of_member FROM chatbot_national_federations nf JOIN chatbot_national_federations_members nfm ON nf.id = nfm.national_federations_id WHERE nf.cooperative_society_name ILIKE '%Film%' AND nfm.state_name ILIKE '%KARNATAKA%' AND nf.is_new = '1' AND nf.is_draft = '0';",
+    "generated_sql": "SELECT sdm.scb_name \nFROM chatbot_scb_master_private scb \nJOIN chatbot_scb_district_members sdm ON scb.id = sdm.scb_id \nWHERE scb.state_name ILIKE '%KARNATAKA%' \n  AND sdm.district_name ILIKE '%BANGALORE%' \n  AND scb.is_new = '1' \n  AND scb.is_draft = '0';",
+    "valid": false,
+    "exact_match": false,
+    "structural_match": 0.312,
+    "hallucinated_tables": [
+      "chatbot_scb_district_members"
+    ],
+    "hallucinated_columns": [
+      "is_new",
+      "district_name",
+      "scb_name",
+      "scb_id"
+    ],
+    "failure_type": "SYNTAX_FAILURE"
+  },
+  {
+    "question": "List partially covered Gram Panchayats in papum pare for Multi-purpose",
+    "expected_sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%multi%' WHERE dbgv.state_name ILIKE '%ARUNACHAL PRADESH%' AND dbgv.district_name ILIKE '%PAPUM PARE%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;",
+    "generated_sql": "SELECT \n    nf.id,\n    nf.cooperative_id,\n    nf.reference_year,\n    nf.cooperative_society_name,\n    nf.identification_number,\n    nf.registration_number,\n    nf.date_registration,\n    nf.location_of_head_quarter,\n    nf.affiliation_with_govt_dept_name,\n    nf.urban_local_body_type_name,\n    nf.urban_local_body_name,\n    nf.ward_name,\n    nf.block_name,\n    nf.gram_panchayat_name,\n    nf.village_name,\n    nf.pincode,\n    nf.registered_office_address,\n    nf.functional_status,\n    nf.is_draft,\n    nf.is_new,\n    nf.ncd_id,\n    nf.state_name,\n    nf.district_name,\n    nf.major_activities_names\nFROM \n    chatbot_national_federations nf\nWHERE \n    nf.state_name ILIKE '%ARUNACHAL PRADESH%'\n    AND nf.district_name ILIKE '%PAPUM PARE%'\n    AND nf.status = 1;",
+    "valid": false,
+    "exact_match": false,
+    "structural_match": 0.0,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [
+      "status"
+    ],
+    "failure_type": "SYNTAX_FAILURE"
+  },
+  {
+    "question": "How many Khadi Gram societies are in Uttar Pradesh?",
+    "expected_sql": "SELECT COUNT(*) FROM chatbot_cooperative_registration_khadi_gram s JOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id WHERE c.state_name ILIKE '%UTTAR PRADESH%' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1;",
+    "generated_sql": "SELECT COUNT(*) \nFROM chatbot_cooperative_registration_khadi_gram s \nJOIN chatbot_cooperative_registrations_master c ON s.ncd_id = c.cooperative_id \nWHERE c.state_name ILIKE '%UTTAR PRADESH%' \n  AND c.status = 1 \n  AND c.is_draft = 0 \n  AND c.is_approved = 1;",
+    "valid": true,
+    "exact_match": true,
+    "structural_match": 1.0,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "NONE"
+  },
+  {
+    "question": "Find profit making Dairy federations in Uttar Pradesh.",
+    "expected_sql": "SELECT * FROM chatbot_state_district_federation_private sfp JOIN chatbot_state_district_federation_dairy st ON st.state_district_federation_id = sfp.id WHERE sfp.primary_activity_name ILIKE '%Dairy%' AND sfp.state_name ILIKE '%UTTAR PRADESH%' AND sfp.is_profit_making = '1' AND sfp.is_draft = '0' AND is_approved = '0' AND status = '1';",
+    "generated_sql": "SELECT * \nFROM chatbot_state_district_federation_private sfp \nJOIN chatbot_state_district_federation_dairy st ON st.state_district_federation_id = sfp.id \nWHERE sfp.primary_activity_name ILIKE '%Education%' \nAND sfp.state_name ILIKE '%UTTAR PRADESH%' \nAND sfp.is_profit_making = '1' \nAND sfp.is_draft = '0' \nAND is_approved = '0' \nAND status = '1';",
+    "valid": true,
+    "exact_match": false,
+    "structural_match": 0.969,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [],
+    "failure_type": "FILTER_FAILURE"
+  },
+  {
+    "question": "Show me coverage details for all blocks in belagavi for Multi-purpose",
+    "expected_sql": "SELECT sub.block_name, sub.total_villages, sub.covered_villages, ROUND((sub.covered_villages::numeric / sub.total_villages) * 100, 2) AS block_coverage_percent FROM (SELECT dbgv.block_name, COUNT(DISTINCT dbgv.village_code) AS total_villages, COUNT(DISTINCT cr.village_code) AS covered_villages FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.block_code = dbgv.block_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%multi%' WHERE dbgv.state_name ILIKE '%KARNATAKA%' AND dbgv.district_name ILIKE '%BELAGAVI%' AND dbgv.status = 1 GROUP BY dbgv.block_name, dbgv.block_code) AS sub ORDER BY sub.block_name;",
+    "generated_sql": "SELECT \n    nf.id,\n    nf.cooperative_id,\n    nf.reference_year,\n    nf.cooperative_society_name,\n    nf.identification_number,\n    nf.registration_number,\n    nf.date_registration,\n    nf.location_of_head_quarter,\n    nf.affiliation_with_govt_dept_name,\n    nf.urban_local_body_type_name,\n    nf.urban_local_body_name,\n    nf.ward_name,\n    nf.block_name,\n    nf.gram_panchayat_name,\n    nf.village_name,\n    nf.pincode,\n    nf.registered_office_address,\n    nf.functional_status,\n    nf.is_draft,\n    nf.is_new,\n    nf.ncd_id,\n    nf.state_name,\n    nf.district_name,\n    nf.major_activities_names\nFROM \n    chatbot_national_federations nf\nWHERE \n    nf.state_name ILIKE '%KARNATAKA%'\n    AND nf.district_name ILIKE '%BELAGAVI%'\n    AND nf.status = 1;",
+    "valid": false,
+    "exact_match": false,
+    "structural_match": 0.0,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [
+      "status"
+    ],
+    "failure_type": "SYNTAX_FAILURE"
+  },
+  {
+    "question": "How many full covered GPs are there in madurai for Fishery?",
+    "expected_sql": "SELECT COUNT(*) AS covered_gp_count FROM (SELECT dbgv.gram_panchayat_name FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%fishery%' WHERE dbgv.state_name ILIKE '%TAMIL NADU%' AND dbgv.district_name ILIKE '%MADURAI%' AND dbgv.status = 1 GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)) AS sub;",
+    "generated_sql": "SELECT COUNT(*) AS covered_gp_count \nFROM (\n    SELECT dbgv.gram_panchayat_name \n    FROM public.chatbot_districts_blocks_gp_villages dbgv \n    LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code \n        AND cr.district_code = dbgv.district_code \n        AND cr.panchayat_code = dbgv.gram_panchayat_code \n        AND cr.village_code = dbgv.village_code \n        AND cr.status = 1 \n        AND cr.is_approved != 2 \n        AND cr.is_draft = 0 \n        AND cr.sector_of_operation_name ILIKE '%fishery%' \n    WHERE dbgv.state_name ILIKE '%TAMIL NADU%' \n        AND dbgv.district_name ILIKE '%MADURAI%' \n        AND dbgv.status = 1 \n    GROUP BY dbgv.gram_panchayat_name, dbgv.gram_panchayat_code \n    HAVING COUNT(DISTINCT cr.village_code) > 0 \n        AND COUNT(DISTINCT cr.village_code) = COUNT(DISTINCT dbgv.village_code)\n) AS sub;",
+    "valid": false,
+    "exact_match": true,
+    "structural_match": 1.0,
+    "hallucinated_tables": [
+      "chatbot_coverage_areas",
+      "chatbot_districts_blocks_gp_villages"
+    ],
+    "hallucinated_columns": [
+      "district_name",
+      "village_code",
+      "gram_panchayat_name",
+      "district_code",
+      "state_code",
+      "is_draft",
+      "is_approved",
+      "sector_of_operation_name",
+      "gram_panchayat_code",
+      "state_name",
+      "status",
+      "panchayat_code"
+    ],
+    "failure_type": "NONE"
+  },
+  {
+    "question": "Find phone numbers for PCARDB banks in Rajasthan",
+    "expected_sql": "SELECT scb.scb_name, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%RAJASTHAN%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+    "generated_sql": "SELECT \n    ncf.cooperative_id, \n    ncf.identification_number, \n    ncf.registration_number, \n    ncf.date_registration, \n    ncf.location_of_head_quarter, \n    ncf.affiliation_with_govt_dept_name, \n    ncf.urban_local_body_type_name, \n    ncf.urban_local_body_name, \n    ncf.ward_name, \n    ncf.block_name, \n    ncf.gram_panchayat_name, \n    ncf.village_name, \n    ncf.pincode, \n    ncf.registered_office_address, \n    ncf.functional_status, \n    ncf.is_draft, \n    ncf.ncd_id, \n    ncf.state_name, \n    ncf.district_name, \n    ncf.major_activities_names \nFROM \n    chatbot_national_federations ncf\nWHERE \n    ncf.state_name ILIKE '%RAJASTHAN%' \n    AND ncf.status = 1 \n    AND ncf.is_delete = 0 \n    AND ncf.is_draft = 0;",
+    "valid": false,
+    "exact_match": false,
+    "structural_match": 0.304,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [
+      "is_delete",
+      "status"
+    ],
+    "failure_type": "SYNTAX_FAILURE"
+  },
+  {
+    "question": "List partially covered Gram Panchayats in pune for Credit",
+    "expected_sql": "SELECT sub.state_name, sub.district_name, sub.gram_panchayat_name, sub.total_villages_in_gp, sub.villages_covered, ROUND((sub.villages_covered::numeric / sub.total_villages_in_gp) * 100, 2) AS coverage_percent FROM (SELECT dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, COUNT(DISTINCT dbgv.village_code) AS total_villages_in_gp, COUNT(DISTINCT cr.village_code) AS villages_covered FROM public.chatbot_districts_blocks_gp_villages dbgv LEFT JOIN public.chatbot_coverage_areas cr ON cr.state_code = dbgv.state_code AND cr.district_code = dbgv.district_code AND cr.panchayat_code = dbgv.gram_panchayat_code AND cr.village_code = dbgv.village_code AND cr.status = 1 AND cr.is_approved != 2 AND cr.is_draft = 0 AND cr.sector_of_operation_name ILIKE '%credit%' WHERE dbgv.state_name ILIKE '%MAHARASHTRA%' AND dbgv.district_name ILIKE '%PUNE%' AND dbgv.status = 1 GROUP BY dbgv.state_name, dbgv.district_name, dbgv.gram_panchayat_name, dbgv.gram_panchayat_code HAVING COUNT(DISTINCT cr.village_code) > 0 AND COUNT(DISTINCT cr.village_code) < COUNT(DISTINCT dbgv.village_code)) AS sub ORDER BY sub.district_name, sub.gram_panchayat_name;",
+    "generated_sql": "SELECT \n    nf.id,\n    nf.cooperative_id,\n    nf.reference_year,\n    nf.cooperative_society_name,\n    nf.identification_number,\n    nf.registration_number,\n    nf.date_registration,\n    nf.location_of_head_quarter,\n    nf.affiliation_with_govt_dept_name,\n    nf.urban_local_body_type_name,\n    nf.urban_local_body_name,\n    nf.ward_name,\n    nf.block_name,\n    nf.gram_panchayat_name,\n    nf.village_name,\n    nf.pincode,\n    nf.registered_office_address,\n    nf.functional_status,\n    nf.is_draft,\n    nf.is_new,\n    nf.ncd_id,\n    nf.state_name,\n    nf.district_name,\n    nf.major_activities_names\nFROM \n    chatbot_national_federations nf\nWHERE \n    nf.state_name ILIKE '%MAHARASHTRA%'\n    AND nf.district_name ILIKE '%PUNE%'\n    AND nf.status = 1;",
+    "valid": false,
+    "exact_match": false,
+    "structural_match": 0.0,
+    "hallucinated_tables": [],
+    "hallucinated_columns": [
+      "status"
+    ],
+    "failure_type": "SYNTAX_FAILURE"
+  }
+]
