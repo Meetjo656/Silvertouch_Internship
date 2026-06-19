@@ -180,16 +180,19 @@ graph LR
 <summary><strong>View Workflow & Details</strong></summary>
 
 ```mermaid
-graph TD
-    Query[Natural Language Query] --> Intent[Semantic Router]
-    Intent --> |Extract Entities| Retrieval
-    Retrieval[Multi-Source Retriever] --> DDL[Schema DDLs]
-    Retrieval --> Docs[Documentation]
-    Retrieval --> SemSearch[FAISS Embeddings]
-    DDL & Docs & SemSearch --> Rank[Context Ranker]
-    Rank --> Prompt[LLM Prompt Assembly]
-    Prompt -.->|Future Work| Gen[Fine-Tuned LLM (LoRA)]
-    Gen -.-> SQL[SQL Query Output]
+graph LR
+    A["🔍 Data Collection<br/>(Task 3)"] --> B["🛠️ Dataset Prep<br/>(Task 3)"]
+    B --> C["👁️ Computer Vision<br/>(Task 1 & 2)"]
+    C --> D["🤖 Machine Learning<br/>(Task 2)"]
+    D --> E["🧠 Semantic AI<br/>(Task 4)"]
+    E --> F["📊 Decision Support"]
+
+    style A fill:#f0f9ff,stroke:#0288d1,stroke-width:2px
+    style B fill:#f0f9ff,stroke:#0288d1,stroke-width:2px
+    style C fill:#fff7ed,stroke:#ea580c,stroke-width:2px
+    style D fill:#faf5ff,stroke:#7e22ce,stroke-width:2px
+    style E fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
+    style F fill:#fff1f2,stroke:#be123c,stroke-width:2px
 ```
 
 * **Technologies:** FAISS, Sentence Transformers, scikit-learn, SQLAlchemy, PEFT/LoRA (planned).
