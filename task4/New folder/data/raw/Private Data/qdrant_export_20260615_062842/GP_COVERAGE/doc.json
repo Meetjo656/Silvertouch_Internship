@@ -1,0 +1,92 @@
+[
+  {
+    "point_id": "03988a36-4461-5c9d-8e31-396d1b868ace",
+    "payload": {
+      "documentation": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1.",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [
+        "chatbot_coverage_areas",
+        "chatbot_districts_blocks_gp_villages"
+      ],
+      "business_terms": [
+        "coverage",
+        "districts",
+        "blocks",
+        "villages",
+        "geographic"
+      ]
+    }
+  },
+  {
+    "point_id": "31c602a0-402e-5783-82ed-1aa535d99c1d",
+    "payload": {
+      "documentation": "The table chatbot_districts_blocks_gp_villages stores the geographic hierarchy including states, districts, blocks, gram panchayats (GPs), and villages. The table chatbot_coverage_areas contains information about cooperative societies present in those villages or blocks.",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_coverage_areas"
+      ],
+      "business_terms": [
+        "states",
+        "districts",
+        "blocks",
+        "gram panchayats",
+        "villages",
+        "cooperative societies"
+      ]
+    }
+  },
+  {
+    "point_id": "583ddedf-307f-5737-a4b4-d86042999b70",
+    "payload": {
+      "documentation": "Data Dictionary for GP Coverage: state_code, district_code, block_code, panchayat_code, village_code are the primary keys for joining geographic data with coverage data. sector_of_operation_name identifies the society type (e.g., PACS, LAMPS).",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [],
+      "business_terms": [
+        "state_code",
+        "district_code",
+        "block_code",
+        "panchayat_code",
+        "village_code",
+        "sector_of_operation_name",
+        "pacs",
+        "lamps"
+      ]
+    }
+  },
+  {
+    "point_id": "bbd4830e-9549-59db-87a7-0d3ee6acf4e2",
+    "payload": {
+      "documentation": "Query types for coverage: 'fully covered' (all villages in a GP have coverage), 'partially covered' (some but not all villages in a GP have coverage), and 'non covered' (no villages in a GP have coverage).",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [],
+      "business_terms": [
+        "coverage",
+        "villages",
+        "fully",
+        "partially",
+        "non"
+      ]
+    }
+  },
+  {
+    "point_id": "fe863ff0-2484-5bc7-9998-7c164ab470a0",
+    "payload": {
+      "documentation": "Coverage Logic: 1) Fully Covered: Show only GPs where every single village is covered. 2) Partially Covered: Show only GPs where some villages are covered but at least one is missing (do not include GPs that are already fully covered). 3) Non-covered: Show only GPs that have zero villages with coverage.",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [],
+      "business_terms": [
+        "village",
+        "coverage",
+        "fully",
+        "partially",
+        "non-covered"
+      ]
+    }
+  }
+]

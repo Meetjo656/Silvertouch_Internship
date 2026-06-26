@@ -1,0 +1,25 @@
+{
+    "images_processed": 1938,
+    "total_annotations": 5612,
+    "class_counts": {
+        "Artwork": 288,
+        "not_artwork": 1347,
+        "Front_Panel": 304,
+        "Side_Panel": 578,
+        "Back_Panel": 222,
+        "Extra_Areas": 2322,
+        "Bottom_Panel": 287,
+        "Top_Panel": 264
+    },
+    "average_confidence_per_class": {
+        "Artwork": 0.7264,
+        "not_artwork": 0.6791,
+        "Front_Panel": 0.6344,
+        "Side_Panel": 0.654,
+        "Back_Panel": 0.6076,
+        "Extra_Areas": 0.6855,
+        "Bottom_Panel": 0.5684,
+        "Top_Panel": 0.6005
+    },
+    "coco_validation_passed": true
+}

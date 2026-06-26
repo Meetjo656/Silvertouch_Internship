@@ -1,0 +1,61 @@
+[
+  {
+    "point_id": "3e4eef9c-5c3d-5775-b15f-20b38c084190",
+    "payload": {
+      "documentation": "Always filter based on status = 1 , is_approved = 1",
+      "type": "documentation",
+      "module": "OFFICES",
+      "tables": [],
+      "business_terms": [
+        "offices",
+        "status",
+        "approval"
+      ]
+    }
+  },
+  {
+    "point_id": "60cb25a6-454c-5b64-92f4-0b5becf1b593",
+    "payload": {
+      "documentation": "office_type_name contains the type of the office (Head Office , Sub Office , Regional Office etc.)",
+      "type": "documentation",
+      "module": "OFFICES",
+      "tables": [],
+      "business_terms": [
+        "head office",
+        "sub office",
+        "regional office",
+        "office type"
+      ]
+    }
+  },
+  {
+    "point_id": "77b87559-10cf-5213-ae04-b6364132d2d9",
+    "payload": {
+      "documentation": "ownership_name contains Rented or Owned",
+      "type": "documentation",
+      "module": "OFFICES",
+      "tables": [],
+      "business_terms": [
+        "ownership",
+        "rented",
+        "owned"
+      ]
+    }
+  },
+  {
+    "point_id": "87da6339-5e64-5162-9556-3852003c0f2a",
+    "payload": {
+      "documentation": "chatbot_ncdc_offices_private contains information of all the ncdc officies",
+      "type": "documentation",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "business_terms": [
+        "ncdc",
+        "offices",
+        "information"
+      ]
+    }
+  }
+]

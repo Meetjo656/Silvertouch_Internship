@@ -1,0 +1,965 @@
+RAW CONFIDENCE AUDIT REPORT
+===========================
+
+Image: animal_20260501_c56adc6b-249e-479a-80f0-959940263c73_enr00-0005-05.jpg
+  Artwork        : 0.0153
+  not_artwork    : 0.0237
+  Front_Panel    : 0.0147
+  Side_Panel     : 0.0415
+  Back_Panel     : 0.0235
+  Extra_Areas    : 0.5242
+  Bottom_Panel   : 0.0204
+  Top_Panel      : 0.0707
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260503_e130df06-e2ae-47cd-884a-fb38b93f2077_enr08-0001-03.jpg
+  Artwork        : 0.0224
+  not_artwork    : 0.0187
+  Front_Panel    : 0.0298
+  Side_Panel     : 0.0897
+  Back_Panel     : 0.0860
+  Extra_Areas    : 0.4113
+  Top_Panel      : 0.0157
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260514_f789f1d1-9c9f-464b-8df5-4c24f486966a_adv04-0002-03.jpg
+  Artwork        : 0.0379
+  Front_Panel    : 0.0820
+  Side_Panel     : 0.1132
+  Back_Panel     : 0.0494
+  Extra_Areas    : 0.9200
+  Bottom_Panel   : 0.0522
+  Top_Panel      : 0.0330
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260514_f789f1d1-9c9f-464b-8df5-4c24f486966a_adv04-0002-06.jpg
+  Artwork        : 0.0556
+  not_artwork    : 0.0150
+  Front_Panel    : 0.1283
+  Side_Panel     : 0.0911
+  Back_Panel     : 0.0600
+  Extra_Areas    : 0.8551
+  Bottom_Panel   : 0.0384
+  Top_Panel      : 0.0286
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260515_258967db-9587-4c19-b846-ac143dada99a_bay07-0000-08.jpg
+  Artwork        : 0.0722
+  not_artwork    : 0.0183
+  Front_Panel    : 0.0162
+  Side_Panel     : 0.0223
+  Back_Panel     : 0.0155
+  Extra_Areas    : 0.7913
+  Bottom_Panel   : 0.0176
+  Top_Panel      : 0.0141
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260515_258967db-9587-4c19-b846-ac143dada99a_bay07-0000-09.jpg
+  Artwork        : 0.1337
+  not_artwork    : 0.0170
+  Front_Panel    : 0.0206
+  Side_Panel     : 0.0310
+  Back_Panel     : 0.0157
+  Extra_Areas    : 0.5195
+  Bottom_Panel   : 0.0187
+  Top_Panel      : 0.0221
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260515_a1ada9f6-24e2-4287-8b83-00e2b68666e5_bay04-0001-04.jpg
+  Artwork        : 0.7772
+  not_artwork    : 0.0129
+  Front_Panel    : 0.1612
+  Side_Panel     : 0.1834
+  Back_Panel     : 0.1073
+  Extra_Areas    : 0.6641
+  Bottom_Panel   : 0.0304
+  Top_Panel      : 0.0919
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: animal_20260515_cba5481b-a6dd-49a8-b0fb-462ab49731c2_enr02-0005-03.jpg
+  Artwork        : 0.0280
+  not_artwork    : 0.0664
+  Front_Panel    : 0.0216
+  Side_Panel     : 0.1006
+  Back_Panel     : 0.0214
+  Extra_Areas    : 0.1943
+  Bottom_Panel   : 0.0211
+  Top_Panel      : 0.0544
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260516_5012fe70-6394-45f5-be75-04297e39574d_bay08-0000-07.jpg
+  Artwork        : 0.5411
+  not_artwork    : 0.0325
+  Front_Panel    : 0.0585
+  Side_Panel     : 0.2095
+  Back_Panel     : 0.0720
+  Extra_Areas    : 0.8973
+  Bottom_Panel   : 0.0358
+  Top_Panel      : 0.0504
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: animal_20260517_f5c9ca91-9242-47d6-867a-0f16562b6bee_safeguard-03.jpg
+  not_artwork    : 0.0292
+  Side_Panel     : 0.0142
+  Extra_Areas    : 0.0294
+  Top_Panel      : 0.0148
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260521_f918583d-0337-40da-8da1-1e1320b8d027_bax01-0000-02.jpg
+  Artwork        : 0.0578
+  Front_Panel    : 0.1272
+  Side_Panel     : 0.1215
+  Back_Panel     : 0.1109
+  Extra_Areas    : 0.4804
+  Bottom_Panel   : 0.0226
+  Top_Panel      : 0.0350
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260521_f918583d-0337-40da-8da1-1e1320b8d027_bax01-0000-06.jpg
+  Artwork        : 0.0840
+  Front_Panel    : 0.0344
+  Side_Panel     : 0.0525
+  Back_Panel     : 0.0399
+  Extra_Areas    : 0.6800
+  Bottom_Panel   : 0.0230
+  Top_Panel      : 0.0137
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260522_427f2ebc-ce24-452b-bbb3-43d4ef8b63b0_cre04-0007-01.jpg
+  Artwork        : 0.3550
+  not_artwork    : 0.0194
+  Front_Panel    : 0.0423
+  Side_Panel     : 0.1067
+  Back_Panel     : 0.1121
+  Extra_Areas    : 0.5930
+  Bottom_Panel   : 0.0273
+  Top_Panel      : 0.0180
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260522_427f2ebc-ce24-452b-bbb3-43d4ef8b63b0_cre04-0007-03.jpg
+  Artwork        : 0.0692
+  not_artwork    : 0.0882
+  Front_Panel    : 0.0160
+  Side_Panel     : 0.1005
+  Back_Panel     : 0.0197
+  Extra_Areas    : 0.4182
+  Bottom_Panel   : 0.0285
+  Top_Panel      : 0.0228
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260522_427f2ebc-ce24-452b-bbb3-43d4ef8b63b0_cre04-0007-04.jpg
+  Artwork        : 0.0612
+  not_artwork    : 0.0290
+  Front_Panel    : 0.0212
+  Side_Panel     : 0.2775
+  Back_Panel     : 0.2639
+  Extra_Areas    : 0.6068
+  Bottom_Panel   : 0.0367
+  Top_Panel      : 0.0310
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: animal_20260522_427f2ebc-ce24-452b-bbb3-43d4ef8b63b0_cre04-0007-05.jpg
+  Artwork        : 0.0375
+  not_artwork    : 0.0699
+  Front_Panel    : 0.0244
+  Side_Panel     : 0.0983
+  Back_Panel     : 0.0485
+  Extra_Areas    : 0.7235
+  Bottom_Panel   : 0.0486
+  Top_Panel      : 0.0494
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260523_365b701f-e9a8-458f-90ff-33ca1fb947ca_image-01.jpg
+  Artwork        : 0.0331
+  not_artwork    : 0.1048
+  Side_Panel     : 0.0961
+  Back_Panel     : 0.0171
+  Extra_Areas    : 0.8830
+  Bottom_Panel   : 0.0439
+  Top_Panel      : 0.0383
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260523_365b701f-e9a8-458f-90ff-33ca1fb947ca_image-03.jpg
+  Artwork        : 0.1513
+  not_artwork    : 0.0333
+  Front_Panel    : 0.0297
+  Side_Panel     : 0.2302
+  Back_Panel     : 0.1373
+  Extra_Areas    : 0.8002
+  Bottom_Panel   : 0.0646
+  Top_Panel      : 0.0404
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: animal_20260523_865b3b41-61da-4eba-b00e-6899d812213e_ovarpim_carton_label.jpg
+  Artwork        : 0.0443
+  Front_Panel    : 0.1120
+  Side_Panel     : 0.2286
+  Back_Panel     : 0.2068
+  Extra_Areas    : 0.3951
+  Bottom_Panel   : 0.0287
+  Top_Panel      : 0.0222
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: animal_20260523_ad403eb7-0c03-4bda-9698-3757860043cf_image-01.jpg
+  Artwork        : 0.3751
+  not_artwork    : 0.0117
+  Front_Panel    : 0.0496
+  Side_Panel     : 0.1629
+  Back_Panel     : 0.1166
+  Extra_Areas    : 0.9530
+  Bottom_Panel   : 0.0547
+  Top_Panel      : 0.0412
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: animal_20260523_ad403eb7-0c03-4bda-9698-3757860043cf_image-04.jpg
+  Artwork        : 0.0377
+  not_artwork    : 0.1048
+  Front_Panel    : 0.0239
+  Side_Panel     : 0.0948
+  Back_Panel     : 0.0419
+  Extra_Areas    : 0.7614
+  Bottom_Panel   : 0.0303
+  Top_Panel      : 0.0240
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260523_ad403eb7-0c03-4bda-9698-3757860043cf_image-05.jpg
+  Artwork        : 0.0276
+  not_artwork    : 0.0243
+  Front_Panel    : 0.1352
+  Side_Panel     : 0.0972
+  Back_Panel     : 0.1343
+  Extra_Areas    : 0.9476
+  Bottom_Panel   : 0.0643
+  Top_Panel      : 0.0257
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260523_ad403eb7-0c03-4bda-9698-3757860043cf_image-10.jpg
+  Artwork        : 0.4487
+  not_artwork    : 0.0356
+  Front_Panel    : 0.0435
+  Side_Panel     : 0.0768
+  Back_Panel     : 0.0815
+  Extra_Areas    : 0.7026
+  Bottom_Panel   : 0.1373
+  Top_Panel      : 0.0824
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260523_ad403eb7-0c03-4bda-9698-3757860043cf_image-13.jpg
+  Artwork        : 0.6589
+  not_artwork    : 0.0278
+  Front_Panel    : 0.0423
+  Side_Panel     : 0.0865
+  Back_Panel     : 0.0552
+  Extra_Areas    : 0.8841
+  Bottom_Panel   : 0.0624
+  Top_Panel      : 0.0409
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260528_922d3235-085e-454f-9535-44ef4bca12f4_ons03-0000-04.jpg
+  Artwork        : 0.0504
+  not_artwork    : 0.0464
+  Front_Panel    : 0.1209
+  Side_Panel     : 0.0322
+  Back_Panel     : 0.1264
+  Extra_Areas    : 0.2537
+  Bottom_Panel   : 0.0402
+  Top_Panel      : 0.0332
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: animal_20260528_f4f307a0-88b5-4740-b198-35edef954bf1_ons05-0002-05.jpg
+  Artwork        : 0.0788
+  not_artwork    : 0.0413
+  Front_Panel    : 0.1308
+  Side_Panel     : 0.1591
+  Back_Panel     : 0.0972
+  Extra_Areas    : 0.2948
+  Bottom_Panel   : 0.0397
+  Top_Panel      : 0.0121
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260501_18f851e3-24c6-44fd-8376-0f5418ded9a9_carton.jpg
+  Artwork        : 0.0312
+  not_artwork    : 0.0229
+  Front_Panel    : 0.0217
+  Side_Panel     : 0.0577
+  Back_Panel     : 0.0389
+  Extra_Areas    : 0.6072
+  Bottom_Panel   : 0.0350
+  Top_Panel      : 0.0291
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_2dc7f76f-f9ad-46ba-8b41-952e1c15f052_541-rt-hydrocortisone-cream.jpg
+  Artwork        : 0.0324
+  not_artwork    : 0.0472
+  Front_Panel    : 0.0136
+  Side_Panel     : 0.0142
+  Back_Panel     : 0.0165
+  Extra_Areas    : 0.2912
+  Bottom_Panel   : 0.0160
+  Top_Panel      : 0.0152
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_3143de16-2006-ec2e-e063-6294a90a1f67_image001.jpg
+  Artwork        : 0.0683
+  not_artwork    : 0.0251
+  Front_Panel    : 0.0681
+  Side_Panel     : 0.1352
+  Back_Panel     : 0.0251
+  Extra_Areas    : 0.0977
+  Bottom_Panel   : 0.0239
+  Top_Panel      : 0.0386
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_47c66535-8287-9b74-e063-6394a90ac3b6_Artwork.jpg
+  Artwork        : 0.1756
+  not_artwork    : 0.0275
+  Front_Panel    : 0.0846
+  Side_Panel     : 0.0667
+  Back_Panel     : 0.0893
+  Extra_Areas    : 0.5425
+  Bottom_Panel   : 0.0438
+  Top_Panel      : 0.0441
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_4b1d223a-723b-4569-9505-da727691bc56_childrens-allergy-relief.jpg
+  not_artwork    : 0.0263
+  Front_Panel    : 0.0305
+  Side_Panel     : 0.1037
+  Back_Panel     : 0.1104
+  Extra_Areas    : 0.6898
+  Bottom_Panel   : 0.0228
+  Top_Panel      : 0.0127
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_4df3e90e-98a0-edbf-e063-6394a90ae3c9_2602_UV_SHEEN_SCREEN_US_15G_LAST_BITE_CARTONS_FA2_OL.jpg
+  not_artwork    : 0.0305
+  Side_Panel     : 0.0409
+  Back_Panel     : 0.0164
+  Extra_Areas    : 0.4769
+  Bottom_Panel   : 0.0267
+  Top_Panel      : 0.0207
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_4df6d28b-64ce-59b3-e063-6394a90a6360_2601_UV_SHEEN_SCREEN_US_15G_SILK_PILLOW_CARTONS_FA1_OL.jpg
+  Artwork        : 0.0155
+  not_artwork    : 0.0874
+  Front_Panel    : 0.0101
+  Side_Panel     : 0.0244
+  Back_Panel     : 0.0214
+  Extra_Areas    : 0.2568
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_5082b773-79b2-2501-e063-6394a90a170f_60.jpg
+  Artwork        : 0.0787
+  not_artwork    : 0.2187
+  Side_Panel     : 0.0302
+  Back_Panel     : 0.0229
+  Extra_Areas    : 0.0824
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_587d7c72-a70e-4ada-945d-14989b96350c_1g7-of-allergy-relief.jpg
+  Artwork        : 0.0146
+  not_artwork    : 0.0472
+  Front_Panel    : 0.1253
+  Side_Panel     : 0.1275
+  Back_Panel     : 0.0727
+  Extra_Areas    : 0.8028
+  Bottom_Panel   : 0.0532
+  Top_Panel      : 0.0168
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_e1db3641-2e83-4fec-8394-98d0d876ce0d_anti-itch-cream.jpg
+  Artwork        : 0.0326
+  not_artwork    : 0.0287
+  Side_Panel     : 0.0385
+  Back_Panel     : 0.0152
+  Extra_Areas    : 0.4320
+  Bottom_Panel   : 0.0476
+  Top_Panel      : 0.0582
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260501_ea97d3d8-dc96-4c40-91e7-f076c588bf12_carton.jpg
+  Artwork        : 0.0137
+  not_artwork    : 0.0336
+  Front_Panel    : 0.0121
+  Side_Panel     : 0.0344
+  Back_Panel     : 0.0370
+  Extra_Areas    : 0.6737
+  Bottom_Panel   : 0.0437
+  Top_Panel      : 0.0170
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260503_1f06ca1a-5270-9a82-e063-6294a90aed64_iVIZIA_Gel_Carton.jpg
+  Artwork        : 0.2528
+  not_artwork    : 0.0157
+  Front_Panel    : 0.2341
+  Side_Panel     : 0.1823
+  Back_Panel     : 0.2641
+  Extra_Areas    : 0.4058
+  Bottom_Panel   : 0.0256
+  Top_Panel      : 0.0354
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260503_4a2e0a8d-420e-4c07-aa43-386d05dab472_Outer Label.jpg
+  Artwork        : 0.0486
+  not_artwork    : 0.0479
+  Front_Panel    : 0.0570
+  Side_Panel     : 0.0877
+  Back_Panel     : 0.1512
+  Extra_Areas    : 0.8840
+  Bottom_Panel   : 0.0461
+  Top_Panel      : 0.0718
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260503_4dcccf04-5c4f-1202-e063-6394a90ab9d8_CVS_Wart Removers Box_53-068CV-04.jpg
+  Artwork        : 0.0130
+  not_artwork    : 0.0298
+  Side_Panel     : 0.0139
+  Extra_Areas    : 0.5949
+  Bottom_Panel   : 0.0408
+  Top_Panel      : 0.0166
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260503_50b02d58-dd82-6d0a-e063-6294a90a28fd_CARTON-OLOPATADINE HCI OPHT SOLN-5ML_51407-938-05.jpg
+  Artwork        : 0.0243
+  not_artwork    : 0.0417
+  Front_Panel    : 0.0660
+  Side_Panel     : 0.0889
+  Back_Panel     : 0.0690
+  Extra_Areas    : 0.6891
+  Bottom_Panel   : 0.0455
+  Top_Panel      : 0.0181
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260503_50b1351d-72dd-e0c9-e063-6294a90ac743_Burn Cream.jpg
+  Artwork        : 0.0133
+  not_artwork    : 0.0416
+  Front_Panel    : 0.0930
+  Side_Panel     : 0.1645
+  Back_Panel     : 0.1067
+  Extra_Areas    : 0.4716
+  Bottom_Panel   : 0.0282
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260503_54a3f855-48de-4ae0-b1f0-e95739853065_obagi-01.jpg
+  Artwork        : 0.0153
+  not_artwork    : 0.0474
+  Extra_Areas    : 0.0644
+  -> CONCLUSION: Model absolutely failed to generate panel boxes even at conf=0.01
+
+Image: otc_20260503_5b6ed4e9-3e69-c773-e053-2991aa0a7dfe_Herpecin-L.jpg
+  Artwork        : 0.0567
+  Side_Panel     : 0.0583
+  Back_Panel     : 0.0103
+  Extra_Areas    : 0.3940
+  Bottom_Panel   : 0.0324
+  Top_Panel      : 0.1796
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260503_6307485a-8be6-40ee-899b-00eb3ee8ce61_kroger-ibuprofen-carton-image.jpg
+  Artwork        : 0.0242
+  not_artwork    : 0.0876
+  -> CONCLUSION: Model absolutely failed to generate panel boxes even at conf=0.01
+
+Image: otc_20260503_90bc4d32-f865-4e33-86a0-4b860b610fa8_CVS_Liquid Wart Remover_First Aid_53-012CV-03.jpg
+  not_artwork    : 0.0170
+  Front_Panel    : 0.0605
+  Side_Panel     : 0.0160
+  Back_Panel     : 0.0197
+  Extra_Areas    : 0.0816
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260503_b765570e-e5b5-48e4-b4d2-2a85ac19a2ea_734-rt-nicotine-polacrilex-lozenge-2mg.jpg
+  Artwork        : 0.0369
+  not_artwork    : 0.0143
+  Front_Panel    : 0.1745
+  Side_Panel     : 0.1635
+  Back_Panel     : 0.2399
+  Extra_Areas    : 0.4252
+  Bottom_Panel   : 0.0241
+  Top_Panel      : 0.0100
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260503_beeb6043-6547-4fe9-e053-2995a90a5d74_Herpecin Pain.jpg
+  Artwork        : 0.0309
+  not_artwork    : 0.0354
+  Side_Panel     : 0.0103
+  Extra_Areas    : 0.5193
+  Bottom_Panel   : 0.0160
+  Top_Panel      : 0.0205
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260503_c6660c5c-1504-4a92-95e8-cc3a018e813b_childrens-dye-free-allergy-relief.jpg
+  Artwork        : 0.0297
+  not_artwork    : 0.1466
+  Side_Panel     : 0.0102
+  Back_Panel     : 0.0165
+  Extra_Areas    : 0.0360
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260503_d8cdccdb-775b-4970-a6ea-50b62df221d6_002.jpg
+  Artwork        : 0.0125
+  not_artwork    : 0.0424
+  Front_Panel    : 0.0208
+  Side_Panel     : 0.0240
+  Back_Panel     : 0.0216
+  Extra_Areas    : 0.0248
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260503_e840fba4-86ff-9da0-e053-2995a90a221a_Dr. Numb.jpg
+  Artwork        : 0.0846
+  not_artwork    : 0.1371
+  Front_Panel    : 0.0142
+  Side_Panel     : 0.0191
+  Extra_Areas    : 0.0609
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260505_20a44597-3d44-f0ea-e063-6294a90a903d_20a4969a-bf93-b803-e063-6394a90a13f8.jpg
+  Artwork        : 0.1039
+  not_artwork    : 0.0781
+  Front_Panel    : 0.0226
+  Side_Panel     : 0.0311
+  Back_Panel     : 0.0366
+  Extra_Areas    : 0.2503
+  Bottom_Panel   : 0.0120
+  Top_Panel      : 0.0106
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260505_20a44597-3d44-f0ea-e063-6294a90a903d_Rice tint.jpg
+  Artwork        : 0.1039
+  not_artwork    : 0.0781
+  Front_Panel    : 0.0226
+  Side_Panel     : 0.0311
+  Back_Panel     : 0.0366
+  Extra_Areas    : 0.2503
+  Bottom_Panel   : 0.0120
+  Top_Panel      : 0.0106
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260505_30086b1e-d876-2528-e063-6294a90a4e9f_Rice tint.jpg
+  Artwork        : 0.1039
+  not_artwork    : 0.0781
+  Front_Panel    : 0.0226
+  Side_Panel     : 0.0311
+  Back_Panel     : 0.0366
+  Extra_Areas    : 0.2503
+  Bottom_Panel   : 0.0120
+  Top_Panel      : 0.0106
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260505_42699816-1ae2-cfea-e063-6394a90aec1f_AMMONIA INHALANT_Box.jpg
+  Artwork        : 0.0207
+  not_artwork    : 0.0594
+  Extra_Areas    : 0.0268
+  -> CONCLUSION: Model absolutely failed to generate panel boxes even at conf=0.01
+
+Image: otc_20260505_50a73981-985a-0a70-e063-6394a90a89cf_MEDICUBE PDRN HYDRATING UV SERUM.jpg
+  Artwork        : 0.1568
+  not_artwork    : 0.0680
+  Side_Panel     : 0.0247
+  Back_Panel     : 0.0184
+  Extra_Areas    : 0.5791
+  Bottom_Panel   : 0.0145
+  Top_Panel      : 0.0132
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260505_50a7b64a-8b26-97ac-e063-6294a90ad77a_APRILSKIN MUGWORT CALMING SUNSCREEN.jpg
+  Artwork        : 0.6352
+  Front_Panel    : 0.0636
+  Side_Panel     : 0.1930
+  Back_Panel     : 0.1243
+  Extra_Areas    : 0.5900
+  Bottom_Panel   : 0.0203
+  Top_Panel      : 0.0217
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260506_2ecf7dac-97fd-49b3-87ce-9b473834bd7e_childrens-dye-free-allergy-relief.jpg
+  Artwork        : 0.0198
+  not_artwork    : 0.1544
+  Side_Panel     : 0.0110
+  Extra_Areas    : 0.1221
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_4c531280-bc5b-1cf2-e063-6394a90a034a_AOAOTK01(1).jpg
+  Artwork        : 0.0706
+  not_artwork    : 0.1014
+  Front_Panel    : 0.0613
+  Side_Panel     : 0.1322
+  Back_Panel     : 0.0558
+  Extra_Areas    : 0.7795
+  Bottom_Panel   : 0.0408
+  Top_Panel      : 0.0296
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_4d3e982f-3489-dce2-e063-6294a90a1b9d_shadedropsspf50.jpg
+  Artwork        : 0.0248
+  not_artwork    : 0.0781
+  Extra_Areas    : 0.0574
+  -> CONCLUSION: Model absolutely failed to generate panel boxes even at conf=0.01
+
+Image: otc_20260506_50b1a420-d5cd-6d61-e063-6294a90a0451_409103-Globe-menthol-roll-on-3pk-CDER.jpg
+  Artwork        : 0.0112
+  not_artwork    : 0.0136
+  Front_Panel    : 0.0463
+  Side_Panel     : 0.1825
+  Back_Panel     : 0.1381
+  Extra_Areas    : 0.9589
+  Bottom_Panel   : 0.1348
+  Top_Panel      : 0.0189
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260506_51021c69-d92b-0504-e063-6294a90a94e7_carton.jpg
+  not_artwork    : 0.0147
+  Front_Panel    : 0.0108
+  Side_Panel     : 0.0403
+  Back_Panel     : 0.0257
+  Extra_Areas    : 0.4000
+  Bottom_Panel   : 0.0486
+  Top_Panel      : 0.1412
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_5494106f-6792-409e-b63f-b63b98140959_carton120sprays.jpg
+  not_artwork    : 0.0166
+  Front_Panel    : 0.0105
+  Side_Panel     : 0.0382
+  Back_Panel     : 0.0299
+  Extra_Areas    : 0.5419
+  Bottom_Panel   : 0.0317
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_580c4622-6f9c-48ea-b01e-6ffba7273f24_Outer Label.jpg
+  Artwork        : 0.1024
+  not_artwork    : 0.1124
+  Extra_Areas    : 0.3413
+  -> CONCLUSION: Model absolutely failed to generate panel boxes even at conf=0.01
+
+Image: otc_20260506_58dab2f1-27b5-4522-bdc6-b710f20802eb_signature-select-cough-dm-orange-carton-image.jpg
+  Artwork        : 0.0365
+  not_artwork    : 0.0483
+  Front_Panel    : 0.0129
+  Side_Panel     : 0.0412
+  Back_Panel     : 0.0221
+  Extra_Areas    : 0.3033
+  Bottom_Panel   : 0.0144
+  Top_Panel      : 0.0161
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_7ee426fe-7a13-4327-b333-9651d6871a73_Label.jpg
+  Artwork        : 0.0138
+  not_artwork    : 0.1743
+  Front_Panel    : 0.0169
+  Side_Panel     : 0.0113
+  Back_Panel     : 0.0371
+  Extra_Areas    : 0.2761
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_84daeb67-5982-4b9e-b56a-4cc6a223a3f8_nicotine-gum-2-mg-and-4-mg-coated-mint-1.jpg
+  Artwork        : 0.1083
+  not_artwork    : 0.0574
+  Front_Panel    : 0.0547
+  Side_Panel     : 0.0673
+  Back_Panel     : 0.0562
+  Extra_Areas    : 0.1227
+  Bottom_Panel   : 0.0128
+  Top_Panel      : 0.0109
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_84daeb67-5982-4b9e-b56a-4cc6a223a3f8_nicotine-gum-2-mg-and-4-mg-coated-mint-2.jpg
+  Artwork        : 0.4473
+  not_artwork    : 0.2038
+  Front_Panel    : 0.0188
+  Side_Panel     : 0.0447
+  Back_Panel     : 0.0144
+  Extra_Areas    : 0.1408
+  Bottom_Panel   : 0.0119
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_8c5e99d7-9d2d-488b-a804-496edafd30cf_nicotine-gum-2-mg-and-4-mg-coated-fruit-1.jpg
+  Artwork        : 0.0620
+  not_artwork    : 0.0590
+  Front_Panel    : 0.0581
+  Side_Panel     : 0.0429
+  Back_Panel     : 0.0362
+  Extra_Areas    : 0.1087
+  Bottom_Panel   : 0.0123
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_8c5e99d7-9d2d-488b-a804-496edafd30cf_nicotine-gum-2-mg-and-4-mg-coated-fruit-2.jpg
+  Artwork        : 0.0701
+  not_artwork    : 0.1717
+  Front_Panel    : 0.0219
+  Side_Panel     : 0.0816
+  Back_Panel     : 0.0459
+  Extra_Areas    : 0.2040
+  Bottom_Panel   : 0.0274
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_b8417956-4c53-444e-823a-a87748eb0a08_825-6E-miconazole-7.jpg
+  Artwork        : 0.0731
+  not_artwork    : 0.1224
+  Side_Panel     : 0.0484
+  Back_Panel     : 0.0372
+  Extra_Areas    : 0.6075
+  Bottom_Panel   : 0.0231
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_bba219a4-de83-76fd-e053-2995a90a2d69_Screenshot 2026-04-13 130535.jpg
+  Artwork        : 0.0117
+  not_artwork    : 0.0326
+  Side_Panel     : 0.0107
+  Extra_Areas    : 0.0936
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_be3c8255-7eeb-40f1-aba4-7ebaeb7c1eca_kroger-44-327-1.jpg
+  not_artwork    : 0.0365
+  Front_Panel    : 0.0364
+  Side_Panel     : 0.0228
+  Back_Panel     : 0.0177
+  Extra_Areas    : 0.6834
+  Bottom_Panel   : 0.0361
+  Top_Panel      : 0.0186
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260506_d4f91d5a-600a-4255-a6e1-e7e7197848c7_fusion-01.jpg
+  Artwork        : 0.0140
+  not_artwork    : 0.0527
+  Front_Panel    : 0.0537
+  Side_Panel     : 0.1691
+  Back_Panel     : 0.1439
+  Extra_Areas    : 0.5163
+  Bottom_Panel   : 0.0407
+  Top_Panel      : 0.0213
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260506_d69ce3d4-7ca4-4fe3-b49e-6655e48d6963_C00011253_MIRALAX_RESTORALAX_MiralaxPowder_10ct_Carton_r1_clean.jpg
+  Artwork        : 0.0370
+  not_artwork    : 0.0326
+  Extra_Areas    : 0.0650
+  -> CONCLUSION: Model absolutely failed to generate panel boxes even at conf=0.01
+
+Image: otc_20260506_f3feca65-adc1-469f-bef6-12c860599abe_exchange-select-44-519-1.jpg
+  not_artwork    : 0.0596
+  Side_Panel     : 0.0461
+  Back_Panel     : 0.0320
+  Extra_Areas    : 0.0251
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260507_51169bed-2091-ad2b-e063-6294a90a84b6_0781.jpg
+  Artwork        : 0.3861
+  not_artwork    : 0.0526
+  Front_Panel    : 0.0589
+  Side_Panel     : 0.2417
+  Back_Panel     : 0.1688
+  Extra_Areas    : 0.3848
+  Bottom_Panel   : 0.0107
+  Top_Panel      : 0.0154
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260507_51169bed-2091-ad2b-e063-6294a90a84b6_0782.jpg
+  Artwork        : 0.1963
+  not_artwork    : 0.0248
+  Front_Panel    : 0.0229
+  Side_Panel     : 0.0340
+  Back_Panel     : 0.0279
+  Extra_Areas    : 0.4235
+  Bottom_Panel   : 0.0132
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260507_51169bed-2091-ad2b-e063-6294a90a84b6_0783.jpg
+  Artwork        : 0.0812
+  not_artwork    : 0.0816
+  Side_Panel     : 0.0120
+  Extra_Areas    : 0.1573
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260507_51169bed-2091-ad2b-e063-6294a90a84b6_0784.jpg
+  Artwork        : 0.0480
+  not_artwork    : 0.0159
+  Side_Panel     : 0.0105
+  Extra_Areas    : 0.5907
+  Bottom_Panel   : 0.0202
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260507_511eaced-c4d8-ae94-e063-6394a90a320e_pegoqd001.jpg
+  not_artwork    : 0.0141
+  Front_Panel    : 0.0105
+  Side_Panel     : 0.0234
+  Back_Panel     : 0.0169
+  Extra_Areas    : 0.4814
+  Bottom_Panel   : 0.0338
+  Top_Panel      : 0.0170
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260507_512185a5-5c1d-ef9f-e063-6394a90a81af_AOAO002.jpg
+  Artwork        : 0.0182
+  not_artwork    : 0.0689
+  Side_Panel     : 0.0138
+  Extra_Areas    : 0.3818
+  Bottom_Panel   : 0.0214
+  Top_Panel      : 0.0133
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260507_692d7e0f-50d4-4abb-8c74-36bc98064fe7_30ml-1percent.jpg
+  Artwork        : 0.1193
+  not_artwork    : 0.0581
+  Front_Panel    : 0.0241
+  Side_Panel     : 0.0455
+  Back_Panel     : 0.0348
+  Extra_Areas    : 0.3907
+  Bottom_Panel   : 0.0146
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_08e74a8d-8e8d-4cda-9adc-ea2ff4068353_equate-daytime-nighttime-vapor-ice-carton-image-1.jpg
+  Artwork        : 0.0129
+  not_artwork    : 0.0332
+  Side_Panel     : 0.0255
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_0f8843be-50a3-442c-9016-d9da3b444f60_publix-all-day-relief-carton-image.jpg
+  not_artwork    : 0.0482
+  Extra_Areas    : 0.0107
+  -> CONCLUSION: Model absolutely failed to generate panel boxes even at conf=0.01
+
+Image: otc_20260509_1b0b6716-f4e1-4a3b-9f06-1c95f1f8a17a_Outer Label.jpg
+  Artwork        : 0.0797
+  not_artwork    : 0.2002
+  Front_Panel    : 0.0349
+  Side_Panel     : 0.0644
+  Back_Panel     : 0.0365
+  Extra_Areas    : 0.0630
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_2a42d8ce-e7f2-caa5-e063-6294a90ac01f_4873 BX MASTER (R251210-3)OL.jpg
+  Artwork        : 0.1221
+  not_artwork    : 0.0309
+  Front_Panel    : 0.0292
+  Side_Panel     : 0.0746
+  Back_Panel     : 0.1116
+  Extra_Areas    : 0.4413
+  Bottom_Panel   : 0.0314
+  Top_Panel      : 0.0151
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_2fea3533-8218-4875-affe-5b33a22c553a_quality-plus-44-533-1.jpg
+  Artwork        : 0.0469
+  not_artwork    : 0.1031
+  Side_Panel     : 0.0211
+  Back_Panel     : 0.0163
+  Extra_Areas    : 0.0485
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_374a2ca3-ee04-09a7-e063-6394a90ab760_Children Glycerin Suppository.jpg
+  Artwork        : 0.2971
+  not_artwork    : 0.0323
+  Front_Panel    : 0.0343
+  Side_Panel     : 0.1680
+  Back_Panel     : 0.0674
+  Extra_Areas    : 0.3438
+  Bottom_Panel   : 0.0235
+  Top_Panel      : 0.0832
+  -> CONCLUSION: Panel has conf >= 0.15, but was suppressed by NMS from Extra_Areas!
+
+Image: otc_20260509_3c28a93a-dd42-65b8-e063-6294a90ae6ab_image3(1).jpg
+  Artwork        : 0.0163
+  not_artwork    : 0.0297
+  Front_Panel    : 0.0743
+  Side_Panel     : 0.0625
+  Back_Panel     : 0.0502
+  Extra_Areas    : 0.0818
+  Bottom_Panel   : 0.0286
+  Top_Panel      : 0.0258
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_4587a61d-139e-2a5b-e063-6394a90a1311_010 carton 150 tab.jpg
+  Artwork        : 0.0105
+  not_artwork    : 0.0253
+  Front_Panel    : 0.0380
+  Side_Panel     : 0.0266
+  Back_Panel     : 0.0369
+  Extra_Areas    : 0.3788
+  Bottom_Panel   : 0.0185
+  Top_Panel      : 0.0723
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_4856cd7b-ccdf-4546-9c65-236ebaac3dca_walgreens-44-481-childrens-allergy-relief-1.jpg
+  not_artwork    : 0.1307
+  Side_Panel     : 0.0535
+  Back_Panel     : 0.0363
+  Extra_Areas    : 0.4695
+  Bottom_Panel   : 0.0261
+  Top_Panel      : 0.0422
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_49f408a8-b182-4172-84aa-390bff31d5d5_foster-and-thrive-44-226-1.jpg
+  Artwork        : 0.1588
+  not_artwork    : 0.0140
+  Side_Panel     : 0.0105
+  Extra_Areas    : 0.1538
+  Bottom_Panel   : 0.0209
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_4a0c744f-4ad8-445e-bab1-7ffee35bf861_exchange-select-44-292-1.jpg
+  not_artwork    : 0.1082
+  Front_Panel    : 0.0222
+  Side_Panel     : 0.0731
+  Back_Panel     : 0.0825
+  Extra_Areas    : 0.0292
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_4a7e868d-6310-6ee4-e063-6394a90aebce_49404-157-01.jpg
+  Artwork        : 0.2625
+  not_artwork    : 0.0395
+  Front_Panel    : 0.0316
+  Side_Panel     : 0.0483
+  Back_Panel     : 0.0619
+  Extra_Areas    : 0.6594
+  Bottom_Panel   : 0.0196
+  Top_Panel      : 0.0121
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_4b0c0a3c-7145-97ca-e063-6394a90a1a96_92-82027 0426 PKG 3 Antibiotic plus Pain Relief.jpg
+  Artwork        : 0.0827
+  not_artwork    : 0.1028
+  Front_Panel    : 0.0384
+  Side_Panel     : 0.0940
+  Back_Panel     : 0.0237
+  Extra_Areas    : 0.2058
+  Bottom_Panel   : 0.0299
+  Top_Panel      : 0.0585
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_519eb216-9fa6-4d60-a2a4-3310bdb5b4ab_leader-44-413-1.jpg
+  Artwork        : 0.3261
+  not_artwork    : 0.0413
+  Front_Panel    : 0.0263
+  Side_Panel     : 0.0781
+  Back_Panel     : 0.0494
+  Extra_Areas    : 0.1359
+  Bottom_Panel   : 0.0227
+  Top_Panel      : 0.0104
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_77688e56-4293-4f37-9f48-fe09267ff619_walgreens-nicotine-lozenge-mint-carton-image.jpg
+  Artwork        : 0.0333
+  not_artwork    : 0.0649
+  Front_Panel    : 0.0255
+  Side_Panel     : 0.0669
+  Back_Panel     : 0.0475
+  Extra_Areas    : 0.0754
+  Bottom_Panel   : 0.0128
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+
+Image: otc_20260509_89c02e55-fa08-4001-96fc-8a01e7e74d5a_equaline-naproxen-sodium-carton-image.jpg
+  not_artwork    : 0.0328
+  Extra_Areas    : 0.0230
+  -> CONCLUSION: Model absolutely failed to generate panel boxes even at conf=0.01
+
+Image: otc_20260509_af5c3b3b-079f-4ee6-a9a4-a13ee8cd99a5_little-remedies-infant-fever-pain-reliever---berry-01.jpg
+  not_artwork    : 0.0190
+  Front_Panel    : 0.0150
+  Side_Panel     : 0.0584
+  Back_Panel     : 0.0182
+  Extra_Areas    : 0.2981
+  Bottom_Panel   : 0.0109
+  -> CONCLUSION: Panels exist but confidence is below 0.15!
+

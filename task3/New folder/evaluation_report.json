@@ -1,0 +1,8 @@
+{
+    "images_processed": 414,
+    "yolo_success_rate": 0.6087,
+    "ocr_success_rate": 0.5918,
+    "rx_found_count": 4,
+    "rx_not_found_count": 241,
+    "ocr_uncertain_count": 169
+}

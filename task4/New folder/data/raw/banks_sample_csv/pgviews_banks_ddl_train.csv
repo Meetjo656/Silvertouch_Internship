@@ -1,0 +1,106 @@
+"ddl"
+"CREATE TABLE chatbot_scb_master_private (
+    id TEXT,
+    parent_id TEXT,
+    scb_name TEXT,  -- Name of the state cooperative bank
+    scb_registration_no TEXT,  -- Registration number of the state cooperative bank
+    registration_date TEXT,  -- Registration date of the state cooperative bank
+    rbi_license TEXT,  -- RBI license number of the state cooperative bank
+    rbi_license_date TEXT,  -- RBI license date of the state cooperative bank
+    ifsc_code TEXT,  -- IFSC code of the state cooperative bank
+    registration_authority_name TEXT,
+    location_urban_rural TEXT,  -- Location of the registered office of the state cooperative bank ( 1 = Urban, 2 = Rural )
+    state_name TEXT,  -- State Name of the state cooperative bank
+    district_name TEXT,  -- District Name of the state cooperative bank
+    operation_area_location TEXT,
+    is_city TEXT,  -- Flag indicating if the registered office of the state cooperative bank is in a city ( 1 = Yes, 0 = No )
+    city_name TEXT,  -- Name of the city
+    block_name TEXT,  -- Block Name of the bank
+    gram_panchayat_name TEXT,  -- Gram Panchayat Name of the bank
+    village_name TEXT,  -- Village Name of the bank
+    urban_local_body_category_name TEXT,
+    urban_local_body_name TEXT,
+    ward_name TEXT,  -- Ward Name of the bank
+    pin_code TEXT,  -- Pin Code of the bank
+    full_address TEXT,  -- Full Address of the bank
+    functional_status TEXT,  -- Functional Status of the bank ( 1 = Functional , 2 = Under Liquidation , 3 = Non Functional )
+    number_of_member TEXT,  -- Number of members of the bank
+    number_of_branches TEXT,  -- Total Number of branches of the bank
+    area_of_operation_states TEXT,  -- List of the states where the bank operates (Multile entries comma seperated)
+    latest_audit_year TEXT,  -- Latest audit year of the bank
+    is_profit_making TEXT,  -- Whether the bank is profit making (1=Yes, 0=No)
+    net_profit TEXT,  -- Net profit of the bank (in Lakhs)
+    net_loss TEXT,  -- Net loss of the bank (in Lakhs)
+    annual_turnover TEXT,  -- Annual turnover of the bank (in Lakhs)
+    annual_income TEXT,  -- Annual income of the bank (in Lakhs)
+    annual_expense TEXT,  -- Annual expense of the bank (in Lakhs)
+    is_dividend_paid TEXT,  -- Whether the bank has paid dividend (1=Yes, 0=No)
+    dividend_paid_rate TEXT,  -- Dividend rate of the bank (in percentage)
+    total_assets TEXT,  -- Total assets of the bank (in Lakhs)
+    total_liabilities TEXT,  -- Total liabilities of the bank (in Lakhs)
+    office_building_type_name TEXT,  -- Type of office building of the bank
+    has_office_building TEXT,  -- Whether the bank has office building (1=Yes, 0=No)
+    is_scheme_implemented TEXT,  -- Whether the bank has implementing any Central or Government scheme (1=Yes, 0=No)
+    dccb_bank_type_membership_name TEXT,  -- Type of membership of the bank
+    dccb_bank_member TEXT,  -- Whether the bank is member of DCCB (1=Yes, 0=No)
+    dccb_bank_member_count TEXT,  -- Number of DCCB memberships of the bank
+    dccb_bank_is_member TEXT,  -- Id of the DCCB bank (FK) which are members of this bank (Multile entries comma seperated) used in dccb_master_private
+    dccb_bank_class_membership TEXT,  -- Class of membership of the bank ( 1 = Ordinary/Regular/Voting , 2 = Associate/Nominal/Voting )
+    pacs_member TEXT,  -- Whether the PACS is the member of this bank (1=Yes, 0=No)
+    pacs_member_class_membership TEXT,  -- Class of membership of the bank ( 1 = Ordinary/Regular/Voting , 2 = Associate/Nominal/Voting )
+    pacs_member_count TEXT,  -- Number of PACS memberships of the bank
+    society_district_names TEXT,  -- List of the districts of the PACS (Multile entries comma seperated) which are members of this bank
+    pacs_is_member_affiliated TEXT,  -- Id of the PACS (FK) which are members of this bank (Multile entries comma seperated)
+    pacs_is_member_not_affiliated TEXT,
+    other_member TEXT,  -- Whether the bank has any other members besides DCCB and PACS (1=Yes, 0=No)
+    other_member_count TEXT,  -- Number of other members of the bank
+    status TEXT,  -- status of the bank (1=Active, 0=Inactive)
+    is_delete TEXT,  -- Is the bank is deleted or not ( 1 = Yes, 0 = No)
+    is_draft TEXT,  -- Is the bank is draft or not ( 1 = Yes, 0 = No)
+    is_comp TEXT,  -- Wheather the bank is computerised or not (1=Yes, 0=No)
+    ncd_id TEXT  -- Main NCD ID of the bank
+);"
+"CREATE TABLE chatbot_scb_contact_details ( -- This table contains the contact details of the persons associated with the banks.
+    id TEXT,
+    state_cooperative_bank_id TEXT,  -- Id of the state cooperative bank (FK) used in scb_master_private
+    contact_person TEXT,  -- Name of the contact person
+    designation_name TEXT,  -- Designation of the contact person
+    phone_number TEXT,  -- Phone number of the contact person
+    landline TEXT,  -- Landline number of the contact person
+    email TEXT  -- Email of the contact person
+);"
+"CREATE TABLE chatbot_scb_schemes_private ( -- This table contains information about the schemes implemented by the banks.
+    id TEXT,
+    state_cooperative_bank_id TEXT,  -- Id of the state cooperative bank (FK) used in scb_master_private
+    scheme_type TEXT,  -- Type of scheme (1=Central Govt Scheme, 2=State Govt Scheme)
+    govt_scheme_name TEXT,  -- Name of the scheme
+    total_amount_extended TEXT  -- Total amount extended under the scheme (in Lakhs)
+);"
+"CREATE TABLE chatbot_scb_area_rural_private ( -- This table contains information about the rural areas where the banks operate.
+    id TEXT,
+    scb_id TEXT,  -- Id of the state cooperative bank (FK) used in scb_master_private
+    state_name TEXT,  -- Name of the state
+    district_name TEXT,  -- Name of the District
+    block_name TEXT  -- Name of the Block
+);"
+"CREATE TABLE chatbot_scb_area_urban_private ( -- This table contains information about the urban areas where the banks operate.
+    id TEXT,
+    scb_id TEXT,  -- Id of the state cooperative bank (FK) used in scb_master_private
+    state_name TEXT,  -- Name of the state
+    district_name TEXT,  -- Name of the district
+    localbody_type_name TEXT,  -- Type of local body
+    local_body_name TEXT,  -- Name of the local body
+    ward_name TEXT  -- Name of the ward
+);"
+"CREATE TABLE chatbot_scb_other_members_private ( -- This table contains information about the other members of the state cooperative banks.
+    id TEXT,
+    state_cooperative_bank_id TEXT,  -- Id of the state cooperative bank (FK) used in scb_master_private
+    org_name TEXT,  -- Name of the other member organization
+    type_membership_name TEXT,  -- Type of membership of the other member
+    class_membership TEXT,  -- Class of membership of the other member (1=Ordinary/Regular/Voting, 2=Associate/Nominal/Voting)
+    primary_activity_name TEXT,  -- Primary activity of the other member
+    district_name TEXT,  -- Name of the district where the other member is located
+    address TEXT,  -- Address of the other member
+    phone_number TEXT,  -- Phone number of the other member
+    email TEXT  -- Email of the other member
+);"

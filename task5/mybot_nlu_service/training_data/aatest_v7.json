@@ -1,0 +1,54 @@
+{
+  "workflowId": "aatest",
+  "augmentationFactor": 3,
+  "subIntents": [
+    {
+      "name": "kjhk_fbhb",
+      "label": "ghfdyx",
+      "description": "fytd",
+      "examples": [
+        "dfdgggfjhf",
+        "ghhvhgv",
+        "bvccchgg",
+        "jvhgghjj",
+        "vbcvjhl;",
+        "jvghvhl'"
+      ],
+      "requiredEntities": [
+        "Appid"
+      ]
+    },
+    {
+      "name": "fafafa",
+      "label": "rqrsda",
+      "description": "rqwrqwf",
+      "examples": [
+        "wqrqwrff",
+        "erwefcsdv vdvs",
+        "gfhfhfgbbx  hdhd fhdf dhfd",
+        "zdfh fh hfd hdfh",
+        "dfh hdfhdz fhdf d",
+        "xfghxxgf hhd fhdf dg"
+      ],
+      "requiredEntities": [
+        "Appid"
+      ]
+    },
+    {
+      "name": "jhghvbhj",
+      "label": "dgjzgjhf",
+      "description": "xfjxfj",
+      "examples": [
+        "fgjxfjxfjxf",
+        "fxgjxfjg",
+        "fjxfg hxfghxf dhdfxh",
+        "fghfch dhdzh dhdhz",
+        "dfhdfh hdfhd dfhdfgd"
+      ],
+      "requiredEntities": [
+        "Appid"
+      ]
+    }
+  ],
+  "entities": []
+}

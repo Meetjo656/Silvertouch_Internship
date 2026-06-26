@@ -29,3 +29,21 @@ task3/audit_samples
 task3/dataset_cleaned
 task3/Only Images
 task3/outputs
+# Large archives
+*.zip
+*.tar.gz
+
+# Task 4 & 5 Non-essentials
+task4/data/outputs/
+*.npz
+*.pkl
+*.db
+*.sqlite3
+.env
+task4/New folder/src/training/unsloth_compiled_cache/
+task5/mybot_nlu_service/embedding_cache/
+task5/mybot_nlu_service/trained_models/
+task3/final_training_package/dataset/
+task3/final_training_package/outputs/
+task3/final_training_package/weights/
+

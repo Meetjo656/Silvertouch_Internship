@@ -1,0 +1,223 @@
+[
+  {
+    "point_id": "01986ddf-1e85-5599-a8b6-80c92d374b6b",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_scb_area_rural_private ( /* This table contains information about the rural areas where the banks operate. */ id TEXT, scb_id TEXT, /* Id of the state cooperative bank (FK) used in scb_master_private */ state_name TEXT, /* Name of the state */ district_name TEXT, /* Name of the District */ block_name TEXT /* Name of the Block */ );",
+      "type": "ddl",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_area_rural_private"
+      ],
+      "columns": [
+        "chatbot_scb_area_rural_private.id",
+        "chatbot_scb_area_rural_private.scb_id",
+        "chatbot_scb_area_rural_private.state_name",
+        "chatbot_scb_area_rural_private.district_name",
+        "chatbot_scb_area_rural_private.block_name"
+      ],
+      "business_terms": [
+        "rural",
+        "banking",
+        "operation",
+        "service",
+        "coverage"
+      ]
+    }
+  },
+  {
+    "point_id": "23e47167-c48e-5935-a816-b88368f85b32",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_scb_master_private ( id TEXT, parent_id TEXT, scb_name TEXT, /* Name of the state cooperative bank */ scb_registration_no TEXT, /* Registration number of the state cooperative bank */ registration_date TEXT, /* Registration date of the state cooperative bank */ rbi_license TEXT, /* RBI license number of the state cooperative bank */ rbi_license_date TEXT, /* RBI license date of the state cooperative bank */ ifsc_code TEXT, /* IFSC code of the state cooperative bank */ registration_authority_name TEXT, location_urban_rural TEXT, /* Location of the registered office of the state cooperative bank ( 1 = Urban, 2 = Rural ) */ state_name TEXT, /* State Name of the state cooperative bank */ district_name TEXT, /* District Name of the state cooperative bank */ operation_area_location TEXT, is_city TEXT, /* Flag indicating if the registered office of the state cooperative bank is in a city ( 1 = Yes, 0 = No ) */ city_name TEXT, /* Name of the city */ block_name TEXT, /* Block Name of the bank */ gram_panchayat_name TEXT, /* Gram Panchayat Name of the bank */ village_name TEXT, /* Village Name of the bank */ urban_local_body_category_name TEXT, urban_local_body_name TEXT, ward_name TEXT, /* Ward Name of the bank */ pin_code TEXT, /* Pin Code of the bank */ full_address TEXT, /* Full Address of the bank */ functional_status TEXT, /* Functional Status of the bank ( 1 = Functional , 2 = Under Liquidation , 3 = Non Functional ) */ number_of_member TEXT, /* Number of members of the bank */ number_of_branches TEXT, /* Total Number of branches of the bank */ area_of_operation_states TEXT, /* List of the states where the bank operates (Multile entries comma seperated) */ latest_audit_year TEXT, /* Latest audit year of the bank */ is_profit_making TEXT, /* Whether the bank is profit making (1=Yes, 0=No) */ net_profit TEXT, /* Net profit of the bank (in Lakhs) */ net_loss TEXT, /* Net loss of the bank (in Lakhs) */ annual_turnover TEXT, /* Annual turnover of the bank (in Lakhs) */ annual_income TEXT, /* Annual income of the bank (in Lakhs) */ annual_expense TEXT, /* Annual expense of the bank (in Lakhs) */ is_dividend_paid TEXT, /* Whether the bank has paid dividend (1=Yes, 0=No) */ dividend_paid_rate TEXT, /* Dividend rate of the bank (in percentage) */ total_assets TEXT, /* Total assets of the bank (in Lakhs) */ total_liabilities TEXT, /* Total liabilities of the bank (in Lakhs) */ office_building_type_name TEXT, /* Type of office building of the bank */ has_office_building TEXT, /* Whether the bank has office building (1=Yes, 0=No) */ is_scheme_implemented TEXT, /* Whether the bank has implementing any Central or Government scheme (1=Yes, 0=No) */ dccb_bank_type_membership_name TEXT, /* Type of membership of the bank */ dccb_bank_member TEXT, /* Whether the bank is member of DCCB (1=Yes, 0=No) */ dccb_bank_member_count TEXT, /* Number of DCCB memberships of the bank */ dccb_bank_is_member TEXT, /* Id of the DCCB bank (FK) which are members of this bank (Multile entries comma seperated) used in dccb_master_private */ dccb_bank_class_membership TEXT, /* Class of membership of the bank ( 1 = Ordinary/Regular/Voting , 2 = Associate/Nominal/Voting ) */ pacs_member TEXT, /* Whether the PACS is the member of this bank (1=Yes, 0=No) */ pacs_member_class_membership TEXT, /* Class of membership of the bank ( 1 = Ordinary/Regular/Voting , 2 = Associate/Nominal/Voting ) */ pacs_member_count TEXT, /* Number of PACS memberships of the bank */ society_district_names TEXT, /* List of the districts of the PACS (Multile entries comma seperated) which are members of this bank */ pacs_is_member_affiliated TEXT, /* Id of the PACS (FK) which are members of this bank (Multile entries comma seperated) */ pacs_is_member_not_affiliated TEXT, other_member TEXT, /* Whether the bank has any other members besides DCCB and PACS (1=Yes, 0=No) */ other_member_count TEXT, /* Number of other members of the bank */ status TEXT, /* status of the bank (1=Active, 0=Inactive) */ is_delete TEXT, /* Is the bank is deleted or not ( 1 = Yes, 0 = No) */ is_draft TEXT, /* Is the bank is draft or not ( 1 = Yes, 0 = No) */ is_comp TEXT, /* Wheather the bank is computerised or not (1=Yes, 0=No) */ ncd_id TEXT /* Main NCD ID of the bank */ );",
+      "type": "ddl",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_master_private"
+      ],
+      "columns": [
+        "chatbot_scb_master_private.id",
+        "chatbot_scb_master_private.parent_id",
+        "chatbot_scb_master_private.scb_name",
+        "chatbot_scb_master_private.scb_registration_no",
+        "chatbot_scb_master_private.registration_date",
+        "chatbot_scb_master_private.rbi_license",
+        "chatbot_scb_master_private.rbi_license_date",
+        "chatbot_scb_master_private.ifsc_code",
+        "chatbot_scb_master_private.registration_authority_name",
+        "chatbot_scb_master_private.location_urban_rural",
+        "chatbot_scb_master_private.state_name",
+        "chatbot_scb_master_private.district_name",
+        "chatbot_scb_master_private.operation_area_location",
+        "chatbot_scb_master_private.is_city",
+        "chatbot_scb_master_private.city_name",
+        "chatbot_scb_master_private.block_name",
+        "chatbot_scb_master_private.gram_panchayat_name",
+        "chatbot_scb_master_private.village_name",
+        "chatbot_scb_master_private.urban_local_body_category_name",
+        "chatbot_scb_master_private.urban_local_body_name",
+        "chatbot_scb_master_private.ward_name",
+        "chatbot_scb_master_private.pin_code",
+        "chatbot_scb_master_private.full_address",
+        "chatbot_scb_master_private.functional_status",
+        "chatbot_scb_master_private.number_of_member",
+        "chatbot_scb_master_private.number_of_branches",
+        "chatbot_scb_master_private.area_of_operation_states",
+        "chatbot_scb_master_private.latest_audit_year",
+        "chatbot_scb_master_private.is_profit_making",
+        "chatbot_scb_master_private.net_profit",
+        "chatbot_scb_master_private.net_loss",
+        "chatbot_scb_master_private.annual_turnover",
+        "chatbot_scb_master_private.annual_income",
+        "chatbot_scb_master_private.annual_expense",
+        "chatbot_scb_master_private.is_dividend_paid",
+        "chatbot_scb_master_private.dividend_paid_rate",
+        "chatbot_scb_master_private.total_assets",
+        "chatbot_scb_master_private.total_liabilities",
+        "chatbot_scb_master_private.office_building_type_name",
+        "chatbot_scb_master_private.has_office_building",
+        "chatbot_scb_master_private.scb_dcb_flag",
+        "chatbot_scb_master_private.is_scheme_implemented",
+        "chatbot_scb_master_private.dccb_bank_type_membership_name",
+        "chatbot_scb_master_private.dccb_bank_member",
+        "chatbot_scb_master_private.dccb_bank_member_count",
+        "chatbot_scb_master_private.dccb_bank_is_member",
+        "chatbot_scb_master_private.dccb_bank_class_membership",
+        "chatbot_scb_master_private.pacs_member",
+        "chatbot_scb_master_private.pacs_member_class_membership",
+        "chatbot_scb_master_private.pacs_member_count",
+        "chatbot_scb_master_private.society_district_names",
+        "chatbot_scb_master_private.pacs_is_member_affiliated",
+        "chatbot_scb_master_private.pacs_is_member_not_affiliated",
+        "chatbot_scb_master_private.other_member",
+        "chatbot_scb_master_private.other_member_count",
+        "chatbot_scb_master_private.member_details",
+        "chatbot_scb_master_private.is_comp",
+        "chatbot_scb_master_private.status",
+        "chatbot_scb_master_private.is_delete",
+        "chatbot_scb_master_private.is_draft",
+        "chatbot_scb_master_private.created_at",
+        "chatbot_scb_master_private.updated",
+        "chatbot_scb_master_private.ncd_id"
+      ],
+      "business_terms": [
+        "state",
+        "cooperative",
+        "bank",
+        "private",
+        "master"
+      ]
+    }
+  },
+  {
+    "point_id": "3f77a9e7-55c9-5757-9e75-27dc2ec07efd",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_scb_other_members_private ( /* This table contains information about the other members of the state cooperative banks. */ id TEXT, state_cooperative_bank_id TEXT, /* Id of the state cooperative bank (FK) used in scb_master_private */ org_name TEXT, /* Name of the other member organization */ type_membership_name TEXT, /* Type of membership of the other member */ class_membership TEXT, /* Class of membership of the other member (1=Ordinary/Regular/Voting, 2=Associate/Nominal/Voting) */ primary_activity_name TEXT, /* Primary activity of the other member */ district_name TEXT, /* Name of the district where the other member is located */ address TEXT, /* Address of the other member */ phone_number TEXT, /* Phone number of the other member */ email TEXT /* Email of the other member */ );",
+      "type": "ddl",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_other_members_private"
+      ],
+      "columns": [
+        "chatbot_scb_other_members_private.id",
+        "chatbot_scb_other_members_private.state_cooperative_bank_id",
+        "chatbot_scb_other_members_private.org_name",
+        "chatbot_scb_other_members_private.type_membership_name",
+        "chatbot_scb_other_members_private.class_membership",
+        "chatbot_scb_other_members_private.primary_activity_name",
+        "chatbot_scb_other_members_private.district_name",
+        "chatbot_scb_other_members_private.address",
+        "chatbot_scb_other_members_private.phone_number",
+        "chatbot_scb_other_members_private.email",
+        "chatbot_scb_other_members_private.member_type",
+        "chatbot_scb_other_members_private.member_count",
+        "chatbot_scb_other_members_private.status",
+        "chatbot_scb_other_members_private.created"
+      ],
+      "business_terms": [
+        "state",
+        "cooperative",
+        "banks",
+        "members",
+        "private"
+      ]
+    }
+  },
+  {
+    "point_id": "57bc4826-4614-558b-928c-2c93894da7bc",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_scb_area_urban_private ( /* This table contains information about the urban areas where the banks operate. */ id TEXT, scb_id TEXT, /* Id of the state cooperative bank (FK) used in scb_master_private */ state_name TEXT, /* Name of the state */ district_name TEXT, /* Name of the district */ localbody_type_name TEXT, /* Type of local body */ local_body_name TEXT, /* Name of the local body */ ward_name TEXT /* Name of the ward */ );",
+      "type": "ddl",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_area_urban_private"
+      ],
+      "columns": [
+        "chatbot_scb_area_urban_private.id",
+        "chatbot_scb_area_urban_private.scb_id",
+        "chatbot_scb_area_urban_private.state_name",
+        "chatbot_scb_area_urban_private.district_name",
+        "chatbot_scb_area_urban_private.localbody_type_name",
+        "chatbot_scb_area_urban_private.local_body_name",
+        "chatbot_scb_area_urban_private.ward_name"
+      ],
+      "business_terms": [
+        "urban",
+        "banks",
+        "operation",
+        "areas",
+        "private"
+      ]
+    }
+  },
+  {
+    "point_id": "964d5e27-fad6-5998-851f-794312f6791d",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_scb_contact_details ( /* This table contains the contact details of the persons associated with the banks. */ id TEXT, state_cooperative_bank_id TEXT, /* Id of the state cooperative bank (FK) used in scb_master_private */ contact_person TEXT, /* Name of the contact person */ designation_name TEXT, /* Designation of the contact person */ phone_number TEXT, /* Phone number of the contact person */ landline TEXT, /* Landline number of the contact person */ email TEXT /* Email of the contact person */ );",
+      "type": "ddl",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_contact_details"
+      ],
+      "columns": [
+        "chatbot_scb_contact_details.id",
+        "chatbot_scb_contact_details.state_cooperative_bank_id",
+        "chatbot_scb_contact_details.contact_person",
+        "chatbot_scb_contact_details.designation_name",
+        "chatbot_scb_contact_details.phone_number",
+        "chatbot_scb_contact_details.landline",
+        "chatbot_scb_contact_details.email"
+      ],
+      "business_terms": [
+        "bank",
+        "contact",
+        "person",
+        "association",
+        "details"
+      ]
+    }
+  },
+  {
+    "point_id": "d812b5ea-b447-5f8c-8255-346a4810a603",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_scb_schemes_private ( /* This table contains information about the schemes implemented by the banks. */ id TEXT, state_cooperative_bank_id TEXT, /* Id of the state cooperative bank (FK) used in scb_master_private */ scheme_type TEXT, /* Type of scheme (1=Central Govt Scheme, 2=State Govt Scheme) */ govt_scheme_name TEXT, /* Name of the scheme */ total_amount_extended TEXT /* Total amount extended under the scheme (in Lakhs) */ );",
+      "type": "ddl",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_schemes_private"
+      ],
+      "columns": [
+        "chatbot_scb_schemes_private.id",
+        "chatbot_scb_schemes_private.state_cooperative_bank_id",
+        "chatbot_scb_schemes_private.scheme_type",
+        "chatbot_scb_schemes_private.govt_scheme_name",
+        "chatbot_scb_schemes_private.total_amount_extended"
+      ],
+      "business_terms": [
+        "schemes",
+        "banks",
+        "private",
+        "implementation",
+        "financial"
+      ]
+    }
+  }
+]

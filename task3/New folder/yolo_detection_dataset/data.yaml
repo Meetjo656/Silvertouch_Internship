@@ -1,0 +1,16 @@
+  path: "d:/Silvertouch Internship/task3/yolo_detection_dataset"
+  train: train/images
+  val: valid/images
+  test: test/images
+
+  nc: 8
+
+  names:
+    0: Artwork
+    1: Not_Artwork
+    2: Front_Panel
+    3: Side_Panel
+    4: Back_Panel
+    5: Extra_Areas
+    6: Bottom_Part
+    7: Top_Panel

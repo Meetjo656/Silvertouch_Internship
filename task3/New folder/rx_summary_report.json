@@ -1,0 +1,12 @@
+{
+    "images_processed": 414,
+    "front_panel_images": 217,
+    "back_panel_images": 197,
+    "side_panel_images": 0,
+    "top_panel_images": 0,
+    "bottom_panel_images": 0,
+    "total_rx_found": 2,
+    "images_with_rx": 2,
+    "images_without_rx": 412,
+    "average_ocr_confidence": 0.8027
+}

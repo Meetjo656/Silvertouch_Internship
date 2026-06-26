@@ -1,0 +1,77 @@
+{
+  "workflowId": "application-status-anonymous",
+  "augmentationFactor": 3,
+  "subIntents": [
+    {
+      "name": "check_specific_application",
+      "label": "Check Status",
+      "description": "User wants to check status of a specific application by ID",
+      "examples": [
+        "check my application status",
+        "application ID status",
+        "status of application 1234",
+        "check status of my application",
+        "my application number status",
+        "application 1234 status",
+        "what is status of application",
+        "single application status",
+        "check one application",
+        "find my application",
+        "look up my application",
+        "search application by ID",
+        "status by application number",
+        "is my application approved",
+        "application rejected or approved"
+      ],
+      "requiredEntities": [
+        "AppID"
+      ]
+    },
+    {
+      "name": "check_mou_status",
+      "label": "Check MOU Status",
+      "description": "User wants to check the status of a Memorandum of Understanding MOU",
+      "examples": [
+        "MOU status",
+        "memorandum of understanding status",
+        "check my MOU",
+        "MOU application status",
+        "my MOU progress",
+        "MOU pending",
+        "check MOU",
+        "MOU list",
+        "MOU tracking"
+      ],
+      "requiredEntities": []
+    },
+    {
+      "name": "guide_for_application",
+      "label": "guide for application",
+      "description": "guide for application ",
+      "examples": [
+        "guide me for check applicaion status",
+        "guide me for check memorandum of understanding status",
+        "guide me for how check status of my application",
+        "guide me for how check status of my memorandum of understanding",
+        "guide me for how check status of my mou"
+      ],
+      "requiredEntities": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "AppID",
+      "type": "regex",
+      "regex": "\\b\\d{4,10}\\b",
+      "examples": [
+        "1234",
+        "123456",
+        "2563",
+        "77895",
+        "4569",
+        "1235",
+        "0000"
+      ]
+    }
+  ]
+}

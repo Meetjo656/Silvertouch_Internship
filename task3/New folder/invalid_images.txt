@@ -1,0 +1,1 @@
+predicted_annotations_mapped.json - OpenCV cannot load image / unsupported format

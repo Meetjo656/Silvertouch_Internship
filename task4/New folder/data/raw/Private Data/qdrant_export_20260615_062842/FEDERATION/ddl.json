@@ -1,0 +1,1154 @@
+[
+  {
+    "point_id": "03cc4e9b-220f-5267-b1bf-db6bc9787c47",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_dairy ( /* This table contains information about the dairy sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ milk_collection TEXT, /* Annual total milk collected by the society (in litres), */ credit_facility TEXT, /* whether the society provides credit facility to its members ( 1 = Yes, 0 = No ), */ credit_provided TEXT, /* Total credit provided in Financial Year (in Rs.), */ milk_collection_unit TEXT, /* Whether the society has milk collection unit Facility ( 1 = Yes, 0 = No ), */ milk_collection_capicity TEXT, /* Capacity of milk collection unit (in litres), */ transport_milk TEXT, /* Whether the society has transportation facility for milk ( 1 = Yes, 0 = No ), */ bulk_milk_unit TEXT, /* Whether the society has bulk milk cooling (BMC) unit ( 1 = Yes, 0 = No ), */ milk_testing TEXT, /* Whether the society has milk testing facility ( 1 = Yes, 0 = No ), */ processing TEXT, /* Whether the society has milk pasteurization and processing facility ( 1 = Yes, 0 = No ), */ other_facility TEXT, /* List of other facilities provided by the society, */ created_at TEXT, /* List of other facilities provided by the society, */ updated_at TEXT, deleted_at TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_dairy"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_dairy.id",
+        "chatbot_state_district_federation_dairy.state_district_federation_id",
+        "chatbot_state_district_federation_dairy.milk_collection",
+        "chatbot_state_district_federation_dairy.credit_facility",
+        "chatbot_state_district_federation_dairy.credit_provided",
+        "chatbot_state_district_federation_dairy.milk_collection_unit",
+        "chatbot_state_district_federation_dairy.milk_collection_capicity",
+        "chatbot_state_district_federation_dairy.transport_milk",
+        "chatbot_state_district_federation_dairy.bulk_milk_unit",
+        "chatbot_state_district_federation_dairy.milk_testing",
+        "chatbot_state_district_federation_dairy.processing",
+        "chatbot_state_district_federation_dairy.other_facility",
+        "chatbot_state_district_federation_dairy.created_at",
+        "chatbot_state_district_federation_dairy.updated_at",
+        "chatbot_state_district_federation_dairy.deleted_at"
+      ],
+      "business_terms": [
+        "dairy",
+        "sector",
+        "federation",
+        "district",
+        "milk",
+        "production",
+        "cooperative",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "0b97f09b-9282-5f05-b818-1cad263d9125",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_sericulture ( /* This table contains information regarding the sericulture sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_society_names TEXT, type_society TEXT, /* Type of Silkworm rearing is carried out by cooperative federation, */ common_work_place TEXT, /* Whether the cooperative federation has common rearing house ( 1 = Yes, 0 = No ), */ no_rear_house TEXT, /* Number of rearing houses operated by cooperative federation, */ is_work_by_member TEXT, /* Whether the rearing of silkworm is done by member themself ( 1 = Yes, 0 = No ), */ is_training_provide TEXT, /* Whether the regular guidance/training is provided by cooperative federation to members ( 1 = Yes, 0 = No ), */ is_rear_appliance TEXT, /* Whether the cooperative federation has sufficient rearing appliances for rearing house ( 1 = Yes, 0 = No ), */ is_mulberry_easy_available TEXT, /* Whether mulberry leaves are easily available to cooperative federation ( 1 = Yes, 0 = No ), */ is_cleaning_facility_cocoon TEXT, /* Whether the cleaning facility of cocoon is available with cooperative federation ( 1 = Yes, 0 = No ), */ is_spinning_weav TEXT, /* Whether the spinning & weaving activities are carried out by cooperative federation ( 1 = Yes, 0 = No ), */ is_waste_facility TEXT, /* Whether the waste management facility is available in the federation ( 1 = Yes, 0 = No ), */ is_operate_retail TEXT, /* Whether the cooperative federation operate retail shops/outlet to sale products ( 1 = Yes, 0 = No ), */ no_of_retail TEXT, /* Number of retail shops/outlets operated by cooperative federation, */ facilities TEXT, /* List of facilities provided by the cooperative federation, */ created_at TEXT, /* List of facilities provided by the cooperative federation, */ updated_at TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_sericulture"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_sericulture.id",
+        "chatbot_state_district_federation_sericulture.state_district_federation_id",
+        "chatbot_state_district_federation_sericulture.type_society_names",
+        "chatbot_state_district_federation_sericulture.type_society",
+        "chatbot_state_district_federation_sericulture.common_work_place",
+        "chatbot_state_district_federation_sericulture.no_rear_house",
+        "chatbot_state_district_federation_sericulture.is_work_by_member",
+        "chatbot_state_district_federation_sericulture.is_training_provide",
+        "chatbot_state_district_federation_sericulture.is_rear_appliance",
+        "chatbot_state_district_federation_sericulture.is_mulberry_easy_available",
+        "chatbot_state_district_federation_sericulture.is_cleaning_facility_cocoon",
+        "chatbot_state_district_federation_sericulture.is_spinning_weav",
+        "chatbot_state_district_federation_sericulture.is_waste_facility",
+        "chatbot_state_district_federation_sericulture.is_operate_retail",
+        "chatbot_state_district_federation_sericulture.no_of_retail",
+        "chatbot_state_district_federation_sericulture.facilities",
+        "chatbot_state_district_federation_sericulture.created_at",
+        "chatbot_state_district_federation_sericulture.updated_at"
+      ],
+      "business_terms": [
+        "sericulture",
+        "sector",
+        "state",
+        "district",
+        "federation"
+      ]
+    }
+  },
+  {
+    "point_id": "0cccbba0-c43f-5894-a04a-f40aa4b2d393",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_consumer ( /* This table contains information regarding the consumer sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ has_store TEXT, /* Whether the co-operative society is operating Own Departmental Store/Supermarket ( 1 = Yes, 0 = No ), */ no_of_outlets TEXT, /* No.of outlets/shops of Cooperative Society, */ facilities_names TEXT, /* No.of outlets/shops of Cooperative Society, */ facilities TEXT, /* List of facilities provided by the cooperative society */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_consumer"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_consumer.id",
+        "chatbot_state_district_federation_consumer.state_district_federation_id",
+        "chatbot_state_district_federation_consumer.has_store",
+        "chatbot_state_district_federation_consumer.no_of_outlets",
+        "chatbot_state_district_federation_consumer.facilities_names",
+        "chatbot_state_district_federation_consumer.facilities"
+      ],
+      "business_terms": [
+        "consumer",
+        "federation",
+        "district",
+        "state",
+        "sector"
+      ]
+    }
+  },
+  {
+    "point_id": "11d6149f-7415-5099-ad20-f9b48ad7cc18",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_processing ( /* This table contains information regarding the processing sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ individual_member TEXT, /* Number of individual members in the cooperative federation, */ institutional_member TEXT, /* Number of institutional members in the cooperative federation, */ total_member TEXT, /* Total number of members in the cooperative federation (sum of individual and institutional members), */ type_society TEXT, /* Type of product produced by cooperative federation, */ type_society_name TEXT, /* Type of product produced by cooperative federation, */ paid_up_members TEXT, /* Paid up share capital by the members, */ paid_up_government_bodies TEXT, /* Paid up share capital by the government or government bodies, */ paid_up_total TEXT, /* Total paid up share capital (sum of paid up share capital by the members and government or government bodies), */ annual_turn_over TEXT, /* Total paid up share capital (sum of paid up share capital by the members and government or government bodies), */ loan_ TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_processing"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_processing.id",
+        "chatbot_state_district_federation_processing.state_district_federation_id",
+        "chatbot_state_district_federation_processing.individual_member",
+        "chatbot_state_district_federation_processing.institutional_member",
+        "chatbot_state_district_federation_processing.total_member",
+        "chatbot_state_district_federation_processing.type_society",
+        "chatbot_state_district_federation_processing.type_society_name",
+        "chatbot_state_district_federation_processing.paid_up_members",
+        "chatbot_state_district_federation_processing.paid_up_government_bodies",
+        "chatbot_state_district_federation_processing.paid_up_total",
+        "chatbot_state_district_federation_processing.annual_turn_over",
+        "chatbot_state_district_federation_processing.loan_from_dccb",
+        "chatbot_state_district_federation_processing.dccb_loan_amount",
+        "chatbot_state_district_federation_processing.loan_from_other",
+        "chatbot_state_district_federation_processing.loan_from_other_amount",
+        "chatbot_state_district_federation_processing.processing_unit",
+        "chatbot_state_district_federation_processing.processing_unit_number",
+        "chatbot_state_district_federation_processing.processing_by_members",
+        "chatbot_state_district_federation_processing.work_divided",
+        "chatbot_state_district_federation_processing.product_taken",
+        "chatbot_state_district_federation_processing.material_available",
+        "chatbot_state_district_federation_processing.wastes_generated",
+        "chatbot_state_district_federation_processing.waste_management_facility",
+        "chatbot_state_district_federation_processing.operate_shops",
+        "chatbot_state_district_federation_processing.operate_shops_number",
+        "chatbot_state_district_federation_processing.product_sale_out_of_area"
+      ],
+      "business_terms": [
+        "processing",
+        "sector",
+        "federation",
+        "district",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "12320cb2-18c4-5be7-bb00-cb5226442348",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_labour ( /* This table contains information regarding the labour sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_society_name TEXT, type_society TEXT, /* Type of the labour society, */ work_allot_state_dist_federation TEXT, /* Whether the cooperative federation provide work to its members through state/district federation ( 1 = Yes, 0 = No ), */ work_guide_state_dist_federation TEXT, /* Whether the cooperative federation provide guidance to its members through state/district federation ( 1 = Yes, 0 = No ), */ concession_state_gov TEXT, /* Whether the cooperative federation has taken any concession, */ unknown_col TEXT, /* Whether the cooperative federation has taken any concession */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_labour"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_labour.id",
+        "chatbot_state_district_federation_labour.state_district_federation_id",
+        "chatbot_state_district_federation_labour.type_society_name",
+        "chatbot_state_district_federation_labour.type_society",
+        "chatbot_state_district_federation_labour.work_allot_state_dist_federation",
+        "chatbot_state_district_federation_labour.work_guide_state_dist_federation",
+        "chatbot_state_district_federation_labour.concession_state_gov",
+        "chatbot_state_district_federation_labour.concession_centre_gov",
+        "chatbot_state_district_federation_labour.facilities_names",
+        "chatbot_state_district_federation_labour.facilities"
+      ],
+      "business_terms": [
+        "labour",
+        "sector",
+        "federation",
+        "district",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "15df640a-6c25-59db-9cdb-66447bd485e2",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_national_federations_contact_details ( /* This table contains the contact details of the persons associated with the national federations. */ id TEXT, national_federations_id TEXT, /* National Federation ID map with the id column of chatbot_national_federations, */ phone_number TEXT, /* Phone number of the contact person, */ email TEXT, /* Email of the contact person, */ contact_person TEXT, /* Name of the contact person, */ designation_name TEXT, /* Designation of the contact person, */ designation_other TEXT, /* Other designation of the contact person, */ total_number_of_members TEXT, /* Total Number of members of the cooperative federation, */ contact_details_address TEXT, /* Address of the contact person, */ major_activities_names TEXT /* Major activities of the cooperative federation */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations_contact_details"
+      ],
+      "columns": [
+        "chatbot_national_federations_contact_details.id",
+        "chatbot_national_federations_contact_details.national_federations_id",
+        "chatbot_national_federations_contact_details.phone_number",
+        "chatbot_national_federations_contact_details.email",
+        "chatbot_national_federations_contact_details.contact_person",
+        "chatbot_national_federations_contact_details.designation",
+        "chatbot_national_federations_contact_details.designation_name",
+        "chatbot_national_federations_contact_details.designation_other",
+        "chatbot_national_federations_contact_details.total_number_of_members",
+        "chatbot_national_federations_contact_details.contact_details_address",
+        "chatbot_national_federations_contact_details.major_activities_names",
+        "chatbot_national_federations_contact_details.major_activities_id",
+        "chatbot_national_federations_contact_details.created_at",
+        "chatbot_national_federations_contact_details.updated_at",
+        "chatbot_national_federations_contact_details.deleted_at"
+      ],
+      "business_terms": [
+        "federation",
+        "contact",
+        "national",
+        "association",
+        "personnel"
+      ]
+    }
+  },
+  {
+    "point_id": "186af497-5990-5d27-a59c-19bac7fe5dab",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_housing ( /* This table contains information regarding the housing sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_society_name TEXT, type_society TEXT, /* Type of the housing society, */ has_land TEXT, /* Whether the cooperative federation has land ( 1 = Yes, 0 = No ), */ paid_up_members TEXT, /* Paid up share capital by the members, */ paid_up_government_bodies TEXT, /* Paid up share capital by the government or government bodies, */ paid_up_total TEXT, /* Total paid up share capital (sum of paid up share capital by the members and government or government bodies), */ annual_expenses TEXT, /* Annual Expenses of the Cooperative Federation (in Rs), */ loan_facilities TEXT, /* Whether the Federation facilitate its member in getting Loan for construction of houses or additional structures within the complex ( 1 = Yes, 0 = No ), */ number_of_houses_audit_year TEXT, /* Number of houses/flats completed till end of audited year, */ number_of_houses_during_year TEXT, /* Number of houses/flats handover to the members till end of audited year, */ number_of_houses_construction TEXT, /* Number of houses/flats under construction till end of audited year, */ facilities_names TEXT, /* Number of houses/flats under construction till end of audited year, */ facilities TEXT, /* List of facilities provided by the cooperative federation */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_housing"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_housing.id",
+        "chatbot_state_district_federation_housing.state_district_federation_id",
+        "chatbot_state_district_federation_housing.type_society_name",
+        "chatbot_state_district_federation_housing.type_society",
+        "chatbot_state_district_federation_housing.has_land",
+        "chatbot_state_district_federation_housing.paid_up_members",
+        "chatbot_state_district_federation_housing.paid_up_government_bodies",
+        "chatbot_state_district_federation_housing.paid_up_total",
+        "chatbot_state_district_federation_housing.annual_expenses",
+        "chatbot_state_district_federation_housing.loan_facilities",
+        "chatbot_state_district_federation_housing.number_of_houses_audit_year",
+        "chatbot_state_district_federation_housing.number_of_houses_during_year",
+        "chatbot_state_district_federation_housing.number_of_houses_construction",
+        "chatbot_state_district_federation_housing.facilities_names",
+        "chatbot_state_district_federation_housing.facilities"
+      ],
+      "business_terms": [
+        "housing",
+        "sector",
+        "federation",
+        "district",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "18add793-6a2e-5553-b6b8-991bbfbb1262",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_multi ( /* This table contains information about the multi sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ sec_activity_names TEXT, /* List of the Secondary activites done by the cooperative federation */ loan_dccb TEXT, /* Whether the loan taken from the DCCB/UCB/PCARDB ( 1 = Yes, 0 = No ) */ loan_from_dcb TEXT, /* Loan and Advances taken from DCCB/UCB/PCARDB (in Rs) */ loan_other TEXT, /* Whether the loan taken from other sources ( 1 = Yes, 0 = No ) */ loan_from_other TEXT, /* Loan and Advances taken from other sources (in Rs) */ has_storage TEXT, /* Whether the cooperative federation has Storage/GODOWN/Warehouse facility ( 1 = Yes, 0 = No ) */ storage_capacity TEXT, /* Storage capacity of the cooperative federation (in tonnes) */ provide_raw TEXT, /* Whether the cooperative federation provide raw material to members & finished products taken after processing ( 1 = Yes, 0 = No ) */ guidance_by_member TEXT, /* Whether the cooperative federation provide guidance to members for marketing of products ( 1 = Yes, 0 = No ) */ is_operate_retail TEXT, /* Whether the cooperative federation operate retail shops/outlet to sale products ( 1 = Yes, 0 = No ) */ no_of_retail TEXT, /* Number of retail shops/outlet operated by the cooperative federation */ is_product_sale_out TEXT, /* Whether the products are sale out of area of operation of the cooperative society ( 1 = Yes, 0 = No ) */ facilities_names TEXT /* List of facilities provided by the cooperative federation */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_multi"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_multi.id",
+        "chatbot_state_district_federation_multi.state_district_federation_id",
+        "chatbot_state_district_federation_multi.sec_activity_names",
+        "chatbot_state_district_federation_multi.sec_activity",
+        "chatbot_state_district_federation_multi.has_building",
+        "chatbot_state_district_federation_multi.building_type",
+        "chatbot_state_district_federation_multi.authorised_share",
+        "chatbot_state_district_federation_multi.paid_up_members",
+        "chatbot_state_district_federation_multi.paid_up_government_bodies",
+        "chatbot_state_district_federation_multi.paid_up_total",
+        "chatbot_state_district_federation_multi.annual_turn_over",
+        "chatbot_state_district_federation_multi.loan_dccb",
+        "chatbot_state_district_federation_multi.loan_from_dcb",
+        "chatbot_state_district_federation_multi.loan_other",
+        "chatbot_state_district_federation_multi.loan_from_other",
+        "chatbot_state_district_federation_multi.has_storage",
+        "chatbot_state_district_federation_multi.storage_capacity",
+        "chatbot_state_district_federation_multi.provide_raw",
+        "chatbot_state_district_federation_multi.guidance_by_member",
+        "chatbot_state_district_federation_multi.is_operate_retail",
+        "chatbot_state_district_federation_multi.no_of_retail",
+        "chatbot_state_district_federation_multi.is_product_sale_out",
+        "chatbot_state_district_federation_multi.facilities_names",
+        "chatbot_state_district_federation_multi.facilities",
+        "chatbot_state_district_federation_multi.created_at",
+        "chatbot_state_district_federation_multi.updated_at",
+        "chatbot_state_district_federation_multi.deleted_at"
+      ],
+      "business_terms": [
+        "federation",
+        "multi-sector",
+        "state",
+        "district",
+        "sector"
+      ]
+    }
+  },
+  {
+    "point_id": "1a9f2952-74d1-5c1c-b4ac-f00a02bb181e",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_handloom ( /* This table contains information about the handloom sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_society TEXT, has_building TEXT, building_type TEXT, authorised_share TEXT, paid_up_members TEXT, paid_up_government_bodies TEXT, paid_up_total TEXT, annual_turn_over TEXT, individual_member TEXT, institutional_member TEXT, loan_dccb TEXT, loan_ TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_handloom"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_handloom.id",
+        "chatbot_state_district_federation_handloom.state_district_federation_id",
+        "chatbot_state_district_federation_handloom.type_society",
+        "chatbot_state_district_federation_handloom.has_building",
+        "chatbot_state_district_federation_handloom.building_type",
+        "chatbot_state_district_federation_handloom.authorised_share",
+        "chatbot_state_district_federation_handloom.paid_up_members",
+        "chatbot_state_district_federation_handloom.paid_up_government_bodies",
+        "chatbot_state_district_federation_handloom.paid_up_total",
+        "chatbot_state_district_federation_handloom.annual_turn_over",
+        "chatbot_state_district_federation_handloom.individual_member",
+        "chatbot_state_district_federation_handloom.institutional_member",
+        "chatbot_state_district_federation_handloom.loan_dccb",
+        "chatbot_state_district_federation_handloom.loan_from_dcb",
+        "chatbot_state_district_federation_handloom.loan_other",
+        "chatbot_state_district_federation_handloom.loan_from_other",
+        "chatbot_state_district_federation_handloom.power_loom_type",
+        "chatbot_state_district_federation_handloom.hand_loom_type",
+        "chatbot_state_district_federation_handloom.no_of_loom",
+        "chatbot_state_district_federation_handloom.raw_product_taken",
+        "chatbot_state_district_federation_handloom.raw_material_available",
+        "chatbot_state_district_federation_handloom.waste_generate",
+        "chatbot_state_district_federation_handloom.waste_available",
+        "chatbot_state_district_federation_handloom.operate_retail",
+        "chatbot_state_district_federation_handloom.no_of_retail",
+        "chatbot_state_district_federation_handloom.product_sale_out",
+        "chatbot_state_district_federation_handloom.operated_member_themself",
+        "chatbot_state_district_federation_handloom.is_user_work_divide",
+        "chatbot_state_district_federation_handloom.state_district_federation_id_idx",
+        "chatbot_state_district_federation_handloom.created_at",
+        "chatbot_state_district_federation_handloom.updated_at",
+        "chatbot_state_district_federation_handloom.deleted_at"
+      ],
+      "business_terms": [
+        "handloom",
+        "sector",
+        "state",
+        "district",
+        "federation"
+      ]
+    }
+  },
+  {
+    "point_id": "1c93f33a-7255-5c9c-baad-d320927a523c",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_national_federations_members ( /* This table contains information about the members of the national federations. */ id TEXT, national_federations_id TEXT, /* National Federation ID map with the id column of chatbot_national_federations, */ name_of_member TEXT, /* Name of the member organization, */ type_of_membership_name TEXT, /* Type of membership of the member organization, */ primary_activity_name TEXT, /* Primary activity of the member organization, */ class_of_membership_name TEXT, /* Class of membership ( 1 = Ordinary/Regular/Voting , 2 = Associate/Nominal/Voting ), */ name_of_contact_person TEXT, /* Name of the contact person, */ designation_name TEXT, /* Designation of the contact person, */ phone_number_of_contact_person TEXT, /* Phone number of the contact person, */ email TEXT, /* Email of the contact person, */ location_of_head_quarter TEXT, /* Location of the head quarter ( 1 = Urban , 2 = Rural), */ state_name TEXT, /* State name, */ district_name TEXT, /* District name, */ block_name TEXT, /* Block Name, */ gram_panchayat_name TEXT, /* Gram Panchayat Name, */ village_name TEXT, /* Village Name, */ localbody_type_name TEXT, /* Urban Local Body Type Name, */ local_body_name TEXT, /* Urban Local Body Name, */ ward_name TEXT, /* Ward Name, */ pincode TEXT /* Pincode */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations_members"
+      ],
+      "columns": [
+        "chatbot_national_federations_members.id",
+        "chatbot_national_federations_members.national_federations_id",
+        "chatbot_national_federations_members.name_of_member",
+        "chatbot_national_federations_members.type_of_memberships_id",
+        "chatbot_national_federations_members.type_of_membership_name",
+        "chatbot_national_federations_members.primary_activity",
+        "chatbot_national_federations_members.primary_activity_name",
+        "chatbot_national_federations_members.cooprative_society_id",
+        "chatbot_national_federations_members.sector_of_operation_type",
+        "chatbot_national_federations_members.class_of_memberships_id",
+        "chatbot_national_federations_members.class_of_membership_name",
+        "chatbot_national_federations_members.area_of_operation",
+        "chatbot_national_federations_members.name_of_contact_person",
+        "chatbot_national_federations_members.other_primary",
+        "chatbot_national_federations_members.designation",
+        "chatbot_national_federations_members.designation_name",
+        "chatbot_national_federations_members.phone_number_of_contact_person",
+        "chatbot_national_federations_members.email",
+        "chatbot_national_federations_members.sector_of_operation_names",
+        "chatbot_national_federations_members.sector_of_operation_ids",
+        "chatbot_national_federations_members.federations_address",
+        "chatbot_national_federations_members.latitude",
+        "chatbot_national_federations_members.longitude",
+        "chatbot_national_federations_members.location_of_head_quarter",
+        "chatbot_national_federations_members.state_code",
+        "chatbot_national_federations_members.state_name",
+        "chatbot_national_federations_members.district_code",
+        "chatbot_national_federations_members.district_name",
+        "chatbot_national_federations_members.block_code",
+        "chatbot_national_federations_members.block_name",
+        "chatbot_national_federations_members.gram_panchayat_code",
+        "chatbot_national_federations_members.gram_panchayat_name",
+        "chatbot_national_federations_members.village_code",
+        "chatbot_national_federations_members.village_name",
+        "chatbot_national_federations_members.urban_local_body_type_code",
+        "chatbot_national_federations_members.localbody_type_name",
+        "chatbot_national_federations_members.urban_local_body_code",
+        "chatbot_national_federations_members.local_body_name",
+        "chatbot_national_federations_members.locality_ward_code",
+        "chatbot_national_federations_members.ward_name",
+        "chatbot_national_federations_members.pincode",
+        "chatbot_national_federations_members.area_location_of_head_quarter",
+        "chatbot_national_federations_members.area_state_code",
+        "chatbot_national_federations_members.area_urban_local_body_type_code",
+        "chatbot_national_federations_members.area_urban_local_body_code",
+        "chatbot_national_federations_members.area_locality_ward_code",
+        "chatbot_national_federations_members.area_district_code",
+        "chatbot_national_federations_members.area_block_code",
+        "chatbot_national_federations_members.area_gram_panchayat_code",
+        "chatbot_national_federations_members.area_village_code",
+        "chatbot_national_federations_members.area_pincode",
+        "chatbot_national_federations_members.approved_by",
+        "chatbot_national_federations_members.approved_status",
+        "chatbot_national_federations_members.remarks",
+        "chatbot_national_federations_members.approved_date",
+        "chatbot_national_federations_members.user_id",
+        "chatbot_national_federations_members.status",
+        "chatbot_national_federations_members.deleted_date",
+        "chatbot_national_federations_members.deleted_at",
+        "chatbot_national_federations_members.created_at",
+        "chatbot_national_federations_members.updated_at"
+      ],
+      "business_terms": [
+        "federation",
+        "membership",
+        "national",
+        "association",
+        "organization"
+      ]
+    }
+  },
+  {
+    "point_id": "1fe8eeb1-1761-5526-8152-209691a0b32d",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_social ( /* This table contains information regarding the social and welfare sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ has_common TEXT, /* Whether the Cooperative federation has common/pooled resource for its social & cultural activities ( 1 = Yes, 0 = No ), */ is_operate_by_member TEXT, /* Whether the social & cultural activities are carried by member themself ( 1 = Yes, 0 = No ), */ guidance_by_member TEXT, /* Whether the proper guidance/training is provided by cooperative federation to members ( 1 = Yes, 0 = No ), */ is_operate_vehicle TEXT, /* Whether the federation is operating utility Vehicle (like ambulance, van, bus, goods container etc) ( 1 = Yes, 0 = No ), */ no_of_vehicle TEXT, /* Number of vehicles operated by the cooperative federation, */ facilities TEXT, /* Number of vehicles operated by the cooperative federation, */ created_at TEXT, updated_at TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_social"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_social.id",
+        "chatbot_state_district_federation_social.state_district_federation_id",
+        "chatbot_state_district_federation_social.created_at",
+        "chatbot_state_district_federation_social.updated_at"
+      ],
+      "business_terms": [
+        "social",
+        "welfare",
+        "sector",
+        "district",
+        "federation"
+      ]
+    }
+  },
+  {
+    "point_id": "25405d81-15df-5b8c-a911-82139deb8c93",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_cmiscellaneous ( /* This table contains information regarding the credit miscellaneous sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ total_deposit TEXT, /* Total deposit of the cooperative federation (in Rs.), */ loan_outstanding TEXT, /* Total loan outstanding of the cooperative federation (in Rs.), */ string_agg TEXT, /* Total loan outstanding of the cooperative federation (in Rs.), */ facilities TEXT, /* List of facilities provided by the cooperative federation */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_cmiscellaneous"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_cmiscellaneous.id",
+        "chatbot_state_district_federation_cmiscellaneous.state_district_federation_id",
+        "chatbot_state_district_federation_cmiscellaneous.total_deposit",
+        "chatbot_state_district_federation_cmiscellaneous.loan_outstanding",
+        "chatbot_state_district_federation_cmiscellaneous.facilities_names",
+        "chatbot_state_district_federation_cmiscellaneous.facilities"
+      ],
+      "business_terms": [
+        "credit",
+        "miscellaneous",
+        "sector",
+        "federation",
+        "district"
+      ]
+    }
+  },
+  {
+    "point_id": "2d5cca42-c741-59f7-803f-2585c45c12e0",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_jute ( /* This table contains information regarding the jute sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_raw_names TEXT, type_raw TEXT, /* List of raw materials used by the society ( e.g. Jute, Coir, etc. ), */ type_produce_names TEXT, /* List of raw materials used by the society ( e.g. Jute, Coir, etc. ), */ type_produce TEXT, /* List of products produced by the society ( e.g. Mat,Rope, etc. ), */ common_work_place TEXT, /* Whether the cooperative federation has common working place or manufacturing unit ( 1 = Yes, 0 = No ), */ workplace_operate TEXT, /* Number of work places or manufacturing units operated by cooperative federation, */ is_work_by_member TEXT, /* Whether the processing or handwork is done by members themselves ( 1 = Yes, 0 = No ), */ is_training_provide TEXT, /* Whether the regular guidance/training is provided by cooperative federation to members ( 1 = Yes, 0 = No ), */ is_raw_provide TEXT, /* Whether the cooperative federation provide raw material to members & finished products taken after processing ( 1 = Yes, 0 = No ), */ is_raw_easy_avail TEXT, /* Whether the raw material easily available to cooperative federation ( 1 = Yes, 0 = No ), */ is_waste_generate TEXT, /* Whether the waste are generated in jute process ( 1 = Yes, 0 = No ), */ is_waste_facility TEXT, /* Whether the waste management facility is available in the federation ( 1 = Yes, 0 = No ), */ is_operate_retail TEXT, /* Whether the cooperative federation operate retail shops/outlet to sale products ( 1 = Yes, 0 = No ), */ no_of_retail TEXT, /* Number of retail shops/outlets operated by cooperative federation, */ is_product_sale_out TEXT, /* Whether the products are sale out of the area of operation of the cooperative federation ( 1 = Yes, 0 = No ), */ facilities_names TEXT, /* Whether the products are sale out of the area of operation of the cooperative federation ( 1 = Yes, 0 = No ), */ facilities TEXT, /* List of facilities provided by the cooperative federation */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_jute"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_jute.id",
+        "chatbot_state_district_federation_jute.state_district_federation_id",
+        "chatbot_state_district_federation_jute.type_raw_names",
+        "chatbot_state_district_federation_jute.type_raw",
+        "chatbot_state_district_federation_jute.type_produce_names",
+        "chatbot_state_district_federation_jute.type_produce",
+        "chatbot_state_district_federation_jute.common_work_place",
+        "chatbot_state_district_federation_jute.workplace_operate",
+        "chatbot_state_district_federation_jute.is_work_by_member",
+        "chatbot_state_district_federation_jute.is_training_provide",
+        "chatbot_state_district_federation_jute.is_raw_provide",
+        "chatbot_state_district_federation_jute.is_raw_easy_avail",
+        "chatbot_state_district_federation_jute.is_waste_generate",
+        "chatbot_state_district_federation_jute.is_waste_facility",
+        "chatbot_state_district_federation_jute.is_operate_retail",
+        "chatbot_state_district_federation_jute.no_of_retail",
+        "chatbot_state_district_federation_jute.is_product_sale_out",
+        "chatbot_state_district_federation_jute.facilities_names",
+        "chatbot_state_district_federation_jute.facilities"
+      ],
+      "business_terms": [
+        "jute",
+        "sector",
+        "federation",
+        "state",
+        "district"
+      ]
+    }
+  },
+  {
+    "point_id": "53002ebb-27bf-5894-b58f-0d35e28641bd",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_agriculture ( /* This table contains information regarding the agricultural sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ has_pool_land TEXT, /* Do the members themselves have pooled land for the cooperative society ( 1 = Yes, 0 = No ), */ has_gov_land TEXT, /* Whether the society taken any land, */ unknown_col TEXT, /* Whether the society taken any land */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_agriculture"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_agriculture.id",
+        "chatbot_state_district_federation_agriculture.state_district_federation_id",
+        "chatbot_state_district_federation_agriculture.has_pool_land",
+        "chatbot_state_district_federation_agriculture.has_gov_land",
+        "chatbot_state_district_federation_agriculture.member_vested_right",
+        "chatbot_state_district_federation_agriculture.is_member_work",
+        "chatbot_state_district_federation_agriculture.society_common_pool",
+        "chatbot_state_district_federation_agriculture.is_utilize_pool",
+        "chatbot_state_district_federation_agriculture.harvesting",
+        "chatbot_state_district_federation_agriculture.farming_mech_names",
+        "chatbot_state_district_federation_agriculture.farming_mech",
+        "chatbot_state_district_federation_agriculture.irrigation_means_names",
+        "chatbot_state_district_federation_agriculture.irrigation_means"
+      ],
+      "business_terms": [
+        "agriculture",
+        "sector",
+        "district",
+        "federation",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "5d81616e-efa1-5224-8e74-25a62b4bc843",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_private ( id TEXT, cooperative_federation_name TEXT, /* Name of the cooperative federation, */ registration_authority_name TEXT, /* Registration Authority Name of the Cooperative federation, */ date_registration TEXT, /* Registration Date of the cooperative federation, */ registration_number TEXT, /* Registration Number of the cooperative federation, */ area_of_operation_name TEXT, /* Area of Operation Name of the Cooperative federation, */ primary_activity_name TEXT, /* Primary Activity Name of the Cooperative federation, */ sector_of_operation_name TEXT, /* Sector of operation name (Rural or Urban), */ functional_status_name TEXT, /* Functional status of the cooperative federation (Functional, Under Liquidation, Non-Functional), */ federation_type_name TEXT, /* Type of the cooperative federation (National Federation, State Federation, District Federation, Block/Taluka/Mandal Federation, Regional Federation), */ location_of_head_quarter TEXT, /* Location of the head quarter of the cooperative federation ( 1 = Urban , 2 = Rural ), */ state_name TEXT, /* State name of the cooperative federation, */ district_name TEXT, /* District name of the cooperative federation, */ block_name TEXT, /* Block name of the cooperative federation, */ gram_panchayat_name TEXT, /* Gram panchayat name of the cooperative federation, */ village_name TEXT, /* Village name of the cooperative federation, */ localbody_type_name TEXT, /* Urban local body type name of the cooperative federation, */ local_body_name TEXT, /* Urban local body name of the cooperative federation, */ ward_name TEXT, /* Ward name of the cooperative federation, */ pincode TEXT, /* Pincode of the cooperative federation, */ full_address TEXT, /* Full address of the cooperative federation, */ contact_person TEXT, /* Contact person of the cooperative federation, */ designation_name TEXT, /* Designation of the cooperative federation, */ mobile TEXT, /* Mobile Number of the contact person, */ landline TEXT, /* Landline of the contact person, */ email TEXT, /* Email of the contact person, */ has_building TEXT, /* Whether Financial Cooperative Federation has an office building ( 1 = Yes, 0 = No ), */ building_type_name TEXT, /* Type of office building ( e.g. Own Building, Rented Building, etc. ), */ members_of_federation TEXT, /* Type of office building ( e.g. Own Building, Rented Building, etc. ), */ bank_type TEXT, /* Type of bank ( 0 = Cooperative Society Bank, 2 = Other Bank ), */ federation_doing_business TEXT, /* Whether the Federation is doing business activity ( 1 = Yes, 0 = No ), */ federation_doing_marketing TEXT, /* Whether the Federation is doing marketing ( 1 = Yes, 0 = No ), */ marketed_product_value TEXT, /* Value of the marketed product of the Federation ( in Lakh ), */ is_federation_member TEXT, /* Whether the Primary Cooperative is the member of the Federation ( 1 = Yes, 0 = No ), */ primary_cooperative_member_count TEXT, /* Number of Primary Cooperative Societies as members of the Federation, */ other_member TEXT, /* Is there any other member of this federation ( 1 = Yes , 0 = No ), */ other_member_count TEXT, /* Number of other members of this federation, */ financial_audit TEXT, /* Has the financial audit been completed ( 1 = Yes , 0 = No ), */ audit_complete_year TEXT, /* Year of the last financial audit, */ audit_category_name TEXT, /* Category of the last financial audit, */ is_profit_making TEXT, /* Whether the cooperative federation is profit making ( 1 = Yes , 0 = No ), */ net_profit TEXT, /* Net profit of the cooperative federation, */ net_loss TEXT, /* Net loss of the cooperative federation, */ authorised_share TEXT, /* Authorised share capital of the cooperative federation, */ annual_turnover TEXT, /* annual turnover of the fedration, */ is_dividend_paid TEXT, /* Whether the cooperative federation has paid dividend ( 1 = Yes , 0 = No ), */ dividend_rate TEXT, /* Dividend rate of the cooperative federation, */ operation_area_location TEXT, /* Operation area location of the cooperative federation ( 1 = Urban , 2 = Rural , 3 = Both ), */ federation_code TEXT, /* Federation code of the cooperative federation, */ bank_name TEXT, /* List of Banks in which cooperative has an bank account, */ other_bank TEXT, /* List of Banks in which cooperative has an bank account, */ is_draft TEXT, /* Draft status of the cooperative federation ( 1 = Yes , 0 = No ), */ is_approved TEXT, /* Approved status of the cooperative federation ( 1 = Approved , 0 = Pending , 2 = Rejected ), */ status TEXT, /* Status of the cooperative federation ( 1 = Active , 0 = Inactive ), */ is_moved_primary TEXT, /* Status of the cooperative federation ( 1 = Active , 0 = Inactive ), */ ncd_id TEXT, /* NCD ID of the cooperative federation, */ paid_up_share TEXT, /* Paid up share capital of the cooperative federation, */ paid_up_share_date TEXT, /* Date of the last paid up share of the cooperative federation, */ pack_total_outstanding_loan TEXT, /* Total outstanding loan of the cooperative federation, */ total_deposit TEXT, /* Total deposit of the cooperative federation, */ created_at TEXT, updated_at TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_private"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_private.id",
+        "chatbot_state_district_federation_private.cooperative_federation_name",
+        "chatbot_state_district_federation_private.cooperative_federation_hindi_name",
+        "chatbot_state_district_federation_private.registration_authority_id",
+        "chatbot_state_district_federation_private.registration_authority_name",
+        "chatbot_state_district_federation_private.date_registration",
+        "chatbot_state_district_federation_private.registration_number",
+        "chatbot_state_district_federation_private.area_of_operation_id",
+        "chatbot_state_district_federation_private.area_of_operation_name",
+        "chatbot_state_district_federation_private.primary_activity",
+        "chatbot_state_district_federation_private.primary_activity_name",
+        "chatbot_state_district_federation_private.sector_of_operation",
+        "chatbot_state_district_federation_private.sector_of_operation_name",
+        "chatbot_state_district_federation_private.functional_status",
+        "chatbot_state_district_federation_private.functional_status_name",
+        "chatbot_state_district_federation_private.federation_type",
+        "chatbot_state_district_federation_private.federation_type_name",
+        "chatbot_state_district_federation_private.location_details_of_head_quarter",
+        "chatbot_state_district_federation_private.location_of_head_quarter",
+        "chatbot_state_district_federation_private.state_code",
+        "chatbot_state_district_federation_private.state_name",
+        "chatbot_state_district_federation_private.district_code",
+        "chatbot_state_district_federation_private.district_name",
+        "chatbot_state_district_federation_private.block_code",
+        "chatbot_state_district_federation_private.block_name",
+        "chatbot_state_district_federation_private.gram_panchayat_code",
+        "chatbot_state_district_federation_private.gram_panchayat_name",
+        "chatbot_state_district_federation_private.village_code",
+        "chatbot_state_district_federation_private.village_name",
+        "chatbot_state_district_federation_private.urban_local_body_type_code",
+        "chatbot_state_district_federation_private.localbody_type_name",
+        "chatbot_state_district_federation_private.urban_local_body_code",
+        "chatbot_state_district_federation_private.local_body_name",
+        "chatbot_state_district_federation_private.locality_ward_code",
+        "chatbot_state_district_federation_private.ward_name",
+        "chatbot_state_district_federation_private.pincode",
+        "chatbot_state_district_federation_private.full_address",
+        "chatbot_state_district_federation_private.contact_person",
+        "chatbot_state_district_federation_private.designation",
+        "chatbot_state_district_federation_private.designation_name",
+        "chatbot_state_district_federation_private.designation_other",
+        "chatbot_state_district_federation_private.mobile",
+        "chatbot_state_district_federation_private.landline",
+        "chatbot_state_district_federation_private.email",
+        "chatbot_state_district_federation_private.is_affiliated_union_federation",
+        "chatbot_state_district_federation_private.affiliated_union_federation_level",
+        "chatbot_state_district_federation_private.affiliated_union_federation_name",
+        "chatbot_state_district_federation_private.affiliated_union_federation_other",
+        "chatbot_state_district_federation_private.has_building",
+        "chatbot_state_district_federation_private.building_type",
+        "chatbot_state_district_federation_private.building_type_name",
+        "chatbot_state_district_federation_private.members_of_federation",
+        "chatbot_state_district_federation_private.bank_type",
+        "chatbot_state_district_federation_private.federation_doing_business",
+        "chatbot_state_district_federation_private.federation_doing_marketing",
+        "chatbot_state_district_federation_private.marketed_product_value",
+        "chatbot_state_district_federation_private.is_federation_member",
+        "chatbot_state_district_federation_private.primary_cooperative_member_count",
+        "chatbot_state_district_federation_private.other_member",
+        "chatbot_state_district_federation_private.other_member_count",
+        "chatbot_state_district_federation_private.operational_district_code",
+        "chatbot_state_district_federation_private.financial_audit",
+        "chatbot_state_district_federation_private.audit_complete_year",
+        "chatbot_state_district_federation_private.category_audit",
+        "chatbot_state_district_federation_private.audit_category_name",
+        "chatbot_state_district_federation_private.is_profit_making",
+        "chatbot_state_district_federation_private.net_profit",
+        "chatbot_state_district_federation_private.net_loss",
+        "chatbot_state_district_federation_private.authorised_share",
+        "chatbot_state_district_federation_private.annual_turnover",
+        "chatbot_state_district_federation_private.is_dividend_paid",
+        "chatbot_state_district_federation_private.dividend_rate",
+        "chatbot_state_district_federation_private.operation_area_location",
+        "chatbot_state_district_federation_private.federation_code",
+        "chatbot_state_district_federation_private.cooperative_society_bank_id",
+        "chatbot_state_district_federation_private.bank_name",
+        "chatbot_state_district_federation_private.other_bank",
+        "chatbot_state_district_federation_private.is_draft",
+        "chatbot_state_district_federation_private.created_by",
+        "chatbot_state_district_federation_private.created",
+        "chatbot_state_district_federation_private.updated_by",
+        "chatbot_state_district_federation_private.updated",
+        "chatbot_state_district_federation_private.is_approved",
+        "chatbot_state_district_federation_private.approved_by",
+        "chatbot_state_district_federation_private.status",
+        "chatbot_state_district_federation_private.is_moved_primary",
+        "chatbot_state_district_federation_private.ncd_id",
+        "chatbot_state_district_federation_private.paid_up_share",
+        "chatbot_state_district_federation_private.paid_up_share_date",
+        "chatbot_state_district_federation_private.pack_total_outstanding_loan",
+        "chatbot_state_district_federation_private.total_deposit",
+        "chatbot_state_district_federation_private.created_at",
+        "chatbot_state_district_federation_private.updated_at"
+      ],
+      "business_terms": [
+        "federation",
+        "district",
+        "chatbot",
+        "state",
+        "private"
+      ]
+    }
+  },
+  {
+    "point_id": "882de405-fcf2-5be6-9a8e-014a79f99217",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_sugar ( /* This table contains information regarding the sugar sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ paid_up_members TEXT, /* Paid up share capital by the members, */ paid_up_government_bodies TEXT, /* Paid up share capital by the government or government bodies, */ paid_up_total TEXT, /* Total paid up share capital (sum of paid up share capital by the members and government or government bodies), */ suger_mills_no TEXT, /* Number of Sugar mills operated by cooperative federation, */ build_up_area TEXT, /* Built up area of the sugar mill (in acre), */ open_land_area TEXT, /* Open land area of the sugar mill (in acre), */ total_area TEXT, /* Total area of the sugar mill (built_up_area + open_land_area) (in acre), */ liecensed_capicity TEXT, /* Liecensed Capicity (in term of Tonne Crushing per Day (TCD)), */ installed_capicity TEXT, /* Installed Capicity (in term of Tonne Crushing per Day (TCD)), */ crushing_period_start TEXT, /* Start date of the crushing period (in yyyy/mm/dd format), */ crushing_period_end TEXT, /* End date of the crushing period (in yyyy/mm/dd format), */ product_produced_names TEXT, /* End date of the crushing period (in yyyy/mm/dd format), */ product_produced TEXT, /* Types of products produced by the Cooperative Federation (e.g. Paper, Molasses, Bagasse, etc.), */ retail_shops TEXT, /* Whether the cooperative federation operate retail shops/outlet to sale products ( 1 = Yes, 0 = No ), */ retail_shops_no TEXT, /* Number of retail shops/outlets operated by cooperative federation, */ sugercane_input_provided TEXT, /* Whether inputs for sugarcane cultivation are provided to members ( 1 = Yes, 0 = No ), */ loan_facility TEXT, /* Whether the facilities of Loans and Advances are offered to the Members ( 1 = Yes, 0 = No ), */ waste_management TEXT, /* Whether the waste management facility is available in the Cooperative Mill ( 1 = Yes, 0 = No ), */ central_government_benefits TEXT, /* Whether any benefits (subsidy/scheme) received, */ unknown_col TEXT, /* Whether any benefits (subsidy/scheme) received */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_sugar"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_sugar.id",
+        "chatbot_state_district_federation_sugar.state_district_federation_id",
+        "chatbot_state_district_federation_sugar.paid_up_members",
+        "chatbot_state_district_federation_sugar.paid_up_government_bodies",
+        "chatbot_state_district_federation_sugar.paid_up_total",
+        "chatbot_state_district_federation_sugar.suger_mills_no",
+        "chatbot_state_district_federation_sugar.build_up_area",
+        "chatbot_state_district_federation_sugar.open_land_area",
+        "chatbot_state_district_federation_sugar.total_area",
+        "chatbot_state_district_federation_sugar.liecensed_capicity",
+        "chatbot_state_district_federation_sugar.installed_capicity",
+        "chatbot_state_district_federation_sugar.crushing_period_start",
+        "chatbot_state_district_federation_sugar.crushing_period_end",
+        "chatbot_state_district_federation_sugar.product_produced_names",
+        "chatbot_state_district_federation_sugar.product_produced",
+        "chatbot_state_district_federation_sugar.retail_shops",
+        "chatbot_state_district_federation_sugar.retail_shops_no",
+        "chatbot_state_district_federation_sugar.sugercane_input_provided",
+        "chatbot_state_district_federation_sugar.loan_facility",
+        "chatbot_state_district_federation_sugar.waste_management",
+        "chatbot_state_district_federation_sugar.central_government_benefits",
+        "chatbot_state_district_federation_sugar.state_government_benefits"
+      ],
+      "business_terms": [
+        "sugar",
+        "sector",
+        "district",
+        "federation",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "8a194ec5-ef51-577d-a8e7-b4aa1b4d25a3",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_bee ( /* This table contains information regarding the bee farming/keeping sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ string_agg TEXT, type_bee TEXT, /* List of bees reared by the society ( e.g. Drone Bees, Queen Bees, Workers Bees, etc. ), */ paid_up_members TEXT, /* Paid up share capital by the members, */ paid_up_government_bodies TEXT, /* Paid up share capital by the government or government bodies, */ paid_up_total TEXT, /* Total paid up share capital (sum of paid up share capital by the members and government or government bodies), */ loan_dccb TEXT, /* Whether the loan taken, */ unknown_col TEXT, /* Whether the loan taken */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_bee"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_bee.id",
+        "chatbot_state_district_federation_bee.state_district_federation_id",
+        "chatbot_state_district_federation_bee.type_bee_names",
+        "chatbot_state_district_federation_bee.type_bee",
+        "chatbot_state_district_federation_bee.paid_up_members",
+        "chatbot_state_district_federation_bee.paid_up_government_bodies",
+        "chatbot_state_district_federation_bee.paid_up_total",
+        "chatbot_state_district_federation_bee.loan_dccb",
+        "chatbot_state_district_federation_bee.loan_from_dcb",
+        "chatbot_state_district_federation_bee.loan_other",
+        "chatbot_state_district_federation_bee.loan_from_other",
+        "chatbot_state_district_federation_bee.common_yard",
+        "chatbot_state_district_federation_bee.no_of_behives",
+        "chatbot_state_district_federation_bee.type_behives_name",
+        "chatbot_state_district_federation_bee.type_behives",
+        "chatbot_state_district_federation_bee.rear_by_member",
+        "chatbot_state_district_federation_bee.guidance_by_member",
+        "chatbot_state_district_federation_bee.type_product_names",
+        "chatbot_state_district_federation_bee.type_product",
+        "chatbot_state_district_federation_bee.is_bee_plant_grow",
+        "chatbot_state_district_federation_bee.is_cleaning_process",
+        "chatbot_state_district_federation_bee.is_waste_facility",
+        "chatbot_state_district_federation_bee.own_brand_honey",
+        "chatbot_state_district_federation_bee.is_operate_retail",
+        "chatbot_state_district_federation_bee.no_of_retail",
+        "chatbot_state_district_federation_bee.is_product_sale_out",
+        "chatbot_state_district_federation_bee.facilities_names",
+        "chatbot_state_district_federation_bee.facilities"
+      ],
+      "business_terms": [
+        "beekeeping",
+        "farming",
+        "sector",
+        "federation",
+        "district"
+      ]
+    }
+  },
+  {
+    "point_id": "94928ceb-4c8b-5ed4-88b2-7331de559b2c",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_tourism ( /* This table contains information regarding the tourism sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ pool_resource TEXT, /* Do the members themselves have pooled resources (vehicles, accommodation, land etc.) for the cooperative society ( 1 = Yes, 0 = No ), */ any_resource_taken TEXT, /* Apart, */ unknown_col TEXT, /* Apart */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_tourism"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_tourism.id",
+        "chatbot_state_district_federation_tourism.state_district_federation_id",
+        "chatbot_state_district_federation_tourism.created_at",
+        "chatbot_state_district_federation_tourism.updated_at"
+      ],
+      "business_terms": [
+        "tourism",
+        "sector",
+        "district",
+        "federation",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "95d1a1c7-37bb-51ca-927f-3c9238e1a53b",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_national_federations ( /* This is the master table for the details about the national federations */ id TEXT, cooperative_id TEXT, reference_year TEXT, cooperative_society_name TEXT, /* Name of National Cooperative Federation, */ identification_number TEXT, /* Identification Number of the National Cooperative Federation, */ registration_number TEXT, /* Registration Number of the National Cooperative Federation, */ date_registration TEXT, /* Date of registration of the National Cooperative Federation, */ location_of_head_quarter TEXT, /* Location of Head Quarter ( 1 = Urban , 2 = Rural ), */ affiliation_with_govt_dept_name TEXT, /* Name of the Affiliated Government Department, */ urban_local_body_type_name TEXT, /* Type of Urban Local Body, */ urban_local_body_name TEXT, /* Name of the Urban Local Body, */ ward_name TEXT, /* Name of the Ward, */ block_name TEXT, /* Name of the Block, */ gram_panchayat_name TEXT, /* Name of the Gram Panchayat, */ village_name TEXT, /* Village Name, */ pincode TEXT, /* Pincode of the National Cooperative Federation, */ registered_office_address TEXT, /* Registered Office address of the National Cooperative Federation, */ functional_status TEXT, /* Functional status of the cooperative federation ( 1 = Functional , 2 = Under Liquidation , 3 = Non Functional ), */ is_draft TEXT, /* Draft status of the National Federation ( 1 = Draft Mode , 0 = Not in Draft ), */ is_new TEXT, ncd_id TEXT, /* NCD Id of the federation */ state_name TEXT, /* State name, */ district_name TEXT, /* District name, */ major_activities_names TEXT /* List of Major activities of the National Federation */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations"
+      ],
+      "columns": [
+        "chatbot_national_federations.id",
+        "chatbot_national_federations.cooperative_id",
+        "chatbot_national_federations.reference_year",
+        "chatbot_national_federations.cooperative_society_name",
+        "chatbot_national_federations.identification_number",
+        "chatbot_national_federations.registration_number",
+        "chatbot_national_federations.date_registration",
+        "chatbot_national_federations.location_of_head_quarter",
+        "chatbot_national_federations.affiliation_with_govt_dept_name",
+        "chatbot_national_federations.urban_local_body_type_name",
+        "chatbot_national_federations.urban_local_body_name",
+        "chatbot_national_federations.ward_name",
+        "chatbot_national_federations.block_name",
+        "chatbot_national_federations.gram_panchayat_name",
+        "chatbot_national_federations.village_name",
+        "chatbot_national_federations.pincode",
+        "chatbot_national_federations.registered_office_address",
+        "chatbot_national_federations.designation_name",
+        "chatbot_national_federations.functional_status",
+        "chatbot_national_federations.designation_other",
+        "chatbot_national_federations.total_number_of_members",
+        "chatbot_national_federations.phone_number",
+        "chatbot_national_federations.email",
+        "chatbot_national_federations.contact_person",
+        "chatbot_national_federations.user_id",
+        "chatbot_national_federations.is_draft",
+        "chatbot_national_federations.is_new",
+        "chatbot_national_federations.created_by",
+        "chatbot_national_federations.updated_by",
+        "chatbot_national_federations.created",
+        "chatbot_national_federations.updated",
+        "chatbot_national_federations.ncd_id",
+        "chatbot_national_federations.state_name",
+        "chatbot_national_federations.district_name",
+        "chatbot_national_federations.major_activities_names"
+      ],
+      "business_terms": [
+        "federation",
+        "national",
+        "sport",
+        "association",
+        "organization",
+        "government",
+        "affiliation",
+        "competition",
+        "athlete",
+        "member"
+      ]
+    }
+  },
+  {
+    "point_id": "a9140490-ac60-562a-8f43-348d45745a95",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_ucb ( /* This table contains information regarding the urban cooperative banks or ucb sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ ucb_branch TEXT, /* Total Number of branches of UCB, */ has_nafcub TEXT, /* Whether the UCB is affiliated to NAFCUB ( 1 = Yes, 0 = No ), */ annual_income TEXT, /* Annual Income of the UCB (in Rs), */ annual_ucb_expenditr TEXT, /* Annual Expenditure of the UCB (in Rs), */ asset_ucb TEXT, /* Total Assets of the UCB (in Rs), */ liability_ucb TEXT, /* Total Liabilities of the UCB (in Rs), */ total_deposit TEXT, /* Total Deposits of the UCB (in Rs), */ loan_outstanding TEXT, /* Total Loan Outstanding of the UCB (in Rs), */ is_gov_scheme_implemented TEXT, /* Whether the UCB implementing any Central/State Government Scheme ( 1 = Yes, 0 = No ), */ created_at TEXT, /* Whether the UCB implementing any Central/State Government Scheme ( 1 = Yes, 0 = No ), */ updated_at TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_ucb"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_ucb.id",
+        "chatbot_state_district_federation_ucb.state_district_federation_id",
+        "chatbot_state_district_federation_ucb.created_at",
+        "chatbot_state_district_federation_ucb.updated_at"
+      ],
+      "business_terms": [
+        "urban",
+        "banks",
+        "sector",
+        "federation",
+        "state",
+        "district"
+      ]
+    }
+  },
+  {
+    "point_id": "b81b18f3-840d-5160-b5b1-99bb2ce35f87",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_credit ( /* This table contains information regarding the credit and thrift sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ facilities_names TEXT, facilities TEXT, /* List of facilities provided by the cooperative federation */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_credit"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_credit.id",
+        "chatbot_state_district_federation_credit.state_district_federation_id",
+        "chatbot_state_district_federation_credit.facilities_names",
+        "chatbot_state_district_federation_credit.facilities"
+      ],
+      "business_terms": [
+        "credit",
+        "thrift",
+        "sector",
+        "federation",
+        "district"
+      ]
+    }
+  },
+  {
+    "point_id": "bd3b9cae-01c6-50d5-a16a-895f79f34488",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_tribal ( /* This table contains information regarding the tribal sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_society TEXT, /* Type of the tribal society, */ type_society_name TEXT, /* Type of the tribal society, */ authorised_share TEXT, /* Authorised share capital of the cooperative federation (in Rs), */ paid_up_members TEXT, /* Paid up share capital by the members, */ paid_up_government_bodies TEXT, /* Paid up share capital by the government or government bodies, */ paid_up_total TEXT, /* Total paid up share capital (sum of paid up share capital by the members and government or government bodies), */ annual_turn_over TEXT, /* Annual Turnover of the cooperative federation (in Rs), */ state_district_federation TEXT, /* Annual Turnover of the cooperative federation (in Rs), */ society_provide_raw_material TEXT, /* Whether the cooperative federation provide raw material to members & finished products taken after processing ( 1 = Yes, 0 = No ), */ facilities_names TEXT, /* Whether the cooperative federation provide raw material to members & finished products taken after processing ( 1 = Yes, 0 = No ), */ facilities TEXT, /* List of facilities provided by the cooperative federation */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_tribal"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_tribal.id",
+        "chatbot_state_district_federation_tribal.state_district_federation_id",
+        "chatbot_state_district_federation_tribal.type_society",
+        "chatbot_state_district_federation_tribal.type_society_name",
+        "chatbot_state_district_federation_tribal.authorised_share",
+        "chatbot_state_district_federation_tribal.paid_up_members",
+        "chatbot_state_district_federation_tribal.paid_up_government_bodies",
+        "chatbot_state_district_federation_tribal.paid_up_total",
+        "chatbot_state_district_federation_tribal.annual_turn_over",
+        "chatbot_state_district_federation_tribal.state_district_federation",
+        "chatbot_state_district_federation_tribal.society_provide_raw_material",
+        "chatbot_state_district_federation_tribal.facilities_names",
+        "chatbot_state_district_federation_tribal.facilities"
+      ],
+      "business_terms": [
+        "tribal",
+        "sector",
+        "federation",
+        "district",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "c4dbd2cb-6b3d-5313-9316-f1e60328a8b7",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_miscellaneous ( /* This table contains non credit miscellaneous information about the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ created_at TEXT, updated_at TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_miscellaneous"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_miscellaneous.id",
+        "chatbot_state_district_federation_miscellaneous.state_district_federation_id",
+        "chatbot_state_district_federation_miscellaneous.created_at",
+        "chatbot_state_district_federation_miscellaneous.updated_at"
+      ],
+      "business_terms": [
+        "federation",
+        "district",
+        "state",
+        "miscellaneous",
+        "noncredit"
+      ]
+    }
+  },
+  {
+    "point_id": "dbd0b812-2165-5307-9dda-5abf9d3be864",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_wocoop ( /* This table contains information regarding the women cooperative sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_society TEXT, /* Type of Women Cooperative Society, */ type_society_name TEXT, /* Type of Women Cooperative Society, */ paid_up_members TEXT, /* Paid up share capital by the members, */ paid_up_government_bodies TEXT, /* Paid up share capital by the government or government bodies, */ paid_up_total TEXT, /* Total paid up share capital (sum of paid up share capital by the members and government or government bodies), */ loan_dccb TEXT, /* Whether the loan taken, */ unknown_col TEXT, /* Whether the loan taken */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_wocoop"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_wocoop.id",
+        "chatbot_state_district_federation_wocoop.state_district_federation_id",
+        "chatbot_state_district_federation_wocoop.type_society",
+        "chatbot_state_district_federation_wocoop.type_society_name",
+        "chatbot_state_district_federation_wocoop.paid_up_members",
+        "chatbot_state_district_federation_wocoop.paid_up_government_bodies",
+        "chatbot_state_district_federation_wocoop.paid_up_total",
+        "chatbot_state_district_federation_wocoop.loan_dccb",
+        "chatbot_state_district_federation_wocoop.loan_from_dcb",
+        "chatbot_state_district_federation_wocoop.loan_other",
+        "chatbot_state_district_federation_wocoop.loan_from_other",
+        "chatbot_state_district_federation_wocoop.is_raw_material_taken",
+        "chatbot_state_district_federation_wocoop.facilities_names",
+        "chatbot_state_district_federation_wocoop.facilities"
+      ],
+      "business_terms": [
+        "women",
+        "cooperative",
+        "sector",
+        "district",
+        "federation"
+      ]
+    }
+  },
+  {
+    "point_id": "e0cc7712-6138-548c-918a-97a6238b2528",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_transport ( /* This table contains information regarding the transport sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_society TEXT, type_society_name TEXT, type_owner TEXT, bus_type_detail TEXT, truck_type_detail TEXT, other_type_detail TEXT, no_passenger_vehicle TEXT, no_member_travel TEXT, no_freight_vehicle TEXT, quantity_good_transport TEXT, member_themself TEXT, is_user_transport_facility TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_transport"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_transport.id",
+        "chatbot_state_district_federation_transport.state_district_federation_id",
+        "chatbot_state_district_federation_transport.type_society",
+        "chatbot_state_district_federation_transport.type_society_name",
+        "chatbot_state_district_federation_transport.type_owner",
+        "chatbot_state_district_federation_transport.bus_type_detail",
+        "chatbot_state_district_federation_transport.truck_type_detail",
+        "chatbot_state_district_federation_transport.other_type_detail",
+        "chatbot_state_district_federation_transport.no_passenger_vehicle",
+        "chatbot_state_district_federation_transport.no_member_travel",
+        "chatbot_state_district_federation_transport.no_freight_vehicle",
+        "chatbot_state_district_federation_transport.quantity_good_transport",
+        "chatbot_state_district_federation_transport.member_themself",
+        "chatbot_state_district_federation_transport.is_user_transport_facility"
+      ],
+      "business_terms": [
+        "transport",
+        "sector",
+        "federation",
+        "district",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "e1f68170-9899-5a69-8d76-60bd1059fc05",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_marketing ( /* This table contains information regarding the marketing sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ has_land TEXT, /* Whether the cooperative federation has land ( 1 = Yes, 0 = No ), */ has_warehouses TEXT, /* Does the cooperative federation have warehouses or godowns ( 1 = Yes, 0 = No ), */ capacity_warehouses TEXT, /* Capacity of the Warehouses or Godowns (MT), */ authorised_share TEXT, /* Capacity of the Warehouses or Godowns (MT), */ paid_up_members TEXT, /* Paid up share capital by the members, */ paid_up_government_bodies TEXT, /* Paid up share capital by the government or government bodies, */ paid_up_total TEXT, /* Total paid up share capital (sum of paid up share capital by the members and government or government bodies), */ annual_turn_over TEXT, /* Total paid up share capital (sum of paid up share capital by the members and government or government bodies), */ annual_expenses TEXT, /* Annual Expenses of the Cooperative Federation (in Rs), */ liecense_to_sell_names TEXT, /* Annual Expenses of the Cooperative Federation (in Rs), */ liecense_to_sell TEXT, sell_the_item_names TEXT, sell_the_item TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_marketing"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_marketing.id",
+        "chatbot_state_district_federation_marketing.state_district_federation_id",
+        "chatbot_state_district_federation_marketing.has_land",
+        "chatbot_state_district_federation_marketing.has_warehouses",
+        "chatbot_state_district_federation_marketing.capacity_warehouses",
+        "chatbot_state_district_federation_marketing.authorised_share",
+        "chatbot_state_district_federation_marketing.paid_up_members",
+        "chatbot_state_district_federation_marketing.paid_up_government_bodies",
+        "chatbot_state_district_federation_marketing.paid_up_total",
+        "chatbot_state_district_federation_marketing.annual_turn_over",
+        "chatbot_state_district_federation_marketing.annual_expenses",
+        "chatbot_state_district_federation_marketing.liecense_to_sell_names",
+        "chatbot_state_district_federation_marketing.liecense_to_sell",
+        "chatbot_state_district_federation_marketing.sell_the_item_names",
+        "chatbot_state_district_federation_marketing.sell_the_item"
+      ],
+      "business_terms": [
+        "marketing",
+        "sector",
+        "federation",
+        "district",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "e2080ce9-d4be-5c77-8d2e-0b9b8405d1c2",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_livestock ( /* This table contains information regarding the livestock sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_produce_names TEXT, type_produce TEXT, /* List of products produced by the society, */ common_work_place TEXT, /* Whether the cooperative federation has common Livestock Shade/poultry farm ( 1 = Yes, 0 = No ), */ square_meter TEXT, /* Whether the cooperative federation has common Livestock Shade/poultry farm ( 1 = Yes, 0 = No ), */ is_work_by_member TEXT, /* whether the caretaking of livestock/poultry is done by member themselves ( 1 = Yes, 0 = No ), */ is_training_provide TEXT, /* Whether the regular guidance/training is provided by cooperative federation to members ( 1 = Yes, 0 = No ), */ is_poultry_feed TEXT, /* Whether the cooperative federation provide livestock/poultry feed to members ( 1 = Yes, 0 = No ), */ is_collected_ TEXT, /* Whether the cooperative federation provide livestock/poultry feed to members ( 1 = Yes, 0 = No ) */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_livestock"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_livestock.id",
+        "chatbot_state_district_federation_livestock.state_district_federation_id",
+        "chatbot_state_district_federation_livestock.type_produce_names",
+        "chatbot_state_district_federation_livestock.type_produce",
+        "chatbot_state_district_federation_livestock.common_work_place",
+        "chatbot_state_district_federation_livestock.square_meter",
+        "chatbot_state_district_federation_livestock.is_work_by_member",
+        "chatbot_state_district_federation_livestock.is_training_provide",
+        "chatbot_state_district_federation_livestock.is_poultry_feed",
+        "chatbot_state_district_federation_livestock.is_collected_from_member",
+        "chatbot_state_district_federation_livestock.is_waste_facility",
+        "chatbot_state_district_federation_livestock.is_operate_retail",
+        "chatbot_state_district_federation_livestock.no_of_retail",
+        "chatbot_state_district_federation_livestock.is_product_sale_out",
+        "chatbot_state_district_federation_livestock.facilities"
+      ],
+      "business_terms": [
+        "livestock",
+        "sector",
+        "federation",
+        "district",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "e833a8b4-9ede-5178-b76a-a285bcd2487f",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_fishery ( /* This table contains information about the fishery sector of the state district federation */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ annual_fish_catch TEXT, /* Annual total fish catch by the society (in mt), */ credit_facility TEXT, /* whether the society provides credit facility to its members ( 1 = Yes, 0 = No ), */ total_credit_provided TEXT, /* Total credit provided in Financial Year (in Rs.), */ fuel_distribution TEXT, /* Whether the society has fuel distribution facility ( 1 = Yes, 0 = No ), */ marketing TEXT, /* Whether the society has marketing facility ( 1 = Yes, 0 = No ), */ cold_storage TEXT, /* Whether the society has cold storage facility ( 1 = Yes, 0 = No ), */ transportation TEXT, /* Whether the society has transportation facility ( 1 = Yes, 0 = No ), */ other_facility TEXT, /* List of other facilities provided by the society, */ created_at TEXT, /* List of other facilities provided by the society, */ updated_at TEXT, deleted_at TEXT );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_fishery"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_fishery.id",
+        "chatbot_state_district_federation_fishery.state_district_federation_id",
+        "chatbot_state_district_federation_fishery.annual_fish_catch",
+        "chatbot_state_district_federation_fishery.credit_facility",
+        "chatbot_state_district_federation_fishery.total_credit_provided",
+        "chatbot_state_district_federation_fishery.fuel_distribution",
+        "chatbot_state_district_federation_fishery.marketing",
+        "chatbot_state_district_federation_fishery.cold_storage",
+        "chatbot_state_district_federation_fishery.transportation",
+        "chatbot_state_district_federation_fishery.other_facility",
+        "chatbot_state_district_federation_fishery.created_at",
+        "chatbot_state_district_federation_fishery.updated_at",
+        "chatbot_state_district_federation_fishery.deleted_at"
+      ],
+      "business_terms": [
+        "fishery",
+        "sector",
+        "state",
+        "district",
+        "federation"
+      ]
+    }
+  },
+  {
+    "point_id": "f9c2a840-8504-5703-bcfc-deff4a6b1d0b",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_state_district_federation_handicraft ( /* This table contains information regarding the handicraft sector of the state district federations. */ id TEXT, state_district_federation_id TEXT, /* state district federation id joins with the id of chatbot_state_district_federation_private */ type_raw_names TEXT, type_raw TEXT, /* List of raw materials used by the federation, */ type_produce_names TEXT, /* List of raw materials used by the federation, */ type_produce TEXT, /* List of products produced by the federation, */ common_work_place TEXT, /* Whether the cooperative federation has common working place or manufacturing unit ( 1 = Yes, 0 = No ), */ workplace_operate TEXT, /* Whether the cooperative federation has common working place or manufacturing unit ( 1 = Yes, 0 = No ), */ is_work_by_member TEXT, /* whether the processing or handicraft work is done by members themself ( 1 = Yes, 0 = No ), */ is_training_provide TEXT, /* whether the processing or handicraft work is done by members themself ( 1 = Yes, 0 = No ), */ is_raw_provide TEXT, /* Whether the cooperative federation provide raw material to members & finished products taken after processing ( 1 = Yes, 0 = No ), */ is_raw_easy_avail TEXT, /* whether the raw material easily available to cooperative federation ( 1 = Yes, 0 = No ), */ is_waste_generate TEXT, /* whether the waste are generated in handicraft process ( 1 = Yes, 0 = No ), */ is_waste_facility TEXT, /* whether the waste are generated in handicraft process ( 1 = Yes, 0 = No ), */ is_operate_retail TEXT, /* whether the cooperative federation operate retail shops/outlet to sale products ( 1 = Yes, 0 = No ), */ is_product_sale_out TEXT, /* whether the products are sale out of the area of operation of the cooperative federation ( 1 = Yes, 0 = No ), */ facilities_names TEXT, /* whether the products are sale out of the area of operation of the cooperative federation ( 1 = Yes, 0 = No ), */ facilities TEXT, /* List of facilities provided by the federation */ );",
+      "type": "ddl",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_handicraft"
+      ],
+      "columns": [
+        "chatbot_state_district_federation_handicraft.id",
+        "chatbot_state_district_federation_handicraft.state_district_federation_id",
+        "chatbot_state_district_federation_handicraft.type_raw_names",
+        "chatbot_state_district_federation_handicraft.type_raw",
+        "chatbot_state_district_federation_handicraft.type_produce_names",
+        "chatbot_state_district_federation_handicraft.type_produce",
+        "chatbot_state_district_federation_handicraft.common_work_place",
+        "chatbot_state_district_federation_handicraft.workplace_operate",
+        "chatbot_state_district_federation_handicraft.is_work_by_member",
+        "chatbot_state_district_federation_handicraft.is_training_provide",
+        "chatbot_state_district_federation_handicraft.is_raw_provide",
+        "chatbot_state_district_federation_handicraft.is_raw_easy_avail",
+        "chatbot_state_district_federation_handicraft.is_waste_generate",
+        "chatbot_state_district_federation_handicraft.is_waste_facility",
+        "chatbot_state_district_federation_handicraft.is_operate_retail",
+        "chatbot_state_district_federation_handicraft.is_product_sale_out",
+        "chatbot_state_district_federation_handicraft.facilities_names",
+        "chatbot_state_district_federation_handicraft.facilities"
+      ],
+      "business_terms": [
+        "handicraft",
+        "sector",
+        "federation",
+        "district",
+        "state"
+      ]
+    }
+  }
+]

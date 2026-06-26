@@ -1,0 +1,68 @@
+{
+  "workflowId": "aatest",
+  "augmentationFactor": 3,
+  "subIntents": [
+    {
+      "name": "kjhk_fbhb",
+      "label": "ghfdyx",
+      "description": "fytd",
+      "examples": [
+        "dfdgggfjhf",
+        "ghhvhgv",
+        "bvccchgg",
+        "jvhgghjj",
+        "vbcvjhl;",
+        "jvghvhl'"
+      ],
+      "requiredEntities": [
+        "Appid"
+      ]
+    },
+    {
+      "name": "fafafa",
+      "label": "rqrsda",
+      "description": "rqwrqwf",
+      "examples": [
+        "wqrqwrff",
+        "erwefcsdv vdvs",
+        "gfhfhfgbbx  hdhd fhdf dhfd",
+        "zdfh fh hfd hdfh",
+        "dfh hdfhdz fhdf d",
+        "xfghxxgf hhd fhdf dg"
+      ],
+      "requiredEntities": [
+        "Appid"
+      ]
+    },
+    {
+      "name": "fasfafe",
+      "label": "ewefgse",
+      "description": "rgegweg",
+      "examples": [
+        "gwegwe rg ger",
+        "erger g rege",
+        "erg ger ge rre",
+        "erge rgerg rgerg ger",
+        "rtjyjn hrhth ryr rhr",
+        "rtytry rtyyryes ryaerha hr"
+      ],
+      "requiredEntities": []
+    },
+    {
+      "name": "dfhgchcc",
+      "label": "hhvvhjbjnb",
+      "description": "ghijjljl",
+      "examples": [
+        "sdhs hdf gggd",
+        "gsgs sgsf et dfb eg",
+        "er e et wttg gdg",
+        "r et radg rury",
+        "eter ttg wetw tsdg",
+        "twwg sgwe y",
+        "e et eye t"
+      ],
+      "requiredEntities": []
+    }
+  ],
+  "entities": []
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "point_id": "bedb5daf-134a-57e7-b90c-0e04e71b2443",
+    "payload": {
+      "ddl": "CREATE TABLE chatbot_ncdc_offices_private ( id TEXT, ncdcid TEXT, /* NCDCID of the Office */ office_type_name TEXT, /* Type of the Office */ name_of_office TEXT, /* Name of the Office */ phone_number TEXT, /* Phone Number of the Office */ email TEXT, /* Email of the Office */ full_address TEXT, /* Full Address of the Office */ state_name TEXT, /* Name of the State/UT where the Office is located */ district_name TEXT, /* Name of the District where the Office is located */ pin_code TEXT, /* Pin Code of the Office */ controller_name TEXT, /* Name of the Controller of the Office */ controller_designation_name TEXT, /* Designation of the Controller of the Office */ controller_email TEXT, /* Email of the Controller of the Office */ controller_phone_number TEXT, /* Phone Number of the Controller of the Office */ area_sq_ft TEXT, /* Area of the Office in Square Feet */ geometry_type TEXT, /* Type of the Office Geometry (Polygon or Point) */ ownership_name TEXT, /* Type of Ownership of the Office (Owned, Rented) */ specialization TEXT, /* Specialization of the Office (Financial/Training) */ latitude TEXT, /* Latitude of the Office */ longitude TEXT, /* Longitude of the Office */ status TEXT, /* Status of the Office (1=Active, 0=Inactive) */ is_approved TEXT /* Approval status of the Office */ );",
+      "type": "ddl",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "ncdc",
+        "office",
+        "private",
+        "chatbot",
+        "agency"
+      ]
+    }
+  }
+]

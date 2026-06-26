@@ -1,0 +1,23 @@
+{
+    "total_annotations": 8793,
+    "class_counts": {
+        "Artwork": 662,
+        "Not_Artwork": 293,
+        "Front_Panel": 584,
+        "Side_Panel": 1168,
+        "Back_Panel": 567,
+        "Extra_Areas": 4379,
+        "Bottom_Panel": 576,
+        "Top_Panel": 564
+    },
+    "relative_frequency": {
+        "Artwork": 0.07528716024110088,
+        "Not_Artwork": 0.03332196065051746,
+        "Front_Panel": 0.06641646764471738,
+        "Side_Panel": 0.13283293528943477,
+        "Back_Panel": 0.06448311156601842,
+        "Extra_Areas": 0.49800978050722167,
+        "Bottom_Panel": 0.06550665301944729,
+        "Top_Panel": 0.06414193108154213
+    }
+}

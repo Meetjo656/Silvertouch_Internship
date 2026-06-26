@@ -45,6 +45,21 @@ COCO_TO_NAME = {c["id"]: c["name"] for c in CATEGORIES}
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff", ".webp"}
 
+def compute_iou(boxA, boxB):
+    xA = max(boxA[0], boxB[0])
+    yA = max(boxA[1], boxB[1])
+    xB = min(boxA[0] + boxA[2], boxB[0] + boxB[2])
+    yB = min(boxA[1] + boxA[3], boxB[1] + boxB[3])
+
+    interArea = max(0.0, xB - xA) * max(0.0, yB - yA)
+    if interArea == 0.0:
+        return 0.0
+
+    boxAArea = boxA[2] * boxA[3]
+    boxBArea = boxB[2] * boxB[3]
+    iou = interArea / float(boxAArea + boxBArea - interArea)
+    return iou
+
 def convert():
     print(f"Starting conversion with CONF_THRESHOLD = {CONF_THRESHOLD}")
     
@@ -91,6 +106,8 @@ def convert():
         "total_annotations": 0,
         "filtered_by_conf": 0,
         "corrupted_lines": 0,
+        "conflicts_detected": 0,
+        "conflicts_removed": 0,
         "class_counts": Counter(),
         "class_image_counts": Counter()
     }
@@ -133,6 +150,8 @@ def convert():
             img_classes_present = set()
             img_has_valid_box = False
             
+            image_boxes = []
+            
             for line in lines:
                 parts = line.strip().split()
                 if len(parts) < 5:
@@ -174,27 +193,61 @@ def convert():
                 if area <= 0:
                     continue
 
-                annotation_id += 1
                 cat_id = YOLO_TO_COCO[yolo_cls]
+                image_boxes.append({
+                    "cat_id": cat_id,
+                    "bbox": [x_min, y_min, w_px, h_px],
+                    "area": area,
+                    "conf": conf
+                })
+
+            # --- Conflict Resolution ---
+            to_remove = set()
+            artwork_boxes = [(i, b) for i, b in enumerate(image_boxes) if b["cat_id"] == 1]
+            not_artwork_boxes = [(i, b) for i, b in enumerate(image_boxes) if b["cat_id"] == 2]
+            
+            for i, a_box in artwork_boxes:
+                for j, na_box in not_artwork_boxes:
+                    iou = compute_iou(a_box["bbox"], na_box["bbox"])
+                    if iou > 0.50:
+                        stats["conflicts_detected"] += 1
+                        if a_box["conf"] > na_box["conf"]:
+                            to_remove.add(j)
+                        elif na_box["conf"] > a_box["conf"]:
+                            to_remove.add(i)
+                        else:
+                            if a_box["area"] > na_box["area"]:
+                                to_remove.add(j)
+                            else:
+                                to_remove.add(i)
+                                
+            stats["conflicts_removed"] += len(to_remove)
+
+            # Append surviving boxes
+            for idx, box in enumerate(image_boxes):
+                if idx in to_remove:
+                    continue
+                    
+                annotation_id += 1
                 
                 # CVAT prefers purely structural COCO format (no extra fields like score)
                 coco["annotations"].append({
                     "id": annotation_id,
                     "image_id": image_id,
-                    "category_id": cat_id,
+                    "category_id": box["cat_id"],
                     "bbox": [
-                        round(x_min, 2),
-                        round(y_min, 2),
-                        round(w_px, 2),
-                        round(h_px, 2),
+                        round(box["bbox"][0], 2),
+                        round(box["bbox"][1], 2),
+                        round(box["bbox"][2], 2),
+                        round(box["bbox"][3], 2),
                     ],
-                    "area": round(area, 2),
+                    "area": round(box["area"], 2),
                     "iscrowd": 0,
                 })
                 
                 stats["total_annotations"] += 1
-                stats["class_counts"][cat_id] += 1
-                img_classes_present.add(cat_id)
+                stats["class_counts"][box["cat_id"]] += 1
+                img_classes_present.add(box["cat_id"])
                 img_has_valid_box = True
 
             if img_has_valid_box:
@@ -223,6 +276,8 @@ def convert():
     report_lines.append(f"Avg Boxes per Image   : {avg_boxes:.2f} (for images with boxes)")
     report_lines.append(f"Filtered by Conf      : {stats['filtered_by_conf']}")
     report_lines.append(f"Corrupted Lines       : {stats['corrupted_lines']}")
+    report_lines.append(f"Conflicts Detected    : {stats['conflicts_detected']}")
+    report_lines.append(f"Conflicts Removed     : {stats['conflicts_removed']}")
     report_lines.append("==================================================")
     report_lines.append("ANNOTATIONS BY CLASS (Total Box Count):")
     for cat in CATEGORIES:
