@@ -12,6 +12,9 @@ class EntityDef(BaseModel):
     type:     Optional[str]       = "regex"   # "regex" | "train"
     regex:    Optional[str]       = ""
     examples: Optional[list[str]] = []
+    minLength:       Optional[int] = None
+    maxLength:       Optional[int] = None
+    validationRegex: Optional[str] = None
 
 
 class SubIntent(BaseModel):

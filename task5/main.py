@@ -21,7 +21,7 @@ import logging
 import os
 import subprocess
 from contextlib import asynccontextmanager
-
+import spacy
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sentence_transformers import SentenceTransformer
@@ -46,13 +46,11 @@ async def lifespan(app: FastAPI):
     try:
         logger.info("Loading spaCy model: en_core_web_sm ...")
         try:
-            import spacy
             global_state.spacy_nlp = spacy.load("en_core_web_sm")
             logger.info("✓ spaCy model loaded")
         except OSError:
             logger.warning("✗ spaCy model not found — attempting auto-download ...")
             try:
-                import spacy
                 subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"], check=True)
                 global_state.spacy_nlp = spacy.load("en_core_web_sm")
                 logger.info("✓ spaCy model downloaded and loaded")
@@ -72,16 +70,25 @@ async def lifespan(app: FastAPI):
         yield
         return
 
-    # Auto-restore all previously trained classifiers from disk
+    # Auto-restore all previously trained classifiers from disk via ModelRegistry
+    from app.core.model_registry import registry
     loaded_count = 0
-    for pkl_file in TRAINED_MODELS_DIR.glob("*.pkl"):
-        workflow_id = pkl_file.stem
+    
+    for model in registry.list_models():
+        workflow_id = model["workflow_id"]
         try:
-            load_trained_classifier(workflow_id)
+            registry.get_model(workflow_id)
             logger.info(f"  ✓ Auto-loaded classifier: {workflow_id}")
             loaded_count += 1
         except Exception as e:
             logger.warning(f"  ✗ Could not load classifier '{workflow_id}': {e}")
+            
+    # Auto-load global shared classifiers (Task 2)
+    from app.core.persistence import load_global_classifiers
+    try:
+        load_global_classifiers()
+    except Exception as e:
+        logger.warning(f"  ✗ Could not load global shared classifiers: {e}")
 
     logger.info(f"✓ NLU service fully live — {loaded_count} trained model(s) loaded")
     yield

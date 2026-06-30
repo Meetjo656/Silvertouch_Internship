@@ -91,6 +91,9 @@ async def delete_trained_model(workflowId: str = Query(...), api_key: str = Depe
     if pkl.exists():
         pkl.unlink()
 
+    from app.core.model_registry import registry
+    registry.remove_model(workflowId)
+
     return {"success": True, "message": f"Trained model for '{workflowId}' deleted. Reverted to zero-shot mode."}
 
 

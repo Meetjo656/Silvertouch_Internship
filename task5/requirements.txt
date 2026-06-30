@@ -3,7 +3,7 @@ uvicorn
 transformers
 torch
 sentence-transformers
-numpy
+numpy<2.0.0
 pydantic
 python-dotenv
 scikit-learn

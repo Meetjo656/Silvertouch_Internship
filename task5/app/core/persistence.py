@@ -38,6 +38,9 @@ def save_trained_classifier(workflow_id: str) -> None:
         pickle.dump(payload, f)
     logger.info(f"Saved trained classifier for '{workflow_id}' → {path}")
 
+    from app.core.model_registry import registry
+    registry.register_model(workflow_id, str(path), payload["metadata"])
+
 
 def load_trained_classifier(workflow_id: str) -> None:
     """Load a persisted classifier into global state."""
@@ -49,6 +52,32 @@ def load_trained_classifier(workflow_id: str) -> None:
     state.trained_metadata_store[workflow_id] = payload.get("metadata", {})
     if "entity_classifiers" in payload:
         state.trained_entity_classifiers[workflow_id] = payload["entity_classifiers"]
+
+def global_model_path() -> Path:
+    return TRAINED_MODELS_DIR / "global_shared_classifiers.pkl"
+
+def save_global_classifiers() -> None:
+    payload = {
+        "intent_classifier": state.shared_intent_classifier,
+        "intent_label_encoder": state.shared_intent_label_encoder,
+        "workflow_classifier": state.shared_workflow_classifier,
+        "workflow_label_encoder": state.shared_workflow_label_encoder,
+    }
+    path = global_model_path()
+    with open(path, "wb") as f:
+        pickle.dump(payload, f)
+    logger.info(f"Saved global shared classifiers → {path}")
+
+def load_global_classifiers() -> None:
+    path = global_model_path()
+    if path.exists():
+        with open(path, "rb") as f:
+            payload = pickle.load(f)
+        state.shared_intent_classifier = payload.get("intent_classifier")
+        state.shared_intent_label_encoder = payload.get("intent_label_encoder")
+        state.shared_workflow_classifier = payload.get("workflow_classifier")
+        state.shared_workflow_label_encoder = payload.get("workflow_label_encoder")
+        logger.info(f"Loaded global shared classifiers from {path}")
 
 
 # ─── Version Management ───────────────────────────────────────────────────────
