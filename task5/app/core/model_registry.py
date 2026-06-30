@@ -47,7 +47,7 @@ class ModelRegistry:
             "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
             "classifier": metadata.get("classifier", "LogisticRegression"),
             "training_examples": metadata.get("totalSentences", 0),
-            "model_path": str(model_path),
+            "model_path": model_path,
             "full_metadata": metadata
         }
         

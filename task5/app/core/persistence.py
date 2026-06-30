@@ -359,8 +359,8 @@ def save_training_data(
                 "name":             _get(s, "name", ""),
                 "label":            _get(s, "label", ""),
                 "description":      _get(s, "description", ""),
-                "examples":         list(_get(s, "examples", [])),
-                "requiredEntities": list(_get(s, "requiredEntities", [])),
+                "examples":         list(_get(s, "examples", []) or []),
+                "requiredEntities": list(_get(s, "requiredEntities", []) or []),
             }
             for s in subIntents
         ],
@@ -369,7 +369,7 @@ def save_training_data(
                 "name":     _get(e, "name", ""),
                 "type":     _get(e, "type", "regex"),
                 "regex":    _get(e, "regex", ""),
-                "examples": list(_get(e, "examples", [])),
+                "examples": list(_get(e, "examples", []) or []),
             }
             for e in (entities or [])
         ],
