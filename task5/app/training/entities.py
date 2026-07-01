@@ -118,13 +118,13 @@ def train_entity_classifiers(
             min_class_count = min(len(X_pos), len(X_neg))
             if len(y) >= 4 and min_class_count >= 2:
                 try:
-                    cv_scores   = cross_val_score(clf, X, y, cv=min(3, min_class_count), scoring="accuracy")
+                    cv_scores   = cross_val_score(clf, X, y, cv=min(3, min_class_count), scoring="accuracy")  # type: ignore
                     cv_accuracy = round(float(cv_scores.mean()), 4)
                     logger.info(f"    CV accuracy for entity '{ent_name}': {cv_accuracy:.2%}")
                 except Exception as e:
                     logger.warning(f"    CV skipped for entity '{ent_name}': {e}")
 
-            clf.fit(X, y)
+            clf.fit(X, y)  # type: ignore
             entity_classifiers_for_wf[ent_name] = clf
             entity_metrics[ent_name] = {
                 "totalExamples":  len(examples),

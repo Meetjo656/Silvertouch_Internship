@@ -24,15 +24,18 @@ logger = logging.getLogger("mybot-nlu")
 router = APIRouter()
 
 
+from app.conversation.manager import ConversationManager
+from app.conversation.resolver import ResolutionEngine
+
 @router.post("/analyze")
 async def analyze(request: AnalyzeRequest, api_key: str = Depends(get_api_key)):
-    """Full NLU pipeline: entity extraction + validation + intent detection."""
+    """Full NLU pipeline: entity extraction + validation + intent detection + conversation management."""
     if not state.models_loaded:
         raise HTTPException(status_code=503, detail="Models are still loading.")
 
     request.text = request.text or ""
-
-    start       = time.time()
+    start = time.time()
+    
     custom_pats = {k: v for k, v in (request.customPatterns or {}).items() if k and v}
     intent_required_entities_map = {}
     entity_configs = []
@@ -53,58 +56,117 @@ async def analyze(request: AnalyzeRequest, api_key: str = Depends(get_api_key)):
             except Exception as e:
                 logger.warning(f"Failed to load workflow data from {wf_json}: {e}")
 
-    # ─── 1. Extract Entities ───────────────────────────────────────────────
-    entity_result = extract_entities(request.text, custom_pats, entity_configs, request.workflowId)
-    
-    # ─── 2. Validate Entities ──────────────────────────────────────────────
-    valid_ents, valid_ent_list, invalid_ents = validate_entities(
-        entity_result["entities"], 
-        entity_result["entityList"], 
-        entity_configs
-    )
+    conv_manager = ConversationManager()
+    session = conv_manager.get_session(request.sessionId) if request.sessionId else None
 
-    # ─── 3. Detect Intent ──────────────────────────────────────────────────
-    intent_result = detect_intent(
-        request.text,
-        request.workflowId or "welcome-intent",
-        request.subIntents or [],
-        request.confidenceThreshold if request.confidenceThreshold is not None else 0.30,
-    )
-    
-    # ─── 4. Fallback Manager ───────────────────────────────────────────────
-    required_entities = intent_required_entities_map.get(intent_result["subintent"], [])
-    resolution = manage_fallback(intent_result, valid_ents, required_entities, invalid_ents)
-    
-    elapsed = round(time.time() - start, 3)
+    # ─── YES PATH: Existing Session ───────────────────────────────────────────
+    if session:
+        # Extract entities from the new user input
+        entity_result = extract_entities(request.text, custom_pats, entity_configs, request.workflowId)
+        valid_ents, valid_ent_list, invalid_ents = validate_entities(
+            entity_result["entities"], 
+            entity_result["entityList"], 
+            entity_configs
+        )
+        
+        # If we were waiting for an entity, check if it was provided
+        if session.is_waiting() and session.waiting_for in valid_ents:
+            conv_manager.store_entity(session.conversation_id, session.waiting_for, valid_ents[session.waiting_for])
 
-    wf_metadata             = state.trained_metadata_store.get(request.workflowId, {}) if request.workflowId is not None else {}
-    entity_training_metrics = wf_metadata.get("entityMetrics", {})
+        # Resolve next action
+        resolution = ResolutionEngine.resolve(session, request.text)
+        
+        # If resolver determines we need to ask for a new entity, ensure it's saved in state
+        if resolution.get("action") == "ask_entity" and resolution.get("entity"):
+            session.waiting_for = resolution["entity"]
+            conv_manager.update_session(session)
 
-    return {
-        "success":          True,
-        "query":            request.text,
-        "sessionId":        request.sessionId,
-        "workflowId":       request.workflowId,
-        "intent":           intent_result["intent"],
-        "subintent":        intent_result["subintent"],
-        "confidence":       intent_result["confidence"],
-        "resolution":       resolution,
-        "intentMode":       intent_result.get("mode", "unknown"),
-        "requiredEntities": required_entities,
-        "entities":         valid_ents,
-        "invalidEntities":  invalid_ents,
-        "entityList":       valid_ent_list,
-        "allScores":        intent_result.get("allScores", []),
-        "processingTimeMs": elapsed * 1000,
-        "models": {
-            "entityExtraction": "spacy en_core_web_sm + trained-classifiers"
-                                if entity_training_metrics else "spacy en_core_web_sm",
-            "intentDetection":  f"LogisticRegression (trained:{request.workflowId})"
-                                if request.workflowId in state.trained_classifiers
-                                else "cosine-similarity (zeroshot)",
-        },
-        "entityTrainingMetrics": entity_training_metrics,
-    }
+        elapsed = round(time.time() - start, 3)
+        return {
+            "success": True,
+            "query": request.text,
+            "sessionId": request.sessionId,
+            "workflowId": request.workflowId,
+            "resolution": resolution,
+            "sessionState": session.to_dict(),
+            "entities": valid_ents,
+            "processingTimeMs": elapsed * 1000,
+        }
+
+    # ─── NO PATH: New Session ────────────────────────────────────────────────
+    else:
+        # 1. Extract Entities
+        entity_result = extract_entities(request.text, custom_pats, entity_configs, request.workflowId)
+        
+        # 2. Validate Entities
+        valid_ents, valid_ent_list, invalid_ents = validate_entities(
+            entity_result["entities"], 
+            entity_result["entityList"], 
+            entity_configs
+        )
+
+        # 3. Detect Intent
+        intent_result = detect_intent(
+            request.text,
+            request.workflowId or "welcome-intent",
+            request.subIntents or [],
+            request.confidenceThreshold if request.confidenceThreshold is not None else 0.30,
+        )
+        
+        required_entities = intent_required_entities_map.get(intent_result["subintent"], [])
+        
+        # 4. Create Session BEFORE Fallback Manager
+        if request.sessionId:
+            session = conv_manager.start_session(request.sessionId, request.workflowId)
+            session.current_intent = intent_result.get("intent", "")
+            session.current_subintent = intent_result.get("subintent", "")
+            session.required_entities = {e: None for e in required_entities}
+            
+            for k, v in valid_ents.items():
+                session.add_entity(k, v)
+            
+            # Persist the initial state
+            conv_manager.update_session(session)
+            
+        # 5. Fallback Manager (It will now handle setting the waiting state)
+        resolution = manage_fallback(
+            intent_result, 
+            valid_ents, 
+            required_entities, 
+            invalid_ents,
+            session=session,
+            conv_manager=conv_manager
+        )
+
+        elapsed = round(time.time() - start, 3)
+        wf_metadata = state.trained_metadata_store.get(request.workflowId, {}) if request.workflowId else {}
+        
+        return {
+            "success":          True,
+            "query":            request.text,
+            "sessionId":        request.sessionId,
+            "workflowId":       request.workflowId,
+            "intent":           intent_result["intent"],
+            "subintent":        intent_result["subintent"],
+            "confidence":       intent_result["confidence"],
+            "resolution":       resolution,
+            "intentMode":       intent_result.get("mode", "unknown"),
+            "requiredEntities": required_entities,
+            "entities":         valid_ents,
+            "invalidEntities":  invalid_ents,
+            "entityList":       valid_ent_list,
+            "allScores":        intent_result.get("allScores", []),
+            "sessionState":     session.to_dict() if session else None,
+            "processingTimeMs": elapsed * 1000,
+            "models": {
+                "entityExtraction": "spacy en_core_web_sm + trained-classifiers"
+                                    if wf_metadata.get("entityMetrics") else "spacy en_core_web_sm",
+                "intentDetection":  f"LogisticRegression (trained:{request.workflowId})"
+                                    if request.workflowId in state.trained_classifiers
+                                    else "cosine-similarity (zeroshot)",
+            },
+            "entityTrainingMetrics": wf_metadata.get("entityMetrics", {}),
+        }
 
 
 @router.post("/detect-intent")

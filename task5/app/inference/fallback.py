@@ -5,7 +5,9 @@ Intercepts intent and entity results to determine the next best action for the u
 based on confidence tiers and missing required entities.
 """
 
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
+from app.conversation.manager import ConversationManager
+from app.conversation.session import ConversationSession
 
 HIGH_THRESHOLD = 0.70
 LOW_THRESHOLD = 0.30
@@ -14,7 +16,9 @@ def manage_fallback(
     intent_result: Dict[str, Any],
     extracted_entities: Dict[str, Any],
     required_entities: List[Any],
-    invalid_entities: Dict[str, str]
+    invalid_entities: Dict[str, str],
+    session: Optional[ConversationSession] = None,
+    conv_manager: Optional[ConversationManager] = None
 ) -> Dict[str, Any]:
     """
     Evaluates the results of intent detection and entity extraction.
@@ -46,6 +50,9 @@ def manage_fallback(
                 break
         
         if missing_entity and invalid_reason:
+            if session and conv_manager:
+                session.waiting_for = missing_entity
+                conv_manager.update_session(session)
             return {
                 "status": "invalid_entity",
                 "prompt": f"The {missing_entity} you provided is invalid ({invalid_reason}). Please try again.",
@@ -53,6 +60,9 @@ def manage_fallback(
                 "clarificationOptions": []
             }
         elif missing_entity:
+            if session and conv_manager:
+                session.waiting_for = missing_entity
+                conv_manager.update_session(session)
             return {
                 "status": "missing_entity",
                 "prompt": f"Please provide your {missing_entity}.",

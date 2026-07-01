@@ -10,7 +10,9 @@ Stage 3: Trained custom entities — exact substring match first,
 import re
 import logging
 import numpy as np
-from typing import Optional
+from typing import Optional, Any, Dict
+from app.conversation.session import ConversationSession
+from app.conversation.manager import ConversationManager
 
 from sentence_transformers import util
 
@@ -162,8 +164,9 @@ def extract_entities(
 
             # Step 1: Exact substring match (highest confidence)
             for ex in sorted(examples, key=len, reverse=True):
-                if re.search(r"\b" + re.escape(ex.strip()) + r"\b", text, re.IGNORECASE):
-                    matched_value = ex.strip()
+                ex_str = str(ex).strip()
+                if re.search(r"\b" + re.escape(ex_str) + r"\b", text, re.IGNORECASE):
+                    matched_value = ex_str
                     confidence    = 1.0
                     source        = "trained-entity:substring"
                     break
@@ -202,3 +205,74 @@ def extract_entities(
                 })
 
     return {"entities": entities, "entityList": entity_list}
+
+def process_session_entities(
+    text: str,
+    session: ConversationSession,
+    conv_manager: ConversationManager,
+    custom_patterns: Optional[dict[str, str]] = None,
+    entity_configs: Optional[list] = None,
+    workflow_id: Optional[str] = None
+) -> Dict[str, Any]:
+    """
+    Executes the full conversational entity lifecycle:
+    Extract Entity -> Validate -> Store in Session -> Check Completeness.
+    """
+    from app.inference.validation import validate_entities
+    
+    # 1. Extract Entity
+    entity_result = extract_entities(text, custom_patterns, entity_configs, workflow_id)
+    
+    # 2. Validate
+    valid_ents, valid_ent_list, invalid_ents = validate_entities(
+        entity_result["entities"], 
+        entity_result["entityList"], 
+        entity_configs or []
+    )
+    
+    # 3. Store in Session
+    target = session.waiting_for
+    if target and target in valid_ents:
+        # User provided the specific entity we were waiting for
+        conv_manager.store_entity(session.conversation_id, target, valid_ents[target])
+    elif not target:
+        # Opportunistically store any valid entities we found
+        for k, v in valid_ents.items():
+            conv_manager.store_entity(session.conversation_id, k, v)
+            
+    # Check if the target was invalid
+    if target and target in invalid_ents:
+        return {
+            "status": "invalid_entity",
+            "action": "prompt_again",
+            "prompt": f"The {target} provided is invalid. Please try again.",
+            "missingEntity": target,
+            "entities": valid_ents,
+            "invalid": invalid_ents
+        }
+
+    # 4. Entity Complete?
+    if session.is_complete():
+        # YES -> Resume Workflow
+        return {
+            "status": "success",
+            "action": "resume_workflow",
+            "entities": valid_ents,
+            "invalid": invalid_ents
+        }
+    else:
+        # NO -> Prompt Again
+        missing = conv_manager.get_missing_entity(session.conversation_id)
+        if missing:
+            session.waiting_for = missing
+            conv_manager.update_session(session)
+            return {
+                "status": "missing_entity",
+                "action": "prompt_again",
+                "prompt": f"Please provide your {missing}.",
+                "missingEntity": missing,
+                "entities": valid_ents,
+                "invalid": invalid_ents
+            }
+            
+        return {"status": "unknown"}
