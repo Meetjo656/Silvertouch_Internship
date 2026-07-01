@@ -10,11 +10,12 @@ Both paths share _fit_classifier_and_evaluate() which:
 import time
 import logging
 import numpy as np
-from typing import Optional
+from typing import Optional, Any
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_score
 from sklearn.preprocessing import LabelEncoder
+import pickle
 
 import app.state as state
 from app.models import SubIntent
@@ -100,7 +101,7 @@ def _fit_classifier_and_evaluate(
     workflow_id: str,
     sentences: list[str],
     labels: list[str],
-    X: np.ndarray,
+    X: Any,
     augmentation_factor: int,
     entities: Optional[list],
     subIntents: list,
@@ -118,7 +119,7 @@ def _fit_classifier_and_evaluate(
     3. Persist model + metadata + entity classifiers.
     """
     le = LabelEncoder()
-    y  = le.fit_transform(labels)
+    y  = np.asarray(le.fit_transform(labels))
 
     split_eval = evaluate_train_test_split(X, y, le, workflow_id)
 
@@ -133,7 +134,7 @@ def _fit_classifier_and_evaluate(
     if len(sentences) >= 10 and len(set(labels)) >= 2 and min_class_count >= 2:
         try:
             cv_folds  = min(3, min_class_count)
-            cv_scores = cross_val_score(clf, X, y, cv=cv_folds, scoring="accuracy")
+            cv_scores = cross_val_score(clf, X, y, cv=cv_folds, scoring="accuracy")  # type: ignore
             cv_accuracy = round(float(cv_scores.mean()), 4)
             logger.info(
                 f"CV accuracy for '{workflow_id}': {cv_accuracy:.2%}  |  "
@@ -143,7 +144,7 @@ def _fit_classifier_and_evaluate(
             logger.warning(f"CV skipped for '{workflow_id}': {e}")
 
     t1 = time.time()
-    clf.fit(X, y)
+    clf.fit(X, y)  # type: ignore
     train_time = round(time.time() - t1, 2)
     logger.info(f"Final classifier fitted in {train_time}s")
 
@@ -320,7 +321,7 @@ def train_intent_classifier(
     embeddings_per_intent: dict  = {}
 
     for sub in subIntents:
-        raw_examples = list(sub.examples)
+        raw_examples = list(sub.examples or [])
         if sub.label:       raw_examples.append(sub.label)
         if sub.description: raw_examples.append(sub.description)
 
@@ -338,8 +339,8 @@ def train_intent_classifier(
         logger.info(f"  [{workflow_id}] '{sub.name}': {len(raw_examples)} raw → {len(all_examples)} augmented")
 
     if len(set(labels)) < 2:
-        skipped      = [s.name for s in subIntents if not (list(s.examples) or s.label or s.description)]
-        has_examples = [s.name for s in subIntents if     (list(s.examples) or s.label or s.description)]
+        skipped      = [s.name for s in subIntents if not (list(s.examples or []) or s.label or s.description)]
+        has_examples = [s.name for s in subIntents if     (list(s.examples or []) or s.label or s.description)]
         raise ValueError(
             f"Need at least 2 subintents with examples. "
             f"Got {len(has_examples)} with data: {has_examples}. "
@@ -423,7 +424,7 @@ def train_intent_classifier_incremental(
     X_parts: list                = []
 
     for sub in subIntents:
-        raw_examples = list(sub.examples)
+        raw_examples = list(sub.examples or [])
         if sub.label:       raw_examples.append(sub.label)
         if sub.description: raw_examples.append(sub.description)
 
@@ -439,7 +440,7 @@ def train_intent_classifier_incremental(
             sentences.append(ex)
             labels.append(sub.name)
 
-        s_key = safe_np_key(sub.name)
+        s_key = safe_np_key(sub.name or "")
 
         if sub.name in changed_intents or s_key not in embedding_cache:
             logger.info(f"  [ENCODE] '{sub.name}' ({len(all_examples)} sentences) — changed or cache miss")
@@ -464,8 +465,8 @@ def train_intent_classifier_incremental(
                 cache_hit_count += 1
 
     if len(set(labels)) < 2:
-        skipped      = [s.name for s in subIntents if not (list(s.examples) or s.label or s.description)]
-        has_examples = [s.name for s in subIntents if     (list(s.examples) or s.label or s.description)]
+        skipped      = [s.name for s in subIntents if not (list(s.examples or []) or s.label or s.description)]
+        has_examples = [s.name for s in subIntents if     (list(s.examples or []) or s.label or s.description)]
         raise ValueError(
             f"Need at least 2 subintents with examples. "
             f"Got {len(has_examples)} with data: {has_examples}. "
@@ -495,3 +496,12 @@ def train_intent_classifier_incremental(
         cache_hits            = cache_hit_count,
         cache_misses          = cache_miss_count,
     )
+
+
+def train_global_classifiers() -> None:
+    """
+    Task 2: Train global shared classifiers.
+    Currently a stub to resolve the ImportError.
+    """
+    logger.info("Global shared training triggered.")
+    pass

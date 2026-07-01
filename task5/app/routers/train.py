@@ -7,13 +7,11 @@ app/routers/train.py — Training endpoints.
 
 import logging
 from fastapi import APIRouter, HTTPException, Depends
-
 import app.state as state
 from app.models import TrainRequest, IncrementalTrainRequest
 from app.core.cache import clear_embedding_cache
 from app.training.intent import train_intent_classifier, train_intent_classifier_incremental, train_global_classifiers
 from app.auth import get_api_key
-
 logger = logging.getLogger("mybot-nlu")
 router = APIRouter()
 
