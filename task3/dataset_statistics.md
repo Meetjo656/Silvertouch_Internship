@@ -1,0 +1,25 @@
+# Dataset Statistics
+
+- **Total Images**: 579
+- **Images per Split**:
+  - hemang_sir: 0
+  - New_Training: 364
+  - test (1): 181
+  - train (1): 13
+  - Validation (1): 21
+- **Total Annotations**: 4539
+- **Class Distribution**:
+  - Bottom_Panel: 249
+  - Extra_Areas: 2161
+  - Front_Panel: 321
+  - Side_Panel: 621
+  - Artwork: 302
+  - Top_Panel: 305
+  - Back_Panel: 301
+  - not_artwork: 279
+- **Average BBox Area**: 146314.83 px^2
+- **Largest BBox Area**: 8981300.00 px^2
+- **Smallest BBox Area**: 96.00 px^2
+- **Average Artwork Coverage**: 87.18%
+- **Images with only 'not_artwork'**: 278
+- **Images containing multiple panels**: 301

@@ -1,0 +1,82 @@
+git_commit: 7a571222e5d50b1012f01c465520ebd9b235d83d
+model: RF-DETR Small
+date: '2026-07-02T16:06:35.583791'
+random_seed: 42
+environment:
+  python_version: 3.13.14
+  torch_version: !!python/object/new:torch.torch_version.TorchVersion
+  - 2.6.0+cu124
+  cuda_available: true
+  cuda_version: '12.4'
+  gpu: NVIDIA GeForce RTX 4050 Laptop GPU
+training_parameters:
+  learning_rate: 0.0001
+  batch_size: 4
+  epochs: 200
+  optimizer: AdamW
+  weight_decay: 0.0001
+  scheduler: CosineAnnealingLR
+  image_size: 640
+  random_seed: 42
+  confidence_threshold: 0.25
+  iou_threshold: 0.5
+  augmentations:
+    horizontal_flip: 0.5
+    color_jitter: 0.2
+dataset:
+  dataset_version: v1.0
+  creation_date: '2026-07-02T16:06:07.922261'
+  number_of_images: 579
+  number_of_annotations: 4539
+  number_of_classes: 8
+  class_distribution:
+    Artwork: 302
+    not_artwork: 279
+    Front_Panel: 321
+    Side_Panel: 621
+    Back_Panel: 301
+    Extra_Areas: 2161
+    Bottom_Panel: 249
+    Top_Panel: 305
+  annotation_source: roboflow/coco_export
+  splits:
+    train:
+      images: 377
+      annotations: 1645
+      class_distribution:
+        Bottom_Panel: 69
+        Extra_Areas: 671
+        Front_Panel: 115
+        Side_Panel: 202
+        Artwork: 100
+        Top_Panel: 108
+        Back_Panel: 101
+        not_artwork: 279
+      annotation_sha256: 5274bbf6cdc9e722914c6ea52e66fcf1cf13d8436e445cfb66ac01530b439188
+      image_list_sha256: 77f812946686e92cb9d76cfc4e2e34ea2a87f4953df94574ba2490b637307fd9
+    val:
+      images: 21
+      annotations: 297
+      class_distribution:
+        Top_Panel: 21
+        Artwork: 21
+        Extra_Areas: 151
+        Side_Panel: 42
+        Front_Panel: 21
+        Bottom_Panel: 21
+        Back_Panel: 20
+      annotation_sha256: 9a9dbd9ace48f51fb080be53f23c4ecd6aed49f93ca78163586c41c3d12ed75d
+      image_list_sha256: 1b8a7489edbcc4e87f33c13ac81a31b81c81f21f51812a0bc5fa542b8a213fbf
+    test:
+      images: 181
+      annotations: 2597
+      class_distribution:
+        Extra_Areas: 1339
+        Artwork: 181
+        Back_Panel: 180
+        Top_Panel: 176
+        Front_Panel: 185
+        Side_Panel: 377
+        Bottom_Panel: 159
+      annotation_sha256: 2926080b70e81be2878ebb71df40b71710a223bf9dc2377a4b1989233081bd59
+      image_list_sha256: d51be58affb9a855242e95a0b55c69c7d745c4778c1e1f80389c8b2032c5f728

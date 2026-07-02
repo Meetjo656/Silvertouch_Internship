@@ -9,7 +9,7 @@ from pathlib import Path
 from ultralytics import YOLO
 
 # ── Configuration ──────────────────────────────────────────────────────
-MODEL_PATH = r"d:\Silvertouch Internship\task3\trained_models\structural_8class_50epochs\weights\best.pt"
+MODEL_PATH = r"d:\Silvertouch Internship\task3\trained_models\ankesh_sir model\latest.pth"
 
 IMAGE_DIRS = [
     r"d:\Silvertouch Internship\task3\new (1)\images\Artwork",

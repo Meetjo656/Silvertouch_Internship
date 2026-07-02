@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  ml-inference:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ml-model-inference
+    ports:
+      - "5000:5000"
+    volumes:
+      # Mount trained model
+      - ./trained_models:/app/models:ro
+      # Mount input/output directories
+      - ./data/input:/app/data/input
+      - ./data/output:/app/data/output
+    environment:
+      - MODEL_PATH=/app/models/ankesh_sir model/checkpoint_best_total.pth
+      - CONF_THRESHOLD=0.25
+      - IOU_THRESHOLD=0.7
+      - IMG_SIZE=512
+      - FLASK_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s

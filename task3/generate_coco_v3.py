@@ -117,6 +117,11 @@ def main():
             
             try:
                 with Image.open(img_path) as img:
+                    if img.mode != 'RGB':
+                        img = img.convert('RGB')
+                    if img.size != (640, 640):
+                        img = img.resize((640, 640), Image.Resampling.LANCZOS)
+                        img.save(img_path)
                     img_width, img_height = img.size
             except Exception as e:
                 print(f"  [WARN] Skipping unreadable image {img_file}: {e}")
