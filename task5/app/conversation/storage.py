@@ -34,11 +34,11 @@ class Storage:
         return session_id in cls._sessions
 
     @classmethod
-    def cleanup_expired(cls, max_age_seconds: int = 3600) -> int:
-        """Remove sessions older than the max age."""
+    def cleanup_expired(cls, max_age_seconds: int = 1800) -> int:
+        """Remove sessions older than the max age (default 30 mins)."""
         now = time.time()
         expired = []
-        for sid, data in cls._sessions.items():
+        for sid, data in list(cls._sessions.items()):
             last_activity = data.get("last_activity", 0.0)
             if now - last_activity > max_age_seconds:
                 expired.append(sid)

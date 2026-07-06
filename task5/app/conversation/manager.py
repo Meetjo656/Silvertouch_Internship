@@ -44,10 +44,32 @@ class ConversationManager:
             self.update_session(session)
 
     def store_entity(self, conversation_id: str, entity_name: str, entity_value: Any) -> bool:
-        """Store an entity in the session."""
+        """Store a single entity in the session."""
         session = self.get_session(conversation_id)
         if session:
             session.add_entity(entity_name, entity_value)
+            self.update_session(session)
+            return True
+        return False
+
+    def merge_entities(self, conversation_id: str, new_entities: dict) -> bool:
+        """Merge multiple entities into the session without overwriting non-overlapping keys."""
+        session = self.get_session(conversation_id)
+        if session:
+            session.merge_entities(new_entities)
+            self.update_session(session)
+            return True
+        return False
+        
+    def resume_workflow(self, conversation_id: str) -> bool:
+        """Resume a session workflow and clear completed/stale sub-tasks."""
+        session = self.get_session(conversation_id)
+        if session:
+            session.conversation_state = "active"
+            session.current_subintent = ""
+            session.waiting_for = ""
+            session.waiting_for_choice = False
+            session.waiting_for_confirmation = False
             self.update_session(session)
             return True
         return False
