@@ -1,0 +1,4996 @@
+{
+  "RANKING": [
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT dm.name, scb.net_profit, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY scb.net_profit DESC LIMIT 5;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT scb.scb_name, scb.dividend_paid_rate, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.is_dividend_paid = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY scb.dividend_paid_rate DESC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_dividend_paid",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_dividend_paid = 1",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT scb.scb_name, scb.registration_date, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY scb.registration_date DESC LIMIT 5;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT scb.scb_name, scb.annual_expense, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY cast(scb.annual_expense as float) DESC LIMIT 3;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT scb.district_name, COUNT(*) as dccb_count FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%MADHYA PRADESH%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.district_name ORDER BY dccb_count DESC LIMIT 1;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "'%MADHYA PRADESH%'",
+        "scb.is_draft",
+        "scb.state_name ILIKE '%MADHYA PRADESH%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT scb.district_name, COUNT(*) as dccb_count FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%MADHYA PRADESH%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.district_name ORDER BY dccb_count DESC LIMIT 1;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "'%MADHYA PRADESH%'",
+        "scb.is_draft",
+        "scb.state_name ILIKE '%MADHYA PRADESH%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT scb.scb_name, scb.dividend_paid_rate, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.is_dividend_paid = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY scb.dividend_paid_rate DESC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_dividend_paid",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_dividend_paid = 1",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT dm.name, scb.net_profit, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY scb.net_profit DESC LIMIT 5;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT scb.scb_name, scb.registration_date, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY scb.registration_date DESC LIMIT 5;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT scb.scb_name, scb.annual_expense, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 ORDER BY cast(scb.annual_expense as float) DESC LIMIT 3;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT registration_authority_name, COUNT(*) FROM chatbot_cooperative_registrations_master c WHERE c.is_multi_state = '1' AND c.status = 1 AND c.is_draft = 0 AND c.is_approved = 1 GROUP BY registration_authority_name ORDER BY COUNT(*) DESC LIMIT 1;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "c.is_approved = 1",
+        "c.status = 1",
+        "c.is_draft",
+        "c.is_multi_state = '1'",
+        "c.is_approved",
+        "c.is_multi_state",
+        "c.is_draft = 0",
+        "c.status",
+        "1",
+        "'1'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT institute_name, seating_capacity FROM chatbot_education_training_institute_private WHERE type_of_institution_name LIKE '%ICM%' AND state_name ILIKE '%Tamil Nadu%' AND status = '1' AND is_approved = '1' ORDER BY CAST(seating_capacity AS INTEGER) DESC LIMIT 1",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "state_name ILIKE '%Tamil Nadu%'",
+        "type_of_institution_name",
+        "'%ICM%'",
+        "is_approved",
+        "is_approved = '1'",
+        "status",
+        "state_name",
+        "'%Tamil Nadu%'",
+        "'1'",
+        "status = '1'",
+        "type_of_institution_name LIKE '%ICM%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT institute_name, adhoc_faculty_number FROM chatbot_education_training_institute_private WHERE type_of_institution_name LIKE '%ICM%' AND status = '1' AND is_approved = '1' ORDER BY CAST(adhoc_faculty_number AS INTEGER) DESC LIMIT 1",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "type_of_institution_name",
+        "'%ICM%'",
+        "is_approved",
+        "is_approved = '1'",
+        "status",
+        "'1'",
+        "status = '1'",
+        "type_of_institution_name LIKE '%ICM%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT institute_name, no_training_programme FROM chatbot_education_training_institute_private WHERE status = '1' AND is_approved = '1' ORDER BY CAST(no_training_programme AS INTEGER) DESC LIMIT 1",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "is_approved",
+        "is_approved = '1'",
+        "status",
+        "'1'",
+        "status = '1'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT institute_name, total_area FROM chatbot_education_training_institute_private WHERE status = '1' AND is_approved = '1' ORDER BY CAST(total_area AS DECIMAL) DESC LIMIT 1",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "is_approved",
+        "is_approved = '1'",
+        "status",
+        "'1'",
+        "status = '1'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT institute_name, CAST(hostel_capacity AS INTEGER) FROM chatbot_education_training_institute_private WHERE type_of_institution_name LIKE '%RICM%' AND status = '1' AND is_approved = '1' ORDER BY CAST(hostel_capacity AS INTEGER) DESC LIMIT 1",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "type_of_institution_name",
+        "is_approved",
+        "is_approved = '1'",
+        "'%RICM%'",
+        "status",
+        "'1'",
+        "status = '1'",
+        "type_of_institution_name LIKE '%RICM%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT state_name, count(*) FROM chatbot_state_district_federation_private WHERE is_draft = '0' AND is_approved = '0' AND status = '1' GROUP BY state_name ORDER BY count DESC LIMIT 1;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "is_approved = '0'",
+        "'0'",
+        "is_draft = '0'",
+        "is_approved",
+        "status",
+        "is_draft",
+        "'1'",
+        "status = '1'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT * FROM chatbot_state_district_federation_private WHERE is_draft = '0' AND is_approved = '0' AND status = '1' ORDER BY cast(primary_cooperative_member_count as integer) DESC LIMIT 5;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "is_approved = '0'",
+        "'0'",
+        "is_draft = '0'",
+        "is_approved",
+        "status",
+        "is_draft",
+        "'1'",
+        "status = '1'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TELANGANA%' AND sector_name ILIKE '%Agro Processing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "'%Agro Processing%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "'%TELANGANA%'",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "4",
+        "sector_name ILIKE '%Agro Processing%'",
+        "'State'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(YEAR FROM date_time)",
+        "state_name ILIKE '%TELANGANA%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%GUJARAT%' AND sector_name ILIKE '%Handloom Textile%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=10 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "10",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'%GUJARAT%'",
+        "'State'",
+        "date_time",
+        "state_name ILIKE '%GUJARAT%'",
+        "rank_type_name = 'State'",
+        "EXTRACT(MONTH FROM date_time) = 10",
+        "sector_name ILIKE '%Handloom Textile%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%Handloom Textile%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TELANGANA%' AND sector_name ILIKE '%Dairy%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "sector_name ILIKE '%Dairy%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "'%Dairy%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "'%TELANGANA%'",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "4",
+        "'State'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(YEAR FROM date_time)",
+        "state_name ILIKE '%TELANGANA%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%KERALA%' AND (sector_name ILIKE '%PACS%' OR sector_name ILIKE '%LAMPS%' OR sector_name ILIKE '%FSS%') AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "sector_name ILIKE '%PACS%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name ILIKE '%FSS%'",
+        "'%FSS%'",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "4",
+        "state_name ILIKE '%KERALA%'",
+        "'State'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "'%PACS%'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "sector_name ILIKE '%LAMPS%'",
+        "'%KERALA%'",
+        "'%LAMPS%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "(sector_name ILIKE '%PACS%' OR sector_name ILIKE '%LAMPS%' OR sector_name ILIKE '%FSS%')"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TAMIL NADU%' AND sector_name ILIKE '%Handloom Textile%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=7 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time) = 7",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'%TAMIL NADU%'",
+        "state_name ILIKE '%TAMIL NADU%'",
+        "'State'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "7",
+        "sector_name ILIKE '%Handloom Textile%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%Handloom Textile%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%GUJARAT%' AND sector_name ILIKE '%Housing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "4",
+        "'%GUJARAT%'",
+        "'State'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "'%Housing%'",
+        "sector_name ILIKE '%Housing%'",
+        "date_time",
+        "state_name ILIKE '%GUJARAT%'",
+        "rank_type_name = 'State'",
+        "EXTRACT(YEAR FROM date_time)"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%MEGHALAYA%' AND sector_name ILIKE '%Handloom Textile%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=10 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "state_name ILIKE '%MEGHALAYA%'",
+        "sector_name",
+        "10",
+        "'%MEGHALAYA%'",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'State'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(MONTH FROM date_time) = 10",
+        "sector_name ILIKE '%Handloom Textile%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%Handloom Textile%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%GUJARAT%' AND sector_name ILIKE '%Housing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=7 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time) = 7",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'%GUJARAT%'",
+        "'State'",
+        "'%Housing%'",
+        "sector_name ILIKE '%Housing%'",
+        "date_time",
+        "state_name ILIKE '%GUJARAT%'",
+        "rank_type_name = 'State'",
+        "7",
+        "EXTRACT(YEAR FROM date_time)"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%MEGHALAYA%' AND sector_name ILIKE '%Agro Processing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=10 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "'%Agro Processing%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "state_name ILIKE '%MEGHALAYA%'",
+        "sector_name",
+        "10",
+        "'%MEGHALAYA%'",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "sector_name ILIKE '%Agro Processing%'",
+        "'State'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(MONTH FROM date_time) = 10",
+        "EXTRACT(YEAR FROM date_time)"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%WEST BENGAL%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "state_name ILIKE '%WEST BENGAL%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "sector_name ILIKE '%Credit & Thrift Society%'",
+        "4",
+        "'%Credit & Thrift Society%'",
+        "'State'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%WEST BENGAL%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%KARNATAKA%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "'%KARNATAKA%'",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "sector_name ILIKE '%Credit & Thrift Society%'",
+        "4",
+        "'%Credit & Thrift Society%'",
+        "'State'",
+        "state_name ILIKE '%KARNATAKA%'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(YEAR FROM date_time)"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TAMIL NADU%' AND sector_name ILIKE '%Housing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=7 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time) = 7",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'%TAMIL NADU%'",
+        "state_name ILIKE '%TAMIL NADU%'",
+        "'State'",
+        "'%Housing%'",
+        "sector_name ILIKE '%Housing%'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "7",
+        "EXTRACT(YEAR FROM date_time)"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%UTTAR PRADESH%' AND sector_name ILIKE '%Handloom Textile%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=1 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2026 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time)",
+        "rank_type_name = 'State'",
+        "state_name ILIKE '%UTTAR PRADESH%'",
+        "sector_name",
+        "'State'",
+        "2026",
+        "sector_name ILIKE '%Handloom Textile%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "EXTRACT(MONTH FROM date_time) = 1",
+        "date_time",
+        "rank_type_name",
+        "'%UTTAR PRADESH%'",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(YEAR FROM date_time) = 2026",
+        "'%Handloom Textile%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%MEGHALAYA%' AND sector_name ILIKE '%Dairy%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=1 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2026 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "'%Dairy%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "rank_type_name = 'State'",
+        "sector_name",
+        "'State'",
+        "2026",
+        "sector_name ILIKE '%Dairy%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "EXTRACT(MONTH FROM date_time) = 1",
+        "date_time",
+        "rank_type_name",
+        "state_name ILIKE '%MEGHALAYA%'",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "'%MEGHALAYA%'",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(YEAR FROM date_time) = 2026"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%MAHARASHTRA%' AND sector_name ILIKE '%Dairy%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=7 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time) = 7",
+        "sector_name ILIKE '%Dairy%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "'%Dairy%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'State'",
+        "state_name ILIKE '%MAHARASHTRA%'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "7",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%MAHARASHTRA%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%WEST BENGAL%' AND sector_name ILIKE '%Dairy%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=1 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2026 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "state_name ILIKE '%WEST BENGAL%'",
+        "'%Dairy%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "rank_type_name = 'State'",
+        "sector_name",
+        "'State'",
+        "2026",
+        "sector_name ILIKE '%Dairy%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "EXTRACT(MONTH FROM date_time) = 1",
+        "date_time",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "'%WEST BENGAL%'",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(YEAR FROM date_time) = 2026"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TELANGANA%' AND sector_name ILIKE '%Dairy%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=7 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time) = 7",
+        "sector_name ILIKE '%Dairy%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "'%Dairy%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "'%TELANGANA%'",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'State'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "7",
+        "EXTRACT(YEAR FROM date_time)",
+        "state_name ILIKE '%TELANGANA%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%WEST BENGAL%' AND sector_name ILIKE '%Agro Processing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=10 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "state_name ILIKE '%WEST BENGAL%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "'%Agro Processing%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "10",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "sector_name ILIKE '%Agro Processing%'",
+        "'State'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(MONTH FROM date_time) = 10",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%WEST BENGAL%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%MAHARASHTRA%' AND sector_name ILIKE '%Handloom Textile%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "4",
+        "'State'",
+        "state_name ILIKE '%MAHARASHTRA%'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "date_time",
+        "rank_type_name = 'State'",
+        "sector_name ILIKE '%Handloom Textile%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%MAHARASHTRA%'",
+        "'%Handloom Textile%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%MAHARASHTRA%' AND sector_name ILIKE '%Agro Processing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "'%Agro Processing%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "4",
+        "sector_name ILIKE '%Agro Processing%'",
+        "'State'",
+        "state_name ILIKE '%MAHARASHTRA%'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%MAHARASHTRA%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%UTTAR PRADESH%' AND sector_name ILIKE '%Housing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "state_name ILIKE '%UTTAR PRADESH%'",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "4",
+        "'State'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "'%UTTAR PRADESH%'",
+        "'%Housing%'",
+        "sector_name ILIKE '%Housing%'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(YEAR FROM date_time)"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%WEST BENGAL%' AND (sector_name ILIKE '%PACS%' OR sector_name ILIKE '%LAMPS%' OR sector_name ILIKE '%FSS%') AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "state_name ILIKE '%WEST BENGAL%'",
+        "sector_name ILIKE '%PACS%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name ILIKE '%FSS%'",
+        "'%FSS%'",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "4",
+        "'State'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "'%PACS%'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "sector_name ILIKE '%LAMPS%'",
+        "'%LAMPS%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "(sector_name ILIKE '%PACS%' OR sector_name ILIKE '%LAMPS%' OR sector_name ILIKE '%FSS%')",
+        "'%WEST BENGAL%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%TELANGANA%' AND sector_name ILIKE '%Housing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=1 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2026 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time)",
+        "rank_type_name = 'State'",
+        "sector_name",
+        "state_name ILIKE '%TELANGANA%'",
+        "'State'",
+        "2026",
+        "EXTRACT(YEAR FROM date_time)",
+        "EXTRACT(MONTH FROM date_time) = 1",
+        "date_time",
+        "rank_type_name",
+        "'%Housing%'",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "sector_name ILIKE '%Housing%'",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(YEAR FROM date_time) = 2026",
+        "'%TELANGANA%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%WEST BENGAL%' AND (sector_name ILIKE '%PACS%' OR sector_name ILIKE '%LAMPS%' OR sector_name ILIKE '%FSS%') AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=10 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "state_name ILIKE '%WEST BENGAL%'",
+        "sector_name ILIKE '%PACS%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name ILIKE '%FSS%'",
+        "'%FSS%'",
+        "10",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'State'",
+        "'%PACS%'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "sector_name ILIKE '%LAMPS%'",
+        "EXTRACT(MONTH FROM date_time) = 10",
+        "'%LAMPS%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "(sector_name ILIKE '%PACS%' OR sector_name ILIKE '%LAMPS%' OR sector_name ILIKE '%FSS%')",
+        "'%WEST BENGAL%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%KERALA%' AND sector_name ILIKE '%Handloom Textile%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=1 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2026 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "state_name ILIKE '%KERALA%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "rank_type_name = 'State'",
+        "sector_name",
+        "'State'",
+        "2026",
+        "'%KERALA%'",
+        "sector_name ILIKE '%Handloom Textile%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "EXTRACT(MONTH FROM date_time) = 1",
+        "date_time",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(YEAR FROM date_time) = 2026",
+        "'%Handloom Textile%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%WEST BENGAL%' AND sector_name ILIKE '%Agro Processing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=4 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "state_name ILIKE '%WEST BENGAL%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "'%Agro Processing%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "4",
+        "sector_name ILIKE '%Agro Processing%'",
+        "'State'",
+        "EXTRACT(MONTH FROM date_time) = 4",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%WEST BENGAL%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%MAHARASHTRA%' AND sector_name ILIKE '%Dairy%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=1 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2026 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "'%Dairy%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "rank_type_name = 'State'",
+        "sector_name",
+        "'State'",
+        "2026",
+        "state_name ILIKE '%MAHARASHTRA%'",
+        "sector_name ILIKE '%Dairy%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "EXTRACT(MONTH FROM date_time) = 1",
+        "date_time",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "'%MAHARASHTRA%'",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(YEAR FROM date_time) = 2026"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%WEST BENGAL%' AND sector_name ILIKE '%Housing%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=7 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "state_name ILIKE '%WEST BENGAL%'",
+        "EXTRACT(MONTH FROM date_time) = 7",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'State'",
+        "'%Housing%'",
+        "sector_name ILIKE '%Housing%'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "7",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%WEST BENGAL%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%LAKSHADWEEP%' AND sector_name ILIKE '%Handloom Textile%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=10 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "sector_name",
+        "10",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'%LAKSHADWEEP%'",
+        "'State'",
+        "state_name ILIKE '%LAKSHADWEEP%'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "EXTRACT(MONTH FROM date_time) = 10",
+        "sector_name ILIKE '%Handloom Textile%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "'%Handloom Textile%'"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%KARNATAKA%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=1 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2026 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time)",
+        "rank_type_name = 'State'",
+        "sector_name",
+        "'%KARNATAKA%'",
+        "'%Credit & Thrift Society%'",
+        "'State'",
+        "2026",
+        "state_name ILIKE '%KARNATAKA%'",
+        "sector_name ILIKE '%Credit & Thrift Society%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "EXTRACT(MONTH FROM date_time) = 1",
+        "date_time",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(YEAR FROM date_time) = 2026"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%LAKSHADWEEP%' AND sector_name ILIKE '%Credit & Thrift Society%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=1 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2026 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time)",
+        "rank_type_name = 'State'",
+        "'%LAKSHADWEEP%'",
+        "sector_name",
+        "'%Credit & Thrift Society%'",
+        "'State'",
+        "2026",
+        "sector_name ILIKE '%Credit & Thrift Society%'",
+        "EXTRACT(YEAR FROM date_time)",
+        "EXTRACT(MONTH FROM date_time) = 1",
+        "date_time",
+        "state_name ILIKE '%LAKSHADWEEP%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "EXTRACT(YEAR FROM date_time) = 2026"
+      ]
+    },
+    {
+      "pattern_type": "RANKING",
+      "sql": "SELECT cooperative_name, total_score, rank FROM public.chatbot_cooperative_rankings WHERE state_name ILIKE '%MEGHALAYA%' AND sector_name ILIKE '%Dairy%' AND rank_type_name = 'State' AND EXTRACT(MONTH FROM date_time)=7 AND EXTRACT(DAY FROM date_time)=1 AND EXTRACT(YEAR FROM date_time)=2025 ORDER BY flag ASC, rank ASC LIMIT 10;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "EXTRACT(MONTH FROM date_time) = 7",
+        "sector_name ILIKE '%Dairy%'",
+        "rank_type_name",
+        "1",
+        "EXTRACT(DAY FROM date_time) = 1",
+        "state_name",
+        "EXTRACT(DAY FROM date_time)",
+        "'%Dairy%'",
+        "EXTRACT(MONTH FROM date_time)",
+        "2025",
+        "state_name ILIKE '%MEGHALAYA%'",
+        "sector_name",
+        "'%MEGHALAYA%'",
+        "EXTRACT(YEAR FROM date_time) = 2025",
+        "'State'",
+        "date_time",
+        "rank_type_name = 'State'",
+        "7",
+        "EXTRACT(YEAR FROM date_time)"
+      ]
+    }
+  ],
+  "AGGREGATION": [
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT SUM(scb.number_of_member) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%KERALA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.state_name ILIKE '%KERALA%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "'%KERALA%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.is_profit_making = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.is_profit_making",
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.is_profit_making = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT SUM(scb.annual_income) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "4",
+        "'%GUJARAT%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.state_name ILIKE '%GUJARAT%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT SUM(s.total_amount_extended) FROM chatbot_scb_schemes_private s JOIN chatbot_scb_master_private scb ON s.state_cooperative_bank_id = scb.id WHERE scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT SUM(scb.number_of_member) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private scb WHERE scb.has_office_building = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.has_office_building",
+        "scb.is_draft",
+        "scb.has_office_building = 1",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.state_name, COUNT(DISTINCT scb.id) FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.state_name;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT SUM(scb.annual_turnover) FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND s.scheme_type = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "s.scheme_type",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "s.scheme_type = 2",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT SUM(s.total_amount_extended) FROM chatbot_scb_schemes_private s JOIN chatbot_scb_master_private scb ON s.state_cooperative_bank_id = scb.id WHERE scb.state_name ILIKE '%HARYANA%' AND s.scheme_type = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "'%HARYANA%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "s.scheme_type",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "s.scheme_type = 2",
+        "1",
+        "scb.is_draft = 0",
+        "scb.state_name ILIKE '%HARYANA%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.urban_local_body_name, COUNT(*) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 3 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.urban_local_body_name;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "'%TAMIL NADU%'",
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.state_name ILIKE '%TAMIL NADU%'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.location_urban_rural, SUM(scb.annual_turnover) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%MAHARASHTRA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.location_urban_rural;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.state_name ILIKE '%MAHARASHTRA%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'%MAHARASHTRA%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.state_name, SUM(scb.net_profit) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.state_name;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.is_profit_making, AVG(scb.dividend_paid_rate) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.is_profit_making;",
+      "joins": [],
+      "aggregations": [
+        "AVG"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.district_name, SUM(s.total_amount_extended) FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 3 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.district_name;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "'%TAMIL NADU%'",
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.state_name ILIKE '%TAMIL NADU%'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.city_name, COUNT(*), SUM(scb.number_of_member) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.city_name;",
+      "joins": [],
+      "aggregations": [
+        "COUNT",
+        "SUM"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "'%GUJARAT%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.state_name ILIKE '%GUJARAT%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.latest_audit_year, SUM(scb.total_assets), SUM(scb.total_liabilities) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.latest_audit_year;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.has_office_building, SUM(scb.other_member_count) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.has_office_building;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.state_name, MAX(scb.annual_income) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.state_name;",
+      "joins": [],
+      "aggregations": [
+        "MAX"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.is_comp, COUNT(*) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.is_comp;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.is_profit_making, SUM(s.total_amount_extended) FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE s.scheme_type = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.is_profit_making;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "s.scheme_type",
+        "s.scheme_type = 1",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.district_name, SUM(scb.pacs_member_count) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%RAJASTHAN%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.district_name;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "4",
+        "scb.state_name ILIKE '%RAJASTHAN%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "'%RAJASTHAN%'",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.city_name, SUM(cast(s.total_amount_extended as float)) FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.city_name;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.office_building_type_name, AVG(cast(scb.net_profit as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.office_building_type_name;",
+      "joins": [],
+      "aggregations": [
+        "AVG"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.state_name, COUNT(m.id) FROM chatbot_scb_master_private scb JOIN chatbot_scb_members_private m ON scb.id = m.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND m.class_membership = '2' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.state_name;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_members_private"
+        }
+      ],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "m.class_membership",
+        "'2'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "m.class_membership = '2'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT r.block_name, COUNT(DISTINCT scb.id) FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%HARYANA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY r.block_name;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_rural_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "4",
+        "'%HARYANA%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.state_name ILIKE '%HARYANA%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.district_name, SUM(cast(scb.number_of_branches as integer)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 3 AND scb.state_name ILIKE '%ASSAM%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.district_name;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "'%ASSAM%'",
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.state_name ILIKE '%ASSAM%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT SUM(cast(scb.net_profit as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.state_name IN ('CHANDIGARH', 'DELHI', 'PUDUCHERRY', 'LAKSHADWEEP', 'ANDAMAN AND NICOBAR ISLANDS', 'DADRA AND NAGAR HAVELI AND DAMAN AND DIU', 'LADAKH', 'JAMMU AND KASHMIR') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.state_name",
+        "1",
+        "scb.is_draft = 0",
+        "'DADRA AND NAGAR HAVELI AND DAMAN AND DIU'",
+        "scb.scb_dcb_flag = 4",
+        "'JAMMU AND KASHMIR'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.is_delete = 0",
+        "0",
+        "4",
+        "'ANDAMAN AND NICOBAR ISLANDS'",
+        "scb.status = 1",
+        "'CHANDIGARH'",
+        "'PUDUCHERRY'",
+        "scb.is_delete",
+        "scb.status",
+        "'DELHI'",
+        "'LAKSHADWEEP'",
+        "scb.state_name IN ('CHANDIGARH', 'DELHI', 'PUDUCHERRY', 'LAKSHADWEEP', 'ANDAMAN AND NICOBAR ISLANDS', 'DADRA AND NAGAR HAVELI AND DAMAN AND DIU', 'LADAKH', 'JAMMU AND KASHMIR')",
+        "'LADAKH'"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.district_name, SUM(cast(scb.pacs_member_count as integer)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TELANGANA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.district_name;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.state_name ILIKE '%TELANGANA%'",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'%TELANGANA%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.scb_name, COUNT(om.id) FROM chatbot_scb_master_private scb JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND scb.state_name ILIKE '%KERALA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.scb_name, scb.ncd_id;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.state_name ILIKE '%KERALA%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "'%KERALA%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.is_comp, AVG(cast(scb.annual_turnover as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.is_comp;",
+      "joins": [],
+      "aggregations": [
+        "AVG"
+      ],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.is_dividend_paid, SUM(cast(scb.annual_expense as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.is_dividend_paid;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.state_name, MAX(cast(scb.net_profit as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.state_name;",
+      "joins": [],
+      "aggregations": [
+        "MAX"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.district_name, COUNT(DISTINCT r.block_name) FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id WHERE scb.scb_dcb_flag = 3 AND scb.state_name ILIKE '%RAJASTHAN%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.district_name;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_rural_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.state_name ILIKE '%RAJASTHAN%'",
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "'%RAJASTHAN%'",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.functional_status, AVG(cast(scb.dividend_paid_rate as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%ANDHRA PRADESH%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.functional_status;",
+      "joins": [],
+      "aggregations": [
+        "AVG"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "'%ANDHRA PRADESH%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.state_name ILIKE '%ANDHRA PRADESH%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.city_name, SUM(cast(s.total_amount_extended as float)) FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND s.scheme_type = '2' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.city_name;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "'2'",
+        "scb.is_delete",
+        "scb.status",
+        "s.scheme_type = '2'",
+        "s.scheme_type",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT dm.name, SUM(cast(scb.other_member_count as integer)) as total_other_members FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.has_office_building = '1' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY dm.name;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.has_office_building",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'1'",
+        "scb.is_delete = 0",
+        "scb.has_office_building = '1'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.state_name, AVG(cast(scb.number_of_branches as integer)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.state_name;",
+      "joins": [],
+      "aggregations": [
+        "AVG"
+      ],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT COUNT(*) FROM chatbot_scb_master_private scb WHERE cast(scb.net_loss as float) > 0 AND scb.is_dividend_paid = '0' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.net_loss",
+        "CAST(scb.net_loss AS DOUBLE PRECISION)",
+        "scb.is_delete",
+        "scb.status",
+        "scb.is_dividend_paid = '0'",
+        "'0'",
+        "scb.status = 1",
+        "scb.is_dividend_paid",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "CAST(scb.net_loss AS DOUBLE PRECISION) > 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.city_name, SUM(cast(scb.total_assets as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.city_name;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "'%GUJARAT%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.state_name ILIKE '%GUJARAT%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT MIN(cast(scb.annual_income as float)), MAX(cast(scb.annual_income as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [
+        "MAX",
+        "MIN"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.operation_area_location, SUM(cast(scb.pacs_member_count as integer)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 3 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.operation_area_location;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.is_scheme_implemented, AVG(cast(scb.number_of_member as integer)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.is_scheme_implemented;",
+      "joins": [],
+      "aggregations": [
+        "AVG"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT dm.name, SUM(cast(scb.other_member_count as integer)) FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%WEST BENGAL%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY dm.name;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name ILIKE '%WEST BENGAL%'",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'%WEST BENGAL%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.district_name, AVG(cast(scb.annual_turnover as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%BIHAR%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.district_name;",
+      "joins": [],
+      "aggregations": [
+        "AVG"
+      ],
+      "filters": [
+        "4",
+        "scb.state_name ILIKE '%BIHAR%'",
+        "'%BIHAR%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.registration_authority_name, COUNT(*) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.registration_authority_name;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.city_name, SUM(cast(scb.pacs_member_count as integer)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%PUNJAB%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.city_name;",
+      "joins": [],
+      "aggregations": [
+        "SUM"
+      ],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.state_name ILIKE '%PUNJAB%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'%PUNJAB%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.state_name, AVG(cast(scb.total_liabilities as float)) FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 3 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.state_name;",
+      "joins": [],
+      "aggregations": [
+        "AVG"
+      ],
+      "filters": [
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT scb.state_name, COUNT(DISTINCT r.block_name) FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0 GROUP BY scb.state_name;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_rural_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT COUNT(*) AS state_federations FROM chatbot_state_district_federation_private WHERE is_draft = 0 AND is_approved = 0 AND status = 1",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "is_draft",
+        "is_approved",
+        "status",
+        "status = 1",
+        "1",
+        "is_draft = 0",
+        "is_approved = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "AGGREGATION",
+      "sql": "SELECT COUNT(*) FROM chatbot_cooperative_registrations_master WHERE functional_status = '3' AND is_draft = 0 AND is_approved = 1 AND status = 1;",
+      "joins": [],
+      "aggregations": [
+        "COUNT"
+      ],
+      "filters": [
+        "functional_status = '3'",
+        "is_approved = 1",
+        "is_draft",
+        "'3'",
+        "is_approved",
+        "status",
+        "functional_status",
+        "status = 1",
+        "1",
+        "is_draft = 0",
+        "0"
+      ]
+    }
+  ],
+  "TREND_ANALYSIS": [],
+  "MULTI_JOIN": [
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT scb.scb_name, r.block_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb LEFT JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id LEFT JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_rural_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_area_urban_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "'%GUJARAT%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.state_name ILIKE '%GUJARAT%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.functional_status = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.functional_status = 1",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.functional_status",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.contact_person, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.is_profit_making = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_profit_making",
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.is_profit_making = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id LEFT JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND (scd.email IS NULL OR scd.email = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scd.email = ''",
+        "scb.scb_dcb_flag = 2",
+        "scd.email IS NULL",
+        "scb.is_delete",
+        "scb.status",
+        "(scd.email IS NULL OR scd.email = '')",
+        "scd.email",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "''",
+        "1",
+        "scb.is_draft = 0",
+        "NULL",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name as bank_name, om.org_name, om.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.phone_number, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.district_name ILIKE '%PUNE%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.district_name",
+        "scb.is_draft",
+        "'%PUNE%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.district_name ILIKE '%PUNE%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name as bank_name, om.org_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT scb.scb_name, scd.contact_person, scd.phone_number, s.govt_scheme_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE s.scheme_type = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "s.scheme_type",
+        "s.scheme_type = 1",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, om.org_name, scb.annual_turnover, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_turnover > 100 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.annual_turnover",
+        "scb.is_delete",
+        "scb.status",
+        "100",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.annual_turnover > 100",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT scb.scb_name, scd.email, s.govt_scheme_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.state_name ILIKE '%UTTAR PRADESH%' AND s.scheme_type = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "s.scheme_type",
+        "scb.status = 1",
+        "2",
+        "1",
+        "scb.is_draft",
+        "s.scheme_type = 2",
+        "'%UTTAR PRADESH%'",
+        "scb.state_name ILIKE '%UTTAR PRADESH%'",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "'%TAMIL NADU%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.state_name ILIKE '%TAMIL NADU%'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_income > 50 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.annual_income > 50",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "50",
+        "scb.annual_income",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TELANGANA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.state_name ILIKE '%TELANGANA%'",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'%TELANGANA%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, m.organization_name, m.pincode, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_members_private m ON scb.id = m.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id LEFT JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND (scd.email IS NULL OR scd.email = '') AND (scd.phone_number IS NULL OR scd.phone_number = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scd.phone_number IS NULL",
+        "scd.phone_number",
+        "1",
+        "scd.email = ''",
+        "scb.is_draft = 0",
+        "NULL",
+        "scd.phone_number = ''",
+        "scb.scb_dcb_flag = 2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "(scd.phone_number IS NULL OR scd.phone_number = '')",
+        "scb.is_delete = 0",
+        "0",
+        "(scd.email IS NULL OR scd.email = '')",
+        "scb.status = 1",
+        "''",
+        "scd.email IS NULL",
+        "scb.is_delete",
+        "scb.status",
+        "scd.email",
+        "2"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id LEFT JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND (scd.email IS NULL OR scd.email = '') AND (scd.phone_number IS NULL OR scd.phone_number = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scd.phone_number IS NULL",
+        "scd.phone_number",
+        "1",
+        "scd.email = ''",
+        "scb.is_draft = 0",
+        "NULL",
+        "scd.phone_number = ''",
+        "scb.scb_dcb_flag = 2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "(scd.phone_number IS NULL OR scd.phone_number = '')",
+        "scb.is_delete = 0",
+        "0",
+        "(scd.email IS NULL OR scd.email = '')",
+        "scb.status = 1",
+        "''",
+        "scd.email IS NULL",
+        "scb.is_delete",
+        "scb.status",
+        "scd.email",
+        "2"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.functional_status = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.functional_status = 1",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.functional_status",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT scb.scb_name, scd.contact_person, scd.phone_number, s.govt_scheme_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE s.scheme_type = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "s.scheme_type",
+        "s.scheme_type = 1",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT scb.scb_name, r.block_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb LEFT JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id LEFT JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_rural_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_area_urban_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "'%GUJARAT%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.state_name ILIKE '%GUJARAT%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "'%TAMIL NADU%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.state_name ILIKE '%TAMIL NADU%'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.contact_person, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.is_profit_making = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_profit_making",
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.is_profit_making = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name as bank_name, om.org_name, om.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_income > 50 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.annual_income > 50",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "50",
+        "scb.annual_income",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name as bank_name, om.org_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.phone_number, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.district_name ILIKE '%PUNE%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.district_name",
+        "scb.is_draft",
+        "'%PUNE%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.district_name ILIKE '%PUNE%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT scb.scb_name, scd.email, s.govt_scheme_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.state_name ILIKE '%UTTAR PRADESH%' AND s.scheme_type = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "s.scheme_type",
+        "scb.status = 1",
+        "2",
+        "1",
+        "scb.is_draft",
+        "s.scheme_type = 2",
+        "'%UTTAR PRADESH%'",
+        "scb.state_name ILIKE '%UTTAR PRADESH%'",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id LEFT JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND (scd.email IS NULL OR scd.email = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scd.email = ''",
+        "scb.scb_dcb_flag = 2",
+        "scd.email IS NULL",
+        "scb.is_delete",
+        "scb.status",
+        "(scd.email IS NULL OR scd.email = '')",
+        "scd.email",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "''",
+        "1",
+        "scb.is_draft = 0",
+        "NULL",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, om.org_name, scb.annual_turnover, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_turnover > 100 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.annual_turnover",
+        "scb.is_delete",
+        "scb.status",
+        "100",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.annual_turnover > 100",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, m.organization_name, m.pincode, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_members_private m ON scb.id = m.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TELANGANA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.state_name ILIKE '%TELANGANA%'",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'%TELANGANA%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT nf.*, nfcd.*, nfm.* FROM chatbot_national_federations nf JOIN chatbot_national_federations_contact_details nfcd ON nf.id = nfcd.national_federations_id JOIN chatbot_national_federations_members nfm ON nf.id = nfm.national_federations_id WHERE nf.cooperative_society_name ILIKE '%Nafed%' AND nf.is_new = '1' AND nf.is_draft = '0';",
+      "joins": [
+        {
+          "table_a": "chatbot_national_federations",
+          "table_b": "chatbot_national_federations_contact_details"
+        },
+        {
+          "table_a": "chatbot_national_federations",
+          "table_b": "chatbot_national_federations_members"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "nf.cooperative_society_name",
+        "'0'",
+        "nf.is_new = '1'",
+        "nf.cooperative_society_name ILIKE '%Nafed%'",
+        "nf.is_draft = '0'",
+        "nf.is_draft",
+        "'1'",
+        "nf.is_new",
+        "'%Nafed%'"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id LEFT JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND (scd.email IS NULL OR scd.email = '') AND (scd.phone_number IS NULL OR scd.phone_number = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scd.phone_number IS NULL",
+        "scd.phone_number",
+        "1",
+        "scd.email = ''",
+        "scb.is_draft = 0",
+        "NULL",
+        "scd.phone_number = ''",
+        "scb.scb_dcb_flag = 2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "(scd.phone_number IS NULL OR scd.phone_number = '')",
+        "scb.is_delete = 0",
+        "0",
+        "(scd.email IS NULL OR scd.email = '')",
+        "scb.status = 1",
+        "''",
+        "scd.email IS NULL",
+        "scb.is_delete",
+        "scb.status",
+        "scd.email",
+        "2"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.functional_status = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.functional_status = 1",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.functional_status",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT scb.scb_name, scd.contact_person, scd.phone_number, s.govt_scheme_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE s.scheme_type = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "s.scheme_type",
+        "s.scheme_type = 1",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT scb.scb_name, r.block_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb LEFT JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id LEFT JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_rural_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_area_urban_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "'%GUJARAT%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.state_name ILIKE '%GUJARAT%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "'%TAMIL NADU%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.state_name ILIKE '%TAMIL NADU%'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.contact_person, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.is_profit_making = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_profit_making",
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.is_profit_making = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name as bank_name, om.org_name, om.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_income > 50 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.annual_income > 50",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "50",
+        "scb.annual_income",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name as bank_name, om.org_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT nf.*, nfcd.*, nfm.* FROM chatbot_national_federations nf JOIN chatbot_national_federations_contact_details nfcd ON nf.id = nfcd.national_federations_id JOIN chatbot_national_federations_members nfm ON nf.id = nfm.national_federations_id WHERE nf.cooperative_society_name ILIKE '%Nafed%' AND nf.is_new = '1' AND nf.is_draft = '0';",
+      "joins": [
+        {
+          "table_a": "chatbot_national_federations",
+          "table_b": "chatbot_national_federations_contact_details"
+        },
+        {
+          "table_a": "chatbot_national_federations",
+          "table_b": "chatbot_national_federations_members"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "nf.cooperative_society_name",
+        "'0'",
+        "nf.is_new = '1'",
+        "nf.cooperative_society_name ILIKE '%Nafed%'",
+        "nf.is_draft = '0'",
+        "nf.is_draft",
+        "'1'",
+        "nf.is_new",
+        "'%Nafed%'"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scd.phone_number, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.district_name ILIKE '%PUNE%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.district_name",
+        "scb.is_draft",
+        "'%PUNE%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.district_name ILIKE '%PUNE%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT scb.scb_name, scd.email, s.govt_scheme_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.state_name ILIKE '%UTTAR PRADESH%' AND s.scheme_type = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "s.scheme_type",
+        "scb.status = 1",
+        "2",
+        "1",
+        "scb.is_draft",
+        "s.scheme_type = 2",
+        "'%UTTAR PRADESH%'",
+        "scb.state_name ILIKE '%UTTAR PRADESH%'",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id LEFT JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND (scd.email IS NULL OR scd.email = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scd.email = ''",
+        "scb.scb_dcb_flag = 2",
+        "scd.email IS NULL",
+        "scb.is_delete",
+        "scb.status",
+        "(scd.email IS NULL OR scd.email = '')",
+        "scd.email",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "''",
+        "1",
+        "scb.is_draft = 0",
+        "NULL",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, om.org_name, scb.annual_turnover, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.annual_turnover > 100 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.annual_turnover",
+        "scb.is_delete",
+        "scb.status",
+        "100",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.annual_turnover > 100",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, m.organization_name, m.pincode, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_members_private m ON scb.id = m.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "MULTI_JOIN",
+      "sql": "SELECT dm.name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%TELANGANA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        },
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.state_name ILIKE '%TELANGANA%'",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'%TELANGANA%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    }
+  ],
+  "WINDOW_FUNCTION": [],
+  "FILTER_QUERY": [
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.scb_registration_no, scb.state_name, scb.registration_date, scb.ncd_id, scb.rbi_license, scb.rbi_license_date, scb.ifsc_code FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.scb_registration_no, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT dm.name as bank_name, scb.scb_registration_no, scb.state_name, scb.registration_date, scb.ncd_id, scb.rbi_license, scb.rbi_license_date, scb.ifsc_code FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT dm.name, scb.ifsc_code, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT dm.name, scb.district_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%MAHARASHTRA%' AND scb.functional_status = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.functional_status = 1",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scb.state_name ILIKE '%MAHARASHTRA%'",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'%MAHARASHTRA%'",
+        "scb.is_delete = 0",
+        "scb.functional_status",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.state_name, scb.district_name, scb.latest_audit_year, scb.net_profit, scb.annual_income, scb.annual_expense, scb.annual_turnover, scb.is_dividend_paid, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT dm.name as bank_name, scb.state_name, scb.district_name, scb.latest_audit_year, scb.net_profit, scb.annual_income, scb.annual_expense, scb.annual_turnover, scb.is_dividend_paid, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.scb_registration_no, scb.state_name, scb.district_name, scb.dccb_bank_member_count, scb.registration_date, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 3 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.scb_registration_no, scb.state_name, scb.district_name, scb.dccb_bank_member_count, scb.registration_date, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scd.contact_person, scd.phone_number, scd.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND scb.state_name ILIKE '%KARNATAKA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "'%KARNATAKA%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scb.state_name ILIKE '%KARNATAKA%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scd.contact_person, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE s.scheme_type = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "s.scheme_type",
+        "s.scheme_type = 1",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.scb_registration_no, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.state_name ILIKE '%UTTAR PRADESH%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "'%UTTAR PRADESH%'",
+        "scb.state_name ILIKE '%UTTAR PRADESH%'",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT dm.name, scb.scb_registration_no, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%UTTAR PRADESH%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "'%UTTAR PRADESH%'",
+        "scb.state_name ILIKE '%UTTAR PRADESH%'",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.scb_registration_no, scb.registration_date, scb.rbi_license, scb.rbi_license_date, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 3 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "'%TAMIL NADU%'",
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.state_name ILIKE '%TAMIL NADU%'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.net_profit, scb.annual_turnover, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.state_name ILIKE '%MADHYA PRADESH%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "'%MADHYA PRADESH%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.state_name ILIKE '%MADHYA PRADESH%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.is_comp = 0 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.is_comp = 0",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.is_comp",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.annual_income, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.annual_income > 100 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.annual_income > 100",
+        "scb.is_delete",
+        "scb.status",
+        "100",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.annual_income",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, s.govt_scheme_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND s.scheme_type = 2 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "s.scheme_type",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "s.scheme_type = 2",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 3 AND (scb.rbi_license IS NULL OR scb.rbi_license = '') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "(scb.rbi_license IS NULL OR scb.rbi_license = '')",
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.rbi_license IS NULL",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "scb.rbi_license = ''",
+        "scb.rbi_license",
+        "1",
+        "scb.is_draft = 0",
+        "NULL",
+        "''",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.latest_audit_year, scb.net_profit, scb.annual_income, scb.annual_turnover, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.state_name ILIKE '%KARNATAKA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "'%KARNATAKA%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scb.state_name ILIKE '%KARNATAKA%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.number_of_member, scb.state_name, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.number_of_member > 1000 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.number_of_member > 1000",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.number_of_member",
+        "scb.is_delete = 0",
+        "1000",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, r.block_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id WHERE scb.scb_dcb_flag = 3 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_rural_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_urban_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "scb.is_delete",
+        "scb.status",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.scb_registration_no, scb.latest_audit_year, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, s.govt_scheme_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.state_name ILIKE '%RAJASTHAN%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.state_name ILIKE '%RAJASTHAN%'",
+        "scb.is_delete",
+        "scb.state_name",
+        "'%RAJASTHAN%'",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.full_address, scb.ncd_id FROM chatbot_scb_master_private scb WHERE (scb.full_address LIKE '%Mumbai%' OR scb.city_name = 'Mumbai') AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "'Mumbai'",
+        "scb.is_delete",
+        "scb.status",
+        "(scb.full_address LIKE '%Mumbai%' OR scb.city_name = 'Mumbai')",
+        "scb.status = 1",
+        "scb.city_name = 'Mumbai'",
+        "scb.is_draft",
+        "scb.full_address LIKE '%Mumbai%'",
+        "scb.city_name",
+        "1",
+        "scb.is_draft = 0",
+        "'%Mumbai%'",
+        "scb.is_delete = 0",
+        "scb.full_address",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.area_of_operation_states, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT dm.name, scb.ifsc_code, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.ifsc_code LIKE 'KJSB%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.ifsc_code LIKE 'KJSB%'",
+        "scb.scb_dcb_flag = 2",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "2",
+        "scb.ifsc_code",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "'KJSB%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.net_profit, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.is_profit_making = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "scb.is_profit_making",
+        "'%TAMIL NADU%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.is_profit_making = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.state_name ILIKE '%TAMIL NADU%'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.office_building_type_name, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.has_office_building = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.has_office_building",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.has_office_building = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, om.org_name, om.type_membership_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, m.organization_name, m.email, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_members_private m ON scb.id = m.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT dm.name, scb.latest_audit_year, scb.is_profit_making, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_dccb_master_private dm ON scb.id = dm.id WHERE scb.scb_dcb_flag = 2 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_dccb_master_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.scb_dcb_flag = 2",
+        "'%GUJARAT%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "2",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.state_name ILIKE '%GUJARAT%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scd.contact_person, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND scb.state_name ILIKE '%MAHARASHTRA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scb.state_name ILIKE '%MAHARASHTRA%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "'%MAHARASHTRA%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 3 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, r.block_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%GUJARAT%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_rural_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "'%GUJARAT%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "scb.state_name ILIKE '%GUJARAT%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 3 AND scb.state_name ILIKE '%TAMIL NADU%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_urban_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "'%TAMIL NADU%'",
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.state_name ILIKE '%TAMIL NADU%'",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, m.organization_name, m.contact_person, m.designation, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_members_private m ON scb.id = m.state_cooperative_bank_id WHERE scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.other_member_count, scb.pacs_member_count, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scd.phone_number, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%RAJASTHAN%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "scb.state_name ILIKE '%RAJASTHAN%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "'%RAJASTHAN%'",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, s.govt_scheme_name, s.total_amount_extended, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND scb.functional_status = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.functional_status = 1",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "scb.functional_status",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scd.contact_person, scd.designation_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 1 AND scb.state_name ILIKE '%KERALA%' AND scd.designation_name ILIKE '%Secretary%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.state_name ILIKE '%KERALA%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "scd.designation_name",
+        "'%KERALA%'",
+        "scb.is_draft",
+        "scd.designation_name ILIKE '%Secretary%'",
+        "scb.scb_dcb_flag = 1",
+        "'%Secretary%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, r.block_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_rural_private r ON scb.id = r.scb_id WHERE scb.scb_dcb_flag = 3 AND scb.state_name ILIKE '%MADHYA PRADESH%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_rural_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "3",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.status = 1",
+        "'%MADHYA PRADESH%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 3",
+        "scb.state_name ILIKE '%MADHYA PRADESH%'",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, u.ward_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_area_urban_private u ON scb.id = u.scb_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%KARNATAKA%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_area_urban_private",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "'%KARNATAKA%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.state_name ILIKE '%KARNATAKA%'",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, om.org_name, om.address, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_other_members_private om ON scb.id = om.state_cooperative_bank_id WHERE scb.state_name ILIKE '%PUNJAB%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_other_members_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.state_name",
+        "scb.status",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.state_name ILIKE '%PUNJAB%'",
+        "1",
+        "scb.is_draft = 0",
+        "'%PUNJAB%'",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.office_building_type_name, scb.ncd_id FROM chatbot_scb_master_private scb WHERE scb.scb_dcb_flag = 1 AND scb.has_office_building = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "scb.has_office_building",
+        "scb.is_draft",
+        "scb.scb_dcb_flag = 1",
+        "scb.has_office_building = 1",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scb.latest_audit_year, scd.contact_person, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.latest_audit_year IS NOT NULL AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.latest_audit_year IS NULL",
+        "scb.is_delete",
+        "scb.status",
+        "scb.status = 1",
+        "NOT scb.latest_audit_year IS NULL",
+        "scb.is_draft",
+        "scb.latest_audit_year",
+        "1",
+        "scb.is_draft = 0",
+        "NULL",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, scd.contact_person, scd.designation_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_contact_details scd ON scb.id = scd.state_cooperative_bank_id WHERE scb.scb_dcb_flag = 4 AND scb.state_name ILIKE '%BIHAR%' AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_contact_details",
+          "table_b": "chatbot_scb_master_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "4",
+        "scb.state_name ILIKE '%BIHAR%'",
+        "'%BIHAR%'",
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "scb.scb_dcb_flag = 4",
+        "scb.status = 1",
+        "scb.is_draft",
+        "scb.scb_dcb_flag",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    },
+    {
+      "pattern_type": "FILTER_QUERY",
+      "sql": "SELECT scb.scb_name, s.govt_scheme_name, scb.ncd_id FROM chatbot_scb_master_private scb JOIN chatbot_scb_schemes_private s ON scb.id = s.state_cooperative_bank_id WHERE scb.state_name ILIKE '%ODISHA%' AND s.scheme_type = 1 AND scb.status = 1 AND scb.is_delete = 0 AND scb.is_draft = 0;",
+      "joins": [
+        {
+          "table_a": "chatbot_scb_master_private",
+          "table_b": "chatbot_scb_schemes_private"
+        }
+      ],
+      "aggregations": [],
+      "filters": [
+        "scb.is_delete",
+        "scb.status",
+        "scb.state_name",
+        "s.scheme_type",
+        "scb.status = 1",
+        "s.scheme_type = 1",
+        "scb.is_draft",
+        "'%ODISHA%'",
+        "scb.state_name ILIKE '%ODISHA%'",
+        "1",
+        "scb.is_draft = 0",
+        "scb.is_delete = 0",
+        "0"
+      ]
+    }
+  ]
+}

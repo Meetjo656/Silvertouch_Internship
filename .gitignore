@@ -1,0 +1,141 @@
+# =============================================================================
+# Python Environments & Bytecode
+# =============================================================================
+.venv/
+.venv_rfdetr/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =============================================================================
+# Model Weights & Checkpoints  (GitHub hard limit: 100MB per file)
+# =============================================================================
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.joblib
+
+# =============================================================================
+# Compiled / CUDA Extensions
+# =============================================================================
+*.dll
+*.so
+*.pyd
+unsloth_compiled_cache/
+task4/unsloth_compiled_cache/
+
+# =============================================================================
+# Large Training Data  (>50MB flagged by GitHub)
+# =============================================================================
+task4/data/training/qwen_lora_train.jsonl
+task4/data/training/qwen_lora_train_v2.jsonl
+
+# =============================================================================
+# RF-DETR Temp / Output Files  (486MB each)
+# =============================================================================
+task3/rfdetr_training_pipeline/outputs/tmp/
+task3/rfdetr_training_pipeline/outputs/
+task3/rfdetr_training_pipeline/scripts/output/
+task3/server_training_package_v2/rfdetr_training_pipeline/outputs/
+task3/server_training_package_v2/rfdetr_training_pipeline/scripts/output/
+
+# =============================================================================
+# Archives & Packages  (task5.zip = 321MB, server_training_package = 6-7GB)
+# =============================================================================
+*.zip
+*.tar.gz
+*.tar
+*.gz
+
+# =============================================================================
+# Task 3 — Datasets, Trained Models, Outputs
+# =============================================================================
+task3/yolo_dataset_output/
+task3/yolo_detection_dataset/
+task3/Scrapped/output/
+task3/train/
+task3/test/
+task3/valid/
+task3/output_images/
+task3/visualized_images/
+task3/rfdetr_visualised/
+task3/rfdetr_visualised_2/
+task3/rfdetr_training_pipeline/
+task3/server_training_package_v2/
+task3/trained_models/
+task3/runs/
+task3/output/
+task3/audit_samples/
+task3/dataset_cleaned/
+task3/Only Images/
+task3/hard_examples/
+task3/images/
+task3/final_training_package/dataset/
+task3/final_training_package/outputs/
+task3/final_training_package/weights/
+task3/final_training/
+task3/final_training_v2/
+task3/final_training_pipeline/
+task3/wheels/
+task3/**/*.jpg
+task3/**/*.png
+
+# =============================================================================
+# Task 2 — Raw Data & Interim Outputs
+# =============================================================================
+task2_neural_network/data/
+
+# =============================================================================
+# Task 4 — Outputs, Caches, HuggingFace Downloads
+# =============================================================================
+task4/data/outputs/
+task4/.cache/
+task4/studio/
+task4/New folder/
+
+# =============================================================================
+# Task 5 — Embedding Caches, Trained Models
+# =============================================================================
+task5/embedding_cache/
+task5/trained_models/
+task5/.venv/
+task5/mybot_nlu_service/embedding_cache/
+task5/mybot_nlu_service/trained_models/
+
+# =============================================================================
+# Generic ML / Data Science Artifacts
+# =============================================================================
+*.npz
+*.pkl
+*.db
+*.sqlite3
+*.npy
+*.h5
+*.hdf5
+*.parquet
+
+# =============================================================================
+# Secrets & Environment
+# =============================================================================
+.env
+.env.*
+*.key
+secrets/
+
+# =============================================================================
+# IDE & OS
+# =============================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+pyrightconfig.json
+# Studio secrets & PID
+task4/studio/auth/
+task4/studio/*.pid
+*.pid

@@ -1,0 +1,37 @@
+========================================
+          DATASET REPORT
+========================================
+Total Examples: 309
+Total Workflows: 5
+Total Intents: 25
+Total Subintents: 0
+Duplicate Example Texts: 0
+
+--- Class Balance ---
+  portal_user_guide: 9.71%
+  application_status: 5.83%
+  technical_assistance: 5.50%
+  payment_status: 5.50%
+  policy_information: 4.85%
+  faq: 4.85%
+  complete_kya: 4.85%
+  ai_assistant: 4.85%
+  query_management: 4.85%
+  grievance_management: 4.85%
+  latest_notifications: 4.85%
+  application_renewals: 4.85%
+  check_specific_application: 4.53%
+  view_all_guides: 4.21%
+  watch_guide_video: 4.21%
+  download_guide_pdf: 3.24%
+  check_mou_status: 2.91%
+  sdcfds: 2.59%
+  dfhgchcc: 2.27%
+  kjhk_fbhb: 1.94%
+  fafafa: 1.94%
+  fasfafe: 1.94%
+  bfghhdh: 1.62%
+  jhghvbhj: 1.62%
+  guide_for_application: 1.62%
+
+--- Entity Statistics ---

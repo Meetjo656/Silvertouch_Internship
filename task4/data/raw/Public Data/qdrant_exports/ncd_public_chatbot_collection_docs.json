@@ -1,0 +1,283 @@
+[
+  {
+    "content": "Cooperative Banks location: location_urban_rural indicates bank location type, operation_area_location indicates operation area (Urban/Rural/Both). Geographic fields: state_name, district_name, area_of_operation_states (comma-separated for multi-state operations).",
+    "category": "Bank Geography",
+    "type": "documentation"
+  },
+  {
+    "content": "is_scheme_implemented in chatbot_state_cooperative_banks (1=Yes, 0=No) indicates whether specified schemes are implemented by the bank. Count banks with is_scheme_implemented = 1 for scheme coverage analysis.",
+    "category": "Bank Schemes",
+    "type": "documentation"
+  },
+  {
+    "content": "Faculty strength in education_training_institute is split across regular_faculty_number, adhoc_faculty_number, and visiting_faculty_number. Sum these for total faculty capacity analysis.",
+    "category": "Training Faculty",
+    "type": "documentation"
+  },
+  {
+    "content": "To compare membership between rural and urban cooperatives, use location_of_head_quarter in cooperative_master_chatbot_tbl (values: 'Rural', 'Urban'). Join with chatbot_member_details for member counts.",
+    "category": "Rural vs Urban",
+    "type": "documentation"
+  },
+  {
+    "content": "Primary Agricultural Credit institutions are recorded under sector_of_operation_name using labels like 'Primary Agricultural Credit Society (PACS)', 'LAMPS', 'FSS', or 'Farmers Service Society'. Use sector_of_operation_name LIKE with these keywords when counting PACS/LAMPS/FSS together.",
+    "category": "PACS",
+    "type": "documentation"
+  },
+  {
+    "content": "Use location_master for location-based queries: Get all districts in a state, all blocks in a district, all gram panchayats in a block, all villages in a gram panchayat. Use DISTINCT to get unique location lists.",
+    "category": "Location Lookups",
+    "type": "documentation"
+  },
+  {
+    "content": "chatbot_member_details contains demographic details of cooperative members including gender, caste, and total membership counts. Use for gender-wise, caste-wise, and total member queries.",
+    "category": "Membership Demographics",
+    "type": "documentation"
+  },
+  {
+    "content": "Join chatbot_member_details with cooperative_master_chatbot_tbl using state_name and district_name (and ncd_id where available) to relate member counts to cooperative attributes like sector_of_operation_name or functional_status.",
+    "category": "Membership Joins",
+    "type": "documentation"
+  },
+  {
+    "content": "for ranking cooperative society responses for Q1 Quarter first",
+    "category": "Q1 Quarter first",
+    "type": "documentation"
+  },
+  {
+    "content": "chatbot_state_district_federation stores State and District level Federations. Use federation_type to filter: 'State Federation' for state-level, 'District Federation' for district-level. Always filter: status = 1 AND is_approved = 1 for active approved records.",
+    "category": "Federation Types",
+    "type": "documentation"
+  },
+  {
+    "content": "chatbot_state_cooperative_banks stores State Cooperative Banks (SCB/STCB), District Cooperative Banks (DCB/DCCB), SCARDB, and PCARDB data. Use bank_level column to filter: 'scb' for State Cooperative Banks, 'dcb' for District Cooperative Banks, 'scardb' for State Cooperative Agriculture and Rural Development Banks, 'pcardb' for Primary Cooperative Agriculture and Rural Development Banks.",
+    "category": "Bank Types",
+    "type": "documentation"
+  },
+  {
+    "content": "In chatbot_ncdc_offices, ownership_type_name indicates whether the office is in an 'Own Building' or 'Rented Building', and specialization highlights functions like 'Financial' or 'Training'.",
+    "category": "NCDC Office Attributes",
+    "type": "documentation"
+  },
+  {
+    "content": "In chatbot_state_cooperative_banks, bank_level values are stored in uppercase: 'SCB' for State Cooperative Banks, 'DCB' for District Central Cooperative Banks (DCCB), 'SCARDB' for State Cooperative Agriculture and Rural Development Banks, and 'PCARDB' for Primary Cooperative Agriculture and Rural Development Banks.",
+    "category": "Bank Level Codes",
+    "type": "documentation"
+  },
+  {
+    "content": "For caste category distribution, use male_sc, female_sc, transgender_sc, male_st, female_st, transgender_st, male_obc, female_obc, transgender_obc, male_general, female_general, transgender_general columns in chatbot_member_details.",
+    "category": "Caste Category Distribution",
+    "type": "documentation"
+  },
+  {
+    "content": "National Federation activities: major_activities_names (comma-separated values), use LIKE operator for matching. Example: major_activities_names LIKE '%Marketing%'. Affiliation: affiliation_with_govt_dept_name, use LIKE for matching.",
+    "category": "National Federation Activities",
+    "type": "documentation"
+  },
+  {
+    "content": "For gender distribution queries, use total_male, total_female, and total_transgender columns in chatbot_member_details. State, district, and ncd_id can be used for grouping.",
+    "category": "Gender Distribution",
+    "type": "documentation"
+  },
+  {
+    "content": "For contact information, use contact_person, mobile, and email columns in cooperative_master_chatbot_tbl.",
+    "category": "Contact Information",
+    "type": "documentation"
+  },
+  {
+    "content": "National Federation identification: cooperative_society_name (federation name), cooperative_id, identification_number, registration_number, ncd_id, reference_year, date_registration. Contact: contact_person, designation_name.",
+    "category": "National Federation Identity",
+    "type": "documentation"
+  },
+  {
+    "content": "chatbot_state_district_federation may use numeric federation_type codes: 2=State Federation, 3=District Federation, 4=Block/Taluka/Mandal Federation, 5=Regional Federation. Use federation_type_name for human-readable labels.",
+    "category": "Federation Type Codes",
+    "type": "documentation"
+  },
+  {
+    "content": "For caste-wise member analysis in chatbot_member_details, SC uses male_sc and female_sc, ST uses male_st and female_st, OBC uses male_obc and female_obc, and General uses male_general and female_general. Sum male + female for each caste group.",
+    "category": "Caste Encoding",
+    "type": "documentation"
+  },
+  {
+    "content": "Join location_master with other tables using state_name and district_name for geographic analysis. Example: Join with cooperative_master_chatbot_tbl to get complete location hierarchy for cooperatives.",
+    "category": "Location Joins",
+    "type": "documentation"
+  },
+  {
+    "content": "Federation membership: members_of_federation (total member societies), primary_cooperative_member_count, other_member_count. Affiliation: is_affiliated_union_federation (1=Yes, 0=No), affiliated_union_level_name (National/State/District), affiliated_union_name. Use LIKE for level matching.",
+    "category": "Federation Membership",
+    "type": "documentation"
+  },
+  {
+    "content": "Federation sector classification: sector_of_operation_type (Credit/Non-Credit), sector_of_operation_name (Dairy/PACS/Fishery/UCB/etc.). Use LIKE operator for sector matching. Example: sector_of_operation_name LIKE '%Dairy%'.",
+    "category": "Federation Sectors",
+    "type": "documentation"
+  },
+  {
+    "content": "Location hierarchy in location_master: state_name > district_name > block_name > gram_panchayat_name > village_name. All state and district names are in UPPERCASE. Use for geographic filtering and validation.",
+    "category": "Location Hierarchy",
+    "type": "documentation"
+  },
+  {
+    "content": "Filter chatbot_ncdc_offices with status = 1 and is_approved = 1 for active offices. office_type_name distinguishes 'Head Office', 'Regional Office', 'Sub Office', and 'LINAC' for type-wise counts.",
+    "category": "NCDC Office Types",
+    "type": "documentation"
+  },
+  {
+    "content": "chatbot_state_cooperative_banks supports branch and membership analysis using number_of_branches and number_of_member. Use SUM(number_of_branches) for total branches and SUM(number_of_member) for total bank members, grouped by state_name or bank_level.",
+    "category": "Bank Size Metrics",
+    "type": "documentation"
+  },
+  {
+    "content": "In cooperative_master_chatbot_tbl, location_of_head_quarter is stored as numeric codes: 1=Urban, 2=Rural. Use CASE expressions to label them when showing results.",
+    "category": "Urban Rural Codes",
+    "type": "documentation"
+  },
+  {
+    "content": "In education_training_institute, location_type is numeric: 1=Urban institute, 2=Rural institute. Facilities are indicated by flags like is_hostel_available, is_computer_lab_available, and is_library (1=Yes, 0=No).",
+    "category": "Training Location & Facilities",
+    "type": "documentation"
+  },
+  {
+    "content": "For society type distribution, use cooperative_society_type in cooperative_master_chatbot_tbl and join with chatbot_member_details for member counts.",
+    "category": "Society Type Distribution",
+    "type": "documentation"
+  },
+  {
+    "content": "To analyze sector-wise membership, use sector_of_operation_name in cooperative_master_chatbot_tbl and join with chatbot_member_details for member counts.",
+    "category": "Sector-wise Membership",
+    "type": "documentation"
+  },
+  {
+    "content": "functional_status indicates society operation: 1=Functional, 2=Under Liquidation, 3=Non Functional. is_multi_state: 1=Multi-state society, 0=Single state.",
+    "category": "Operational Status",
+    "type": "documentation"
+  },
+  {
+    "content": "cooperatives count mean all cooperatives like bank(chatbot_state_cooperative_banks), federation(chatbot_state_district_federation), primary cooperative(cooperative_master_chatbot_tbl) but if user ask about dpecific then only take primary cooperative(cooperative_master_chatbot_tbl)",
+    "category": "cooperative count",
+    "timestamp": "2026-05-25T08:50:16.848288",
+    "type": "documentation"
+  },
+  {
+    "content": "National Federation operational status: functional_status (1=Functional, 2=Under Liquidation, 3=Non Functional). Location: location_of_head_quarter (Urban/Rural), state_name, district_name, registered_office_address. Membership: total_number_of_members.",
+    "category": "National Federation Operations",
+    "type": "documentation"
+  },
+  {
+    "content": "date_registration in cooperative_master_chatbot_tbl is used for time-based analysis such as YEAR(date_registration), registration before/after specific cut-off dates (e.g., '2000-01-01', '2021-07-06'), and recent registrations using DATE_SUB(CURDATE(), INTERVAL N YEAR). Always exclude NULL dates when grouping by year.",
+    "category": "Registration Time Series",
+    "type": "documentation"
+  },
+  {
+    "content": "chatbot_national_federations stores National-level Federations (apex bodies operating pan-India). Examples: NAFED, IFFCO, KRIBHCO, NCUI, NAFSCOB. This table does NOT have status or is_approved columns - do NOT filter by these fields.",
+    "category": "National Federation Basics",
+    "type": "documentation"
+  },
+  {
+    "content": "chatbot_state_cooperative_banks uses status = 1, is_delete = 0, and is_draft = 0 to indicate active, valid bank records. Always include these three filters for bank-level queries.",
+    "category": "Bank Status Filtering",
+    "type": "documentation"
+  },
+  {
+    "content": "sector_of_operation_type in cooperative_master_chatbot_tbl classifies sectors as 1=Credit and 2=Non-Credit. Use this for high-level credit vs non-credit analysis.",
+    "category": "Sector Type",
+    "type": "documentation"
+  },
+  {
+    "content": "Bank membership details: number_of_member (total members), number_of_branches, dccb_bank_member (1=Yes, 0=No), dccb_bank_member_count, pacs_member (1=Yes, 0=No), pacs_member_count. Use for membership and branch analysis.",
+    "category": "Bank Membership",
+    "type": "documentation"
+  },
+  {
+    "content": "chatbot_ncdc_offices stores NCDC office network details including name_of_office, office_type_name (Head Office/Regional Office/Sub Office/LINAC), state_name, district_name, full_address, and controller details.",
+    "category": "NCDC Offices Basics",
+    "type": "documentation"
+  },
+  {
+    "content": "For SC/ST membership analysis, use male_sc, female_sc, transgender_sc, male_st, female_st, transgender_st columns in chatbot_member_details. Join with cooperative_master_chatbot_tbl for sector or state grouping.",
+    "category": "SC/ST Membership",
+    "type": "documentation"
+  },
+  {
+    "content": "education_training_institute stores cooperative education and training institute data. Always filter active approved institutes with status = 1, is_approved = 1, and is_draft = 0.",
+    "category": "Training Institute Basics",
+    "type": "documentation"
+  },
+  {
+    "content": "To list multi-state societies, use is_multi_state in cooperative_master_chatbot_tbl (1=Multi-state, 0=Single state).",
+    "category": "Multi-state Societies",
+    "type": "documentation"
+  },
+  {
+    "content": "is_coastal in cooperative_master_chatbot_tbl is used mainly for Fishery Cooperatives: 1=Coastal fishery society, 0=Inland fishery society. Combine with sector_of_operation_name LIKE '%Fishery%' for coastal vs inland analysis.",
+    "category": "Fishery Location",
+    "type": "documentation"
+  },
+  {
+    "content": "members_of_society in cooperative_master_chatbot_tbl stores total individual members of each cooperative. Aggregate SUM(members_of_society) for total members and AVG(members_of_society) for average members per society, filtering out NULL or zero values when needed.",
+    "category": "Cooperative Membership",
+    "type": "documentation"
+  },
+  {
+    "content": "Always include status = 1 (Active) and is_approved = 1 (Approved) in WHERE clause unless querying deleted or pending records. status: 0=Deleted, 1=Active. is_approved: 0=Pending, 1=Approved, 2=Returned.",
+    "category": "Status Filtering",
+    "type": "documentation"
+  },
+  {
+    "content": "sector_of_operation_name contains sector types like 'Primary Agricultural Credit Society (PACS)', 'Dairy Cooperative', 'Fishery Cooperative', 'Housing Cooperative Society', 'Urban Cooperative Bank (UCB)', 'Industrial Cooperative'. Use LIKE with wildcards for matching.",
+    "category": "Sectors",
+    "type": "documentation"
+  },
+  {
+    "content": "education_training_institute captures training activity via no_training_programme, no_participants_attend, and no_participants_completed columns. Use SUM over these fields for total programmes and trained participants.",
+    "category": "Training Activity Metrics",
+    "type": "documentation"
+  },
+  {
+    "content": "Federation operational details: functional_status (1=Functional, 2=Under Liquidation, 3=Non Functional), area_of_operation_name (Gram Panchayat/Block/etc.), operation_area_location (Urban/Rural/Both). Location fields: state_name, district_name, operational_district_name.",
+    "category": "Federation Operations",
+    "type": "documentation"
+  },
+  {
+    "content": "chatbot_member_details aggregates cooperative membership by geography and caste/gender. total_members is total individual members, with gender split across total_male, total_female, total_transgender.",
+    "category": "Member Totals",
+    "type": "documentation"
+  },
+  {
+    "content": "cooperative_society_type in cooperative_master_chatbot_tbl indicates level of the society, typically values like 'Primary Cooperative', 'District Cooperative', 'State Cooperative', 'Central Cooperative'. Use this for primary/district/state-level breakdowns.",
+    "category": "Society Levels",
+    "type": "documentation"
+  },
+  {
+    "content": "affiliated_union_federation_level in cooperative_master_chatbot_tbl stores affiliation text like 'StCB' or 'State Co-operative Bank', and 'DCCB' or 'District Central Cooperative Bank'. Use LIKE on this field to count cooperatives affiliated with StCB or DCCB.",
+    "category": "Bank Affiliation",
+    "type": "documentation"
+  },
+  {
+    "content": "For registration details and year-wise analysis, use date_registration and reference_year in cooperative_master_chatbot_tbl.",
+    "category": "Registration Details",
+    "type": "documentation"
+  },
+  {
+    "content": "The main table is cooperative_master_chatbot_tbl in database ncd12dec. Always query from ncd12dec.cooperative_master_chatbot_tbl for cooperative society data.",
+    "category": "Data Model",
+    "type": "documentation"
+  },
+  {
+    "content": "location_master is a master reference table containing geographic hierarchy for India. Use it for location lookups, validations, and geographic drill-down queries. Contains state_name, district_name, block_name, gram_panchayat_name, and village_name.",
+    "category": "Location Master Basics",
+    "type": "documentation"
+  },
+  {
+    "content": "Geographic hierarchy: state_name > district_name > sub_district_name > block_name > gram_panchayat_name > village_name. All state and district names are in UPPERCASE.",
+    "category": "Geography",
+    "type": "documentation"
+  },
+  {
+    "content": "location_master has indexes on state_name, (state_name, district_name), block_name, gram_panchayat_name, and village_name for optimized location queries. Use these fields in WHERE clauses for better performance.",
+    "category": "Location Performance",
+    "type": "documentation"
+  }
+]

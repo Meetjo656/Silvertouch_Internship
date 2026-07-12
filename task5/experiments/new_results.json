@@ -1,0 +1,7 @@
+{
+    "pkl_count": 1,
+    "training_time_sec": 0.01973438262939453,
+    "inference_time_ms": 0.0004606339537981644,
+    "accuracy": 0.8705501618122977,
+    "memory_mb": 45.0
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "target": "Correction::Application Correction",
+        "frequency": 2,
+        "priority_score": 1.25,
+        "priority": "LOW",
+        "latest_timestamp": "2026-07-07T10:40:18.090510",
+        "reason": "Wrong intent/workflow"
+    }
+]

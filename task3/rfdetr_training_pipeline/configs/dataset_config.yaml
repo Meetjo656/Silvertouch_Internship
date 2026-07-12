@@ -1,0 +1,19 @@
+train_images: "../dataset/train"
+train_annotations: "../dataset/train/_annotations.coco.json"
+
+val_images: "../dataset/valid"
+val_annotations: "../dataset/valid/_annotations.coco.json"
+
+test_images: "../dataset/test"
+test_annotations: "../dataset/test/_annotations.coco.json"
+
+num_classes: 8
+class_names:
+  - "Artwork"
+  - "not_artwork"
+  - "Front_Panel"
+  - "Side_Panel"
+  - "Back_Panel"
+  - "Extra_Areas"
+  - "Bottom_Panel"
+  - "Top_Panel"

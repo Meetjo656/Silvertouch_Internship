@@ -1,0 +1,96 @@
+[
+  {
+    "point_id": "07953979-acdf-515f-abca-1aea4b505def",
+    "payload": {
+      "documentation": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc.",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "education",
+        "institute",
+        "operational",
+        "level",
+        "national",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "74d0ac01-a604-5645-a11e-b36a1cc761cb",
+    "payload": {
+      "documentation": "sectrol_coverage_name contains information of how many sector does this institue covers",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "education",
+        "institute",
+        "sector",
+        "coverage"
+      ]
+    }
+  },
+  {
+    "point_id": "84c0d0d0-544f-555d-9369-62dc015ed1ba",
+    "payload": {
+      "documentation": "location_type_name contains Rural or Urban",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "urban",
+        "rural",
+        "location",
+        "education"
+      ]
+    }
+  },
+  {
+    "point_id": "8716ffde-fac7-59d9-a008-6a6de9ddb4e1",
+    "payload": {
+      "documentation": "funding_provision_names contains details of funding provided by various entity like Central Govt , State Govt , Financing by Promoting Organisation/Institute etc.",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "central_govt",
+        "state_govt",
+        "funding_provision",
+        "promoting_organisation",
+        "institute"
+      ]
+    }
+  },
+  {
+    "point_id": "a86fa2a2-9404-55d1-bc26-fc4933e49739",
+    "payload": {
+      "documentation": "Always filter based on status = 1 , is_draft = 0 , is_approved = 1",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "education",
+        "approval",
+        "draft",
+        "status"
+      ]
+    }
+  },
+  {
+    "point_id": "c59bfd65-aaea-593b-a0f6-f7c85d51751c",
+    "payload": {
+      "documentation": "type_of_institution_name contains information about the Type of the institue like ICM, RICM, NCCT HO, VAMNICOM",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "icm",
+        "ricm",
+        "ncct",
+        "vamnicom",
+        "type_of_institution"
+      ]
+    }
+  }
+]

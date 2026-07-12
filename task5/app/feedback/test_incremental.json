@@ -1,0 +1,18 @@
+[
+    {
+        "text": "Track my admission",
+        "workflow": "Correction",
+        "intent": "Application Correction",
+        "subintent": null,
+        "entities": null,
+        "source": "active_learning"
+    },
+    {
+        "text": "I need to track my admission status",
+        "workflow": "Correction",
+        "intent": "Application Correction",
+        "subintent": null,
+        "entities": null,
+        "source": "active_learning"
+    }
+]

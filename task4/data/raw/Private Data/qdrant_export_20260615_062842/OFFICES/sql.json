@@ -1,0 +1,1968 @@
+[
+  {
+    "point_id": "0531dab7-b028-5c44-a67b-6b768fd0ea2d",
+    "payload": {
+      "question": "List all offices in Telangana with their pin codes.",
+      "sql": "SELECT name_of_office, pin_code FROM chatbot_ncdc_offices_private WHERE state_name ILIKE '%Telangana%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "telangana",
+        "offices",
+        "pincodes"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "0e57ae14-6570-5eae-8ddf-2eab305cd4ff",
+    "payload": {
+      "question": "Where is the NCDC Head Office?",
+      "sql": "SELECT full_address FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Head Office%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "ncdc",
+        "head",
+        "office"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "1c7e5b1b-8dd4-5c24-ab8b-769a9011aa10",
+    "payload": {
+      "question": "Count of offices specialized in Financial by state.",
+      "sql": "SELECT state_name, count(*) FROM chatbot_ncdc_offices_private WHERE specialization = 'Financial' AND status = '1' AND is_approved = '1' GROUP BY state_name",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "financial",
+        "offices",
+        "specialized",
+        "state"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "273a0ef8-50ca-5208-9e6d-fe4728c25249",
+    "payload": {
+      "question": "What is the controller phone number for Head Office?",
+      "sql": "SELECT controller_phone_number FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Head Office%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "controller",
+        "head",
+        "office",
+        "phone",
+        "number"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "34643829-8d23-5dc6-9cec-38410638b2d3",
+    "payload": {
+      "question": "List Point geometry offices that are Owned by NCDC.",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE geometry_type = 'Point' AND ownership_name = 'Owned' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "geometry",
+        "offices",
+        "owned",
+        "ncdc"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "38b63d09-ad96-59bc-94c6-ae32c856476f",
+    "payload": {
+      "question": "List all Sub Office names with their phone numbers.",
+      "sql": "SELECT name_of_office, phone_number FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Sub Office%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "office",
+        "phone",
+        "sub"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "48fbf77d-4fbc-5f0a-aea3-70e8513f2cfc",
+    "payload": {
+      "question": "Show offices with Polygon geometry type in Gujarat.",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE geometry_type = 'Polygon' AND state_name ILIKE '%Gujarat%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "gujarat",
+        "polygon",
+        "geometry"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "4bc35547-58f0-5f30-8cb1-31a14fd573f6",
+    "payload": {
+      "question": "Which office has the maximum area sq ft?",
+      "sql": "SELECT name_of_office, area_sq_ft FROM chatbot_ncdc_offices_private WHERE status = '1' AND is_approved = '1' ORDER BY CAST(area_sq_ft AS DECIMAL) DESC LIMIT 1",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "area",
+        "office",
+        "maximum",
+        "square",
+        "feet"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "4e594344-08e2-5b7e-8a71-6d00aa0874cf",
+    "payload": {
+      "question": "Show email and phone of Deputy Director in Delhi office.",
+      "sql": "SELECT controller_email, controller_phone_number FROM chatbot_ncdc_offices_private WHERE controller_designation_name = 'Deputy Director' AND state_name ILIKE '%Delhi%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "email",
+        "phone",
+        "deputy",
+        "director",
+        "delhi"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "52517f40-c8be-5c6f-806c-5e3ab8216579",
+    "payload": {
+      "question": "How many Regional Offices are controlled by a Director?",
+      "sql": "SELECT count(*) FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Regional Office%' AND controller_designation_name = 'Director' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "director",
+        "regional",
+        "offices",
+        "controlled"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "5323efb2-264f-5738-967b-5a3dbad2e105",
+    "payload": {
+      "question": "Total area of NCDC offices controlled by Chief Directors.",
+      "sql": "SELECT sum(CAST(area_sq_ft AS DECIMAL)) FROM chatbot_ncdc_offices_private WHERE controller_designation_name = 'Chief Director' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "ncdc",
+        "offices",
+        "chief",
+        "directors",
+        "area"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "598cc359-98ae-5e1f-b785-bf00f78eaf2c",
+    "payload": {
+      "question": "What are the specialized Financial offices in North India (Delhi, Punjab, Haryana)?",
+      "sql": "SELECT name_of_office, state_name FROM chatbot_ncdc_offices_private WHERE state_name IN ('Delhi', 'Punjab', 'Haryana') AND specialization = 'Financial' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "financial",
+        "offices",
+        "north",
+        "delhi",
+        "punjab",
+        "haryana"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "6ee99208-1a56-5603-80e6-21cacd7ebc92",
+    "payload": {
+      "question": "Who is the controller of the Regional Office in Jaipur?",
+      "sql": "SELECT controller_name FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Regional Office%' AND district_name ILIKE '%Jaipur%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "controller",
+        "regional",
+        "jaipur"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "79292e1c-e3a5-545f-9b93-79d904e4b51c",
+    "payload": {
+      "question": "Which offices in Maharashtra have Polygon geometry?",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE state_name ILIKE '%Maharashtra%' AND geometry_type = 'Polygon' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "maharashtra",
+        "polygon",
+        "geometry"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "7becee7a-691a-5cf5-bc6d-56a8e6d5ffd6",
+    "payload": {
+      "question": "Total area in square feet for all Polygon geometry offices.",
+      "sql": "SELECT sum(CAST(area_sq_ft AS DECIMAL)) FROM chatbot_ncdc_offices_private WHERE geometry_type = 'Polygon' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "area",
+        "geometry",
+        "polygon",
+        "square",
+        "feet"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "8e818627-88d6-5c5f-87d3-b69b7104daa6",
+    "payload": {
+      "question": "Total count of Point vs Polygon geometry types in NCDC offices.",
+      "sql": "SELECT geometry_type, count(*) FROM chatbot_ncdc_offices_private WHERE status = '1' AND is_approved = '1' GROUP BY geometry_type",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "geometry",
+        "polygon",
+        "point",
+        "ncdc",
+        "offices"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "9038197f-672d-5e65-b451-747ebc6ddcaa",
+    "payload": {
+      "question": "Find Pin Code and Email for NCDC Regional Office Jaipur.",
+      "sql": "SELECT pin_code, email FROM chatbot_ncdc_offices_private WHERE name_of_office LIKE '%Jaipur%' AND office_type_name ILIKE '%Regional Office%'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "pin",
+        "email",
+        "ncdc",
+        "regional",
+        "office",
+        "jaipur"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "a2031a29-ae29-5b9b-8ec4-8c45ca97463f",
+    "payload": {
+      "question": "List all NCDC Sub Offices in India.",
+      "sql": "SELECT name_of_office, state_name FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Sub Office%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "ncdc",
+        "sub",
+        "offices",
+        "india"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "a31800d8-8bf3-5bd2-b87f-7c492e15e527",
+    "payload": {
+      "question": "Show phone number and email for the Regional Office in Chennai.",
+      "sql": "SELECT phone_number, email FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Regional Office%' AND state_name ILIKE '%Tamil Nadu%' AND district_name ILIKE '%Chennai%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "regional",
+        "chennai",
+        "office",
+        "phone",
+        "email"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "acea4e08-adef-5602-a943-501faefa947e",
+    "payload": {
+      "question": "Show address of Regional Office in Hyderabad.",
+      "sql": "SELECT full_address FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Regional Office%' AND state_name ILIKE '%Telangana%' AND district_name ILIKE '%Hyderabad%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "regional",
+        "hyderabad",
+        "address"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "afbdb395-593c-545b-9d29-b70eaba6587b",
+    "payload": {
+      "question": "Where is the Regional Office in Bangalore?",
+      "sql": "SELECT full_address FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Regional Office%' AND district_name ILIKE '%Bangalore%'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "regional",
+        "bangalore",
+        "office"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "b19c72e4-8bf9-50d7-aa7a-493361487ae7",
+    "payload": {
+      "question": "Find offices specialized in Financial matters.",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE specialization = 'Financial' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "financial",
+        "matters",
+        "specialized",
+        "offices"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "bb1c9c26-b9be-514d-a0e8-a319e1773ce8",
+    "payload": {
+      "question": "How many NCDC offices are in owned buildings?",
+      "sql": "SELECT count(*) FROM chatbot_ncdc_offices_private WHERE ownership_name = 'Owned' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "ncdc",
+        "offices",
+        "owned",
+        "buildings"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "c1612d0e-2dad-590a-9d52-0c860fe6b1e2",
+    "payload": {
+      "question": "How many offices are located in Bihar?",
+      "sql": "SELECT count(*) FROM chatbot_ncdc_offices_private WHERE state_name ILIKE '%Bihar%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "bihar",
+        "offices",
+        "located"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "c352b8e1-ac64-5fbd-8463-102882521658",
+    "payload": {
+      "question": "Find office specialized in Training in Karnataka.",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE state_name ILIKE '%Karnataka%' AND specialization = 'Training' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "training",
+        "karnataka",
+        "specialized",
+        "office"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "c50f8293-f59b-52d1-a043-afb3b60071b5",
+    "payload": {
+      "question": "List unique designations of NCDC office controllers.",
+      "sql": "SELECT DISTINCT controller_designation_name FROM chatbot_ncdc_offices_private WHERE status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "ncdc",
+        "offices",
+        "controllers",
+        "designations"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "cad1d9e2-76ab-5e31-9a32-c554cfdf1049",
+    "payload": {
+      "question": "Which NCDC office has specialization in Training?",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE specialization = 'Training' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "ncdc",
+        "training",
+        "specialization",
+        "office"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "ced0f2d1-7706-5b95-8b65-808fe19fa3eb",
+    "payload": {
+      "question": "List all Regional Offices in West Bengal.",
+      "sql": "SELECT name_of_office, full_address FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Regional Office%' AND state_name ILIKE '%West Bengal%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "regional",
+        "west",
+        "bengal"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "d38e63aa-0da1-5116-bd57-e18f6b1fa86b",
+    "payload": {
+      "question": "Which office is controlled by Director General?",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE controller_designation_name = 'Director General' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "director",
+        "general",
+        "controlled",
+        "office",
+        "offices"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "d97bab76-3ba9-530e-91d0-ac352d60b3ac",
+    "payload": {
+      "question": "Find Assistant Director controlled offices specialized in Training.",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE controller_designation_name = 'Assistant Director' AND specialization = 'Training' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "assistant",
+        "director",
+        "controlled",
+        "offices",
+        "specialized",
+        "training"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "dcad9a8c-a784-534b-883b-b2f44d877873",
+    "payload": {
+      "question": "List all offices whose controller designation is Assistant Director.",
+      "sql": "SELECT name_of_office, state_name FROM chatbot_ncdc_offices_private WHERE controller_designation_name = 'Assistant Director' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "director",
+        "controller",
+        "designation",
+        "assistant",
+        "offices"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "ed7fd56e-dc67-56d7-955d-525a8a5c8e11",
+    "payload": {
+      "question": "How many offices are controlled by a Managing Director?",
+      "sql": "SELECT count(*) FROM chatbot_ncdc_offices_private WHERE controller_designation_name = 'Managing Director' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "director",
+        "offices",
+        "controlled",
+        "managing"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "ef9dc60a-c6a7-5ea6-9c26-c1448f3a9441",
+    "payload": {
+      "question": "Total area of all Rented NCDC offices in Maharashtra.",
+      "sql": "SELECT sum(CAST(area_sq_ft AS DECIMAL)) FROM chatbot_ncdc_offices_private WHERE state_name ILIKE '%Maharashtra%' AND ownership_name = 'Rented' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "ncdc",
+        "rented",
+        "maharashtra"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "efbb0d8e-28e1-5926-a0ea-5c12be336812",
+    "payload": {
+      "question": "List designation of controllers for all offices in Karnataka.",
+      "sql": "SELECT controller_designation_name FROM chatbot_ncdc_offices_private WHERE state_name ILIKE '%Karnataka%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "designation",
+        "controllers",
+        "karnataka"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "f04372ad-345b-51c1-948d-629668cc4994",
+    "payload": {
+      "question": "Find all Rented offices with Point geometry type.",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE ownership_name = 'Rented' AND geometry_type = 'Point' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "rented",
+        "geometry",
+        "point"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "f7077c85-bca5-50ea-ab70-ce29c1e4bd5d",
+    "payload": {
+      "question": "Show all offices headed by a Director General or Managing Director.",
+      "sql": "SELECT name_of_office, controller_designation_name FROM chatbot_ncdc_offices_private WHERE controller_designation_name IN ('Director General', 'Managing Director')",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "director",
+        "general",
+        "managing",
+        "offices",
+        "headed"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "faf1fa9b-6395-5acd-a44b-79287101f6be",
+    "payload": {
+      "question": "List all NCDC offices where the controller is a Chief Director.",
+      "sql": "SELECT name_of_office FROM chatbot_ncdc_offices_private WHERE controller_designation_name = 'Chief Director' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "ncdc",
+        "offices",
+        "controller",
+        "director",
+        "chief"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "fc519a56-6e20-5fd5-bf97-94736d5d5846",
+    "payload": {
+      "question": "Find the Managing Director of the Head Office.",
+      "sql": "SELECT controller_name FROM chatbot_ncdc_offices_private WHERE office_type_name ILIKE '%Head Office%' AND controller_designation_name = 'Managing Director' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "director",
+        "office",
+        "head",
+        "managing"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "fd59db33-db43-5d9e-a8dc-b6470fff789f",
+    "payload": {
+      "question": "Who are the Chief Directors heading Regional Offices?",
+      "sql": "SELECT controller_name, state_name FROM chatbot_ncdc_offices_private WHERE controller_designation_name = 'Chief Director' AND office_type_name ILIKE '%Regional Office%' AND status = '1' AND is_approved = '1'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "offices",
+        "regional",
+        "directors",
+        "heading",
+        "chief"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  },
+  {
+    "point_id": "fff11025-7622-5be4-b41b-8c2bb66de14a",
+    "payload": {
+      "question": "Is the Mumbai Regional Office Owned or Rented?",
+      "sql": "SELECT ownership_name FROM chatbot_ncdc_offices_private WHERE state_name ILIKE '%Maharashtra%' AND district_name ILIKE '%Mumbai%' AND office_type_name ILIKE '%Regional Office%'",
+      "type": "sql",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "columns": [
+        "chatbot_ncdc_offices_private.id",
+        "chatbot_ncdc_offices_private.ncdcid",
+        "chatbot_ncdc_offices_private.office_type",
+        "chatbot_ncdc_offices_private.office_type_name",
+        "chatbot_ncdc_offices_private.name_of_office",
+        "chatbot_ncdc_offices_private.phone_number",
+        "chatbot_ncdc_offices_private.email",
+        "chatbot_ncdc_offices_private.full_address",
+        "chatbot_ncdc_offices_private.state_ut",
+        "chatbot_ncdc_offices_private.state_name",
+        "chatbot_ncdc_offices_private.district",
+        "chatbot_ncdc_offices_private.district_name",
+        "chatbot_ncdc_offices_private.pin_code",
+        "chatbot_ncdc_offices_private.controller_name",
+        "chatbot_ncdc_offices_private.controller_designation",
+        "chatbot_ncdc_offices_private.controller_designation_name",
+        "chatbot_ncdc_offices_private.controller_email",
+        "chatbot_ncdc_offices_private.controller_phone_number",
+        "chatbot_ncdc_offices_private.area_sq_ft",
+        "chatbot_ncdc_offices_private.geometry_type",
+        "chatbot_ncdc_offices_private.ownership",
+        "chatbot_ncdc_offices_private.ownership_name",
+        "chatbot_ncdc_offices_private.specialization",
+        "chatbot_ncdc_offices_private.latitude",
+        "chatbot_ncdc_offices_private.longitude",
+        "chatbot_ncdc_offices_private.status",
+        "chatbot_ncdc_offices_private.is_approved"
+      ],
+      "business_terms": [
+        "mumbai",
+        "regional",
+        "office",
+        "owned",
+        "rented"
+      ],
+      "sql_dialect": "postgres",
+      "is_verified": false
+    }
+  }
+]

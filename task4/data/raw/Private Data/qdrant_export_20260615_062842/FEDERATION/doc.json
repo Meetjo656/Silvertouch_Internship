@@ -1,0 +1,164 @@
+[
+  {
+    "point_id": "25d89868-32ab-5adc-a8eb-3a2f9e35ad99",
+    "payload": {
+      "documentation": "The federation_type_name column in the main table is a key column. It contains details like 'State Federation', 'District Federation', 'Block/Taluka/Mandal Federation', and 'Regional Federation'. Filter out records asked by the user based on this column.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [],
+      "business_terms": [
+        "federation",
+        "state",
+        "district",
+        "block",
+        "regional"
+      ]
+    }
+  },
+  {
+    "point_id": "2dbb0436-2ff7-5103-bbe2-20aecd1cb21a",
+    "payload": {
+      "documentation": "All sector-specific tables contain additional information exclusive to those specific sectors. Always construct the SQL query on the main table first, and perform a JOIN with the relevant sector-specific tables for additional details.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [],
+      "business_terms": [
+        "sector",
+        "details",
+        "information",
+        "exclusive",
+        "specific"
+      ]
+    }
+  },
+  {
+    "point_id": "60063fd1-c1c8-5941-afe6-50d3164183cf",
+    "payload": {
+      "documentation": "For miscellaneous societies: use chatbot_state_district_federation_cmiscellaneous for the credit sector miscellaneous society and chatbot_state_district_federation_miscellaneous for the non credit sector miscellaneous society.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_state_district_federation_miscellaneous"
+      ],
+      "business_terms": [
+        "credit sector",
+        "non credit sector",
+        "miscellaneous society",
+        "federation",
+        "district"
+      ]
+    }
+  },
+  {
+    "point_id": "bb0ea306-3b79-5f8d-ac2a-a3b49309a924",
+    "payload": {
+      "documentation": "For national federation chatbot_national_federations this is the main table, contact details are stored in chatbot_national_federations_contact_details and the member of this federation details are stored in chatbot_national_federations_members.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations",
+        "chatbot_national_federations_contact_details",
+        "chatbot_national_federations_members"
+      ],
+      "business_terms": [
+        "federation",
+        "contact",
+        "member",
+        "details"
+      ]
+    }
+  },
+  {
+    "point_id": "c82a62b2-1e04-5b0c-8005-54bc938b3975",
+    "payload": {
+      "documentation": "Always filter chatbot_national_federations for national federation queries using: is_new = '1' AND is_draft = '0'.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations"
+      ],
+      "business_terms": [
+        "federation",
+        "national",
+        "queries",
+        "draft",
+        "new"
+      ]
+    }
+  },
+  {
+    "point_id": "e9f1d900-4a18-59af-89ee-917111b85691",
+    "payload": {
+      "documentation": "Join Logic for National Federations: Construct joins from chatbot_national_federations.id to the national_federations_id column of the child tables (contact_details or members).",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations"
+      ],
+      "business_terms": [
+        "federations",
+        "contact_details",
+        "members",
+        "national_federations_id"
+      ]
+    }
+  },
+  {
+    "point_id": "f6ffd426-dfd9-5e3c-9e65-25c53ebfe301",
+    "payload": {
+      "documentation": "Always filter chatbot_state_district_federation_private based on these values: is_draft = '0' AND is_approved = '0' AND status = '1'.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_private"
+      ],
+      "business_terms": [
+        "federation",
+        "district",
+        "chatbot",
+        "state",
+        "draft",
+        "approved"
+      ]
+    }
+  },
+  {
+    "point_id": "fe198bbe-fe26-5e5d-ad4d-630fadf3e049",
+    "payload": {
+      "documentation": "Table Prioritization: Always prioritize chatbot_national_federations and chatbot_national_federations_contact_details for any national federation related queries.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations",
+        "chatbot_national_federations_contact_details"
+      ],
+      "business_terms": [
+        "federation",
+        "national",
+        "contact",
+        "details",
+        "prioritization",
+        "queries"
+      ]
+    }
+  },
+  {
+    "point_id": "fe6df281-4a34-5e6a-94e3-b9079566bca1",
+    "payload": {
+      "documentation": "The table chatbot_state_district_federation_private is the main master table for all federations. All other sector-specific tables are mapped to this table via the relationship: chatbot_state_district_federation_private.id = sector_table.state_district_federation_id.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_private"
+      ],
+      "business_terms": [
+        "federation",
+        "sector",
+        "district",
+        "relationship",
+        "mapping"
+      ]
+    }
+  }
+]

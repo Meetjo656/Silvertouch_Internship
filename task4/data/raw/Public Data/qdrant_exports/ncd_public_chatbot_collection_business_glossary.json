@@ -1,0 +1,9 @@
+[
+  {
+    "term": "MDCS",
+    "meaning": "Dairy Cooperative Society registered Since 15-02-2023",
+    "sql_hint": "sector_of_operation_name ILIKE '%Dairy%' AND date_registration >= DATE '2023-02-15'",
+    "category": "business_term",
+    "timestamp": "2026-06-09T06:59:08.281541+00:00"
+  }
+]

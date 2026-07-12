@@ -1,0 +1,9 @@
+confidence_threshold: 0.25
+iou_threshold: 0.60
+
+suppress_duplicates: true
+class_agnostic: true
+
+image_size: 640
+device: "cuda" # cuda or cpu
+half_precision: true

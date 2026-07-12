@@ -1,0 +1,81 @@
+[
+  {
+    "point_id": "148f2a0b-d63a-5a9f-9c53-a769be4de484",
+    "payload": {
+      "ddl": "CREATE TABLE public.chatbot_coverage_areas ( id TEXT, row_id TEXT, cooperative_registrations_id TEXT, /* Cooperative Registrations ID */ ncd_id TEXT, /* NCD ID */ area_of_operation_id TEXT, /* Area of Operation ID */ state_code TEXT, /* State Code */ state_name TEXT, /* State Name */ district_name TEXT, /* District Name */ block_name TEXT, /* Block Name */ gram_panchayat_name TEXT, /* Gram Panchayat Name */ village_name TEXT, /* Village Name */ district_code TEXT, /* District Code */ block_code TEXT, /* Block Code */ panchayat_code TEXT, /* Panchayat Code */ village_code TEXT, /* Village Code */ primary_activity TEXT, /* Primary Activity */ sector_of_operation_name TEXT, /* Sector of operation name (e.g. PACS, LAMPS) */ is_draft TEXT, /* Draft status (0 = Not Draft, 1 = Draft) */ is_approved TEXT, /* Approved status (0 = Not Approved, 1 = Approved, 2 = Rejected) */ status TEXT, /* Status (0 = Not Active, 1 = Active) */ functional_status TEXT, /* Functional status (1 = Functional , 2 = Under Liquidation) */ location_of_head_quarter TEXT, /* Location of head quarter */ operation_area_location TEXT, /* Operation area location */ date_registration TEXT /* Date of registration */ );",
+      "type": "ddl",
+      "module": "GP_COVERAGE",
+      "tables": [
+        "chatbot_coverage_areas"
+      ],
+      "columns": [
+        "chatbot_coverage_areas.id",
+        "chatbot_coverage_areas.row_id",
+        "chatbot_coverage_areas.cooperative_registrations_id",
+        "chatbot_coverage_areas.ncd_id",
+        "chatbot_coverage_areas.area_of_operation_id",
+        "chatbot_coverage_areas.state_code",
+        "chatbot_coverage_areas.state_name",
+        "chatbot_coverage_areas.district_code",
+        "chatbot_coverage_areas.district_name",
+        "chatbot_coverage_areas.block_code",
+        "chatbot_coverage_areas.block_name",
+        "chatbot_coverage_areas.panchayat_code",
+        "chatbot_coverage_areas.gram_panchayat_name",
+        "chatbot_coverage_areas.village_code",
+        "chatbot_coverage_areas.village_name",
+        "chatbot_coverage_areas.created_at",
+        "chatbot_coverage_areas.primary_activity",
+        "chatbot_coverage_areas.sector_of_operation_name",
+        "chatbot_coverage_areas.created_by",
+        "chatbot_coverage_areas.is_draft",
+        "chatbot_coverage_areas.is_approved",
+        "chatbot_coverage_areas.status",
+        "chatbot_coverage_areas.functional_status",
+        "chatbot_coverage_areas.location_of_head_quarter",
+        "chatbot_coverage_areas.operation_area_location",
+        "chatbot_coverage_areas.date_registration"
+      ],
+      "business_terms": [
+        "coverage",
+        "areas",
+        "registrations",
+        "cooperatives",
+        "geographic"
+      ]
+    }
+  },
+  {
+    "point_id": "b60a457a-0e66-503f-8ce8-a1c7f945b800",
+    "payload": {
+      "ddl": "CREATE TABLE public.chatbot_districts_blocks_gp_villages ( id TEXT, state_code TEXT, /* State Code */ state_name TEXT, /* State Name */ district_code TEXT, /* District Code */ district_name TEXT, /* District Name */ block_code TEXT, /* Block Code */ block_name TEXT, /* Block Name */ gram_panchayat_code TEXT, /* Gram Panchayat Code */ gram_panchayat_name TEXT, /* Gram Panchayat Name */ village_code TEXT, /* Village Code */ village_name TEXT, /* Village Name */ status TEXT /* Status */ );",
+      "type": "ddl",
+      "module": "GP_COVERAGE",
+      "tables": [
+        "chatbot_districts_blocks_gp_villages"
+      ],
+      "columns": [
+        "chatbot_districts_blocks_gp_villages.id",
+        "chatbot_districts_blocks_gp_villages.state_code",
+        "chatbot_districts_blocks_gp_villages.state_name",
+        "chatbot_districts_blocks_gp_villages.district_code",
+        "chatbot_districts_blocks_gp_villages.district_name",
+        "chatbot_districts_blocks_gp_villages.block_code",
+        "chatbot_districts_blocks_gp_villages.block_name",
+        "chatbot_districts_blocks_gp_villages.gram_panchayat_code",
+        "chatbot_districts_blocks_gp_villages.gram_panchayat_name",
+        "chatbot_districts_blocks_gp_villages.village_code",
+        "chatbot_districts_blocks_gp_villages.village_name",
+        "chatbot_districts_blocks_gp_villages.status"
+      ],
+      "business_terms": [
+        "coverage",
+        "villages",
+        "blocks",
+        "districts",
+        "state",
+        "chatbot"
+      ]
+    }
+  }
+]

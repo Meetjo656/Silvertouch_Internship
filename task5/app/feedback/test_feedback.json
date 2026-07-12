@@ -1,0 +1,38 @@
+[
+    {
+        "timestamp": "2026-07-07T10:40:18.089888",
+        "user_message": "Track my admission",
+        "prediction": {
+            "workflow": "Status",
+            "intent": "Application Status",
+            "subintent": null,
+            "entities": null,
+            "confidence": 0.41
+        },
+        "actual": {
+            "workflow": "Correction",
+            "intent": "Application Correction",
+            "subintent": null,
+            "entities": null
+        },
+        "feedback_type": "correction"
+    },
+    {
+        "timestamp": "2026-07-07T10:40:18.090510",
+        "user_message": "I need to track my admission status",
+        "prediction": {
+            "workflow": "Status",
+            "intent": "Application Status",
+            "subintent": null,
+            "entities": null,
+            "confidence": 0.35
+        },
+        "actual": {
+            "workflow": "Correction",
+            "intent": "Application Correction",
+            "subintent": null,
+            "entities": null
+        },
+        "feedback_type": "correction"
+    }
+]

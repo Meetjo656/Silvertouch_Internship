@@ -1,0 +1,8 @@
+rfdetr
+torch
+torchvision
+opencv-python-headless
+pyyaml
+pandas
+matplotlib
+numpy

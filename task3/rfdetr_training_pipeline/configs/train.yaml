@@ -1,0 +1,16 @@
+learning_rate: 0.0001
+batch_size: 2
+epochs: 200
+optimizer: "AdamW"
+weight_decay: 0.0001
+scheduler: "CosineAnnealingLR"
+
+image_size: 640
+random_seed: 42
+
+confidence_threshold: 0.25
+iou_threshold: 0.50
+
+augmentations:
+  horizontal_flip: 0.5
+  color_jitter: 0.2

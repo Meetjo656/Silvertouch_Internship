@@ -1,0 +1,24 @@
+========================================
+          ERROR ANALYSIS REPORT
+========================================
+Total Errors: 40
+
+--- Top Confusion Pairs ---
+kjhk_fbhb  ->  Confused with  ->  portal_user_guide : 6 times
+check_specific_application  ->  Confused with  ->  application_status : 6 times
+bfghhdh  ->  Confused with  ->  portal_user_guide : 5 times
+jhghvbhj  ->  Confused with  ->  portal_user_guide : 5 times
+fafafa  ->  Confused with  ->  portal_user_guide : 3 times
+fasfafe  ->  Confused with  ->  portal_user_guide : 3 times
+guide_for_application  ->  Confused with  ->  portal_user_guide : 2 times
+technical_assistance  ->  Confused with  ->  portal_user_guide : 2 times
+check_mou_status  ->  Confused with  ->  check_specific_application : 1 times
+view_all_guides  ->  Confused with  ->  portal_user_guide : 1 times
+
+--- Low Confidence Predictions ---
+Found 302 predictions below 0.6 confidence.
+  [WRONG] kjhk_fbhb pred as portal_user_guide (0.07) - Text: dfdgggfjhf
+  [WRONG] kjhk_fbhb pred as portal_user_guide (0.07) - Text: ghhvhgv
+  [WRONG] kjhk_fbhb pred as portal_user_guide (0.07) - Text: bvccchgg
+  [WRONG] kjhk_fbhb pred as portal_user_guide (0.07) - Text: jvhgghjj
+  [WRONG] kjhk_fbhb pred as portal_user_guide (0.07) - Text: vbcvjhl;

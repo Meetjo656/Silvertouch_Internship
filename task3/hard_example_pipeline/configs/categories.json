@@ -1,0 +1,16 @@
+{
+    "categories": [
+        "missing_front",
+        "missing_back",
+        "missing_top",
+        "missing_bottom",
+        "missing_side",
+        "missing_artwork",
+        "duplicate_panels",
+        "false_positive",
+        "rotated_cartons",
+        "white_pharma",
+        "technical_dielines",
+        "low_confidence"
+    ]
+}

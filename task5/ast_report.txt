@@ -1,0 +1,1186 @@
+### File: auth.py
+
+- Function: get_api_key(api_key)
+  Docstring: Verify API key for protected endpoints.
+
+If NLU_API_KEY is not set (empty), authentication is disabled (development mode).
+
+### File: config.py
+
+### File: models.py
+
+- Class: EntityDef
+  Docstring: None
+
+- Class: SubIntent
+  Docstring: A single subintent definition with training examples.
+
+- Class: TrainRequest
+  Docstring: Full retrain — re-encodes every subintent from scratch.
+
+- Class: IncrementalTrainRequest
+  Docstring: Incremental retrain — only re-encodes changed subintents.
+
+- Class: AnalyzeRequest
+  Docstring: Full NLU pipeline request (intent + entities).
+
+- Class: IntentRequest
+  Docstring: Intent/subintent detection only.
+
+- Class: EntityRequest
+  Docstring: Entity extraction only.
+
+### File: state.py
+
+### File: __init__.py
+
+### File: benchmark\accuracy.py
+
+- Class: AccuracyBenchmark
+  Docstring: Computes standard ML accuracy and conversational metrics.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: evaluate(self, y_true, y_pred)
+  Docstring: Runs a standard evaluation suite.
+
+- Function: confusion_matrix(self, y_true, y_pred)
+  Docstring: Computes a simple confusion matrix.
+
+- Function: precision(self, y_true, y_pred)
+  Docstring: Micro-averaged precision.
+
+- Function: recall(self, y_true, y_pred)
+  Docstring: Micro-averaged recall (same as precision for single-label multi-class).
+
+- Function: f1(self, y_true, y_pred)
+  Docstring: Micro-averaged F1 score.
+
+- Function: top_k_accuracy(self, y_true, y_pred_list)
+  Docstring: Checks if the true label is within the top-K predictions.
+
+- Function: workflow_accuracy(self, y_true_wf, y_pred_wf)
+  Docstring: Accuracy specifically for the high-level workflow classifier.
+
+- Function: entity_accuracy(self, expected_entities, extracted_entities)
+  Docstring: Computes extraction accuracy (exact match of entity dicts).
+
+- Function: fallback_accuracy(self, should_fallback, did_fallback)
+  Docstring: Measures how accurately the system triggers fallback when it should.
+
+### File: benchmark\benchmark.py
+
+- Class: BenchmarkRunner
+  Docstring: Master orchestrator for running the benchmarking suite.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: initialize(self)
+  Docstring: Loads configuration and prepares benchmarking state.
+
+- Function: benchmark_everything(self)
+  Docstring: Runs the complete end-to-end benchmark suite.
+
+- Function: benchmark_latency(self)
+  Docstring: Runs latency benchmarks.
+
+- Function: benchmark_accuracy(self)
+  Docstring: Runs accuracy benchmarks.
+
+- Function: benchmark_memory(self)
+  Docstring: Runs memory benchmarks.
+
+- Function: benchmark_scalability(self)
+  Docstring: Runs scalability benchmarks.
+
+- Function: benchmark_stress(self)
+  Docstring: Runs stress tests.
+
+- Function: compare_versions(self)
+  Docstring: Compares current run against a baseline (if exists).
+
+- Function: generate_report(self)
+  Docstring: Compiles results and generates PDF/Markdown and charts.
+
+- Function: benchmark_training(self)
+  Docstring: Benchmarks the model training pipeline specifically.
+
+- Function: benchmark_inference(self)
+  Docstring: Benchmarks the model inference pipeline specifically.
+
+- Function: benchmark_old_system(self)
+  Docstring: Loads and benchmarks an older baseline of the system.
+
+- Function: benchmark_new_system(self)
+  Docstring: Benchmarks the current/new system.
+
+- Function: export_results(self)
+  Docstring: Exports the raw results to JSON and visual reports to Markdown.
+
+- Function: save(self)
+  Docstring: Saves reports to disk.
+
+### File: benchmark\comparison.py
+
+- Class: ComparisonEngine
+  Docstring: Compares metrics between two system baselines.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: _compare_metric(self, metric_name)
+  Docstring: None
+
+- Function: compare_latency(self)
+  Docstring: Returns improvement % for latency (lower is better).
+
+- Function: compare_accuracy(self)
+  Docstring: Returns improvement % for accuracy (higher is better).
+
+- Function: compare_memory(self)
+  Docstring: Returns improvement % for memory (lower is better).
+
+- Function: compare_model_count(self)
+  Docstring: Difference in number of loaded models.
+
+- Function: compare_cache(self)
+  Docstring: Returns improvement % for cache size (lower is better).
+
+- Function: compare_training_time(self)
+  Docstring: Returns improvement % for training time (lower is better).
+
+- Function: improvement_percentage(self, old_val, new_val)
+  Docstring: Generic improvement calculator (assuming higher is better).
+
+- Function: summary(self)
+  Docstring: Returns a dict of all comparison improvements.
+
+### File: benchmark\latency.py
+
+- Class: LatencyBenchmark
+  Docstring: Measures execution speed, throughput, and percentiles.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: measure_single_request(self, func)
+  Docstring: Measures the latency of a single function call.
+
+- Function: measure_batch(self, func, batch_args)
+  Docstring: Measures latency for a batch of requests sequentially.
+
+- Function: average_latency(self)
+  Docstring: Returns the mean latency.
+
+- Function: _percentile(self, p)
+  Docstring: None
+
+- Function: percentile_95(self)
+  Docstring: Returns the 95th percentile latency.
+
+- Function: percentile_99(self)
+  Docstring: Returns the 99th percentile latency.
+
+- Function: warmup(self, func)
+  Docstring: Runs the function multiple times without recording to warm up caches.
+
+- Function: cold_start(self, func)
+  Docstring: Measures the very first request (cold start).
+
+- Function: throughput(self, duration_seconds)
+  Docstring: Calculates requests per second based on recorded latencies within a time window.
+
+### File: benchmark\memory.py
+
+- Class: MemoryBenchmark
+  Docstring: Tracks RAM usage and memory footprints of models/caches.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: measure_model_size(self, model)
+  Docstring: Measures the approximate in-memory size of a Python object in MB.
+
+- Function: measure_ram(self)
+  Docstring: Returns the current RSS RAM usage of the process in MB.
+
+- Function: measure_cache(self, cache_dict)
+  Docstring: Estimates the size of a cache dictionary in MB.
+
+- Function: peak_memory(self)
+  Docstring: Returns the peak memory recorded during the lifecycle of this benchmark.
+
+- Function: model_count(self, registry)
+  Docstring: Returns the number of models loaded in a registry.
+
+- Function: embedding_cache_size(self, cache)
+  Docstring: Measures the size of embedded vector caches.
+
+- Function: pkl_usage(self, file_path)
+  Docstring: Returns the size of a pickle file on disk in MB.
+
+### File: benchmark\profiler.py
+
+- Class: Profiler
+  Docstring: Profiles Python functions for execution time and bottlenecks.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: _run_profile(self, func)
+  Docstring: None
+
+- Function: profile_training(self, train_func)
+  Docstring: Profiles a model training function.
+
+- Function: profile_inference(self, infer_func)
+  Docstring: Profiles a model inference function.
+
+- Function: hottest_functions(self, limit)
+  Docstring: Returns the top N functions where the most time is spent.
+
+- Function: cpu_usage(self)
+  Docstring: Returns the current process CPU usage percentage.
+
+- Function: execution_time(self)
+  Docstring: Total execution time recorded in the profiler.
+
+- Function: bottlenecks(self, threshold)
+  Docstring: Identifies functions taking more than a specified threshold ratio of total time.
+
+### File: benchmark\report_generator.py
+
+- Class: ReportGenerator
+  Docstring: Generates benchmark reports in various formats.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: generate_markdown(self, filepath)
+  Docstring: Writes metrics to a Markdown file.
+
+- Function: generate_pdf(self, filepath)
+  Docstring: Stub for PDF generation.
+
+- Function: generate_html(self, filepath)
+  Docstring: Writes metrics to a simple HTML file.
+
+- Function: append_metrics(self, category, data)
+  Docstring: Adds dictionary of metrics to the report.
+
+- Function: append_graphs(self, image_paths)
+  Docstring: Adds paths of saved visualizer charts to the report.
+
+- Function: executive_summary(self)
+  Docstring: Returns a short text summary based on collected metrics.
+
+### File: benchmark\scalability.py
+
+- Class: ScalabilityBenchmark
+  Docstring: Measures system performance scaling across varying dataset sizes.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: _run_dataset(self, func, dataset, name)
+  Docstring: None
+
+- Function: benchmark_small_dataset(self, func, dataset)
+  Docstring: None
+
+- Function: benchmark_medium_dataset(self, func, dataset)
+  Docstring: None
+
+- Function: benchmark_large_dataset(self, func, dataset)
+  Docstring: None
+
+- Function: benchmark_huge_dataset(self, func, dataset)
+  Docstring: None
+
+- Function: growth_curve(self, sizes)
+  Docstring: Determines if scaling is O(1), O(N), O(N^2), etc., based on recorded results.
+
+- Function: estimate_future(self, current_size, current_time, future_size, curve)
+  Docstring: Projects future execution time based on the identified curve.
+
+### File: benchmark\stress.py
+
+- Class: StressBenchmark
+  Docstring: Stress tests Python functions directly via concurrency.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: concurrent_requests(self, func, args_list, max_workers, timeout)
+  Docstring: Simulates concurrent load by invoking a function across thread pools.
+
+- Function: requests_per_second(self)
+  Docstring: Calculates effective throughput during the stress test.
+
+- Function: failure_rate(self)
+  Docstring: Percentage of requests that threw exceptions.
+
+- Function: timeout_rate(self)
+  Docstring: Percentage of requests that exceeded the timeout.
+
+- Function: sustained_load(self, func, arg, duration_seconds, max_workers)
+  Docstring: Runs continuous load for a specific duration.
+
+- Function: spike_test(self, func, arg)
+  Docstring: Massive concurrency spike for a short burst.
+
+### File: benchmark\visualiser.py
+
+- Class: Visualizer
+  Docstring: Generates charts for benchmark results using matplotlib.
+
+- Function: __init__(self, output_dir)
+  Docstring: None
+
+- Function: latency_chart(self, p50, p95, p99, filename)
+  Docstring: Generates a bar chart of latency percentiles.
+
+- Function: memory_chart(self, ram_usage, peak_memory, filename)
+  Docstring: Generates a bar chart of memory usage.
+
+- Function: accuracy_chart(self, metrics, filename)
+  Docstring: Generates a bar chart of accuracy metrics (e.g. Precision, Recall).
+
+- Function: comparison_chart(self, old_val, new_val, metric_name, filename)
+  Docstring: Generates a chart comparing old vs new system.
+
+- Function: scalability_chart(self, sizes, times, filename)
+  Docstring: Generates a line chart showing execution time vs dataset size.
+
+- Function: stress_chart(self, concurrency_levels, error_rates, filename)
+  Docstring: Generates a line chart showing error rate vs concurrency.
+
+- Function: save(self, filename)
+  Docstring: Saves the current matplotlib figure to disk and clears the canvas.
+
+### File: conversation\cleanup.py
+
+- Function: run_cleanup(max_age_seconds)
+  Docstring: Periodic task to clean up expired sessions that have been 
+inactive for a given period of time (default 30 minutes).
+
+### File: conversation\context_resolver.py
+
+- Class: ContextResolver
+  Docstring: Resolves the context of an incoming message based on session state.
+
+- Function: resolve_context(session, user_input)
+  Docstring: Evaluates the incoming message against the current session.
+
+Flow:
+waiting_for_choice? -> waiting_for_entity? -> waiting_for_confirmation? -> normal classification
+
+### File: conversation\manager.py
+
+- Class: ConversationManager
+  Docstring: Manages conversational state transitions and orchestrates session data.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: start_session(self, conversation_id, workflow_id)
+  Docstring: Initialize a new session and save it.
+
+- Function: get_session(self, conversation_id)
+  Docstring: Retrieve an existing session.
+
+- Function: update_session(self, session)
+  Docstring: Persist session updates.
+
+- Function: close_session(self, conversation_id)
+  Docstring: Mark a session as closed.
+
+- Function: pause_session(self, conversation_id)
+  Docstring: Pause an active session.
+
+- Function: resume_session(self, conversation_id)
+  Docstring: Resume a paused session.
+
+- Function: store_entity(self, conversation_id, entity_name, entity_value)
+  Docstring: Store a single entity in the session.
+
+- Function: merge_entities(self, conversation_id, new_entities)
+  Docstring: Merge multiple entities into the session without overwriting non-overlapping keys.
+
+- Function: resume_workflow(self, conversation_id)
+  Docstring: Resume a session workflow and clear completed/stale sub-tasks.
+
+- Function: get_missing_entity(self, conversation_id)
+  Docstring: Get the name of the next required entity missing from the session.
+
+- Function: mark_complete(self, conversation_id)
+  Docstring: Mark a session as fully completed.
+
+### File: conversation\pending_action.py
+
+- Class: PendingActionRecovery
+  Docstring: Handles the recovery workflow when a session is waiting for a specific entity.
+
+- Function: recover(session, user_input)
+  Docstring: Skips intent detection and instructs the system to extract the 
+missing entity directly from the user's input, then continue the workflow.
+
+### File: conversation\resolver.py
+
+- Class: ResolutionEngine
+  Docstring: Decides the next action a chatbot should take in a conversation.
+
+- Function: resolve(cls, session, user_input)
+  Docstring: Determine the next step in the dialogue.
+
+- Function: should_classify(cls, session)
+  Docstring: Should classify if we don't have an active intent and aren't waiting for an entity.
+
+- Function: should_extract_entity(cls, session)
+  Docstring: Should extract if we are actively waiting for an entity to fill a slot.
+
+- Function: should_ask_entity(cls, session)
+  Docstring: Should ask for an entity if we have an intent but are missing required entities.
+
+- Function: should_continue(cls, session)
+  Docstring: Should execute the intent if intent is identified and all entities are collected.
+
+- Function: should_fallback(cls, session)
+  Docstring: Should fallback if the dialogue state is stuck or undefined.
+
+### File: conversation\session.py
+
+- Class: ConversationSession
+  Docstring: Represents a single conversation session and its state.
+
+- Function: __init__(self, conversation_id, workflow_id, current_intent, current_subintent, collected_entities, required_entities, waiting_for, waiting_for_choice, waiting_for_confirmation, conversation_state, created_time, last_activity)
+  Docstring: None
+
+- Function: is_waiting(self)
+  Docstring: Check if the session is currently waiting for a specific entity.
+
+- Function: add_entity(self, entity_name, entity_value)
+  Docstring: Add a collected entity and update the waiting status.
+
+- Function: merge_entities(self, new_entities)
+  Docstring: Merge a dictionary of entities into collected_entities without replacing unrelated keys.
+
+- Function: is_complete(self)
+  Docstring: Check if all required entities have been collected.
+
+- Function: clear(self)
+  Docstring: Clear the current conversational context (keeps conversation_id and created_time).
+
+- Function: to_dict(self)
+  Docstring: Serialize the session to a dictionary.
+
+- Function: from_dict(cls, data)
+  Docstring: Create a ConversationSession from a dictionary.
+
+### File: conversation\storage.py
+
+- Class: Storage
+  Docstring: In-memory or persistent storage interface for conversation sessions.
+
+- Function: save(cls, session)
+  Docstring: Save a session to storage.
+
+- Function: load(cls, session_id)
+  Docstring: Load a session from storage.
+
+- Function: delete(cls, session_id)
+  Docstring: Delete a session from storage.
+
+- Function: exists(cls, session_id)
+  Docstring: Check if a session exists.
+
+- Function: cleanup_expired(cls, max_age_seconds)
+  Docstring: Remove sessions older than the max age (default 30 mins).
+
+### File: conversation\validators.py
+
+- Class: EntityValidator
+  Docstring: Validates extracted entity values against various constraints.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: validate(self, entity_type, value, constraints)
+  Docstring: Main entry point to dispatch validation based on type.
+
+- Function: validate_regex(self, value, pattern)
+  Docstring: Validate if value matches a regex pattern.
+
+- Function: validate_length(self, value, min_len, max_len)
+  Docstring: Validate string length.
+
+- Function: validate_custom(self, value, validator_func)
+  Docstring: Run a custom validation function.
+
+- Function: validate_type(self, value, expected_type)
+  Docstring: Validate value matches expected Python type and cast it if possible.
+
+### File: conversation\__init__.py
+
+### File: core\augmentation.py
+
+- Function: augment_examples(examples, factor)
+  Docstring: Augment a list of training examples by `factor`.
+
+factor=1 → no augmentation (return originals only)
+factor=2 → each example generates ~10 variants
+
+### File: core\cache.py
+
+- Function: safe_np_key(name)
+  Docstring: Sanitize an intent name into a valid numpy .npz key (no special chars).
+
+- Function: embedding_cache_path(workflow_id)
+  Docstring: None
+
+- Function: load_embedding_cache(workflow_id)
+  Docstring: Load cached embeddings for a workflow.
+Returns { sanitized_intent_name: np.ndarray }, or {} if no cache exists.
+
+- Function: save_embedding_cache(workflow_id, embeddings_per_intent)
+  Docstring: Persist embeddings for every intent in this workflow.
+
+- Function: clear_embedding_cache(workflow_id)
+  Docstring: Delete the embedding cache for a workflow (used before a full retrain).
+
+### File: core\evaluation.py
+
+- Function: evaluate_train_test_split(X, y, label_encoder, workflow_id, test_size, random_state)
+  Docstring: Split embeddings 80/20, train an evaluation-only LogisticRegression on 80%,
+and report accuracy on the held-out 20%.
+
+Returns a dict with keys:
+    testAccuracy, trainAccuracy, testSamples, trainSamples,
+    perClassReport, splitSkipped, splitSkipReason,
+    overfitWarning, overfitGap
+
+### File: core\fingerprint.py
+
+- Function: intent_fingerprint(sub)
+  Docstring: Stable MD5 fingerprint of a subintent's training data.
+
+- Function: compute_intent_fingerprints(subIntents)
+  Docstring: Build a name → fingerprint map from a list of subintents.
+Accepts Pydantic SubIntent objects or plain dicts.
+
+### File: core\knowledge_graph.py
+
+- Class: KnowledgeGraph
+  Docstring: In-memory knowledge graph for conversational workflows, intents, subintents, and entities.
+
+- Function: __init__(self, training_json, build_graph, build_workflow_map, build_intent_map, build_subintent_map, build_entity_map)
+  Docstring: None
+
+- Function: build_graph(self, build_workflow_map, build_intent_map, build_subintent_map, build_entity_map)
+  Docstring: Iterates through the training JSON to construct fast lookup maps.
+
+- Function: get_workflows(self)
+  Docstring: Returns a list of all workflow IDs.
+
+- Function: get_intents(self)
+  Docstring: Returns a list of all main intent IDs (which correspond to workflows).
+
+- Function: get_subintents(self, workflow_id)
+  Docstring: Returns all subintents, optionally filtered by a specific workflow.
+
+- Function: get_required_entities(self, subintent_name)
+  Docstring: Gets the list of required entities for a given subintent.
+
+- Function: workflow_exists(self, workflow_id)
+  Docstring: Checks if a workflow ID exists in the graph.
+
+- Function: intent_exists(self, intent_id)
+  Docstring: Checks if an intent ID exists in the graph.
+
+- Function: subintent_exists(self, subintent_name)
+  Docstring: Checks if a subintent name exists in the graph.
+
+- Function: export_graph(self)
+  Docstring: Exports the internal graph maps as a dictionary.
+
+- Function: reload(self, training_json)
+  Docstring: Reloads the graph with new training data.
+
+### File: core\model_registry.py
+
+- Class: ModelRegistry
+  Docstring: Central registry to track trained NLU models, paths, and metadata.
+
+- Function: __init__(self, registry_file)
+  Docstring: None
+
+- Function: _load_registry(self)
+  Docstring: None
+
+- Function: _save_registry(self)
+  Docstring: None
+
+- Function: register_model(self, workflow_id, model_path, metadata)
+  Docstring: Register a model with its metadata and storage path.
+
+- Function: get_model(self, workflow_id)
+  Docstring: Returns the loaded model dict (classifier, label_encoder, etc) if it's registered.
+Will trigger a lazy load if it's not currently in memory.
+
+- Function: list_models(self)
+  Docstring: List all registered models' metadata.
+
+- Function: remove_model(self, workflow_id)
+  Docstring: Remove model from registry.
+
+- Function: get_best_version(self, workflow_id)
+  Docstring: Return the best version based on accuracy from available files, or active version.
+
+### File: core\persistence.py
+
+- Function: model_path(workflow_id)
+  Docstring: None
+
+- Function: version_path(workflow_id, version_num)
+  Docstring: Get path for a versioned model file.
+
+- Function: save_trained_classifier(workflow_id)
+  Docstring: None
+
+- Function: load_trained_classifier(workflow_id)
+  Docstring: Load a persisted classifier into global state.
+
+- Function: global_model_path()
+  Docstring: None
+
+- Function: save_global_classifiers()
+  Docstring: None
+
+- Function: load_global_classifiers()
+  Docstring: None
+
+- Function: list_versions(workflow_id)
+  Docstring: List all available versions for a workflow.
+Returns list of dicts with: version, cvAccuracy, testAccuracy, timestamp, isActive
+
+- Function: save_current_as_version(workflow_id, version_num)
+  Docstring: Save current active model and training data as a versioned backup.
+Copies current .joblib to _v{N}.joblib, and current .json to _v{N}.json
+
+- Function: keep_only_last_n_versions(workflow_id, n)
+  Docstring: Keep only the last N versions of model and training data, delete older ones.
+Always keeps version 0 (current active).
+
+- Function: load_version(workflow_id, version_num)
+  Docstring: Load a specific version into memory (doesn't activate it).
+
+- Function: activate_version(workflow_id, version_num)
+  Docstring: Activate a specific version by copying it to become the current model and training data.
+
+- Function: delete_version(workflow_id, version_num)
+  Docstring: Delete a specific version (cannot delete current active version).
+
+- Function: get_next_version_number(workflow_id)
+  Docstring: Get the next available version number for a workflow.
+
+- Function: training_data_path(workflow_id)
+  Docstring: None
+
+- Function: save_training_data(workflow_id, subIntents, entities, augmentation_factor)
+  Docstring: Persist the raw (pre-augmentation) training payload to disk.
+
+- Function: load_training_data(workflow_id)
+  Docstring: Load the last-saved raw training data for a workflow, or None if missing.
+
+- Function: _get(obj, attr, default)
+  Docstring: None
+
+### File: core\__init__.py
+
+### File: feedback\active_learning.py
+
+- Class: ActiveLearning
+  Docstring: None
+
+- Function: __init__(self, uncertainty_threshold, queue_path)
+  Docstring: None
+
+- Function: _load_queue(self)
+  Docstring: None
+
+- Function: _save_queue(self)
+  Docstring: None
+
+- Function: evaluate_prediction(self, prediction, confidence)
+  Docstring: None
+
+- Function: uncertainty(self, confidence)
+  Docstring: None
+
+- Function: should_collect(self, uncertainty_score)
+  Docstring: None
+
+- Function: should_retrain(self, uncertainty_score)
+  Docstring: None
+
+- Function: priority_score(self, entry_frequency, uncertainty_score)
+  Docstring: None
+
+- Function: build_retraining_queue(self, feedback_entries)
+  Docstring: None
+
+- Function: incremental_train(self, dataset_path)
+  Docstring: None
+
+- Function: evaluate_improvement(self, metrics_before, metrics_after)
+  Docstring: None
+
+### File: feedback\collector.py
+
+- Class: FeedbackCollector
+  Docstring: None
+
+- Function: __init__(self, db_path)
+  Docstring: None
+
+- Function: _load_feedback_database(self)
+  Docstring: None
+
+- Function: _save_feedback_database(self)
+  Docstring: None
+
+- Function: collect(self, user_message, predicted_workflow, predicted_intent, predicted_subintent, predicted_entities, confidence, actual_workflow, actual_intent, actual_subintent, actual_entities, feedback_type)
+  Docstring: None
+
+- Function: collect_positive(self, user_message, prediction, confidence)
+  Docstring: None
+
+- Function: collect_negative(self, user_message, prediction, confidence)
+  Docstring: None
+
+- Function: collect_correction(self, user_message, prediction, confidence, actual_correction)
+  Docstring: None
+
+- Function: collect_missing_entity(self, user_message, prediction, confidence, actual_entities)
+  Docstring: None
+
+- Function: collect_fallback(self, user_message, prediction, confidence)
+  Docstring: None
+
+- Function: get_feedback(self)
+  Docstring: None
+
+- Function: get_recent_feedback(self, limit)
+  Docstring: None
+
+- Function: export_feedback(self, export_path)
+  Docstring: None
+
+- Function: clear_feedback(self)
+  Docstring: None
+
+### File: feedback\dataset_builder.py
+
+- Class: DatasetBuilder
+  Docstring: None
+
+- Function: __init__(self, feedback_source, training_data_path)
+  Docstring: None
+
+- Function: load_feedback(self)
+  Docstring: None
+
+- Function: clean_feedback(self)
+  Docstring: None
+
+- Function: remove_duplicates(self)
+  Docstring: None
+
+- Function: validate_feedback(self)
+  Docstring: None
+
+- Function: merge_with_training_data(self)
+  Docstring: None
+
+- Function: create_incremental_dataset(self, output_path)
+  Docstring: None
+
+- Function: export_json(self, data, path)
+  Docstring: None
+
+- Function: statistics(self)
+  Docstring: None
+
+### File: hierarchy\candidate_filter.py
+
+- Class: CandidateFilter
+  Docstring: Pure business logic filter that eliminates predictions 
+not belonging to the current workflow.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: filter_predictions(self, workflow_id, predictions)
+  Docstring: Filters a list of intent/subintent predictions based on the allowed candidates for the workflow.
+
+Args:
+    workflow_id: The resolved workflow context.
+    predictions: The raw top-K predictions from the Global Intent Classifier.
+                 Format: [{"name": "IntentName", "confidence": 0.85}, ...]
+                 
+Returns:
+    A filtered list of predictions that are permitted for the workflow.
+
+### File: hierarchy\hierarchy_manager.py
+
+- Class: HierarchyManager
+  Docstring: Orchestrates the decision process for a user utterance.
+Consumes raw prediction results from the inference layer and processes them
+through filtering, ranking, and validation.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: resolve(self, request_workflow_id, predicted_workflow, global_intent_predictions, threshold)
+  Docstring: Main orchestration method.
+
+Args:
+    request_workflow_id: Workflow provided in the API request (if any)
+    predicted_workflow: Top workflow prediction from WorkflowClassifier (if any)
+    global_intent_predictions: Top K predictions from the Global Intent Classifier
+    threshold: Confidence threshold for intents
+    
+Returns:
+    A dictionary containing the resolved workflow, intent/subintent, and required entities.
+
+- Function: resolve_workflow(self, request_workflow_id, predicted_workflow)
+  Docstring: None
+
+- Function: resolve_intent(self, filtered_predictions, threshold)
+  Docstring: None
+
+- Function: build_response(self, workflow, resolved_intent, required_entities)
+  Docstring: None
+
+### File: hierarchy\intent_ranker.py
+
+- Class: IntentRanker
+  Docstring: Ranks the filtered candidates and determines the best intent/subintent match.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: rank(self, filtered_predictions, threshold)
+  Docstring: Returns the top prediction if it meets the confidence threshold.
+
+Args:
+    filtered_predictions: List of predictions output by the CandidateFilter.
+    threshold: Minimum confidence required to accept the prediction.
+    
+Returns:
+    The top prediction dictionary, or None if no prediction meets the threshold
+    or if the list is empty.
+
+### File: hierarchy\metadata_provider.py
+
+- Class: MetadataProvider
+  Docstring: Source of truth for hierarchical relationships.
+Loads data from the training JSON registry to derive:
+Workflow -> Allowed SubIntents -> Required Entities
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: _load_metadata(self, workflow_id)
+  Docstring: None
+
+- Function: get_allowed_candidates(self, workflow_id)
+  Docstring: Returns a list of allowed subintent/intent names for a given workflow.
+
+- Function: get_required_entities(self, workflow_id, candidate_name)
+  Docstring: Returns the required entities for a specific candidate within a workflow.
+
+- Function: clear_cache(self, workflow_id)
+  Docstring: Clear the metadata cache, useful if training data gets updated.
+
+### File: hierarchy\workflow_classifier.py
+
+- Class: WorkflowClassifier
+  Docstring: Classifies a user utterance (represented as an embedding) into a Workflow.
+Purpose: Sentence -> Workflow
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: train(self, X, y)
+  Docstring: Trains the workflow classifier.
+X: 2D numpy array of sentence embeddings.
+y: list of workflow string labels.
+
+- Function: predict(self, X)
+  Docstring: Predicts the top workflow for a given embedding X.
+X: 1D or 2D numpy array.
+Returns the predicted workflow label.
+
+- Function: predict_top_k(self, X, k)
+  Docstring: Predicts the top k workflows and their confidences.
+X: 1D or 2D numpy array representing a single sentence embedding.
+
+- Function: save(self, filepath)
+  Docstring: Saves the classifier state to disk.
+
+- Function: load(self, filepath)
+  Docstring: Loads the classifier state from disk.
+
+### File: hierarchy\workflow_resolver.py
+
+- Class: WorkflowResolver
+  Docstring: Resolves the workflow context for the current request.
+This could use the explicitly provided workflow from the request, 
+or the prediction from the global Workflow Classifier.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: resolve(self, request_workflow_id, predicted_workflow)
+  Docstring: Finalizes the workflow ID.
+Favors an explicitly passed workflow_id from the request.
+Falls back to the predicted workflow.
+
+### File: hierarchy\__init__.py
+
+### File: inference\entities.py
+
+- Function: _build_ngrams(text, max_n)
+  Docstring: None
+
+- Function: _best_semantic_match(text, examples)
+  Docstring: Find best n-gram ↔ example match via cosine similarity.
+
+- Function: extract_entities(text, custom_patterns, entity_configs, workflow_id)
+  Docstring: Extract entities from `text` using three staged techniques.
+
+Returns: { "entities": {name: value}, "entityList": [...] }
+
+- Function: process_session_entities(text, session, conv_manager, custom_patterns, entity_configs, workflow_id)
+  Docstring: Executes the full conversational entity lifecycle:
+Extract Entity -> Validate -> Store in Session -> Check Completeness.
+
+### File: inference\fallback.py
+
+- Function: manage_fallback(intent_result, extracted_entities, required_entities, invalid_entities, session, conv_manager)
+  Docstring: Evaluates the results of intent detection and entity extraction.
+
+Returns a resolution dict with:
+  - status: 'success', 'missing_entity', 'invalid_entity', 'clarification_needed', or 'fallback'
+  - prompt: (Optional) A string prompting the user for missing info.
+  - missingEntity: (Optional) The name of the missing entity.
+  - clarificationOptions: (Optional) List of top intents if clarification is needed.
+
+### File: inference\intent.py
+
+- Function: detect_intent_trained(text, workflow_id, model_data, threshold)
+  Docstring: Use the trained LogisticRegression classifier for a workflow.
+
+- Function: detect_intent_zeroshot(text, subIntents, threshold)
+  Docstring: Cosine-similarity zero-shot fallback when no trained model exists.
+
+- Function: detect_intent_global(text, workflow_id, subIntents, threshold)
+  Docstring: Use the global shared classifiers to predict intent and mask by workflow.
+
+- Function: detect_intent(text, workflow_id, subIntents, threshold)
+  Docstring: Auto-selects global, trained, or zero-shot based on availability.
+
+### File: inference\validation.py
+
+- Function: validate_entities(extracted_entities, entity_list, entity_configs)
+  Docstring: Validates extracted entities against constraints in entity_configs.
+
+Returns:
+    (valid_entities, valid_entity_list, invalid_entities)
+    where invalid_entities maps entity_name -> error_reason
+
+### File: inference\__init__.py
+
+### File: ranking\confidence_calibarator.py
+
+- Class: ConfidenceCalibrator
+  Docstring: Calibrates raw scores into standardized confidence levels, and
+determines routing actions (accept, clarify, fallback) based on thresholds.
+
+- Function: __init__(self, accept_threshold, clarify_threshold)
+  Docstring: None
+
+- Function: fit(self, validation_data)
+  Docstring: Fits the calibrator using validation data to adjust thresholds dynamically.
+validation_data could be [{"raw_score": 0.8, "is_correct": True}, ...]
+
+- Function: calibrate(self, raw_score)
+  Docstring: Calibrates a raw score. (Currently clamps it between 0 and 1).
+Could be extended with Platt scaling or Isotonic Regression.
+
+- Function: confidence_level(self, score)
+  Docstring: Returns a qualitative confidence level: 'high', 'medium', or 'low'.
+
+- Function: should_accept(self, score)
+  Docstring: Returns True if the score is high enough to confidently accept.
+
+- Function: should_clarify(self, score)
+  Docstring: Returns True if the score is ambiguous and needs user clarification.
+
+- Function: should_fallback(self, score)
+  Docstring: Returns True if the score is too low and should trigger a fallback.
+
+- Function: dynamic_threshold(self, context_factor)
+  Docstring: Calculates a dynamic acceptance threshold based on context factors.
+(e.g., if the user is frustrated, we might want higher confidence).
+
+- Function: explain(self, score)
+  Docstring: Returns a human-readable explanation of the confidence routing decision.
+
+### File: ranking\intent_ranker.py
+
+- Class: IntentRanker
+  Docstring: Ranks intent predictions based on ML confidence, conversation context,
+valid workflows, and entity matching.
+
+- Function: __init__(self)
+  Docstring: None
+
+- Function: rank(self, predictions, workflow, conversation_context, metadata)
+  Docstring: Executes the ranking pipeline over a set of ML predictions.
+Example prediction format: [{"intent": "faq", "score": 0.7, "required_entities": [...]}]
+
+- Function: remove_invalid_candidates(self, workflow)
+  Docstring: Filters out intents that do not belong to the active workflow (if constrained).
+
+- Function: apply_context_score(self, conversation_context)
+  Docstring: Boosts the score of intents that align with the ongoing conversational context.
+
+- Function: apply_entity_score(self, metadata)
+  Docstring: Boosts intent scores if extracted entities strongly correlate with their requirements.
+
+- Function: normalize_scores(self)
+  Docstring: Normalizes all scores so they sum to 1.0.
+
+- Function: top_k(self, k)
+  Docstring: Returns the top K ranked candidates.
+
+- Function: best(self)
+  Docstring: Returns the single highest-scoring candidate, or None if empty.
+
+### File: ranking\score_combiner.py
+
+- Class: ScoreCombiner
+  Docstring: Combines various ML and heuristic scores (workflow, intent, entity, context)
+into a final confidence score, along with statistical bounds.
+
+- Function: __init__(self, weights)
+  Docstring: None
+
+- Function: combine(self, workflow_score, intent_score, entity_score, context_score)
+  Docstring: Calculates the final confidence score based on the weighted sum.
+
+- Function: weighted_sum(self, scores)
+  Docstring: Computes the weighted sum of provided scores.
+
+- Function: normalize(self, score, min_val, max_val)
+  Docstring: Normalizes a score to fit strictly within the allowed bounds (default 0.0 to 1.0).
+
+- Function: confidence_interval(self, scores, z_score)
+  Docstring: Computes a confidence interval for a set of scores (default 95% CI).
+
+- Function: uncertainty(self, scores)
+  Docstring: Estimates the uncertainty of a set of scores.
+Using sample standard deviation as a simple proxy for uncertainty.
+
+### File: routers\analyze.py
+
+- Function: analyze(request, api_key)
+  Docstring: Full NLU pipeline: entity extraction + validation + intent detection + conversation management.
+
+- Function: detect_intent_endpoint(request, api_key)
+  Docstring: Intent/subintent detection only.
+
+- Function: extract_entities_endpoint(request, api_key)
+  Docstring: Entity extraction only.
+
+### File: routers\status.py
+
+- Function: health(api_key)
+  Docstring: None
+
+- Function: training_status(workflowId)
+  Docstring: - ?workflowId=X → status of a specific workflow model
+- No param      → status of ALL trained models
+
+- Function: delete_trained_model(workflowId, api_key)
+  Docstring: Delete a trained model — reverts that workflow to zero-shot mode.
+
+- Function: get_versions(workflowId, api_key)
+  Docstring: List all available versions for a workflow.
+Returns list with: version, cvAccuracy, testAccuracy, timestamp, isActive, filename
+
+- Function: activate_version_endpoint(workflowId, version, api_key)
+  Docstring: Activate a specific version of the workflow model.
+- version=0 keeps current active
+- version>0 activates that specific backup version
+
+- Function: delete_version_endpoint(workflowId, version, api_key)
+  Docstring: Delete a specific backup version (cannot delete active version).
+
+### File: routers\train.py
+
+- Function: train(request, api_key)
+  Docstring: Full retrain — re-encodes every subintent from scratch.
+Includes 80/20 train/test split evaluation.
+Response fields: cvAccuracy (training data) and testAccuracy (held-out 20%).
+
+- Function: train_incremental(request, api_key)
+  Docstring: Incremental retrain — only re-encodes changed intents.
+Also runs 80/20 train/test split evaluation on the full combined dataset.
+
+### File: routers\__init__.py
+
+### File: training\entities.py
+
+- Function: train_entity_classifiers(workflow_id, entities, context_sentences)
+  Docstring: Train per-entity binary classifiers for a workflow.
+
+Returns:
+    { entity_name: { totalExamples, totalSamples, cvAccuracy, ... } }
+
+- Function: _add_neg(phrase)
+  Docstring: None
+
+### File: training\intent.py
+
+- Function: _build_entity_details_map(workflow_id, entities)
+  Docstring: Build name → {type, regex, examples} from disk + current request payload.
+
+- Function: _build_required_entities_map(subIntents, entity_details_map)
+  Docstring: Build subintent-name → [entity configs] for runtime entity checks.
+
+- Function: _fit_classifier_and_evaluate(workflow_id, sentences, labels, X, augmentation_factor, entities, subIntents, raw_context_sentences, encode_time, incremental, changed_intents, cache_hits, cache_misses)
+  Docstring: Shared tail for both full and incremental training:
+1. 80/20 held-out accuracy evaluation.
+2. Fit production classifier on ALL data.
+3. Persist model + metadata + entity classifiers.
+
+- Function: train_intent_classifier(workflow_id, subIntents, augmentation_factor, entities)
+  Docstring: Full retrain — encodes every subintent from scratch, rebuilds embedding
+cache, runs 80/20 evaluation, fits final classifier on all data.
+
+- Function: train_intent_classifier_incremental(workflow_id, subIntents, augmentation_factor, entities)
+  Docstring: Incremental retrain — only re-encodes changed subintents, reuses cached
+embeddings for unchanged ones. Runs the same 80/20 evaluation as full retrain.
+
+Falls back to full encode if no cache exists.
+
+- Function: train_global_classifiers()
+  Docstring: Task 2: Train global shared classifiers.
+Currently a stub to resolve the ImportError.
+
+### File: training\__init__.py

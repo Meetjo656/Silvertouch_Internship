@@ -1,0 +1,285 @@
+[
+  {
+    "concept": "State",
+    "concept_type": "administrative_unit",
+    "aliases": [],
+    "abbreviations": [],
+    "definition": "The primary administrative division of India.",
+    "modules": [
+      "GP_COVERAGE",
+      "COOPERATIVE",
+      "FEDERATION",
+      "RANKINGS",
+      "BANKS",
+      "EDUCATION",
+      "OFFICES",
+      "AT_A_GLANCE"
+    ],
+    "related_tables": [
+      "chatbot_districts_blocks_gp_villages",
+      "chatbot_coverage_areas"
+    ],
+    "related_columns": [
+      "state_name",
+      "state_code"
+    ],
+    "parent_concepts": [
+      "India"
+    ],
+    "child_concepts": [
+      "District"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "concept": "District",
+    "concept_type": "administrative_unit",
+    "aliases": [],
+    "abbreviations": [],
+    "definition": "An administrative division of an Indian state.",
+    "modules": [
+      "GP_COVERAGE",
+      "COOPERATIVE",
+      "FEDERATION",
+      "RANKINGS",
+      "BANKS",
+      "AT_A_GLANCE"
+    ],
+    "related_tables": [
+      "chatbot_districts_blocks_gp_villages",
+      "chatbot_coverage_areas",
+      "chatbot_state_district_federation_private"
+    ],
+    "related_columns": [
+      "district_name",
+      "district_code"
+    ],
+    "parent_concepts": [
+      "State"
+    ],
+    "child_concepts": [
+      "Block"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "concept": "Block",
+    "concept_type": "administrative_unit",
+    "aliases": [
+      "Sub-district"
+    ],
+    "abbreviations": [],
+    "definition": "A district sub-division for the purpose of rural development.",
+    "modules": [
+      "GP_COVERAGE",
+      "COOPERATIVE"
+    ],
+    "related_tables": [
+      "chatbot_districts_blocks_gp_villages",
+      "chatbot_coverage_areas"
+    ],
+    "related_columns": [
+      "block_name",
+      "block_code"
+    ],
+    "parent_concepts": [
+      "District"
+    ],
+    "child_concepts": [
+      "Gram Panchayat"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "concept": "Gram Panchayat",
+    "concept_type": "administrative_unit",
+    "aliases": [
+      "Panchayat"
+    ],
+    "abbreviations": [
+      "GP",
+      "GPs"
+    ],
+    "definition": "The basic village-governing institute in Indian villages.",
+    "modules": [
+      "GP_COVERAGE",
+      "COOPERATIVE"
+    ],
+    "related_tables": [
+      "chatbot_districts_blocks_gp_villages",
+      "chatbot_coverage_areas"
+    ],
+    "related_columns": [
+      "gram_panchayat_name",
+      "gram_panchayat_code",
+      "panchayat_code"
+    ],
+    "parent_concepts": [
+      "Block"
+    ],
+    "child_concepts": [
+      "Village"
+    ],
+    "confidence": 0.99
+  },
+  {
+    "concept": "Village",
+    "concept_type": "administrative_unit",
+    "aliases": [
+      "Villages"
+    ],
+    "abbreviations": [],
+    "definition": "The smallest administrative and geographic unit in rural India, managed by a Gram Panchayat.",
+    "modules": [
+      "GP_COVERAGE",
+      "COOPERATIVE"
+    ],
+    "related_tables": [
+      "chatbot_districts_blocks_gp_villages",
+      "chatbot_coverage_areas"
+    ],
+    "related_columns": [
+      "village_name",
+      "village_code"
+    ],
+    "parent_concepts": [
+      "Gram Panchayat"
+    ],
+    "child_concepts": [],
+    "confidence": 0.99
+  },
+  {
+    "concept": "State Cooperative Bank",
+    "concept_type": "institution_type",
+    "aliases": [
+      "Apex Bank"
+    ],
+    "abbreviations": [
+      "SCB"
+    ],
+    "definition": "An apex cooperative bank operating at the state level to fund and manage District Central Cooperative Banks.",
+    "modules": [
+      "BANKS",
+      "AT_A_GLANCE"
+    ],
+    "related_tables": [
+      "chatbot_scb_master_private",
+      "chatbot_scb_contact_details"
+    ],
+    "related_columns": [],
+    "parent_concepts": [
+      "Bank"
+    ],
+    "child_concepts": [
+      "District Central Cooperative Bank"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "concept": "District Central Cooperative Bank",
+    "concept_type": "institution_type",
+    "aliases": [
+      "Central Cooperative Bank"
+    ],
+    "abbreviations": [
+      "DCCB"
+    ],
+    "definition": "A cooperative bank operating at the district level to provide credit to primary agricultural credit societies.",
+    "modules": [
+      "BANKS"
+    ],
+    "related_tables": [
+      "chatbot_dccb_master_private",
+      "chatbot_scb_master_private"
+    ],
+    "related_columns": [],
+    "parent_concepts": [
+      "State Cooperative Bank"
+    ],
+    "child_concepts": [
+      "Primary Agricultural Credit Society"
+    ],
+    "confidence": 0.97
+  },
+  {
+    "concept": "Primary Agricultural Credit Society",
+    "concept_type": "institution_type",
+    "aliases": [
+      "Credit Society"
+    ],
+    "abbreviations": [
+      "PACS"
+    ],
+    "definition": "A basic cooperative credit institution serving agricultural members at the village or Gram Panchayat level.",
+    "modules": [
+      "COOPERATIVE",
+      "BANKS"
+    ],
+    "related_tables": [
+      "chatbot_cooperative_registrations_master",
+      "chatbot_pacs_details_private"
+    ],
+    "related_columns": [
+      "sector_of_operation_name"
+    ],
+    "parent_concepts": [
+      "District Central Cooperative Bank"
+    ],
+    "child_concepts": [],
+    "confidence": 0.98
+  },
+  {
+    "concept": "Dairy",
+    "concept_type": "sector",
+    "aliases": [
+      "Milk",
+      "Dairy Cooperative"
+    ],
+    "abbreviations": [],
+    "definition": "The sector of cooperatives involved in the procurement, processing, and marketing of milk and milk products.",
+    "modules": [
+      "COOPERATIVE",
+      "FEDERATION",
+      "RANKINGS"
+    ],
+    "related_tables": [
+      "chatbot_cooperative_registrations_master",
+      "chatbot_state_district_federation_private"
+    ],
+    "related_columns": [
+      "sector_of_operation_name",
+      "primary_activity"
+    ],
+    "parent_concepts": [
+      "Agriculture"
+    ],
+    "child_concepts": [],
+    "confidence": 0.98
+  },
+  {
+    "concept": "Fishery",
+    "concept_type": "sector",
+    "aliases": [
+      "Fisheries",
+      "Fishing"
+    ],
+    "abbreviations": [],
+    "definition": "The sector comprising cooperatives involved in fishing, aquaculture, and marine processing.",
+    "modules": [
+      "COOPERATIVE",
+      "FEDERATION"
+    ],
+    "related_tables": [
+      "chatbot_cooperative_registrations_master"
+    ],
+    "related_columns": [
+      "sector_of_operation_name",
+      "primary_activity"
+    ],
+    "parent_concepts": [
+      "Agriculture"
+    ],
+    "child_concepts": [],
+    "confidence": 0.97
+  }
+]

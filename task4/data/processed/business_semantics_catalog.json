@@ -1,0 +1,1455 @@
+{
+  "chatbot_scb_master_private": {
+    "registration_authority_name": {
+      "1": "urban",
+      "2": "rural"
+    },
+    "operation_area_location": {
+      "1": "yes",
+      "0": "no"
+    },
+    "functional_status": {
+      "1": "functional",
+      "2": "under",
+      "3": "non"
+    },
+    "is_profit_making": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_dividend_paid": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_office_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_scheme_implemented": {
+      "1": "yes",
+      "0": "no"
+    },
+    "dccb_bank_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "dccb_bank_class_membership": {
+      "1": "ordinary",
+      "2": "associate"
+    },
+    "pacs_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "pacs_member_class_membership": {
+      "1": "ordinary",
+      "2": "associate"
+    },
+    "pacs_is_member_not_affiliated": {
+      "1": "yes",
+      "0": "no"
+    },
+    "status": {
+      "1": "active",
+      "0": "inactive"
+    },
+    "is_delete": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_draft": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_comp": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_national_federations": {
+    "location_of_head_quarter": {
+      "1": "urban",
+      "2": "rural"
+    },
+    "functional_status": {
+      "1": "functional",
+      "2": "under",
+      "3": "non"
+    },
+    "is_draft": {
+      "1": "draft",
+      "0": "not"
+    }
+  },
+  "chatbot_cooperative_registrations_master": {
+    "cooperative_society_type_id": {
+      "1": "yes",
+      "0": "no"
+    },
+    "sector_of_operation": {
+      "1": "credit",
+      "2": "non"
+    },
+    "functional_status": {
+      "1": "functional",
+      "2": "under",
+      "3": "non"
+    },
+    "is_coastal": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_msme": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_affiliated_union_federation": {
+      "1": "yes",
+      "0": "no"
+    },
+    "financial_audit": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_profit_making": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_dividend_paid": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_draft": {
+      "1": "yes",
+      "0": "no"
+    },
+    "status": {
+      "1": "active",
+      "0": "deleted"
+    },
+    "is_approved": {
+      "1": "approved",
+      "0": "pending",
+      "2": "rejected"
+    }
+  },
+  "chatbot_state_district_federation_private": {
+    "location_of_head_quarter": {
+      "1": "urban",
+      "2": "rural"
+    },
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "bank_type": {
+      "0": "cooperative",
+      "2": "other"
+    },
+    "federation_doing_business": {
+      "1": "yes",
+      "0": "no"
+    },
+    "federation_doing_marketing": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_federation_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "other_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "financial_audit": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_profit_making": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_dividend_paid": {
+      "1": "yes",
+      "0": "no"
+    },
+    "operation_area_location": {
+      "1": "urban",
+      "2": "rural",
+      "3": "both"
+    },
+    "is_draft": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_approved": {
+      "1": "approved",
+      "0": "pending",
+      "2": "rejected"
+    },
+    "status": {
+      "1": "active",
+      "0": "inactive"
+    },
+    "is_moved_primary": {
+      "1": "active",
+      "0": "inactive"
+    }
+  },
+  "chatbot_scb_other_members_private": {
+    "class_membership": {
+      "1": "ordinary",
+      "2": "associate"
+    },
+    "district_name": {
+      "member": "located"
+    }
+  },
+  "chatbot_scb_schemes_private": {
+    "scheme_type": {
+      "1": "central",
+      "2": "state"
+    }
+  },
+  "chatbot_cooperative_registration_education": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_land": {
+      "1": "yes",
+      "0": "no"
+    },
+    "course_international_participant": {
+      "1": "yes",
+      "0": "no"
+    },
+    "society_recruit": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_bee_farming": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "common_yard": {
+      "1": "yes",
+      "0": "no"
+    },
+    "rear_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "guidance_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_bee_plant_grow": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_cleaning_process": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "own_brand_honey": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registrations_credit_miscellaneous": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registrations_ucb": {
+    "has_nafcub": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_computerized": {
+      "1": "yes",
+      "0": "no"
+    },
+    "have_ifsc": {
+      "1": "yes",
+      "0": "no"
+    },
+    "have_corebanking": {
+      "1": "yes",
+      "0": "no"
+    },
+    "have_doorstepservice": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_aeps": {
+      "1": "yes",
+      "0": "no"
+    },
+    "offer_debitcard": {
+      "1": "yes",
+      "0": "no"
+    },
+    "have_internetbanking": {
+      "1": "yes",
+      "0": "no"
+    },
+    "offer_creditcard": {
+      "1": "yes",
+      "0": "no"
+    },
+    "cibil_membership": {
+      "1": "yes",
+      "0": "no"
+    },
+    "conducting_gab": {
+      "1": "yes",
+      "0": "no"
+    },
+    "cgtmsemli_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_saf_to_cust": {
+      "1": "yes",
+      "0": "no"
+    },
+    "fswm_comp": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_gov_scheme_implemented": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_agriculture": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_pool_land": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_gov_land": {
+      "1": "yes",
+      "0": "no"
+    },
+    "member_vested_right": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_member_work": {
+      "1": "yes",
+      "0": "no"
+    },
+    "society_common_pool": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_utilize_pool": {
+      "1": "yes",
+      "0": "no"
+    },
+    "harvesting": {
+      "1": "manual",
+      "2": "mechanical",
+      "3": "both"
+    },
+    "irrigation_facilities": {
+      "irrigation": "available"
+    }
+  },
+  "chatbot_cooperative_credit_thrift": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_labour": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "work_allot_state_dist_federation": {
+      "1": "yes",
+      "0": "no"
+    },
+    "work_guide_state_dist_federation": {
+      "1": "yes",
+      "0": "no"
+    },
+    "concession_state_gov": {
+      "1": "yes",
+      "0": "no"
+    },
+    "concession_centre_gov": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_sericulture": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "common_work_place": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_work_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_training_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_rear_appliance": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_mulberry_easy_available": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_cleaning_facility_cocoon": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_spinning_weav": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_livestock": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "common_work_place": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_work_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_training_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_poultry_feed": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_collected_from_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_dairy": {
+    "credit_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "milk_collection_unit": {
+      "1": "yes",
+      "0": "no"
+    },
+    "transport_milk": {
+      "1": "yes",
+      "0": "no"
+    },
+    "milk_testing": {
+      "1": "yes",
+      "0": "no"
+    },
+    "processing": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_bank_mitra": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_micro_atm": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_handloom": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "operated_member_themself": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_user_work_divide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "raw_product_taken": {
+      "1": "yes",
+      "0": "no"
+    },
+    "raw_material_available": {
+      "1": "yes",
+      "0": "no"
+    },
+    "waste_generate": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_consumer": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_store": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_multipurpose": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_storage": {
+      "1": "yes",
+      "0": "no"
+    },
+    "provide_raw": {
+      "1": "yes",
+      "0": "no"
+    },
+    "guidance_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_sugar": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "retail_shops": {
+      "1": "yes",
+      "0": "no"
+    },
+    "sugercane_input_provided": {
+      "1": "yes",
+      "0": "no"
+    },
+    "loan_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "waste_management": {
+      "1": "yes",
+      "0": "no"
+    },
+    "central_government_benefits": {
+      "1": "yes",
+      "0": "no"
+    },
+    "state_government_benefits": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_housing": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_land": {
+      "1": "yes",
+      "0": "no"
+    },
+    "loan_facilities": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_khadi_gram": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "operated_member_themself": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_user_work_divide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "raw_product_taken": {
+      "1": "yes",
+      "0": "no"
+    },
+    "raw_material_available": {
+      "1": "yes",
+      "0": "no"
+    },
+    "waste_generate": {
+      "1": "yes",
+      "0": "no"
+    },
+    "waste_available": {
+      "1": "yes",
+      "0": "no"
+    },
+    "operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    },
+    "do_you_want_to_enter_type_products_produced": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_tourism": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "pool_resource": {
+      "1": "yes",
+      "0": "no"
+    },
+    "any_resource_taken": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_right_vested": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperatie_registration_marketing": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_land": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_warehouses": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_handicraft": {
+    "type_raw": {
+      "material": "using"
+    },
+    "common_work_place": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_work_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_training_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_raw_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_raw_easy_avail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_generate": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_fishery": {
+    "credit_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "fuel_distribution": {
+      "1": "yes",
+      "0": "no"
+    },
+    "marketing": {
+      "1": "yes",
+      "0": "no"
+    },
+    "cold_storage": {
+      "1": "yes",
+      "0": "no"
+    },
+    "transportation": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_fpo_fisheries": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registrations_processing": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "processing_unit": {
+      "1": "yes",
+      "0": "no"
+    },
+    "processing_by_members": {
+      "1": "yes",
+      "0": "no"
+    },
+    "work_divided": {
+      "1": "yes",
+      "0": "no"
+    },
+    "product_taken": {
+      "1": "yes",
+      "0": "no"
+    },
+    "material_available": {
+      "1": "yes",
+      "0": "no"
+    },
+    "wastes_generated": {
+      "1": "yes",
+      "0": "no"
+    },
+    "waste_management_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "operate_shops": {
+      "1": "yes",
+      "0": "no"
+    },
+    "product_sale_out_of_area": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registrations_transport": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "member_themself": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_user_transport_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "state_district_federation": {
+      "1": "yes",
+      "0": "no"
+    },
+    "society_provide_raw_material": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_raw_material_taken": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_pacs": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_socitey_has_land": {
+      "1": "yes",
+      "0": "no"
+    },
+    "pesticide_distribution": {
+      "1": "yes",
+      "0": "no"
+    },
+    "fertilizer_distribution": {
+      "1": "yes",
+      "0": "no"
+    },
+    "seed_distribution": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_foodgrains": {
+      "1": "yes",
+      "0": "no"
+    },
+    "agricultural_implements": {
+      "1": "yes",
+      "0": "no"
+    },
+    "dry_storage": {
+      "1": "yes",
+      "0": "no"
+    },
+    "cold_storage": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_lgs_program": {
+      "1": "yes",
+      "0": "no"
+    },
+    "milk_unit": {
+      "1": "yes",
+      "0": "no"
+    },
+    "food_processing": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_csc": {
+      "1": "yes",
+      "0": "no"
+    },
+    "pack_involved_fish_catch": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_fpo": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_lpg_distributership": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_bcp_pump": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_dpp_diesel": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_pm_kusum_scheme": {
+      "1": "yes",
+      "0": "no"
+    },
+    "fair_price": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_jak": {
+      "pacs": "operational"
+    },
+    "is_paani_samity": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_consumer_business": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_tourism": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_cash_kendra_facilities": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_social": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_common": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "guidance_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_vehicle": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_cooperative_registration_jute": {
+    "has_building": {
+      "1": "yes",
+      "0": "no"
+    },
+    "type_raw": {
+      "material": "using"
+    },
+    "common_work_place": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_work_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_training_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_raw_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_raw_easy_avail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_generate": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_education_training_institute_private": {
+    "state_name": {
+      "institute": "located"
+    },
+    "district_name": {
+      "institute": "located"
+    },
+    "area_locality": {
+      "institute": "located"
+    },
+    "is_international_participants": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_research_study": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_recruited_own_faculty": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_computer_lab_available": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_projector_available": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_hostel_available": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_transport_service": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_sports_playground": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_library": {
+      "1": "yes",
+      "0": "no"
+    },
+    "status": {
+      "1": "active",
+      "0": "inactive"
+    },
+    "is_draft": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_dairy": {
+    "credit_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "milk_collection_unit": {
+      "1": "yes",
+      "0": "no"
+    },
+    "transport_milk": {
+      "1": "yes",
+      "0": "no"
+    },
+    "bulk_milk_unit": {
+      "1": "yes",
+      "0": "no"
+    },
+    "milk_testing": {
+      "1": "yes",
+      "0": "no"
+    },
+    "processing": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_sericulture": {
+    "type_society_names": {
+      "rearing": "carried"
+    },
+    "common_work_place": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_work_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_training_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_rear_appliance": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_mulberry_easy_available": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_cleaning_facility_cocoon": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_spinning_weav": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_consumer": {
+    "has_store": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_labour": {
+    "work_allot_state_dist_federation": {
+      "1": "yes",
+      "0": "no"
+    },
+    "work_guide_state_dist_federation": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_housing": {
+    "has_land": {
+      "1": "yes",
+      "0": "no"
+    },
+    "loan_facilities": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_multi": {
+    "loan_dccb": {
+      "1": "yes",
+      "0": "no"
+    },
+    "loan_other": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_storage": {
+      "1": "yes",
+      "0": "no"
+    },
+    "provide_raw": {
+      "1": "yes",
+      "0": "no"
+    },
+    "guidance_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_national_federations_members": {
+    "class_of_membership_name": {
+      "1": "ordinary",
+      "2": "associate"
+    },
+    "location_of_head_quarter": {
+      "1": "urban",
+      "2": "rural"
+    }
+  },
+  "chatbot_state_district_federation_social": {
+    "has_common": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "guidance_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_vehicle": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_jute": {
+    "common_work_place": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_work_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_training_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_raw_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_raw_easy_avail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_generate": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    },
+    "facilities_names": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_agriculture": {
+    "has_pool_land": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_sugar": {
+    "retail_shops": {
+      "1": "yes",
+      "0": "no"
+    },
+    "sugercane_input_provided": {
+      "1": "yes",
+      "0": "no"
+    },
+    "loan_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "waste_management": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_tourism": {
+    "pool_resource": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_ucb": {
+    "has_nafcub": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_gov_scheme_implemented": {
+      "1": "yes",
+      "0": "no"
+    },
+    "created_at": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_tribal": {
+    "society_provide_raw_material": {
+      "1": "yes",
+      "0": "no"
+    },
+    "facilities_names": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_marketing": {
+    "has_land": {
+      "1": "yes",
+      "0": "no"
+    },
+    "has_warehouses": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_livestock": {
+    "common_work_place": {
+      "1": "yes",
+      "0": "no"
+    },
+    "square_meter": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_work_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_training_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_poultry_feed": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_collected_": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_fishery": {
+    "credit_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "fuel_distribution": {
+      "1": "yes",
+      "0": "no"
+    },
+    "marketing": {
+      "1": "yes",
+      "0": "no"
+    },
+    "cold_storage": {
+      "1": "yes",
+      "0": "no"
+    },
+    "transportation": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "chatbot_state_district_federation_handicraft": {
+    "common_work_place": {
+      "1": "yes",
+      "0": "no"
+    },
+    "workplace_operate": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_work_by_member": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_training_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_raw_provide": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_raw_easy_avail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_generate": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_waste_facility": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_operate_retail": {
+      "1": "yes",
+      "0": "no"
+    },
+    "is_product_sale_out": {
+      "1": "yes",
+      "0": "no"
+    },
+    "facilities_names": {
+      "1": "yes",
+      "0": "no"
+    }
+  },
+  "public.chatbot_coverage_areas": {
+    "is_draft": {
+      "0": "not",
+      "1": "draft"
+    },
+    "is_approved": {
+      "0": "not",
+      "1": "approved",
+      "2": "rejected"
+    },
+    "status": {
+      "0": "not",
+      "1": "active"
+    },
+    "functional_status": {
+      "1": "functional",
+      "2": "under"
+    }
+  },
+  "chatbot_ncdc_offices_private": {
+    "state_name": {
+      "office": "located"
+    },
+    "district_name": {
+      "office": "located"
+    },
+    "status": {
+      "1": "active",
+      "0": "inactive"
+    }
+  }
+}

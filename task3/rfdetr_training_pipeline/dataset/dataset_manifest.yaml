@@ -1,0 +1,17 @@
+dataset_version: '1.0'
+creation_timestamp: 2026-07-06T10:59:22.058143
+source_dataset_path: D:\Silvertouch Internship\task3\final_training_package\dataset
+number_of_classes: 8
+generator_version: 1.0
+train_images: 1180
+train_annotations_sha256: 97565da9f4cadae78530b8a09edc90eaae9262d51cd853aae919cfc72d357f2c
+train_image_list_sha256: d5c8a570eee948b88c45a1716da17f1e39d6f0b86d386fae6e7d8894d9ae1164
+valid_images: 105
+valid_annotations_sha256: 6e235e54d14f4aa55bac0b40db1cef3d9d946eccd4433d65c47290151068d462
+valid_image_list_sha256: 66d961c4ecc76c0893c048f4594ac96c60c5c9573ebf09034b0cd35be7ee9c7c
+test_images: 38
+test_annotations_sha256: 63816c06b81e0682144f8b674096cf504bc3620258b586c2eea35db2e093c2d6
+test_image_list_sha256: 0ed017459148af49793b8d6df0f2a6045c7b5aedb7b57b60fe2c8b3496d5357a
+number_of_images: 1323
+number_of_annotations: 10270
+class_distribution: {'Artwork': 750, 'not_artwork': 576, 'Front_Panel': 687, 'Side_Panel': 1345, 'Back_Panel': 658, 'Extra_Areas': 4961, 'Bottom_Panel': 631, 'Top_Panel': 662}

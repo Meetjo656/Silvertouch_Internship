@@ -1,0 +1,19 @@
+paths:
+  train_images_dir: "D:/Silvertouch Internship/task3/train"
+  valid_images_dir: "D:/Silvertouch Internship/task3/valid"
+  test_images_dir: "D:/Silvertouch Internship/task3/test"
+  train_coco_json: "D:/Silvertouch Internship/task3/train/_annotations_mapped.json"
+  valid_coco_json: "D:/Silvertouch Internship/task3/valid/_annotations_mapped.json"
+  test_coco_json: "D:/Silvertouch Internship/task3/test/_annotations_mapped.json"
+  not_artwork_images_dir: "D:/Silvertouch Internship/task3/Scrapped/output/images"
+  output_dir: "D:/Silvertouch Internship/task3/yolo_detection_dataset"
+
+augmentation:
+  num_augmentations: 3
+  augment_train_only: true
+  enable_rotations: false
+  rotation_angles:
+    - 180
+  enable_noise: true
+  enable_blur: true
+  enable_color_shift: true

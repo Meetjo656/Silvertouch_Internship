@@ -1,0 +1,45 @@
+# Python cache and dependencies
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project-specific
+runs/
+outputs/
+*.zip
+New folder/
+New folder (1)/
+New folder (2)/
+*.csv
+*.json
+*.png
+*.jpg
+*.jpeg
+sample_review_list.txt
+
+# Keep only necessary files
+!requirements.txt
+!run_inference.py
+!app.py

@@ -1,0 +1,1144 @@
+[
+  {
+    "point_id": "03988a36-4461-5c9d-8e31-396d1b868ace",
+    "payload": {
+      "documentation": "Always filter the chatbot_coverage_areas table based on these criteria: status = 1, is_approved != 2, and is_draft = 0. For the chatbot_districts_blocks_gp_villages table, always filter by status = 1.",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [
+        "chatbot_coverage_areas",
+        "chatbot_districts_blocks_gp_villages"
+      ],
+      "business_terms": [
+        "coverage",
+        "districts",
+        "blocks",
+        "villages",
+        "geographic"
+      ]
+    }
+  },
+  {
+    "point_id": "07953979-acdf-515f-abca-1aea4b505def",
+    "payload": {
+      "documentation": "operational_level_names contains information of the institue runs at which level like for eg: National Level , State Level etc.",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "education",
+        "institute",
+        "operational",
+        "level",
+        "national",
+        "state"
+      ]
+    }
+  },
+  {
+    "point_id": "0d658992-2581-59b9-94ce-b035d088ed29",
+    "payload": {
+      "documentation": "Rural/Urban Filters: Only apply filters on the 'location_of_head_quarter' column if the user explicitly mentions 'Rural' or 'Urban' in their question.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "location_of_head_quarter",
+        "rural",
+        "urban"
+      ]
+    }
+  },
+  {
+    "point_id": "12a235df-28c0-5cc3-9756-f262e88d33bc",
+    "payload": {
+      "documentation": "Latest Data logic: To fetch the most current rankings accurately, use the subquery pattern: CAST(date_time AS DATE) = (SELECT MAX(CAST(date_time AS DATE)) FROM ...).",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "rankings",
+        "date_time",
+        "subquery",
+        "current",
+        "accurate"
+      ]
+    }
+  },
+  {
+    "point_id": "1948d5f9-2cb2-5e7d-aaff-1191541e4203",
+    "payload": {
+      "documentation": "When scb_dcb_flag is 4 (PCARDB), the area of operation locations are stored in chatbot_scb_area_rural_private and chatbot_scb_area_urban_private.",
+      "type": "documentation",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_area_rural_private",
+        "chatbot_scb_area_urban_private"
+      ],
+      "business_terms": [
+        "scb_dcb_flag",
+        "pcardb",
+        "operation",
+        "locations",
+        "area",
+        "rural",
+        "urban",
+        "private"
+      ]
+    }
+  },
+  {
+    "point_id": "1e362f40-2392-5a39-afb8-78e428698ea2",
+    "payload": {
+      "documentation": "LAND & INFRASTRUCTURE: Land details (owned/leased/allotted in Acres) are in chatbot_cooperative_land. Office building info (has_building) is found in most sector tables. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_land"
+      ],
+      "business_terms": [
+        "land",
+        "acres",
+        "infrastructure",
+        "building",
+        "ncd_id"
+      ]
+    }
+  },
+  {
+    "point_id": "22b4aa91-1862-5215-b553-e3b743b5fd48",
+    "payload": {
+      "documentation": "Mandatory Sorting: ALL ranking list queries MUST use 'ORDER BY flag ASC, rank ASC'. The 'flag' column handles high-level business prioritizations and must take precedence over 'rank'.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "rankings",
+        "prioritizations",
+        "flag",
+        "rank"
+      ]
+    }
+  },
+  {
+    "point_id": "25d89868-32ab-5adc-a8eb-3a2f9e35ad99",
+    "payload": {
+      "documentation": "The federation_type_name column in the main table is a key column. It contains details like 'State Federation', 'District Federation', 'Block/Taluka/Mandal Federation', and 'Regional Federation'. Filter out records asked by the user based on this column.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [],
+      "business_terms": [
+        "federation",
+        "state",
+        "district",
+        "block",
+        "regional"
+      ]
+    }
+  },
+  {
+    "point_id": "29542153-581e-5284-9783-6b6e8f384bf4",
+    "payload": {
+      "documentation": "GLOBAL QUERY FILTERS: For ALL queries, you MUST apply: status=1 (Active), is_draft=0 (Not a draft), is_approved=1 (Approved), and is_multi_state=0 (unless the user specifically asks for multi-state). is_approved=2 means rejected.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "cooperative",
+        "multi-state",
+        "approval",
+        "draft",
+        "rejected"
+      ]
+    }
+  },
+  {
+    "point_id": "29f867fb-1ab0-549e-bf23-eb55343f2cee",
+    "payload": {
+      "documentation": "Contact details for bank personnel are stored in the table chatbot_scb_contact_details.",
+      "type": "documentation",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_contact_details"
+      ],
+      "business_terms": [
+        "bank",
+        "personnel",
+        "contact",
+        "details"
+      ]
+    }
+  },
+  {
+    "point_id": "2d7b4e23-4db4-5e93-affb-cbfd0f07f7a0",
+    "payload": {
+      "documentation": "PACS / LAMPS / FSS SECTOR: Detailed information for PACS, LAMPS, and FSS is in chatbot_cooperative_pacs. Join using ncd_id. It includes storage capacity, fertilizer distribution, and grain storage projects.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_pacs"
+      ],
+      "business_terms": [
+        "pacs",
+        "lamps",
+        "fss",
+        "storage capacity",
+        "fertilizer distribution",
+        "grain storage",
+        "ncd_id"
+      ]
+    }
+  },
+  {
+    "point_id": "2dbb0436-2ff7-5103-bbe2-20aecd1cb21a",
+    "payload": {
+      "documentation": "All sector-specific tables contain additional information exclusive to those specific sectors. Always construct the SQL query on the main table first, and perform a JOIN with the relevant sector-specific tables for additional details.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [],
+      "business_terms": [
+        "sector",
+        "details",
+        "information",
+        "exclusive",
+        "specific"
+      ]
+    }
+  },
+  {
+    "point_id": "31c602a0-402e-5783-82ed-1aa535d99c1d",
+    "payload": {
+      "documentation": "The table chatbot_districts_blocks_gp_villages stores the geographic hierarchy including states, districts, blocks, gram panchayats (GPs), and villages. The table chatbot_coverage_areas contains information about cooperative societies present in those villages or blocks.",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [
+        "chatbot_districts_blocks_gp_villages",
+        "chatbot_coverage_areas"
+      ],
+      "business_terms": [
+        "states",
+        "districts",
+        "blocks",
+        "gram panchayats",
+        "villages",
+        "cooperative societies"
+      ]
+    }
+  },
+  {
+    "point_id": "332f8a10-2f33-510d-af93-8a94ca458205",
+    "payload": {
+      "documentation": "Data Dictionary for chatbot_scb_ master tables: scb_dcb_flag (1=SCB, 2=DCB, 3=SCARDB, 4=PCARDB); location_urban_rural (1=Urban, 2=Rural); functional_status (1=Functional, 2=Under Liquidation, 3=Non Functional); is_city/is_comp/is_dividend_paid (1=Yes, 0=No); status (1=Active, 0=Inactive); scheme_type (1=Central Govt Scheme, 2=State Govt Scheme); class_membership (1=Ordinary/Regular/Voting, 2=Associate/Nominal/Voting).",
+      "type": "documentation",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_"
+      ],
+      "business_terms": [
+        "scb",
+        "dcb",
+        "scardb",
+        "pcardb",
+        "urban",
+        "rural",
+        "functional",
+        "liquidation",
+        "non functional",
+        "city",
+        "comp",
+        "dividend",
+        "central govt scheme",
+        "state govt scheme",
+        "ordinary",
+        "associate",
+        "nominal",
+        "voting"
+      ]
+    }
+  },
+  {
+    "point_id": "372a49e6-8e71-5e25-b4f0-99b49e3ef89f",
+    "payload": {
+      "documentation": "Rank Types: Supported levels are 'State', 'District', and 'Block (State Nodal)'. Queries default to 'State' level if location granularity is not specified. Use the 'rank_type_name' column to filter.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "rank",
+        "state",
+        "district",
+        "block",
+        "rank_type_name"
+      ]
+    }
+  },
+  {
+    "point_id": "3e4eef9c-5c3d-5775-b15f-20b38c084190",
+    "payload": {
+      "documentation": "Always filter based on status = 1 , is_approved = 1",
+      "type": "documentation",
+      "module": "OFFICES",
+      "tables": [],
+      "business_terms": [
+        "offices",
+        "status",
+        "approval"
+      ]
+    }
+  },
+  {
+    "point_id": "45a18bb4-8787-5869-84c4-283299242ffd",
+    "payload": {
+      "documentation": "chatbot_cooperative_registrations_master: Always filter using is_draft=0, is_approved=1, and status=1. Use is_multi_state=0 for non multi-state societies and is_multi_state=1 for multi-state societies.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [
+        "chatbot_cooperative_registrations_master"
+      ],
+      "business_terms": [
+        "societies",
+        "registrations",
+        "multi-state",
+        "cooperative",
+        "approval"
+      ]
+    }
+  },
+  {
+    "point_id": "4939c438-0ecc-538a-b7a6-ae8b64788403",
+    "payload": {
+      "documentation": "FISHERY SECTOR: Catch data (in Metric Tonnes/MT), cooling units, and marketing details are in chatbot_cooperative_registration_fishery. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_fishery"
+      ],
+      "business_terms": [
+        "catch",
+        "cooling",
+        "marketing",
+        "fishery",
+        "metric tonnes",
+        "ncd"
+      ]
+    }
+  },
+  {
+    "point_id": "4c64e25d-3a31-525e-8aa2-7579a8765cc3",
+    "payload": {
+      "documentation": "MPACS are the PACS society which are registered after 2023-02-15 , MDCS are the Dairy cooperative societies which are registered after 2023-02-15 , MFCS are the Fishery cooperative societies which are registered after 2023-02-15",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "mpacs",
+        "mdcs",
+        "mfcs",
+        "pacs",
+        "dairy",
+        "fishery",
+        "cooperative",
+        "societies"
+      ]
+    }
+  },
+  {
+    "point_id": "4cf5e8d6-6b5a-5b1e-bc09-97a2b3de7852",
+    "payload": {
+      "documentation": "PACS Sector Filter: Every PACS query must use the combined triplet for accurate coverage: (sector_name ILIKE '%PACS%' OR sector_name ILIKE '%LAMPS%' OR sector_name ILIKE '%FSS%').",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "pacs",
+        "lamps",
+        "fss",
+        "sector",
+        "query"
+      ]
+    }
+  },
+  {
+    "point_id": "583ddedf-307f-5737-a4b4-d86042999b70",
+    "payload": {
+      "documentation": "Data Dictionary for GP Coverage: state_code, district_code, block_code, panchayat_code, village_code are the primary keys for joining geographic data with coverage data. sector_of_operation_name identifies the society type (e.g., PACS, LAMPS).",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [],
+      "business_terms": [
+        "state_code",
+        "district_code",
+        "block_code",
+        "panchayat_code",
+        "village_code",
+        "sector_of_operation_name",
+        "pacs",
+        "lamps"
+      ]
+    }
+  },
+  {
+    "point_id": "60063fd1-c1c8-5941-afe6-50d3164183cf",
+    "payload": {
+      "documentation": "For miscellaneous societies: use chatbot_state_district_federation_cmiscellaneous for the credit sector miscellaneous society and chatbot_state_district_federation_miscellaneous for the non credit sector miscellaneous society.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_cmiscellaneous",
+        "chatbot_state_district_federation_miscellaneous"
+      ],
+      "business_terms": [
+        "credit sector",
+        "non credit sector",
+        "miscellaneous society",
+        "federation",
+        "district"
+      ]
+    }
+  },
+  {
+    "point_id": "60cb25a6-454c-5b64-92f4-0b5becf1b593",
+    "payload": {
+      "documentation": "office_type_name contains the type of the office (Head Office , Sub Office , Regional Office etc.)",
+      "type": "documentation",
+      "module": "OFFICES",
+      "tables": [],
+      "business_terms": [
+        "head office",
+        "sub office",
+        "regional office",
+        "office type"
+      ]
+    }
+  },
+  {
+    "point_id": "6119a31d-f57c-5e0f-9df8-eca98dbdb6e5",
+    "payload": {
+      "documentation": "chatbot_national_federations: Always filter using is_draft = 0 and is_new = 1.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [
+        "chatbot_national_federations"
+      ],
+      "business_terms": [
+        "national_federations",
+        "draft",
+        "new"
+      ]
+    }
+  },
+  {
+    "point_id": "637ffbde-0b77-5cb5-84d6-6ddb21c632d8",
+    "payload": {
+      "documentation": "State cooperative banks, state banks , SCBs , SCB are the same thing (State cooperative bank) so use the scb_dcb_flag = 1 , District cooperative bank, District banks, DCCBs, DCB are the same thing (District cooperative bank) so use the scb_dcb_flag = 2 , State cooperative agricultural and rural development banks, State cooperative agricultural and rural development banks, SCARDBs, SCARDB are the same thing (State cooperative agricultural and rural development banks) so use the scb_dcb_flag = 3 , Primary cooperative agricultural and rural development banks, Primary cooperative agricultural and rural development banks, PCARDBs, PCARDB are the same thing (Primary cooperative agricultural and rural development banks) so use the scb_dcb_flag = 4",
+      "type": "documentation",
+      "module": "BANKS",
+      "tables": [],
+      "business_terms": [
+        "state cooperative bank",
+        "district cooperative bank",
+        "state cooperative agricultural and rural development bank",
+        "scb_dcb_flag",
+        "scb",
+        "dcb",
+        "scardb"
+      ]
+    }
+  },
+  {
+    "point_id": "6cd6a126-b7b4-5875-b512-db0073fec550",
+    "payload": {
+      "documentation": "DATA DICTIONARY - FLAGS: functional_status (1=Functional, 2=Under Liquidation, 3=Non Functional); status (1=active, 0=deleted); is_approved (1=Approved, 0=Pending, 2=Rejected); sector_of_operation (1=Credit, 2=Non-Credit); is_multi_state/is_coastal/is_msme/is_profit_making (1=Yes, 0=No).",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "functional_status",
+        "liquidation",
+        "sector_of_operation",
+        "msme",
+        "profit_making"
+      ]
+    }
+  },
+  {
+    "point_id": "6f09a8e8-5380-52ee-bc92-e5dcc7f8b433",
+    "payload": {
+      "documentation": "TERMINOLOGY & ABBREVIATIONS: PACS - Primary Agricultural Credit Society; DCCB - District Central Cooperative Bank; SCB - State Cooperative Bank; SCARDB - State Cooperative Agricultural and Rural Development Bank; UCB - Urban Cooperative Bank; FSS - Farmers Service Societies; LAMPS - Large Area Multipurpose Society; NAFCARD - National Cooperative Agricultural & Rural Development Banks Federation; NAFSCOB - National Federation of State Cooperative Banks Limited; NAFCUB - National Federation of Urban Cooperative Banks & Credit Societies; PCARDB - Primary Cooperative Agriculture and Rural Development Bank; SCU - Supply Chain Unit; MSCS - Multistate cooperative society; PMKSK - Pradhan Mantri Kisan Samridhi Kendra; LGS - largest Grain Storage Project; Common Service Centres (CSC); Farmer Producer Organization (FPO); BCP - Bulk Consumer Pump; MSCS - Multistate cooperative society.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "pacs",
+        "dccb",
+        "scb",
+        "scardb",
+        "ucb",
+        "fss",
+        "lamps",
+        "nafcard",
+        "nafscomb",
+        "nafcub"
+      ]
+    }
+  },
+  {
+    "point_id": "74d0ac01-a604-5645-a11e-b36a1cc761cb",
+    "payload": {
+      "documentation": "sectrol_coverage_name contains information of how many sector does this institue covers",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "education",
+        "institute",
+        "sector",
+        "coverage"
+      ]
+    }
+  },
+  {
+    "point_id": "77b87559-10cf-5213-ae04-b6364132d2d9",
+    "payload": {
+      "documentation": "ownership_name contains Rented or Owned",
+      "type": "documentation",
+      "module": "OFFICES",
+      "tables": [],
+      "business_terms": [
+        "ownership",
+        "rented",
+        "owned"
+      ]
+    }
+  },
+  {
+    "point_id": "7e1fb114-f424-503c-b8e7-6e7c1f3d6af9",
+    "payload": {
+      "documentation": "DAIRY SECTOR: Information on milk collection (in Litres), transport, and processing is in chatbot_cooperative_registration_dairy. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_dairy"
+      ],
+      "business_terms": [
+        "dairy",
+        "milk",
+        "collection",
+        "transport",
+        "processing"
+      ]
+    }
+  },
+  {
+    "point_id": "8405398f-ba13-583e-9581-4ebe475b8fa4",
+    "payload": {
+      "documentation": "TERMINOLOGY: PACS (Primary Agricultural Credit Society), LAMPS (Large Area Multipurpose Society), FSS (Farmers Service Societies), DCCB (District Central Cooperative Bank), LGS (Largest Grain Storage), PMKSK (Pradhan Mantri Kisan Samridhi Kendra).",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "pacs",
+        "lamps",
+        "fss",
+        "dccb",
+        "lgs",
+        "pmksk"
+      ]
+    }
+  },
+  {
+    "point_id": "84c0d0d0-544f-555d-9369-62dc015ed1ba",
+    "payload": {
+      "documentation": "location_type_name contains Rural or Urban",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "urban",
+        "rural",
+        "location",
+        "education"
+      ]
+    }
+  },
+  {
+    "point_id": "8716ffde-fac7-59d9-a008-6a6de9ddb4e1",
+    "payload": {
+      "documentation": "funding_provision_names contains details of funding provided by various entity like Central Govt , State Govt , Financing by Promoting Organisation/Institute etc.",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "central_govt",
+        "state_govt",
+        "funding_provision",
+        "promoting_organisation",
+        "institute"
+      ]
+    }
+  },
+  {
+    "point_id": "87da6339-5e64-5162-9556-3852003c0f2a",
+    "payload": {
+      "documentation": "chatbot_ncdc_offices_private contains information of all the ncdc officies",
+      "type": "documentation",
+      "module": "OFFICES",
+      "tables": [
+        "chatbot_ncdc_offices_private"
+      ],
+      "business_terms": [
+        "ncdc",
+        "offices",
+        "information"
+      ]
+    }
+  },
+  {
+    "point_id": "8e13a450-891c-5a93-9160-35ec2b0ac08e",
+    "payload": {
+      "documentation": "Quarterly Record Logic: Data for a quarter is recorded on the 1st day of the following month. Q1 (Jan-Mar) = Apr 1st; Q2 (Apr-Jun) = Jul 1st; Q3 (Jul-Sep) = Oct 1st; Q4 (Oct-Dec) = Jan 1st.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "quarterly",
+        "record",
+        "quarter",
+        "january",
+        "april",
+        "july",
+        "october",
+        "december"
+      ]
+    }
+  },
+  {
+    "point_id": "a5c9b821-0364-5553-88f0-53ece93d3470",
+    "payload": {
+      "documentation": "MEMBER DEMOGRAPHICS: For questions about member counts, gender ratios, or category-wise members (SC/ST/OBC), join with chatbot_member_details_private using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_member_details_private"
+      ],
+      "business_terms": [
+        "member",
+        "demographics",
+        "gender",
+        "category",
+        "ncd"
+      ]
+    }
+  },
+  {
+    "point_id": "a86fa2a2-9404-55d1-bc26-fc4933e49739",
+    "payload": {
+      "documentation": "Always filter based on status = 1 , is_draft = 0 , is_approved = 1",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "education",
+        "approval",
+        "draft",
+        "status"
+      ]
+    }
+  },
+  {
+    "point_id": "a90e2320-9c74-5b5b-a9b5-42b74e349b31",
+    "payload": {
+      "documentation": "chatbot_scb_master_private: Always filter using is_draft!=1, is_delete=0, and status=1. Use scb_dcb_flag to distinguish bank types: 1 = State Cooperative Bank (SCB), 2 = District Cooperative Bank (DCB), 3 = SCARDB, 4 = PCARDB.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [
+        "chatbot_scb_master_private"
+      ],
+      "business_terms": [
+        "scb",
+        "dcb",
+        "scardb",
+        "pcardb",
+        "cooperative",
+        "bank",
+        "types"
+      ]
+    }
+  },
+  {
+    "point_id": "ac0699d1-8d5b-5be9-8fbf-e7060416bb8a",
+    "payload": {
+      "documentation": "chatbot_state_district_federation_private: Always filter using is_draft=0, is_approved=1, and status=1.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [
+        "chatbot_state_district_federation_private"
+      ],
+      "business_terms": [
+        "chatbot",
+        "state",
+        "district",
+        "federation",
+        "private"
+      ]
+    }
+  },
+  {
+    "point_id": "b401111f-eea1-57ab-9eaa-86bc06b3d4e7",
+    "payload": {
+      "documentation": "Pattern Consistency: Leverage similar query patterns from the training dataset. Prioritize using the same SQL structure and join logic for related metrics to ensure consistency.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [],
+      "business_terms": [
+        "metrics",
+        "consistency",
+        "patterns",
+        "structure",
+        "logic"
+      ]
+    }
+  },
+  {
+    "point_id": "bb0ea306-3b79-5f8d-ac2a-a3b49309a924",
+    "payload": {
+      "documentation": "For national federation chatbot_national_federations this is the main table, contact details are stored in chatbot_national_federations_contact_details and the member of this federation details are stored in chatbot_national_federations_members.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations",
+        "chatbot_national_federations_contact_details",
+        "chatbot_national_federations_members"
+      ],
+      "business_terms": [
+        "federation",
+        "contact",
+        "member",
+        "details"
+      ]
+    }
+  },
+  {
+    "point_id": "bbd4830e-9549-59db-87a7-0d3ee6acf4e2",
+    "payload": {
+      "documentation": "Query types for coverage: 'fully covered' (all villages in a GP have coverage), 'partially covered' (some but not all villages in a GP have coverage), and 'non covered' (no villages in a GP have coverage).",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [],
+      "business_terms": [
+        "coverage",
+        "villages",
+        "fully",
+        "partially",
+        "non"
+      ]
+    }
+  },
+  {
+    "point_id": "c278277d-293b-5bac-81dd-25f11294a045",
+    "payload": {
+      "documentation": "MULTI-STATE SOCIETIES: If a question specifically asks about multi-state cooperative societies, filter by is_multi_state = '1' and join the master table with chatbot_multi_state_cooperatives on cooperative_id to retrieve the area of operation state names.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_multi_state_cooperatives"
+      ],
+      "business_terms": [
+        "cooperative",
+        "multi-state",
+        "societies",
+        "operation",
+        "state",
+        "area"
+      ]
+    }
+  },
+  {
+    "point_id": "c338f834-048c-5a17-ad9e-fb3ef4208c31",
+    "payload": {
+      "documentation": "Sector Name Variants: Only UCB has an alternative name mapping: UCB includes 'Urban Cooperative Bank'. For all other sectors, use the standard sector name from the schema.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [],
+      "business_terms": [
+        "sector",
+        "ucb",
+        "urban",
+        "cooperative",
+        "bank",
+        "variant",
+        "mapping",
+        "schema"
+      ]
+    }
+  },
+  {
+    "point_id": "c4d6fa4e-6763-5cce-aafe-fe1957c08a2d",
+    "payload": {
+      "documentation": "Audit figures like net_profit, annual_turnover, etc. are stored in lakhs.",
+      "type": "documentation",
+      "module": "BANKS",
+      "tables": [],
+      "business_terms": [
+        "net_profit",
+        "annual_turnover",
+        "audit",
+        "lakhs",
+        "banks"
+      ]
+    }
+  },
+  {
+    "point_id": "c59bfd65-aaea-593b-a0f6-f7c85d51751c",
+    "payload": {
+      "documentation": "type_of_institution_name contains information about the Type of the institue like ICM, RICM, NCCT HO, VAMNICOM",
+      "type": "documentation",
+      "module": "EDUCATION",
+      "tables": [],
+      "business_terms": [
+        "icm",
+        "ricm",
+        "ncct",
+        "vamnicom",
+        "type_of_institution"
+      ]
+    }
+  },
+  {
+    "point_id": "c82a62b2-1e04-5b0c-8005-54bc938b3975",
+    "payload": {
+      "documentation": "Always filter chatbot_national_federations for national federation queries using: is_new = '1' AND is_draft = '0'.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations"
+      ],
+      "business_terms": [
+        "federation",
+        "national",
+        "queries",
+        "draft",
+        "new"
+      ]
+    }
+  },
+  {
+    "point_id": "cf7dc4c0-95d3-5c58-97e7-5249bbe79d33",
+    "payload": {
+      "documentation": "Ranking Source Table: All ranking data is pulled from the materialized view 'public.chatbot_cooperative_rankings'. This is the single source of truth for ranks and scores.",
+      "type": "documentation",
+      "module": "RANKINGS",
+      "tables": [
+        "chatbot_cooperative_rankings"
+      ],
+      "business_terms": [
+        "rankings",
+        "scores",
+        "materialized",
+        "source",
+        "truth"
+      ]
+    }
+  },
+  {
+    "point_id": "dddb31df-57a0-5495-989f-1d1dfba059ec",
+    "payload": {
+      "documentation": "The table chatbot_scb_master_private is the master table for all state and district cooperative banks.",
+      "type": "documentation",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_master_private"
+      ],
+      "business_terms": [
+        "state",
+        "district",
+        "cooperative",
+        "banks",
+        "master"
+      ]
+    }
+  },
+  {
+    "point_id": "dee7a44b-41fa-5ad9-a612-81ed35c37003",
+    "payload": {
+      "documentation": "Information about various government schemes implemented by the banks is stored in chatbot_scb_schemes_private.",
+      "type": "documentation",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_schemes_private"
+      ],
+      "business_terms": [
+        "government schemes",
+        "banks",
+        "chatbot",
+        "private schemes"
+      ]
+    }
+  },
+  {
+    "point_id": "e269a23c-df4f-55ac-9728-089eb7087c65",
+    "payload": {
+      "documentation": "JOIN LOGIC: Join all sector-specific tables and member details to the master table using the NCD ID. (Master table Primary Key: cooperative_id, Sector table Foreign Key: ncd_id).",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "cooperative",
+        "sector",
+        "member",
+        "ncd",
+        "master"
+      ]
+    }
+  },
+  {
+    "point_id": "e611623f-2a22-5149-927d-3e544bf0987e",
+    "payload": {
+      "documentation": "All other bank-related tables (contact details, schemes, areas, other members) are linked to chatbot_scb_master_private via the id column.",
+      "type": "documentation",
+      "module": "BANKS",
+      "tables": [
+        "chatbot_scb_master_private"
+      ],
+      "business_terms": [
+        "bank",
+        "contact",
+        "schemes",
+        "areas",
+        "members"
+      ]
+    }
+  },
+  {
+    "point_id": "e65a7985-abe9-5975-82ba-4d96bccc3409",
+    "payload": {
+      "documentation": "MEASUREMENT UNITS: Financial values (share capital, deposits, turnover) are in Rupees (Rs.); Land is in Acres; Grain/Seed/Fertilizer/Fish weight is in Metric Tonnes (MT); Milk is in Litres; Sugar crushing is in TCD.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "rupees",
+        "acres",
+        "metric tonnes",
+        "litres",
+        "tcd"
+      ]
+    }
+  },
+  {
+    "point_id": "e9f1d900-4a18-59af-89ee-917111b85691",
+    "payload": {
+      "documentation": "Join Logic for National Federations: Construct joins from chatbot_national_federations.id to the national_federations_id column of the child tables (contact_details or members).",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations"
+      ],
+      "business_terms": [
+        "federations",
+        "contact_details",
+        "members",
+        "national_federations_id"
+      ]
+    }
+  },
+  {
+    "point_id": "e9f60870-561c-564b-895d-e45eb0d4fffc",
+    "payload": {
+      "documentation": "The name of a DCCB (District Central Cooperative Bank) should be fetched from the name column of the district_central_cooperative_bank table by mapping it to the scb_name in the master table.",
+      "type": "documentation",
+      "module": "BANKS",
+      "tables": [],
+      "business_terms": [
+        "dccb",
+        "district",
+        "central",
+        "cooperative",
+        "bank",
+        "scb",
+        "master"
+      ]
+    }
+  },
+  {
+    "point_id": "ed6efb2e-232b-5606-bc03-7d38042f963d",
+    "payload": {
+      "documentation": "PRIMARY MASTER TABLE: chatbot_cooperative_registrations_master is the core table. It contains the primary identity (cooperative_society_name), location (state_name, district_name, block_name, village_name), and global status of every society.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registrations_master"
+      ],
+      "business_terms": [
+        "cooperative",
+        "society",
+        "location",
+        "state",
+        "district",
+        "block",
+        "village"
+      ]
+    }
+  },
+  {
+    "point_id": "f3bbd5b8-4bf5-5490-b69f-a562d4257532",
+    "payload": {
+      "documentation": "LOCATION SEARCHES: When a user asks for societies in a specific State, District, or Block, always join with the master table and filter by its state_name, district_name, or block_name columns.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "societies",
+        "state",
+        "district",
+        "block",
+        "location"
+      ]
+    }
+  },
+  {
+    "point_id": "f68d939a-c6cb-59ec-9202-c39de02e11c7",
+    "payload": {
+      "documentation": "SPECIAL RULES (MPACS/MFCS/MDCS): These refer to societies registered after 2023-02-15. Map accordingly using the sector and date_registration columns.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [],
+      "business_terms": [
+        "cooperative",
+        "societies",
+        "sector",
+        "date_registration",
+        "mpacs",
+        "mfcs",
+        "mdcs"
+      ]
+    }
+  },
+  {
+    "point_id": "f6ffd426-dfd9-5e3c-9e65-25c53ebfe301",
+    "payload": {
+      "documentation": "Always filter chatbot_state_district_federation_private based on these values: is_draft = '0' AND is_approved = '0' AND status = '1'.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_private"
+      ],
+      "business_terms": [
+        "federation",
+        "district",
+        "chatbot",
+        "state",
+        "draft",
+        "approved"
+      ]
+    }
+  },
+  {
+    "point_id": "fbbb119f-06ec-55f5-858c-e7456c6f1860",
+    "payload": {
+      "documentation": "Counting Rule: This is a high-level summary/count module. Queries should always return aggregate counts (COUNT, SUM) rather than listing individual society or bank details.",
+      "type": "documentation",
+      "module": "AT_A_GLANCE",
+      "tables": [],
+      "business_terms": [
+        "count",
+        "aggregate",
+        "society",
+        "bank",
+        "summary"
+      ]
+    }
+  },
+  {
+    "point_id": "fc7d2187-e447-536d-9fc2-289824995804",
+    "payload": {
+      "documentation": "SUGAR SECTOR: Details of sugar mills, build-up area, and crushing capacity (TCD) are in chatbot_cooperative_registration_sugar. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registration_sugar"
+      ],
+      "business_terms": [
+        "sugar",
+        "mills",
+        "capacity",
+        "crushing",
+        "sector",
+        "build-up",
+        "ncd"
+      ]
+    }
+  },
+  {
+    "point_id": "fd768417-f0e5-535b-9429-41aa8a832a56",
+    "payload": {
+      "documentation": "BANKING (UCB): Urban Cooperative Bank details such as IFSC, AEPS, core banking, and digital banking facilities are in chatbot_cooperative_registrations_ucb. Join using ncd_id.",
+      "type": "documentation",
+      "module": "COOPERATIVE",
+      "tables": [
+        "chatbot_cooperative_registrations_ucb"
+      ],
+      "business_terms": [
+        "ifsc",
+        "aeps",
+        "core banking",
+        "digital banking",
+        "urban cooperative bank"
+      ]
+    }
+  },
+  {
+    "point_id": "fe198bbe-fe26-5e5d-ad4d-630fadf3e049",
+    "payload": {
+      "documentation": "Table Prioritization: Always prioritize chatbot_national_federations and chatbot_national_federations_contact_details for any national federation related queries.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_national_federations",
+        "chatbot_national_federations_contact_details"
+      ],
+      "business_terms": [
+        "federation",
+        "national",
+        "contact",
+        "details",
+        "prioritization",
+        "queries"
+      ]
+    }
+  },
+  {
+    "point_id": "fe6df281-4a34-5e6a-94e3-b9079566bca1",
+    "payload": {
+      "documentation": "The table chatbot_state_district_federation_private is the main master table for all federations. All other sector-specific tables are mapped to this table via the relationship: chatbot_state_district_federation_private.id = sector_table.state_district_federation_id.",
+      "type": "documentation",
+      "module": "FEDERATION",
+      "tables": [
+        "chatbot_state_district_federation_private"
+      ],
+      "business_terms": [
+        "federation",
+        "sector",
+        "district",
+        "relationship",
+        "mapping"
+      ]
+    }
+  },
+  {
+    "point_id": "fe863ff0-2484-5bc7-9998-7c164ab470a0",
+    "payload": {
+      "documentation": "Coverage Logic: 1) Fully Covered: Show only GPs where every single village is covered. 2) Partially Covered: Show only GPs where some villages are covered but at least one is missing (do not include GPs that are already fully covered). 3) Non-covered: Show only GPs that have zero villages with coverage.",
+      "type": "documentation",
+      "module": "GP_COVERAGE",
+      "tables": [],
+      "business_terms": [
+        "village",
+        "coverage",
+        "fully",
+        "partially",
+        "non-covered"
+      ]
+    }
+  }
+]

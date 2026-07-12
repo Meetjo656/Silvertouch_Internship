@@ -1,0 +1,12 @@
+#ignore venv f
+*.venv
+#batch files
+*.bat
+
+#md fiels
+*.md
+
+#log files
+*.log
+
+insert_nlu_routers.py

@@ -1,0 +1,678 @@
+{
+  "welcome-intent-anonymous": {
+    "workflow_id": "welcome-intent-anonymous",
+    "workflow_name": "welcome-intent-anonymous",
+    "version": 4,
+    "accuracy": 0.9673,
+    "created_at": "2026-07-09T11:29:18Z",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "classifier": "LogisticRegression",
+    "training_examples": 2603,
+    "model_path": "trained_models\\welcome-intent-anonymous.joblib",
+    "full_metadata": {
+      "workflowId": "welcome-intent-anonymous",
+      "trainedAt": "2026-07-09T11:29:18Z",
+      "totalSentences": 2603,
+      "totalIntents": 12,
+      "intents": [
+        "ai_assistant",
+        "application_renewals",
+        "application_status",
+        "complete_kya",
+        "faq",
+        "grievance_management",
+        "latest_notifications",
+        "payment_status",
+        "policy_information",
+        "portal_user_guide",
+        "query_management",
+        "technical_assistance"
+      ],
+      "augmentationFactor": 3,
+      "encodingTimeS": 2.51,
+      "trainingTimeS": 0.19,
+      "modelFile": "trained_models\\welcome-intent-anonymous.joblib",
+      "requiredEntitiesMap": {
+        "portal_user_guide": [],
+        "policy_information": [],
+        "faq": [],
+        "complete_kya": [],
+        "application_status": [],
+        "technical_assistance": [],
+        "query_management": [],
+        "grievance_management": [],
+        "payment_status": [],
+        "latest_notifications": [],
+        "application_renewals": [],
+        "ai_assistant": []
+      },
+      "entityMetrics": {},
+      "totalTrainedEntities": 0,
+      "trainingMode": "full",
+      "changedIntents": null,
+      "cacheHits": 0,
+      "cacheMisses": 0,
+      "cvAccuracy": 0.9673,
+      "testAccuracy": 0.9904,
+      "trainAccuracy": 0.9957,
+      "testSamples": 521,
+      "trainSamples": 2082,
+      "perClassReport": {
+        "ai_assistant": {
+          "precision": 0.90625,
+          "recall": 0.9354838709677419,
+          "f1-score": 0.9206349206349206,
+          "support": 31.0
+        },
+        "application_renewals": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        },
+        "application_status": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 68.0
+        },
+        "complete_kya": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 34.0
+        },
+        "faq": {
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1-score": 0.9863013698630136,
+          "support": 36.0
+        },
+        "grievance_management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 33.0
+        },
+        "latest_notifications": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 49.0
+        },
+        "payment_status": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        },
+        "policy_information": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        },
+        "portal_user_guide": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 71.0
+        },
+        "query_management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 27.0
+        },
+        "technical_assistance": {
+          "precision": 0.9777777777777777,
+          "recall": 0.9361702127659575,
+          "f1-score": 0.9565217391304348,
+          "support": 47.0
+        },
+        "accuracy": 0.9904030710172744,
+        "macro avg": {
+          "precision": 0.9880833958958958,
+          "recall": 0.9893045069778083,
+          "f1-score": 0.9886215024690309,
+          "support": 521.0
+        },
+        "weighted avg": {
+          "precision": 0.9905495826920971,
+          "recall": 0.9904030710172744,
+          "f1-score": 0.9904089320419991,
+          "support": 521.0
+        }
+      },
+      "splitSkipped": false,
+      "splitSkipReason": null,
+      "overfitWarning": false,
+      "overfitGap": 0.0053,
+      "version": 4,
+      "versionDecision": {
+        "autoActivated": true,
+        "reason": "New CV (0.9673) is >= old (0.9673)",
+        "oldCvAccuracy": 0.9673,
+        "newCvAccuracy": 0.9673,
+        "availableVersions": [
+          {
+            "version": 4,
+            "cvAccuracy": 0.9673,
+            "testAccuracy": 0.9904,
+            "timestamp": "2026-07-09T11:29:18Z",
+            "isActive": true,
+            "filename": "welcome-intent-anonymous.joblib"
+          },
+          {
+            "version": 3,
+            "cvAccuracy": 0.9673,
+            "testAccuracy": 0.9904,
+            "timestamp": "2026-07-09T11:29:06Z",
+            "isActive": false,
+            "filename": "welcome-intent-anonymous_v3.joblib"
+          },
+          {
+            "version": 2,
+            "cvAccuracy": 0.9629,
+            "testAccuracy": 0.992,
+            "timestamp": "2026-07-08T13:00:56Z",
+            "isActive": false,
+            "filename": "welcome-intent-anonymous_v2.joblib"
+          },
+          {
+            "version": 1,
+            "cvAccuracy": 0.9606,
+            "testAccuracy": null,
+            "timestamp": "2026-06-16T08:31:59Z",
+            "isActive": false,
+            "filename": "welcome-intent-anonymous_v1.joblib"
+          }
+        ]
+      }
+    }
+  },
+  "aatest": {
+    "workflow_id": "aatest",
+    "workflow_name": "aatest",
+    "version": 13,
+    "accuracy": 0.7851,
+    "created_at": "2026-07-09T11:28:49Z",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "classifier": "LogisticRegression",
+    "training_examples": 363,
+    "model_path": "trained_models\\aatest.joblib",
+    "full_metadata": {
+      "workflowId": "aatest",
+      "trainedAt": "2026-07-09T11:28:49Z",
+      "totalSentences": 363,
+      "totalIntents": 4,
+      "intents": [
+        "bfghhdh",
+        "fafafa",
+        "kjhk_fbhb",
+        "sdcfds"
+      ],
+      "augmentationFactor": 3,
+      "encodingTimeS": 0.42,
+      "trainingTimeS": 0.02,
+      "modelFile": "trained_models\\aatest.joblib",
+      "requiredEntitiesMap": {
+        "kjhk_fbhb": [
+          {
+            "name": "Appid",
+            "type": "regex",
+            "regex": "",
+            "examples": []
+          }
+        ],
+        "fafafa": [
+          {
+            "name": "Appid",
+            "type": "regex",
+            "regex": "",
+            "examples": []
+          }
+        ],
+        "sdcfds": [
+          {
+            "name": "GHGV",
+            "type": "regex",
+            "regex": "",
+            "examples": []
+          }
+        ],
+        "bfghhdh": [
+          {
+            "name": "Appid",
+            "type": "regex",
+            "regex": "",
+            "examples": []
+          }
+        ]
+      },
+      "entityMetrics": {},
+      "totalTrainedEntities": 0,
+      "trainingMode": "full",
+      "changedIntents": null,
+      "cacheHits": 0,
+      "cacheMisses": 0,
+      "cvAccuracy": 0.7851,
+      "testAccuracy": 1.0,
+      "trainAccuracy": 1.0,
+      "testSamples": 73,
+      "trainSamples": 290,
+      "perClassReport": {
+        "bfghhdh": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 16.0
+        },
+        "fafafa": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "kjhk_fbhb": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 22.0
+        },
+        "sdcfds": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 17.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 73.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 73.0
+        }
+      },
+      "splitSkipped": false,
+      "splitSkipReason": null,
+      "overfitWarning": false,
+      "overfitGap": 0.0,
+      "version": 13,
+      "versionDecision": {
+        "autoActivated": true,
+        "reason": "New CV (0.7851) is >= old (0.7851)",
+        "oldCvAccuracy": 0.7851,
+        "newCvAccuracy": 0.7851,
+        "availableVersions": [
+          {
+            "version": 13,
+            "cvAccuracy": 0.7851,
+            "testAccuracy": 1.0,
+            "timestamp": "2026-07-09T11:28:49Z",
+            "isActive": true,
+            "filename": "aatest.joblib"
+          },
+          {
+            "version": 12,
+            "cvAccuracy": 0.7851,
+            "testAccuracy": 1.0,
+            "timestamp": "2026-07-09T11:28:48Z",
+            "isActive": false,
+            "filename": "aatest_v12.joblib"
+          },
+          {
+            "version": 11,
+            "cvAccuracy": 0.7851,
+            "testAccuracy": 1.0,
+            "timestamp": "2026-07-09T11:27:31Z",
+            "isActive": false,
+            "filename": "aatest_v11.joblib"
+          },
+          {
+            "version": 10,
+            "cvAccuracy": 0.7851,
+            "testAccuracy": 1.0,
+            "timestamp": "2026-06-24T11:37:04Z",
+            "isActive": false,
+            "filename": "aatest_v10.joblib"
+          },
+          {
+            "version": 9,
+            "cvAccuracy": 0.899,
+            "testAccuracy": 1.0,
+            "timestamp": "2026-06-24T10:12:42Z",
+            "isActive": false,
+            "filename": "aatest_v9.joblib"
+          }
+        ]
+      }
+    }
+  },
+  "welcome-intent-department": {
+    "workflow_id": "welcome-intent-department",
+    "workflow_name": "welcome-intent-department",
+    "version": 1,
+    "accuracy": 0.9692,
+    "created_at": "2026-07-09T11:29:22Z",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "classifier": "LogisticRegression",
+    "training_examples": 2435,
+    "model_path": "trained_models\\welcome-intent-department.joblib",
+    "full_metadata": {
+      "workflowId": "welcome-intent-department",
+      "trainedAt": "2026-07-09T11:29:22Z",
+      "totalSentences": 2435,
+      "totalIntents": 12,
+      "intents": [
+        "ai_assistant",
+        "application_renewals",
+        "application_status",
+        "complete_kya",
+        "faq",
+        "grievance_management",
+        "latest_notifications",
+        "payment_status",
+        "policy_information",
+        "portal_user_guide",
+        "query_management",
+        "technical_assistance"
+      ],
+      "augmentationFactor": 3,
+      "encodingTimeS": 2.36,
+      "trainingTimeS": 0.17,
+      "modelFile": "trained_models\\welcome-intent-department.joblib",
+      "requiredEntitiesMap": {
+        "portal_user_guide": [],
+        "policy_information": [],
+        "faq": [],
+        "complete_kya": [],
+        "application_status": [],
+        "technical_assistance": [],
+        "query_management": [],
+        "grievance_management": [],
+        "payment_status": [],
+        "latest_notifications": [],
+        "application_renewals": [],
+        "ai_assistant": []
+      },
+      "entityMetrics": {},
+      "totalTrainedEntities": 0,
+      "trainingMode": "full",
+      "changedIntents": null,
+      "cacheHits": 0,
+      "cacheMisses": 0,
+      "cvAccuracy": 0.9692,
+      "testAccuracy": 0.9938,
+      "trainAccuracy": 0.9944,
+      "testSamples": 487,
+      "trainSamples": 1948,
+      "perClassReport": {
+        "ai_assistant": {
+          "precision": 0.8846153846153846,
+          "recall": 1.0,
+          "f1-score": 0.9387755102040817,
+          "support": 23.0
+        },
+        "application_renewals": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 36.0
+        },
+        "application_status": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 68.0
+        },
+        "complete_kya": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 34.0
+        },
+        "faq": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "grievance_management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 39.0
+        },
+        "latest_notifications": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 38.0
+        },
+        "payment_status": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 47.0
+        },
+        "policy_information": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 41.0
+        },
+        "portal_user_guide": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 35.0
+        },
+        "query_management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 31.0
+        },
+        "technical_assistance": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9655172413793104,
+          "support": 45.0
+        },
+        "accuracy": 0.9938398357289527,
+        "macro avg": {
+          "precision": 0.9903846153846154,
+          "recall": 0.9944444444444445,
+          "f1-score": 0.9920243959652826,
+          "support": 487.0
+        },
+        "weighted avg": {
+          "precision": 0.9945506239140736,
+          "recall": 0.9938398357289527,
+          "f1-score": 0.9939222024574185,
+          "support": 487.0
+        }
+      },
+      "splitSkipped": false,
+      "splitSkipReason": null,
+      "overfitWarning": false,
+      "overfitGap": 0.0006,
+      "version": 1,
+      "versionDecision": {
+        "autoActivated": true,
+        "reason": "New CV (0.9692) is >= old (0.9692)",
+        "oldCvAccuracy": 0.9692,
+        "newCvAccuracy": 0.9692,
+        "availableVersions": [
+          {
+            "version": 1,
+            "cvAccuracy": 0.9692,
+            "testAccuracy": 0.9938,
+            "timestamp": "2026-07-09T11:29:22Z",
+            "isActive": true,
+            "filename": "welcome-intent-department.joblib"
+          }
+        ]
+      }
+    }
+  },
+  "welcome-intent-investor": {
+    "workflow_id": "welcome-intent-investor",
+    "workflow_name": "welcome-intent-investor",
+    "version": 1,
+    "accuracy": 0.9692,
+    "created_at": "2026-07-09T11:29:25Z",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "classifier": "LogisticRegression",
+    "training_examples": 2435,
+    "model_path": "trained_models\\welcome-intent-investor.joblib",
+    "full_metadata": {
+      "workflowId": "welcome-intent-investor",
+      "trainedAt": "2026-07-09T11:29:25Z",
+      "totalSentences": 2435,
+      "totalIntents": 12,
+      "intents": [
+        "ai_assistant",
+        "application_renewals",
+        "application_status",
+        "complete_kya",
+        "faq",
+        "grievance_management",
+        "latest_notifications",
+        "payment_status",
+        "policy_information",
+        "portal_user_guide",
+        "query_management",
+        "technical_assistance"
+      ],
+      "augmentationFactor": 3,
+      "encodingTimeS": 2.37,
+      "trainingTimeS": 0.17,
+      "modelFile": "trained_models\\welcome-intent-investor.joblib",
+      "requiredEntitiesMap": {
+        "portal_user_guide": [],
+        "policy_information": [],
+        "faq": [],
+        "complete_kya": [],
+        "application_status": [],
+        "technical_assistance": [],
+        "query_management": [],
+        "grievance_management": [],
+        "payment_status": [],
+        "latest_notifications": [],
+        "application_renewals": [],
+        "ai_assistant": []
+      },
+      "entityMetrics": {},
+      "totalTrainedEntities": 0,
+      "trainingMode": "full",
+      "changedIntents": null,
+      "cacheHits": 0,
+      "cacheMisses": 0,
+      "cvAccuracy": 0.9692,
+      "testAccuracy": 0.9938,
+      "trainAccuracy": 0.9944,
+      "testSamples": 487,
+      "trainSamples": 1948,
+      "perClassReport": {
+        "ai_assistant": {
+          "precision": 0.8846153846153846,
+          "recall": 1.0,
+          "f1-score": 0.9387755102040817,
+          "support": 23.0
+        },
+        "application_renewals": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 36.0
+        },
+        "application_status": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 68.0
+        },
+        "complete_kya": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 34.0
+        },
+        "faq": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "grievance_management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 39.0
+        },
+        "latest_notifications": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 38.0
+        },
+        "payment_status": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 47.0
+        },
+        "policy_information": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 41.0
+        },
+        "portal_user_guide": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 35.0
+        },
+        "query_management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 31.0
+        },
+        "technical_assistance": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9655172413793104,
+          "support": 45.0
+        },
+        "accuracy": 0.9938398357289527,
+        "macro avg": {
+          "precision": 0.9903846153846154,
+          "recall": 0.9944444444444445,
+          "f1-score": 0.9920243959652826,
+          "support": 487.0
+        },
+        "weighted avg": {
+          "precision": 0.9945506239140736,
+          "recall": 0.9938398357289527,
+          "f1-score": 0.9939222024574185,
+          "support": 487.0
+        }
+      },
+      "splitSkipped": false,
+      "splitSkipReason": null,
+      "overfitWarning": false,
+      "overfitGap": 0.0006,
+      "version": 1
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "workflowId": "aatest",
+  "augmentationFactor": 3,
+  "subIntents": [
+    {
+      "name": "kjhk_fbhb",
+      "label": "ghfdyx",
+      "description": "fytd",
+      "examples": [
+        "dfdgggfjhf",
+        "ghhvhgv",
+        "bvccchgg",
+        "jvhgghjj",
+        "vbcvjhl;",
+        "jvghvhl'"
+      ],
+      "requiredEntities": [
+        "Appid"
+      ]
+    },
+    {
+      "name": "fafafa",
+      "label": "rqrsda",
+      "description": "rqwrqwf",
+      "examples": [
+        "wqrqwrff",
+        "erwefcsdv vdvs",
+        "gfhfhfgbbx  hdhd fhdf dhfd",
+        "zdfh fh hfd hdfh",
+        "dfh hdfhdz fhdf d",
+        "xfghxxgf hhd fhdf dg"
+      ],
+      "requiredEntities": [
+        "Appid"
+      ]
+    },
+    {
+      "name": "sdcfds",
+      "label": "sfcf",
+      "description": "sdfdaf",
+      "examples": [
+        "fsdf  sdf df",
+        "f dsf",
+        "df e",
+        "ffdferf fe",
+        "r ef ertg f",
+        "erf er hegrtgrr r",
+        "eerter eggert",
+        "rge g eert"
+      ],
+      "requiredEntities": [
+        "GHGV"
+      ]
+    },
+    {
+      "name": "bfghhdh",
+      "label": "dhddghd",
+      "description": "hdhdhdh",
+      "examples": [
+        "fjfg hshh hfghdf",
+        "hdfhsfh hsdfhsfh shsdf sd",
+        "fhfghf hsfdh shshs shsfh",
+        "sfhsfh  hsdfh dsh hs",
+        "hgfsf shdfsh hs hsdsh"
+      ],
+      "requiredEntities": [
+        "Appid"
+      ]
+    }
+  ],
+  "entities": []
+}

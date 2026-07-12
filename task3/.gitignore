@@ -1,0 +1,31 @@
+# Environments
+.venv/
+.venv_rfdetr/
+.env
+
+# Cache
+__pycache__/
+*.pyc
+
+# Datasets
+images/
+annotations/
+
+# Model Checkpoints and Output
+output/
+
+# Generated Output
+rfdetr_visualised/
+rfdetr_visualised_2/
+visualized_user_images/
+hard_examples/
+failure_reports/
+
+# Massive Archives and Packages
+*.zip
+*.tar.gz
+final_training/
+final_training_package/
+final_training_v2/
+server_training_package_v2/
+wheels/

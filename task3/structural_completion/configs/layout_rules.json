@@ -1,0 +1,43 @@
+{
+    "layout_type": "pharma",
+    "required": {
+        "Artwork": 1,
+        "Front_Panel": 1,
+        "Back_Panel": 1,
+        "Top_Panel": 1,
+        "Bottom_Panel": 1
+    },
+    "optional": {
+        "Side_Panel": [2, 4],
+        "Extra_Areas": [0, 10],
+        "not_artwork": [0, 10]
+    },
+    "adjacency": {
+        "Front_Panel": [
+            "Top_Panel",
+            "Bottom_Panel",
+            "Side_Panel"
+        ],
+        "Back_Panel": [
+            "Top_Panel",
+            "Bottom_Panel",
+            "Side_Panel"
+        ],
+        "Side_Panel": [
+            "Front_Panel",
+            "Back_Panel",
+            "Top_Panel",
+            "Bottom_Panel"
+        ],
+        "Top_Panel": [
+            "Front_Panel",
+            "Back_Panel",
+            "Side_Panel"
+        ],
+        "Bottom_Panel": [
+            "Front_Panel",
+            "Back_Panel",
+            "Side_Panel"
+        ]
+    }
+}

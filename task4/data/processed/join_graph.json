@@ -1,0 +1,286 @@
+{
+  "chatbot_dccb_master_private": {
+    "chatbot_scb_master_private": 78
+  },
+  "chatbot_scb_master_private": {
+    "chatbot_dccb_master_private": 78,
+    "chatbot_scb_area_rural_private": 21,
+    "chatbot_scb_area_urban_private": 12,
+    "chatbot_scb_contact_details": 60,
+    "chatbot_scb_schemes_private": 57,
+    "chatbot_scb_other_members_private": 24,
+    "chatbot_scb_members_private": 18
+  },
+  "chatbot_scb_area_rural_private": {
+    "chatbot_scb_master_private": 21
+  },
+  "chatbot_scb_area_urban_private": {
+    "chatbot_scb_master_private": 12
+  },
+  "chatbot_scb_contact_details": {
+    "chatbot_scb_master_private": 60
+  },
+  "chatbot_scb_schemes_private": {
+    "chatbot_scb_master_private": 57
+  },
+  "chatbot_scb_other_members_private": {
+    "chatbot_scb_master_private": 24
+  },
+  "chatbot_scb_members_private": {
+    "chatbot_scb_master_private": 18
+  },
+  "chatbot_cooperative_registration_handloom": {
+    "chatbot_cooperative_registrations_master": 56
+  },
+  "chatbot_cooperative_registrations_master": {
+    "chatbot_cooperative_registration_handloom": 56,
+    "chatbot_cooperative_registration_tribal": 58,
+    "chatbot_cooperative_registration_handicraft": 54,
+    "chatbot_cooperative_registration_jute": 40,
+    "chatbot_cooperative_registration_tourism": 58,
+    "chatbot_cooperative_registrations_ucb": 46,
+    "chatbot_cooperative_registration_sugar": 58,
+    "chatbot_cooperative_registration_multipurpose": 56,
+    "chatbot_cooperatie_registration_marketing": 60,
+    "chatbot_multi_state_cooperatives": 46,
+    "chatbot_cooperative_registration_miscellaneous": 58,
+    "chatbot_member_details_private": 92,
+    "chatbot_cooperative_registration_fishery": 44,
+    "chatbot_cooperative_registration_labour": 58,
+    "chatbot_cooperative_registrations_transport": 54,
+    "chatbot_cooperative_registration_livestock": 46,
+    "chatbot_cooperative_land": 44,
+    "chatbot_cooperative_pacs": 52,
+    "chatbot_cooperative_registration_dairy": 50,
+    "chatbot_cooperative_registration_sericulture": 44,
+    "chatbot_cooperative_registration_agriculture": 58,
+    "chatbot_cooperative_registration_education": 54,
+    "chatbot_cooperative_registration_consumer": 42,
+    "chatbot_cooperative_registration_social": 56,
+    "chatbot_cooperative_registration_bee_farming": 52,
+    "chatbot_khadi_products": 40,
+    "chatbot_cooperative_registrations_credit_miscellaneous": 60,
+    "chatbot_cooperative_registration_housing": 58,
+    "chatbot_cooperative_registration_women_cooperative": 46,
+    "chatbot_cooperative_registration_khadi_gram": 60,
+    "chatbot_cooperative_registrations_processing": 56,
+    "chatbot_cooperative_credit_thrift": 40
+  },
+  "chatbot_cooperative_registration_tribal": {
+    "chatbot_cooperative_registrations_master": 58
+  },
+  "chatbot_cooperative_registration_handicraft": {
+    "chatbot_cooperative_registrations_master": 54
+  },
+  "chatbot_cooperative_registration_jute": {
+    "chatbot_cooperative_registrations_master": 40
+  },
+  "chatbot_cooperative_registration_tourism": {
+    "chatbot_cooperative_registrations_master": 58
+  },
+  "chatbot_cooperative_registrations_ucb": {
+    "chatbot_cooperative_registrations_master": 46
+  },
+  "chatbot_cooperative_registration_sugar": {
+    "chatbot_cooperative_registrations_master": 58
+  },
+  "chatbot_cooperative_registration_multipurpose": {
+    "chatbot_cooperative_registrations_master": 56
+  },
+  "chatbot_cooperatie_registration_marketing": {
+    "chatbot_cooperative_registrations_master": 60
+  },
+  "chatbot_multi_state_cooperatives": {
+    "chatbot_cooperative_registrations_master": 46
+  },
+  "chatbot_cooperative_registration_miscellaneous": {
+    "chatbot_cooperative_registrations_master": 58
+  },
+  "chatbot_member_details_private": {
+    "chatbot_cooperative_registrations_master": 92
+  },
+  "chatbot_cooperative_registration_fishery": {
+    "chatbot_cooperative_registrations_master": 44
+  },
+  "chatbot_cooperative_registration_labour": {
+    "chatbot_cooperative_registrations_master": 58
+  },
+  "chatbot_cooperative_registrations_transport": {
+    "chatbot_cooperative_registrations_master": 54
+  },
+  "chatbot_cooperative_registration_livestock": {
+    "chatbot_cooperative_registrations_master": 46
+  },
+  "chatbot_cooperative_land": {
+    "chatbot_cooperative_registrations_master": 44
+  },
+  "chatbot_cooperative_pacs": {
+    "chatbot_cooperative_registrations_master": 52
+  },
+  "chatbot_cooperative_registration_dairy": {
+    "chatbot_cooperative_registrations_master": 50
+  },
+  "chatbot_cooperative_registration_sericulture": {
+    "chatbot_cooperative_registrations_master": 44
+  },
+  "chatbot_cooperative_registration_agriculture": {
+    "chatbot_cooperative_registrations_master": 58
+  },
+  "chatbot_cooperative_registration_education": {
+    "chatbot_cooperative_registrations_master": 54
+  },
+  "chatbot_cooperative_registration_consumer": {
+    "chatbot_cooperative_registrations_master": 42
+  },
+  "chatbot_cooperative_registration_social": {
+    "chatbot_cooperative_registrations_master": 56
+  },
+  "chatbot_cooperative_registration_bee_farming": {
+    "chatbot_cooperative_registrations_master": 52
+  },
+  "chatbot_khadi_products": {
+    "chatbot_cooperative_registrations_master": 40
+  },
+  "chatbot_cooperative_registrations_credit_miscellaneous": {
+    "chatbot_cooperative_registrations_master": 60
+  },
+  "chatbot_cooperative_registration_housing": {
+    "chatbot_cooperative_registrations_master": 58
+  },
+  "chatbot_cooperative_registration_women_cooperative": {
+    "chatbot_cooperative_registrations_master": 46
+  },
+  "chatbot_cooperative_registration_khadi_gram": {
+    "chatbot_cooperative_registrations_master": 60
+  },
+  "chatbot_cooperative_registrations_processing": {
+    "chatbot_cooperative_registrations_master": 56
+  },
+  "chatbot_cooperative_credit_thrift": {
+    "chatbot_cooperative_registrations_master": 40
+  },
+  "chatbot_state_district_federation_labour": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_private": {
+    "chatbot_state_district_federation_labour": 46,
+    "chatbot_state_district_federation_bee": 46,
+    "chatbot_state_district_federation_housing": 46,
+    "chatbot_state_district_federation_fishery": 46,
+    "chatbot_state_district_federation_social": 46,
+    "chatbot_state_district_federation_wocoop": 46,
+    "chatbot_state_district_federation_tourism": 46,
+    "chatbot_state_district_federation_ucb": 46,
+    "chatbot_state_district_federation_sericulture": 46,
+    "chatbot_state_district_federation_consumer": 46,
+    "chatbot_state_district_federation_sugar": 46,
+    "chatbot_state_district_federation_jute": 46,
+    "chatbot_state_district_federation_cmiscellaneous": 46,
+    "chatbot_state_district_federation_handicraft": 46,
+    "chatbot_state_district_federation_transport": 46,
+    "chatbot_state_district_federation_dairy": 46,
+    "chatbot_state_district_federation_miscellaneous": 44,
+    "chatbot_state_district_federation_credit": 44,
+    "chatbot_state_district_federation_tribal": 46,
+    "chatbot_state_district_federation_handloom": 46,
+    "chatbot_state_district_federation_livestock": 46,
+    "chatbot_state_district_federation_marketing": 46,
+    "chatbot_state_district_federation_agriculture": 46,
+    "chatbot_state_district_federation_multi": 46,
+    "chatbot_state_district_federation_processing": 46
+  },
+  "chatbot_state_district_federation_bee": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_housing": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_fishery": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_social": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_wocoop": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_tourism": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_ucb": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_national_federations": {
+    "chatbot_national_federations_members": 198,
+    "chatbot_national_federations_contact_details": 222
+  },
+  "chatbot_national_federations_members": {
+    "chatbot_national_federations": 198
+  },
+  "chatbot_state_district_federation_sericulture": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_consumer": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_sugar": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_jute": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_national_federations_contact_details": {
+    "chatbot_national_federations": 222
+  },
+  "chatbot_state_district_federation_cmiscellaneous": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_handicraft": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_transport": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_dairy": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_miscellaneous": {
+    "chatbot_state_district_federation_private": 44
+  },
+  "chatbot_state_district_federation_credit": {
+    "chatbot_state_district_federation_private": 44
+  },
+  "chatbot_state_district_federation_tribal": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_handloom": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_livestock": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_marketing": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_agriculture": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_multi": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_state_district_federation_processing": {
+    "chatbot_state_district_federation_private": 46
+  },
+  "chatbot_coverage_areas": {
+    "chatbot_districts_blocks_gp_villages": 2240
+  },
+  "chatbot_districts_blocks_gp_villages": {
+    "chatbot_coverage_areas": 2240
+  },
+  "chatbot_cooperative_rankings": {
+    "period2_data": 30
+  },
+  "period2_data": {
+    "chatbot_cooperative_rankings": 30
+  }
+}
