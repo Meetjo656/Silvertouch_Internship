@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text-to-SQL · RAG Demo</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1020; --panel:#121a2e; --line:#25324b; --muted:#9aa9c2; --text:#edf3ff; --accent:#7dd3fc; --green:#86efac; --red:#fca5a5; }
+    * { box-sizing:border-box } body { margin:0; background:radial-gradient(circle at 15% 0%,#172747 0,transparent 38%),var(--bg); color:var(--text); font:15px/1.55 Inter,ui-sans-serif,system-ui,sans-serif; }
+    main { max-width:1050px; margin:0 auto; padding:48px 22px 80px } .eyebrow { color:var(--accent); letter-spacing:.13em; text-transform:uppercase; font-size:12px; font-weight:700 }
+    h1 { font-size:clamp(34px,6vw,56px); line-height:1.05; margin:12px 0 } .lead { color:var(--muted); max-width:700px; font-size:17px }
+    .panel { background:rgba(18,26,46,.92); border:1px solid var(--line); border-radius:18px; padding:22px; margin-top:24px; box-shadow:0 16px 45px #0003 }
+    textarea { width:100%; min-height:100px; resize:vertical; background:#0b1325; color:var(--text); border:1px solid var(--line); border-radius:12px; padding:15px; font:inherit; outline:none }
+    textarea:focus { border-color:var(--accent) } button { margin-top:13px; border:0; border-radius:10px; background:var(--accent); color:#082033; padding:12px 18px; font-weight:800; cursor:pointer } button:disabled { opacity:.55; cursor:wait }
+    .examples { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px } .examples button { margin:0; background:#1b2942; color:#cfe7ff; border:1px solid var(--line); font-weight:500; font-size:13px; padding:8px 11px }
+    .status { color:var(--muted); margin-left:12px; font-size:13px } .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px } h2 { font-size:17px; margin:0 0 12px } pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#0a1222; border:1px solid var(--line); border-radius:10px; padding:15px; color:#c7e7ff; min-height:80px }
+    .pill { display:inline-block; border-radius:99px; padding:3px 9px; font-size:12px; background:#143526; color:var(--green); margin-bottom:12px } .pill.bad { background:#3b2027; color:var(--red) }
+    .table-wrap { overflow:auto } table { width:100%; border-collapse:collapse; font-size:13px } th,td { padding:10px 12px; border-bottom:1px solid var(--line); text-align:left; white-space:nowrap } th { color:var(--accent); background:#0d172a }
+    .muted { color:var(--muted); font-size:13px } .hidden { display:none } .context-item { padding:10px 0; border-bottom:1px solid var(--line); color:#c5d2e8; font-size:13px } .context-item:last-child { border:0 }
+    @media(max-width:720px){ main{padding:32px 15px} .grid{grid-template-columns:1fr} .status{display:block;margin:10px 0 0} }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Enterprise AI · Interactive prototype</div>
+  <h1>Ask your data.<br><span style="color:var(--accent)">In plain English.</span></h1>
+  <p class="lead">A retrieval-augmented Text-to-SQL demo. Ask a business question, inspect the context retrieved for it, review the generated SQL, and execute it against a read-only sample database.</p>
+  <section class="panel">
+    <label for="question"><strong>Your question</strong></label>
+    <textarea id="question" placeholder="e.g. What is the total delivered revenue by customer city?"></textarea>
+    <div class="examples">
+      <button data-q="What is the total delivered revenue by customer city?">Revenue by city</button>
+      <button data-q="Show the top 5 products by quantity sold.">Top products</button>
+      <button data-q="How many orders does each customer have?">Orders per customer</button>
+      <button data-q="List delivered orders from Ahmedabad customers.">Ahmedabad orders</button>
+    </div>
+    <button id="run">Generate SQL &amp; run query</button><span class="status" id="status">Checking API…</span>
+  </section>
+  <section id="output" class="hidden">
+    <div class="grid">
+      <div class="panel"><h2>Generated SQL</h2><div id="validity"></div><pre id="sql"></pre></div>
+      <div class="panel"><h2>Retrieved context</h2><div id="context"></div></div>
+    </div>
+    <div class="panel"><h2>Query results</h2><div id="results" class="table-wrap"></div></div>
+  </section>
+  <p class="muted" style="margin-top:24px">Demo data is synthetic. Queries are restricted to a single read-only SELECT and capped at 100 rows. Do not enter confidential information.</p>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+document.querySelectorAll("[data-q]").forEach(b => b.addEventListener("click", () => $("question").value = b.dataset.q));
+async function checkHealth(){
+  try { const r = await fetch("/api/health"); const d = await r.json(); $("status").textContent = d.model_configured ? "API ready · model configured" : "API online · add a model API key to enable generation"; }
+  catch { $("status").textContent = "API unavailable"; }
+}
+function renderTable(columns, rows){
+  if(!columns?.length) return '<p class="muted">No result rows.</p>';
+  return '<table><thead><tr>'+columns.map(c=>'<th>'+escapeHtml(c)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map(v=>'<td>'+escapeHtml(v ?? '')+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
+}
+function escapeHtml(v){ return String(v).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+$("run").addEventListener("click", async () => {
+  const question = $("question").value.trim(); if(question.length < 5){ $("status").textContent = "Enter a longer question."; return; }
+  $("run").disabled = true; $("status").textContent = "Retrieving context and generating SQL…";
+  try {
+    const response = await fetch("/api/ask", {method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question})});
+    const data = await response.json(); $("output").classList.remove("hidden");
+    if(!response.ok) throw new Error(data.detail || "Request failed");
+    $("sql").textContent = data.sql || "No SQL returned";
+    $("validity").innerHTML = data.valid ? '<span class="pill">Validated · read-only</span>' : '<span class="pill bad">Validation failed</span><p class="muted">'+escapeHtml(data.error || "Query was not executed")+'</p>';
+    $("context").innerHTML = (data.retrieved_context || []).map(x=>'<div class="context-item"><strong>'+escapeHtml(x.name)+'</strong><br>'+escapeHtml(x.text)+'</div>').join('');
+    $("results").innerHTML = data.valid ? renderTable(data.columns,data.rows) : '<p class="muted">Query was not executed because validation failed.</p>';
+    $("status").textContent = data.valid ? (data.row_count+" row(s) returned · max "+data.max_rows) : "SQL needs correction";
+  } catch(e){ $("status").textContent = e.message; $("output").classList.remove("hidden"); $("sql").textContent = "Request failed"; $("validity").innerHTML = '<span class="pill bad">Error</span>'; $("context").textContent = ""; $("results").textContent = ""; }
+  finally { $("run").disabled = false; }
+});
+checkHealth();
+</script>
+</body>
+</html>
