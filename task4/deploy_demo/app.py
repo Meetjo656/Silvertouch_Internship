@@ -191,12 +191,12 @@ async def generate_sql(question: str, context: list[dict[str, str]]) -> str:
     if not api_key:
         raise HTTPException(
             status_code=503,
-            detail="No model API key configured. Add OPENAI_API_KEY (or GROQ_API_KEY) to the deployment environment.",
+            detail="No model API key configured. Add GROQ_API_KEY to the deployment environment.",
         )
     base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
     if os.getenv("GROQ_API_KEY") and not os.getenv("OPENAI_API_KEY"):
         base_url = os.getenv("OPENAI_BASE_URL", "https://api.groq.com/openai/v1").rstrip("/")
-    model = os.getenv("MODEL_NAME", "gpt-4o-mini")
+    model = os.getenv("MODEL_NAME", "openai/gpt-oss-20b" if os.getenv("GROQ_API_KEY") and not os.getenv("OPENAI_API_KEY") else "gpt-4o-mini")
     headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
     payload = {
         "model": model,
